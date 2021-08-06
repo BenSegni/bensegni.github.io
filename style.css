@@ -1,0 +1,172 @@
+body {
+  background-color: #323630;
+  color: #555953;
+  font-size: 16px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+header a {
+  height: 5rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header svg {
+  fill: white;
+}
+
+section {
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Orbitron", sans-serif;
+  text-transform: uppercase;
+  padding: 0;
+  margin: 0;
+  line-height: 100%;
+}
+
+h1 {
+  font-size: 2rem;
+  color: #757973;
+}
+
+h2 {
+  font-size: 4rem;
+}
+
+h5 {
+  color: #757973;
+}
+
+.role {
+  padding: 1rem 0;
+  color: #757973;
+}
+
+.separator {
+  display: flex;
+  justify-content: space-between;
+  width: 140%;
+  margin-left: -4rem;
+  margin-bottom: 25vh;
+}
+
+.separator span {
+  width: 10vw;
+  height: 10vh;
+  background-color: #555953;
+  transform: skew(315deg, 360deg);
+  -webkit-transform: skew(315deg, 360deg);
+  -moz-transform: skew(315deg, 360deg);
+}
+
+.projects {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+  width: 140%;
+  margin-left: -15vw;
+}
+
+.projects a {
+  transform: skew(315deg, 360deg);
+  -webkit-transform: skew(315deg, 360deg);
+  -moz-transform: skew(315deg, 360deg);
+  width: 25vw;
+  height: 25vh;
+  border: 2px solid #555953;
+
+  position: relative;
+  overflow: hidden;
+
+  -webkit-transform-origin: 0 30%;
+  -ms-transform-origin: 0 30%;
+  transform-origin: 0 30%;
+}
+
+.projects a::before {
+  content: "";
+  transform: skew(-315deg, -360deg);
+  -webkit-transform: skew(-315deg, -360deg);
+  -moz-transform: skew(-315deg, -360deg);
+
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-size: 150%;
+
+  position: absolute;
+  -webkit-transform-origin: 0% 70%;
+  -ms-transform-origin: 0% 70%;
+  transform-origin: 0% 70%;
+  width: 100vw;
+  height: 60vh;
+}
+
+@media (min-width: 80.625rem) {
+  .projects a::before {
+    -webkit-transform-origin: 0% 60%;
+    -ms-transform-origin: 0% 60%;
+    transform-origin: 0% 60%;
+    background-size: 70%;
+  }
+}
+
+@media (max-width: 23.4375rem) {
+  .projects a::before {
+    -webkit-transform-origin: 0% 50%;
+    -ms-transform-origin: 0% 50%;
+    transform-origin: 0% 50%;
+    background-size: 200%;
+  }
+}
+
+.projects a:nth-child(1)::before {
+  background-image: none;
+}
+.projects a:nth-child(2)::before {
+  background-image: url("./img/velux.jpg");
+}
+.projects a:nth-child(3)::before {
+  background-image: url("./img/ph.jpg");
+}
+.projects a:nth-child(4)::before {
+  background-image: url("./img/orb.jpg");
+}
+.projects a:nth-child(5)::before {
+  background-image: none;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer span a svg {
+  fill: white;
+}
+
+.tag-line {
+  padding: 1rem 0;
+  color: #757973;
+}
