@@ -9,19 +9,20 @@ body {
 }
 
 header {
-  height: 5rem;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
+  margin: 2rem 0;
 }
 
 header a {
-  height: 5rem;
+  height: auto;
   width: 3rem;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
 }
 
 header svg {
@@ -67,7 +68,7 @@ h5 {
   justify-content: space-between;
   width: 140%;
   margin-left: -4rem;
-  margin-bottom: 25vh;
+  margin-bottom: 2rem;
 }
 
 .separator span {
@@ -79,80 +80,48 @@ h5 {
   -moz-transform: skew(315deg, 360deg);
 }
 
+.technology-stack {
+  color: #757973;
+  margin: 2rem 0;
+}
+
 .projects {
   display: flex;
   justify-content: space-between;
   margin: 1rem 0;
-  width: 140%;
-  margin-left: -15vw;
+  width: 100%;
+  margin-bottom: auto;
 }
 
 .projects a {
-  transform: skew(315deg, 360deg);
-  -webkit-transform: skew(315deg, 360deg);
-  -moz-transform: skew(315deg, 360deg);
-  width: 25vw;
-  height: 25vh;
+  width: 20vw;
+  height: 20vh;
+  padding: 0.25rem;
   border: 2px solid #555953;
-
-  position: relative;
-  overflow: hidden;
-
-  -webkit-transform-origin: 0 30%;
-  -ms-transform-origin: 0 30%;
-  transform-origin: 0 30%;
-}
-
-.projects a::before {
-  content: "";
-  transform: skew(-315deg, -360deg);
-  -webkit-transform: skew(-315deg, -360deg);
-  -moz-transform: skew(-315deg, -360deg);
-
   background-repeat: no-repeat;
   background-position: 0 100%;
-  background-size: 150%;
-
-  position: absolute;
-  -webkit-transform-origin: 0% 70%;
-  -ms-transform-origin: 0% 70%;
-  transform-origin: 0% 70%;
-  width: 100vw;
-  height: 60vh;
+  background-size: cover;
+  background-position: center center;
+  margin: 1rem;
 }
 
-@media (min-width: 80.625rem) {
-  .projects a::before {
-    -webkit-transform-origin: 0% 60%;
-    -ms-transform-origin: 0% 60%;
-    transform-origin: 0% 60%;
-    background-size: 70%;
-  }
+.projects a:nth-child(1) {
+  background-image: url("./img/9a.jpg");
+  margin-left: 0;
 }
 
-@media (max-width: 23.4375rem) {
-  .projects a::before {
-    -webkit-transform-origin: 0% 50%;
-    -ms-transform-origin: 0% 50%;
-    transform-origin: 0% 50%;
-    background-size: 200%;
-  }
-}
-
-.projects a:nth-child(1)::before {
-  background-image: none;
-}
-.projects a:nth-child(2)::before {
+.projects a:nth-child(2) {
   background-image: url("./img/velux.jpg");
 }
-.projects a:nth-child(3)::before {
+.projects a:nth-child(3) {
   background-image: url("./img/ph.jpg");
 }
-.projects a:nth-child(4)::before {
+.projects a:nth-child(4) {
   background-image: url("./img/orb.jpg");
 }
-.projects a:nth-child(5)::before {
-  background-image: none;
+.projects a:nth-child(5) {
+  background-image: url("./img/lenovo.jpg");
+  margin-right: 0;
 }
 
 footer {
