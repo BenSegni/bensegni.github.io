@@ -57,10 +57,13 @@ h2 {
 
 h5 {
   color: #757973;
+  padding: 1rem 0;
 }
 
 ul {
   padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 ul li {
@@ -77,7 +80,6 @@ ul li {
   justify-content: space-between;
   width: 140%;
   margin-left: -4rem;
-  margin-bottom: 2rem;
 }
 
 .separator span {
@@ -90,15 +92,12 @@ ul li {
 }
 
 .technology-stack {
-  color: #757973;
-  margin: 2rem 0;
+  color: #bec3bc;
 }
 
 .projects {
   display: flex;
   justify-content: space-between;
-  margin: 1rem 0;
-  margin-bottom: auto;
 }
 
 .projects span {
@@ -165,7 +164,23 @@ footer span a svg {
 
 .tag-line {
   padding: 1rem 0;
-  color: #757973;
+  color: #bec3bc;
+}
+
+@media (max-width: 768px) {
+  .projects {
+    flex-direction: column;
+  }
+
+  .projects span {
+    width: 100%;
+    margin: 0.25rem 0;
+  }
+
+  .projects span a {
+    margin-left: auto;
+    margin-right: 0.75rem;
+  }
 }
 
 @media (max-width: 1440px) {
