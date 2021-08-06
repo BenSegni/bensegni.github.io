@@ -58,6 +58,14 @@ h5 {
   color: #757973;
 }
 
+ul {
+  padding: 0;
+}
+
+ul li {
+  padding: 0.5rem 0;
+}
+
 .role {
   padding: 1rem 0;
   color: #757973;
