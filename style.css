@@ -12,7 +12,7 @@ header {
   height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   margin: 2rem 0;
 }
@@ -26,7 +26,7 @@ header a {
 }
 
 header svg {
-  fill: white;
+  fill: #757973;
 }
 
 section {
@@ -81,7 +81,7 @@ ul li {
 }
 
 .separator span {
-  width: 10vw;
+  width: 11vw;
   height: 10vh;
   background-color: #555953;
   transform: skew(315deg, 360deg);
@@ -160,7 +160,7 @@ footer {
 }
 
 footer span a svg {
-  fill: white;
+  fill: #757973;
 }
 
 .tag-line {
@@ -168,7 +168,7 @@ footer span a svg {
   color: #757973;
 }
 
-@media (max-width: 83.75rem) {
+@media (max-width: 1440px) {
   .projects span a {
     width: 2rem;
     height: 2rem;
@@ -181,5 +181,17 @@ footer span a svg {
   .projects span a svg {
     padding: 0;
     fill: #d1dc0a;
+  }
+}
+
+@media (min-width: 1024px) {
+  .separator span {
+    width: 12vw;
+  }
+}
+
+@media (min-width: 1024px) {
+  .separator span {
+    width: 12vw;
   }
 }
