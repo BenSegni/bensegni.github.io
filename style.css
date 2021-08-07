@@ -21,8 +21,8 @@ header a {
   height: auto;
   width: 3rem;
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
 }
 
 header svg {
