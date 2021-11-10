@@ -1,8 +1,8 @@
 body {
-  background-color: #323630;
-  color: #555953;
+  background-color: white;
+  color: black;
   font-size: 16px;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,19 @@ header svg {
 }
 
 section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   overflow-x: hidden;
+}
+
+section img {
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  border-radius: 15rem;
+  margin-bottom: 2rem;
+  border: 1px solid #ccc;
 }
 
 h1,
@@ -38,7 +50,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Orbitron", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   text-transform: uppercase;
   padding: 0;
   margin: 0;
@@ -47,16 +59,16 @@ h5 {
 
 h1 {
   font-size: 2rem;
-  color: #757973;
+  color: black;
 }
 
 h2 {
-  color: #d1dc0a;
+  color: black;
   font-size: 4rem;
 }
 
 h5 {
-  color: #757973;
+  color: black;
   padding: 1rem 0;
 }
 
@@ -72,27 +84,7 @@ ul li {
 
 .role {
   padding: 1rem 0;
-  color: #757973;
-}
-
-.separator {
-  display: flex;
-  justify-content: space-between;
-  width: 140%;
-  margin-left: -4rem;
-}
-
-.separator span {
-  width: 11vw;
-  height: 10vh;
-  background-color: #555953;
-  transform: skew(315deg, 360deg);
-  -webkit-transform: skew(315deg, 360deg);
-  -moz-transform: skew(315deg, 360deg);
-}
-
-.technology-stack {
-  color: #bec3bc;
+  color: black;
 }
 
 .projects {
@@ -101,10 +93,10 @@ ul li {
 }
 
 .projects span {
-  width: 20vw;
-  height: 20vh;
+  width: 10rem;
+  height: 10rem;
   padding: 0.25rem;
-  border: 2px solid #555953;
+  border: 1px solid #ccc;
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-size: cover;
@@ -121,15 +113,14 @@ ul li {
   background-color: #323630;
   padding: 0.25rem;
   color: #d1dc0a;
-  font-family: "Orbitron", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 0.75rem;
   text-decoration: none;
-  text-transform: uppercase;
 }
 
 .projects span a svg {
   fill: white;
-  padding-right: 0.75rem;
+  padding-right: 0.25rem;
 }
 
 .projects span:nth-child(1) {
@@ -164,11 +155,12 @@ footer span a svg {
 
 .tag-line {
   padding: 1rem 0;
-  color: #bec3bc;
+  color: black;
 }
 
 @media (max-width: 768px) {
   .projects {
+    width: 95%;
     flex-direction: column;
   }
 
@@ -207,6 +199,6 @@ footer span a svg {
 
 @media (min-width: 1024px) {
   .separator span {
-    width: 12vw;
+    width: 100vw;
   }
 }
