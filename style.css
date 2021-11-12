@@ -160,7 +160,7 @@ footer span a svg {
 
 @media (max-width: 768px) {
   .projects {
-    width: 95%;
+    width: 100%;
     flex-direction: column;
   }
 
