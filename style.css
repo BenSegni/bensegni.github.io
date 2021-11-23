@@ -87,9 +87,15 @@ ul li {
   color: black;
 }
 
-.projects {
+.projects,
+.skills {
   display: flex;
   justify-content: space-between;
+}
+
+.skills li {
+  display: block;
+  padding: 1rem;
 }
 
 .projects span {
@@ -159,6 +165,10 @@ footer span a svg {
 }
 
 @media (max-width: 768px) {
+  .skills {
+    display: none;
+  }
+
   .projects {
     width: 100%;
     flex-direction: column;
