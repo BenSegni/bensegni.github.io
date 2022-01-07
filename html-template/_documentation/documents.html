@@ -1,0 +1,368 @@
+<html lang="en">
+  <head>
+    <!--don't need to publish this, you can delete it or keep...up to you!-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../favicon-16x16.png"
+    />
+    <link rel="manifest" href="../site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Documentation</title>
+    <style>
+      body {
+        font-size: 16px;
+        padding: 0;
+        margin: 0;
+        line-height: 1.5rem;
+        width: 100%;
+      }
+      .wrapper {
+        width: 40vw;
+        margin: 0 auto;
+        background-color: rgba(30, 66, 47, 0.6);
+        color: white;
+        padding: 2rem;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+
+      pre {
+        background: rgba(30, 66, 47, 1);
+        word-wrap: break-word;
+        padding: 1rem;
+        border: 1px solid grey;
+      }
+
+      code {
+        display: block;
+        font-size: 0.75rem;
+        width: 100%;
+      }
+
+      a {
+        color: rgba(30, 66, 47, 1);
+      }
+
+      @media (min-width: 768px) and (max-width: 1279px) {
+        .wrapper {
+          width: 100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Documentation</h1>
+      <h2>Thanks for Downloading!</h2>
+      <p>
+        Firstly, thanks for downloading this template and I hope you enjoy
+        working with it.
+      </p>
+      <p>
+        This page should guide you through updating the template to making it
+        your own. Please read the documentation carefully &amp; once you have
+        made changes, you should be able to upload the folder to your server!
+      </p>
+      <p>
+        NB: For best experience, have these documents displayed on a Desktop or
+        Tablet.
+      </p>
+      <h3>Development Environment</h3>
+      <p>
+        In order to alter the content and look and feel. It is recommended to
+        use
+        <a href="https://code.visualstudio.com/download" target="_blank"
+          >Visual Studio Code (Free Download)</a
+        >
+        &amp; Install the Extension
+        <a
+          href="https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer"
+          target="_blank"
+          ><q>Live Server</q></a
+        >.
+        <br />
+        <br />
+        Once you have installed the software and extension, open the folder in
+        VS Code, click the
+        <q>Go Live</q> icon in the bottom right of the Visual Studio Code
+        screen. This will open the index.html page.
+      </p>
+      <h3>Project Structure</h3>
+      <ul>
+        <li>
+          index.html - this is the template/home page
+          <ul>
+            <li>
+              img: icons (overwrite them, rather than remove them) and also your
+              _logo.png/.jpg (overwrite, don't remove and replace)
+            </li>
+            <li>
+              css: styling, you can edit the class instructions all you want.
+            </li>
+            <li>
+              js: DOM Renderer script - best leave this alone unless you're
+              comfortable with JavaScript.
+            </li>
+            <li>
+              json - your template data
+              <ul>
+                <li>hero.json - text and links for the hero of the page</li>
+                <li>images.json - images you want to set on your page</li>
+                <li>social.json - social media icons and links</li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li>
+          documentation/documents.html - the documentation (You're here right
+          now!)
+          <ul>
+            <li>Keep this for reference, but don't publish to your server.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Hero Section</h3>
+      <img src="./img/hero.png" alt="hero image" />
+      <p>
+        This section is editable via the <strong>hero.json</strong>,
+        <strong>images.json</strong>
+      </p>
+      <pre>
+       <code>
+        {
+          "title": "Hi!. I'm a Flexible HTML Template!",
+          "subTitle": "Change Me to whatever you need!",
+          "link": "add your https://... link to whatever",
+          "linkText": "Read My Documentation"
+        }
+      </code>
+      </pre>
+      <p>
+        Change the values of each property of this object to what you need. NB:
+        Don't change the property names though! <br /><br />
+        e.g:
+      </p>
+      <pre>
+        <code>
+          "title": "Change ME",
+          "DO NOT CHANGE ME!": "Hi!. I'm a Flexible HTML Template!",
+        </code>
+      </pre>
+      <p>To change the background image of the hero...</p>
+      <pre>
+        <code>
+          {
+            "heroImage": "https://link-to-your-image or img in top level img directory",
+            "profileImages": [
+              //we will come to these later...
+            ]
+          }
+        </code>
+       </pre>
+      <p>
+        Just change heroImage and this will alter the background image. NB: Use
+        a nice big picture. Smaller images will appear blurry. If you need to
+        compress the image, I recommend:
+        <a href="https://compressjpeg.com/" target="_blank">JPEG Compress</a> or
+        <a href="https://compresspng.com/" target="_blank">PNG Compress</a> to
+        bring down the size of your images.
+      </p>
+      <h3>Profiles/Projects Section</h3>
+      <img src="./img/profile.png" alt="hero image" />
+      <p>
+        This is a flexible section where you can display links to projects,
+        events, or other sites and is editable via the images.json
+      </p>
+      <pre>
+        <code>
+          {
+            "heroImage": "//this has been done in the above section",
+            "profileImages": [
+              {
+                "image": "link to your image either https://link or local img directory",
+                "title": "A lovely Forest",
+                "text": "your description",
+                "date": "22-01-01", <--FORMAT: YYYY/MM/DD optional - place 'null' where not required
+                "link": "https://www.bbc.co.uk/news",
+                "linkText": "Read Me"
+              },
+              {
+                "image": "link to your image either https://link or local img directory",
+                "title": "A Forest",
+                "text": "your description",
+                "date": "22-01-01",
+                "link": "https://www.bbc.co.uk/news",
+                "linkText": "Read Me"
+              },
+              {
+                "image": "link to your image either https://link or local img directory",
+                "title": "Some trees",
+                "text": "your description",
+                "date": "22-01-01",
+                "link": "https://www.bbc.co.uk/news",
+                "linkText": "Read Me"
+              }
+            ]
+          }
+        </code>
+      </pre>
+      <p>
+        Alter the values of this profileImages Object Array. You can have as
+        many of these as you like, just copy &amp; paste one of the objects into
+        the array.
+      </p>
+      <p>
+        NB: Rememember to comma separate the objects, otherwise, it'll break:
+      </p>
+      <pre>
+        <code>
+          array: [
+            {
+              prop: val
+            },<--this comma here is important!
+            {
+              prop: val2
+            }
+          ]
+        </code>
+      </pre>
+      <h3>Social Icons</h3>
+      <img src="./img/social-icons.png" alt="social icons bar" />
+      <p>
+        This section displays up to 16 different social media sites. These are
+        configurable via the social.json. Just add your details into the
+        objects. Remove the ones you don't use, and they will render in the
+        navigation.
+      </p>
+      <pre>
+        <code>
+          {
+            "socialLinks": [
+              {
+                "type": "twitter",
+                "link": "https://twitter.com"
+              },
+              {
+                "type": "facebook",
+                "link": "https://www.facebook.com"
+              },
+              {
+                "type": "linkedin",
+                "link": "https://www.linkedin.com"
+              },
+              {
+                "type": "instagram",
+                "link": "https://www.instagram.com"
+              },
+              {
+                "type": "whatsapp",
+                "link": "https://www.whatsapp.com/download"
+              },
+              {
+                "type": "youtube",
+                "link": "https://youtube.com"
+              },
+              {
+                "type": "pinterest",
+                "link": "https://pinterest.com"
+              },
+              {
+                "type": "vimeo",
+                "link": "https://vimeo.com"
+              },
+              {
+                "type": "snapchat",
+                "link": "https://www.snapchat.com/"
+              },
+              {
+                "type": "slack",
+                "link": "https://www.slack.com"
+              },
+              {
+                "type": "behance",
+                "link": "https://behance.net"
+              },
+              {
+                "type": "medium",
+                "link": "https://medium.com"
+              },
+              {
+                "type": "reddit",
+                "link": "https://reddit.com"
+              },
+              {
+                "type": "dribbble",
+                "link": "https://dribbble.com"
+              },
+              {
+                "type": "messenger",
+                "link": "https://www.messenger.com/"
+              },
+              {
+                "type": "tumblr",
+                "link": "https://tumblr.com"
+              }
+            ]
+          }
+        </code>
+      </pre>
+      <p>
+        NB: If you remove say...facebook and need it later on, make sure you set
+        the type: to lowercase e.g <q>facebook</q> NOT <q>Facebook/FACEBOOK</q>,
+        as this helps to render images set in the directory for your icons.
+      </p>
+      <p>
+        In Mobile, these links appear in the footer, on Desktop in the Nav Bar.
+        But if you want to alter the css to display both, you can.
+      </p>
+      <h3>CSS</h3>
+      <img src="./img/css-variables.png" alt="css code" />
+      <p>
+        There are some variables which control the colors &amp; font families
+        set at the top of the style.css file. This can be found in the css
+        directory. You can extend this as much as you want.
+      </p>
+      <p>
+        If your using google fonts, there are some comments in the index.html to
+        show you where to set the links in the head tag of the document.
+      </p>
+      <img src="./img/google-fonts.png" alt="google fonts html code" />
+      <p>
+        This stylesheet you can play with, but the classes are baked into the
+        script, so don't change the class names, just alter what is happening
+        within each class.
+      </p>
+      <h3>Conclusion</h3>
+      <p>
+        Well, that's about it. Once you get rolling with the objects, you'll see
+        how easy it is to create your content. If you have any questions, get in
+        touch.
+      </p>
+      <p>Enjoy!</p>
+    </div>
+  </body>
+</html>
