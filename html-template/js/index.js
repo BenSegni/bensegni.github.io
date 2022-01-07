@@ -42,15 +42,13 @@ createSocialMediaButtons = (button) => {
   nav.appendChild(link);
   //add click event to logo
   const logo = document.querySelector(".logo");
-  if (window.screenY > 50) {
-    logo.onclick = () => {
-      window.scrollTo({
-        top: 0,
-        left: 0,
-        behavior: "smooth",
-      });
-    };
-  }
+  logo.onclick = () => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "smooth",
+    });
+  };
 };
 /**
  * get hero data and create elements
