@@ -15,7 +15,7 @@ assignSocialMedia = () => {
   //create a logo for the site
   const logo = document.createElement("img");
   logo.classList.add("logo");
-  logo.src = `./img/_logo${".png" ? ".png" : ".jpg"}`;
+  logo.src = `./img/logo${".png" ? ".png" : ".jpg"}`;
   nav.appendChild(logo);
   fetch("./json/social.json")
     .then((social) => {
