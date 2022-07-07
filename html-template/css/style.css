@@ -1,17 +1,17 @@
 /**boiler plate styling - change if you need**/
 :root {
-  --header-font-family: "Lobster", cursive;
+  --header-font-family: "Bebas Neue", cursive;
   --body-font-family: "Montserrat", sans-serif;
   --body-font-color: rgb(102, 102, 102);
-  --headers: rgb(30, 66, 47);
-  --textshadow: rgb(108, 151, 144);
+  --headers: rgb(43, 43, 43);
+  --textshadow: rgb(163, 163, 163);
   --title: white;
-  --textbox: rgba(30, 66, 47, 0.6);
-  --button: rgb(30, 66, 47);
+  --textbox: rgba(31, 31, 31, 0.6);
+  --button: rgb(31, 31, 31);
   --link-color: rgb(30, 66, 47);
   --link-text: white;
-  --nav-background: rgba(30, 66, 47, 0.8);
-  --footer-background: rgb(29, 48, 38);
+  --nav-background: rgba(240, 240, 240, 0.8);
+  --footer-background: rgb(41, 41, 41);
 }
 
 ::selection {
@@ -80,11 +80,11 @@ h5 {
 }
 
 .icon img {
-  filter: invert(100%);
+  filter: invert(0%);
 }
 
 .icon img:hover {
-  filter: invert(0%);
+  filter: invert(50%);
 }
 
 .hero {
@@ -112,7 +112,7 @@ h5 {
 .hero-wrapper p {
   background-color: var(--textbox);
   padding: 2rem;
-  line-height: 1.5rem;
+  line-height: 1.95rem;
 }
 
 .hero-wrapper h1 {
@@ -129,9 +129,8 @@ h5 {
   color: white;
   text-shadow: 2px 2px var(--textshadow);
   text-decoration: none;
-  border-radius: 0.5rem;
   padding: 1rem 2rem;
-  background-color: rgb(30, 66, 47);
+  background-color: var(--button);
 }
 
 .profile {
@@ -169,7 +168,7 @@ h5 {
 }
 
 .link {
-  color: var(--textbox);
+  color: var(--title);
   text-decoration: none;
   font-family: var(--header-font-family);
   text-shadow: 1.2px 1.2px var(--headers);
@@ -177,9 +176,8 @@ h5 {
   width: auto;
   margin: 2rem auto 0 auto;
   padding: 0.75rem 1rem;
-  background-color: var(--textshadow);
+  background-color: var(--body-font-color);
   text-align: center;
-  border-radius: 0.25rem;
 }
 
 .footer {
@@ -250,7 +248,7 @@ h5 {
   }
 
   .profile-image {
-    background-size: 40rem 40rem;
+    background-size: 40rem 24rem;
     height: 18.75rem;
   }
 
@@ -263,7 +261,7 @@ h5 {
 
   .link {
     color: var(--link-text);
-    background-color: var(--link-color);
+    background-color: var(--button);
     text-shadow: 1.2px 1.2px var(--textshadow);
     margin: 2rem auto 0 0;
   }
