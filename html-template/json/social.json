@@ -2,68 +2,12 @@
   "__readme__": "Configured for twitter, facebook, linkedin, instagram, behance, dribbble, messenger, pinterest, reddit, slack, snapchat, youtube, whatsapp, vimeo, tumblr",
   "socialLinks": [
     {
-      "type": "twitter",
-      "link": "https://twitter.com"
-    },
-    {
-      "type": "facebook",
-      "link": "https://www.facebook.com"
-    },
-    {
       "type": "linkedin",
       "link": "https://www.linkedin.com"
     },
     {
-      "type": "instagram",
-      "link": "https://www.instagram.com"
-    },
-    {
-      "type": "whatsapp",
-      "link": "https://www.whatsapp.com/download"
-    },
-    {
-      "type": "youtube",
-      "link": "https://youtube.com"
-    },
-    {
-      "type": "pinterest",
-      "link": "https://pinterest.com"
-    },
-    {
-      "type": "vimeo",
-      "link": "https://vimeo.com"
-    },
-    {
-      "type": "snapchat",
-      "link": "https://www.snapchat.com/"
-    },
-    {
-      "type": "slack",
-      "link": "https://www.slack.com"
-    },
-    {
       "type": "behance",
       "link": "https://behance.net"
-    },
-    {
-      "type": "medium",
-      "link": "https://medium.com"
-    },
-    {
-      "type": "reddit",
-      "link": "https://reddit.com"
-    },
-    {
-      "type": "dribbble",
-      "link": "https://dribbble.com"
-    },
-    {
-      "type": "messenger",
-      "link": "https://www.messenger.com/"
-    },
-    {
-      "type": "tumblr",
-      "link": "https://tumblr.com"
     }
   ]
 }

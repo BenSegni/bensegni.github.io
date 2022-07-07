@@ -1,7 +1,7 @@
 {
   "__readme__": "edit this text & link to show in the browser, if you dont want a button just add null to link and linkText",
-  "title": "Hi!. I'm a Flexible HTML Template!",
-  "subTitle": "I'm mobile, stylable & easily configurable! I just need someone who can configure JSON, tweak CSS and I'm all yours!",
-  "link": "./documentation/documents.html",
-  "linkText": "Read My Documentation"
+  "title": "Hi!. I'm Ben. I'm a UI Developer & Designer!",
+  "subTitle": "I'm a Lead Javascript Developer based in Durham. I build stuff with Angular & love Unit Testing!",
+  "link": "https://www.linkedin.com/in/bensegni/",
+  "linkText": "Connect"
 }
