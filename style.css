@@ -104,6 +104,26 @@ ul li {
     border-radius: 2rem;
 }
 
+.skill-pills-mini {
+    list-style: none;
+    display: flex;
+    margin: 1rem 0 0 1rem;
+    width: auto;
+}
+
+.skill-pills-mini li {
+    display: block;
+    height: 1rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.75);;
+    border: 0.125rem solid;
+    margin-right: 1rem;
+    padding: 0.45rem 1rem;
+    border-radius: 2rem;
+}
+
 .role {
     padding: 1rem 0;
 }
@@ -129,14 +149,13 @@ ul li {
     background-position: center center;
     margin: 0 0 0.45rem 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: flex-end;
 }
 
 .projects span a {
     display: flex;
     align-items: center;
-    height: 100%;
     width: 20rem;
     padding: 0.25rem;
     margin-left: auto;
@@ -224,12 +243,15 @@ footer span a svg {
         margin: 0 1rem 1rem 1rem;
 
     }
+
+    .skill-pills-mini {
+        display: none;
+    }
 }
 
 @media (max-width: 1440px) {
     .projects span a {
         width: auto;
-        height: 100%;
         overflow: hidden;
         font-size: 0;
         justify-content: center;
