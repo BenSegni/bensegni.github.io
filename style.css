@@ -1,48 +1,54 @@
 body {
-  background-color: white;
-  color: black;
-  font-size: 16px;
-  font-family: "Source Sans Pro", sans-serif;
-  overflow-x: hidden;
-  display: flex;
-  flex-direction: column;
+    background-color: rgb(1, 15, 31);
+    color: white;
+    font-size: 16px;
+    font-family: "Source Sans Pro", sans-serif;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
 }
 
 header {
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 2rem 0;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 2rem 0;
+    padding: 1rem 0;
+    background-color: rgb(0, 42, 90);
 }
 
 header a {
-  height: auto;
-  width: 3rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    height: auto;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header svg {
-  fill: #757973;
+    fill: #fff;
 }
 
 section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-x: hidden;
+    padding: 1rem;
+    text-align: center;
 }
 
 section img {
-  display: block;
-  height: 10rem;
-  width: 10rem;
-  border-radius: 15rem;
-  margin-bottom: 2rem;
-  border: 1px solid #ccc;
+    display: block;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 15rem;
+    margin-bottom: 2rem;
 }
 
 h1,
@@ -50,165 +56,159 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: "Source Sans Pro", sans-serif;
-  text-transform: uppercase;
-  padding: 0;
-  margin: 0;
-  line-height: 100%;
-}
-
-h1 {
-  font-size: 2rem;
-  color: black;
-}
-
-h2 {
-  color: black;
-  font-size: 4rem;
-}
-
-h5 {
-  color: black;
-  padding: 1rem 0;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    padding: 1rem 0;
+    margin: 0;
+    line-height: 2.5rem;
+    color: white;
 }
 
 ul {
-  padding: 0;
-  margin: 0;
-  list-style: none;
+    padding: 0;
+    margin: 0;
+    list-style: none;
 }
 
 ul li {
-  padding: 0.5rem 0;
+    padding: 0.5rem 0;
 }
 
 .role {
-  padding: 1rem 0;
-  color: black;
+    padding: 1rem 0;
 }
 
-.projects,
-.skills {
-  display: flex;
-  justify-content: space-between;
+.projects {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
 }
 
 .skills li {
-  display: block;
-  padding: 1rem;
+    display: block;
+    padding: 1rem;
 }
 
 .projects span {
-  width: 10rem;
-  height: 10rem;
-  padding: 0.25rem;
-  border: 1px solid #ccc;
-  background-repeat: no-repeat;
-  background-position: 0 100%;
-  background-size: cover;
-  background-position: center center;
-  margin: 0.25rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+    width: 95vw;
+    height: 16rem;
+    background-repeat: no-repeat;
+    background-position: 0 100%;
+    background-size: cover;
+    background-position: center center;
+    margin: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .projects span a {
-  display: flex;
-  align-items: center;
-  background-color: #323630;
-  padding: 0.25rem;
-  color: #d1dc0a;
-  font-family: "Source Sans Pro", sans-serif;
-  font-size: 0.75rem;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 20rem;
+    padding: 0.25rem;
+    margin-left: auto;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+    background-color: rgb(0, 42, 90);
+
 }
 
 .projects span a svg {
-  fill: white;
-  padding-right: 0.25rem;
+    fill: white;
+    padding-left: 1rem;
+    padding-right: 0.25rem;
+    margin-right: 2rem;
 }
 
 .projects span:nth-child(1) {
-  background-image: url("./img/9a.jpg");
-  margin-left: 0;
+    background-image: url("./img/9a.jpg");
 }
 
 .projects span:nth-child(2) {
-  background-image: url("./img/velux.jpg");
+    background-image: url("./img/velux.jpg");
 }
+
 .projects span:nth-child(3) {
-  background-image: url("./img/ph.jpg");
+    background-image: url("./img/ph.jpg");
 }
+
 .projects span:nth-child(4) {
-  background-image: url("./img/orb.jpg");
+    background-image: url("./img/orb.jpg");
 }
+
 .projects span:nth-child(5) {
-  background-image: url("./img/lenovo.jpg");
-  margin-right: 0;
+    background-image: url("./img/lenovo.jpg");
 }
 
 footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 0 0 0;
+    padding: 1rem 0;
+    background-color: rgb(0, 42, 90);
 }
 
 footer span a svg {
-  fill: #757973;
+    fill: #fff;
 }
 
 .tag-line {
-  padding: 1rem 0;
-  color: black;
+    padding: 1rem 0;
+    color: white;
 }
 
 @media (max-width: 768px) {
-  .skills {
-    display: none;
-  }
+    .skills {
+        display: none;
+    }
 
-  .projects {
-    width: 100%;
-    flex-direction: column;
-  }
+    .projects {
+        width: 100%;
+        flex-direction: column;
+    }
 
-  .projects span {
-    width: 100%;
-    margin: 0 0 0.25rem 0;
-  }
+    .projects span {
+        width: 100%;
+        margin: 0 0 0.25rem 0;
+    }
 
-  .projects span a {
-    margin-left: auto;
-    margin-right: 0.75rem;
-  }
+    .projects span a {
+        margin-left: auto;
+    }
 }
 
 @media (max-width: 1440px) {
-  .projects span a {
-    width: 2rem;
-    height: 2rem;
-    overflow: hidden;
-    font-size: 0;
-    justify-content: center;
-    align-items: center;
-  }
+    .projects span a {
+        width: auto;
+        height: 100%;
+        overflow: hidden;
+        font-size: 0;
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+    }
 
-  .projects span a svg {
-    padding: 0;
-    fill: #d1dc0a;
-  }
+    .projects span a svg {
+        padding: 0 2rem;
+        fill: #fff;
+        margin-right: 0;
+    }
 }
 
 @media (min-width: 1024px) {
-  .separator span {
-    width: 12vw;
-  }
+    .separator span {
+        width: 12vw;
+    }
 }
 
 @media (min-width: 1024px) {
-  .separator span {
-    width: 100vw;
-  }
+    .separator span {
+        width: 100vw;
+    }
 }
