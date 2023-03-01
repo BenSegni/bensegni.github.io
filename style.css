@@ -51,6 +51,7 @@ section img {
     border-radius: 15rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
+    border: 0.25rem solid rgb(29, 34, 38);
 }
 
 h1,
