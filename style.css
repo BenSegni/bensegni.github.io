@@ -1,8 +1,9 @@
 body {
-    background-color: rgb(1, 15, 31);
+    background-color: rgba(0, 0, 0, 0.902);
     color: white;
     font-size: 16px;
-    font-family: "Source Sans Pro", sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
@@ -17,9 +18,9 @@ header {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0 0 2rem 0;
+    margin: 0;
     padding: 1rem 0;
-    background-color: rgb(0, 42, 90);
+    background-color: rgb(29, 34, 38);
 }
 
 header a {
@@ -31,7 +32,7 @@ header a {
 }
 
 header svg {
-    fill: #fff;
+    fill: rgb(112, 181, 250);
 }
 
 section {
@@ -39,7 +40,7 @@ section {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    padding: 1rem;
+    padding: 0 1rem 1rem 1rem;
     text-align: center;
 }
 
@@ -49,6 +50,7 @@ section img {
     width: 10rem;
     border-radius: 15rem;
     margin-bottom: 2rem;
+    margin-top: 2rem;
 }
 
 h1,
@@ -56,8 +58,6 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: "Source Sans Pro", sans-serif;
-    text-transform: uppercase;
     padding: 1rem 0;
     margin: 0;
     line-height: 2.5rem;
@@ -74,11 +74,41 @@ ul li {
     padding: 0.5rem 0;
 }
 
+.header-section {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://media.licdn.com/dms/image/C5616AQGHShHIbQX96Q/profile-displaybackgroundimage-shrink_350_1400/0/1534956911400?e=1683158400&v=beta&t=ws8qJmRuKQhS5ET_TbOdqFC1Mip9hzA9q0qh3P8o0Zc');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+.skill-pills {
+    list-style: none;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.skill-pills li {
+    display: block;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.75);
+    background-color: rgb(112, 181, 250);
+    margin-right: 1rem;
+    padding: 0.45rem 1rem;
+    border-radius: 2rem;
+}
+
 .role {
     padding: 1rem 0;
 }
 
 .projects {
+    width: 100%;
     display: flex;
     flex-direction: column;
     margin-top: 3rem;
@@ -90,13 +120,13 @@ ul li {
 }
 
 .projects span {
-    width: 95vw;
+    width: 100%;
     height: 16rem;
     background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: cover;
     background-position: center center;
-    margin: 0.25rem;
+    margin: 0 0 0.45rem 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -110,19 +140,19 @@ ul li {
     padding: 0.25rem;
     margin-left: auto;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: bold;
     text-decoration: none;
-    color: #fff;
-    background-color: rgb(0, 42, 90);
+    color: rgba(0, 0, 0, 0.75);
+    background-color: rgb(112, 181, 250);
 
 }
 
 .projects span a svg {
-    fill: white;
+    fill: rgba(0, 0, 0, 0.75);
     padding-left: 1rem;
     padding-right: 0.25rem;
-    margin-right: 2rem;
+    margin-right: 1rem;
 }
 
 .projects span:nth-child(1) {
@@ -151,11 +181,11 @@ footer {
     align-items: center;
     margin: 4rem 0 0 0;
     padding: 1rem 0;
-    background-color: rgb(0, 42, 90);
+    background-color: rgb(29, 34, 38);
 }
 
 footer span a svg {
-    fill: #fff;
+    fill: rgb(112, 181, 250);
 }
 
 .tag-line {
@@ -181,6 +211,18 @@ footer span a svg {
     .projects span a {
         margin-left: auto;
     }
+
+    .skill-pills {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .skill-pills li {
+        display: block;
+        margin-bottom: 1rem;
+        margin: 0 1rem 1rem 1rem;
+
+    }
 }
 
 @media (max-width: 1440px) {
@@ -196,7 +238,7 @@ footer span a svg {
 
     .projects span a svg {
         padding: 0 2rem;
-        fill: #fff;
+        fill: rgba(0, 0, 0, 0.75);
         margin-right: 0;
     }
 }
