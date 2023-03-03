@@ -21,6 +21,7 @@ header {
     margin: 0;
     padding: 1rem 0;
     background-color: rgb(29, 34, 38);
+    position: fixed;
 }
 
 header a {
@@ -92,9 +93,36 @@ ul li {
     align-items: center;
     background-image: url('https://media.licdn.com/dms/image/C5616AQGHShHIbQX96Q/profile-displaybackgroundimage-shrink_350_1400/0/1534956911400?e=1683158400&v=beta&t=ws8qJmRuKQhS5ET_TbOdqFC1Mip9hzA9q0qh3P8o0Zc');
     background-repeat: no-repeat;
-    background-size: cover;
+    background-attachment: fixed;
+    background-size: 150%;
     padding: 3rem 0;
-    margin-bottom: 3rem;
+    padding-top: 5rem;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    margin-bottom: 2rem;
+    background-color: rgb(29, 34, 38);
+    border-bottom: 3px solid rgb(29, 34, 38);
+}
+
+.navigation li {
+    padding: 1rem;
+    border: 0;
+    cursor: pointer;
+    border-bottom: 1px solid transparent;
+}
+
+.navigation li a {
+    color: white;
+    text-decoration: none;
+}
+
+.navigation li:hover {
+    background-color: rgba(112, 181, 250, .6);
+    border-bottom: 1px solid white;
 }
 
 .skill-pills {
@@ -205,6 +233,40 @@ ul li {
     background-image: url("./img/lenovo.jpg");
 }
 
+.contact {
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-detail {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.contact-detail svg {
+    fill: white;
+    width: 3.5rem;
+    margin-bottom: auto;
+}
+
+.contact-detail h4 {
+    line-height: 1rem;
+    padding: 0;
+}
+
+.contact-detail p {
+    width: 100%;
+    text-align: left;
+    text-indent: 3.5rem;
+}
+
+.contact-detail a {
+    color: rgb(112, 181, 250);
+    text-decoration: none;
+}
+
 footer {
     display: flex;
     flex-direction: column;
@@ -224,6 +286,10 @@ footer span a svg {
 }
 
 @media (max-width: 768px) {
+    .header-section {
+        background-size: 140vmax;
+    }
+
     .skills {
         display: none;
     }
@@ -235,6 +301,7 @@ footer span a svg {
 
     .projects span {
         width: 100%;
+        height: 5rem;
         margin: 0 0 0.25rem 0;
     }
 
@@ -245,13 +312,15 @@ footer span a svg {
     .skill-pills {
         width: 100%;
         flex-direction: column;
+        align-items: center;
     }
 
     .skill-pills li {
+        width: 70vw;
         display: block;
-        margin-bottom: 1rem;
-        margin: 0 1rem 1rem 1rem;
-
+        margin: 0 1rem 0.5rem 1rem;
+        padding: 0.25rem 1rem;
+        font-size: 0.75rem;
     }
 
     .skill-pills-mini {
