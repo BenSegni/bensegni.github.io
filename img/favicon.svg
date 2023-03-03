@@ -25,12 +25,12 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="14.75"
-     inkscape:cx="8.0338983"
-     inkscape:cy="6.3050847"
+     inkscape:cx="1.3220339"
+     inkscape:cy="8.6101695"
      inkscape:window-width="1728"
-     inkscape:window-height="1080"
+     inkscape:window-height="998"
      inkscape:window-x="0"
-     inkscape:window-y="37"
+     inkscape:window-y="38"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
@@ -61,7 +61,7 @@
        d="m 1.373559,1.8748211 h 0.6552566 q 0.2666502,0 0.3824053,-0.03514 0.1529621,-0.045475 0.2294432,-0.150895 0.078548,-0.1054199 0.078548,-0.2645831 0,-0.1508951 -0.072347,-0.2645831 Q 2.5745183,1.0438647 2.4401597,1.0025236 2.3058011,0.95911546 1.9792063,0.95911546 H 1.373559 Z"
        id="path1064" />
     <path
-       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#ffffff;stroke-width:0.622565"
+       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#1d2226;stroke-width:0.622565;fill-opacity:1"
        d="M 0.97255025,3.6318183 V 0.60151485 H 2.1094308 q 0.3472653,0 0.5560379,0.0930175 0.2108397,0.0909505 0.3286619,0.28318661 0.1198892,0.19016914 0.1198892,0.39894174 0,0.1943032 -0.1054198,0.3658688 -0.1054199,0.1715656 -0.3183266,0.2769855 0.2749184,0.080615 0.4216793,0.2749184 0.148828,0.1943032 0.148828,0.4588863 0,0.2129067 -0.09095,0.3968747 -0.088884,0.1819008 -0.2211753,0.2811195 -0.1322916,0.099219 -0.332796,0.1508951 -0.1984373,0.049609 -0.4878251,0.049609 z"
        id="path1056" />
   </g>
