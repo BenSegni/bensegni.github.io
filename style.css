@@ -233,6 +233,26 @@ ul li {
     background-image: url("./img/lenovo.jpg");
 }
 
+.about-blurb {
+    width: 50vw;
+    line-height: 1.5rem;
+}
+
+.about {
+    width: 50vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.about img {
+    height: 1.5rem;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    margin-right: 2rem;
+}
+
 .contact {
     width: 40vw;
     display: flex;
