@@ -416,7 +416,8 @@ footer span a svg {
         width: 50%;
     }
 
-    .about, .about-blurb {
+    .about,
+    .about-blurb {
         width: 90vw;
     }
 }
