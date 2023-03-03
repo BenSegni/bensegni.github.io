@@ -47,11 +47,11 @@ section {
 
 section img {
     display: block;
-    height: 10rem;
-    width: 10rem;
+    height: 6rem;
+    width: 6rem;
     border-radius: 15rem;
     margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-top: 1rem;
     border: 0.25rem solid rgb(29, 34, 38);
 }
 
@@ -91,12 +91,12 @@ ul li {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 3rem 0;
+    padding-top: 5rem;
     background-image: url('https://media.licdn.com/dms/image/C5616AQGHShHIbQX96Q/profile-displaybackgroundimage-shrink_350_1400/0/1534956911400?e=1683158400&v=beta&t=ws8qJmRuKQhS5ET_TbOdqFC1Mip9hzA9q0qh3P8o0Zc');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: 150%;
-    padding: 3rem 0;
-    padding-top: 5rem;
+    background-size: 100%;
 }
 
 .navigation {
@@ -360,7 +360,7 @@ footer span a svg {
 
 @media (max-width: 768px) {
     .header-section {
-        background-size: 140vmax;
+        background-size: 250vmax;
     }
 
     .skills {
