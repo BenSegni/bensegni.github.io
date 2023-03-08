@@ -378,6 +378,7 @@ footer span a svg {
 
 @media (max-width: 768px) {
     .header-section {
+        width: 95vw;
         background-size: 250vmax;
     }
 
