@@ -378,8 +378,11 @@ footer span a svg {
 
 @media (max-width: 768px) {
     .header-section {
-        width: 95vw;
         background-size: 250vmax;
+    }
+
+    .header-section p {
+        width: 95vw;
     }
 
     .skills {
