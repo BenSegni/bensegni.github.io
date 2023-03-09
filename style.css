@@ -517,6 +517,10 @@ footer {
         text-align: center;
     }
 
+    .current-project-insert img {
+        margin-right: 0rem;
+    }
+
     .current-project-header {
         flex-wrap: wrap;
         justify-content: center;
