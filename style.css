@@ -194,7 +194,8 @@ h5,
 .project-blurb h4,
 .current-project-header span,
 .current-project-insert h5,
-.contact-detail a {
+.contact-detail a,
+.about-blurb a {
     color: rgb(112, 181, 250);
 }
 
@@ -248,6 +249,7 @@ ul,
 
 .navigation li,
 .about img,
+.about-blurb a,
 .current-project-header img {
     border: 0;
 }
@@ -411,6 +413,11 @@ a {
     flex-shrink: 1;
 }
 
+.projects span a:hover {
+    color: rgba(0, 0, 0, 0.75);
+    background-color: white;
+}
+
 .projects span:nth-child(1) {
     background-image: url("./img/9a.jpg");
 }
@@ -439,6 +446,15 @@ a {
     line-height: 1.5rem;
 }
 
+.about-blurb a {
+    border-bottom: 1px dotted rgba(112, 181, 250, .65)
+}
+
+.about-blurb a:hover {
+    color: rgba(112, 181, 250, .65);
+    border-color: white;
+}
+
 .about img {
     height: 1.5rem;
 }
@@ -451,6 +467,8 @@ a {
     border-bottom: 0.0625rem dotted white;
 }
 
+header svg:hover,
+footer span a svg:hover,
 .contact-detail svg {
     fill: white;
     width: 3.5rem;
