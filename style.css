@@ -1,58 +1,11 @@
 body {
-    background-color: rgba(0, 0, 0, 0.902);
-    color: white;
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
-    font-weight: 400;
-    overflow-x: hidden;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-    margin: 0;
 }
 
-header {
-    height: auto;
-    width: 100vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin: 0;
-    padding: 1rem 0;
-    background-color: rgb(29, 34, 38);
-    position: fixed;
-}
-
-header a {
-    height: auto;
-    width: 3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header svg {
-    fill: rgb(112, 181, 250);
-}
-
+body,
 section {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     overflow-x: hidden;
-    padding: 0 1rem 1rem 1rem;
-    text-align: center;
-}
-
-section img {
-    display: block;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 15rem;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-    border: 0.25rem solid rgb(29, 34, 38);
 }
 
 h1,
@@ -60,163 +13,401 @@ h2,
 h3,
 h4,
 h5 {
-    padding: 1rem 0;
-    margin: 0;
     line-height: 2.5rem;
-    color: white;
     letter-spacing: 0.125rem;
 }
 
+body,
+header,
+header a,
+section,
+.header-section,
+.navigation,
+.skill-pills,
+.skill-pills-mini,
+.projects,
+.project-details,
+.projects span,
+.project-blurb,
+.about,
+.current-project,
+.current-project-insert,
+.current-project-header,
+.contact,
+.contact-detail,
+footer {
+    display: flex;
+}
+
+body,
+section,
+footer,
+.header-section,
+.projects,
+.project-details,
+.projects span,
+.projects span a,
+.current-project,
+.contact {
+    flex-direction: column
+}
+
+header,
+header a,
+.header-section,
+.navigation {
+    justify-content: center;
+    align-items: center;
+}
+
+.about {
+    justify-content: center;
+}
+
+section,
+footer,
+.project-blurb,
+.current-project,
+.current-project-insert,
+.current-project-header,
+.contact-detail {
+    align-items: center;
+}
+
+.projects span,
+.project-blurb,
+.about,
+.current-project-insert,
+.contact-detail {
+    flex-wrap: wrap;
+}
+
+section img,
+.current-project img,
+.current-project-insert img,
+.current-project-header img {
+    height: 6rem;
+    width: 6rem;
+    margin-bottom: 2rem;
+}
+
+header,
+footer,
+.navigation {
+    background-color: rgb(29, 34, 38);
+}
+
+header svg,
+footer span a svg {
+    fill: rgb(112, 181, 250);
+}
+
+header,
+.header-section,
+.navigation {
+    width: 100vw;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
 ul {
-    padding: 0;
     margin: 0;
+}
+
+.projects,
+.about-blurb,
+.about,
+.current-project,
+.current-project-insert,
+.contact {
+    width: 50vw;
+}
+
+.current-project,
+.current-project-insert,
+.projects span {
+    justify-content: flex-start;
+}
+
+section img,
+.skills li,
+.skill-pills li,
+.skill-pills-mini li {
+    display: block;
+}
+
+.projects span,
+.project-blurb h4,
+.contact-detail p,
+.current-project-header {
+    width: 100%;
+}
+
+.contact-detail p,
+.project-blurb,
+.current-project-insert {
+    text-align: left;
+}
+
+section {
+    text-align: center;
+}
+
+header,
+header a,
+.projects span {
+    height: auto;
+}
+
+ul,
+.skill-pills,
+.skill-pills-mini {
     list-style: none;
+}
+
+.skill-pills-mini,
+.projects span a,
+.about img {
+    width: auto;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+.navigation li a,
+.skill-pills-mini li,
+.projects span a,
+.tag-line {
+    color: white;
+}
+
+.contact-detail a,
+.skill-pills li,
+.project-blurb h4,
+.current-project-header span,
+.current-project-insert h5,
+.contact-detail a {
+    color: rgb(112, 181, 250);
+}
+
+section img,
+.navigation,
+.current-project,
+.current-project-insert {
+    margin-bottom: 2rem;
+}
+
+
+section img,
+.skill-pills,
+.project-blurb {
+    margin-top: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+header,
+footer,
+.tag-line,
+.role {
+    padding: 1rem 0;
+}
+
+body,
+ul,
+.contact-detail h4 {
+    padding: 0;
+}
+
+::selection,
+::-moz-selection {
+    background: rgba(112, 181, 250, 0.6);
+}
+
+
+.navigation li,
+.skills li {
+    padding: 1rem;
+}
+
+.header-section,
+.projects span {
+    background-repeat: no-repeat;
+}
+
+.navigation li,
+.about img,
+.current-project-header img {
+    border: 0;
+}
+
+.about img,
+.current-project-header img {
+    border-radius: 0;
+}
+
+.skill-pills li,
+.skill-pills-mini li,
+.project-blurb {
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.skill-pills li,
+.skill-pills-mini li {
+    margin-right: 1rem;
+}
+
+.skill-pills-mini li,
+.projects span a {
+    height: 1rem;
+}
+
+body,
+.navigation li:active {
+    background-color: rgba(0, 0, 0, 0.902);
+}
+
+.project-blurb h4,
+.contact-detail h4 {
+    line-height: 1rem;
+}
+
+.current-project img,
+.current-project-insert img {
+    object-fit: contain;
+    margin-right: 2rem;
+}
+
+.current-project,
+.current-project-insert {
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+.projects span a,
+.skill-pills li,
+.skill-pills-mini li {
+    border-radius: 2rem;
+}
+
+.skill-pills li,
+.skill-pills-mini li,
+.projects span a {
+    padding: 0.45rem 1rem;
+}
+
+.skill-pills-mini li,
+.projects span a {
+    border: 0.125rem solid;
+}
+
+footer,
+.skill-pills-mini li,
+.projects span a {
+    font-size: 0.75rem;
+}
+
+body,
+.skill-pills li,
+.skill-pills-mini li,
+.projects span a {
+    font-weight: 400;
+}
+
+.skill-pills-mini,
+.project-details {
+    flex-grow: 1;
+}
+
+.about img,
+.current-project-header img {
+    margin-right: 2rem;
+}
+
+
+/** GROUPED ABOVE **/
+
+header {
+    position: fixed;
+}
+
+header a {
+    width: 3rem;
+}
+
+section {
+    padding: 0 1rem 1rem 1rem;
+}
+
+section img {
+    border-radius: 15rem;
+    border: 0.25rem solid rgb(29, 34, 38);
 }
 
 ul li {
     padding: 0.5rem 0;
 }
 
-::selection {
-    background: rgba(112, 181, 250, 0.6);
-}
-
-::-moz-selection {
-    background: rgba(112, 181, 250, 0.6);
+a {
+    text-decoration: none;
 }
 
 .header-section {
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 3rem 0;
     padding-top: 5rem;
     background-image: url('https://media.licdn.com/dms/image/C5616AQGHShHIbQX96Q/profile-displaybackgroundimage-shrink_350_1400/0/1534956911400?e=1683158400&v=beta&t=ws8qJmRuKQhS5ET_TbOdqFC1Mip9hzA9q0qh3P8o0Zc');
-    background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: 130vmax;
 }
 
 .navigation {
-    display: flex;
-    justify-content: center;
-    width: 100vw;
-    margin-bottom: 2rem;
-    background-color: rgb(29, 34, 38);
-    border-bottom: 3px solid rgb(29, 34, 38);
+    border-bottom: 0.1875rem solid rgb(29, 34, 38);
 }
 
 .navigation li {
-    padding: 1rem;
-    border: 0;
     cursor: pointer;
-    border-bottom: 1px solid transparent;
-}
-
-.navigation li a {
-    color: white;
-    text-decoration: none;
+    border-bottom: 0.0625rem solid transparent;
 }
 
 .navigation li:hover {
-    background-color: rgba(112, 181, 250, .6);
-    border-bottom: 1px solid white;
-}
-
-.navigation li:active {
-    background-color: rgba(0, 0, 0, 0.902);
-    border-bottom: 1px solid rgb(112, 181, 250);
-}
-
-.skill-pills {
-    list-style: none;
-    display: flex;
-    margin-top: 1rem;
-}
-
-.skill-pills li {
-    display: block;
-    font-weight: 400;
-    color: rgba(0, 0, 0, 0.75);
-    background-color: rgb(112, 181, 250);
-    margin-right: 1rem;
-    padding: 0.45rem 1rem;
-    border-radius: 2rem;
+    background-color: rgba(112, 181, 250, 0.6);
+    border-bottom: 0.0625rem solid white;
 }
 
 .skill-pills-mini {
-    list-style: none;
-    display: flex;
     margin: 1rem auto 0 1rem;
-    width: auto;
-    flex-grow: 1;
-}
-
-.skill-pills-mini li {
-    display: block;
-    height: 1rem;
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.75);
-    border: 0.125rem solid;
-    margin-right: 1rem;
-    padding: 0.45rem 1rem;
-    border-radius: 2rem;
-}
-
-.role {
-    padding: 1rem 0;
 }
 
 .projects {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
     margin-top: 3rem;
 }
 
 .project-details {
     height: 20rem;
-    display: flex;
-    flex-direction: column;
-    flex-grow: 1;
     justify-content: flex-end;
 }
 
-.skills li {
-    display: block;
-    padding: 1rem;
-}
-
 .projects span {
-    width: 100%;
-    height: auto;
-    background-repeat: no-repeat;
     background-position: 0 100%;
     background-size: cover;
     background-position: left center;
     margin: 0 0 2rem 0;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: flex-start;
 }
 
 .projects span a {
-    height: 1rem;
-    width: auto;
-    font-size: 0.75rem;
-    font-weight: 400;
-    color: white;
     background-color: rgba(112, 181, 250, .65);
-    border: 0.125rem solid;
-    padding: 0.45rem 1rem;
     margin-left: auto;
-    border-radius: 2rem;
-    text-decoration: none;
     flex-shrink: 1;
 }
 
@@ -241,99 +432,23 @@ ul li {
 }
 
 .project-blurb {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: left;
     padding: 0 1rem 2rem 1rem;
-    background-color: rgba(0, 0, 0, 0.75);
-    margin-top: 1rem;
-}
-
-.project-blurb h4 {
-    width: 100%;
-    line-height: 1rem;
-    color: rgb(112, 181, 250);
 }
 
 .about-blurb {
-    width: 50vw;
     line-height: 1.5rem;
-}
-
-.about {
-    width: 50vw;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
 }
 
 .about img {
     height: 1.5rem;
-    width: auto;
-    border: 0;
-    border-radius: 0;
-    margin-right: 2rem;
 }
 
-.current-project,
-.current-project-insert {
-    width: 50vw;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    padding-bottom: 1rem;
-    border-bottom: 1px solid rgb(112, 181, 250);
-    margin-bottom: 2rem;
-    line-height: 1.5rem;
-}
-
-.current-project-header {
-    display: flex;
-    align-items: center;
-}
-
-.current-project-header span {
-    color: rgb(112, 181, 250);
-}
-
-.current-project-header img {
-    height: 6rem;
-    width: 6rem;
-    border: 0;
-    border-radius: 0;
-    margin-right: 2rem;
-}
-
-.current-project img,
-.current-project-insert img {
-    height: 6rem;
-    width: 6rem;
-    object-fit: contain;
-    margin-right: 2rem;
+.current-project {
+    border-bottom: 0.0625rem solid rgb(112, 181, 250);
 }
 
 .current-project-insert {
-    display: flex;
-    flex-wrap: wrap;
-    border-bottom: 1px dotted white;
-    text-align: left;
-}
-
-.current-project-insert h5 {
-    color: rgb(112, 181, 250);
-}
-
-.contact {
-    width: 50vw;
-    display: flex;
-    flex-direction: column;
-}
-
-.contact-detail {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
+    border-bottom: 0.0625rem dotted white;
 }
 
 .contact-detail svg {
@@ -342,38 +457,12 @@ ul li {
     margin-bottom: auto;
 }
 
-.contact-detail h4 {
-    line-height: 1rem;
-    padding: 0;
-}
-
 .contact-detail p {
-    width: 100%;
-    text-align: left;
     text-indent: 3.5rem;
 }
 
-.contact-detail a {
-    color: rgb(112, 181, 250);
-    text-decoration: none;
-}
-
 footer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     margin: 4rem 0 0 0;
-    padding: 1rem 0;
-    background-color: rgb(29, 34, 38);
-}
-
-footer span a svg {
-    fill: rgb(112, 181, 250);
-}
-
-.tag-line {
-    padding: 1rem 0;
-    color: white;
 }
 
 @media (max-width: 768px) {
@@ -400,7 +489,7 @@ footer span a svg {
     }
 
     .projects span a {
-       margin-left: auto;
+        margin-left: auto;
     }
 
     .skill-pills {
@@ -426,11 +515,6 @@ footer span a svg {
         width: 90vw;
         flex-direction: column;
         text-align: center;
-    }
-
-    .current-project img,
-    .current-project-insert img {
-        margin: 0;
     }
 
     .current-project-header {
