@@ -517,6 +517,7 @@ footer {
         text-align: center;
     }
 
+    .current-project-header img,
     .current-project-insert img {
         margin-right: 0rem;
     }
