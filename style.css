@@ -451,7 +451,7 @@ a {
 }
 
 .about-blurb a {
-    border-bottom: 1px dotted rgba(112, 181, 250, .65)
+    border-bottom: 0.0625rem dotted rgba(112, 181, 250, .65)
 }
 
 .about-blurb a:hover {
