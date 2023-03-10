@@ -372,9 +372,9 @@ a {
 .header-section {
     padding: 3rem 0;
     padding-top: 5rem;
-    background-image: url('https://media.licdn.com/dms/image/C5616AQGHShHIbQX96Q/profile-displaybackgroundimage-shrink_350_1400/0/1534956911400?e=1683158400&v=beta&t=ws8qJmRuKQhS5ET_TbOdqFC1Mip9hzA9q0qh3P8o0Zc');
+    background-image: url('./img/background.jpg');
     background-attachment: fixed;
-    background-size: 130vmax;
+    background-size: 100%;
 }
 
 .navigation {
@@ -489,7 +489,7 @@ footer {
 
 @media (max-width: 768px) {
     .header-section {
-        background-size: 250vmax;
+        background-size: 100vmax;
     }
 
     .header-section p {
