@@ -450,10 +450,11 @@ a {
     line-height: 1.5rem;
 }
 
+.contact a,
 .about-blurb a {
     border-bottom: 0.0625rem dotted rgba(112, 181, 250, .65)
 }
-
+.contact a:hover,
 .about-blurb a:hover {
     color: rgba(112, 181, 250, .65);
     border-color: white;
