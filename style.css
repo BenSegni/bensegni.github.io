@@ -429,7 +429,8 @@ a {
     margin: 1rem auto 0 1rem;
 }
 
-.projects {
+.projects,
+.about img {
     margin-top: 3rem;
 }
 
@@ -494,7 +495,8 @@ a {
 }
 
 .contact a:hover,
-.about-blurb a:hover, .feedback li a:hover {
+.about-blurb a:hover,
+.feedback li a:hover {
     color: rgba(112, 181, 250, .65);
     border-color: white;
 }
