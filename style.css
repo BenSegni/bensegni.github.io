@@ -33,6 +33,7 @@ section,
 .current-project,
 .current-project-insert,
 .current-project-header,
+.feedback li,
 .contact,
 .contact-detail,
 footer {
@@ -70,7 +71,8 @@ footer,
 .current-project,
 .current-project-insert,
 .current-project-header,
-.contact-detail {
+.contact-detail,
+.feedback li {
     align-items: center;
 }
 
@@ -78,7 +80,8 @@ footer,
 .project-blurb,
 .about,
 .current-project-insert,
-.contact-detail {
+.contact-detail,
+.feedback li {
     flex-wrap: wrap;
 }
 
@@ -124,6 +127,7 @@ ul {
 .about,
 .current-project,
 .current-project-insert,
+.feedback,
 .contact {
     width: 50vw;
 }
@@ -144,13 +148,15 @@ section img,
 .projects span,
 .project-blurb h4,
 .contact-detail p,
-.current-project-header {
+.current-project-header,
+.feedback li mark {
     width: 100%;
 }
 
 .contact-detail p,
 .project-blurb,
-.current-project-insert {
+.current-project-insert,
+.feedback li {
     text-align: left;
 }
 
@@ -185,7 +191,8 @@ h5,
 .navigation li a,
 .skill-pills-mini li,
 .projects span a,
-.tag-line {
+.tag-line,
+.feedback li mark {
     color: white;
 }
 
@@ -195,7 +202,8 @@ h5,
 .current-project-header span,
 .current-project-insert h5,
 .contact-detail a,
-.about-blurb a {
+.about-blurb a,
+.feedback li small {
     color: rgb(112, 181, 250);
 }
 
@@ -239,6 +247,11 @@ ul,
 ::-moz-selection {
     color: rgba(0, 0, 0, 0.75);
     background-color: rgba(112, 181, 250, 0.6);
+}
+
+.feedback li mark {
+    background-color: rgba(112, 181, 250, 0.6);
+    padding: 0.25rem 0.5rem;
 }
 
 
@@ -299,7 +312,6 @@ body,
 .current-project,
 .current-project-insert {
     padding-bottom: 1rem;
-    line-height: 1.5rem;
 }
 
 .projects span a,
@@ -325,6 +337,12 @@ footer,
     font-size: 0.75rem;
 }
 
+.feedback li q {
+    font-weight: 300;
+    font-size: 0.80rem;
+    line-height: 1.5rem;
+}
+
 body,
 .skill-pills li,
 .skill-pills-mini li,
@@ -340,6 +358,21 @@ body,
 .about img,
 .current-project-header img {
     margin-right: 2rem;
+}
+
+.feedback li img {
+    height: 2.5rem;
+    width: auto;
+    margin: 0 1rem 0 0;
+}
+
+.feedback li {
+    border-bottom: 0.0625rem dotted rgb(112, 181, 250);
+    padding: 2rem 0;
+}
+
+.feedback li mark span {
+    color: rgba(0, 0, 0, 0.75);
 }
 
 /** GROUPED ABOVE **/
@@ -446,7 +479,10 @@ a {
     padding: 0 1rem 2rem 1rem;
 }
 
-.about-blurb {
+.about-blurb,
+.feedback li,
+.current-project,
+.current-project-insert {
     line-height: 1.5rem;
 }
 
@@ -454,6 +490,7 @@ a {
 .about-blurb a {
     border-bottom: 0.0625rem dotted rgba(112, 181, 250, .65)
 }
+
 .contact a:hover,
 .about-blurb a:hover {
     color: rgba(112, 181, 250, .65);
@@ -535,9 +572,14 @@ footer {
 
     .current-project,
     .current-project-insert {
-        width: 90vw;
         flex-direction: column;
         text-align: center;
+    }
+
+    .feedback,
+    .current-project,
+    .current-project-insert {
+        width: 90vw;
     }
 
     .current-project-header img,
