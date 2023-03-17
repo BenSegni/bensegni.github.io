@@ -203,7 +203,8 @@ h5,
 .current-project-insert h5,
 .contact-detail a,
 .about-blurb a,
-.feedback li small {
+.feedback li small,
+.feedback li a {
     color: rgb(112, 181, 250);
 }
 
@@ -487,12 +488,13 @@ a {
 }
 
 .contact a,
-.about-blurb a {
+.about-blurb a,
+.feedback li a {
     border-bottom: 0.0625rem dotted rgba(112, 181, 250, .65)
 }
 
 .contact a:hover,
-.about-blurb a:hover {
+.about-blurb a:hover, .feedback li a:hover {
     color: rgba(112, 181, 250, .65);
     border-color: white;
 }
