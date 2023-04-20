@@ -21,6 +21,10 @@ h5 {
     letter-spacing: 0.125rem;
 }
 
+.link-source h4 {
+    padding: 0;
+}
+
 body,
 header,
 header a,
@@ -34,12 +38,19 @@ section,
 .projects span,
 .project-blurb,
 .about,
+.about-tabs,
 .current-project,
 .current-project-insert,
 .current-project-header,
 .feedback li,
 .contact,
 .contact-detail,
+.resources,
+.resource,
+.link-source,
+.about-stub,
+.about-stub small,
+.about-stub span,
 footer {
     display: flex;
 }
@@ -52,8 +63,12 @@ footer,
 .project-details,
 .projects span,
 .projects span a,
+.link-source a,
 .current-project,
-.contact {
+.contact,
+.resources,
+.link-source,
+.about-stub span {
     flex-direction: column
 }
 
@@ -80,12 +95,18 @@ footer,
     align-items: center;
 }
 
+.resource,
+.about-stub {
+    align-items: flex-start;
+}
+
 .projects span,
 .project-blurb,
 .about,
 .current-project-insert,
 .contact-detail,
-.feedback li {
+.feedback li,
+.about-stub {
     flex-wrap: wrap;
 }
 
@@ -96,6 +117,10 @@ section img,
     height: 6rem;
     width: 6rem;
     margin-bottom: 2rem;
+}
+
+.resources img {
+    margin-top: 0;
 }
 
 header,
@@ -122,7 +147,8 @@ h3,
 h4,
 h5,
 header,
-ul {
+ul,
+.about-stub p {
     margin: 0;
 }
 
@@ -153,14 +179,17 @@ section img,
 .project-blurb h4,
 .contact-detail p,
 .current-project-header,
-.feedback li mark {
+.feedback li mark,
+.link-source,
+.about-stub small {
     width: 100%;
 }
 
 .contact-detail p,
 .project-blurb,
 .current-project-insert,
-.feedback li {
+.feedback li,
+.link-source {
     text-align: left;
 }
 
@@ -182,6 +211,8 @@ ul,
 
 .skill-pills-mini,
 .projects span a,
+
+.link-source a,
 .about img {
     width: auto;
 }
@@ -195,6 +226,7 @@ h5,
 .navigation li a,
 .skill-pills-mini li,
 .projects span a,
+.link-source a,
 .tag-line,
 .feedback li mark {
     color: white;
@@ -208,7 +240,8 @@ h5,
 .contact-detail a,
 .about-blurb a,
 .feedback li small,
-.feedback li a {
+.feedback li a,
+.link-source small {
     color: rgb(112, 181, 250);
 }
 
@@ -240,8 +273,15 @@ footer,
 
 body,
 ul,
-.contact-detail h4 {
+.contact-detail h4,
+.about-stub h4 {
     padding: 0;
+}
+
+.about-stub h4 {
+    text-align: left;
+    line-height: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 ::selection {
@@ -274,13 +314,23 @@ ul,
 .navigation li,
 .about img,
 .about-blurb a,
-.current-project-header img {
+.current-project-header img,
+.about-stub img {
     border: 0;
 }
 
 .about img,
-.current-project-header img {
+.current-project-header img,
+.about-stub img {
     border-radius: 0;
+}
+
+.about-stub img {
+    width: 7rem;
+    height: auto;
+    margin-right: 2rem;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .skill-pills li,
@@ -290,12 +340,14 @@ ul,
 }
 
 .skill-pills li,
-.skill-pills-mini li {
+.skill-pills-mini li,
+.resource img {
     margin-right: 1rem;
 }
 
 .skill-pills-mini li,
-.projects span a {
+.projects span a,
+.link-source a {
     height: 1rem;
 }
 
@@ -321,6 +373,7 @@ body,
 }
 
 .projects span a,
+.link-source a,
 .skill-pills li,
 .skill-pills-mini li {
     border-radius: 2rem;
@@ -328,18 +381,21 @@ body,
 
 .skill-pills li,
 .skill-pills-mini li,
-.projects span a {
+.projects span a,
+.link-source a {
     padding: 0.45rem 1rem;
 }
 
 .skill-pills-mini li,
-.projects span a {
+.projects span a,
+.link-source a {
     border: 0.125rem solid;
 }
 
 footer,
 .skill-pills-mini li,
-.projects span a {
+.projects span a,
+.link-source a {
     font-size: 0.75rem;
 }
 
@@ -352,7 +408,8 @@ footer,
 body,
 .skill-pills li,
 .skill-pills-mini li,
-.projects span a {
+.projects span a,
+.link-source a {
     font-weight: 400;
 }
 
@@ -373,15 +430,42 @@ body,
 }
 
 .feedback li {
-    border-bottom: 0.0625rem dotted rgb(112, 181, 250);
     padding: 2rem 0;
+}
+
+.about-stub span h4,
+.feedback li {
+    border-bottom: 0.0625rem dotted rgb(112, 181, 250);
+}
+
+.about-stub span small {
+    padding-top: 1rem;
 }
 
 .feedback li mark span {
     color: rgba(0, 0, 0, 0.75);
 }
 
+.about-stub {
+    text-align: left;
+    margin: 2rem 0;
+}
+
+.about-stub span .honors {
+    margin: 1rem 0;
+    color: rgb(112, 181, 250);
+}
+
+.about-stub .about-detail {
+    padding-left: 9rem;
+    list-style: square;
+}
+
 /** GROUPED ABOVE **/
+
+.link-source a {
+    margin-top: 1rem;
+}
 
 header {
     position: fixed;
@@ -451,13 +535,15 @@ a {
     margin: 0 0 2rem 0;
 }
 
-.projects span a {
+.projects span a,
+.link-source a {
     background-color: rgba(112, 181, 250, .65);
     margin-left: auto;
     flex-shrink: 1;
 }
 
-.projects span a:hover {
+.projects span a:hover,
+.link-source a:hover {
     color: rgba(0, 0, 0, 0.75);
     background-color: white;
 }
@@ -534,6 +620,28 @@ footer {
     margin: 4rem 0 0 0;
 }
 
+.about-tabs {
+    width: 50vw;
+    justify-content: space-evenly;
+    cursor: pointer;
+    text-align: center;
+}
+
+.about-tabs h2 {
+    color: rgb(115, 139, 157);
+    min-width: 12rem;
+}
+
+.about-tabs h2.active {
+    color: white;
+}
+
+.tab-content {
+    display: none;
+    padding: 6px 12px;
+    border-top: none;
+}
+
 @media (max-width: 768px) {
     .header-section {
         background-size: 100vmax;
@@ -547,9 +655,30 @@ footer {
         display: none;
     }
 
-    .projects {
+    .projects,
+    .about-stub,
+    .about-tabs {
         width: 100%;
         flex-direction: column;
+    }
+
+    .about-stub {
+        align-items: center;
+    }
+
+    .about-stub img {
+        width: 50vw;
+        margin-bottom: 2rem;
+        margin-right: 0;
+    }
+
+    .about-stub span {
+        width: 90vw;
+        align-items: center;
+    }
+
+    .about-stub .about-detail {
+        padding-left: 1rem;
     }
 
     .projects span {
