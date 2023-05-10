@@ -642,7 +642,27 @@ footer {
     border-top: none;
 }
 
+.about-stub svg {
+    fill: white;
+    margin-right: 1rem;
+}
+
+.about-stub span ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5rem;
+    list-style: square;
+}
+
+.about-stub span ul li {
+    padding: 1rem 0;
+}
+
 @media (max-width: 768px) {
+    .about-stub span ul {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
     .header-section {
         background-size: 100vmax;
     }
