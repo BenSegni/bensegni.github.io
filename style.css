@@ -652,6 +652,7 @@ footer {
     grid-template-columns: repeat(2, 1fr);
     grid-column-gap: 5rem;
     list-style: square;
+    padding-left: 1rem;
 }
 
 .about-stub span ul li {
