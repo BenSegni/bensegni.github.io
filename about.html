@@ -31,7 +31,7 @@
             </svg></a>
     </header>
     <main>
-        <section>
+        <section class="about-section">
             <div class="header-section">
                 <img src="https://avatars.githubusercontent.com/u/15039123?v=4" alt="avatar" />
                 <h1>Ben Segni</h1>
@@ -47,13 +47,12 @@
                 </ul>
             </nav>
             <div class="about-tabs">
-                <h2 class="tab-link active" onclick="openTab(event, 'about')">About</h2>
-                <h2 class="tab-link" onclick="openTab(event, 'employment')">Employment</h2>
-                <h2 class="tab-link" onclick="openTab(event, 'education')">Education</h2>
+                <h3 class="tab-link active" onclick="openTab(event, 'about')">About</h3>
+                <h3 class="tab-link" onclick="openTab(event, 'employment')">Employment</h3>
+                <h3 class="tab-link" onclick="openTab(event, 'education')">Education</h3>
             </div>
 
             <div id="about" class="about-blurb tab-content">
-                <h3>About</h3>
                 <p>Hi, I'm Ben! I'm from County Durham, and I am a <a href="https://www.linkedin.com/in/bensegni/"
                         target="_blank">Lead Software Engineer</a>.</p>
                 <p>I started my career as a Web
@@ -75,7 +74,6 @@
                 </p>
             </div>
             <div id="employment" class="about-blurb tab-content">
-                <h3>Employment</h3>
                 <div class="about-stub">
                     <img src="./img/british-airways.svg" alt="british airways logo">
                     <span>
@@ -171,18 +169,20 @@
                     </span>
                 </div>
             </div>
-            <div class="about">
-                <img src="./img/british-airways.svg" alt="british airways logo">
-                <img src="./img/mercedes-benz.svg" alt="mercedes benz logo">
-                <img src="./img/unilink-logo.svg" alt="unilink logo">
-                <img src="./img/velux.svg" alt="velux logo">
-                <img src="./img/lenovo.svg" alt="lenovo logo">
-                <img src="./img/amazon.svg" alt="amazon logo">
+            <div class="about-wrapper">
+                <div class="about">
+                    <img class="icon" src="./img/british-airways.svg" alt="british airways logo">
+                    <img class="icon" src="./img/mercedes-benz.svg" alt="mercedes benz logo">
+                    <img class="icon" src="./img/unilink-logo.svg" alt="unilink logo">
+                    <img class="icon" src="./img/velux.svg" alt="velux logo">
+                    <img class="icon" src="./img/lenovo.svg" alt="lenovo logo">
+                    <img class="icon" src="./img/amazon.svg" alt="amazon logo">
+                </div>
             </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="about-footer">
         <span><a href="https://github.com/BenSegni" target="_blank" aria-label="github link"><svg
                     xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                     <path

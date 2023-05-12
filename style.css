@@ -434,12 +434,33 @@ body,
 }
 
 .about-stub span h4,
-.feedback li {
+.feedback li,
+.about-tabs h3.active {
     border-bottom: 0.0625rem dotted rgb(112, 181, 250);
 }
 
 .about-stub span small {
     padding-top: 1rem;
+}
+
+.about .icon {
+    margin: 3rem auto;
+}
+
+.about-wrapper {
+    width: 100vw;
+    background-color: rgb(45, 53, 59);
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.about-section {
+    padding-bottom: 0;
+}
+
+.about-footer {
+    margin-top: 0;
 }
 
 .feedback li mark span {
@@ -627,18 +648,20 @@ footer {
     text-align: center;
 }
 
-.about-tabs h2 {
+.about-tabs h3 {
+    font-weight: 100;
     color: rgb(115, 139, 157);
     min-width: 12rem;
 }
 
-.about-tabs h2.active {
-    color: white;
+.about-tabs h3.active {
+    font-weight: 500;
+    color: rgb(112, 181, 250);
 }
 
 .tab-content {
     display: none;
-    padding: 6px 12px;
+    padding: 3rem 0.75rem 1rem 0.75rem;
     border-top: none;
 }
 
