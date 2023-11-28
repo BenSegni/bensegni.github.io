@@ -1,0 +1,66 @@
+@import '../layout';
+
+@mixin about-list {
+    list-style: square;
+}
+
+@mixin mobile-image {
+    margin-left: 0;
+    justify-content: space-between;
+}
+
+@mixin mobile-header {
+    text-align: center;
+    line-height: 1.5rem;
+}
+
+@mixin mobile-list {
+    grid-template-columns: repeat(1, 1fr);
+    @include span-90();
+}
+
+@mixin mobile-list-item {
+    justify-content: flex-start;
+}
+
+@mixin mobile-span {
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    @include flex-column();
+}
+
+@mixin mobile-img {
+    @include span-50();
+    margin: 0 auto;
+}
+
+@mixin mobile-about-stub {
+    align-items: center;
+    margin: 1rem;
+}
+
+@mixin mobile-tabs-header {
+    min-width: 100vw;
+    padding: 0;
+}
+
+@mixin mobile-tabs {
+    width: 100%;
+    @include flex-column();
+
+    img {
+        display: block;
+        width: 100vw;
+        height: 3rem;
+        width: auto;
+        border: none;
+        border-radius: 0;
+        margin: 2rem 0;
+    }
+}
+
+@mixin mobile-anchor {
+    display: block;
+    width: 100%;
+}

@@ -1,0 +1,98 @@
+@import "../layout";
+@import "../color";
+
+@mixin mobile-img {
+    height: 1.5rem;
+    width: auto;
+    margin: 0 1rem 0 0;
+    border: none;
+}
+
+@mixin mobile-span {
+    margin-right: 1rem;
+    color: white;
+
+    &:last-child {
+        margin-left: auto;
+        color: rgb(112, 181, 250);
+    }
+}
+
+.technologies {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @include span-50();
+
+    li {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+            color: $white;
+            border-bottom: 1px dotted $white;
+            text-decoration: none;
+
+            &:visited {
+                color: $blue_alpha_6;
+                border-bottom: 1px dotted $blue_alpha_6;
+            }
+        }
+
+        span {
+            margin-right: 1rem;
+            color: white;
+
+            &:last-child {
+                margin-left: auto;
+                margin-right: 0;
+                color: $blue_1;
+            }
+
+            @include tablet {
+                @include mobile-span();
+            }
+
+            @include mobile {
+                @include mobile-span();
+            }
+
+            @include small-mobile {
+                @include mobile-span();
+            }
+        }
+
+        img {
+            height: 1.5rem;
+            width: auto;
+            margin: 0 1.5rem 0 0;
+            border: none;
+            border-radius: 0;
+
+            @include tablet {
+                @include mobile-img();
+            }
+
+            @include mobile {
+                @include mobile-img();
+            }
+
+            @include small-mobile {
+                @include mobile-img();
+            }
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}

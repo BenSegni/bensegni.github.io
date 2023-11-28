@@ -1,0 +1,37 @@
+@import '../layout';
+
+@mixin mobile-header {
+    background-size: 100vmax;
+    padding-bottom: 1rem;
+}
+
+.header-section {
+    @include flex();
+    @include flex-column();
+    @include span-100();
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    padding: 7rem 0 3rem 0;
+    background-image: url('../../img/background.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+
+    @include tablet {
+        background-size: 100vmax;
+    }
+
+    @include mobile {
+        @include mobile-header();
+    }
+
+    @include small-mobile {
+        @include mobile-header();
+    }
+
+    p {
+        @include tablet {
+            width: 95vw;
+        }
+    }
+}

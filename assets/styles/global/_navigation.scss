@@ -1,0 +1,88 @@
+@import '../layout';
+@import '../color';
+
+@mixin full-width {
+    width: 100%;
+}
+
+.navigation {
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    background-color: $black;
+    border-bottom: 0.1875rem solid $black;
+    @include span-100();
+
+    li {
+        padding: 1rem;
+        border: 0;
+        cursor: pointer;
+        border-bottom: 0.0625rem solid transparent;
+        min-width: 8rem;
+
+        .active {
+            font-weight: 500;
+            color: $blue_1;
+        }
+
+        a {
+            color: $white;
+
+            @include tablet {
+                @include full-width()
+            }
+
+            @include mobile {
+                @include full-width()
+            }
+
+            @include small-mobile {
+                @include full-width()
+            }
+        }
+
+        &:hover {
+            background-color: $blue_alpha_6;
+            border-bottom: 0.0625rem solid $white;
+        }
+
+        &:active {
+            background-color: $black;
+        }
+
+        @include tablet {
+            @include full-width()
+        }
+
+        @include mobile {
+            @include full-width()
+        }
+
+        @include small-mobile {
+            @include full-width()
+        }
+    }
+
+    @include tablet {
+        @include flex-column();
+    }
+
+    @include mobile {
+        @include flex-column();
+    }
+
+    @include small-mobile {
+        @include flex-column();
+    }
+}
+
+.tab-link {
+    display: block;
+    min-width: 12rem;
+
+    .active {
+        font-weight: 500;
+        color: $blue_1;
+        border-bottom: 0.1rem dotted $white;
+    }
+}

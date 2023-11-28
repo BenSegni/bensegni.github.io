@@ -1,0 +1,56 @@
+@mixin grid {
+    display: grid;
+}
+
+@mixin flex {
+    display: flex;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin flex-items-center {
+    align-items: center;
+}
+
+@mixin flex-column-center {
+    @include flex-column();
+    @include flex-items-center();
+    justify-content: center;
+
+}
+
+@mixin flex-column-start {
+    @include flex-column();
+    @include flex-items-center();
+    justify-content: flex-start;
+}
+
+@mixin flex-wrap {
+    flex-wrap: wrap;
+}
+
+@mixin span-100 {
+    width: 100vw;
+}
+
+@mixin span-50 {
+    width: 50vw;
+}
+
+@mixin span-25 {
+    width: 25vw;
+}
+
+@mixin span-75 {
+    width: 75vw;
+}
+
+@mixin span-80 {
+    width: 80vw;
+}
+
+@mixin span-90 {
+    width: 90vw;
+}

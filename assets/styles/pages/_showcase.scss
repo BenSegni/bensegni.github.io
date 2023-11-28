@@ -1,0 +1,310 @@
+@import '../responsive';
+@import '../layout';
+@import '../color';
+
+@mixin mobile-projects {
+    @include span-90();
+    @include flex-column();
+}
+
+@mixin mobile-hidden {
+    display: none;
+}
+
+@mixin mobile-no-animation {
+    animation: none !important;
+}
+
+.projects,
+.project-details,
+.project-blurb {
+    @include flex();
+    @include flex-column();
+
+    span {
+        @include flex();
+        @include flex-column();
+        @include flex-wrap();
+        justify-content: flex-start;
+        width: 100%;
+        height: auto;
+        background-repeat: no-repeat;
+
+        a {
+            color: $white;
+            @include flex-column();
+            width: auto;
+            height: 1rem;
+            border-radius: 2rem;
+            padding: 0.45rem 1rem;
+            font-size: 0.75rem;
+            border: 0.125rem solid;
+            font-weight: 400;
+            background-color: $blue_alpha_6;
+            margin-left: auto;
+            flex-shrink: 1;
+
+            &:hover {
+                color: $black_alpha_7;
+                background-color: $white;
+            }
+        }
+    }
+}
+
+.project-blurb {
+    @include flex-wrap();
+    align-items: center;
+    text-align: left;
+    padding: 0 1rem 2rem 1rem;
+    margin-top: 1rem;
+    background-color: $black_alpha_7;
+
+    h4 {
+        color: $blue_1;
+        line-height: 1rem;
+        width: 100%;
+    }
+}
+
+.project-details {
+    height: 20rem;
+    justify-content: flex-end;
+    flex-grow: 1;
+}
+
+.projects {
+    margin-top: 0rem;
+
+    align-items: stretch;
+    transition: all 2s;
+    animation: transition-out 0.5s ease;
+    @include span-90();
+
+    @keyframes transition-out {
+        0% {
+            width: 0;
+            flex-grow: 0;
+        }
+
+        100% {
+            @include span-90();
+            flex-grow: 1;
+        }
+    }
+
+    @include tablet {
+        @include mobile-no-animation();
+        @include span-80();
+    }
+
+    span {
+        background-position: 0 100%;
+        background-size: cover;
+        background-position: left center;
+        margin: 0 0 2rem 0;
+    }
+
+    @include tablet {
+        @include mobile-projects();
+    }
+
+    @include mobile {
+        @include mobile-projects();
+    }
+
+    @include small-mobile {
+        @include mobile-projects();
+    }
+}
+
+.layout-button {
+    margin: 0 0 2.5rem 0;
+    border: 0;
+    color: $white;
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+
+    img {
+        height: 2rem;
+        width: auto;
+        border: none;
+        border-radius: 0;
+        margin: 0 auto;
+    }
+
+    @include tablet {
+        @include mobile-hidden();
+    }
+
+    @include mobile {
+        @include mobile-hidden();
+    }
+
+    @include small-mobile {
+        @include mobile-hidden();
+    }
+}
+
+.grid-layout {
+    @include grid();
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    animation: grow-fixed 0.5s ease;
+
+    @keyframes grow-fixed {
+        0% {
+            width: 0;
+
+            @include tablet {
+                @include mobile-no-animation();
+            }
+
+            @include mobile {
+                @include mobile-no-animation();
+            }
+
+            @include small-mobile {
+                @include mobile-no-animation();
+            }
+        }
+
+        100% {
+            @include span-90();
+        }
+    }
+
+    @include span-90();
+
+    span {
+        .project-details {
+            .project-blurb {
+                @include flex-column();
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                a {
+                    margin-left: 0;
+                }
+            }
+
+            .skill-pills-mini {
+                li {
+                    @include flex-wrap();
+                    margin-right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    @include tablet {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        @include span-90();
+        @include mobile-no-animation();
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        @include span-90();
+        @include mobile-no-animation();
+    }
+
+    @include small-mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        @include span-90();
+        @include mobile-no-animation();
+    }
+
+    ;
+
+    @include mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    ;
+
+    @include small-mobile {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        width: 100%;
+    }
+
+    ;
+}
+
+.skill-pills {
+    @include flex();
+    list-style: none;
+    margin-top: 1rem;
+
+    li {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+        color: $blue_1;
+        font-weight: 400;
+        margin-right: 1rem;
+        padding: 0.45rem 1rem;
+        border-radius: 2rem;
+        background-color: $black_alpha_7;
+
+        img {
+            height: 1rem;
+            width: auto;
+            margin: 0 .5rem 0 0;
+            border: none;
+            border-radius: 0;
+        }
+    }
+}
+
+.skill-pills-mini {
+    @include flex();
+    flex-grow: 1;
+    list-style: none;
+    width: auto;
+    margin: 1rem auto 0 1rem;
+
+    li {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+        color: $white;
+        background-color: $black_alpha_7;
+        margin-right: 1rem;
+        height: 1rem;
+        border-radius: 2rem;
+        padding: 0.45rem 1rem;
+        border: 0.125rem solid;
+        font-size: 0.75rem;
+        font-weight: 400;
+
+        img {
+            height: 1rem;
+            width: auto;
+            margin: 0 .5rem 0 0;
+            border: none;
+            border-radius: 0;
+        }
+    }
+
+    @include tablet {
+        @include mobile-hidden();
+    }
+
+    @include mobile {
+        @include mobile-hidden();
+    }
+
+    @include small-mobile {
+        @include mobile-hidden();
+    }
+}
+
+.skills {
+    li {
+        padding: 1rem;
+    }
+}

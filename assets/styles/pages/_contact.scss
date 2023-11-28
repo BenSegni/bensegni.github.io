@@ -1,0 +1,57 @@
+@import '../color';
+@import '../layout';
+
+.contact {
+    @include flex();
+    @include flex-column();
+    @include span-50();
+
+    a {
+        border-bottom: 0.0625rem dotted $blue_alpha_6;
+
+        &:hover {
+            color: $blue_alpha_65;
+            border-color: $white;
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.contact-detail {
+    @include flex();
+    @include flex-wrap();
+    align-items: center;
+
+    svg {
+        fill: $white;
+        width: 3.5rem;
+        margin-bottom: auto;
+    }
+
+    p {
+        text-indent: 3.5rem;
+        text-align: left;
+        width: 100%;
+    }
+
+    a {
+        color: $blue_1;
+    }
+
+    h4 {
+        padding: 0;
+        line-height: 1rem;
+    }
+
+}

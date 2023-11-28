@@ -1,0 +1,65 @@
+@import '../layout';
+
+.feedback {
+    @include span-50();
+
+    li {
+        @include flex();
+        @include flex-wrap();
+        align-items: center;
+        text-align: left;
+        padding: 2rem 0;
+        border-bottom: 0.0625rem dotted $blue_1;
+        line-height: 1.5rem;
+
+        mark {
+            width: 100%;
+            color: $white;
+            background-color: $blue_alpha_6;
+            padding: 0.25rem 0.5rem;
+            line-height: 2rem;
+
+            span {
+                color: $black_alpha_7;
+            }
+        }
+
+        small {
+            color: $blue_1;
+        }
+
+        a {
+            color: $blue_1;
+            border-bottom: 0.0625rem dotted $blue_alpha_65;
+
+            &:hover {
+                color: $blue_alpha_65;
+                border-color: $white;
+            }
+        }
+
+        q {
+            font-weight: 300;
+            font-size: 0.80rem;
+            line-height: 1.5rem;
+        }
+
+        img {
+            height: 2.5rem;
+            width: auto;
+            margin: 0 1rem 0 0;
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
