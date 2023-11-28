@@ -28,6 +28,7 @@ header {
     a {
         @include flex();
         width: 3rem;
+        justify-content: center;
 
         @include tablet {
             @include mobile-header-anchor();
