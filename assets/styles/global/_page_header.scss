@@ -3,17 +3,22 @@
     padding-bottom: 1rem;
 }
 
+@mixin hero($name) {
+    background-image: url('../../img/#{$name}.jpg');
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
 .header-section {
     @include flex();
     @include flex-column();
     @include span-100();
     justify-content: center;
     align-items: center;
-    background-repeat: no-repeat;
     padding: 7rem 0 3rem 0;
-    background-image: url('../../img/background.jpg');
-    background-attachment: fixed;
-    background-size: 100%;
+    @include hero('background');
+
 
     @include tablet {
         background-size: 100vmax;

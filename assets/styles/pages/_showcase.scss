@@ -1,4 +1,5 @@
 @import '../color';
+@import './showcase_mixins';
 
 @mixin mobile-projects {
     @include span-90();
@@ -73,23 +74,8 @@
 
 .projects {
     margin-top: 0rem;
-
-    align-items: stretch;
-    transition: all 2s;
-    animation: transition-out 0.5s ease;
     @include span-90();
-
-    @keyframes transition-out {
-        0% {
-            width: 0;
-            flex-grow: 0;
-        }
-
-        100% {
-            @include span-90();
-            flex-grow: 1;
-        }
-    }
+    @include showcase-view-transition(0.5s, 0, 1);
 
     @include tablet {
         @include mobile-no-animation();
@@ -150,29 +136,7 @@
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 10px;
     grid-auto-rows: minmax(100px, auto);
-    animation: grow-fixed 0.5s ease;
-
-    @keyframes grow-fixed {
-        0% {
-            width: 0;
-
-            @include tablet {
-                @include mobile-no-animation();
-            }
-
-            @include mobile {
-                @include mobile-no-animation();
-            }
-
-            @include small-mobile {
-                @include mobile-no-animation();
-            }
-        }
-
-        100% {
-            @include span-90();
-        }
-    }
+    @include showcase-grid-transition(0.5s);
 
     @include span-90();
 
