@@ -15,8 +15,7 @@
         border: 0;
         cursor: pointer;
         border-bottom: 0.0625rem solid transparent;
-        min-width: 8rem;
-        border-bottom: 0.0625rem dotted $blue_2;
+        min-width: 12rem;
 
         .active {
             font-weight: 500;
@@ -29,6 +28,7 @@
             @include tablet {
                 @include full-width();
                 font-size: 1.25rem;
+                border-bottom: 0.0625rem dotted $blue_2;
             }
 
             @include mobile {
@@ -52,15 +52,18 @@
         }
 
         @include tablet {
-            @include full-width()
+            @include full-width();
+            border-bottom: 0.0625rem dotted $blue_2;
         }
 
         @include mobile {
-            @include full-width()
+            @include full-width();
+            border-bottom: 0.0625rem dotted $blue_2;
         }
 
         @include small-mobile {
-            @include full-width()
+            @include full-width();
+            border-bottom: 0.0625rem dotted $blue_2;
         }
     }
 
