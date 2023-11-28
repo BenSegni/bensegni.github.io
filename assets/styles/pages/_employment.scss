@@ -70,8 +70,7 @@
     width: 100%;
     margin: 1rem 0 0 9rem;
     color: grey;
-    border-top: 1px dotted grey;
-    padding: 1rem 0;
+    padding: 0;
 
     @include tablet {
         margin: 1rem 0 0 0rem;
@@ -93,6 +92,8 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
+    border-bottom: 1px dotted grey;
+    padding: 0 0 2rem 0;
 
     li {
         @include flex();
