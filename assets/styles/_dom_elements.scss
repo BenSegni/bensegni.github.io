@@ -1,4 +1,4 @@
-@import './images';
+@use './images' as images;
 
 @mixin mobile-header-anchor {
     width: auto;
@@ -106,7 +106,7 @@ section {
     text-align: center;
 
     img {
-        @include image_default();
+        @include images.image_default();
         @include flex();
         justify-content: flex-start;
         align-items: center;

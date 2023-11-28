@@ -1,29 +1,4 @@
-@mixin project-img {
-    height: 6rem;
-    width: 6rem;
-    margin-bottom: 2rem;
-}
-
-@mixin mobile-header-img {
-    @include span-50();
-    margin-right: 0rem;
-}
-
-@mixin mobile-header {
-    @include span-90();
-    @include flex-wrap();
-    justify-content: center;
-}
-
-@mixin mobile-margin-right {
-    margin-right: 0rem;
-}
-
-@mixin mobile-insert {
-    @include span-90();
-    @include flex-column();
-    text-align: center;
-}
+@import './project_mixins';
 
 .recent-presentation {
     display: block;

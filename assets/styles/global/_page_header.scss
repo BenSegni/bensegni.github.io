@@ -1,5 +1,3 @@
-@import '../layout';
-
 @mixin mobile-header {
     background-size: 100vmax;
     padding-bottom: 1rem;
@@ -31,7 +29,7 @@
 
     p {
         @include tablet {
-            width: 95vw;
+            @include span-95();
         }
     }
 }
