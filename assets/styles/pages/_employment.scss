@@ -88,12 +88,11 @@
 .role-technologies {
     @include flex();
     @include flex-wrap();
-    padding-left: 9rem;
     width: 100%;
     justify-content: flex-start;
     align-items: center;
     border-bottom: 1px dotted grey;
-    padding: 0 0 2rem 0;
+    padding: 0 0 2rem 9rem;
 
     li {
         @include flex();
