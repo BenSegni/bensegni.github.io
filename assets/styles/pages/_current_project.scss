@@ -61,7 +61,6 @@
 
     .current-project-header {
         @include flex();
-        align-items: center;
         width: 100%;
 
         img {
