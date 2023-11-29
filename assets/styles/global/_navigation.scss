@@ -2,6 +2,12 @@
     width: 100%;
 }
 
+@mixin mobile-nav {
+    @include full-width();
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
 .menu-icon {
     background-color: transparent;
     border: 0;
@@ -33,15 +39,6 @@
     z-index: 999;
     @include span-100();
 
-    h1 {
-        display: block;
-        margin: 0 auto;
-        clear: both;
-        width: 100%;
-        color: $blue_1;
-        margin-bottom: -25rem;
-    }
-
     li {
         padding: 1.25rem 0;
         border: 0;
@@ -71,19 +68,17 @@
             }
 
             @include tablet {
-                @include full-width();
-                font-size: 1.25rem;
+                @include mobile-nav();
                 border-bottom: 0.0625rem dotted $blue_2;
+
             }
 
             @include mobile {
-                @include full-width();
-                font-size: 1.25rem;
+                @include mobile-nav();
             }
 
             @include small-mobile {
-                @include full-width();
-                font-size: 1.25rem;
+                @include mobile-nav();
             }
         }
 
@@ -110,14 +105,17 @@
 
     @include tablet {
         @include flex-column();
+        @include mobile-nav();
     }
 
     @include mobile {
         @include flex-column();
+        @include mobile-nav();
     }
 
     @include small-mobile {
         @include flex-column();
+        @include mobile-nav();
     }
 }
 
