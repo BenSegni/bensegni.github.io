@@ -64,6 +64,17 @@
         }
     }
 
+    .employment-site-link {
+        margin: 1rem 0 0 9rem;
+        color: grey;
+        border-bottom: 1px dotted white;
+
+        &:hover {
+            color: $white;
+            border-bottom: 1px dotted $blue_1;
+        }
+    }
+
     @include tablet {
         @include span-80();
     }
@@ -98,6 +109,16 @@
 
     p {
         margin: 0;
+
+        .education-site-link {
+            color: grey;
+            border-bottom: 1px dotted white;
+
+            &:hover {
+                color: $white;
+                border-bottom: 1px dotted $blue_1;
+            }
+        }
     }
 
     svg {
