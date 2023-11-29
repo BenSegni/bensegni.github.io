@@ -23,18 +23,17 @@
 
 @mixin mobile-span {
     width: 100%;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     @include flex-column();
 }
 
 @mixin mobile-img {
     @include span-50();
-    margin: 0 auto;
 }
 
 @mixin mobile-about-stub {
-    align-items: center;
+    align-items: flex-start;
     margin: 1rem;
 }
 
