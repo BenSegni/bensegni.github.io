@@ -73,6 +73,18 @@
             color: $white;
             border-bottom: 1px dotted $blue_1;
         }
+
+        @include tablet {
+            margin: 1rem 0 0 0;
+        }
+
+        @include mobile {
+            margin: 1rem 0 0 0;
+        }
+
+        @include small-mobile {
+            margin: 1rem 0 0 0;
+        }
     }
 
     @include tablet {
