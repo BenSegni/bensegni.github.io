@@ -76,7 +76,15 @@
     }
 
     @include tablet {
-        @include span-80();
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
     }
 }
 
@@ -263,25 +271,6 @@
 
     @include small-mobile {
         @include mobile-about-stub();
-    }
-}
-
-.about-blurb {
-    a {
-        border: 0;
-        color: $blue_1
-    }
-
-    @include tablet {
-        @include span-90();
-    }
-
-    @include mobile {
-        @include span-90();
-    }
-
-    @include small-mobile {
-        @include span-90();
     }
 }
 
