@@ -1,12 +1,12 @@
 @mixin mobile-header {
-    background-size: 100vmax;
+    @include hero('background.jpg', 100vmax);
     padding-bottom: 1rem;
 }
 
-@mixin hero($name) {
-    background-image: url('../../img/#{$name}.jpg');
+@mixin hero($name, $size) {
+    background-image: url('../../img/#{$name}');
     background-attachment: fixed;
-    background-size: 100%;
+    background-size: $size;
     background-repeat: no-repeat;
 }
 
@@ -17,11 +17,11 @@
     justify-content: center;
     align-items: center;
     padding: 7rem 0 3rem 0;
-    @include hero('background');
+    @include hero('background.jpg', 100%);
 
 
     @include tablet {
-        background-size: 100vmax;
+        @include hero('background.jpg', 100vmax);
     }
 
     @include mobile {
