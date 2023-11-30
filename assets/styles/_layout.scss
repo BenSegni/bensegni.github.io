@@ -58,3 +58,7 @@
 @mixin span-95 {
     width: 95vw;
 }
+
+@mixin full-width {
+    width: 100%;
+}

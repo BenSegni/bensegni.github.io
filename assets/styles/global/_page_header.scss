@@ -1,14 +1,6 @@
-@mixin mobile-header {
-    @include hero('background.jpg', 100vmax);
-    padding-bottom: 1rem;
-}
+@import './mixins';
 
-@mixin hero($name, $size) {
-    background-image: url('../../img/#{$name}');
-    background-attachment: fixed;
-    background-size: $size;
-    background-repeat: no-repeat;
-}
+$background: 'background.jpg';
 
 .header-section {
     @include flex();
@@ -17,11 +9,11 @@
     justify-content: center;
     align-items: center;
     padding: 7rem 0 3rem 0;
-    @include hero('background.jpg', 100%);
+    @include hero($background, 100%, $no-repeat: true);
 
 
     @include tablet {
-        @include hero('background.jpg', 100vmax);
+        @include hero($background, 100vmax);
     }
 
     @include mobile {

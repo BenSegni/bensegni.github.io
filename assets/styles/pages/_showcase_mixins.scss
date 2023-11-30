@@ -7,7 +7,7 @@
     @keyframes transition-out {
         0% {
             width: $start;
-            flex-grow: 0;
+            flex-grow: $start;
         }
 
         100% {
