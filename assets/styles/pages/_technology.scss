@@ -18,7 +18,7 @@
 }
 
 .technologies {
-    display: flex;
+    @include flex();
     flex-direction: column;
     justify-content: center;
     @include span-50();

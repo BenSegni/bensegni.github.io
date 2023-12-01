@@ -1,5 +1,5 @@
 .not-found {
-    display: flex;
+    @include flex();
     margin: 3rem 0 0 0;
 
     @include flex-column();

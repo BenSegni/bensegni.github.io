@@ -18,27 +18,24 @@
 
     @include tablet {
         @include span-90();
-        align-items: center;
-        justify-content: center;
+        @include flex-center();
     }
 
     @include mobile {
         @include span-90();
-        align-items: center;
-        justify-content: center;
+        @include flex-center();
     }
 
     @include small-mobile {
         @include span-90();
-        align-items: center;
-        justify-content: center;
+        @include flex-center();
     }
 }
 
 .about-wrapper {
     width: 100vw;
     background-color: rgb(45, 53, 59);
-    display: flex;
+    @include flex();
     justify-content: center;
     margin-top: 3rem;
 }
