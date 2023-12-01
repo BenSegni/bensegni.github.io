@@ -313,8 +313,7 @@
 .loading-icon-home {
     @include flex;
     @include flex-column();
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     background-color: black;
     border: 1px solid $black;
 

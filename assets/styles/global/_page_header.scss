@@ -6,8 +6,7 @@ $background: 'background.jpg';
     @include flex();
     @include flex-column();
     @include span-100();
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     padding: 7rem 0 3rem 0;
     @include background-image-config($background, 100%, $no-repeat: true);
 

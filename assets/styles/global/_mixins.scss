@@ -109,8 +109,7 @@
 @mixin loading-graphic-config($size) {
     @include flex;
     @include flex-column();
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     height: $size;
     width: $size;
     @include background-image-config('loading_icon.svg', 100% , true);

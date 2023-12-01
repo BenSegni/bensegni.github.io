@@ -6,9 +6,8 @@
     @include span-25();
 
     a {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex();
+        @include flex-center();
         background-color: rgba(112, 181, 250, .65);
         border-bottom: 0.0625rem dotted rgb(112, 181, 250);
         color: white;
@@ -45,8 +44,7 @@
 .current-project {
     @include flex();
     @include flex-column();
-    justify-content: center;
-    align-items: center;
+    @include flex-center();
     @include span-50();
     margin: 0 auto 2rem auto;
     padding-bottom: 1rem;
