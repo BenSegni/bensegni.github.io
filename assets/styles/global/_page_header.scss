@@ -9,11 +9,11 @@ $background: 'background.jpg';
     justify-content: center;
     align-items: center;
     padding: 7rem 0 3rem 0;
-    @include hero($background, 100%, $no-repeat: true);
+    @include background-image-config($background, 100%, $no-repeat: true);
 
 
     @include tablet {
-        @include hero($background, 100vmax);
+        @include background-image-config($background, 100vmax);
     }
 
     @include mobile {

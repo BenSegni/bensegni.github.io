@@ -1,9 +1,9 @@
 @mixin mobile-header {
-    @include hero('background.jpg', 100vmax);
+    @include background-image-config('background.jpg', 100vmax);
     padding-bottom: 1rem;
 }
 
-@mixin hero($name, $size, $no-repeat: true) {
+@mixin background-image-config($name, $size, $no-repeat: true) {
     background-image: url('../../img/#{$name}');
     background-attachment: fixed;
     background-size: $size;
@@ -83,4 +83,47 @@
     @include small-mobile {
         margin: 1rem 0 0 0rem;
     }
+}
+
+@mixin mobile-height {
+    height: 15rem;
+}
+
+@mixin mobile-width {
+    @include tablet {
+        @include mobile-height();
+        @include span-90();
+    }
+
+    @include mobile {
+        @include mobile-height();
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include mobile-height();
+        @include span-90();
+    }
+}
+
+@mixin loading-graphic-config($size) {
+    @include flex;
+    @include flex-column();
+    justify-content: center;
+    align-items: center;
+    height: $size;
+    width: $size;
+    @include background-image-config('loading_icon.svg', 100% , true);
+    background-position: center center;
+    animation: rotation 1s infinite linear;
+    border-radius: 100rem;
+    border: 1px solid $black;
+}
+
+@mixin loading-graphic-image {
+    position: absolute;
+    margin: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+    border: none;
 }
