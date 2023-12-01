@@ -35,13 +35,30 @@
     border: 1px solid $black;
     @include synopsis-image();
     margin-bottom: 2rem;
+    position: relative;
 
-    img {
+    .loading-graphic {
+        @include flex;
+        @include flex-column();
+        justify-content: center;
+        align-items: center;
+        height: 10rem;
+        width: 10rem;
+        background-image: url('../../img/loading_icon.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center center;
         animation: rotation 1s infinite linear;
+        border-radius: 100rem;
+        border: 1px solid $black;
     }
 
-    p {
-        color: grey;
+    img {
+        position: absolute;
+        margin: 0;
+        height: 2.5rem;
+        width: 2.5rem;
+        border: none;
     }
 
     @include mobile-width();
@@ -54,6 +71,16 @@
 
     to {
         transform: rotate(360deg);
+    }
+}
+
+@keyframes no-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0deg);
     }
 }
 
