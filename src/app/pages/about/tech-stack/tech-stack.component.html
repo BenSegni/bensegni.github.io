@@ -1,0 +1,10 @@
+<h3>Technologies Used</h3>
+<ng-container *ngIf="technologies$ | async as technologies">
+    <ul class="technologies">
+        <li *ngFor="let technology of technologies">
+            <img [src]="technology.name | logo" alt="{{ technology.name | logo | altText }}">
+            <span><a [href]="technology.docs" target="_blank">{{ technology.name }}</a></span>
+            <span>{{ technology.purpose }}</span>
+        </li>
+    </ul>
+</ng-container>

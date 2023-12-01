@@ -1,0 +1,13 @@
+<div>
+    <h5>Project Feedback</h5>
+    <ul class="feedback" *ngIf="feedback$ | async as feedback">
+        <li *ngFor="let recommendation of feedback">
+            <img src="{{ recommendation.avatar }}" alt="{{ recommendation.avatar | altText }}">
+            <p><mark>{{ recommendation.title }}<span>&#64;{{ recommendation.company }}</span></mark></p>
+            <p [innerHTML]="recommendation.feedback"></p>
+        </li>
+        <li>
+            <app-feedback-link></app-feedback-link>
+        </li>
+    </ul>
+</div>

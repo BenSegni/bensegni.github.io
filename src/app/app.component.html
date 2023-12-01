@@ -1,0 +1,16 @@
+<ng-container *ngIf="!isLoading else loading">
+    <app-social-media></app-social-media>
+    <section>
+        <app-page-header></app-page-header>
+        <app-navigation></app-navigation>
+        <router-outlet></router-outlet>
+    </section>
+    <app-previous-companies></app-previous-companies>
+    <app-footer></app-footer>
+</ng-container>
+<ng-template #loading>
+    <div class="loading-icon-home" *ngIf="isLoading">
+        <span class="loading-graphic"></span>
+        <img src="../../../assets/img/logo.svg" [alt]="'../../../assets/img/logo.svg' | altText">
+    </div>
+</ng-template>

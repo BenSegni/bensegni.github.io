@@ -1,0 +1,21 @@
+<h3>Professional Training & Certification</h3>
+<div class="about-stub">
+    <span>
+        <ul *ngIf="postEducation$ | async as postEducation">
+            <li *ngFor="let training of postEducation"><img [src]="training | logo"
+                    alt="{{ training | logo | altText }}" />{{ training }}</li>
+        </ul>
+    </span>
+</div>
+<h3>Education</h3>
+<ng-container *ngIf="education$ | async as education">
+    <div class="about-stub" *ngFor="let placement of education">
+        <img src="{{ placement.logo }}" alt="{{ placement.logo | altText }}">
+        <span>
+            <h4>{{ placement.institution }}</h4>
+            <p><small>{{ placement.date }}</small></p>
+            <p class="honors">{{ placement.qualification}}.</p>
+            <p><a class="education-site-link" [href]="placement.website" target="_blank">{{ placement.website }}</a></p>
+        </span>
+    </div>
+</ng-container>

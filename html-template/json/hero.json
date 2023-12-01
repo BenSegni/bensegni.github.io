@@ -1,7 +1,0 @@
-{
-  "__readme__": "edit this text & link to show in the browser, if you dont want a button just add null to link and linkText",
-  "title": "Hi!. I'm Ben. I'm a UI Developer & Designer!",
-  "subTitle": "I'm a Lead Javascript Developer based in Durham. I build stuff with Angular & love Unit Testing!",
-  "link": "https://www.linkedin.com/in/bensegni/",
-  "linkText": "Connect"
-}

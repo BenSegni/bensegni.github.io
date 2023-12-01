@@ -1,0 +1,20 @@
+<h3>Current Project</h3>
+<ng-container *ngIf="projects$ | async as currentProject">
+    <div class="current-project">
+        <div class="current-project-header">
+            <img src="{{ currentProject.companyLogo }}" alt="{{ currentProject.companyLogo | altText }}">
+            <h4><span>{{ currentProject.title }}</span></h4>
+        </div>
+    </div>
+    <div class="current-project-insert" *ngFor="let project of currentProject.projects">
+        <img src="{{ project.projectLogo }}" alt="{{ project.projectLogo | altText }}">
+        <h3>{{ project.projectTitle }}</h3>
+        <span [innerHTML]="project.projectDescription"></span>
+    </div>
+    <div class="recent-presentation">
+        <h4>A Recent Presentation</h4>
+        <a [href]="currentProject.presentationLink" target="_blank"><img src="../../../assets/img/new_window_icon.svg"
+                [alt]="'../../../assets/img/new_window_icon.svg' | altText"> View presentation in new window</a>
+    </div>
+</ng-container>
+<app-feedback></app-feedback>

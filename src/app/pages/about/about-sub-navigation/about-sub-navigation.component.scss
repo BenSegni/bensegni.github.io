@@ -1,0 +1,10 @@
+:host {
+    width: 60vw;
+    margin-bottom: 1.5rem;
+    @media (max-width: 915px) {
+        width: 100vw;
+    }
+    @media (orientation: landscape) and (max-width: 915px) {
+            width: 100vw;
+    }
+}

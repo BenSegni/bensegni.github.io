@@ -1,0 +1,20 @@
+<div class="about-blurb tab-content" *ngIf="employment$ | async as employment">
+    <h3>Employment</h3>
+    <div class="about-stub" *ngFor="let role of employment">
+        <img src="{{ role.logo }}" alt="{{ role.logo | altText }}">
+        <span>
+            <h4>{{ role.company }}</h4>
+            <p><small>{{ role.date }}</small></p>
+            <p class="honors">{{ role.title }}.</p>
+        </span>
+        <ul class="about-detail">
+            <li *ngFor="let success of role.successes">{{ success }}</li>
+        </ul>
+        <a class="employment-site-link" [href]="role.website" target="_blank">{{ role.website }}</a>
+        <h5 class="skills-header">Skills:</h5>
+        <ul class="role-technologies">
+            <li *ngFor="let technology of role.technologies"><img [src]="technology | logo" [alt]="technology | logo | altText"><span>{{ technology }}</span></li>
+        </ul>
+    </div>
+    <app-useful-links></app-useful-links>
+</div>

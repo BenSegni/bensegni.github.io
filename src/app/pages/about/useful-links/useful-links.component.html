@@ -1,0 +1,6 @@
+<h3>Useful Links</h3>
+<ng-container *ngIf="usefuLinks$ | async as usefuLinks">
+    <ul>
+        <li *ngFor="let link of usefuLinks"><a [href]="link" target="_blank">{{ link }}</a></li>
+    </ul>
+</ng-container>

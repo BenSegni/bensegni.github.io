@@ -1,0 +1,23 @@
+.companies-wrapper {
+    @include span-90();
+    @include flex();
+    @include flex-wrap();
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 1rem;
+
+    img {
+        height: 1.5rem;
+        width: auto;
+
+        @include tablet {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .icon {
+        margin: 1rem auto;
+    }
+
+
+}

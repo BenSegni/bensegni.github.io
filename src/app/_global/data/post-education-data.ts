@@ -1,0 +1,16 @@
+export const postEducationData: string[] = [
+    'Angular: Ecosystems',
+    'Angular: Routing',
+    'Angular: Securing Apps',
+    'Learning the Angular CLI',
+    'Angular: Workflows',
+    'End-to-End Javascript Testing with Cypress.io',
+    'Agile Foundations',
+    'Reporting with Agile & Boards',
+    'Agile Product Owner: Techniques',
+    'Transitioning from Waterfall to Agile',
+    'Planning with Agile User Stories',
+    'Agile Product Owner Role: Foundations',
+    'Agile Project Leadership',
+    'Learning RxJs',
+]
