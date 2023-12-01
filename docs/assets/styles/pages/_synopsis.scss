@@ -1,0 +1,192 @@
+@import '../global/mixins';
+
+@mixin synopsis-image {
+    width: 100%;
+    height: 30rem;
+}
+
+.loading-icon {
+    @include flex;
+    @include flex-column();
+    @include flex-center();
+    background-color: black;
+    border: 1px solid $black;
+    @include synopsis-image();
+    margin-bottom: 2rem;
+    position: relative;
+
+    .loading-graphic {
+        @include loading-graphic-config(8rem);
+    }
+
+    img {
+        @include loading-graphic-image();
+    }
+
+
+    @include mobile-width();
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes no-rotation {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.synopsis {
+    @include flex();
+    @include flex-column();
+    align-items: flex-start;
+    @include span-50();
+    text-align: left;
+
+    .back-link {
+        @include flex();
+        @include full-width();
+        border-bottom: 1px dotted grey;
+        @include flex-center();
+        margin: 2rem auto 3rem auto;
+        padding: 0 0 2rem 0;
+
+        img {
+            height: 2rem;
+            width: auto;
+            border: 0;
+            border-radius: 0;
+            margin: 0 1rem 0 0;
+        }
+
+        &:hover {
+            color: $white;
+            border-bottom: 1px dotted grey;
+        }
+    }
+
+    .back-link-footer {
+        display: none;
+        @include span-90();
+        border-top: 1px dotted grey;
+        border-bottom: none;
+        padding-top: 2rem;
+        margin: 2rem auto 0 auto;
+
+        @include tablet {
+            @include flex();
+            justify-content: center;
+        }
+
+        @include mobile {
+            @include flex();
+            justify-content: center;
+        }
+
+        @include small-mobile {
+            @include flex();
+            justify-content: center;
+        }
+    }
+
+    .background {
+        display: block;
+        @include synopsis-image();
+        object-fit: cover;
+        object-position: top;
+        border: 1px solid transparent;
+        border-radius: 0;
+        animation: fade 1s;
+
+        @include mobile-width();
+    }
+
+    .project-skills-header {
+        @include skills-header();
+        margin: 0;
+    }
+
+    .skills {
+        @include flex();
+        @include flex-wrap();
+        width: 100%;
+        justify-content: flex-start;
+        align-items: center;
+
+        li {
+            @include skill-pill();
+        }
+
+        @include tablet {
+            padding-left: 0;
+        }
+
+        @include mobile {
+            padding-left: 0;
+        }
+
+        @include small-mobile {
+            padding-left: 0;
+        }
+    }
+
+    .project-details {
+        padding: 1rem 0 2rem 0;
+        height: auto;
+        line-height: 1.5rem;
+    }
+
+    a {
+        color: grey;
+        border-bottom: 1px dotted $white;
+
+        &:hover {
+            color: $white;
+            border-bottom: 1px dotted $blue_1;
+        }
+    }
+
+    p {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+
+        svg {
+            fill: $blue_1;
+            margin-right: 1rem;
+        }
+    }
+
+    @include tablet {
+        @include span-90()
+    }
+
+    @include mobile {
+        @include span-90()
+    }
+
+    @include small-mobile {
+        @include span-90()
+    }
+}
