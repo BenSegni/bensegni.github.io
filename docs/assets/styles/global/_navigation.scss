@@ -1,0 +1,131 @@
+@mixin full-width {
+    width: 100%;
+}
+
+@mixin mobile-nav {
+    @include full-width();
+    font-size: 1.5rem;
+    justify-content: center;
+}
+
+.menu-icon {
+    background-color: transparent;
+    border: 0;
+    border-radius: 0;
+    margin: 2rem 0 1.5rem 0;
+    height: 2rem;
+    cursor: pointer;
+
+    img {
+        height: 2rem;
+        width: auto;
+        border: 0;
+        border-radius: 0
+    }
+}
+
+.navigation {
+    @include flex();
+    @include flex-wrap();
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $black_variant_alpha;
+    border-bottom: 0.0625rem solid $black;
+    z-index: 999;
+    @include span-100();
+
+    li {
+        padding: 1.25rem 0;
+        border: 0;
+        cursor: pointer;
+        border-bottom: 0.0625rem solid transparent;
+        min-width: auto;
+
+        .active {
+            font-weight: 500;
+            color: $blue_1;
+        }
+
+        a {
+            color: $white;
+            font-size: 1.5rem;
+            @include flex();
+            @include flex-center();
+
+            &:hover {
+                color: $blue_1;
+            }
+
+            svg {
+                fill: $blue_1;
+                margin-right: .75rem;
+            }
+
+            @include tablet {
+                @include mobile-nav();
+                border-bottom: 0.0625rem dotted $blue_2;
+
+            }
+
+            @include mobile {
+                @include mobile-nav();
+            }
+
+            @include small-mobile {
+                @include mobile-nav();
+            }
+        }
+
+        &:hover {
+            border-bottom: 0.0625rem solid $white;
+        }
+
+        &:active {
+            background-color: $black;
+        }
+
+        @include tablet {
+            @include full-width();
+        }
+
+        @include mobile {
+            @include full-width();
+        }
+
+        @include small-mobile {
+            @include full-width();
+        }
+    }
+
+    @include tablet {
+        @include flex-column();
+        @include mobile-nav();
+    }
+
+    @include mobile {
+        @include flex-column();
+        @include mobile-nav();
+    }
+
+    @include small-mobile {
+        @include flex-column();
+        @include mobile-nav();
+    }
+}
+
+.tab-link {
+    display: block;
+    min-width: 12rem;
+    padding-top: 0;
+
+    .active {
+        font-weight: 500;
+        color: $blue_1;
+        border-bottom: 0.1rem dotted $white;
+    }
+}

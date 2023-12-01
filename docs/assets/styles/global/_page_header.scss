@@ -1,0 +1,31 @@
+@import './mixins';
+
+$background: 'background.jpg';
+
+.header-section {
+    @include flex();
+    @include flex-column();
+    @include span-100();
+    @include flex-center();
+    padding: 7rem 0 3rem 0;
+    @include background-image-config($background, 100%, $no-repeat: true);
+
+
+    @include tablet {
+        @include background-image-config($background, 100vmax);
+    }
+
+    @include mobile {
+        @include mobile-header();
+    }
+
+    @include small-mobile {
+        @include mobile-header();
+    }
+
+    p {
+        @include tablet {
+            @include span-95();
+        }
+    }
+}
