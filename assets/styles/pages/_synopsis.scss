@@ -88,26 +88,27 @@
     }
 
     .back-link-footer {
-        display: none;
-        @include span-90();
+        @include flex();
+        justify-content: center;
+        @include full-width();
         border-top: 1px dotted grey;
+        @include flex-center();
         border-bottom: none;
         padding-top: 2rem;
         margin: 2rem auto 0 auto;
 
-        @include tablet {
-            @include flex();
-            justify-content: center;
+        img {
+            height: 2rem;
+            width: auto;
+            border: 0;
+            border-radius: 0;
+            margin: 0 1rem 0 0;
         }
 
-        @include mobile {
-            @include flex();
-            justify-content: center;
-        }
-
-        @include small-mobile {
-            @include flex();
-            justify-content: center;
+        &:hover {
+            color: $white;
+            border-top: 1px dotted grey;
+            border-bottom: none;
         }
     }
 
