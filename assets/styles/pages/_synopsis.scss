@@ -63,6 +63,7 @@
     align-items: flex-start;
     @include span-50();
     text-align: left;
+    position: relative;
 
     .back-link {
         @include flex();
@@ -177,6 +178,23 @@
             margin-right: 1rem;
         }
     }
+
+    button {
+        margin: -5rem 1rem 2rem auto;
+        background: transparent;
+        border: none;
+        z-index: 998;
+        cursor: pointer;
+
+        img {
+            height: 2rem;
+            width: auto;
+            margin: 0 0 0 auto;
+            border: 0;
+            border-radius: 0;
+        }
+    }
+
 
     @include tablet {
         @include span-90()
