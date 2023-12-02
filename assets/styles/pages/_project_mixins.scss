@@ -22,5 +22,4 @@
 @mixin mobile-insert {
     @include span-90();
     @include flex-column();
-    text-align: center;
 }
