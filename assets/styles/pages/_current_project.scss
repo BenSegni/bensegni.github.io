@@ -114,7 +114,8 @@
 
     img {
         @include project-img();
-        object-fit: contain;
+        object-fit: cover;
+        object-position: center center;
         margin-right: 2rem;
         margin-bottom: 0;
 
