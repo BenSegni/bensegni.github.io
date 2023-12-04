@@ -1,5 +1,5 @@
 @mixin mobile-header {
-    @include background-image-config('background.jpg', 100vmax);
+    @include background-image-config('background.webp', 100vmax);
     padding-bottom: 1rem;
 }
 
