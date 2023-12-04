@@ -270,6 +270,7 @@
 
     li {
         @include flex();
+        flex-wrap: nowrap !important;
         justify-content: flex-start;
         align-items: center;
         color: $white;
@@ -288,19 +289,42 @@
             margin: 0 .5rem 0 0;
             border: none;
             border-radius: 0;
+            @include tablet {
+                margin: 0;
+            }
+
+            @include mobile {
+                margin: 0;
+            }
+
+            @include small-mobile {
+                margin: 0;
+            }
+
+            @include small-desktop {
+                margin: 0;
+            }
         }
-    }
 
-    @include tablet {
-        @include mobile-hidden();
-    }
+        span {
+            margin: 0;
 
-    @include mobile {
-        @include mobile-hidden();
-    }
+            @include tablet {
+                @include mobile-hidden();
+            }
 
-    @include small-mobile {
-        @include mobile-hidden();
+            @include mobile {
+                @include mobile-hidden();
+            }
+
+            @include small-mobile {
+                @include mobile-hidden();
+            }
+
+            @include small-desktop {
+                @include mobile-hidden();
+            }
+        }
     }
 }
 
