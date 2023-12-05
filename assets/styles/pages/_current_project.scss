@@ -98,6 +98,11 @@
         color: $blue_1;
     }
 
+    .skills-header {
+        color: grey;
+        margin: 0;
+    }
+
     @include tablet {
         @include mobile-insert();
     }
