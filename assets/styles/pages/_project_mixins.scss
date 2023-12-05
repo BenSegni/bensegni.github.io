@@ -4,6 +4,11 @@
     margin-bottom: 2rem;
 }
 
+@mixin mobile-project-img {
+    height: 4rem;
+    width: 4rem;
+}
+
 @mixin mobile-header-img {
     @include span-50();
     margin-right: 0rem;
@@ -16,7 +21,7 @@
 }
 
 @mixin mobile-margin-right {
-    margin-right: 0rem;
+    margin-right: .75rem;
 }
 
 @mixin mobile-insert {

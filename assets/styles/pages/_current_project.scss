@@ -121,14 +121,17 @@
 
         @include tablet {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
 
         @include mobile {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
 
         @include small-mobile {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
     }
 
