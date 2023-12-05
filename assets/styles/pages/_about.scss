@@ -1,4 +1,4 @@
-@import './profile_mixins';
+@import './about_mixins';
 
 .about {
     @include flex();
@@ -362,8 +362,4 @@
 .tab-content {
     padding: 0 .75rem 1rem .75rem;
     border-top: none;
-}
-
-.useful-links {
-    text-align: center;
 }

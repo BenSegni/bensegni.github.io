@@ -5,6 +5,10 @@
     }
 }
 
+.skills-header {
+    @include skills-header();
+}
+
 .skill-pills {
     @include flex();
     list-style: none;
