@@ -487,11 +487,16 @@
     }
 
     p {
+        @include flex();
+        width: 100%;
+        align-items: center;
+        justify-content: center;
         color: grey;
-        margin: 1.5rem 0 0 0;
+        margin: 1.5rem auto 0 auto;
         border-top: 1px dotted grey;
         border-bottom: 1px dotted grey;
         padding: 1rem 0;
+        font-style: italic;
 
         @include tablet {
             margin-bottom: 1.5rem;
@@ -512,5 +517,20 @@
 
     span {
         color: $white;
+        font-style: normal;
+        padding: 0 .125rem;
+        margin: 0 .5rem;
+    }
+
+    .option {
+        @include flex();
+        align-items: center;
+        img {
+            height: 1rem;
+            width: auto;
+            margin: 0 .5rem 0 0;
+            border: 0;
+            border-radius: 0;
+        }
     }
 }
