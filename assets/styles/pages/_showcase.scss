@@ -387,18 +387,42 @@
 
         @include tablet {
             @include span-90();
+            margin-bottom: 2rem;
         }
 
         @include mobile {
             @include span-90();
+            margin-bottom: 2rem;
         }
 
         @include small-mobile {
             @include span-90();
+            margin-bottom: 2rem;
         }
 
         @include small-desktop {
             @include span-90();
+            margin-bottom: 2rem;
+        }
+    }
+
+    .mobile-margin {
+        margin: 0;
+
+        @include tablet {
+            margin-bottom: 1.5rem;
+        }
+
+        @include mobile {
+            margin-bottom: 1.5rem;
+        }
+
+        @include small-mobile {
+            margin-bottom: 1.5rem;
+        }
+
+        @include small-desktop {
+            margin-bottom: 1.5rem;
         }
     }
 
@@ -525,6 +549,7 @@
     .option {
         @include flex();
         align-items: center;
+
         img {
             height: 1rem;
             width: auto;
