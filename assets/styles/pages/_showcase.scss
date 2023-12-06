@@ -371,6 +371,7 @@
         border-radius: 10rem;
         cursor: pointer;
         font-family: inherit;
+        margin-bottom: 1.5rem;
 
         &:hover {
             background-color: $black;
@@ -407,22 +408,20 @@
     }
 
     .mobile-margin {
-        margin: 0;
-
         @include tablet {
-            margin-bottom: 0rem;
+            margin-bottom: .75rem;
         }
 
         @include mobile {
-            margin-bottom: 0rem;
+            margin-bottom: .75rem;
         }
 
         @include small-mobile {
-            margin-bottom: 0rem;
+            margin-bottom: .75rem;
         }
 
         @include small-desktop {
-            margin-bottom: 0rem;
+            margin-bottom: .75rem;
         }
     }
 
@@ -516,7 +515,7 @@
         align-items: center;
         justify-content: center;
         color: grey;
-        margin: 1.5rem auto 0 auto;
+        margin: 1rem auto 0 auto;
         border-top: 1px dotted grey;
         border-bottom: 1px dotted grey;
         padding: 1rem 0;
