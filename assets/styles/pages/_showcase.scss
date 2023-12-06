@@ -410,19 +410,19 @@
         margin: 0;
 
         @include tablet {
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
         }
 
         @include mobile {
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
         }
 
         @include small-mobile {
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
         }
 
         @include small-desktop {
-            margin-bottom: 1.5rem;
+            margin-bottom: .5rem;
         }
     }
 
