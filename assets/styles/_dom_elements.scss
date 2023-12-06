@@ -34,9 +34,11 @@ header {
         @include tablet {
             @include mobile-header-anchor();
         }
+
         @include mobile {
             @include mobile-header-anchor();
         }
+
         @include small-mobile {
             @include mobile-header-anchor();
         }
@@ -45,9 +47,11 @@ header {
     @include tablet {
         @include mobile-header();
     }
+
     @include mobile {
         @include mobile-header();
     }
+
     @include small-mobile {
         @include mobile-header();
     }
