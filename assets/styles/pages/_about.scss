@@ -54,11 +54,17 @@
     @include span-50();
 
     a {
-        border-bottom: 0.0625rem dotted $blue_alpha_65;
+        color: grey;
+        border-bottom: 0.0625rem dotted $white;
 
         &:hover {
-            color: $blue_alpha_65;
-            border-color: $white;
+            color: $white;
+            border-color: $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
         }
     }
 
@@ -70,6 +76,11 @@
         &:hover {
             color: $white;
             border-bottom: 1px dotted $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
         }
 
         @include tablet {

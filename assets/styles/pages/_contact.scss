@@ -46,7 +46,18 @@
     }
 
     a {
-        color: $blue_1;
+        color: grey;
+        border-bottom: 0.0625rem dotted $white;
+
+        &:hover {
+            color: $white;
+            border-color: $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
+        }
     }
 
     h4 {
