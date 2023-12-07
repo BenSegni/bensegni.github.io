@@ -564,5 +564,14 @@
             border: 0;
             border-radius: 0;
         }
+
+        a {
+            color: grey;
+            border-bottom: 1px dotted $white;
+            &:hover {
+                color: $white;
+                border-bottom: 1px dotted $blue_1;
+            }
+        }
     }
 }
