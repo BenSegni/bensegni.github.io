@@ -24,37 +24,52 @@
      inkscape:deskcolor="#d1d1d1"
      inkscape:document-units="mm"
      showgrid="false"
-     inkscape:zoom="14.75"
-     inkscape:cx="-5.0508475"
-     inkscape:cy="8.6440678"
+     inkscape:zoom="25.9375"
+     inkscape:cx="7.9614458"
+     inkscape:cy="7.7879518"
      inkscape:window-width="1680"
-     inkscape:window-height="997"
+     inkscape:window-height="1050"
      inkscape:window-x="0"
-     inkscape:window-y="92"
+     inkscape:window-y="67"
      inkscape:window-maximized="0"
      inkscape:current-layer="layer1" />
   <defs
-     id="defs2" />
+     id="defs2">
+    <inkscape:path-effect
+       effect="powerstroke"
+       id="path-effect872"
+       is_visible="true"
+       lpeversion="1"
+       offset_points="0.89810443,0.15301204"
+       not_jump="true"
+       sort_points="true"
+       interpolator_type="CentripetalCatmullRom"
+       interpolator_beta="0.75"
+       start_linecap_type="round"
+       linejoin_type="spiro"
+       miter_limit="4"
+       scale_width="1"
+       end_linecap_type="round" />
+    <inkscape:path-effect
+       effect="simplify"
+       id="path-effect870"
+       is_visible="true"
+       lpeversion="1"
+       steps="1"
+       threshold="0.0047745358"
+       smooth_angles="0"
+       helper_size="0"
+       simplify_individual_paths="false"
+       simplify_just_coalesce="false"
+       step="1" />
+  </defs>
   <g
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#1d2226;stroke-width:0.311283;fill-opacity:1"
        id="path234"
-       sodipodi:type="arc"
-       sodipodi:cx="2.1166666"
-       sodipodi:cy="2.1166666"
-       sodipodi:rx="2.1166666"
-       sodipodi:ry="2.1166666"
-       sodipodi:start="0"
-       sodipodi:end="6.2706527"
-       sodipodi:open="true"
-       sodipodi:arc-type="arc"
-       d="M 4.2333331,2.1166666 A 2.1166666,2.1166666 0 0 1 2.1232984,4.2333227 2.1166666,2.1166666 0 0 1 4.1556972e-5,2.1299301 2.1166666,2.1166666 0 0 1 2.0967713,9.3502804e-5 2.1166666,2.1166666 0 0 1 4.2331669,2.0901399" />
-    <path
-       style="font-size:4.23333px;font-family:Arial;-inkscape-font-specification:Arial;fill:#70b5fa;fill-opacity:1;stroke-width:0.434862"
-       d="M 1.3175022,3.175 V 1.0583332 h 0.794111 q 0.2425648,0 0.3883924,0.064973 0.1472715,0.063529 0.2295703,0.1978059 0.083743,0.1328331 0.083743,0.2786608 0,0.1357207 -0.073636,0.2555593 -0.073636,0.1198385 -0.2223511,0.1934743 0.1920305,0.05631 0.294543,0.1920305 0.1039563,0.1357208 0.1039563,0.320532 0,0.1487153 -0.063529,0.277217 -0.062085,0.1270577 -0.1544909,0.1963619 -0.092406,0.069305 -0.232458,0.1054002 -0.1386084,0.034652 -0.3407458,0.034652 z"
-       id="path1056" />
+       style="fill:#ffffff;stroke-width:0.311283;fill-opacity:1"
+       d="M 2.0970296 0 A 2.1166666 2.1166666 0 0 0 0 2.1301025 A 2.1166666 2.1166666 0 0 0 2.1233846 4.2333333 A 2.1166666 2.1166666 0 0 0 4.2333333 2.1166667 L 4.2333333 2.0903117 A 2.1166666 2.1166666 0 0 0 2.0970296 0 z M 1.4045654 1.017509 L 2.2293213 1.017509 C 2.3972471 1.017509 2.5319589 1.0402245 2.6329142 1.0852051 C 2.7348691 1.1291857 2.8141678 1.1974016 2.8711426 1.2903605 C 2.9291172 1.3823199 2.957959 1.4787932 2.957959 1.5797485 C 2.957959 1.6737071 2.9324551 1.7624021 2.8814779 1.8453654 C 2.8304992 1.9283292 2.7534376 1.9954098 2.6504842 2.0463867 C 2.7834255 2.08537 2.88544 2.1518998 2.9564087 2.2458577 C 3.0283769 2.3398162 3.0644124 2.4507106 3.0644124 2.578654 C 3.0644124 2.6816086 3.0422466 2.7775311 2.9982666 2.8664917 C 2.955286 2.9544527 2.9020422 3.0221181 2.8380697 3.0700968 C 2.7740977 3.1180768 2.6936976 3.1546631 2.5967407 3.1796509 C 2.5007834 3.2036402 2.3826954 3.2158244 2.2427572 3.2158244 L 1.4045654 3.2158244 L 1.4045654 1.017509 z " />
   </g>
 </svg>
