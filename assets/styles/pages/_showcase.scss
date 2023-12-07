@@ -500,12 +500,20 @@
             }
         }
 
+        @include tablet {
+            @include span-50();
+        }
+
         @include mobile {
             @include span-90();
         }
 
         @include small-mobile {
             @include span-90();
+        }
+
+        @include small-desktop {
+            @include span-50();
         }
     }
 
