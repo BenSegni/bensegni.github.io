@@ -191,7 +191,7 @@
 
                 img {
                     display: block;
-                    height: 1.5rem;
+                    height: 1rem;
                     width: auto;
                     margin-top: 0;
                     margin-right: 1.5rem;
@@ -269,6 +269,15 @@
         @include small-mobile {
             @include mobile-img();
         }
+    }
+
+    .post-education-icon {
+        height: 1rem;
+        width: auto;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10rem;
+        padding: .5rem;
     }
 
     @include tablet {

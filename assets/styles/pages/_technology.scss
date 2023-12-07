@@ -1,10 +1,9 @@
 @import "../color";
 
 @mixin mobile-img {
-    height: 1.5rem;
+    height: 1rem;
     width: auto;
     margin: 0 1rem 0 0;
-    border: none;
 }
 
 @mixin mobile-span {
@@ -63,11 +62,11 @@
         }
 
         img {
-            height: 1.5rem;
+            height: 1rem;
             width: auto;
             margin: 0 1.5rem 0 0;
-            border: none;
-            border-radius: 0;
+            border-width: 1px;
+            padding: .5rem;
 
             @include tablet {
                 @include mobile-img();
