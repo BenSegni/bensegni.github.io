@@ -2,3 +2,14 @@
     color: $white;
     padding: 2rem 0;
 }
+
+.angular-version {
+    @include flex();
+    color: grey;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    img {
+        margin: 0 .5rem;
+    }
+}
