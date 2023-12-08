@@ -1,5 +1,5 @@
 @mixin mobile-header {
-    @include background-image-config('background.jpg', 100vmax);
+    @include background-image-config('background.webp', 100vmax);
     padding-bottom: 1rem;
 }
 
@@ -19,11 +19,12 @@
     align-items: center;
     font-size: .75rem;
     padding: .25rem .75rem;
-    color: grey;
-    border: 1px solid grey;
-    border-radius: 1rem;
+    color: $white;
+    border: 0.125rem solid grey;
+    border-radius: 10rem;
     margin-top: .5rem;
     margin-right: .5rem;
+    line-height: 1.5rem;
 
     img {
         width: 1rem;
@@ -125,4 +126,8 @@
     height: 2.5rem;
     width: 2.5rem;
     border: none;
+}
+
+@mixin no-margin {
+    margin: 0;
 }
