@@ -1,0 +1,14 @@
+<ng-container *ngIf="role">
+    <img src="{{ role.logo }}" alt="{{ role.logo | altText }}">
+    <span>
+        <h4>{{ role.company }}</h4>
+        <p><small>{{ role.date }}</small></p>
+        <p class="honors">{{ role.title }}.</p>
+    </span>
+    <ul class="about-detail">
+        <li *ngFor="let success of role.successes">{{ success }}</li>
+    </ul>
+    <a class="employment-site-link" [href]="role.website" target="_blank">{{ role.website }}</a>
+    <h5 class="skills-header">Skills:</h5>
+    <app-skill-pills [skills]="role.technologies" [skillsType]="'employment'"></app-skill-pills>
+</ng-container>

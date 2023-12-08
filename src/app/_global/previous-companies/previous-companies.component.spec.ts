@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PreviousCompaniesComponent } from './previous-companies.component';
-import { AltTextPipe } from 'src/app/_global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../app/_global/utils/pipes/alt-text.pipe';
 
 describe('PreviousCompaniesComponent', () => {
   let component: PreviousCompaniesComponent;
@@ -21,7 +21,7 @@ describe('PreviousCompaniesComponent', () => {
         component.logos$.subscribe({
             next: (response) => {
                 expect(response).toBeTruthy();
-                expect(response[0]).toBe('../../../assets/img/british-airways.svg')
+                expect(response[0]).toBe('../../../assets/img/amazon.svg')
             }
         })
     })

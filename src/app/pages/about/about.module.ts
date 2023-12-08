@@ -6,10 +6,13 @@ import { ProfileComponent } from './profile/profile.component';
 import { EmploymentComponent } from './employment/employment.component';
 import { EducationComponent } from './education/education.component';
 import { AboutSubNavigationComponent } from './about-sub-navigation/about-sub-navigation.component';
-import { PreviousCompaniesComponent } from '../../_global/previous-companies/previous-companies.component';
-import { UtilsModule } from 'src/app/_global/utils/utils.module';
+import { UtilsModule } from '../../../app/_global/utils/utils.module';
 import { TechStackComponent } from './tech-stack/tech-stack.component';
 import { UsefulLinksComponent } from './useful-links/useful-links.component';
+import { GlobalModule } from '../../../app/_global/global.module';
+import { EmploymentInsertComponent } from './employment/employment-insert/employment-insert.component';
+import { EducationInsertComponent } from './education/education-insert/education-insert.component';
+import { PostEducationInsertComponent } from './education/post-education-insert/post-education-insert.component';
 
 
 
@@ -20,17 +23,17 @@ import { UsefulLinksComponent } from './useful-links/useful-links.component';
         EmploymentComponent,
         EducationComponent,
         AboutSubNavigationComponent,
-        PreviousCompaniesComponent,
         TechStackComponent,
-        UsefulLinksComponent
+        UsefulLinksComponent,
+        EmploymentInsertComponent,
+        EducationInsertComponent,
+        PostEducationInsertComponent
     ],
     imports: [
         CommonModule,
         AboutRoutingModule,
-        UtilsModule
-    ],
-    exports: [
-        PreviousCompaniesComponent
+        UtilsModule,
+        GlobalModule
     ]
 })
 export class AboutModule { }

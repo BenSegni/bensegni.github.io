@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GlobalDataService } from 'src/app/_global/global-data.service';
+import { GlobalDataService } from '../../../../app/_global/global-data.service';
 
 @Component({
   selector: 'app-useful-links',

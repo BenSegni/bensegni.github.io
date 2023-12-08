@@ -34,7 +34,8 @@
 
     svg {
         fill: $white;
-        width: 3.5rem;
+        width: auto;
+        margin-right: 2rem;
         margin-bottom: auto;
     }
 
@@ -45,7 +46,18 @@
     }
 
     a {
-        color: $blue_1;
+        color: grey;
+        border-bottom: 0.0625rem dotted $white;
+
+        &:hover {
+            color: $white;
+            border-color: $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
+        }
     }
 
     h4 {

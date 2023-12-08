@@ -14,7 +14,7 @@ import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 const routes: Routes = [
     {
         path: '',
-        redirectTo: 'showcase', pathMatch: 'full'
+        redirectTo: 'showcase', pathMatch: 'full',
     },
     {
         path: 'showcase',
@@ -22,33 +22,48 @@ const routes: Routes = [
     },
     {
         path: 'showcase/:id/synopsis',
-        component: SynopsisComponent
+        component: SynopsisComponent,
     },
     {
         path: 'about',
         component: AboutComponent,
+        data: {
+            breadcrumb: 'About'
+        },
         children: [
             {
                 path: '',
-                redirectTo: 'about-me', pathMatch: 'full'
+                redirectTo: 'about-me', pathMatch: 'full',
             },
             {
                 path: 'about-me',
-                component: ProfileComponent
+                component: ProfileComponent,
+                data: {
+                    breadcrumb: 'About Me'
+                }
             },
             {
                 path: 'employment',
-                component: EmploymentComponent
+                component: EmploymentComponent,
+                data: {
+                    breadcrumb: 'Employment'
+                }
 
             },
             {
                 path: 'education',
-                component: EducationComponent
+                component: EducationComponent,
+                data: {
+                    breadcrumb: 'Education'
+                }
 
             },
             {
                 path: 'technologies',
-                component: TechStackComponent
+                component: TechStackComponent,
+                data: {
+                    breadcrumb: 'Technologies'
+                }
 
             }
 
@@ -56,11 +71,11 @@ const routes: Routes = [
     },
     {
         path: 'current-projects',
-        component: CurrentProjectsComponent
+        component: CurrentProjectsComponent,
     },
     {
         path: 'contact',
-        component: ContactComponent
+        component: ContactComponent,
     },
     {
         path: '**',

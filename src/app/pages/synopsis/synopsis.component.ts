@@ -1,27 +1,24 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GlobalDataService } from 'src/app/_global/global-data.service';
+import { GlobalDataService } from '../../../app/_global/global-data.service';
 import { Showcase } from '../showcase/interface/showcase';
-import { take } from 'rxjs';
 
 @Component({
     selector: 'app-synopsis',
     templateUrl: './synopsis.component.html',
     styleUrls: ['./synopsis.component.scss']
 })
-export class SynopsisComponent extends GlobalDataService implements OnInit {
+export class SynopsisComponent implements OnInit {
     public showcaseProject: Showcase | undefined;
-    public constructor(private _router: Router) {
-        super();
+    public openButton = '../../../assets/img/new_window_blue_icon.svg';
+    public logo = '../../../assets/img/logo.svg';
+    public gridIcon = '../../../assets/img/grid_icon.svg';
+    public constructor(private _router: Router, public _globalService: GlobalDataService) {
+        _globalService.isLoading = true;
     }
 
     public ngOnInit(): void {
-        this.showcase$.pipe(take(1))
-            .subscribe(
-                (showcaseArray) => {
-                    const pageUrl = this._router.routerState.snapshot.url
-                    this.showcaseProject = showcaseArray.find(project => pageUrl.includes(project.routeUrl));
-                }
-            );
+        const pageUrl = this._router.routerState.snapshot.url;
+        this.showcaseProject = this._globalService.showcaseSignal$().find((project) => pageUrl.includes(project.routeUrl))
     }
 }

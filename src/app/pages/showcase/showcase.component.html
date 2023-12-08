@@ -1,20 +1,5 @@
 <h3>Showcase</h3>
+<app-filter></app-filter>
 <button class="layout-button" (click)="changeViewLayout()" [@fade]="columnLayout"><img
         [src]="columnLayout ? grid : column " alt="screen display icon"></button>
-<div class="projects" *ngIf="showcase$ | async as showcase" [ngClass]="columnLayout ? '' : 'grid-layout'">
-    <span *ngFor="let project of showcase" [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }">
-        <div class="project-details">
-            <ul class="skill-pills-mini">
-                <li *ngFor="let skill of project.skills" [ngStyle]="{ 'border-color': skill | pill }"><img
-                        [src]="skill | logo" alt="{{ skill | logo | altText }}" />{{ skill }}</li>
-            </ul>
-            <div class="project-blurb">
-                <h4>{{ project.projectTitle }}</h4>
-                <p><small>{{ project.description }}</small></p>
-                <a [routerLink]="'./' + project.routeUrl + '/synopsis'" [state]="{ id: project.id }">
-                    See More
-                </a>
-            </div>
-        </div>
-    </span>
-</div>
+<app-showcase-items [columnLayout]="columnLayout"></app-showcase-items>

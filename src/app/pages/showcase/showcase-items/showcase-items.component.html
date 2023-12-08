@@ -1,0 +1,7 @@
+<div class="projects" [ngClass]="columnLayout ? '' : 'grid-layout'">
+    <ng-container *ngIf="_globalService.showcaseSignal$()">
+        <span *ngFor="let project of _globalService.showcaseSignal$()" [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }">
+            <app-project-details [project]="project"></app-project-details>
+        </span>
+    </ng-container>
+</div>

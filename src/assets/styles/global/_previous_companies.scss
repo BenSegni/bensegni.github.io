@@ -1,3 +1,8 @@
+@mixin mobile-company-logo {
+    width: 3.25rem;
+    height: auto
+}
+
 .companies-wrapper {
     @include span-90();
     @include flex();
@@ -11,13 +16,19 @@
         width: auto;
 
         @include tablet {
-            margin-bottom: 1rem;
+            @include mobile-company-logo();
+        }
+
+        @include mobile {
+            @include mobile-company-logo();
+        }
+
+        @include small-mobile {
+            @include mobile-company-logo();
         }
     }
 
     .icon {
         margin: 1rem auto;
     }
-
-
 }
