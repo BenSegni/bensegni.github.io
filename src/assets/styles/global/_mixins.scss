@@ -44,6 +44,10 @@
         @include small-mobile {
             margin: 0;
         }
+
+        @include small-desktop {
+            margin: 0;
+        }
     }
 
     @include tablet {

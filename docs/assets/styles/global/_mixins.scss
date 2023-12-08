@@ -35,6 +35,7 @@
 
         @include tablet {
             margin: 0;
+            background-color: pink;
         }
 
         @include mobile {
@@ -42,6 +43,10 @@
         }
 
         @include small-mobile {
+            margin: 0;
+        }
+
+        @include small-desktop {
             margin: 0;
         }
     }
