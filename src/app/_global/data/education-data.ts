@@ -16,7 +16,7 @@ export const educationData: Education[] = [
         website: 'https://www.ncl.ac.uk/'
     },
     {
-        logo: '../../../assets/img/qeh.png',
+        logo: '../../../assets/img/qeh.webp',
         institution: 'Queen Elizabeths Hospital School, Bristol',
         date: '1993 - 2000',
         qualification: 'Advanced Levels in French, English & Fine Art',

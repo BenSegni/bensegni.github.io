@@ -1,0 +1,10 @@
+<ul class="skills"
+    *ngIf="skills"
+    [ngClass]="skillsType === 'employment' ? 'employment-skills' : size ? size : 'skills'">
+    <li *ngFor="let skill of skills"
+        [ngStyle]="{ 'border-color': skill | pill }"
+        [@filteredSkill]="[ skill, this._globalService.showcaseFilterValue ] | filter">
+        <img [src]="skill | logo" alt="{{ skill | logo | altText }}" />
+        <span><a class="pill-link" [href]="skill | filterLink" target="_blank">{{ skill }}</a></span>
+    </li>
+</ul>

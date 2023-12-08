@@ -7,4 +7,9 @@ export interface Showcase {
     background: string;
     routeUrl: string;
     details: string;
+    displayImages?: ImageDisplay[];
+}
+
+export interface ImageDisplay {
+    url: string;
 }

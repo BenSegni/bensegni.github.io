@@ -1,7 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShowcaseComponent } from './showcase.component';
-import { UtilsModule } from 'src/app/_global/utils/utils.module';
+import { UtilsModule } from '../../../app/_global/utils/utils.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ProjectDetailsComponent } from './project-details/project-details.component';
+import { RouterTestingModule } from '@angular/router/testing';
 
 describe('ShowcaseComponent', () => {
     let component: ShowcaseComponent;
@@ -9,8 +12,8 @@ describe('ShowcaseComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [UtilsModule],
-            declarations: [ShowcaseComponent]
+            imports: [UtilsModule, BrowserAnimationsModule, RouterTestingModule],
+            declarations: [ShowcaseComponent, ProjectDetailsComponent]
         });
         fixture = TestBed.createComponent(ShowcaseComponent);
         component = fixture.componentInstance;
@@ -26,10 +29,17 @@ describe('ShowcaseComponent', () => {
             component.showcase$.subscribe({
                 next: (response) => {
                     expect(response).toBeTruthy();
-                    expect(response.length).toBe(5)
+                    expect(response.length).toBe(8)
                     expect(response[0].projectTitle).toBe('9a Studios')
                 }
             })
+        })
+    });
+
+    describe('Testing changeViewLayout()', () => {
+        it('should change column Layout using boolean', () => {
+            component.changeViewLayout();
+            expect(component.columnLayout).toBeTruthy();
         })
     })
 });

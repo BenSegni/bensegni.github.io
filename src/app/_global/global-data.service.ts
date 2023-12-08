@@ -1,4 +1,4 @@
-import { Injectable } from '@angular/core';
+import { Injectable, WritableSignal, signal } from '@angular/core';
 import { Observable, of, take, timer } from 'rxjs';
 import { Education } from '../pages/about/education/interface/education';
 import { postEducationData } from './data/post-education-data';
@@ -26,14 +26,24 @@ export class GlobalDataService {
     public logos$: Observable<string[]> = of(companyLogos);
     public projects$: Observable<CurrentProject> = of(projectData);
     public feedback$: Observable<Feedback[]> = of(feedbackData);
-    public showcase$: Observable<Showcase[]> = of(showcaseData);
+    public showcaseSignal$: WritableSignal<Showcase[]> = signal(showcaseData);
     public technologies$: Observable<Technology[]> = of(technologiesData);
     public usefuLinks$: Observable<string[]> = of(usefulLinksData);
     public isLoading = true;
-    private delay$ = timer(1500);
+    private delay$ = timer(1200);
+    public showcaseFilterValue = '';
 
-    public onLoad():void {
+    public onLoad(): void {
         this.delay$.pipe(take(1)).subscribe({
+            complete: () => this.isLoading = false
+        })
+    }
+
+    public onInitialLoad(): void {
+        if (sessionStorage.getItem('initialLoad')) this.isLoading = false;
+
+        this.delay$.pipe(take(1)).subscribe({
+            next: () => sessionStorage.setItem('initialLoad', "true"),
             complete: () => this.isLoading = false
         })
     }

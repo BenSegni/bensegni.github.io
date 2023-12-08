@@ -8,17 +8,19 @@ import { PreviousCompaniesComponent } from './_global/previous-companies/previou
 import { FooterComponent } from './_global/footer/footer.component';
 
 describe('AppComponent', () => {
-    beforeEach(() => TestBed.configureTestingModule({
-        imports: [RouterTestingModule],
-        declarations: [
-            AppComponent,
-            SocialMediaComponent,
-            PageHeaderComponent,
-            NavigationComponent,
-            PreviousCompaniesComponent,
-            FooterComponent
-        ]
-    }));
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [RouterTestingModule],
+            declarations: [
+                AppComponent,
+                SocialMediaComponent,
+                PageHeaderComponent,
+                NavigationComponent,
+                PreviousCompaniesComponent,
+                FooterComponent
+            ],
+        });
+    });
 
     it('should create the app', () => {
         const fixture = TestBed.createComponent(AppComponent);

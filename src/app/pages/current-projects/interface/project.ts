@@ -5,8 +5,9 @@ export interface CurrentProject {
     presentationLink: string;
 }
 
-interface Project {
+export interface Project {
     projectLogo: string;
     projectTitle: string;
     projectDescription: string;
+    skills?: string[];
 }
