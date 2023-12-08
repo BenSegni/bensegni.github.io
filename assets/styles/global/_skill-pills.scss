@@ -125,6 +125,23 @@
     @include small-mobile {
         padding-left: 0;
     }
+
+    .pill-link {
+        color: $white;
+        padding: 0rem 0.75rem;
+        height: auto;
+        background-color: transparent;
+        border: none;
+        border-radius: 0;
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        text-decoration-color: $white;
+        &:hover {
+            color: grey;
+            text-decoration-color: $blue_1;
+            background-color: transparent;
+        }
+    }
 }
 
 .employment-skills {
