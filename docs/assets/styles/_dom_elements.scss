@@ -34,9 +34,11 @@ header {
         @include tablet {
             @include mobile-header-anchor();
         }
+
         @include mobile {
             @include mobile-header-anchor();
         }
+
         @include small-mobile {
             @include mobile-header-anchor();
         }
@@ -45,9 +47,11 @@ header {
     @include tablet {
         @include mobile-header();
     }
+
     @include mobile {
         @include mobile-header();
     }
+
     @include small-mobile {
         @include mobile-header();
     }
@@ -118,6 +122,10 @@ section {
         align-items: center;
         border-radius: 15rem;
         border: .25rem solid $black;
+    }
+
+    h3 {
+        text-align: center;
     }
 }
 

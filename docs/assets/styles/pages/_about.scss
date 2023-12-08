@@ -1,0 +1,385 @@
+@import './about_mixins';
+
+.about {
+    @include flex();
+    @include flex-wrap();
+    @include span-50();
+    justify-content: center;
+    margin: 3rem auto;
+
+    img {
+        height: 1.5rem;
+        width: auto;
+        border: 0;
+        border-radius: 0;
+        margin-top: 2rem;
+        margin-right: 2rem;
+    }
+
+    @include tablet {
+        @include span-90();
+        @include flex-center();
+    }
+
+    @include mobile {
+        @include span-90();
+        @include flex-center();
+    }
+
+    @include small-mobile {
+        @include span-90();
+        @include flex-center();
+    }
+}
+
+.about-wrapper {
+    width: 100vw;
+    background-color: rgb(45, 53, 59);
+    @include flex();
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+.about-section {
+    padding-bottom: 0;
+}
+
+.about-footer {
+    margin-top: 0;
+}
+
+.about-blurb {
+    text-align: left;
+    line-height: 1.5rem;
+    @include span-50();
+
+    a {
+        color: grey;
+        border-bottom: 0.0625rem dotted $white;
+
+        &:hover {
+            color: $white;
+            border-color: $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
+        }
+    }
+
+    .employment-site-link {
+        margin: 1rem 0 0 9rem;
+        color: grey;
+        border-bottom: 1px dotted $white;
+
+        &:hover {
+            color: $white;
+            border-bottom: 1px dotted $blue_1;
+        }
+
+        &:visited {
+            color: $blue_alpha_6;
+            border-bottom: 1px dotted $blue_alpha_6;
+        }
+
+        @include tablet {
+            margin: 1rem 0 0 0;
+        }
+
+        @include mobile {
+            margin: 1rem 0 0 0;
+        }
+
+        @include small-mobile {
+            margin: 1rem 0 0 0;
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.about-detail {
+    @include about-list();
+    padding-left: 9rem;
+
+    @include tablet {
+        padding-left: 1rem;
+    }
+
+    @include mobile {
+        padding-left: 0rem;
+    }
+
+    @include small-mobile {
+        padding-left: 0rem;
+    }
+}
+
+.about-stub {
+    text-align: left;
+    margin: 2rem 0;
+    padding-top: 1rem;
+    @include flex();
+    @include flex-wrap();
+    align-items: flex-start;
+    @include about-list();
+    margin-left: 2rem;
+
+    p {
+        margin: 0;
+
+        .education-site-link {
+            color: grey;
+            border-bottom: 1px dotted white;
+
+            &:hover {
+                color: $white;
+                border-bottom: 1px dotted $blue_1;
+            }
+        }
+    }
+
+    svg {
+        fill: $white;
+        margin-right: 1rem;
+    }
+
+    span {
+        @include flex();
+        @include flex-column();
+
+        h4 {
+            text-align: left;
+            line-height: 1rem;
+            padding-bottom: .5rem;
+            border-bottom: 0.0625rem dotted $blue_1;
+
+            @include tablet {
+                @include mobile-header();
+            }
+
+            @include mobile {
+                @include mobile-header();
+            }
+
+            @include small-mobile {
+                @include mobile-header();
+            }
+        }
+
+        .honors {
+            margin: 1rem 0;
+            color: $blue_1;
+        }
+
+        small {
+            @include flex();
+            padding-top: 1rem;
+            width: 100%;
+        }
+
+        ul {
+            @include grid();
+            grid-template-columns: repeat(2, 1fr);
+            grid-column-gap: 5rem;
+            list-style: none;
+
+            li {
+                @include flex();
+                padding: 1rem 0;
+                align-items: center;
+
+                img {
+                    display: block;
+                    height: 1rem;
+                    width: auto;
+                    margin-top: 0;
+                    margin-right: 1.5rem;
+
+                    @include tablet {
+                        @include mobile-image();
+                    }
+
+                    @include mobile {
+                        @include mobile-image();
+                    }
+
+                    @include small-mobile {
+                        @include mobile-image();
+                    }
+                }
+
+                @include tablet {
+                    @include mobile-list-item();
+                }
+
+                @include mobile {
+                    @include mobile-list-item();
+                }
+
+                @include small-mobile {
+                    @include mobile-list-item();
+                }
+            }
+
+            @include tablet {
+                @include mobile-list();
+            }
+
+            @include mobile {
+                @include mobile-list();
+            }
+
+            @include small-mobile {
+                @include mobile-list();
+            }
+        }
+
+        @include tablet {
+            @include mobile-span();
+        }
+
+        @include mobile {
+            @include mobile-span();
+        }
+
+        @include small-mobile {
+            @include mobile-span();
+        }
+    }
+
+    img {
+        width: 7rem;
+        height: auto;
+        margin-right: 2rem;
+        margin-top: 1.5rem;
+        margin-bottom: 0;
+        border: 0;
+        border-radius: 0;
+
+        @include tablet {
+            width: 30vw;
+            margin: 0 auto;
+        }
+
+        @include mobile {
+            @include mobile-img();
+        }
+
+        @include small-mobile {
+            @include mobile-img();
+        }
+    }
+
+    .post-education-icon {
+        height: 1rem;
+        width: auto;
+        border-style: solid;
+        border-width: 1px;
+        border-radius: 10rem;
+        padding: .5rem;
+    }
+
+    @include tablet {
+        @include mobile-about-stub();
+    }
+
+    @include mobile {
+        @include mobile-about-stub();
+    }
+
+    @include small-mobile {
+        @include mobile-about-stub();
+    }
+}
+
+.about-tabs {
+    @include flex();
+    justify-content: space-evenly;
+    cursor: pointer;
+    text-align: center;
+
+    h3 {
+        min-width: 12rem;
+
+        .active {
+            border-bottom: 0.0625rem dotted $blue_1;
+        }
+
+        @include tablet {
+            @include mobile-tabs-header();
+        }
+
+        @include mobile {
+            @include mobile-tabs-header();
+        }
+
+        @include small-mobile {
+            @include mobile-tabs-header();
+        }
+
+        a {
+            font-weight: 100;
+            color: $blue_2;
+            min-width: 12rem;
+            padding: .5rem 0;
+            border-bottom: 0.0625rem dotted $blue_1;
+
+            @include tablet {
+                @include mobile-anchor();
+            }
+
+            @include mobile {
+                @include mobile-anchor();
+            }
+
+            @include small-mobile {
+                @include mobile-anchor();
+            }
+        }
+
+    }
+
+    img {
+        display: none;
+    }
+
+    @include tablet {
+        @include mobile-tabs();
+    }
+
+    @include mobile {
+        @include mobile-tabs();
+    }
+
+    @include small-mobile {
+        @include mobile-tabs();
+    }
+
+    .tab-link {
+        @include tablet {
+            font-size: 0.95rem;
+            line-height: 1rem;
+
+            a {
+                padding: 1rem 0;
+            }
+        }
+    }
+}
+
+.tab-content {
+    padding: 0 .75rem 1rem .75rem;
+    border-top: none;
+}

@@ -1,46 +1,5 @@
 @import './project_mixins';
 
-.recent-presentation {
-    display: block;
-    margin: auto auto 2rem auto;
-    @include span-25();
-
-    a {
-        @include flex();
-        @include flex-center();
-        background-color: rgba(112, 181, 250, .65);
-        border-bottom: 0.0625rem dotted rgb(112, 181, 250);
-        color: white;
-        margin: auto;
-        padding: .75rem 1rem;
-
-        &:hover {
-            background-color: rgba(0, 0, 0, 0.75);
-            border-bottom: 0.0625rem dotted rgb(112, 181, 250);
-        }
-
-        img {
-            height: 1rem;
-            width: auto;
-            border: none;
-            border-radius: 0;
-            margin: 0 1rem 0 0;
-        }
-    }
-
-    @include tablet {
-        @include span-90();
-    }
-
-    @include mobile {
-        @include span-90();
-    }
-
-    @include small-mobile {
-        @include span-90();
-    }
-}
-
 .current-project {
     @include flex();
     @include flex-column();
@@ -107,32 +66,41 @@
     align-items: center;
     @include span-50();
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 1.5rem;
     line-height: 1.5rem;
     border-bottom: 0.0625rem dotted grey;
     margin-bottom: 2rem;
 
     img {
         @include project-img();
-        object-fit: contain;
+        object-fit: cover;
+        object-position: center center;
         margin-right: 2rem;
         margin-bottom: 0;
 
         @include tablet {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
 
         @include mobile {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
 
         @include small-mobile {
             @include mobile-margin-right();
+            @include mobile-project-img();
         }
     }
 
     h5 {
         color: $blue_1;
+    }
+
+    .skills-header {
+        color: grey;
+        margin: 0;
     }
 
     @include tablet {
@@ -145,5 +113,123 @@
 
     @include small-mobile {
         @include mobile-insert();
+    }
+}
+
+.recent-presentation {
+    display: block;
+    margin: auto auto 2rem auto;
+    @include span-25();
+
+    a {
+        @include flex();
+        @include flex-center();
+        background-color: rgba(112, 181, 250, .65);
+        border-bottom: 0.0625rem dotted rgb(112, 181, 250);
+        color: white;
+        margin: auto;
+        padding: .75rem 1rem;
+        border-radius: 10rem;
+        border: 0.0625rem solid $white;
+
+        &:hover {
+            color: rgba(0, 0, 0, 0.75);
+            background-color: $white;
+            border: 0.0625rem solid $white;
+        }
+
+        img {
+            height: 1rem;
+            width: auto;
+            border: none;
+            border-radius: 0;
+            margin: 0 1rem 0 0;
+
+            &:hover {
+                filter: invert(100%)
+            }
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.feedback {
+    @include span-50();
+
+    li {
+        @include flex();
+        @include flex-wrap();
+        align-items: center;
+        text-align: left;
+        padding: 2rem 0;
+        border-bottom: 0.0625rem dotted $blue_1;
+        line-height: 1.5rem;
+
+        mark {
+            width: 100%;
+            color: $white;
+            background-color: $blue_alpha_6;
+            padding: 0.25rem 1.5rem;
+            line-height: 2rem;
+            border-radius: 10rem;
+
+            span {
+                color: $black_alpha_7;
+            }
+        }
+
+        small {
+            color: $blue_1;
+        }
+
+        a {
+            color: grey;
+            border-bottom: 0.0625rem dotted $white;
+
+            &:hover {
+                color: $white;
+                border-color: $blue_1;
+            }
+
+            &:visited {
+                color: $blue_alpha_6;
+                border-bottom: 1px dotted $blue_alpha_6;
+            }
+        }
+
+        q {
+            font-weight: 300;
+            font-size: 0.80rem;
+            line-height: 1.5rem;
+        }
+
+        img {
+            height: 2.5rem;
+            width: auto;
+            margin: 0 1rem 0 0;
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
     }
 }

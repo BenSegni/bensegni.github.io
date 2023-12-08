@@ -1,0 +1,61 @@
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes shrink {
+    from {
+        transform: scaleY(100%);
+    }
+
+    to {
+        transform: scaleY(0);
+    }
+}
+
+.modal-image-wrapper {
+    @include flex();
+    @include flex-column();
+    padding: 1rem;
+    background-color: $black_alpha_7;
+    border: 1px solid $black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    margin: 1rem auto;
+    animation: fade 1s;
+    width: 50vw;
+
+    img {
+        border: 0;
+        border-radius: 0;
+        height: 100%;
+        width: auto;
+    }
+
+    button {
+        margin: 1rem 0 2rem 0;
+        background: transparent;
+        border: none;
+        cursor: pointer;
+
+        img {
+            height: 2rem;
+            width: auto;
+            margin: 0 0 0 auto;
+            filter: none;
+        }
+    }
+}
+
+
+.shrink {
+    animation: shrink 1s;
+}
