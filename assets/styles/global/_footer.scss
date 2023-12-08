@@ -5,10 +5,14 @@
 
 .angular-version {
     @include flex();
-    color: grey;
+    color: $white;
+    font-size: .75rem;
     align-items: center;
     justify-content: center;
     text-align: center;
+    background-color: $black_alpha_9;
+    margin: 0;
+    padding: 1rem 0;
     img {
         margin: 0 .5rem;
     }
