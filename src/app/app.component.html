@@ -6,7 +6,7 @@
         <router-outlet></router-outlet>
     </section>
     <app-previous-companies></app-previous-companies>
-    <app-footer></app-footer>
+    <app-footer [version]="appVersion"></app-footer>
 </ng-container>
 <ng-template #loading>
     <div class="loading-icon-home" *ngIf="isLoading">

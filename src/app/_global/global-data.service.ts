@@ -1,5 +1,5 @@
 import { Injectable, WritableSignal, signal } from '@angular/core';
-import { Observable, of, take, timer } from 'rxjs';
+import { BehaviorSubject, Observable, of, take, timer } from 'rxjs';
 import { Education } from '../pages/about/education/interface/education';
 import { postEducationData } from './data/post-education-data';
 import { Employment } from '../pages/about/employment/interface/employment';

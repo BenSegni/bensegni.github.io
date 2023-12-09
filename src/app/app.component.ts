@@ -1,4 +1,4 @@
-import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
 import { GlobalDataService } from './_global/global-data.service';
 
@@ -8,7 +8,10 @@ import { GlobalDataService } from './_global/global-data.service';
     styleUrls: ['./app.component.scss']
 })
 export class AppComponent extends GlobalDataService implements OnInit, OnDestroy {
-    public constructor(private _router: Router) { super() }
+    public appVersion = this._el.nativeElement.attributes[1].value;
+    public constructor(private _router: Router, private _el: ElementRef) {
+        super();
+    }
 
     public ngOnInit(): void {
         this.onInitialLoad();

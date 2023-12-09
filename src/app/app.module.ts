@@ -22,6 +22,8 @@ import { CurrentProjectDetailComponent } from './pages/current-projects/current-
 import { CurrentProjectPresentationComponent } from './pages/current-projects/current-project-presentation/current-project-presentation.component';
 import { FilterComponent } from './pages/showcase/filter/filter.component';
 import { ShowcaseItemsComponent } from './pages/showcase/showcase-items/showcase-items.component';
+import { ReferencesComponent } from './pages/contact/references/references.component';
+import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +43,8 @@ import { ShowcaseItemsComponent } from './pages/showcase/showcase-items/showcase
     CurrentProjectPresentationComponent,
     FilterComponent,
     ShowcaseItemsComponent,
+    ReferencesComponent,
+    CvDownloadComponent,
   ],
   imports: [
     GlobalModule,
