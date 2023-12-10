@@ -69,5 +69,39 @@
 
 .reference {
     color: grey;
-    font-size: .75rem;
+    text-align: left;
+    width: 60vw;
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.download-wrapper {
+    width: 50vw;
+    text-align: left;
+    .downloads {
+        list-style: square;
+        padding-left: 1rem;
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
 }
