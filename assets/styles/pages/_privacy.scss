@@ -1,0 +1,27 @@
+.privacy-policy-wrapper {
+    @include flex();
+    @include flex-column();
+    width: 60vw;
+    text-align: left;
+
+    h3 {
+        text-align: center;
+    }
+
+    img {
+        height: 3rem;
+        width: auto;
+        border: 0;
+        border-radius: 0;
+        margin: 0 auto;
+    }
+
+    ul {
+        padding: 0 0 0 1rem;
+        list-style: square;
+    }
+
+    a {
+        @include content-link();
+    }
+}
