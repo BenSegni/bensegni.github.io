@@ -24,4 +24,16 @@
     a {
         @include content-link();
     }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
 }
