@@ -65,6 +65,7 @@
 
 .reference {
     @include flex();
+    @include flex-wrap();
     text-align: left;
     width: 60vw;
 
@@ -78,6 +79,18 @@
             margin:0 .5rem 0 .5rem;
             border: 0;
             border-radius: 0
+        }
+
+        @include tablet {
+            margin: .5rem 0;
+        }
+
+        @include mobile {
+            margin: .5rem 0;
+        }
+
+        @include small-mobile {
+            margin: .5rem 0;
         }
     }
 
