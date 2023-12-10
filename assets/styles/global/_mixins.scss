@@ -129,7 +129,7 @@
     @include flex-center();
     height: $size;
     width: $size;
-    @include background-image-config('loading_icon.svg', 100% , true);
+    @include background-image-config('loading_icon.svg', 100%, true);
     background-position: center center;
     animation: rotation 1s infinite linear;
     border-radius: 100rem;
@@ -146,4 +146,19 @@
 
 @mixin no-margin {
     margin: 0;
+}
+
+@mixin content-link {
+    color: grey;
+    border-bottom: 1px dotted $white;
+
+    &:hover {
+        color: $white;
+        border-bottom: 1px dotted $blue_1;
+    }
+
+    &:visited {
+        color: $blue_alpha_6;
+        border-bottom: 1px dotted $blue_alpha_6;
+    }
 }

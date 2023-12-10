@@ -28,20 +28,7 @@
         align-items: center;
 
         a {
-            color: grey;
-            border-bottom: 1px dotted $white;
-            text-decoration: none;
-
-            &:hover {
-                color: $white;
-                border-bottom: 1px dotted $blue_1;
-                text-decoration: none;
-            }
-
-            &:visited {
-                color: $blue_alpha_6;
-                border-bottom: 1px dotted $blue_alpha_6;
-            }
+            @include content-link();
         }
 
         span {
