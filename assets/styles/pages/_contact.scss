@@ -64,11 +64,21 @@
 }
 
 .reference {
+    @include flex();
     text-align: left;
     width: 60vw;
 
     a {
+        @include flex();
         @include content-link();
+        margin: 0 .5rem;
+        img {
+            height: 1rem;
+            width: auto;
+            margin:0 .5rem 0 .5rem;
+            border: 0;
+            border-radius: 0
+        }
     }
 
     @include tablet {
