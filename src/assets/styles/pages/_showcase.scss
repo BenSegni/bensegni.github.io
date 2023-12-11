@@ -565,12 +565,7 @@
         }
 
         a {
-            color: grey;
-            border-bottom: 1px dotted $white;
-            &:hover {
-                color: $white;
-                border-bottom: 1px dotted $blue_1;
-            }
+            @include content-link();
         }
     }
 }

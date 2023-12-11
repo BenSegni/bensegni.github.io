@@ -1,3 +1,20 @@
 .useful-links {
-    text-align: center;
+    text-align: left;
+    list-style: square;
+    padding-left: 3rem;
+
+    @include tablet {
+        @include span-90();
+        padding-left: 1rem;
+    }
+
+    @include mobile {
+        @include span-90();
+        padding-left: 1rem;
+    }
+
+    @include small-mobile {
+        @include span-90();
+        padding-left: 1rem;
+    }
 }

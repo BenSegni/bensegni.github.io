@@ -54,34 +54,12 @@
     @include span-50();
 
     a {
-        color: grey;
-        border-bottom: 0.0625rem dotted $white;
-
-        &:hover {
-            color: $white;
-            border-color: $blue_1;
-        }
-
-        &:visited {
-            color: $blue_alpha_6;
-            border-bottom: 1px dotted $blue_alpha_6;
-        }
+        @include content-link();
     }
 
     .employment-site-link {
         margin: 1rem 0 0 9rem;
-        color: grey;
-        border-bottom: 1px dotted $white;
-
-        &:hover {
-            color: $white;
-            border-bottom: 1px dotted $blue_1;
-        }
-
-        &:visited {
-            color: $blue_alpha_6;
-            border-bottom: 1px dotted $blue_alpha_6;
-        }
+        @include content-link();
 
         @include tablet {
             margin: 1rem 0 0 0;

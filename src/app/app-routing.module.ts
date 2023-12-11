@@ -10,6 +10,7 @@ import { EducationComponent } from './pages/about/education/education.component'
 import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
 import { PageNotFoundComponent } from './_global/page-not-found/page-not-found.component';
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
+import { PrivacyPolicyComponent } from './_global/privacy-policy/privacy-policy.component';
 
 const routes: Routes = [
     {
@@ -75,6 +76,10 @@ const routes: Routes = [
     {
         path: 'contact',
         component: ContactComponent,
+    },
+    {
+        path: 'privacy',
+        component: PrivacyPolicyComponent,
     },
     {
         path: '**',

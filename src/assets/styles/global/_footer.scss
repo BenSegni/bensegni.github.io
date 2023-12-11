@@ -4,16 +4,31 @@
 }
 
 .angular-version {
-    @include flex();
     color: $white;
     font-size: .75rem;
+    @include flex();
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: $black_alpha_9;
     margin: 0;
     padding: 1rem 0;
+
     img {
         margin: 0 .5rem;
+    }
+}
+
+.privacy-policy-footer {
+    @include flex();
+    align-items: center;
+
+    a {
+        @include content-link();
+    }
+
+    img {
+        height: 1rem;
+        margin-right: 1rem;
     }
 }
