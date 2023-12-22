@@ -11,6 +11,7 @@ import { TechStackComponent } from './pages/about/tech-stack/tech-stack.componen
 import { PageNotFoundComponent } from './_global/page-not-found/page-not-found.component';
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 import { PrivacyPolicyComponent } from './_global/privacy-policy/privacy-policy.component';
+import { GithubComponent } from './pages/github/github.component';
 
 const routes: Routes = [
     {
@@ -72,6 +73,10 @@ const routes: Routes = [
     {
         path: 'current-projects',
         component: CurrentProjectsComponent,
+    },
+    {
+        path: 'github',
+        component: GithubComponent,
     },
     {
         path: 'contact',

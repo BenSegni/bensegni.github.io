@@ -24,6 +24,7 @@ import { FilterComponent } from './pages/showcase/filter/filter.component';
 import { ShowcaseItemsComponent } from './pages/showcase/showcase-items/showcase-items.component';
 import { ReferencesComponent } from './pages/contact/references/references.component';
 import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.component';
+import { GithubComponent } from './pages/github/github.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.com
     ShowcaseItemsComponent,
     ReferencesComponent,
     CvDownloadComponent,
+    GithubComponent,
   ],
   imports: [
     GlobalModule,

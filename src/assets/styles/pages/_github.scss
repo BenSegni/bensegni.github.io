@@ -1,0 +1,58 @@
+.github-project {
+    @include flex();
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    @include span-50();
+    margin-bottom: 2rem;
+
+    img {
+        margin: auto 3rem auto 0;
+        height: 7rem;
+        width: 7rem;
+        object-fit: cover;
+    }
+
+    span {
+        @include flex();
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+        h4 {
+            padding: 0;
+        }
+
+
+
+        .github-link {
+            @include flex();
+            flex-direction: row;
+            align-items: center;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+
+            svg {
+                fill: white;
+                margin-right: .5rem;
+            }
+
+            a {
+                @include content-link();
+
+            }
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
