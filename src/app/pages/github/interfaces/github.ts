@@ -1,4 +1,4 @@
-import { ToolTipConfig } from "../../../_global/utils/directives/info-directive/tooltip";
+import { ToolTipConfig } from "../../../_global/utils/directives/interfaces/tooltip";
 
 export interface Github {
     name: string;

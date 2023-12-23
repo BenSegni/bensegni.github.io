@@ -4,7 +4,7 @@ import { LogoPipe } from './pipes/logo.pipe';
 import { PillPipe } from './pipes/pill.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FilterLinkPipe } from './pipes/filter-link.pipe';
-import { InfoDirective } from './directives/info-directive/info.directive';
+import { InfoDirective } from './directives/info.directive';
 
 
 

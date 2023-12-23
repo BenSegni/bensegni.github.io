@@ -6,7 +6,7 @@ import {
   Input,
   Renderer2,
 } from '@angular/core';
-import { ToolTipConfig } from './tooltip';
+import { ToolTipConfig } from './interfaces/tooltip';
 
 @Directive({
   selector: '[tooltip]',
@@ -55,7 +55,7 @@ export class InfoDirective implements AfterViewInit {
    */
 
   private resetInfoText(): void {
-    const infoBox: HTMLElement = this.el.nativeElement.querySelector('span');
+    const infoBox: HTMLElement = this.el.nativeElement.querySelector('div');
 
     this.renderer.removeChild(this.el.nativeElement, infoBox);
 
@@ -70,18 +70,19 @@ export class InfoDirective implements AfterViewInit {
 
   private generateInfoBox(text: string): HTMLElement {
     //create span for tool tip box and set styling
-    const infoBox: HTMLElement = this.renderer.createElement('span');
+    const infoBox: HTMLElement = this.renderer.createElement('div');
     const infoText: string = this.renderer.createText(text);
     infoBox.classList.add('info-box');
 
     //set title for tool tip box
     const titleElement: HTMLElement = this.renderer.createElement('h4');
+    const textParagraph: HTMLElement = this.renderer.createElement('p');
     const title: string = this.renderer.createText(
       `${this.tooltip?.toolTipTitle}`
     );
 
     this.renderer.appendChild(titleElement, title);
-
+    this.renderer.appendChild(textParagraph, infoText);
     this.renderer.appendChild(infoBox, titleElement);
 
     //create supporting imagery
@@ -92,7 +93,7 @@ export class InfoDirective implements AfterViewInit {
       this.renderer.appendChild(infoBox, image);
     }
 
-    this.renderer.appendChild(infoBox, infoText);
+    this.renderer.appendChild(infoBox, textParagraph);
 
     //create hyperlink for tooltip more info
     const link: HTMLElement = this.renderer.createElement('a');
