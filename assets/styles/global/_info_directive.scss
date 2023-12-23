@@ -1,19 +1,25 @@
 .info-box {
-    width: 35vw;
+    width: 30vw;
+    font-weight: normal;
     background-color: $black;
     border: 1px solid grey;
     text-align: left;
     padding: 1.5rem;
-    font-size: .75rem;
     display: flex;
     flex-direction: column;
     text-align: left;
     position: absolute;
     z-index: 1;
 
+    p {
+        margin: 0;
+        letter-spacing: 0;
+    }
+
     .help-title {
         display: flex;
         align-items: center;
+        margin: 0 0 1.5rem 0;
     }
 
     .tool-tip-link {
@@ -31,11 +37,15 @@
     h4 {
         margin: 0 0 1rem 0;
         line-height: 1rem;
+        font-size: 1.5rem;
     }
 
     img {
-        border: 1px solid #ccc;
-        margin-bottom: 0.5rem;
+        width: auto;
+        height: 10rem;
+        border: 0;
+        border-radius: 0;
+        margin: 1rem 0;
     }
 
     button {
@@ -46,8 +56,8 @@
         padding: 0.5rem 1rem;
         border-radius: 10rem;
         cursor: pointer;
-        margin-top: 1rem;
         width: 6rem;
+        margin-left: auto;
 
         &:hover {
             background-color: $white;
