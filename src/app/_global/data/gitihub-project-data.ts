@@ -5,18 +5,36 @@ export const githubProjectData: Github[] = [
         name: 'Custom State Management Directive',
         githubLink: 'https://github.com/BenSegni/futurama',
         description: 'RxJs State Management Directive.',
-        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript']
+        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript'],
+        toolTip: {
+            toolTipTitle: 'Custom State Management Directive',
+            text: 'Click below to visit the video walkthrough',
+            link: 'https://youtu.be/LjeAvEfh1FY',
+            linkText: 'Visit Youtube'
+        }
     },
     {
         name: 'Tool Tip Directive',
         githubLink: 'https://github.com/BenSegni/tool-tip-directive',
         description: 'Interactive Tool Tip Directive.',
-        skills: ['Angular', 'HTML5', 'Typescript']
+        skills: ['Angular', 'HTML5', 'Typescript'],
+        toolTip: {
+            toolTipTitle: 'Tool Tip Directive',
+            text: 'Click below to visit the video walkthrough',
+            link: 'https://youtu.be/OSPMP12QKl0',
+            linkText: 'Visit Youtube'
+        }
     },
     {
         name: 'UI Filter',
         githubLink: 'https://github.com/BenSegni/ui-filter',
         description: 'UI Filter using Angular Signals.',
-        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript']
+        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript'],
+        toolTip: {
+            toolTipTitle: 'Angular UI Filter',
+            text: 'Click below to visit the video walkthrough',
+            link: 'https://youtu.be/jb8C7oFEvoo',
+            linkText: 'Visit Youtube'
+        }
     },
 ]

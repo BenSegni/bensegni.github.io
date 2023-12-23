@@ -4,11 +4,12 @@ import { LogoPipe } from './pipes/logo.pipe';
 import { PillPipe } from './pipes/pill.pipe';
 import { FilterPipe } from './pipes/filter.pipe';
 import { FilterLinkPipe } from './pipes/filter-link.pipe';
+import { InfoDirective } from './directives/info-directive/info.directive';
 
 
 
 @NgModule({
-    declarations: [AltTextPipe, LogoPipe, PillPipe, FilterPipe, FilterLinkPipe],
-    exports: [AltTextPipe, LogoPipe, PillPipe, FilterPipe, FilterLinkPipe]
+    declarations: [AltTextPipe, LogoPipe, PillPipe, FilterPipe, FilterLinkPipe, InfoDirective],
+    exports: [AltTextPipe, LogoPipe, PillPipe, FilterPipe, FilterLinkPipe, InfoDirective]
 })
 export class UtilsModule { }
