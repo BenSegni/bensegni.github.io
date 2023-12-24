@@ -48,6 +48,10 @@
     width: 25vw;
 }
 
+@mixin span-30 {
+    width: 30vw;
+}
+
 @mixin span-75 {
     width: 75vw;
 }

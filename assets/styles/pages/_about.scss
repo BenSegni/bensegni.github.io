@@ -247,8 +247,7 @@
         border-radius: 0;
 
         @include tablet {
-            width: 30vw;
-            margin: 0 auto;
+            @include mobile-img();
         }
 
         @include mobile {

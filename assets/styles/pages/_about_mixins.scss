@@ -28,7 +28,7 @@
 }
 
 @mixin mobile-img {
-    @include span-50();
+    @include span-30();
 }
 
 @mixin mobile-about-stub {
