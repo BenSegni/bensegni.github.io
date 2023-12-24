@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, isDevMode } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -25,6 +25,7 @@ import { ShowcaseItemsComponent } from './pages/showcase/showcase-items/showcase
 import { ReferencesComponent } from './pages/contact/references/references.component';
 import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.component';
 import { GithubComponent } from './pages/github/github.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,13 @@ import { GithubComponent } from './pages/github/github.component';
     BrowserAnimationsModule,
     AppRoutingModule,
     AboutModule,
-    UtilsModule
+    UtilsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: !isDevMode(),
+      // Register the ServiceWorker as soon as the application is stable
+      // or after 30 seconds (whichever comes first).
+      registrationStrategy: 'registerWhenStable:30000'
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

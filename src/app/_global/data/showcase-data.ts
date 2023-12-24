@@ -53,13 +53,13 @@ export const showcaseData: Showcase[] = [
         details: 'As a Designer and Web Developer at Performance Horizon, a leading software house (now Partnerize), I was entrusted with the creation of a compelling partner marketing landing page for Lenovo, a global technology giant. This project demanded a thorough understanding of Lenovos brand identity and design principles, necessitating the utilization of Adobe XD to craft an effective solution.',
         displayImages: [
             {
-                url: '../../../../assets/img/lenovo/len_1.webp',
+                url: '../../../../assets/img/lenovo/len_3.webp',
             },
             {
                 url: '../../../../assets/img/lenovo/len_2.webp',
             },
             {
-                url: '../../../../assets/img/lenovo/len_3.webp',
+                url: '../../../../assets/img/lenovo/len_1.webp',
             }
         ]
     },
@@ -74,13 +74,13 @@ export const showcaseData: Showcase[] = [
         details: 'In collaboration with esteemed academics and specialists in the field of dermatology, I embarked on a mission to create a compelling digital presence for a groundbreaking anti-aging product poised to transform the skincare industry. The task at hand involved designing and developing an initial landing page and a subsequent iteration of the corporate website, effectively capturing the essence of this innovative product and its potential impact on the beauty landscape.',
         displayImages: [
             {
+                url: '../../../../assets/img/nuchido/nuch_3.webp',
+            },
+            {
                 url: '../../../../assets/img/nuchido/nuch_1.webp',
             },
             {
                 url: '../../../../assets/img/nuchido/nuch_2.webp',
-            },
-            {
-                url: '../../../../assets/img/nuchido/nuch_3.webp',
             },
             {
                 url: '../../../../assets/img/nuchido/nuch_4.webp',
@@ -102,9 +102,6 @@ export const showcaseData: Showcase[] = [
         displayImages: [
             {
                 url: '../../../../assets/img/orbery/orb_1.webp',
-            },
-            {
-                url: '../../../../assets/img/orbery/orb_3.webp',
             },
             {
                 url: '../../../../assets/img/orbery/orb_2.webp',

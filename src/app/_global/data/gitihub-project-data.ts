@@ -5,7 +5,7 @@ export const githubProjectData: Github[] = [
         name: 'Custom State Management Directive',
         githubLink: 'https://github.com/BenSegni/futurama',
         description: 'RxJs State Management Directive.',
-        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript'],
+        skills: ['Angular', 'Cypress', 'HTML5', 'Jasmine', 'RxJs', 'Typescript'],
         toolTip: {
             toolTipTitle: 'Custom State Management Directive',
             imageUrl: '../../assets/img/state.webp',
@@ -18,7 +18,7 @@ export const githubProjectData: Github[] = [
         name: 'Tool Tip Directive',
         githubLink: 'https://github.com/BenSegni/tool-tip-directive',
         description: 'Interactive Tool Tip Directive.',
-        skills: ['Angular', 'HTML5', 'Typescript'],
+        skills: ['Angular', 'HTML5', 'Jasmine', 'Typescript'],
         toolTip: {
             toolTipTitle: 'Tool Tip Directive',
             imageUrl: '../../assets/img/tool_tip.webp',
@@ -31,7 +31,7 @@ export const githubProjectData: Github[] = [
         name: 'UI Filter',
         githubLink: 'https://github.com/BenSegni/ui-filter',
         description: 'UI Filter using Angular Signals.',
-        skills: ['Angular', 'HTML5', 'RxJs', 'Typescript'],
+        skills: ['Angular', 'HTML5', 'Jasmine', 'RxJs', 'Typescript'],
         toolTip: {
             toolTipTitle: 'Angular UI Filter',
             imageUrl: '../../assets/img/filter.webp',

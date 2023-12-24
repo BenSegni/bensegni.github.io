@@ -31,14 +31,17 @@
             padding: 0;
         }
 
-
+        h5 {
+            color: grey;
+            padding: 0;
+        }
 
         .github-link {
             @include flex();
             flex-direction: row;
             width: 100%;
             align-items: center;
-            margin-top: 2rem;
+            margin-top: 1.25rem;
             margin-bottom: 1rem;
             padding-top: 1rem;
 
