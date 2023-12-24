@@ -1,8 +1,8 @@
 {
   "name": "bensegni.github.io",
   "short_name": "bensegni.github.io",
-  "theme_color": "#1d2226",
-  "background_color": "#ffffff",
+  "theme_color": "#ffffff",
+  "background_color": "#1d2226",
   "display": "standalone",
   "scope": "/",
   "start_url": "/",
