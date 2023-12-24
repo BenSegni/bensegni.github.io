@@ -50,20 +50,36 @@
   ],
   "screenshots": [
     {
-     "src": "assets/img/screenshot.jpg",
-      "sizes": "640x320",
+     "src": "assets/img/screenshot.webp",
+      "sizes": "640x530",
       "type": "image/jpg",
       "form_factor": "wide",
       "label": "Ben Segni Developer & Designer",
       "description": "Full Stack Developer & UI Designer, Durham. "
     },
     {
-     "src": "assets/img/screenshot_mobile.jpg",
-      "sizes": "462x320",
-      "type": "image/jpg",
+     "src": "assets/img/mobile_1.webp",
+      "sizes": "320x711",
+      "type": "image/webp",
       "form_factor": "narrow",
       "label": "Ben Segni Developer & Designer",
-      "description": "Full Stack Developer & UI Designer, Durham. "
+      "description": "Home Screen UI on Mobile."
+    },
+    {
+     "src": "assets/img/mobile_2.webp",
+      "sizes": "320x711",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Ben Segni Developer & Designer",
+      "description": "Project Synposis Screen UI on Mobile."
+    },
+    {
+     "src": "assets/img/mobile_3.webp",
+      "sizes": "320x711",
+      "type": "image/webp",
+      "form_factor": "narrow",
+      "label": "Ben Segni Developer & Designer",
+      "description": "Current Project Screen UI on Mobile."
     }
 ]
 }
