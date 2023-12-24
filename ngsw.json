@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1703436203176,
+  "timestamp": 1703436345608,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -244,7 +244,7 @@
     "/assets/img/qeh.webp": "6f8b3d48b28871332f59ae53831ad65f9cbed356",
     "/assets/img/rxjs_logo.svg": "c498c6cfe4359f82f64827eac864d194b86ea2ea",
     "/assets/img/sass_logo.svg": "ffb029a3107681052568ec84b2de3b17069b1fa3",
-    "/assets/img/screenshot.jpg": "cb9b7e6b74a8bd3b7abcf5c47685471855c1777a",
+    "/assets/img/screenshot.jpg": "b4c1c2fa750bb804a41fdf286c598b7c0bbe9444",
     "/assets/img/sideline-logo.svg": "82ac3a5999fcc8cc71b70fd8cf195325331a83ee",
     "/assets/img/state.webp": "ceab27fe78ba58e4b3579c75932f70c6cf6f3ed8",
     "/assets/img/tool_tip.webp": "1249b5d2459dc364430dbc955997f36c1ee75d54",
