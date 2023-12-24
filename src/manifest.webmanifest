@@ -50,12 +50,20 @@
   ],
   "screenshots": [
     {
-     "src": "assets/img/screenshot.webp",
-      "sizes": "640x530",
-      "type": "image/jpg",
+     "src": "assets/img/screenshot_1.webp",
+      "sizes": "640x520",
+      "type": "image/webp",
       "form_factor": "wide",
       "label": "Ben Segni Developer & Designer",
-      "description": "Full Stack Developer & UI Designer, Durham. "
+      "description": "Home Screen UI on Desktop."
+    },
+    {
+     "src": "assets/img/screenshot_2.webp",
+      "sizes": "640x520",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Ben Segni Developer & Designer",
+      "description": "Project Synposis Screen UI on Desktop."
     },
     {
      "src": "assets/img/mobile_1.webp",
