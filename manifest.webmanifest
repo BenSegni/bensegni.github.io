@@ -50,9 +50,9 @@
   ],
   "screenshots": [
     {
-     "src": "assets/img/screenshot.webp",
+     "src": "assets/img/screenshot.jpg",
       "sizes": "640x320",
-      "type": "image/webp",
+      "type": "image/jpg",
       "form_factor": "wide",
       "label": "Ben Segni Developer & Designer"
     }
