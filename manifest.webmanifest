@@ -58,8 +58,8 @@
       "description": "Full Stack Developer & UI Designer, Durham. "
     },
     {
-     "src": "assets/img/screenshot.jpg",
-      "sizes": "640x320",
+     "src": "assets/img/screenshot_mobile.jpg",
+      "sizes": "462x320",
       "type": "image/jpg",
       "form_factor": "narrow",
       "label": "Ben Segni Developer & Designer",
