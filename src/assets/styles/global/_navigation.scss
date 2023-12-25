@@ -68,8 +68,6 @@
 
             @include tablet {
                 @include mobile-nav();
-                border-bottom: 0.0625rem dotted $blue_2;
-
             }
 
             @include mobile {
