@@ -66,6 +66,22 @@
       "description": "Project Synposis Screen UI on Desktop."
     },
     {
+     "src": "assets/img/screenshot_3.webp",
+      "sizes": "640x520",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Ben Segni Developer & Designer",
+      "description": "Github Projects Screen UI on Desktop."
+    },
+    {
+     "src": "assets/img/screenshot_4.webp",
+      "sizes": "640x520",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Ben Segni Developer & Designer",
+      "description": "Contact Details Screen UI on Desktop."
+    },
+    {
      "src": "assets/img/mobile_1.webp",
       "sizes": "320x711",
       "type": "image/webp",
