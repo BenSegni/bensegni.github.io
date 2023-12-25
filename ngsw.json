@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1703530034784,
+  "timestamp": 1703530534875,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -111,6 +111,8 @@
         "/assets/img/sass_logo.svg",
         "/assets/img/screenshot_1.webp",
         "/assets/img/screenshot_2.webp",
+        "/assets/img/screenshot_3.webp",
+        "/assets/img/screenshot_4.webp",
         "/assets/img/sideline-logo.svg",
         "/assets/img/state.webp",
         "/assets/img/tool_tip.webp",
@@ -253,6 +255,8 @@
     "/assets/img/sass_logo.svg": "ffb029a3107681052568ec84b2de3b17069b1fa3",
     "/assets/img/screenshot_1.webp": "031c70db2711f91332d5d7be887a5038cf4838c4",
     "/assets/img/screenshot_2.webp": "b333ce4679fdd9de3066a6529f32744c84dd6029",
+    "/assets/img/screenshot_3.webp": "928c247a29d09ba7778b45494e822834f9be7518",
+    "/assets/img/screenshot_4.webp": "b005e23b228bb11775919737323c93cfda8da08b",
     "/assets/img/sideline-logo.svg": "82ac3a5999fcc8cc71b70fd8cf195325331a83ee",
     "/assets/img/state.webp": "ceab27fe78ba58e4b3579c75932f70c6cf6f3ed8",
     "/assets/img/tool_tip.webp": "1249b5d2459dc364430dbc955997f36c1ee75d54",
@@ -308,7 +312,7 @@
     "/index.html": "fb73a5652c75344d88d36c66975bffe7f8af5fda",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.d046f2fd9486ec20.js": "3470c95303c4f6fe6ee8742bae75d6367743b460",
-    "/manifest.webmanifest": "bc293bf41b71e6d02fdbf8b23f3251978a73fb4d",
+    "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
     "/styles.c7c801f24d678adb.css": "828199487edf60ddab8701b8063be86d9c0a3afb"
