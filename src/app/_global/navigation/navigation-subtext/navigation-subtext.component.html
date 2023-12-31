@@ -1,0 +1,11 @@
+<ng-container *ngIf="item">
+    <img class="navigation-image" [src]="item.uiImage" [alt]="item.uiImage | altText">
+    <span class="route-info-wrapper">
+        <h3>{{ item.anchorText }}</h3>
+        <span class="route-elements">
+            <img [src]="pathIcon" [alt]="pathIcon | altText">
+            <p><small class="route">bensegni.github.io/{{ item.route }}</small></p>
+        </span>
+        <p class="text" [innerHTML]="item.anchorText | navigationText"></p>
+    </span>
+</ng-container>

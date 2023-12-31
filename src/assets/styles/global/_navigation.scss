@@ -6,13 +6,14 @@
     @include full-width();
     font-size: 1.5rem;
     justify-content: center;
+    align-items: center;
 }
 
 .menu-icon {
     background-color: transparent;
     border: 0;
     border-radius: 0;
-    margin: 2rem 0 1.5rem 0;
+    margin: 1.5rem 0 1.5rem 0;
     height: 2rem;
     cursor: pointer;
 
@@ -30,12 +31,12 @@
     position: fixed;
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 100vh;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     background-color: $black_variant_alpha;
     border-bottom: 0.0625rem solid $black;
+    padding-top: 30vh;
+    padding-bottom: 70vh;
     z-index: 999;
     @include span-100();
 
@@ -100,19 +101,103 @@
         }
     }
 
+    .navigation-spacer {
+        display: block;
+        height: 2rem;
+        width: 1rem;
+        border-left: 1px dotted grey;
+        cursor: unset;
+
+        &:hover {
+            border-bottom: none;
+        }
+    }
+
+    .navigation-subtext {
+        color: $blue_1;
+        flex: 0 0 30%;
+        flex-basis: 100%;
+        text-align: left;
+        padding: 2rem 0 0 20%;
+
+
+
+        .navigation-image {
+            border: 1px solid grey;
+            border-radius: 0;
+            width: auto;
+            height: 20rem;
+            margin-right: 2.5rem;
+        }
+
+        .route-info-wrapper {
+            @include flex();
+            flex-direction: column;
+            justify-content: flex-start;
+
+            h3 {
+                text-align: left;
+                padding: 0;
+            }
+
+            .text {
+                display: block;
+                width: 30vw;
+                margin: 0;
+                padding: 1rem 0 .5rem 0;
+
+            }
+
+            .route {
+                font-style: italic;
+                color: grey;
+                border-bottom: 1px dotted grey;
+                line-height: 1rem;
+            }
+
+            .route-elements {
+                @include flex();
+                align-items: center;
+
+                img {
+                    height: 1rem;
+                    width: auto;
+                    border: 0;
+                    border-radius: 0;
+                    margin: 0 1rem 0 0;
+                }
+            }
+        }
+
+        @include tablet {
+            display: none
+        }
+
+        @include mobile {
+            display: none
+        }
+
+        @include small-mobile {
+            display: none
+        }
+    }
+
     @include tablet {
         @include flex-column();
         @include mobile-nav();
+        padding-top: 10vh;
     }
 
     @include mobile {
         @include flex-column();
         @include mobile-nav();
+        padding-top: 10vh;
     }
 
     @include small-mobile {
         @include flex-column();
         @include mobile-nav();
+        padding-top: 10vh;
     }
 }
 
