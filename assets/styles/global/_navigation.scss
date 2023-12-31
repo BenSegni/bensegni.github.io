@@ -236,6 +236,17 @@
         }
     }
 
+    .external-link {
+        @include flex();
+        align-items: center;
+
+        img {
+            height: 2rem;
+            width: auto;
+            margin: 0 1rem 0 0;
+        }
+    }
+
     @include tablet {
         @include flex-column();
         @include mobile-nav();

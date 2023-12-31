@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704037806542,
+  "timestamp": 1704049098250,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,11 +12,11 @@
       },
       "urls": [
         "/index.html",
-        "/main.e4e900f0b4a3e625.js",
+        "/main.5a7f3836717839df.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
-        "/styles.fad5c1c9f4ed04e6.css"
+        "/styles.2c8ad0b25aa09f2a.css"
       ],
       "patterns": []
     },
@@ -47,6 +47,8 @@
         "/assets/img/ba-seats.webp",
         "/assets/img/ba_help_centre_page.webp",
         "/assets/img/background.webp",
+        "/assets/img/behance_icon.svg",
+        "/assets/img/behance_ui_nav.webp",
         "/assets/img/boba_fett.svg",
         "/assets/img/british-airways.svg",
         "/assets/img/chinwe_roy.webp",
@@ -80,6 +82,8 @@
         "/assets/img/lenovo/len_2.webp",
         "/assets/img/lenovo/len_3.webp",
         "/assets/img/link_icon.svg",
+        "/assets/img/linkedin_icon.svg",
+        "/assets/img/linkedin_ui_nav.webp",
         "/assets/img/lino.webp",
         "/assets/img/loading_icon.svg",
         "/assets/img/logo.svg",
@@ -197,6 +201,8 @@
     "/assets/img/ba-seats.webp": "e48185aa2449d10a04aa392b807ad8a9f35cf797",
     "/assets/img/ba_help_centre_page.webp": "34e0fe545f8a58d7fb817b805943ff48667e3cf2",
     "/assets/img/background.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
+    "/assets/img/behance_icon.svg": "e51b3e977e4d96886e191701c577d43cad35236c",
+    "/assets/img/behance_ui_nav.webp": "dd32768c8fc9ac8f56f55efc7fe7d6bed8b1dd4f",
     "/assets/img/boba_fett.svg": "9b69f4e50e0f72f49e11d0c66fd6f6a58852470e",
     "/assets/img/british-airways.svg": "288c241404f616abd4e1963fb1abae956bd73e3d",
     "/assets/img/chinwe_roy.webp": "4d917a723f4773727080e3326cabdbfe37b93bbe",
@@ -230,6 +236,8 @@
     "/assets/img/lenovo/len_2.webp": "29cb60ab1374a35577134e56efcb7a144abc4627",
     "/assets/img/lenovo/len_3.webp": "e92bdabb1bea0de08aa062356fbbbe70186c4fdc",
     "/assets/img/link_icon.svg": "91f0b7298168054a85757279c0eb1083dc573bb0",
+    "/assets/img/linkedin_icon.svg": "5d344cff0d91c2fa52e63a04a2d1f0814c285472",
+    "/assets/img/linkedin_ui_nav.webp": "d5dfb7840ed153a959a35c62a44667bbefc3d563",
     "/assets/img/lino.webp": "70c4d3260b673df2bf57aba76b3adcb773e275e8",
     "/assets/img/loading_icon.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/assets/img/logo.svg": "ad6d2a2107e548d1eacf8aaff9c30f9c8d4f86f1",
@@ -303,7 +311,7 @@
     "/assets/styles/global/_info_directive.scss": "d4540d38cf3e5292f4e575ca7099003bec8ebc56",
     "/assets/styles/global/_mixins.scss": "86d8b0b0a31aef605da750f001ae61b71424efc4",
     "/assets/styles/global/_modal.scss": "f8ac63ff607ecdc117ff9d1365ebd844af8bf262",
-    "/assets/styles/global/_navigation.scss": "1269ea6db717c638fa6975ff394122250e934c5d",
+    "/assets/styles/global/_navigation.scss": "486d0bd1d214d9df2e412d3afbd3d580befdeb0a",
     "/assets/styles/global/_page_header.scss": "cf887308d72b6a7b8185bed34cca883748e591ed",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "239a235999a433781e09fd12499a5485fe9c15c4",
@@ -321,13 +329,13 @@
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
     "/assets/styles/pages/_technology.scss": "79aa80ccab1d47fff3b7cacfc9841d337ed1afba",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "310c640df71db7bf5ea0bf42a5524febfad9633e",
+    "/index.html": "2b3a9b201d03683087341dd2316e032ad4195081",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.e4e900f0b4a3e625.js": "7fafae584a0da902d7b9ec5c78cb02e75f0e00ea",
+    "/main.5a7f3836717839df.js": "75e219af0e2dcef62abd96b4b65c512a05b61ac5",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
-    "/styles.fad5c1c9f4ed04e6.css": "a9c3af8f0026b6b2602419a1b37e2ca02c8257a9"
+    "/styles.2c8ad0b25aa09f2a.css": "67262fd1246e5b887ccfceef6cea706148e6538c"
   },
   "navigationUrls": [
     {
