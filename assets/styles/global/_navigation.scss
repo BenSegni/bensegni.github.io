@@ -111,6 +111,18 @@
         &:hover {
             border-bottom: none;
         }
+
+        @include tablet {
+            display: none;
+        }
+
+        @include mobile {
+            display: none;
+        }
+
+        @include small-mobile {
+            display: none;
+        }
     }
 
     .navigation-subtext {
