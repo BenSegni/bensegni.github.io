@@ -7,5 +7,9 @@
             <p><small class="route">bensegni.github.io/{{ item.route }}</small></p>
         </span>
         <p class="text" [innerHTML]="item.anchorText | navigationText"></p>
+        <h5>Keywords:</h5>
+        <ul class="keywords">
+            <li [ngStyle]="{ 'border-color': word | pill }" *ngFor="let word of item.keywords">{{ word  }}</li>
+        </ul>
     </span>
 </ng-container>

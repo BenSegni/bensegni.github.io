@@ -3,4 +3,5 @@ export interface NavigationItem {
     anchorText: string;
     activeOptions: boolean;
     uiImage: string;
+    keywords?: string[];
 }

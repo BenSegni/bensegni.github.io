@@ -1,3 +1,17 @@
+@keyframes grow {
+    from {
+        transform-origin: top center;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: top center;
+        transform: scaleY(100%);
+        opacity: 1;
+    }
+}
+
 @mixin full-width {
     width: 100%;
 }
@@ -132,20 +146,20 @@
         text-align: left;
         padding: 2rem 0 0 20%;
 
-
-
         .navigation-image {
             border: 1px solid grey;
             border-radius: 0;
             width: auto;
-            height: 20rem;
+            height: 22rem;
             margin-right: 2.5rem;
+            animation: grow 900ms;
         }
 
         .route-info-wrapper {
             @include flex();
             flex-direction: column;
             justify-content: flex-start;
+            animation: grow 900ms;
 
             h3 {
                 text-align: left;
@@ -160,23 +174,51 @@
 
             }
 
-            .route {
-                font-style: italic;
-                color: grey;
-                border-bottom: 1px dotted grey;
-                line-height: 1rem;
-            }
-
             .route-elements {
                 @include flex();
                 align-items: center;
 
                 img {
-                    height: 1rem;
+                    height: 1.5rem;
                     width: auto;
                     border: 0;
                     border-radius: 0;
                     margin: 0 1rem 0 0;
+                    padding: 0;
+                }
+
+                .route {
+                    font-style: italic;
+                    color: grey;
+                    border-bottom: 1px dotted grey;
+                }
+            }
+
+            h5 {
+                color: grey;
+                margin: 0;
+                padding: 1rem 0 0 0;
+            }
+
+            .keywords {
+                @include flex();
+                flex-wrap: wrap;
+                justify-content: flex-start;
+                align-items: center;
+                color: $white;
+                margin: .5rem 0 0 0;
+                padding: 0;
+
+                li {
+                    padding: .25rem .75rem;
+                    font-size: .75rem;
+                    border: 2px solid grey;
+                    border-radius: 10rem;
+                    margin-right: .5rem;
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
                 }
             }
         }
