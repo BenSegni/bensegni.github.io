@@ -1,3 +1,17 @@
+@keyframes grow {
+    from {
+        transform-origin: top center;
+        transform: scaleY(0);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: top center;
+        transform: scaleY(100%);
+        opacity: 1;
+    }
+}
+
 @mixin full-width {
     width: 100%;
 }
@@ -132,20 +146,20 @@
         text-align: left;
         padding: 2rem 0 0 20%;
 
-
-
         .navigation-image {
             border: 1px solid grey;
             border-radius: 0;
             width: auto;
             height: 20rem;
             margin-right: 2.5rem;
+            animation: grow 900ms;
         }
 
         .route-info-wrapper {
             @include flex();
             flex-direction: column;
             justify-content: flex-start;
+            animation: grow 900ms;
 
             h3 {
                 text-align: left;
