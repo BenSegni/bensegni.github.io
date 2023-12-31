@@ -3,12 +3,12 @@ import { AnimationTriggerMetadata, animate, style, transition, trigger } from "@
 export function FadeInNavigation(): AnimationTriggerMetadata {
     return trigger('fade', [
         transition('void => *', [
-            style({ opacity: 0, transform: 'scaleY(0)' }),
-            animate(400, style({ opacity: 1, transform: 'scaleY(100%)' }))
+            style({ opacity: 0, transform: 'scaleY(0)', transformOrigin: 'top center' }),
+            animate(700, style({ opacity: 1, transform: 'scaleY(100%)', transformOrigin: 'top center' }))
         ]),
         transition('* => void', [
-            style({ opacity: 1, transform: 'scaleY(100%)' }),
-            animate(300, style({ opacity: 0, transform: 'scaleY(0)' }))
+            style({ opacity: 1, transform: 'scaleY(100%)',  transformOrigin: 'top center' }),
+            animate(700, style({ opacity: 0, transform: 'scaleY(0)', transformOrigin: 'top center' }))
         ])
     ]);
 }

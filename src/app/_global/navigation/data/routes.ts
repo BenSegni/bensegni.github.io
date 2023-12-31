@@ -51,7 +51,7 @@ export const routeItems: NavigationItem[] = [
         anchorText: NavigationEnum.LinkedIn,
         activeOptions: false,
         uiImage: '../../assets/img/linkedin_ui_nav.webp',
-        keywords: [KeywordsEnum.Email, KeywordsEnum.Contact, KeywordsEnum.CV],
+        keywords: [KeywordsEnum.Contact, KeywordsEnum.CV, KeywordsEnum.Email,],
         icon: '../../assets/img/linkedin_icon.svg',
     },
 ]

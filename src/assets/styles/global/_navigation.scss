@@ -49,8 +49,8 @@
     align-items: flex-start;
     background-color: $black_variant_alpha;
     border-bottom: 0.0625rem solid $black;
-    padding-top: 30vh;
-    padding-bottom: 70vh;
+    padding-top: 25vh;
+    padding-bottom: 75vh;
     z-index: 999;
     @include span-100();
 
@@ -115,30 +115,6 @@
         }
     }
 
-    .navigation-spacer {
-        display: block;
-        height: 2rem;
-        width: 1rem;
-        border-left: 1px dotted grey;
-        cursor: unset;
-
-        &:hover {
-            border-bottom: none;
-        }
-
-        @include tablet {
-            display: none;
-        }
-
-        @include mobile {
-            display: none;
-        }
-
-        @include small-mobile {
-            display: none;
-        }
-    }
-
     .navigation-subtext {
         color: $blue_1;
         flex: 0 0 30%;
@@ -183,7 +159,7 @@
                     width: auto;
                     border: 0;
                     border-radius: 0;
-                    margin: 0 1rem 0 0;
+                    margin: 0 .75rem 0 0;
                     padding: 0;
                 }
 
@@ -242,7 +218,7 @@
         justify-content: center;
 
         img {
-            height: 2rem;
+            height: 1.5rem;
             width: auto;
             margin: 0 1rem 0 0;
 
