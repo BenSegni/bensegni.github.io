@@ -115,30 +115,6 @@
         }
     }
 
-    .navigation-spacer {
-        display: block;
-        height: 2rem;
-        width: 1rem;
-        border-left: 1px dotted grey;
-        cursor: unset;
-
-        &:hover {
-            border-bottom: none;
-        }
-
-        @include tablet {
-            display: none;
-        }
-
-        @include mobile {
-            display: none;
-        }
-
-        @include small-mobile {
-            display: none;
-        }
-    }
-
     .navigation-subtext {
         color: $blue_1;
         flex: 0 0 30%;
@@ -242,7 +218,7 @@
         justify-content: center;
 
         img {
-            height: 2rem;
+            height: 1.5rem;
             width: auto;
             margin: 0 1rem 0 0;
 
