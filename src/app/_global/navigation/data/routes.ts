@@ -38,5 +38,20 @@ export const routeItems: NavigationItem[] = [
         uiImage: '../../assets/img/contact_ui_nav.webp',
         keywords: [KeywordsEnum.Email, KeywordsEnum.Contact, KeywordsEnum.CV]
     },
-
+    {
+        url: 'https://www.behance.net/BenSegni',
+        anchorText: NavigationEnum.Behance,
+        activeOptions: false,
+        uiImage: '../../assets/img/behance_ui_nav.webp',
+        keywords: [KeywordsEnum.Design, KeywordsEnum.Skills, KeywordsEnum.UI],
+        icon: '../../assets/img/behance_icon.svg',
+    },
+    {
+        url: 'https://www.linkedin.com/in/bensegni/',
+        anchorText: NavigationEnum.LinkedIn,
+        activeOptions: false,
+        uiImage: '../../assets/img/linkedin_ui_nav.webp',
+        keywords: [KeywordsEnum.Email, KeywordsEnum.Contact, KeywordsEnum.CV],
+        icon: '../../assets/img/linkedin_icon.svg',
+    },
 ]

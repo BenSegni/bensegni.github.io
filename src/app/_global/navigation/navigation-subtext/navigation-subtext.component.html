@@ -3,8 +3,8 @@
     <span class="route-info-wrapper">
         <h3>{{ item.anchorText }}</h3>
         <span class="route-elements">
-            <img [src]="pathIcon" [alt]="pathIcon | altText">
-            <p><small class="route">bensegni.github.io/{{ item.route }}</small></p>
+            <img [src]="item.icon ? item.icon : pathIcon " [alt]="(item.icon ? item.icon : pathIcon) | altText">
+            <p><small class="route">{{ item.route ? 'bensegni.github.io/' + item.route : item.url }}</small></p>
         </span>
         <p class="text" [innerHTML]="item.anchorText | navigationText"></p>
         <h5>Keywords:</h5>

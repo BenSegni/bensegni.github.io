@@ -9,11 +9,13 @@ export class NavigationTextPipe implements PipeTransform {
 
   transform(routeText: string): string {
     switch(routeText) {
-        case NavigationEnum.Showcase: return SubTextEnum.Showcase;
+        case NavigationEnum.Behance: return SubTextEnum.Behance;
         case NavigationEnum.About: return SubTextEnum.About;
+        case NavigationEnum.Contact: return SubTextEnum.Contact;
         case NavigationEnum.CurrentProject: return SubTextEnum.CurrentProject;
         case NavigationEnum.Github: return SubTextEnum.Github;
-        case NavigationEnum.Contact: return SubTextEnum.Contact;
+        case NavigationEnum.LinkedIn: return SubTextEnum.LinkedIn;
+        case NavigationEnum.Showcase: return SubTextEnum.Showcase;
         default: return '';
     }
   }

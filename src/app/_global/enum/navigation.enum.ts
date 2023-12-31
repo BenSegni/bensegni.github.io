@@ -1,7 +1,9 @@
 export enum NavigationEnum {
-    Showcase = 'Showcase',
+    Behance = 'Behance',
     About = 'About',
+    Contact = 'Contact',
     CurrentProject = 'Current Project',
     Github = 'Github',
-    Contact = 'Contact'
+    LinkedIn = 'LinkedIn',
+    Showcase = 'Showcase',
 }
