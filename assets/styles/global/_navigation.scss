@@ -174,23 +174,23 @@
 
             }
 
-            .route {
-                font-style: italic;
-                color: grey;
-                border-bottom: 1px dotted grey;
-                line-height: 1rem;
-            }
-
             .route-elements {
                 @include flex();
                 align-items: center;
 
+                .route {
+                    font-style: italic;
+                    color: grey;
+                    border-bottom: 1px dotted grey;
+                }
+
                 img {
-                    height: 1rem;
+                    height: 1.5rem;
                     width: auto;
                     border: 0;
                     border-radius: 0;
                     margin: 0 1rem 0 0;
+                    padding: 0;
                 }
             }
         }
