@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704031305122,
+  "timestamp": 1704031774105,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -16,7 +16,7 @@
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
-        "/styles.1a07497a78cfd339.css"
+        "/styles.812bf04561244f3c.css"
       ],
       "patterns": []
     },
@@ -304,7 +304,7 @@
     "/assets/styles/global/_mixins.scss": "86d8b0b0a31aef605da750f001ae61b71424efc4",
     "/assets/styles/global/_modal.scss": "f8ac63ff607ecdc117ff9d1365ebd844af8bf262",
     "/assets/styles/global/_navigation.scss": "2cac18e47175042c5ec73dc9fef6c11d8c34df11",
-    "/assets/styles/global/_page_header.scss": "18ac1b4bf153e1c54123279eb98cf3275d69aa5a",
+    "/assets/styles/global/_page_header.scss": "b363ba27437fb07ab51e4a70d03d97090faf3ce6",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "239a235999a433781e09fd12499a5485fe9c15c4",
     "/assets/styles/pages/_404.scss": "3018c6791e47e8a66ba4945abb0fb2cf1cd6fb0c",
@@ -321,13 +321,13 @@
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
     "/assets/styles/pages/_technology.scss": "79aa80ccab1d47fff3b7cacfc9841d337ed1afba",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "9e7807f9b5c9097922640feb1390c634f52c23af",
+    "/index.html": "e394c2f838f1c232cf042d96e6a4bf6245e805d0",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.084776c7ec180e15.js": "06499bf909ee21ef30c4d91fed3234b763b40c51",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
-    "/styles.1a07497a78cfd339.css": "3e2642f5bc5993d351048f83d4a0dbbad150011a"
+    "/styles.812bf04561244f3c.css": "07bf2382a116cb1f809fd24b4577f147dd0558b0"
   },
   "navigationUrls": [
     {
