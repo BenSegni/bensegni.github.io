@@ -162,3 +162,49 @@
         border-bottom: 1px dotted $blue_alpha_6;
     }
 }
+
+@mixin rotate {
+    animation: rotation 900ms;
+
+    @keyframes rotation {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+@mixin grow {
+    animation: grow 900ms;
+
+    @keyframes grow {
+        from {
+            transform-origin: top center;
+            transform: scaleY(0);
+            opacity: 0;
+        }
+
+        to {
+            transform-origin: top center;
+            transform: scaleY(100%);
+            opacity: 1;
+        }
+    }
+}
+
+@mixin shrinkandgrow {
+    animation: expand 900ms;
+
+    @keyframes expand {
+        from {
+            transform: scaleY(0);
+        }
+
+        to {
+            transform: scaleY(100%);
+        }
+    }
+}

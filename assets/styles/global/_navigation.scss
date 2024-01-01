@@ -41,18 +41,24 @@
         border: 0;
         border-radius: 0
     }
+    &:hover {
+        @include rotate();
+        filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
+    }
 }
 
-.eye-icon {
+.close-icon {
     @include icon();
-    height: 3rem;
-    margin: 1rem 0 1rem 0;
 
     img {
-        height: 3rem;
+        height: 2rem;
         width: auto;
         border: 0;
         border-radius: 0
+    }
+    &:hover {
+        @include rotate();
+        filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
     }
 }
 
@@ -89,10 +95,6 @@
             @include flex();
             @include flex-center();
 
-            &:hover {
-                color: $blue_1;
-            }
-
             svg {
                 fill: $blue_1;
                 margin-right: .75rem;
@@ -113,6 +115,7 @@
 
         &:hover {
             border-bottom: 0.0625rem solid $white;
+            filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
         }
 
         &:active {
@@ -145,14 +148,14 @@
             width: auto;
             height: 22rem;
             margin-right: 2.5rem;
-            animation: grow 900ms;
+            @include grow();
         }
 
         .route-info-wrapper {
             @include flex();
             flex-direction: column;
             justify-content: flex-start;
-            animation: grow 900ms;
+            @include grow();
 
             h3 {
                 text-align: left;
