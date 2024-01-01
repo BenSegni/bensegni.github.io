@@ -126,6 +126,7 @@
         background-size: cover;
         background-position: left center;
         margin: 0 0 2rem 0;
+        filter: drop-shadow(.125rem .125rem $black) drop-shadow(-.125rem -.125rem $black);
     }
 
     @include tablet {
