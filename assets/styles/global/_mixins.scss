@@ -177,8 +177,8 @@
     }
 }
 
-@mixin grow {
-    animation: grow 900ms;
+@mixin grow($duration) {
+    animation: grow $duration;
 
     @keyframes grow {
         from {

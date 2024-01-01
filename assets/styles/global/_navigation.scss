@@ -194,14 +194,14 @@
             width: auto;
             height: 22rem;
             margin-right: 2.5rem;
-            @include grow();
+            @include grow(900ms);
         }
 
         .route-info-wrapper {
             @include flex();
             flex-direction: column;
             justify-content: flex-start;
-            @include grow();
+            @include grow(900ms);
 
             h3 {
                 text-align: left;
