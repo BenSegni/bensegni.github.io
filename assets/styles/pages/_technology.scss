@@ -21,6 +21,8 @@
     flex-direction: column;
     justify-content: center;
     @include span-50();
+    margin-top: 2rem;
+    padding-top:1rem;
 
     li {
         @include flex();
