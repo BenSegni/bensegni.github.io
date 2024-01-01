@@ -25,10 +25,6 @@ $background: 'background.webp';
         padding: 7rem 0 3rem 0;
     }
 
-    h1, h2 {
-        filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
-    }
-
     p {
         @include tablet {
             @include span-95();

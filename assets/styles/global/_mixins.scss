@@ -194,17 +194,3 @@
         }
     }
 }
-
-@mixin shrinkandgrow {
-    animation: expand 900ms;
-
-    @keyframes expand {
-        from {
-            transform: scaleY(0);
-        }
-
-        to {
-            transform: scaleY(100%);
-        }
-    }
-}

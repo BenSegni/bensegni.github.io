@@ -12,6 +12,22 @@
     }
 }
 
+@keyframes growX {
+    from {
+        transform-origin: top center;
+        transform: scaleX(0);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: top center;
+        transform: scaleX(100%);
+        opacity: 1;
+    }
+}
+
+
+
 @mixin full-width {
     width: 100%;
 }
@@ -34,6 +50,30 @@
 
 .menu-icon {
     @include icon();
+    width: 4rem;
+
+    span {
+        display: block;
+        height: .25rem;
+        width: 100%;
+        border-radius: 10rem;
+        background-color: $white;
+        margin-bottom: .25rem;
+        transition: width 0.5s linear;
+
+        &:nth-child(2) {
+            width: 75%;
+        }
+
+        &:nth-child(3) {
+            width: 50%;
+        }
+    }
+
+    &:hover span {
+        transition: width 1s ease-in-out;
+        width: 100%;
+    }
 
     img {
         height: 2rem;
@@ -41,23 +81,30 @@
         border: 0;
         border-radius: 0
     }
+
     &:hover {
-        @include rotate();
         filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
     }
 }
 
 .close-icon {
     @include icon();
+    position: relative;
+    width: 2.5rem;
+    height: 2.5rem;
+
 
     img {
-        height: 2rem;
-        width: auto;
+        height: auto;
+        width: 1.5rem;
         border: 0;
-        border-radius: 0
+        border-radius: 0;
+        transition: width 0.5s linear;
     }
-    &:hover {
-        @include rotate();
+
+    &:hover img {
+        transition: width 1s ease-in-out;
+        width: 2.5rem;
         filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
     }
 }
@@ -115,7 +162,6 @@
 
         &:hover {
             border-bottom: 0.0625rem solid $white;
-            filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
         }
 
         &:active {
