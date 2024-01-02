@@ -455,3 +455,46 @@
     padding: 0 .75rem 1rem .75rem;
     border-top: none;
 }
+
+.profile-images {
+    @include flex();
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+
+    img {
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: 0;
+
+        @include tablet {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+
+        @include mobile {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+
+        @include small-mobile {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+    }
+
+    @include tablet {
+        padding: 0 0 1rem 0;
+    }
+
+    @include mobile {
+        padding: 0 0 1rem 0;
+    }
+
+    @include small-mobile {
+        padding: 0 0 1rem 0;
+    }
+}

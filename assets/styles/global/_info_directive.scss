@@ -13,18 +13,20 @@
 }
 
 .info-box {
+    @include flex();
+    @include flex-column();
+    @include flex-wrap();
     width: 30vw;
     font-weight: normal;
     background-color: $black;
     border: 1px solid grey;
     text-align: left;
     padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
     text-align: left;
     position: absolute;
     z-index: 1;
     animation: fade 900ms;
+
     p {
         margin: 0;
         letter-spacing: 0;
