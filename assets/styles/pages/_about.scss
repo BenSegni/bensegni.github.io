@@ -57,6 +57,15 @@
         @include content-link();
     }
 
+    p {
+        display: block;
+
+        &:first-of-type {
+            margin-top: 2rem;
+            padding-top: 1rem;
+        }
+    }
+
     .employment-site-link {
         margin: 1rem 0 0 9rem;
         @include content-link();
