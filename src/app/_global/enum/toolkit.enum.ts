@@ -5,5 +5,7 @@ export enum ToolkitEnum {
     Photoshop = 'Adobe Photoshop',
     Postman = 'Postman',
     Inkscape = 'Inkscape',
-    VSCode = 'Visual Studio'
+    VSCode = 'Visual Studio',
+    Design = 'Design',
+    Development = 'Development'
 }

@@ -18,6 +18,7 @@ import { usefulLinksData } from './data/useful-links-data';
 import { Github } from '../pages/github/interfaces/github';
 import { githubProjectData } from './data/gitihub-project-data';
 import { toolkitData } from './data/toolkit-data';
+import { ToolKit } from '../pages/about/toolkit/interface/toolkit';
 
 @Injectable({
     providedIn: 'root'
@@ -33,7 +34,7 @@ export class GlobalDataService {
     public technologies$: Observable<Technology[]> = of(technologiesData);
     public usefuLinks$: Observable<string[]> = of(usefulLinksData);
     public githubProjects$: Observable<Github[]> = of(githubProjectData);
-    public toolkit$: Observable<string[]> = of(toolkitData);
+    public toolkit$: Observable<ToolKit[]> = of(toolkitData);
     public isLoading = true;
     private delay$ = timer(1200);
     public showcaseFilterValue = '';

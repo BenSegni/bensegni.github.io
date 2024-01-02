@@ -2,8 +2,9 @@
 <ng-container *ngIf="toolkit$ | async as toolkit">
     <ul class="technologies">
         <li *ngFor="let tool of toolkit">
-            <img [ngStyle]="{ 'border-color': tool | pill }" [src]="tool | logo" alt="{{ tool | logo | altText }}">
-            <span>{{ tool}}</span>
+            <img [ngStyle]="{ 'border-color': tool.name | pill }" [src]="tool.name | logo" alt="{{ tool.name | logo | altText }}">
+            <span><a class="pill-link" [href]="tool.name | filterLink" target="_blank">{{ tool.name }}</a></span>
+            <span>{{ tool.type }}</span>
         </li>
     </ul>
 </ng-container>

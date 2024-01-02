@@ -181,18 +181,18 @@ export const showcaseData: Showcase[] = [
         projectTitle: 'Qatar FIFA World Cup 2022',
         description: 'Company Proposal for the 2022 FIFA World Cup in Qatar.',
         downloadLink: '../../../../assets/docs/qatar_brochure.pdf',
-        background: '../../../../assets/img/qatar/qatar_2.webp',
+        background: '../../../../assets/img/qatar/qatar_1.webp',
         routeUrl: 'qatar',
         details: 'In collaboration with the Department for International Trade and the British Embassy in Qatar, a comprehensive digital transformation proposal was developed for the 2022 FIFA World Cup. This innovative application aimed to streamline the fan experience by integrating essential services within a single platform. From travel bookings and stadium access to restaurant recommendations, the application served as a one-stop solution for visitors navigating the tournament.',
         displayImages: [
-            {
-                url: '../../../../assets/img/qatar/qatar_1.webp',
-            },
             {
                 url: '../../../../assets/img/qatar/qatar_2.webp',
             },
             {
                 url: '../../../../assets/img/qatar/qatar_3.webp',
+            },
+            {
+                url: '../../../../assets/img/qatar/qatar_1.webp',
             },
             {
                 url: '../../../../assets/img/qatar/qatar_4.webp',

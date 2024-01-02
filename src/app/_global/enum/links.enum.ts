@@ -6,11 +6,19 @@ export enum LinkEnum {
     Ionic = 'https://ionicframework.com/',
     Jasmine = 'https://jasmine.github.io/',
     Jest = 'https://jestjs.io/',
+    Illustrator = 'https://www.adobe.com/uk/products/illustrator.html',
+    InDesign = 'https://www.adobe.com/uk/products/indesign.html',
+    Inkscape = 'https://www.uxdesigninstitute.com/blog/what-is-ui-design/',
     NestJS = 'https://nestjs.com/',
     NGRX = 'https://ngrx.io/',
     Pact = 'https://pact.io/',
+    Photoshop = 'https://www.adobe.com/uk/products/photoshop.html',
+    Postman = 'https://www.postman.com/',
     RXJS = 'https://rxjs.dev/',
     SASS = 'https://sass-lang.com/',
     Typescript = 'https://www.typescriptlang.org/',
-    UI = 'https://www.uxdesigninstitute.com/blog/what-is-ui-design/'
+    UI = 'https://www.uxdesigninstitute.com/blog/what-is-ui-design/',
+    XD = 'https://www.nobledesktop.com/learn/adobe-xd/what-is-adobe-xd',
+    VSCode = 'https://code.visualstudio.com/',
+
 }
