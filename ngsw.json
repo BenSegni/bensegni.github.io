@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704204314881,
+  "timestamp": 1704212148791,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,11 +12,11 @@
       },
       "urls": [
         "/index.html",
-        "/main.417ea393675cd79f.js",
+        "/main.fcb83537c537e156.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
-        "/styles.f28521424987f761.css"
+        "/styles.5daaade71f6273a2.css"
       ],
       "patterns": []
     },
@@ -85,6 +85,9 @@
         "/assets/img/grid_icon.svg",
         "/assets/img/help-centre.webp",
         "/assets/img/html5_logo.svg",
+        "/assets/img/illustrator_logo.svg",
+        "/assets/img/indesign_logo.svg",
+        "/assets/img/inkscape_logo.svg",
         "/assets/img/ionic_logo.svg",
         "/assets/img/jasmine_logo.svg",
         "/assets/img/java_logo.svg",
@@ -132,6 +135,8 @@
         "/assets/img/pact_logo.svg",
         "/assets/img/permissions-centre.webp",
         "/assets/img/ph.webp",
+        "/assets/img/photoshop_logo.svg",
+        "/assets/img/postman_logo.svg",
         "/assets/img/qatar/qatar_1.webp",
         "/assets/img/qatar/qatar_2.webp",
         "/assets/img/qatar/qatar_3.webp",
@@ -158,6 +163,8 @@
         "/assets/img/velux/v_3.webp",
         "/assets/img/velux/v_4.webp",
         "/assets/img/velux/v_5.webp",
+        "/assets/img/vscode_logo.svg",
+        "/assets/img/xd_logo.svg",
         "/assets/img/zen-desk/zd_1.webp",
         "/assets/img/zen-desk/zd_2.webp",
         "/assets/img/zen-desk/zd_3.webp",
@@ -261,6 +268,9 @@
     "/assets/img/grid_icon.svg": "6d6b4c752df4b81655001c27ccad5d19c0822cc5",
     "/assets/img/help-centre.webp": "eb47ecb08909e40e1c35330aa90ec20e35c914bd",
     "/assets/img/html5_logo.svg": "76e629d129e2ed2d509fa92a32459961defec492",
+    "/assets/img/illustrator_logo.svg": "985c51ef8af29182516cedf72d874d62c5d34f6c",
+    "/assets/img/indesign_logo.svg": "7070c64073d5ca67d52690dabb9c36f688e753f1",
+    "/assets/img/inkscape_logo.svg": "43f001b7cc0b8b7d46d65b08cd8e4bedd553e0e4",
     "/assets/img/ionic_logo.svg": "571b703e2b8e0a6324db0291a229a126eb5820cf",
     "/assets/img/jasmine_logo.svg": "3bfec94358a753f13d1f7f8685d51c7d04c59fb6",
     "/assets/img/java_logo.svg": "5a6170cfc17d9dec184aef73c8d9f5fcf184c618",
@@ -308,6 +318,8 @@
     "/assets/img/pact_logo.svg": "e050e54ecacd17a0fb1493744887f72e01fc7ed2",
     "/assets/img/permissions-centre.webp": "16c29717bbe2c69a52f8f5f4f5910291af136496",
     "/assets/img/ph.webp": "402ba1ae517fb76ef3514828dc84cc7603bf0258",
+    "/assets/img/photoshop_logo.svg": "fe7958ac8d92aaf01dc5718d0620c50a1b654133",
+    "/assets/img/postman_logo.svg": "e2ca565d4acb918418857195e2ec6bea0ac97c80",
     "/assets/img/qatar/qatar_1.webp": "f57478de329c47730baefc9f6e2e1c2725baa3c9",
     "/assets/img/qatar/qatar_2.webp": "4467ce99e93276d5f377d9ce49d7a6c69e76b7b9",
     "/assets/img/qatar/qatar_3.webp": "da9925b7ac691c9d454d6053d2c61bd63f3a89c2",
@@ -334,6 +346,8 @@
     "/assets/img/velux/v_3.webp": "908213f2216dbbd1f96004ad5db171e951e038d2",
     "/assets/img/velux/v_4.webp": "1700b96e08de517060df444eb1d960b1027583b6",
     "/assets/img/velux/v_5.webp": "ae36a51fc3a93ca66b39c4a926999c8687cb2431",
+    "/assets/img/vscode_logo.svg": "8d0143045ffccacd9f2d720d4a06f35d21ce096e",
+    "/assets/img/xd_logo.svg": "fe84f0620f061b58a17815c044af30d201149d63",
     "/assets/img/zen-desk/zd_1.webp": "709954a879825ef46cf5922bb8cc08102d5292cd",
     "/assets/img/zen-desk/zd_2.webp": "789c838aad9a5758430343ed0de5887df5152ab8",
     "/assets/img/zen-desk/zd_3.webp": "3d5960071f320115dc85fa4b6e9d23aa04079cc2",
@@ -360,7 +374,7 @@
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "239a235999a433781e09fd12499a5485fe9c15c4",
     "/assets/styles/pages/_404.scss": "3018c6791e47e8a66ba4945abb0fb2cf1cd6fb0c",
-    "/assets/styles/pages/_about.scss": "5a313deec75b6086c55f022756150349d8d2b476",
+    "/assets/styles/pages/_about.scss": "e47a3003c648302982731ed9ef37b79f9e3764e8",
     "/assets/styles/pages/_about_mixins.scss": "13329d04dc53890f6318393eb5535047bfdac8fa",
     "/assets/styles/pages/_contact.scss": "6f0e93c6c206ec6042e0d63e95be502bdbd1ac0f",
     "/assets/styles/pages/_current_project.scss": "b3edfdb9ee7020b4580925aa4296dd3a23112c58",
@@ -371,15 +385,15 @@
     "/assets/styles/pages/_showcase.scss": "1c5926c3f5f2447ec4b9999621e049117fcfba62",
     "/assets/styles/pages/_showcase_mixins.scss": "05508d4d24996e88cff7076e510ba0bd91d95dd4",
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
-    "/assets/styles/pages/_technology.scss": "644fae6f13ed15d91b95f2c4e87e26df81cfb64e",
+    "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "c852299e666c27db9cc2a81da610eeaac7750880",
+    "/index.html": "f94c4a150c30ef6d542c5b7b2cf2fe748c595322",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.417ea393675cd79f.js": "14d9d9325d3dc1aa932bd9f17d09b400448c33e2",
+    "/main.fcb83537c537e156.js": "da773bf9cefb24ffeaa5077511a841d1f9c1fc6b",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
-    "/styles.f28521424987f761.css": "32fdfb6f3f45de62e327e068379e63b34672ee56"
+    "/styles.5daaade71f6273a2.css": "fc6a35b966221a32d086c4057f0974359416209c"
   },
   "navigationUrls": [
     {
