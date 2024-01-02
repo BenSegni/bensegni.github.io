@@ -1,5 +1,43 @@
 @import './about_mixins';
 
+@mixin about-text-detail {
+    span {
+        @include flex();
+        @include flex-column();
+
+        h4 {
+            text-align: left;
+            line-height: 1rem;
+            padding-top: 0;
+            padding-bottom: .5rem;
+            border-bottom: 0.0625rem dotted $blue_1;
+
+            @include tablet {
+                @include mobile-header();
+            }
+
+            @include mobile {
+                @include mobile-header();
+            }
+
+            @include small-mobile {
+                @include mobile-header();
+            }
+        }
+
+        .honors {
+            margin: 1rem 0;
+            color: $blue_1;
+        }
+
+        small {
+            @include flex();
+            padding-top: 1rem;
+            width: 100%;
+        }
+    }
+}
+
 .about {
     @include flex();
     @include flex-wrap();
@@ -137,6 +175,12 @@
 
     p {
         margin: 0;
+        padding: 0;
+
+        &:first-of-type {
+            margin: 0;
+            padding: 1rem 0 0 0;
+        }
 
         .education-site-link {
             color: grey;
@@ -153,6 +197,8 @@
         fill: $white;
         margin-right: 1rem;
     }
+
+    @include about-text-detail();
 
     .education-insert {
         @include flex();
@@ -179,41 +225,7 @@
             }
         }
 
-        span {
-            @include flex();
-            @include flex-column();
-
-            h4 {
-                text-align: left;
-                line-height: 1rem;
-                padding-top: 0;
-                padding-bottom: .5rem;
-                border-bottom: 0.0625rem dotted $blue_1;
-
-                @include tablet {
-                    @include mobile-header();
-                }
-
-                @include mobile {
-                    @include mobile-header();
-                }
-
-                @include small-mobile {
-                    @include mobile-header();
-                }
-            }
-
-            .honors {
-                margin: 1rem 0;
-                color: $blue_1;
-            }
-
-            small {
-                @include flex();
-                padding-top: 1rem;
-                width: 100%;
-            }
-        }
+        @include about-text-detail();
 
         @include tablet {
             @include mobile-about-stub();
@@ -334,7 +346,7 @@
     img {
         width: 7rem;
         height: auto;
-        margin-top: 1.5rem;
+        margin-top: 0;
         margin-right: 2rem;
         margin-left: .120rem;
         margin-bottom: 0;
