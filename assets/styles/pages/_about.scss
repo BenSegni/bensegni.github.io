@@ -314,6 +314,10 @@
             }
         }
 
+        .post-education {
+            margin-left: 0;
+        }
+
         @include tablet {
             @include mobile-span();
         }
