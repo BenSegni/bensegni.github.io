@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704189869656,
+  "timestamp": 1704195354166,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/index.html",
-        "/main.77da44e0d9997c24.js",
+        "/main.a43f4c5b50ad97e9.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
@@ -30,6 +30,7 @@
       "urls": [
         "/assets/docs/CV.docx",
         "/assets/docs/CV.docx.pdf",
+        "/assets/docs/qatar_brochure.pdf",
         "/assets/icons/icon-128.svg",
         "/assets/icons/icon-144.svg",
         "/assets/icons/icon-152.svg",
@@ -117,6 +118,11 @@
         "/assets/img/pact_logo.svg",
         "/assets/img/permissions-centre.webp",
         "/assets/img/ph.webp",
+        "/assets/img/qatar/qatar_1.webp",
+        "/assets/img/qatar/qatar_2.webp",
+        "/assets/img/qatar/qatar_3.webp",
+        "/assets/img/qatar/qatar_4.webp",
+        "/assets/img/qatar/qatar_5.webp",
         "/assets/img/qeh.webp",
         "/assets/img/rxjs_logo.svg",
         "/assets/img/sass_logo.svg",
@@ -186,6 +192,7 @@
   "hashTable": {
     "/assets/docs/CV.docx": "7e7c2ec71cdb3c0b33f026706675d30189d08eb5",
     "/assets/docs/CV.docx.pdf": "2c0cdecee8d8637a0876ce1f268e76cc852895c0",
+    "/assets/docs/qatar_brochure.pdf": "975c0f20c8a76627da60e6f3a99f9fb89b29b84e",
     "/assets/icons/icon-128.svg": "743d78cfc4290cf2c2b53046a804aa3042006268",
     "/assets/icons/icon-144.svg": "bf551d632c2ea62ad8cfdaf8c07d79440c2fcb33",
     "/assets/icons/icon-152.svg": "3243fdb0aee193f1d8e7c3f94e6470abe75421ca",
@@ -273,6 +280,11 @@
     "/assets/img/pact_logo.svg": "e050e54ecacd17a0fb1493744887f72e01fc7ed2",
     "/assets/img/permissions-centre.webp": "16c29717bbe2c69a52f8f5f4f5910291af136496",
     "/assets/img/ph.webp": "402ba1ae517fb76ef3514828dc84cc7603bf0258",
+    "/assets/img/qatar/qatar_1.webp": "f57478de329c47730baefc9f6e2e1c2725baa3c9",
+    "/assets/img/qatar/qatar_2.webp": "4467ce99e93276d5f377d9ce49d7a6c69e76b7b9",
+    "/assets/img/qatar/qatar_3.webp": "da9925b7ac691c9d454d6053d2c61bd63f3a89c2",
+    "/assets/img/qatar/qatar_4.webp": "af6a3ee807507d5df9bd40c0db842aaeb509c6aa",
+    "/assets/img/qatar/qatar_5.webp": "f18455ea350b4ac79da1cf0d5b02669336d7238f",
     "/assets/img/qeh.webp": "6f8b3d48b28871332f59ae53831ad65f9cbed356",
     "/assets/img/rxjs_logo.svg": "c498c6cfe4359f82f64827eac864d194b86ea2ea",
     "/assets/img/sass_logo.svg": "ffb029a3107681052568ec84b2de3b17069b1fa3",
@@ -333,9 +345,9 @@
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
     "/assets/styles/pages/_technology.scss": "f2aa04fbe66ec93f2463e434d6451eb84968a102",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "88e7965b5f5a6c6450dbd0cd1be1791a14862984",
+    "/index.html": "e899e2eea8475e213943242faee7dda3865e7d02",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.77da44e0d9997c24.js": "18cd968f7d0ad578c8797fd0538ff5ee548bc585",
+    "/main.a43f4c5b50ad97e9.js": "59f3738fe3282c7ecb7973880f116f04601f751f",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
