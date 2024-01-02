@@ -50,6 +50,7 @@
 
 .menu-icon {
     @include icon();
+    margin-top: 2.5rem;
     width: 4rem;
 
     span {
