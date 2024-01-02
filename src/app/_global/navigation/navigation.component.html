@@ -1,8 +1,11 @@
-<button class="menu-icon" (click)="open()"><img src="../../../assets/img/menu_icon.svg"
-        [alt]="'../../../assets/img/menu_icon.svg' | altText"></button>
+<button class="menu-icon" (click)="open()">
+    <span></span>
+    <span></span>
+    <span></span>
+</button>
 <ul class="navigation" *ngIf="show" [@fade]="show">
-    <button class="menu-icon" (click)="show = false"><img src="../../../assets/img/close_icon.svg"
-            [alt]="'../../../assets/img/close_icon.svg' | altText"></button>
+    <button class="close-icon" (click)="show = false" (mouseenter)="onMouseEnter()">
+        <img [src]="closeIcon" [alt]="closeIcon | altText"></button>
     <li *ngFor="let route of navigationRoutes">
         <ng-container *ngIf="route.route; else anchorLink">
             <a [routerLink]="route.route" routerLinkActive="active"

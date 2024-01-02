@@ -1,9 +1,11 @@
 <ng-container *ngIf="placement">
-    <img src="{{ placement.logo }}" alt="{{ placement.logo | altText }}">
-    <span>
-        <h4>{{ placement.institution }}</h4>
-        <p><small>{{ placement.date }}</small></p>
-        <p class="honors">{{ placement.qualification}}.</p>
-        <p><a class="education-site-link" [href]="placement.website" target="_blank">{{ placement.website }}</a></p>
+    <span class="education-insert">
+        <img src="{{ placement.logo }}" alt="{{ placement.logo | altText }}">
+        <span>
+            <h4>{{ placement.institution }}</h4>
+            <p><small>{{ placement.date }}</small></p>
+            <p class="honors">{{ placement.qualification}}.</p>
+            <p><a class="education-site-link" [href]="placement.website" target="_blank">{{ placement.website }}</a></p>
+        </span>
     </span>
 </ng-container>

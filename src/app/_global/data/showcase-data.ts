@@ -9,7 +9,24 @@ export const showcaseData: Showcase[] = [
         showCaseLink: 'https://www.behance.net/gallery/52642809/UXUI-Design-Project-Nine-Arches-Digital-Consultants',
         background: '../../../../assets/img/9a.webp',
         routeUrl: '9a-studios',
-        details: 'Embarking on a comprehensive branding and website development endeavor, the project encompassed conceptualizing a corporate identity and crafting a commercial website from the ground up for a burgeoning consultancy established in 2017. Leveraging Adobe XD for wireframing and HTML5 for developing visually captivating site pages, the project culminated in the creation of an impactful online presence.'
+        details: 'Embarking on a comprehensive branding and website development endeavor, the project encompassed conceptualizing a corporate identity and crafting a commercial website from the ground up for a burgeoning consultancy established in 2017. Leveraging Adobe XD for wireframing and HTML5 for developing visually captivating site pages, the project culminated in the creation of an impactful online presence.',
+        displayImages: [
+            {
+                url: '../../../../assets/img/9a/9a_4.webp',
+            },
+            {
+                url: '../../../../assets/img/9a/9a_3.webp',
+            },
+            {
+                url: '../../../../assets/img/9a/9a_2.webp',
+            },
+            {
+                url: '../../../../assets/img/9a/9a_1.webp',
+            },
+            {
+                url: '../../../../assets/img/9a/9a_5.webp',
+            },
+        ]
     },
     {
         id: '2',
@@ -19,7 +36,24 @@ export const showcaseData: Showcase[] = [
         showCaseLink: 'https://www.behance.net/gallery/33173663/UI-Design-A-Website-Biography-Project',
         background: '../../../../assets/img/chinwe_roy.webp',
         routeUrl: 'chinwe-chukwogu-roy',
-        details: 'This project was a tribute to the late renowned artist Chinwe Chukwogu-Roy, whose work is famously known for her portrait of Elizabeth II Jubilee Ceremony. The project was requested by family members of the artist and involved full UI design and development of a Wordpress CMS to celebrate the life and times of the talented creative.'
+        details: 'This project was a tribute to the late renowned artist Chinwe Chukwogu-Roy, whose work is famously known for her portrait of Elizabeth II Jubilee Ceremony. The project was requested by family members of the artist and involved full UI design and development of a Wordpress CMS to celebrate the life and times of the talented creative.',
+        displayImages: [
+            {
+                url: '../../../../assets/img/chinwe/chinwe_1.webp',
+            },
+            {
+                url: '../../../../assets/img/chinwe/chinwe_4.webp',
+            },
+            {
+                url: '../../../../assets/img/chinwe/chinwe_3.webp',
+            },
+            {
+                url: '../../../../assets/img/chinwe/chinwe_5.webp',
+            },
+            {
+                url: '../../../../assets/img/chinwe/chinwe_2.webp',
+            },
+        ]
     },
     {
         id: '3',
@@ -143,6 +177,33 @@ export const showcaseData: Showcase[] = [
     },
     {
         id: '8',
+        skills: ['UI Design'],
+        projectTitle: 'Qatar FIFA World Cup 2022',
+        description: 'Company Proposal for the 2022 FIFA World Cup in Qatar.',
+        downloadLink: '../../../../assets/docs/qatar_brochure.pdf',
+        background: '../../../../assets/img/qatar/qatar_2.webp',
+        routeUrl: 'qatar',
+        details: 'In collaboration with the Department for International Trade and the British Embassy in Qatar, a comprehensive digital transformation proposal was developed for the 2022 FIFA World Cup. This innovative application aimed to streamline the fan experience by integrating essential services within a single platform. From travel bookings and stadium access to restaurant recommendations, the application served as a one-stop solution for visitors navigating the tournament.',
+        displayImages: [
+            {
+                url: '../../../../assets/img/qatar/qatar_1.webp',
+            },
+            {
+                url: '../../../../assets/img/qatar/qatar_2.webp',
+            },
+            {
+                url: '../../../../assets/img/qatar/qatar_3.webp',
+            },
+            {
+                url: '../../../../assets/img/qatar/qatar_4.webp',
+            },
+            {
+                url: '../../../../assets/img/qatar/qatar_5.webp',
+            },
+        ]
+    },
+    {
+        id: '9',
         skills: ['Angular', 'Directus', 'HTML5', 'SASS', 'Typescript', 'UI Design'],
         projectTitle: 'Velux',
         description: 'Continued Professional Development Portal.',

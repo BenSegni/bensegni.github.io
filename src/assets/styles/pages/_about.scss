@@ -57,6 +57,28 @@
         @include content-link();
     }
 
+    p {
+        display: block;
+        padding: 0 0 0 1.5rem;
+
+        &:first-of-type {
+            margin-top: 2rem;
+            padding-top: 1rem;
+        }
+
+        @include tablet {
+            padding: 0;
+        }
+
+        @include mobile {
+            padding: 0;
+        }
+
+        @include small-mobile {
+            padding: 0;
+        }
+    }
+
     .employment-site-link {
         margin: 1rem 0 0 9rem;
         @include content-link();
@@ -106,13 +128,12 @@
 
 .about-stub {
     text-align: left;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     padding-top: 1rem;
     @include flex();
     @include flex-wrap();
     align-items: flex-start;
     @include about-list();
-    margin-left: 2rem;
 
     p {
         margin: 0;
@@ -131,6 +152,83 @@
     svg {
         fill: $white;
         margin-right: 1rem;
+    }
+
+    .education-insert {
+        @include flex();
+        flex-direction: row;
+        align-items: flex-start;
+
+        img {
+            margin-top: 0;
+            margin-left: .25rem;
+
+            @include tablet {
+                @include mobile-image();
+                margin-bottom: 1rem;
+            }
+
+            @include mobile {
+                @include mobile-image();
+                margin-bottom: 1rem;
+            }
+
+            @include small-mobile {
+                @include mobile-image();
+                margin-bottom: 1rem;
+            }
+        }
+
+        span {
+            @include flex();
+            @include flex-column();
+
+            h4 {
+                text-align: left;
+                line-height: 1rem;
+                padding-top: 0;
+                padding-bottom: .5rem;
+                border-bottom: 0.0625rem dotted $blue_1;
+
+                @include tablet {
+                    @include mobile-header();
+                }
+
+                @include mobile {
+                    @include mobile-header();
+                }
+
+                @include small-mobile {
+                    @include mobile-header();
+                }
+            }
+
+            .honors {
+                margin: 1rem 0;
+                color: $blue_1;
+            }
+
+            small {
+                @include flex();
+                padding-top: 1rem;
+                width: 100%;
+            }
+        }
+
+        @include tablet {
+            @include mobile-about-stub();
+            @include flex-column();
+        }
+
+        @include mobile {
+            @include mobile-about-stub();
+            @include flex-column();
+        }
+
+        @include small-mobile {
+            @include mobile-about-stub();
+            @include flex-column();
+        }
     }
 
     span {
@@ -156,22 +254,14 @@
             }
         }
 
-        .honors {
-            margin: 1rem 0;
-            color: $blue_1;
-        }
-
-        small {
-            @include flex();
-            padding-top: 1rem;
-            width: 100%;
-        }
-
         ul {
             @include grid();
+            @include span-50();
             grid-template-columns: repeat(2, 1fr);
-            grid-column-gap: 5rem;
+            grid-column-gap: .75rem;
             list-style: none;
+            margin-left: 1rem;
+            margin-bottom: 1rem;
 
             li {
                 @include flex();
@@ -224,6 +314,10 @@
             }
         }
 
+        .post-education {
+            margin-left: 0;
+        }
+
         @include tablet {
             @include mobile-span();
         }
@@ -240,8 +334,9 @@
     img {
         width: 7rem;
         height: auto;
-        margin-right: 2rem;
         margin-top: 1.5rem;
+        margin-right: 2rem;
+        margin-left: .120rem;
         margin-bottom: 0;
         border: 0;
         border-radius: 0;
@@ -286,6 +381,7 @@
     justify-content: space-evenly;
     cursor: pointer;
     text-align: center;
+    margin-top: 1rem;
 
     h3 {
         min-width: 12rem;
@@ -312,6 +408,10 @@
             min-width: 12rem;
             padding: .5rem 0;
             border-bottom: 0.0625rem dotted $blue_1;
+
+            &:hover {
+                color: $white;
+            }
 
             @include tablet {
                 @include mobile-anchor();
@@ -359,4 +459,47 @@
 .tab-content {
     padding: 0 .75rem 1rem .75rem;
     border-top: none;
+}
+
+.profile-images {
+    @include flex();
+    width: 100%;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+
+    img {
+        height: 8rem;
+        width: 8rem;
+        margin-bottom: 0;
+
+        @include tablet {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+
+        @include mobile {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+
+        @include small-mobile {
+            height: 7rem;
+            width: 7rem;
+            border-radius: 0;
+        }
+    }
+
+    @include tablet {
+        padding: 0 0 1rem 0;
+    }
+
+    @include mobile {
+        padding: 0 0 1rem 0;
+    }
+
+    @include small-mobile {
+        padding: 0 0 1rem 0;
+    }
 }

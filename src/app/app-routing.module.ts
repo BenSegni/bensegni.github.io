@@ -12,6 +12,7 @@ import { PageNotFoundComponent } from './_global/page-not-found/page-not-found.c
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 import { PrivacyPolicyComponent } from './_global/privacy-policy/privacy-policy.component';
 import { GithubComponent } from './pages/github/github.component';
+import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
 
 const routes: Routes = [
     {
@@ -50,7 +51,6 @@ const routes: Routes = [
                 data: {
                     breadcrumb: 'Employment'
                 }
-
             },
             {
                 path: 'education',
@@ -58,7 +58,6 @@ const routes: Routes = [
                 data: {
                     breadcrumb: 'Education'
                 }
-
             },
             {
                 path: 'technologies',
@@ -67,6 +66,13 @@ const routes: Routes = [
                     breadcrumb: 'Technologies'
                 }
 
+            },
+            {
+                path: 'toolkit',
+                component: ToolkitComponent,
+                data: {
+                    breadcrumb: 'Toolkit'
+                }
             }
         ]
     },

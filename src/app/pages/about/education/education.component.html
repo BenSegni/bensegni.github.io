@@ -1,7 +1,7 @@
 <h3>Professional Training & Certification</h3>
 <div class="about-stub">
     <span>
-        <ul *ngIf="postEducation$ | async as postEducation">
+        <ul class="post-education" *ngIf="postEducation$ | async as postEducation">
             <li *ngFor="let training of postEducation"><app-post-education-insert [training]="training"></app-post-education-insert></li>
         </ul>
     </span>

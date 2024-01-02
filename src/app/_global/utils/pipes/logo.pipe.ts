@@ -1,6 +1,7 @@
 import { Pipe, PipeTransform } from '@angular/core';
 import { TechnologyEnum } from '../../enum/technology.enum';
 import { LogoEnum } from '../../enum/logo.enum';
+import { ToolkitEnum } from '../../enum/toolkit.enum';
 
 @Pipe({
   name: 'logo'
@@ -24,6 +25,13 @@ export class LogoPipe implements PipeTransform {
         case value.includes(TechnologyEnum.Ionic): return LogoEnum.Ionic;
         case value.includes(TechnologyEnum.Directus): return LogoEnum.Directus;
         case value.includes(TechnologyEnum.Java): return LogoEnum.Java;
+        case value.includes(ToolkitEnum.Illustrator): return LogoEnum.Illustrator;
+        case value.includes(ToolkitEnum.InDesign): return LogoEnum.InDesign;
+        case value.includes(ToolkitEnum.Inkscape): return LogoEnum.Inkscape;
+        case value.includes(ToolkitEnum.Postman): return LogoEnum.Postman;
+        case value.includes(ToolkitEnum.Photoshop): return LogoEnum.Photoshop;
+        case value.includes(ToolkitEnum.XD): return LogoEnum.XD;
+        case value.includes(ToolkitEnum.VSCode): return LogoEnum.VSCode;
         default: return LogoEnum.Agile
     }
   }

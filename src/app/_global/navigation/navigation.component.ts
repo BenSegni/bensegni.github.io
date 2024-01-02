@@ -15,8 +15,11 @@ export class NavigationComponent {
     public show = false;
     public navigationRoutes: NavigationItem[] = routeItems;
     public selectedRoute: NavigationItem | undefined;
+    public closeIcon = '../../assets/img/close_icon.svg';
+    public closeIconOpen = '../../assets/img/close_icon_open.svg';
+    public closeIconClosed = '../../assets/img/close_icon_closed.svg'
 
-    @HostListener('mouseover') onMouseEnter(route: NavigationItem) {
+    @HostListener('mouseover') onMouseEnter(route?: NavigationItem) {
         this.selectedRoute = route;
     }
 

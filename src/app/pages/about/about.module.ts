@@ -13,6 +13,8 @@ import { GlobalModule } from '../../../app/_global/global.module';
 import { EmploymentInsertComponent } from './employment/employment-insert/employment-insert.component';
 import { EducationInsertComponent } from './education/education-insert/education-insert.component';
 import { PostEducationInsertComponent } from './education/post-education-insert/post-education-insert.component';
+import { ProfileImagesComponent } from './profile/profile-images/profile-images.component';
+import { ToolkitComponent } from './toolkit/toolkit.component';
 
 
 
@@ -27,7 +29,9 @@ import { PostEducationInsertComponent } from './education/post-education-insert/
         UsefulLinksComponent,
         EmploymentInsertComponent,
         EducationInsertComponent,
-        PostEducationInsertComponent
+        PostEducationInsertComponent,
+        ProfileImagesComponent,
+        ToolkitComponent
     ],
     imports: [
         CommonModule,

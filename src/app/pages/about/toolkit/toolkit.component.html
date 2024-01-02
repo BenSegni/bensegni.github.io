@@ -1,0 +1,9 @@
+<h3>Toolkit</h3>
+<ng-container *ngIf="toolkit$ | async as toolkit">
+    <ul class="technologies">
+        <li *ngFor="let tool of toolkit">
+            <img [ngStyle]="{ 'border-color': tool | pill }" [src]="tool | logo" alt="{{ tool | logo | altText }}">
+            <span>{{ tool}}</span>
+        </li>
+    </ul>
+</ng-container>
