@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704213514542,
+  "timestamp": 1704216220132,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/index.html",
-        "/main.fcb83537c537e156.js",
+        "/main.0b2e0fd99d90fd38.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
@@ -320,7 +320,7 @@
     "/assets/img/ph.webp": "402ba1ae517fb76ef3514828dc84cc7603bf0258",
     "/assets/img/photoshop_logo.svg": "fe7958ac8d92aaf01dc5718d0620c50a1b654133",
     "/assets/img/postman_logo.svg": "e2ca565d4acb918418857195e2ec6bea0ac97c80",
-    "/assets/img/qatar/qatar_1.webp": "f57478de329c47730baefc9f6e2e1c2725baa3c9",
+    "/assets/img/qatar/qatar_1.webp": "e2dc8f435529a6219448ccb6c3254204abce36b5",
     "/assets/img/qatar/qatar_2.webp": "4467ce99e93276d5f377d9ce49d7a6c69e76b7b9",
     "/assets/img/qatar/qatar_3.webp": "da9925b7ac691c9d454d6053d2c61bd63f3a89c2",
     "/assets/img/qatar/qatar_4.webp": "af6a3ee807507d5df9bd40c0db842aaeb509c6aa",
@@ -387,9 +387,9 @@
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "cb28867cd9d9f109fef102c1765e6cf639cdf307",
+    "/index.html": "f8e98ae341d11891d9f439cc7c85c2a512fefee8",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.fcb83537c537e156.js": "da773bf9cefb24ffeaa5077511a841d1f9c1fc6b",
+    "/main.0b2e0fd99d90fd38.js": "1c241a119a11f57f683c22124bdd8d9d93bffa89",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
