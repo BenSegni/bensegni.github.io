@@ -1,11 +1,14 @@
 export enum ToolkitEnum {
-    XD = 'Adobe XD',
     Illustrator = 'Adobe Illustrator',
     InDesign = 'Adobe InDesign',
     Photoshop = 'Adobe Photoshop',
-    Postman = 'Postman',
-    Inkscape = 'Inkscape',
-    VSCode = 'Visual Studio',
+    XD = 'Adobe XD',
     Design = 'Design',
-    Development = 'Development'
+    Development = 'Development',
+    Docker = 'Docker',
+    Github = 'Github',
+    Gitlab = 'Gitlab',
+    Inkscape = 'Inkscape',
+    Postman = 'Postman',
+    VSCode = 'Visual Studio',
 }

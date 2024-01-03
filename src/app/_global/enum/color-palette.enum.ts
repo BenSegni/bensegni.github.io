@@ -2,8 +2,9 @@ export enum ColorPaletteEnum {
     beetroot = '#8a4182',
     bloodRed = '#e44d26',
     blue = '#3178c6',
-    smokeyBlue = '#3880ff',
+    dockerBlue = '#2396ed',
     gold = '#ff9a00',
+    gitlabOrange = '#fba225',
     hotPink = '#ff00ff',
     hotterPink = '#df4ea8',
     indesignPink = '#ff3366',
@@ -12,9 +13,10 @@ export enum ColorPaletteEnum {
     photoshopBlue = '#31a8ff',
     pink = '#cd669a',
     pinkPurple = '#ba2bd2',
-    postmanOrange = '#ff6600',
     pinkRed = '#E0234F',
+    postmanOrange = '#ff6600',
     red = '#aa0000',
+    smokeyBlue = '#3880ff',
     vsCodeBlue = '#0179cb',
     xdPink = '#ff61f6'
 }

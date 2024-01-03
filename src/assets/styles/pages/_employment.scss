@@ -4,14 +4,14 @@
     padding-left: 1rem;
 
     @include tablet {
-        @include span-90();
+        word-wrap: break-word;
     }
 
     @include mobile {
-        @include span-90();
+        word-wrap: break-word;
     }
 
     @include small-mobile {
-        @include span-90();
+        word-wrap: break-word;
     }
 }

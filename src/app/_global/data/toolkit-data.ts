@@ -11,20 +11,32 @@ export const toolkitData: ToolKit[] = [
         type: ToolkitEnum.Design
     },
     {
-        name: ToolkitEnum.Inkscape,
+        name: ToolkitEnum.Photoshop,
         type: ToolkitEnum.Design
     },
     {
-        name: ToolkitEnum.Photoshop,
+        name: ToolkitEnum.XD,
+        type: ToolkitEnum.Design
+    },
+    {
+        name: ToolkitEnum.Docker,
+        type: ToolkitEnum.Development
+    },
+    {
+        name: ToolkitEnum.Github,
+        type: ToolkitEnum.Development
+    },
+    {
+        name: ToolkitEnum.Gitlab,
+        type: ToolkitEnum.Development
+    },
+    {
+        name: ToolkitEnum.Inkscape,
         type: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.Postman,
         type: ToolkitEnum.Development
-    },
-    {
-        name: ToolkitEnum.XD,
-        type: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.VSCode,
