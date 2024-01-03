@@ -405,14 +405,11 @@
 
 .about-tabs {
     @include flex();
-    justify-content: space-evenly;
+    justify-content: space-around;
     cursor: pointer;
-    text-align: center;
     margin-top: 1rem;
 
     h3 {
-        min-width: 12rem;
-
         .active {
             border-bottom: 0.0625rem dotted $blue_1;
         }
