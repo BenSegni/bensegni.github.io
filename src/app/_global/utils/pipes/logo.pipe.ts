@@ -35,7 +35,7 @@ export class LogoPipe implements PipeTransform {
         case value.includes(ToolkitEnum.Photoshop): return LogoEnum.Photoshop;
         case value.includes(ToolkitEnum.XD): return LogoEnum.XD;
         case value.includes(ToolkitEnum.VSCode): return LogoEnum.VSCode;
-        default: return LogoEnum.Agile
+        default: return LogoEnum.Logo
     }
   }
 

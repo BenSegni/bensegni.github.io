@@ -8,6 +8,7 @@ export enum LogoEnum {
     Gitlab = '../../assets/img/gitlab_logo.svg',
     HTML5 = '../../assets/img/html5_logo.svg',
     Ionic = '../../assets/img/ionic_logo.svg',
+    Logo = '../../assets/img/logo.svg',
     NestJs = '../../assets/img/nestjs_logo.svg',
     NGRX = '../../assets/img/ngrx_logo.svg',
     Illustrator = '../../assets/img/illustrator_logo.svg',
