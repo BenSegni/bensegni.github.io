@@ -1,0 +1,30 @@
+.site-build-footer {
+    @include flex();
+    align-items: flex-end;
+
+    a {
+        @include content-link();
+        margin-top: 1rem;
+    }
+
+    img {
+        height: 1rem;
+        margin-right: 1rem;
+    }
+}
+
+.site-build-details {
+    width: 50vw;
+    text-align: left;
+
+    h5 {
+        text-align: left;
+        color: grey;
+        padding: 0;
+    }
+
+    .dependencies {
+        color: $white;
+        font-size: .75rem;
+    }
+}
