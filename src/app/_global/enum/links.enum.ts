@@ -8,7 +8,7 @@ export enum LinkEnum {
     HTML5 = 'https://developer.mozilla.org/en-US/docs/Glossary/HTML5',
     Illustrator = 'https://www.adobe.com/uk/products/illustrator.html',
     InDesign = 'https://www.adobe.com/uk/products/indesign.html',
-    Inkscape = 'https://www.uxdesigninstitute.com/blog/what-is-ui-design/',
+    Inkscape = 'https://inkscape.org/',
     Ionic = 'https://ionicframework.com/',
     Jasmine = 'https://jasmine.github.io/',
     Jest = 'https://jestjs.io/',
