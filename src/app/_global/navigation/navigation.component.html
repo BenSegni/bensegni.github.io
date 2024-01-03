@@ -4,8 +4,8 @@
     <span></span>
 </button>
 <ul class="navigation" *ngIf="show" [@fade]="show">
-    <button class="close-icon" (click)="show = false" (mouseenter)="onMouseEnter()">
-        <img [src]="closeIcon" [alt]="closeIcon | altText"></button>
+    <li><button class="close-icon" (click)="show = false" (mouseenter)="onMouseEnter()">
+            <img [src]="closeIcon" [alt]="closeIcon | altText"></button></li>
     <li *ngFor="let route of navigationRoutes">
         <ng-container *ngIf="route.route; else anchorLink">
             <a [routerLink]="route.route" routerLinkActive="active"

@@ -13,6 +13,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PrivacyPolicyLogoComponent } from './privacy-policy-logo/privacy-policy-logo.component';
 import { NavigationSubtextComponent } from './navigation/navigation-subtext/navigation-subtext.component';
+import { SiteBuildComponent } from './site-build/site-build.component';
 
 
 
@@ -28,7 +29,8 @@ import { NavigationSubtextComponent } from './navigation/navigation-subtext/navi
         BreadcrumbComponent,
         PrivacyPolicyComponent,
         PrivacyPolicyLogoComponent,
-        NavigationSubtextComponent
+        NavigationSubtextComponent,
+        SiteBuildComponent
     ],
     imports: [
         CommonModule,

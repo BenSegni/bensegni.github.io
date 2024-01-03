@@ -91,8 +91,8 @@
 .close-icon {
     @include icon();
     position: relative;
-    width: 2.5rem;
-    height: 2.5rem;
+    margin:.25rem 0 .5rem 0;
+    height: unset;
 
 
     img {
@@ -116,8 +116,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    justify-content: space-evenly;
-    align-items: flex-start;
+    justify-content: space-around;
     background-color: $black_variant_alpha;
     border-bottom: 0.0625rem solid $black;
     padding-top: 25vh;
@@ -159,6 +158,10 @@
             @include small-mobile {
                 @include mobile-nav();
             }
+        }
+
+        &:first-child:hover {
+            border-bottom: 0.0625rem solid transparent;
         }
 
         &:hover {

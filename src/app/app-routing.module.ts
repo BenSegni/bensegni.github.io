@@ -13,6 +13,7 @@ import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 import { PrivacyPolicyComponent } from './_global/privacy-policy/privacy-policy.component';
 import { GithubComponent } from './pages/github/github.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
+import { SiteBuildComponent } from './_global/site-build/site-build.component';
 
 const routes: Routes = [
     {
@@ -91,6 +92,13 @@ const routes: Routes = [
     {
         path: 'privacy',
         component: PrivacyPolicyComponent,
+    },
+    {
+        path: 'site-build',
+        component: SiteBuildComponent,
+        data: {
+            breadcrumb: 'Site Build'
+        }
     },
     {
         path: '**',
