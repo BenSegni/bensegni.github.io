@@ -376,6 +376,18 @@
         border-width: 1px;
         border-radius: 10rem;
         padding: .5rem;
+
+        @include tablet {
+            margin-bottom: 0;
+        }
+
+        @include mobile {
+            margin-bottom: 0;
+        }
+
+        @include small-mobile {
+            margin-bottom: 0;
+        }
     }
 
     @include tablet {
