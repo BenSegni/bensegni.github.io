@@ -10,6 +10,7 @@ export class FilterLinkPipe implements PipeTransform {
 
   transform(type: string): string {
     switch(true) {
+        //technology links
         case type.includes(TechnologyEnum.Angular): return LinkEnum.Angular;
         case type.includes(TechnologyEnum.Cypress): return LinkEnum.Cypress;
         case type.includes(TechnologyEnum.Directus): return LinkEnum.Directus;
@@ -24,6 +25,7 @@ export class FilterLinkPipe implements PipeTransform {
         case type.includes(TechnologyEnum.SASS): return LinkEnum.SASS;
         case type.includes(TechnologyEnum.Typescript): return LinkEnum.Typescript;
         case type.includes(TechnologyEnum.UI): return LinkEnum.UI;
+        //toolkit links
         case type.includes(ToolkitEnum.Docker): return LinkEnum.Docker;
         case type.includes(ToolkitEnum.Github): return LinkEnum.Github;
         case type.includes(ToolkitEnum.Gitlab): return LinkEnum.Gitlab;

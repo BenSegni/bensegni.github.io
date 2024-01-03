@@ -12,6 +12,7 @@ export class PillPipe implements PipeTransform {
 
   transform(value: string): string {
     switch(true) {
+        //keyword pills
         case value.includes(KeywordsEnum.Code): return ColorPaletteEnum.red;
         case value.includes(KeywordsEnum.Contact): return ColorPaletteEnum.limeGreen;
         case value.includes(KeywordsEnum.Design): return ColorPaletteEnum.hotterPink;
@@ -21,6 +22,7 @@ export class PillPipe implements PipeTransform {
         case value.includes(KeywordsEnum.Experience): return ColorPaletteEnum.pink;
         case value.includes(KeywordsEnum.Portfolio): return ColorPaletteEnum.pinkPurple;
         case value.includes(KeywordsEnum.Skills): return ColorPaletteEnum.smokeyBlue;
+        //technology pills
         case value.includes(TechnologyEnum.Angular): return ColorPaletteEnum.red;
         case value.includes(TechnologyEnum.Cypress): return ColorPaletteEnum.limeGreen;
         case value.includes(TechnologyEnum.HTML5): return ColorPaletteEnum.bloodRed;
@@ -33,6 +35,7 @@ export class PillPipe implements PipeTransform {
         case value.includes(TechnologyEnum.SASS): return ColorPaletteEnum.pink;
         case value.includes(TechnologyEnum.Typescript): return ColorPaletteEnum.blue;
         case value.includes(TechnologyEnum.UI): return ColorPaletteEnum.hotPink;
+        //toolkit pills
         case value.includes(ToolkitEnum.Docker): return ColorPaletteEnum.dockerBlue;
         case value.includes(ToolkitEnum.Gitlab): return ColorPaletteEnum.gitlabOrange;
         case value.includes(ToolkitEnum.Illustrator): return ColorPaletteEnum.gold;

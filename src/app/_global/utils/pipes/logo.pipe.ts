@@ -10,6 +10,7 @@ export class LogoPipe implements PipeTransform {
 
   transform(value: string): string {
     switch(true) {
+        //technology logos
         case value.includes(TechnologyEnum.Agile): return LogoEnum.Agile;
         case value.includes(TechnologyEnum.Angular): return LogoEnum.Angular;
         case value.includes(TechnologyEnum.Cypress): return LogoEnum.Cypress;
@@ -26,6 +27,7 @@ export class LogoPipe implements PipeTransform {
         case value.includes(TechnologyEnum.RXJS): return LogoEnum.RXJS;
         case value.includes(TechnologyEnum.SASS): return LogoEnum.SASS;
         case value.includes(TechnologyEnum.UI): return LogoEnum.UI;
+        //toolkit logos
         case value.includes(ToolkitEnum.Docker): return LogoEnum.Docker;
         case value.includes(ToolkitEnum.Github): return LogoEnum.Github;
         case value.includes(ToolkitEnum.Gitlab): return LogoEnum.Gitlab;
