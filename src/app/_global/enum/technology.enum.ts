@@ -1,4 +1,5 @@
 export enum TechnologyEnum {
+    Agile = 'Agile',
     Angular = 'Angular',
     RXJS = 'RxJs',
     Cypress = 'Cypress',
