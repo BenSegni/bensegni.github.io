@@ -23,5 +23,4 @@ export enum LinkEnum {
     UI = 'https://www.uxdesigninstitute.com/blog/what-is-ui-design/',
     XD = 'https://www.nobledesktop.com/learn/adobe-xd/what-is-adobe-xd',
     VSCode = 'https://code.visualstudio.com/',
-
 }
