@@ -27,4 +27,16 @@
         color: $white;
         font-size: .75rem;
     }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
 }
