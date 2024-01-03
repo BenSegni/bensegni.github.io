@@ -229,16 +229,19 @@
 
         @include tablet {
             @include mobile-about-stub();
+            margin: 0;
             @include flex-column();
         }
 
         @include mobile {
             @include mobile-about-stub();
+            margin: 0;
             @include flex-column();
         }
 
         @include small-mobile {
             @include mobile-about-stub();
+            margin: 0;
             @include flex-column();
         }
     }
