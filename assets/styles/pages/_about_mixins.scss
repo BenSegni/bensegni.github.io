@@ -29,6 +29,7 @@
 
 @mixin mobile-img {
     @include span-30();
+    margin-bottom: 2rem;
 }
 
 @mixin mobile-about-stub {
