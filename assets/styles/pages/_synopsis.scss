@@ -119,7 +119,7 @@
         object-position: top;
         border-radius: 0;
         animation: fade 1s;
-        border: 0.5rem solid $black;
+        border: .5rem solid $black;
 
         @include mobile-width();
     }
@@ -220,7 +220,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border: 0;
+                border: .25rem solid $black;
                 border-radius: 0;
             }
             &:nth-child(1){
