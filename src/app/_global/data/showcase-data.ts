@@ -78,6 +78,33 @@ export const showcaseData: Showcase[] = [
     },
     {
         id: '4',
+        skills: ['Angular', 'Directus', 'HTML5', 'Ionic', 'Typescript', 'UI Design'],
+        projectTitle: 'Infinity App',
+        description: 'Logistics Native Mobile App for Athletes.',
+        downloadLink: '../../../../assets/docs/infinity_brochure.pdf',
+        background: '../../../../assets/img/infinity/infinity_1.webp',
+        routeUrl: 'infinity',
+        details: 'In collaboration with Business Durham, a comprehensive proposal was developed to streamline the national event participation journey for athletes across various sports. The proposed mobile application would provide a one-stop solution, encompassing: Extensive listing of national events with registration capabilities. Integrated travel planning tools to facilitate convenient arrangements. Seamless accommodation booking features for simplified logistics. This innovative concept garnered initial interest upon presentation to the organizers of The Great North Run, demonstrating its potential impact on the national sporting landscape.',
+        displayImages: [
+            {
+                url: '../../../../assets/img/infinity/infinity_1.webp',
+            },
+            {
+                url: '../../../../assets/img/infinity/infinity_4.webp',
+            },
+            {
+                url: '../../../../assets/img/infinity/infinity_7.webp',
+            },
+            {
+                url: '../../../../assets/img/infinity/infinity_6.webp',
+            },
+            {
+                url: '../../../../assets/img/infinity/infinity_3.webp',
+            },
+        ]
+    },
+    {
+        id: '5',
         skills: ['UI Design'],
         projectTitle: 'Lenovo',
         description: 'Partner networking landing page for global tech company.',
@@ -98,7 +125,7 @@ export const showcaseData: Showcase[] = [
         ]
     },
     {
-        id: '5',
+        id: '6',
         skills: ['HTML5', 'SASS', 'UI Design',],
         projectTitle: 'Nuchido',
         description: 'Age Rejuvenation Web Design & Development Project.',
@@ -125,7 +152,7 @@ export const showcaseData: Showcase[] = [
         ]
     },
     {
-        id: '6',
+        id: '7',
         skills: ['Angular', 'Directus', 'HTML5', 'SASS', 'Typescript', 'UI Design'],
         projectTitle: 'Orbery',
         description: 'Corporate website for Content Design agency in Manchester.',
@@ -149,7 +176,7 @@ export const showcaseData: Showcase[] = [
         ]
     },
     {
-        id: '7',
+        id: '8',
         skills: ['HTML5', 'SASS', 'UI Design'],
         projectTitle: 'Performance Horizon',
         description: 'Custom ZenDesk Theme for Market Leading Software House.',
@@ -176,7 +203,7 @@ export const showcaseData: Showcase[] = [
         ]
     },
     {
-        id: '8',
+        id: '9',
         skills: ['UI Design'],
         projectTitle: 'Qatar FIFA World Cup 2022',
         description: 'Company Proposal for the 2022 FIFA World Cup in Qatar.',
@@ -203,7 +230,7 @@ export const showcaseData: Showcase[] = [
         ]
     },
     {
-        id: '9',
+        id: '10',
         skills: ['Angular', 'Directus', 'HTML5', 'SASS', 'Typescript', 'UI Design'],
         projectTitle: 'Velux',
         description: 'Continued Professional Development Portal.',
