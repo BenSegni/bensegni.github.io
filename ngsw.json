@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704374541520,
+  "timestamp": 1704379699119,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/index.html",
-        "/main.a4be02b5b1bf0347.js",
+        "/main.03585c398754e7d7.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
@@ -291,7 +291,7 @@
     "/assets/img/infinity/infinity_2.webp": "0f77c37f114b3821db6944136fe6a57e522fba1c",
     "/assets/img/infinity/infinity_3.webp": "6d35776d7d92e3d78f293ae46c53096a77f8ab6c",
     "/assets/img/infinity/infinity_4.webp": "6e02b027815a3e59a27bee582bf3e2768c138a31",
-    "/assets/img/infinity/infinity_5.webp": "8a2b71754af7bef3cb9e8574c5557e214cea8d29",
+    "/assets/img/infinity/infinity_5.webp": "5797a3b3c04c3d14285c5edc4ce78e7f16b288be",
     "/assets/img/infinity/infinity_6.webp": "634412d0e7c4281faeb0edc349b2043ef9ab911a",
     "/assets/img/infinity/infinity_7.webp": "5d3b13f96ab70f53897caf74e8d44e64b2e0a172",
     "/assets/img/inkscape_logo.svg": "43f001b7cc0b8b7d46d65b08cd8e4bedd553e0e4",
@@ -413,9 +413,9 @@
     "/assets/styles/pages/_synopsis.scss": "f71e58735d00cbc22b85e3f58960a13dd8e11a02",
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "446d6f27ce45e3db45ff40d310a0c17a5b6a328b",
+    "/index.html": "de6448d00af2acd4a466f0265b57861c829e0db3",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.a4be02b5b1bf0347.js": "ee802433d9ac02accddc4f808e772c3370feb58e",
+    "/main.03585c398754e7d7.js": "42243f5b9fcb25f13e57f9918183280094c852d4",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
