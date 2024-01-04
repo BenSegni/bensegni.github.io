@@ -121,12 +121,15 @@
         @include span-80();
     }
 
+    .project-display-card {
+        border: 1rem solid $black;
+    }
+
     span {
         background-position: 0 100%;
         background-size: cover;
         background-position: left center;
         margin: 0;
-        filter: drop-shadow(.125rem .125rem $black) drop-shadow(-.125rem -.125rem $black);
     }
 
     @include tablet {
