@@ -1,6 +1,7 @@
 .site-build-footer {
     @include flex();
     align-items: flex-end;
+    margin-bottom: 2rem;
 
     a {
         @include content-link();
