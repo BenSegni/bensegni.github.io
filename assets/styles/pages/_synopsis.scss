@@ -67,11 +67,12 @@
 
     .back-link {
         @include flex();
-        @include full-width();
-        border-bottom: 1px dotted grey;
         @include flex-center();
-        margin: 2rem auto 3rem auto;
+        @include full-width();
+        justify-content: center;
         padding: 0 0 2rem 0;
+        margin: 2rem auto 3rem auto;
+        border-bottom: 1px dotted grey;
 
         img {
             height: 2rem;
@@ -85,17 +86,21 @@
             color: $white;
             border-bottom: 1px dotted grey;
         }
+
+        &:visited {
+            border-bottom: 1px dotted grey;
+        }
     }
 
     .back-link-footer {
         @include flex();
-        justify-content: center;
-        @include full-width();
-        border-top: 1px dotted grey;
         @include flex-center();
+        @include full-width();
+        justify-content: center;
         border-bottom: none;
         padding-top: 2rem;
         margin: 2rem auto 0 auto;
+        border-top: 1px dotted grey;
 
         img {
             height: 2rem;
