@@ -117,9 +117,9 @@
         @include synopsis-image();
         object-fit: cover;
         object-position: top;
-        border: 1px solid transparent;
         border-radius: 0;
         animation: fade 1s;
+        border: 0.5rem solid $black;
 
         @include mobile-width();
     }
