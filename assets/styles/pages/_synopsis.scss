@@ -145,6 +145,7 @@
     }
 
     .background {
+        box-sizing: border-box;
         display: block;
         @include synopsis-image();
         object-fit: cover;
@@ -232,6 +233,7 @@
         background-position: 50% 20%;
         margin-top: 1rem;
         border: .125rem solid $black;
+        box-sizing: border-box;
 
         .related-project-wrapper {
             @include flex();
@@ -310,6 +312,7 @@
                 object-fit: cover;
                 border: .25rem solid $black;
                 border-radius: 0;
+                box-sizing: border-box;
             }
 
             &:nth-child(1) {
