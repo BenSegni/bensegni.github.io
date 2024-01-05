@@ -123,6 +123,10 @@
 
     .project-display-card {
         border: .5rem solid $black;
+        cursor: pointer;
+        &:hover {
+            border-color: $black_alpha_7;
+        }
     }
 
     span {
