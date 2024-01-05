@@ -1,19 +1,28 @@
 @import '../global/mixins';
 
+@mixin synopsis-loading-background($border-color, $border-width) {
+    background-color: $black_alpha_7;
+    border: $border-width solid $border-color;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
 @mixin synopsis-image {
     width: 100%;
     height: 30rem;
+}
+
+@mixin small-synopsis-image {
+    width: 100%;
+    height: 10rem;
 }
 
 .loading-icon {
     @include flex;
     @include flex-column();
     @include flex-center();
-    background-color: black;
-    border: 1px solid $black;
+    @include synopsis-loading-background($black, .25rem);
     @include synopsis-image();
-    margin-bottom: 2rem;
-    position: relative;
 
     .loading-graphic {
         @include loading-graphic-config(8rem);
@@ -23,6 +32,24 @@
         @include loading-graphic-image();
     }
 
+
+    @include mobile-width();
+}
+
+.small-loading-icon {
+    @include flex;
+    @include flex-column();
+    @include flex-center();
+    @include synopsis-loading-background($black_alpha_7, .25rem);
+    @include small-synopsis-image();
+
+    .loading-graphic {
+        @include loading-graphic-config(4rem);
+    }
+
+    img {
+        @include loading-graphic-image();
+    }
 
     @include mobile-width();
 }
@@ -200,7 +227,7 @@
     }
 
     .related-project {
-        width: 100%;
+        width: 50vw;
         background-size: cover;
         background-position: 50% 20%;
         margin-top: 1rem;
@@ -240,6 +267,18 @@
             h6 {
                 margin: 0 0 1rem 0;
             }
+        }
+
+        @include tablet {
+            @include span-90()
+        }
+
+        @include mobile {
+            @include span-90()
+        }
+
+        @include small-mobile {
+            @include span-90()
         }
     }
 
