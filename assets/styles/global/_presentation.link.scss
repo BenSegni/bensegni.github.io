@@ -1,0 +1,16 @@
+.presentation-link {
+    padding: 0rem 0 2rem 0;
+
+    a {
+        @include content-link();
+    }
+
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
+
+    svg {
+        fill: $blue_1;
+        margin-right: 1rem;
+    }
+}

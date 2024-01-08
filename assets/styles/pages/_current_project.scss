@@ -71,7 +71,7 @@
     text-align: left;
     padding-bottom: 1.5rem;
     line-height: 1.5rem;
-    border-bottom: 0.0625rem dotted grey;
+    border-bottom: 0.0625rem dotted $grey;
     margin-bottom: 2rem;
 
     img {
@@ -102,7 +102,7 @@
     }
 
     .skills-header {
-        color: grey;
+        color: $grey;
         margin: 0;
     }
 
@@ -207,7 +207,7 @@
         }
 
         a {
-            color: grey;
+            color: $grey;
             border-bottom: 0.0625rem dotted $white;
 
             &:hover {

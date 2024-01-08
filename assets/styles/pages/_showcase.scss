@@ -383,7 +383,7 @@
 
         &:hover {
             background-color: $black;
-            color: grey;
+            color: $grey;
         }
 
         img {
@@ -471,7 +471,7 @@
 
             &:hover {
                 background-color: $black;
-                color: grey;
+                color: $grey;
             }
 
             button {
@@ -486,7 +486,7 @@
                 font-family: inherit;
 
                 &:hover {
-                    color: grey;
+                    color: $grey;
                 }
 
                 img {
@@ -508,7 +508,7 @@
 
             &:hover {
                 background-color: $black;
-                color: grey;
+                color: $grey;
             }
         }
 
@@ -534,10 +534,10 @@
         width: 100%;
         align-items: center;
         justify-content: center;
-        color: grey;
+        color: $grey;
         margin: 1rem auto 0 auto;
-        border-top: 1px dotted grey;
-        border-bottom: 1px dotted grey;
+        border-top: 1px dotted $grey;
+        border-bottom: 1px dotted $grey;
         padding: 1rem 0;
         font-style: italic;
 

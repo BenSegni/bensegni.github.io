@@ -19,7 +19,7 @@
     width: 30vw;
     font-weight: normal;
     background-color: $black;
-    border: 1px solid grey;
+    border: 1px solid $grey;
     text-align: left;
     padding: 1.5rem;
     text-align: left;
@@ -99,13 +99,13 @@
 }
 
 icon {
-    border: 1px solid grey;
+    border: 1px solid $grey;
     border-radius: 3rem;
     margin-left: .5rem;
     cursor: pointer;
 
     &:before {
-        color: grey;
+        color: $grey;
         display: inline-block;
         font-style: italic;
         height: 1rem;
