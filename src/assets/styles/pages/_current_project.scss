@@ -27,6 +27,7 @@
 
             @include tablet {
                 @include mobile-header-img();
+                width: 30vw;
             }
 
             @include mobile {
@@ -44,6 +45,8 @@
 
         @include tablet {
             @include mobile-header();
+            @include flex-column();
+            align-items: center;
         }
 
         @include mobile {
@@ -68,7 +71,7 @@
     text-align: left;
     padding-bottom: 1.5rem;
     line-height: 1.5rem;
-    border-bottom: 0.0625rem dotted grey;
+    border-bottom: 0.0625rem dotted $grey;
     margin-bottom: 2rem;
 
     img {
@@ -99,7 +102,7 @@
     }
 
     .skills-header {
-        color: grey;
+        color: $grey;
         margin: 0;
     }
 
@@ -119,11 +122,12 @@
 .recent-presentation {
     display: block;
     margin: auto auto 2rem auto;
-    @include span-25();
+    @include span-50();
 
     a {
         @include flex();
         @include flex-center();
+        @include span-50();
         background-color: rgba(112, 181, 250, .65);
         border-bottom: 0.0625rem dotted rgb(112, 181, 250);
         color: white;
@@ -131,11 +135,20 @@
         padding: .75rem 1rem;
         border-radius: 10rem;
         border: 0.0625rem solid $white;
+        box-sizing: border-box;
 
         &:hover {
             color: rgba(0, 0, 0, 0.75);
             background-color: $white;
             border: 0.0625rem solid $white;
+        }
+
+        @include mobile {
+            width: 75vw;
+        }
+
+        @include small-mobile {
+            @include span-90();
         }
 
         img {
@@ -194,7 +207,7 @@
         }
 
         a {
-            color: grey;
+            color: $grey;
             border-bottom: 0.0625rem dotted $white;
 
             &:hover {

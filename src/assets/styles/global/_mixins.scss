@@ -20,7 +20,7 @@
     font-size: .75rem;
     padding: .25rem .75rem;
     color: $white;
-    border: 0.125rem solid grey;
+    border: 0.125rem solid $grey;
     border-radius: 10rem;
     margin-top: .5rem;
     margin-right: .5rem;
@@ -86,7 +86,7 @@
 @mixin skills-header() {
     width: 100%;
     margin: 1rem 0 0 9rem;
-    color: grey;
+    color: $grey;
     padding: 0;
 
     @include tablet {
@@ -139,8 +139,8 @@
 @mixin loading-graphic-image {
     position: absolute;
     margin: 0;
-    height: 2.5rem;
-    width: 2.5rem;
+    height: 6rem;
+    width: 6rem;
     border: none;
 }
 
@@ -149,7 +149,7 @@
 }
 
 @mixin content-link {
-    color: grey;
+    color: $grey;
     border-bottom: 1px dotted $white;
 
     &:hover {

@@ -1,4 +1,4 @@
-<div class="loading-icon" *ngIf="isLoading">
+<div [ngClass]="smallLoader ? 'small-loading-icon' : 'loading-icon'" *ngIf="isLoading">
     <span class="loading-graphic"></span>
     <img [src]="logo" [alt]="logo | altText">
 </div>

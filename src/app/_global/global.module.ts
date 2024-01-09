@@ -13,6 +13,7 @@ import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PrivacyPolicyLogoComponent } from './privacy-policy-logo/privacy-policy-logo.component';
 import { NavigationSubtextComponent } from './navigation/navigation-subtext/navigation-subtext.component';
+import { ProjectLinkComponent } from './project-link/project-link.component';
 import { SiteBuildComponent } from './site-build/site-build.component';
 
 
@@ -25,12 +26,13 @@ import { SiteBuildComponent } from './site-build/site-build.component';
         PageNotFoundComponent,
         PreviousCompaniesComponent,
         SocialMediaComponent,
-        SkillPillsComponent,
         BreadcrumbComponent,
         PrivacyPolicyComponent,
         PrivacyPolicyLogoComponent,
         NavigationSubtextComponent,
-        SiteBuildComponent
+        ProjectLinkComponent,
+        SiteBuildComponent,
+        SkillPillsComponent,
     ],
     imports: [
         CommonModule,
@@ -45,7 +47,8 @@ import { SiteBuildComponent } from './site-build/site-build.component';
         PreviousCompaniesComponent,
         SocialMediaComponent,
         SkillPillsComponent,
-        BreadcrumbComponent
+        BreadcrumbComponent,
+        ProjectLinkComponent
     ]
 })
 export class GlobalModule { }

@@ -10,7 +10,7 @@ import { showcaseData } from '../../../../app/_global/data/showcase-data';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FilterComponent implements OnDestroy {
-    public showcaseLength = 8;
+    public showcaseLength = 10;
     public filteredShowcaselength = 0;
     public options: string[] = [
         TechnologyEnum.Angular,

@@ -26,7 +26,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/9a/9a_5.webp',
             },
-        ]
+        ],
+        relatedProjectId: '10'
     },
     {
         id: '2',
@@ -53,7 +54,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/chinwe/chinwe_2.webp',
             },
-        ]
+        ],
+        relatedProjectId: '4'
     },
     {
         id: '3',
@@ -74,7 +76,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/dlc/dlc_3.webp',
             },
-        ]
+        ],
+        relatedProjectId: '1'
     },
     {
         id: '4',
@@ -82,7 +85,7 @@ export const showcaseData: Showcase[] = [
         projectTitle: 'Infinity App',
         description: 'Logistics Native Mobile App for Athletes.',
         downloadLink: '../../../../assets/docs/infinity_brochure.pdf',
-        background: '../../../../assets/img/infinity/infinity_1.webp',
+        background: '../../../../assets/img/infinity/infinity_4.webp',
         routeUrl: 'infinity',
         details: 'In collaboration with Business Durham, a comprehensive proposal was developed to streamline the national event participation journey for athletes across various sports. The proposed mobile application would provide a one-stop solution, encompassing: Extensive listing of national events with registration capabilities. Integrated travel planning tools to facilitate convenient arrangements. Seamless accommodation booking features for simplified logistics. This innovative concept garnered initial interest upon presentation to the organizers of The Great North Run, demonstrating its potential impact on the national sporting landscape.',
         displayImages: [
@@ -90,18 +93,19 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/infinity/infinity_1.webp',
             },
             {
-                url: '../../../../assets/img/infinity/infinity_4.webp',
-            },
-            {
-                url: '../../../../assets/img/infinity/infinity_7.webp',
+                url: '../../../../assets/img/infinity/infinity_3.webp',
             },
             {
                 url: '../../../../assets/img/infinity/infinity_6.webp',
             },
             {
-                url: '../../../../assets/img/infinity/infinity_3.webp',
+                url: '../../../../assets/img/infinity/infinity_2.webp',
             },
-        ]
+            {
+                url: '../../../../assets/img/infinity/infinity_5.webp',
+            },
+        ],
+        relatedProjectId: '9'
     },
     {
         id: '5',
@@ -122,7 +126,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/lenovo/len_1.webp',
             }
-        ]
+        ],
+        relatedProjectId: '8'
     },
     {
         id: '6',
@@ -149,7 +154,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/nuchido/nuch_5.webp',
             },
-        ]
+        ],
+        relatedProjectId: '3'
     },
     {
         id: '7',
@@ -173,7 +179,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/orbery/orb_5.webp',
             }
-        ]
+        ],
+        relatedProjectId: '2'
     },
     {
         id: '8',
@@ -200,7 +207,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/zen-desk/zd_5.webp',
             },
-        ]
+        ],
+        relatedProjectId: '6'
     },
     {
         id: '9',
@@ -227,7 +235,8 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/qatar/qatar_5.webp',
             },
-        ]
+        ],
+        relatedProjectId: '5'
     },
     {
         id: '10',
@@ -254,6 +263,7 @@ export const showcaseData: Showcase[] = [
             {
                 url: '../../../../assets/img/velux/v_5.webp',
             },
-        ]
+        ],
+        relatedProjectId: '7'
     },
 ]

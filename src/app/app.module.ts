@@ -27,6 +27,7 @@ import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.com
 import { GithubComponent } from './pages/github/github.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { ScrollComponent } from './scroll/scroll.component';
+import { RelatedSynopsisComponent } from './pages/synopsis/related-synopsis/related-synopsis.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +51,7 @@ import { ScrollComponent } from './scroll/scroll.component';
     CvDownloadComponent,
     GithubComponent,
     ScrollComponent,
+    RelatedSynopsisComponent,
   ],
   imports: [
     GlobalModule,

@@ -9,6 +9,7 @@ export interface Showcase {
     routeUrl: string;
     details: string;
     displayImages?: ImageDisplay[];
+    relatedProjectId?: string;
 }
 
 export interface ImageDisplay {

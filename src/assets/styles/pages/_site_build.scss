@@ -1,6 +1,7 @@
 .site-build-footer {
     @include flex();
     align-items: flex-end;
+    margin-bottom: 2rem;
 
     a {
         @include content-link();
@@ -17,15 +18,22 @@
     width: 50vw;
     text-align: left;
 
+    p {
+        line-height: 1.5rem;
+        padding-bottom: 1rem;
+    }
+
     h5 {
         text-align: left;
-        color: grey;
+        color: $grey;
         padding: 0;
     }
 
     .dependencies {
+        display: block;
         color: $white;
         font-size: .75rem;
+        margin-bottom: 1rem;
     }
 
     @include tablet {

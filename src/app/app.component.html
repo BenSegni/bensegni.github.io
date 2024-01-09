@@ -9,7 +9,7 @@
     <app-footer [version]="appVersion"></app-footer>
 </ng-container>
 <ng-template #loading>
-    <div class="loading-icon-home" *ngIf="!isLoading">
+    <div class="loading-icon-home" *ngIf="isLoading">
         <span class="loading-graphic"></span>
         <img src="../../../assets/img/logo.svg" [alt]="'../../../assets/img/logo.svg' | altText">
     </div>

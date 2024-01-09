@@ -7,5 +7,6 @@ import { Component, Input } from '@angular/core';
 })
 export class LoadingGraphicComponent {
     @Input() isLoading = true;
+    @Input() smallLoader = false;
     public logo = '../../../assets/img/logo.svg';
 }

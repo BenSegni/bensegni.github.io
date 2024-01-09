@@ -6,7 +6,7 @@
                     [alt]="option | logo | altText"> {{ option }}</button></li>
         <li class="reset"><button (click)="resetFilter()">Reset Filter</button></li>
     </ul>
-    <p *ngIf="filteredShowcaselength">Showing <span>{{ filteredShowcaselength }}</span> of <span>{{
+    <p *ngIf="filteredShowcaselength">Showing <span>{{ filteredShowcaselength }}</span> of a total <span>{{
             showcaseLength }}</span> items <ng-container *ngIf="selectedOption">filtering <span class="option"><img
                     [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a [href]="selectedOption | filterLink" target="_blank">{{ selectedOption
                     }}</a></q></span></ng-container></p>

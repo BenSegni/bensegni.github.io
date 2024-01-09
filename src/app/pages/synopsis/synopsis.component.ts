@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectorRef, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
 import { GlobalDataService } from '../../../app/_global/global-data.service';
 import { Showcase } from '../showcase/interface/showcase';
@@ -10,6 +10,7 @@ import { Showcase } from '../showcase/interface/showcase';
 })
 export class SynopsisComponent implements OnInit {
     public showcaseProject: Showcase | undefined;
+    public relatedProject: Showcase | undefined;
     public openButton = '../../../assets/img/new_window_blue_icon.svg';
     public logo = '../../../assets/img/logo.svg';
     public gridIcon = '../../../assets/img/grid_icon.svg';
@@ -19,6 +20,6 @@ export class SynopsisComponent implements OnInit {
 
     public ngOnInit(): void {
         const pageUrl = this._router.routerState.snapshot.url;
-        this.showcaseProject = this._globalService.showcaseSignal$().find((project) => pageUrl.includes(project.routeUrl))
+        this.showcaseProject = this._globalService.showcaseSignal$().find((project) => pageUrl.includes(project.routeUrl));
     }
 }

@@ -137,7 +137,7 @@
         text-decoration-color: $white;
 
         &:hover {
-            color: grey;
+            color: $grey;
             text-decoration-color: $blue_1;
             background-color: transparent;
             border: none;
@@ -151,7 +151,7 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px dotted grey;
+    border-bottom: 1px dotted $grey;
     padding: 0 0 2rem 9rem;
 
     li {

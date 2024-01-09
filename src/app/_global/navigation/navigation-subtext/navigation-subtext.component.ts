@@ -8,5 +8,5 @@ import { NavigationItem } from '../interface/navigation';
 })
 export class NavigationSubtextComponent {
     @Input() item: NavigationItem | undefined;
-    public pathIcon = '../../assets/icons/icon-72.svg'
+    public pathIcon = '../../assets/icons/icon-72.svg';
 }
