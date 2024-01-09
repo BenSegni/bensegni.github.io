@@ -11,4 +11,4 @@
 <ng-template #loading>
     <app-loading-icon *ngIf="isLoading"></app-loading-icon>
 </ng-template>
-<app-scroll></app-scroll>
+<app-scroll *ngIf="!isLoading"></app-scroll>
