@@ -1,7 +1,7 @@
 import { Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import { Router } from '@angular/router';
 import { Showcase } from '../../showcase/interface/showcase';
-import { GlobalDataService } from 'src/app/global/global-data.service';
+import { GlobalDataService } from '../../../global/global-data.service';
 
 @Component({
   selector: 'app-related-synopsis',
