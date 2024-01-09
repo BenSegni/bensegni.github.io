@@ -22,7 +22,7 @@ describe('FeedbackComponent', () => {
         component.feedback$.subscribe({
             next: (response) => {
                 expect(response).toBeTruthy();
-                expect(response[0].title).toBe('Ed Wheldon, Frontend Web Developer')
+                expect(response[0].title).toBe('Ed Wheldon, Developer')
             }
         })
     })

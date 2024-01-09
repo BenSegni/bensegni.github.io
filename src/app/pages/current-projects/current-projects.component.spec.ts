@@ -7,36 +7,48 @@ import { AltTextPipe } from '../../global/utils/pipes/alt-text.pipe';
 import { CurrentProjectHeaderComponent } from './current-project-header/current-project-header.component';
 import { CurrentProjectPresentationComponent } from './current-project-presentation/current-project-presentation.component';
 import { CurrentProjectDetailComponent } from './current-project-detail/current-project-detail.component';
+import { SkillPillsComponent } from '../../global/skill-pills/skill-pills.component';
+import { PillPipe } from '../../global/utils/pipes/pill.pipe';
+import { FilterPipe } from '../../global/utils/pipes/filter.pipe';
+import { LogoPipe } from '../../global/utils/pipes/logo.pipe';
+import { FilterLinkPipe } from '../../global/utils/pipes/filter-link.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('CurrentProjectsComponent', () => {
-  let component: CurrentProjectsComponent;
-  let fixture: ComponentFixture<CurrentProjectsComponent>;
+    let component: CurrentProjectsComponent;
+    let fixture: ComponentFixture<CurrentProjectsComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        CurrentProjectsComponent,
-        FeedbackComponent,
-        FeedbackLinkComponent,
-        AltTextPipe,
-        CurrentProjectHeaderComponent,
-        CurrentProjectPresentationComponent,
-        CurrentProjectDetailComponent
-    ]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [BrowserAnimationsModule],
+            declarations: [
+                CurrentProjectsComponent,
+                FeedbackComponent,
+                FeedbackLinkComponent,
+                AltTextPipe,
+                CurrentProjectHeaderComponent,
+                CurrentProjectPresentationComponent,
+                CurrentProjectDetailComponent,
+                SkillPillsComponent,
+                PillPipe,
+                FilterPipe,
+                LogoPipe,
+                FilterLinkPipe
+            ]
+        });
+        fixture = TestBed.createComponent(CurrentProjectsComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
-    fixture = TestBed.createComponent(CurrentProjectsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
-  describe('testing Subscription()', () => {
-    it('should emit values', () => {
-        component.projects$.subscribe({
-            next: (response) => {
-                expect(response).toBeTruthy();
-                expect(response.title).toBe('Technical Design Lead, British Airways')
-            }
+    describe('testing Subscription()', () => {
+        it('should emit values', () => {
+            component.projects$.subscribe({
+                next: (response) => {
+                    expect(response).toBeTruthy();
+                    expect(response.title).toBe('Technical Design Lead, British Airways')
+                }
+            })
         })
     })
-  })
 });

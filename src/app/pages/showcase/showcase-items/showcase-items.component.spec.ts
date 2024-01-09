@@ -1,21 +1,40 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ShowcaseItemsComponent } from './showcase-items.component';
+import { ProjectDetailsComponent } from '../project-details/project-details.component';
+import { SkillPillsComponent } from '../../../global/skill-pills/skill-pills.component';
+import { RouterTestingModule } from '@angular/router/testing';
+import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
+import { FilterPipe } from '../../../global/utils/pipes/filter.pipe';
+import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
+import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('ShowcaseItemsComponent', () => {
-  let component: ShowcaseItemsComponent;
-  let fixture: ComponentFixture<ShowcaseItemsComponent>;
+    let component: ShowcaseItemsComponent;
+    let fixture: ComponentFixture<ShowcaseItemsComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [ShowcaseItemsComponent]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [RouterTestingModule, BrowserAnimationsModule],
+            declarations: [
+                ShowcaseItemsComponent,
+                ProjectDetailsComponent,
+                SkillPillsComponent,
+                PillPipe,
+                FilterPipe,
+                LogoPipe,
+                AltTextPipe,
+                FilterLinkPipe
+            ]
+        });
+        fixture = TestBed.createComponent(ShowcaseItemsComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
-    fixture = TestBed.createComponent(ShowcaseItemsComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
 });

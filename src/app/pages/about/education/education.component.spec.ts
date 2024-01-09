@@ -5,6 +5,7 @@ import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
 import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 import { PostEducationInsertComponent } from './post-education-insert/post-education-insert.component';
 import { EducationInsertComponent } from './education-insert/education-insert.component';
+import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
 
 describe('EducationComponent', () => {
     let component: EducationComponent;
@@ -17,7 +18,8 @@ describe('EducationComponent', () => {
                 LogoPipe,
                 AltTextPipe,
                 PostEducationInsertComponent,
-                EducationInsertComponent
+                EducationInsertComponent,
+                PillPipe
             ]
         });
         fixture = TestBed.createComponent(EducationComponent);

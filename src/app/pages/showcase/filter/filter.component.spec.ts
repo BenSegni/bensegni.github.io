@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FilterComponent } from './filter.component';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 
 describe('FilterComponent', () => {
   let component: FilterComponent;
@@ -8,7 +9,7 @@ describe('FilterComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FilterComponent]
+      declarations: [FilterComponent, AltTextPipe]
     });
     fixture = TestBed.createComponent(FilterComponent);
     component = fixture.componentInstance;

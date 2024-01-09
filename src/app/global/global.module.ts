@@ -9,7 +9,6 @@ import { PageHeaderComponent } from './page-header/page-header.component';
 import { PreviousCompaniesComponent } from './previous-companies/previous-companies.component';
 import { SocialMediaComponent } from './social-media/social-media.component';
 import { RouterModule } from '@angular/router';
-import { BreadcrumbComponent } from './breadcrumb/breadcrumb.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { PrivacyPolicyLogoComponent } from './privacy-policy-logo/privacy-policy-logo.component';
 import { NavigationSubtextComponent } from './navigation/navigation-subtext/navigation-subtext.component';
@@ -28,7 +27,6 @@ import { LoadingIconComponent } from './loading-icon/loading-icon.component';
         PageNotFoundComponent,
         PreviousCompaniesComponent,
         SocialMediaComponent,
-        BreadcrumbComponent,
         PrivacyPolicyComponent,
         PrivacyPolicyLogoComponent,
         NavigationSubtextComponent,
@@ -51,7 +49,6 @@ import { LoadingIconComponent } from './loading-icon/loading-icon.component';
         PreviousCompaniesComponent,
         SocialMediaComponent,
         SkillPillsComponent,
-        BreadcrumbComponent,
         ProjectLinkComponent,
         ScrollComponent,
         LoadingIconComponent

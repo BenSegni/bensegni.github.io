@@ -6,6 +6,7 @@ import { PageHeaderComponent } from './global/page-header/page-header.component'
 import { NavigationComponent } from './global/navigation/navigation.component';
 import { PreviousCompaniesComponent } from './global/previous-companies/previous-companies.component';
 import { FooterComponent } from './global/footer/footer.component';
+import { ScrollComponent } from './global/scroll/scroll.component';
 
 describe('AppComponent', () => {
     beforeEach(() => {
@@ -17,7 +18,8 @@ describe('AppComponent', () => {
                 PageHeaderComponent,
                 NavigationComponent,
                 PreviousCompaniesComponent,
-                FooterComponent
+                FooterComponent,
+                ScrollComponent
             ],
         });
     });

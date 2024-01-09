@@ -7,36 +7,42 @@ import { EmploymentInsertComponent } from './employment-insert/employment-insert
 import { SkillPillsComponent } from '../../../global/skill-pills/skill-pills.component';
 import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
 import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
+import { FilterPipe } from '../../../global/utils/pipes/filter.pipe';
+import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 describe('EmploymentComponent', () => {
-  let component: EmploymentComponent;
-  let fixture: ComponentFixture<EmploymentComponent>;
+    let component: EmploymentComponent;
+    let fixture: ComponentFixture<EmploymentComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [
-        EmploymentComponent,
-        AltTextPipe,
-        UsefulLinksComponent,
-        EmploymentInsertComponent,
-        SkillPillsComponent,
-        PillPipe,
-        LogoPipe
-    ]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            imports: [BrowserAnimationsModule],
+            declarations: [
+                EmploymentComponent,
+                AltTextPipe,
+                UsefulLinksComponent,
+                EmploymentInsertComponent,
+                SkillPillsComponent,
+                PillPipe,
+                LogoPipe,
+                FilterPipe,
+                FilterLinkPipe
+            ]
+        });
+        fixture = TestBed.createComponent(EmploymentComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
-    fixture = TestBed.createComponent(EmploymentComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
-  describe('testing Subscription()', () => {
-    it('should emit values', () => {
-        component.employment$.subscribe({
-            next: (response) => {
-                expect(response).toBeTruthy();
-                expect(response[0].company).toBe('British Airways Plc')
-            }
+    describe('testing Subscription()', () => {
+        it('should emit values', () => {
+            component.employment$.subscribe({
+                next: (response) => {
+                    expect(response).toBeTruthy();
+                    expect(response[0].company).toBe('British Airways Plc')
+                }
+            })
         })
     })
-  })
 });

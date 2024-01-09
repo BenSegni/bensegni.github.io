@@ -26,7 +26,7 @@ export class RelatedSynopsisComponent implements OnInit {
 
     public navigateToSynopsis(project: Showcase): void {
         this,this.showcaseProject = project;
-        this._router.navigate([`./${this._router.config[1].path}/` + project.routeUrl + '/synopsis']);
+        this._router.navigate([`./showcase/` + project.routeUrl + '/synopsis']);
         this.findRelatedProject();
         this.showcaseEmitter.emit(project);
     }

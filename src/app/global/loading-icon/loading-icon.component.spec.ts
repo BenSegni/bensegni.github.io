@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoadingIconComponent } from './loading-icon.component';
+import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
 
 describe('LoadingIconComponent', () => {
   let component: LoadingIconComponent;
@@ -8,7 +9,7 @@ describe('LoadingIconComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LoadingIconComponent]
+      declarations: [LoadingIconComponent, AltTextPipe]
     });
     fixture = TestBed.createComponent(LoadingIconComponent);
     component = fixture.componentInstance;
