@@ -1,11 +1,11 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { SocialMediaComponent } from './_global/social-media/social-media.component';
-import { PageHeaderComponent } from './_global/page-header/page-header.component';
-import { NavigationComponent } from './_global/navigation/navigation.component';
-import { PreviousCompaniesComponent } from './_global/previous-companies/previous-companies.component';
-import { FooterComponent } from './_global/footer/footer.component';
+import { SocialMediaComponent } from './global/social-media/social-media.component';
+import { PageHeaderComponent } from './global/page-header/page-header.component';
+import { NavigationComponent } from './global/navigation/navigation.component';
+import { PreviousCompaniesComponent } from './global/previous-companies/previous-companies.component';
+import { FooterComponent } from './global/footer/footer.component';
 
 describe('AppComponent', () => {
     beforeEach(() => {

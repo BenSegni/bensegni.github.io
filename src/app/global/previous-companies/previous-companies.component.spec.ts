@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PreviousCompaniesComponent } from './previous-companies.component';
-import { AltTextPipe } from '../../../app/_global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
 
 describe('PreviousCompaniesComponent', () => {
   let component: PreviousCompaniesComponent;

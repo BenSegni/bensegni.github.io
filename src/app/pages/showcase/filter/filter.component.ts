@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
-import { TechnologyEnum } from '../../../../app/_global/enum/technology.enum';
-import { GlobalDataService } from '../../../../app/_global/global-data.service';
-import { showcaseData } from '../../../../app/_global/data/showcase-data';
+import { TechnologyEnum } from '../../../global/enum/technology.enum';
+import { GlobalDataService } from '../../../global/global-data.service';
+import { showcaseData } from '../../../global/data/showcase-data';
 
 @Component({
     selector: 'app-filter',

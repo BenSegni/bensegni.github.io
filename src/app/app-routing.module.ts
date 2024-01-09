@@ -8,12 +8,12 @@ import { ProfileComponent } from './pages/about/profile/profile.component';
 import { EmploymentComponent } from './pages/about/employment/employment.component';
 import { EducationComponent } from './pages/about/education/education.component';
 import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
-import { PageNotFoundComponent } from './_global/page-not-found/page-not-found.component';
+import { PageNotFoundComponent } from './global/page-not-found/page-not-found.component';
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
-import { PrivacyPolicyComponent } from './_global/privacy-policy/privacy-policy.component';
+import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.component';
 import { GithubComponent } from './pages/github/github.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
-import { SiteBuildComponent } from './_global/site-build/site-build.component';
+import { SiteBuildComponent } from './global/site-build/site-build.component';
 
 const routes: Routes = [
     {

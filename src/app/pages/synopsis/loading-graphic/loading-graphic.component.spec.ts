@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoadingGraphicComponent } from './loading-graphic.component';
-import { AltTextPipe } from '../../../../app/_global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 
 describe('LoadingGraphicComponent', () => {
   let component: LoadingGraphicComponent;

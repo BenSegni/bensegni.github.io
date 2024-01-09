@@ -1,6 +1,6 @@
 import { ChangeDetectorRef, Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { Router } from '@angular/router';
-import { GlobalDataService } from '../../../app/_global/global-data.service';
+import { GlobalDataService } from '../../global/global-data.service';
 import { Showcase } from '../showcase/interface/showcase';
 
 @Component({

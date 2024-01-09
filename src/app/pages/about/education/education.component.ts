@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { GlobalDataService } from '../../../_global/global-data.service';
+import { GlobalDataService } from '../../../global/global-data.service';
 
 @Component({
   selector: 'app-education',

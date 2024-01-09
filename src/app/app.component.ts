@@ -1,6 +1,6 @@
 import { Component, ElementRef, OnDestroy, OnInit } from '@angular/core';
 import { NavigationEnd, Router } from '@angular/router';
-import { GlobalDataService } from './_global/global-data.service';
+import { GlobalDataService } from './global/global-data.service';
 
 @Component({
     selector: 'app-root',

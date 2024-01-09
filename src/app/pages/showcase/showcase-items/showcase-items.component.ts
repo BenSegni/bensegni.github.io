@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
-import { GlobalDataService } from '../../../../app/_global/global-data.service';
+import { GlobalDataService } from '../../../global/global-data.service';
 import { Router } from '@angular/router';
 import { Showcase } from '../interface/showcase';
 

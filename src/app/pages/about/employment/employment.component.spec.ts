@@ -1,12 +1,12 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { EmploymentComponent } from './employment.component';
-import { AltTextPipe } from '../../../../app/_global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 import { UsefulLinksComponent } from '../useful-links/useful-links.component';
 import { EmploymentInsertComponent } from './employment-insert/employment-insert.component';
-import { SkillPillsComponent } from '../../../../app/_global/skill-pills/skill-pills.component';
-import { PillPipe } from '../../../../app/_global/utils/pipes/pill.pipe';
-import { LogoPipe } from '../../../../app/_global/utils/pipes/logo.pipe';
+import { SkillPillsComponent } from '../../../global/skill-pills/skill-pills.component';
+import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
+import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
 
 describe('EmploymentComponent', () => {
   let component: EmploymentComponent;

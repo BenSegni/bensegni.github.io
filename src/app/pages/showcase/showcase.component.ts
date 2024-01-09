@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FadeInButton } from '../../_global/utils/animations/fade.animation';
+import { FadeInButton } from '../../global/utils/animations/fade.animation';
 import { Showcase } from './interface/showcase';
 
 @Component({

@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { CurrentProjectsComponent } from './current-projects.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackLinkComponent } from './feedback-link/feedback-link.component';
-import { AltTextPipe } from '../../_global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../global/utils/pipes/alt-text.pipe';
 import { CurrentProjectHeaderComponent } from './current-project-header/current-project-header.component';
 import { CurrentProjectPresentationComponent } from './current-project-presentation/current-project-presentation.component';
 import { CurrentProjectDetailComponent } from './current-project-detail/current-project-detail.component';
