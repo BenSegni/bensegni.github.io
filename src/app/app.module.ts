@@ -26,7 +26,6 @@ import { ReferencesComponent } from './pages/contact/references/references.compo
 import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.component';
 import { GithubComponent } from './pages/github/github.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { ScrollComponent } from './scroll/scroll.component';
 import { RelatedSynopsisComponent } from './pages/synopsis/related-synopsis/related-synopsis.component';
 
 @NgModule({
@@ -50,7 +49,6 @@ import { RelatedSynopsisComponent } from './pages/synopsis/related-synopsis/rela
     ReferencesComponent,
     CvDownloadComponent,
     GithubComponent,
-    ScrollComponent,
     RelatedSynopsisComponent,
   ],
   imports: [

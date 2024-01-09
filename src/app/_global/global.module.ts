@@ -15,6 +15,8 @@ import { PrivacyPolicyLogoComponent } from './privacy-policy-logo/privacy-policy
 import { NavigationSubtextComponent } from './navigation/navigation-subtext/navigation-subtext.component';
 import { ProjectLinkComponent } from './project-link/project-link.component';
 import { SiteBuildComponent } from './site-build/site-build.component';
+import { ScrollComponent } from './scroll/scroll.component';
+import { LoadingIconComponent } from './loading-icon/loading-icon.component';
 
 
 
@@ -33,6 +35,8 @@ import { SiteBuildComponent } from './site-build/site-build.component';
         ProjectLinkComponent,
         SiteBuildComponent,
         SkillPillsComponent,
+        ScrollComponent,
+        LoadingIconComponent
     ],
     imports: [
         CommonModule,
@@ -48,7 +52,9 @@ import { SiteBuildComponent } from './site-build/site-build.component';
         SocialMediaComponent,
         SkillPillsComponent,
         BreadcrumbComponent,
-        ProjectLinkComponent
+        ProjectLinkComponent,
+        ScrollComponent,
+        LoadingIconComponent
     ]
 })
 export class GlobalModule { }
