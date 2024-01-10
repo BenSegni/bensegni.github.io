@@ -3,8 +3,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NavigationComponent } from './navigation.component';
 import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
 import { ReplaySubject } from 'rxjs';
-import { NavigationStart,Router, RouterEvent } from '@angular/router';
+import { NavigationStart, Router, RouterEvent } from '@angular/router';
 import { mockRouterStub, routerEventsSubject } from '../testing/router.stub';
+import { NavigationItem } from './interface/navigation';
 
 describe('NavigationComponent', () => {
     let component: NavigationComponent;
@@ -34,5 +35,21 @@ describe('NavigationComponent', () => {
 
             expect(component.show).toBeFalsy();
         });
+    });
+
+    describe('Testing onMouseEnter()', () => {
+        it('should save the route as the selected route', () => {
+            const navigationItem: NavigationItem = {
+                route: 'about',
+                anchorText: 'about',
+                activeOptions: true,
+                uiImage: 'string-to-image',
+                keywords:['keywords', 'keywords', 'keywords']
+            }
+
+            component.onMouseEnter(navigationItem);
+
+            expect(component.selectedRoute).toEqual(navigationItem);
+        })
     })
 });
