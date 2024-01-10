@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1704879416889,
+  "timestamp": 1704896972242,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,7 +12,7 @@
       },
       "urls": [
         "/index.html",
-        "/main.119b43f0a980adac.js",
+        "/main.d7083900e74a62b2.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
@@ -308,7 +308,7 @@
     "/assets/img/linkedin_ui_nav.webp": "d5dfb7840ed153a959a35c62a44667bbefc3d563",
     "/assets/img/lino.webp": "70c4d3260b673df2bf57aba76b3adcb773e275e8",
     "/assets/img/loading_icon.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/assets/img/logo.svg": "357d7e58824adc71be1bba2e278d78230bb7bdd1",
+    "/assets/img/logo.svg": "ad8f37ef4d020ffddadae9091e9a5041827b7ea1",
     "/assets/img/mail_icon.svg": "484429291cd80cdb175b6ed3e0df611fd16a78ea",
     "/assets/img/me/me_1.webp": "ce398eaaaf6c06a34f229afb1e83c850402859a5",
     "/assets/img/me/me_2.webp": "08d4e3cfdccbfb8ddf80d5d564dfbdb5056a0d67",
@@ -413,9 +413,9 @@
     "/assets/styles/pages/_synopsis.scss": "b4e1fe467aa17eb2ea3d81e324cc8a14dd46e0a2",
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "02e228f987d8acdbdb92bedc97c410a18607f0e9",
+    "/index.html": "499b065f11f5ecc7ac47a7f5794e3dc0f10c6f73",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.119b43f0a980adac.js": "57909813cc03edcdf0b1307a912f92d792335e77",
+    "/main.d7083900e74a62b2.js": "6dffeca20e6db5666115fb0884439918f0bde162",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
