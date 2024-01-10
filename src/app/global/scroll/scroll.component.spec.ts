@@ -3,19 +3,29 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { ScrollComponent } from './scroll.component';
 
 describe('ScrollComponent', () => {
-  let component: ScrollComponent;
-  let fixture: ComponentFixture<ScrollComponent>;
+    let component: ScrollComponent;
+    let fixture: ComponentFixture<ScrollComponent>;
 
-  beforeEach(() => {
-    TestBed.configureTestingModule({
-      declarations: [ScrollComponent]
+    beforeEach(() => {
+        TestBed.configureTestingModule({
+            declarations: [ScrollComponent]
+        });
+        fixture = TestBed.createComponent(ScrollComponent);
+        component = fixture.componentInstance;
+        fixture.detectChanges();
     });
-    fixture = TestBed.createComponent(ScrollComponent);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
+    it('should create', () => {
+        expect(component).toBeTruthy();
+    });
+
+    describe('Testing scroll', () => {
+        it('should scroll to top of page when called', () => {
+            const spyScroll = spyOn(window, 'scrollTo');
+
+            component.scroll();
+
+            expect(spyScroll).toHaveBeenCalled();
+        })
+    })
 });

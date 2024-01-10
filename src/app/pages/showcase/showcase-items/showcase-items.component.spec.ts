@@ -10,6 +10,8 @@ import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
 import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { Showcase } from '../interface/showcase';
+import { Router } from '@angular/router';
 
 describe('ShowcaseItemsComponent', () => {
     let component: ShowcaseItemsComponent;
@@ -36,5 +38,17 @@ describe('ShowcaseItemsComponent', () => {
 
     it('should create', () => {
         expect(component).toBeTruthy();
+    });
+
+    describe('Testing navigateToSynopsis()', () => {
+        it('should navigate to the identified project', () => {
+            const routerstub: Router = TestBed.get(Router);
+            const spyRouter = spyOn(routerstub, 'navigate');
+            const project = component._globalService.showcaseSignal$().find(project => project.id = '1');
+
+            component.navigateToSynopsis(project as Showcase);
+
+            expect(spyRouter).toHaveBeenCalled();
+        })
     });
 });

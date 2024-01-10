@@ -15,16 +15,19 @@ export class AppComponent extends GlobalDataService implements OnInit, OnDestroy
 
     public ngOnInit(): void {
         this.onInitialLoad();
+        this.scrollToTop();
+    }
 
+    public ngOnDestroy(): void {
+        sessionStorage.removeItem('initialLoad');
+    }
+
+    private scrollToTop(): void {
         this._router.events.subscribe((event) => {
             if (!(event instanceof NavigationEnd)) {
                 return;
             }
             window.scrollTo(0, 0);
         });
-    }
-
-    public ngOnDestroy(): void {
-        sessionStorage.removeItem('initialLoad');
     }
 }

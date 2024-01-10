@@ -14,6 +14,6 @@ export class ShowcaseItemsComponent {
     constructor(public  _globalService: GlobalDataService, private _router: Router) {}
 
     public navigateToSynopsis(project: Showcase): void {
-        this._router.navigate([`./${this._router.config[1].path}/` + project.routeUrl + '/synopsis']);
+        this._router.navigate([`./showcase/` + project.routeUrl + '/synopsis']);
     }
 }

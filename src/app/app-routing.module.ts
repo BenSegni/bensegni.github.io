@@ -15,7 +15,7 @@ import { GithubComponent } from './pages/github/github.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
 import { SiteBuildComponent } from './global/site-build/site-build.component';
 
-const routes: Routes = [
+export const routes: Routes = [
     {
         path: '',
         redirectTo: 'showcase', pathMatch: 'full',

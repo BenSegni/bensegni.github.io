@@ -2,6 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { RelatedSynopsisComponent } from './related-synopsis.component';
 import { Showcase } from '../../showcase/interface/showcase';
+import { Router } from '@angular/router';
 
 describe('RelatedSynopsisComponent', () => {
     let component: RelatedSynopsisComponent;
@@ -21,19 +22,16 @@ describe('RelatedSynopsisComponent', () => {
     });
 
     describe('Testing navigateToSynopsis()', () => {
-        it('should save showcaseProject', () => {
-            const project: Showcase = {
-                id: '123',
-                skills: [],
-                projectTitle: 'test',
-                description: 'test',
-                background: 'background.jpg',
-                routeUrl: 'route-url',
-                details: 'string'
-            }
-            //component.navigateToSynopsis(project);
+        it('should navigate to the identified project', () => {
+            const routerstub: Router = TestBed.inject(Router);
+            const spyRouter = spyOn(routerstub, 'navigate');
+            const spyFind = spyOn<any>(component, 'findRelatedProject');
+            const project = component['_globalService'].showcaseSignal$().find(project => project.id = '1');
 
-            //expect(component.showcaseProject).toEqual(project)
+            component.navigateToSynopsis(project as Showcase);
+
+            expect(spyRouter).toHaveBeenCalled();
+            expect(spyFind).toHaveBeenCalled();
         })
-    })
+    });
 });
