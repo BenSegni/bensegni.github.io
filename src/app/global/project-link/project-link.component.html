@@ -14,12 +14,13 @@
         </svg>
         <a *ngIf="project || url"
             [href]="project?.showCaseLink ? project?.showCaseLink : project?.downloadLink ? project?.downloadLink : url"
-            target="_blank">{{ project?.showCaseLink
+            target="_blank">{{
+            project?.showCaseLink
             ? behance
-            :
-            project?.downloadLink
+            : project?.downloadLink
             ? pdf
-            : behance }}
+            : behance
+            }}
         </a>
     </p>
 </ng-container>
