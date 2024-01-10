@@ -15,11 +15,11 @@
         <a *ngIf="project || url"
             [href]="project?.showCaseLink ? project?.showCaseLink : project?.downloadLink ? project?.downloadLink : url"
             target="_blank">{{ project?.showCaseLink
-            ? 'Project Presentation'
+            ? behance
             :
             project?.downloadLink
-            ? 'View PDF Proposal'
-            : 'Project Presentation' }}
+            ? pdf
+            : behance }}
         </a>
     </p>
 </ng-container>

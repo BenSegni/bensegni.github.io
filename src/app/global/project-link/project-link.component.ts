@@ -9,4 +9,6 @@ import { Showcase } from '../../pages/showcase/interface/showcase';
 export class ProjectLinkComponent {
     @Input() public project: Showcase | undefined;
     @Input () public url = '';
+    public pdf = 'View PDF Proposal';
+    public behance = 'Project Presentation';
 }
