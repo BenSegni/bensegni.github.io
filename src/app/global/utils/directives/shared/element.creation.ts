@@ -67,7 +67,6 @@ export class DOMCreator {
         this.addToParentNode(el.nativeElement, iconElement);
     }
 
-
     /**
      * resetInfoText()
      * @param el @type {( ElementRef )} passed from directive
