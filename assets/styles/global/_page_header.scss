@@ -10,6 +10,11 @@ $background: 'background.webp';
     padding: 10rem 0 3rem 0;
     @include background-image-config($background, 100%, $no-repeat: true);
 
+    img {
+        border-radius: 0;
+        border: none;
+    }
+
 
     @include tablet {
         @include background-image-config($background, 100vmax);
