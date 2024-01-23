@@ -2,6 +2,12 @@
 
 $background: 'background.webp';
 
+@mixin mobile-icon {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 6rem;
+}
+
 .header-section {
     @include flex();
     @include flex-column();
@@ -13,6 +19,18 @@ $background: 'background.webp';
     img {
         border-radius: 0;
         border: none;
+
+        @include tablet {
+            @include mobile-icon()
+        }
+
+        @include mobile {
+            @include mobile-icon()
+        }
+
+        @include small-mobile {
+            @include mobile-icon()
+        }
     }
 
 

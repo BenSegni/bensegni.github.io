@@ -133,14 +133,14 @@
     background-position: center center;
     animation: rotation 1s infinite linear;
     border-radius: 100rem;
-    border: 1px solid $black;
+    border: 1px solid $blue_1;
 }
 
 @mixin loading-graphic-image {
     position: absolute;
     margin: 0;
-    height: 6rem;
-    width: 6rem;
+    height: 4rem;
+    width: 4rem;
     border: none;
 }
 
