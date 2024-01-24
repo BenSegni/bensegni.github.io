@@ -3,9 +3,8 @@
 $background: 'background.webp';
 
 @mixin mobile-icon {
-    height: 4rem;
-    width: 4rem;
-    margin-top: 6rem;
+    height: 6rem;
+    width: 6rem;
 }
 
 .header-section {
@@ -17,9 +16,6 @@ $background: 'background.webp';
     @include background-image-config($background, 100%, $no-repeat: true);
 
     img {
-        border-radius: 0;
-        border: none;
-
         @include tablet {
             @include mobile-icon()
         }

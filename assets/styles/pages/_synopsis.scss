@@ -25,7 +25,7 @@
     @include synopsis-image();
 
     .loading-graphic {
-        @include loading-graphic-config(8rem);
+        @include loading-graphic-config(6rem);
     }
 
     img {
