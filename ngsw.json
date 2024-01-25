@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706195734827,
+  "timestamp": 1706195784030,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -42,11 +42,6 @@
         "/assets/icons/icon-72.svg",
         "/assets/icons/icon-96.svg",
         "/assets/img/9a.webp",
-        "/assets/img/9a/9a_1.webp",
-        "/assets/img/9a/9a_2.webp",
-        "/assets/img/9a/9a_3.webp",
-        "/assets/img/9a/9a_4.webp",
-        "/assets/img/9a/9a_5.webp",
         "/assets/img/about_ui_nav.webp",
         "/assets/img/agile_logo.svg",
         "/assets/img/amazon.svg",
@@ -245,11 +240,6 @@
     "/assets/icons/icon-72.svg": "722f6bb9cd10edf1522af9ba985806c77186476a",
     "/assets/icons/icon-96.svg": "66c6780831bf2cd307b31234c44f61b8e89b0b06",
     "/assets/img/9a.webp": "73ae3bf3117636f48a36e25ddc7bc8906e2ca1a1",
-    "/assets/img/9a/9a_1.webp": "e109657eeadf0e022885d3e4bba537575210fd92",
-    "/assets/img/9a/9a_2.webp": "cad5b7475da230dfa17262c8ac26765bf356f9a6",
-    "/assets/img/9a/9a_3.webp": "b320f3a693052715fceb18f4ec718eb7a4c98b95",
-    "/assets/img/9a/9a_4.webp": "a6b17a3a0215b6d0c8f25ec3dda0cfbaf6a585c9",
-    "/assets/img/9a/9a_5.webp": "a9a63f4d125955e3a6ca36550edd1a76b1e3e66a",
     "/assets/img/about_ui_nav.webp": "e2593e47d4e4412db6657756f3337025179cffd8",
     "/assets/img/agile_logo.svg": "6be9f00494024cad4e50c43b98ca92f81a2c6a4b",
     "/assets/img/amazon.svg": "d055b810d1e51bcccf5e46826596a9ad2da7dfcb",
