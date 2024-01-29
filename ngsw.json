@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706532289348,
+  "timestamp": 1706535127406,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -29,7 +29,7 @@
       },
       "urls": [
         "/assets/docs/CV.docx",
-        "/assets/docs/CV.docx.pdf",
+        "/assets/docs/CV.pdf",
         "/assets/docs/infinity_brochure.pdf",
         "/assets/docs/qatar_brochure.pdf",
         "/assets/icons/icon-128.svg",
@@ -226,8 +226,8 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/assets/docs/CV.docx": "7e7c2ec71cdb3c0b33f026706675d30189d08eb5",
-    "/assets/docs/CV.docx.pdf": "2c0cdecee8d8637a0876ce1f268e76cc852895c0",
+    "/assets/docs/CV.docx": "065d69f66cee576d45753bd256c176bc05631fd8",
+    "/assets/docs/CV.pdf": "166829e9fd9d43d04457f4178867c258a9710f6d",
     "/assets/docs/infinity_brochure.pdf": "4bf9cf7c8172ff2f7454713715540a8d53798a8b",
     "/assets/docs/qatar_brochure.pdf": "975c0f20c8a76627da60e6f3a99f9fb89b29b84e",
     "/assets/icons/icon-128.svg": "1415c12c21a282124b8bf40e35840c92e021587e",
