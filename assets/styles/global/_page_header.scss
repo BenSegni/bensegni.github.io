@@ -29,6 +29,24 @@ $background: 'background.webp';
         }
     }
 
+    .location-wrapper {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            @include content-link();
+        }
+
+        svg {
+            margin-right: .5rem;
+        }
+    }
+
 
     @include tablet {
         @include background-image-config($background, 100vmax);
