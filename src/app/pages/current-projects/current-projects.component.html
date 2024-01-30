@@ -1,4 +1,4 @@
-<h3>Current Project</h3>
+<h3 [innerText]="'Current Project'"></h3>
 <ng-container *ngIf="projects$ | async as currentProject">
     <app-current-project-header [currentProject]="currentProject"></app-current-project-header>
     <div class="current-project-insert" *ngFor="let project of currentProject.projects">

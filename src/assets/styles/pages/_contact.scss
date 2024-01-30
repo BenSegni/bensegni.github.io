@@ -27,6 +27,7 @@
     @include flex();
     @include flex-wrap();
     align-items: center;
+    margin-bottom: 1rem;
 
     svg {
         fill: $white;

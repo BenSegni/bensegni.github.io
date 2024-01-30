@@ -1,6 +1,6 @@
 <div class="current-project" *ngIf="currentProject">
     <div class="current-project-header">
         <img src="{{ currentProject.companyLogo }}" alt="{{ currentProject.companyLogo | altText }}">
-        <h4><span>{{ currentProject.title }}</span></h4>
+        <h4><span [innerText]="currentProject.title"></span></h4>
     </div>
 </div>

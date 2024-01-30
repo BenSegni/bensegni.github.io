@@ -16,6 +16,13 @@ import { ProjectLinkComponent } from './project-link/project-link.component';
 import { SiteBuildComponent } from './site-build/site-build.component';
 import { ScrollComponent } from './scroll/scroll.component';
 import { LoadingIconComponent } from './loading-icon/loading-icon.component';
+import { MediumIconComponent } from './icons/medium-icon/medium-icon.component';
+import { BehanceIconComponent } from './icons/behance-icon/behance-icon.component';
+import { PdfIconComponent } from './icons/pdf-icon/pdf-icon.component';
+import { GithubIconComponent } from './icons/github-icon/github-icon.component';
+import { LinkedinIconComponent } from './icons/linkedin-icon/linkedin-icon.component';
+import { EmailIconComponent } from './icons/email-icon/email-icon.component';
+import { LocationIconComponent } from './icons/location-icon/location-icon.component';
 
 
 
@@ -34,7 +41,14 @@ import { LoadingIconComponent } from './loading-icon/loading-icon.component';
         SiteBuildComponent,
         SkillPillsComponent,
         ScrollComponent,
-        LoadingIconComponent
+        LoadingIconComponent,
+        MediumIconComponent,
+        BehanceIconComponent,
+        PdfIconComponent,
+        GithubIconComponent,
+        LinkedinIconComponent,
+        EmailIconComponent,
+        LocationIconComponent
     ],
     imports: [
         CommonModule,
@@ -51,7 +65,14 @@ import { LoadingIconComponent } from './loading-icon/loading-icon.component';
         SkillPillsComponent,
         ProjectLinkComponent,
         ScrollComponent,
-        LoadingIconComponent
+        LoadingIconComponent,
+        MediumIconComponent,
+        BehanceIconComponent,
+        PdfIconComponent,
+        GithubIconComponent,
+        LinkedinIconComponent,
+        EmailIconComponent,
+        LocationIconComponent
     ]
 })
 export class GlobalModule { }

@@ -1,2 +1,2 @@
-<h4>Request References</h4>
+<h4 [innerText]="'Request References'"></h4>
 <p class="reference" *ngIf="emailCopy && emailCopy.reference">Please request reference details by clicking this <a href="mailto:{{ emailCopy.emailAddress }}?subject={{ emailCopy.reference.title }}&body={{ emailCopy.reference.body }}" target="_blank">Reference Request Link.</a> I will endeavour to reply within 2 working days.</p>

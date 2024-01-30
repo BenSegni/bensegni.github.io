@@ -1,5 +1,5 @@
 <div class="about-blurb tab-content" *ngIf="employment$ | async as employment">
-    <h3>Employment</h3>
+    <h3 [innerText]="'Employment'"></h3>
     <div class="about-stub" *ngFor="let role of employment">
         <app-employment-insert [role]="role"></app-employment-insert>
     </div>

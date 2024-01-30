@@ -2,7 +2,7 @@ import { ElementRef, Injectable, Renderer2, RendererFactory2 } from "@angular/co
 import { ToolTipConfig } from "../interfaces/tooltip";
 
 @Injectable({ providedIn: 'root' })
-export class DOMCreator {
+export class DOMCreatorService {
 
     private renderer: Renderer2;
     constructor(rendererFactory: RendererFactory2) {
@@ -30,7 +30,7 @@ export class DOMCreator {
     /**
      * createDOMElement()
      * @param element new element to create
-     * @returns new @type {( HTMLElement )}
+     * @returns @type {( HTMLElement )}
      */
     public createDOMElement(element: string): HTMLElement {
         return this.renderer.createElement(element);

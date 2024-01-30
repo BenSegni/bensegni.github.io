@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ContactDownloads } from '../interface/contact.downloads';
 
 @Component({
   selector: 'app-cv-download',
@@ -6,5 +7,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./cv-download.component.scss']
 })
 export class CvDownloadComponent {
-
+    public downloadDocuments: ContactDownloads[] = [
+        {
+            link: '../../../../assets/docs/CV.pdf',
+            text: 'CV Download Link (.pdf)'
+        },
+        {
+            link: '../../../../assets/docs/CV.docx',
+            text: 'CV Download Link (.docx)'
+        }
+    ]
 }

@@ -27,6 +27,12 @@ import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.com
 import { GithubComponent } from './pages/github/github.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { RelatedSynopsisComponent } from './pages/synopsis/related-synopsis/related-synopsis.component';
+import { ContactTypeComponent } from './pages/contact/contact-type/contact-type.component';
+import { ContactLinkPipe } from './pages/contact/pipes/contact-link.pipe';
+import { SynopsisHeaderSectionComponent } from './pages/synopsis/synopsis-header-section/synopsis-header-section.component';
+import { SynopsisHeaderDisplayComponent } from './pages/synopsis/synopsis-header-display/synopsis-header-display.component';
+import { SynopsisBackLinkComponent } from './pages/synopsis/synopsis-back-link/synopsis-back-link.component';
+import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-link/project-details-link.component';
 
 @NgModule({
   declarations: [
@@ -50,6 +56,12 @@ import { RelatedSynopsisComponent } from './pages/synopsis/related-synopsis/rela
     CvDownloadComponent,
     GithubComponent,
     RelatedSynopsisComponent,
+    ContactTypeComponent,
+    ContactLinkPipe,
+    SynopsisHeaderSectionComponent,
+    SynopsisHeaderDisplayComponent,
+    SynopsisBackLinkComponent,
+    ProjectDetailsLinkComponent,
   ],
   imports: [
     GlobalModule,

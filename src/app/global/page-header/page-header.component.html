@@ -1,6 +1,11 @@
 <div class="header-section">
     <img [src]="headerContent.logoPath" alt="logo" />
-    <h1 [innerHTML]="headerContent.header"></h1>
+    <h1 [innerText]="headerContent.header"></h1>
     <h2 [innerHTML]="headerContent.title"></h2>
-    <p [innerHTML]="headerContent.location"></p>
+    <span class="location-wrapper">
+        <app-location-icon></app-location-icon>
+        <a [href]="headerContent.locationLink" target="_blank">
+            <p [innerText]="headerContent.location"></p>
+        </a>
+    </span>
 </div>

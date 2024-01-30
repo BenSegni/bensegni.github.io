@@ -1,5 +1,9 @@
-<h3>Showcase</h3>
+<h3 [innerText]="'Showcase'"></h3>
 <app-filter></app-filter>
-<button class="layout-button" (click)="changeViewLayout()" [@fade]="columnLayout"><img
-        [src]="columnLayout ? grid : column " alt="screen display icon"></button>
+<button
+    class="layout-button"
+    (click)="changeViewLayout()"
+    [@fade]="columnLayout"><img
+    [src]="columnLayout ? grid : column " alt="screen display icon">
+</button>
 <app-showcase-items [columnLayout]="columnLayout"></app-showcase-items>

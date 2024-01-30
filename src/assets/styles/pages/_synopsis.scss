@@ -25,7 +25,7 @@
     @include synopsis-image();
 
     .loading-graphic {
-        @include loading-graphic-config(8rem);
+        @include loading-graphic-config(6rem);
     }
 
     img {
@@ -146,10 +146,10 @@
 
     .background {
         box-sizing: border-box;
-        display: block;
         @include synopsis-image();
-        object-fit: cover;
-        object-position: top;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: top;
         border-radius: 0;
         animation: fade 1s;
         border: .5rem solid $black;

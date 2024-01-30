@@ -1,0 +1,14 @@
+<div *ngIf="contactType" class="contact-detail">
+    <ng-container [ngSwitch]="contactType.type">
+        <app-linkedin-icon *ngSwitchCase="'LinkedIn'"></app-linkedin-icon>
+        <app-email-icon *ngSwitchCase="'Email'"></app-email-icon>
+        <app-behance-icon *ngSwitchCase="'Behance'"></app-behance-icon>
+    </ng-container>
+    <h4 [innerText]="contactType.type"></h4>
+    <p>
+        <a
+        [href]="contactType | contactLink"
+        target="_blank"
+        [innerHTML]="contactType.linkText"></a>
+    </p>
+</div>

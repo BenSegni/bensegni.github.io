@@ -1,4 +1,4 @@
-<h3>Toolkit</h3>
+<h3 [innerText]="'Toolkit'"></h3>
 <ng-container *ngIf="toolkit$ | async as toolkit">
     <ul class="technologies">
         <li *ngFor="let tool of toolkit">

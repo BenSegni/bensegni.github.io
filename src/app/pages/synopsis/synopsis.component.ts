@@ -13,7 +13,6 @@ export class SynopsisComponent implements OnInit {
     public relatedProject: Showcase | undefined;
     public openButton = '../../../assets/img/new_window_blue_icon.svg';
     public logo = '../../../assets/img/logo.svg';
-    public gridIcon = '../../../assets/img/grid_icon.svg';
     public constructor(private _router: Router, public _globalService: GlobalDataService) {
         _globalService.isLoading = true;
     }
@@ -21,5 +20,6 @@ export class SynopsisComponent implements OnInit {
     public ngOnInit(): void {
         const pageUrl = this._router.routerState.snapshot.url;
         this.showcaseProject = this._globalService.showcaseSignal$().find((project) => pageUrl.includes(project.routeUrl));
+        this._globalService.onLoad();
     }
 }

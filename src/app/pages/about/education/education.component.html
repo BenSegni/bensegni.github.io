@@ -1,4 +1,4 @@
-<h3>Professional Training & Certification</h3>
+<h3 [innerText]="'Professional Training & Certification'"></h3>
 <div class="about-stub">
     <span>
         <ul class="post-education" *ngIf="postEducation$ | async as postEducation">
@@ -6,7 +6,7 @@
         </ul>
     </span>
 </div>
-<h3>Education</h3>
+<h3 [innerText]="'Education'"></h3>
 <ng-container *ngIf="education$ | async as education">
     <div class="about-stub" *ngFor="let placement of education">
         <app-education-insert [placement]="placement"></app-education-insert>

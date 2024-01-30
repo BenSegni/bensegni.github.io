@@ -1,0 +1,5 @@
+<div *ngIf="project" class="project-blurb">
+    <h4 [innerText]="project.projectTitle"></h4>
+    <p><small [innerText]="project.description"></small></p>
+    <a [routerLink]="'./' + project.routeUrl + '/synopsis'" [state]="{ id: project.id }" [innerText]="'See More'"></a>
+</div>

@@ -23,7 +23,7 @@
     border: 0.125rem solid $grey;
     border-radius: 10rem;
     margin-top: .5rem;
-    margin-right: .5rem;
+    margin-right: .25rem;
     line-height: 1.5rem;
 
     img {
@@ -133,14 +133,14 @@
     background-position: center center;
     animation: rotation 1s infinite linear;
     border-radius: 100rem;
-    border: 1px solid $black;
+    border: 1px solid $blue_1;
 }
 
 @mixin loading-graphic-image {
     position: absolute;
     margin: 0;
-    height: 6rem;
-    width: 6rem;
+    height: 3rem;
+    width: 3rem;
     border: none;
 }
 

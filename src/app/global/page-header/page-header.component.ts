@@ -4,6 +4,7 @@ interface Header {
     header: string;
     title: string;
     location: string;
+    locationLink: string;
     logoPath: string;
 }
 
@@ -17,6 +18,7 @@ export class PageHeaderComponent {
         header: 'Ben Segni',
         title: 'Lead Full Stack Software Engineer &amp; UI Designer.',
         location: 'County Durham, United Kingdom.',
-        logoPath: '../../../assets/img/logo.svg'
+        locationLink: 'https://maps.app.goo.gl/X1s9Tfpd2ZJWqGSN7',
+        logoPath: '../../../assets/img/me/me_3.webp'
     }
 }

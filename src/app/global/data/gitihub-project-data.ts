@@ -1,4 +1,4 @@
-import { Github } from "../../pages/github/interfaces/github";
+import { Github } from "../../pages/github/interface/github";
 
 export const githubProjectData: Github[] = [
     {

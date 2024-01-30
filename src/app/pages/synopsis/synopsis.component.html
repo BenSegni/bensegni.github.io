@@ -1,31 +1,40 @@
 <ng-container *ngIf="showcaseProject">
     <div class="synopsis">
-        <a class="back-link" [routerLink]="'/'"><img [src]="gridIcon" [alt]="gridIcon | altText">Back to Showcase</a>
-        <app-loading-graphic [isLoading]="_globalService.isLoading"></app-loading-graphic>
-        <img [ngStyle]="{'display' : _globalService.isLoading ? 'none' : 'block'}" class="background"
-            (load)="_globalService.onLoad()" [src]="showcaseProject.background"
-            [alt]="showcaseProject.background | altText">
+        <a class="back-link" [routerLink]="'/'">
+            <app-synopsis-back-link></app-synopsis-back-link>
+        </a>
 
-        <h1>{{ showcaseProject.projectTitle }}</h1>
-        <h2>{{ showcaseProject.description }}</h2>
-        <h5 class="project-skills-header">Skills:</h5>
+        <app-synopsis-header-display [imageConfig]="{
+            backgroundImage: showcaseProject.background,
+            isLoading: _globalService.isLoading
+        }"></app-synopsis-header-display>
+
+        <app-synopsis-header-section [headerSection]="{
+            headerOne: showcaseProject.projectTitle,
+            headerTwo: showcaseProject.description }"></app-synopsis-header-section>
 
         <app-skill-pills [skills]="showcaseProject.skills"></app-skill-pills>
 
-        <p class="project-details">{{ showcaseProject.details }}</p>
+        <p class="project-details" [innerText]="showcaseProject.details"></p>
 
         <app-project-link [project]="showcaseProject"></app-project-link>
 
         <app-loading-graphic *ngIf="showcaseProject.displayImages"
             [isLoading]="_globalService.isLoading"></app-loading-graphic>
+
         <app-grid-display [displayImages]="showcaseProject.displayImages"
             [isLoading]="_globalService.isLoading"></app-grid-display>
+
         <app-loading-graphic [smallLoader]="true" [isLoading]="_globalService.isLoading"></app-loading-graphic>
+
         <app-related-synopsis [ngStyle]="{'display' : _globalService.isLoading ? 'none' : 'flex'}"
             [showcaseProject]="showcaseProject" (showcaseEmitter)="showcaseProject = $event"></app-related-synopsis>
-        <a class="back-link-footer" [routerLink]="'/'"><img [src]="gridIcon" [alt]="gridIcon | altText">Back
-            to Showcase</a>
+
+        <a class="back-link-footer" [routerLink]="'/'">
+            <app-synopsis-back-link></app-synopsis-back-link>
+        </a>
     </div>
-    <h4>Contact Details</h4>
+    <h4 [innerText]="'Contact Details'"></h4>
+
     <app-contact-details></app-contact-details>
 </ng-container>

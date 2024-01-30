@@ -1,8 +1,7 @@
 <div class="download-wrapper">
-    <h3>CV Download</h3>
-    <p>Please view a copy of my latest CV here:</p>
+    <h3 [innerText]="'CV Download'"></h3>
+    <p [innerText]="'Please view a copy of my latest CV here:'"></p>
     <ul class="downloads">
-        <li><a href="../../../../assets/docs/CV.docx.pdf" download="CV">CV Download Link (.pdf)</a></li>
-        <li><a href="../../../../assets/docs/CV.docx" download="CV">CV Download Link (.docx)</a></li>
+        <li *ngFor="let download of downloadDocuments"><a [href]="download.link" download="CV" [innerText]="download.text"></a></li>
     </ul>
 </div>

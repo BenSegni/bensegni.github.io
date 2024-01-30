@@ -15,7 +15,7 @@ import { showcaseData } from './data/showcase-data';
 import { Technology } from '../pages/about/tech-stack/interface/technology';
 import { technologiesData } from './data/technologies-data';
 import { usefulLinksData } from './data/useful-links-data';
-import { Github } from '../pages/github/interfaces/github';
+import { Github } from '../pages/github/interface/github';
 import { githubProjectData } from './data/gitihub-project-data';
 import { toolkitData } from './data/toolkit-data';
 import { ToolKit } from '../pages/about/toolkit/interface/toolkit';

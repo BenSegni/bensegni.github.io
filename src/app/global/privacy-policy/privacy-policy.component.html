@@ -1,18 +1,9 @@
 <div class="privacy-policy-wrapper">
     <app-privacy-policy-logo></app-privacy-policy-logo>
-    <h3>Privacy Policy</h3>
-    <p>This website utilises Google Analytics to gather anonymous data, enabling me to understand user engagement
-        patterns. This data will be instrumental in shaping the future development and refinement of this product's
-        offerings. Please note that no personally identifiable information is stored. To foster transparency, I'd like
-        to clarify the specific data points tracked by analytics:</p>
+    <h3 [innerText]="'Privacy Policy'"></h3>
+    <p [innerText]="privacyPolicyCopy.copy"></p>
     <ul>
-        <li>Page Views</li>
-        <li>Scrolls</li>
-        <li>Outbound Clicks</li>
-        <li>Site Search</li>
-        <li>Video Engagement</li>
-        <li>File Downloads</li>
-        <li>Form Interactions</li>
+        <li *ngFor="let point of privacyPolicyCopy.dataPoints" [innerText]="point"></li>
     </ul>
     <p>For any inquiries regarding analytics tracking or aspects of this website, kindly reach out using the provided <a
             routerLink="../contact">Contact Page.</a></p>

@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { EmailCopy } from '../interfaces/email';
+import { EmailCopy } from '../interface/email';
 
 @Component({
   selector: 'app-references',

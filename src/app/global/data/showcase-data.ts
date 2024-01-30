@@ -4,34 +4,6 @@ export const showcaseData: Showcase[] = [
     {
         id: '1',
         skills: ['HTML5', 'UI Design'],
-        projectTitle: '9a Studios',
-        description: 'Website design for consultancy start-up.',
-        showCaseLink: 'https://www.behance.net/gallery/52642809/UXUI-Design-Project-Nine-Arches-Digital-Consultants',
-        background: '../../../../assets/img/9a.webp',
-        routeUrl: '9a-studios',
-        details: 'Embarking on a comprehensive branding and website development endeavor, the project encompassed conceptualizing a corporate identity and crafting a commercial website from the ground up for a burgeoning consultancy established in 2017. Leveraging Adobe XD for wireframing and HTML5 for developing visually captivating site pages, the project culminated in the creation of an impactful online presence.',
-        displayImages: [
-            {
-                url: '../../../../assets/img/9a/9a_4.webp',
-            },
-            {
-                url: '../../../../assets/img/9a/9a_3.webp',
-            },
-            {
-                url: '../../../../assets/img/9a/9a_2.webp',
-            },
-            {
-                url: '../../../../assets/img/9a/9a_1.webp',
-            },
-            {
-                url: '../../../../assets/img/9a/9a_5.webp',
-            },
-        ],
-        relatedProjectId: '10'
-    },
-    {
-        id: '2',
-        skills: ['HTML5', 'UI Design'],
         projectTitle: 'Chinwe Chukwogu-Roy Biography Site',
         description: 'Website for Renowned Portrait Artist.',
         showCaseLink: 'https://www.behance.net/gallery/33173663/UI-Design-A-Website-Biography-Project',
@@ -58,7 +30,7 @@ export const showcaseData: Showcase[] = [
         relatedProjectId: '4'
     },
     {
-        id: '3',
+        id: '2',
         skills: ['HTML5', 'UI Design'],
         projectTitle: 'Distance Learning College & Training',
         description: 'Website for Online Learning Company.',
@@ -80,7 +52,7 @@ export const showcaseData: Showcase[] = [
         relatedProjectId: '1'
     },
     {
-        id: '4',
+        id: '3',
         skills: ['Angular', 'Directus', 'HTML5', 'Ionic', 'Typescript', 'UI Design'],
         projectTitle: 'Infinity App',
         description: 'Logistics Native Mobile App for Athletes.',
@@ -108,7 +80,7 @@ export const showcaseData: Showcase[] = [
         relatedProjectId: '9'
     },
     {
-        id: '5',
+        id: '4',
         skills: ['UI Design'],
         projectTitle: 'Lenovo',
         description: 'Partner networking landing page for global tech company.',
@@ -130,7 +102,7 @@ export const showcaseData: Showcase[] = [
         relatedProjectId: '8'
     },
     {
-        id: '6',
+        id: '5',
         skills: ['HTML5', 'SASS', 'UI Design',],
         projectTitle: 'Nuchido',
         description: 'Age Rejuvenation Web Design & Development Project.',
@@ -155,10 +127,10 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/nuchido/nuch_5.webp',
             },
         ],
-        relatedProjectId: '3'
+        relatedProjectId: '6'
     },
     {
-        id: '7',
+        id: '6',
         skills: ['Angular', 'Directus', 'HTML5', 'SASS', 'Typescript', 'UI Design'],
         projectTitle: 'Orbery',
         description: 'Corporate website for Content Design agency in Manchester.',
@@ -183,7 +155,7 @@ export const showcaseData: Showcase[] = [
         relatedProjectId: '2'
     },
     {
-        id: '8',
+        id: '7',
         skills: ['HTML5', 'SASS', 'UI Design'],
         projectTitle: 'Performance Horizon',
         description: 'Custom ZenDesk Theme for Market Leading Software House.',
@@ -209,6 +181,34 @@ export const showcaseData: Showcase[] = [
             },
         ],
         relatedProjectId: '6'
+    },
+    {
+        id: '8',
+        skills: ['Angular', 'Directus', 'HTML5', 'Ionic', 'SASS', 'Typescript', 'UI Design'],
+        projectTitle: 'Sideline Digital Sports Experience',
+        description: 'Second Screen Experience for Football.',
+        showCaseLink: 'https://medium.com/sideline-app',
+        background: '../../../../assets/img/sideline/sideline_5.webp',
+        routeUrl: 'sideline',
+        details: 'During a routine commute back from a client meeting, a fortuitous radio discussion sparked a strategic initiative to digitally transform the football program. The program had been experiencing declining match-day sales, necessitating a compelling digital alternative. My vision was to develop a platform offering an engaging fan experience enriched with valuable content, real-time updates, and significant brand-visibility opportunities for advertisers. This strategic vision led me to engage with premier, championship, and national league clubs, culminating in the development of proposals for the 2022 FIFA World Cup in Qatar. My involvement with Sideline Digital Sports Experience provided invaluable industry insights and honed my presentation skills, ultimately contributing to the success of my pitches.',
+        displayImages: [
+            {
+                url: '../../../../assets/img/sideline/sideline_1.webp',
+            },
+            {
+                url: '../../../../assets/img/sideline/sideline_2.webp',
+            },
+            {
+                url: '../../../../assets/img/sideline/sideline_3.webp',
+            },
+            {
+                url: '../../../../assets/img/sideline/sideline_4.webp',
+            },
+            {
+                url: '../../../../assets/img/sideline/sideline_5.webp',
+            }
+        ],
+        relatedProjectId: '9'
     },
     {
         id: '9',
@@ -265,5 +265,5 @@ export const showcaseData: Showcase[] = [
             },
         ],
         relatedProjectId: '7'
-    },
+    }
 ]

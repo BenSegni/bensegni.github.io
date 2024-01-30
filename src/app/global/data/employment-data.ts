@@ -16,7 +16,7 @@ export const employmentData: Employment[] = [
     },
     {
         logo: '../../../assets/img/mercedes-benz.svg',
-        company: 'Mercedes Benz Group',
+        company: 'Mercedes-Benz Group',
         date: '10/2021 - 07/2022',
         title: 'Lead Software Engineer',
         successes: [

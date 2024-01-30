@@ -1,10 +1,4 @@
 <ng-container *ngIf="project">
     <app-skill-pills [skills]="project.skills" [size]="'skill-pills-mini'"></app-skill-pills>
-    <div class="project-blurb">
-        <h4>{{ project.projectTitle }}</h4>
-        <p><small>{{ project.description }}</small></p>
-        <a [routerLink]="'./' + project.routeUrl + '/synopsis'" [state]="{ id: project.id }">
-            See More
-        </a>
-    </div>
+    <app-project-details-link [project]="project"></app-project-details-link>
 </ng-container>

@@ -8,14 +8,22 @@
             <img [src]="closeIcon" [alt]="closeIcon | altText"></button></li>
     <li *ngFor="let route of navigationRoutes">
         <ng-container *ngIf="route.route; else anchorLink">
-            <a [routerLink]="route.route" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: route.activeOptions}" (mouseenter)="onMouseEnter(route)">{{
-                route.anchorText }}</a>
+            <a
+                [routerLink]="route.route" routerLinkActive="active"
+                [routerLinkActiveOptions]="{ exact: route.activeOptions}"
+                (mouseenter)="onMouseEnter(route)"
+                [innerText]="route.anchorText">
+            </a>
         </ng-container>
         <ng-template #anchorLink>
             <span class="external-link">
                 <img *ngIf="route.icon" [src]="route.icon" [alt]="route.icon | altText">
-                <a [href]="route.url" target="_blank" (mouseenter)="onMouseEnter(route)">{{ route.anchorText }}</a>
+                <a
+                    [href]="route.url"
+                    target="_blank"
+                    (mouseenter)="onMouseEnter(route)"
+                    [innerText]="route.anchorText">
+                </a>
             </span>
         </ng-template>
     </li>

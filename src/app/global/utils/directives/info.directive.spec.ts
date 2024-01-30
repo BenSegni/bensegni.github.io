@@ -3,6 +3,8 @@ import { ComponentFixture, TestBed, fakeAsync, tick } from '@angular/core/testin
 import { InfoDirective } from './info.directive';
 
 import { Component } from '@angular/core';
+import { DOMCreatorService } from './shared/element.creation';
+import { DOMCreatorServiceMock } from './mocks/element.creation.mock';
 
 @Component({
     selector: 'test-component',
@@ -10,42 +12,29 @@ import { Component } from '@angular/core';
 })
 export class TestComponent { }
 
+
 describe('InfoDirective', () => {
     let el: ElementRef;
-    let rend: Renderer2;
+
+    let creator: DOMCreatorService;
     let directive: InfoDirective;
     let fixture: ComponentFixture<TestComponent>;
 
     beforeEach(async () => {
         TestBed.configureTestingModule({
             declarations: [TestComponent],
-            providers: [Renderer2],
+            providers: [{
+                provide: DOMCreatorService,
+                useClass: DOMCreatorServiceMock
+            }]
         });
-        directive = new InfoDirective(el, rend);
+        directive = new InfoDirective(el, creator);
         fixture = TestBed.createComponent(TestComponent);
-        directive['renderer'] = fixture.componentRef.injector.get<Renderer2>(
-            Renderer2 as Type<Renderer2>
-        );
-        directive['el'] = fixture.componentRef.injector.get<ElementRef>(
+        directive['_el'] = fixture.componentRef.injector.get<ElementRef>(
             ElementRef as Type<ElementRef>
         );
-    });
-
-    describe('Testing ngAfterViewInit()', () => {
-        beforeEach(() => {
-            directive.tooltip = {
-                toolTipTitle: 'Test',
-                text: 'test text',
-            };
-        });
-        it('should create a tool tip element', () => {
-            const spyCreate = spyOn<any>(
-                directive,
-                'createIconElement'
-            ).and.callThrough();
-            directive.ngAfterViewInit();
-            expect(spyCreate).toHaveBeenCalled();
-        });
+        creator = TestBed.inject(DOMCreatorService);
+        fixture.detectChanges();
     });
 
     describe('Testing generateInfoBox()', () => {
@@ -57,6 +46,7 @@ describe('InfoDirective', () => {
                 link: 'link',
                 linkText: 'link text',
             };
+
         });
 
         it('should create an HTML Element', () => {
@@ -75,43 +65,38 @@ describe('InfoDirective', () => {
         });
 
         it('should create an HTML Element', () => {
-            const spyAddClassDOMElement = spyOn<any>(directive, 'addClassDOMElement');
-            const breakPoint: HTMLElement = directive['createDOMElement']('span');
-            const divElement: HTMLElement = directive['createDOMElement']('div');
-            divElement.innerText = '...'
             directive['generateInfoBox']('text');
+            fixture.detectChanges();
             expect(directive['generateInfoBox']).toBeTruthy();
         });
     });
 
-    describe('Testing resetInfoText()', () => {
-        it('should call removeChild()', () => {
-            const spyRemove = spyOn<any>(directive['renderer'], 'removeChild');
-            directive['resetInfoText']();
-            expect(spyRemove).toHaveBeenCalled();
-        });
-    });
-
-    describe('Testing Hoslistener Events', () => {
+    describe('Testing Hostlistener Events', () => {
         beforeEach(() => {
             directive.tooltip = {
                 toolTipTitle: 'Test',
                 text: 'test text',
                 imageUrl: 'testurl',
             };
+
         });
 
         it('should create tooltip on hover', () => {
             const spyInfoBox = spyOn<any>(directive, 'generateInfoBox');
             directive.onHover();
+            fixture.detectChanges();
             expect(spyInfoBox).toHaveBeenCalled();
         })
 
-        it('should reset tooltip on leave', fakeAsync(() => {
-            const spyResetInfo = spyOn<any>(directive, 'resetInfoText');
+        it('should reset tooltip on leave', (done) => {
+            const spyResetInfo = spyOn<any>(directive['_creator'], 'resetInfoText');
             directive.onLeave();
-            tick(300);
-            expect(spyResetInfo).toHaveBeenCalled();
-        }))
+            directive['delayReset$'].subscribe({
+                complete: () => {
+                    expect(spyResetInfo).toHaveBeenCalled();
+                    done();
+                }
+            });
+        })
     })
 });
