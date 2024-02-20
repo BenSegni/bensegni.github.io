@@ -3,8 +3,7 @@ import { EmailCopy } from '../interface/email';
 
 @Component({
   selector: 'app-references',
-  templateUrl: './references.component.html',
-  styleUrls: ['./references.component.scss']
+  templateUrl: './references.component.html'
 })
 export class ReferencesComponent {
     public emailCopy: EmailCopy = {

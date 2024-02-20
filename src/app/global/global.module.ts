@@ -23,6 +23,7 @@ import { GithubIconComponent } from './icons/github-icon/github-icon.component';
 import { LinkedinIconComponent } from './icons/linkedin-icon/linkedin-icon.component';
 import { EmailIconComponent } from './icons/email-icon/email-icon.component';
 import { LocationIconComponent } from './icons/location-icon/location-icon.component';
+import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
 
 
 
@@ -48,7 +49,8 @@ import { LocationIconComponent } from './icons/location-icon/location-icon.compo
         GithubIconComponent,
         LinkedinIconComponent,
         EmailIconComponent,
-        LocationIconComponent
+        LocationIconComponent,
+        NpmIconComponent
     ],
     imports: [
         CommonModule,

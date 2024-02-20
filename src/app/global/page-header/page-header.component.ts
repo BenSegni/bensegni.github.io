@@ -10,8 +10,7 @@ interface Header {
 
 @Component({
     selector: 'app-page-header',
-    templateUrl: './page-header.component.html',
-    styleUrls: ['./page-header.component.scss']
+    templateUrl: './page-header.component.html'
 })
 export class PageHeaderComponent {
     public headerContent: Header = {

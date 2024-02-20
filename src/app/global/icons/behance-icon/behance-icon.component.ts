@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-behance-icon',
-    templateUrl: './icon.svg',
-    styleUrls: ['./behance-icon.component.scss']
+    templateUrl: './icon.svg'
 })
 export class BehanceIconComponent { }

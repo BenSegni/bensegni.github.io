@@ -2,8 +2,7 @@ import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-privacy-policy-logo',
-  templateUrl: './privacy-policy-logo.component.html',
-  styleUrls: ['./privacy-policy-logo.component.scss']
+  templateUrl: './privacy-policy-logo.component.html'
 })
 export class PrivacyPolicyLogoComponent {
 

@@ -3,7 +3,6 @@ import { GlobalDataService } from '../../../global/global-data.service';
 
 @Component({
   selector: 'app-employment',
-  templateUrl: './employment.component.html',
-  styleUrls: ['./employment.component.scss']
+  templateUrl: './employment.component.html'
 })
 export class EmploymentComponent extends GlobalDataService {}

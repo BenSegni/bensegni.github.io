@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-pdf-icon',
+  selector: 'app-npm-icon',
   templateUrl: './icon.svg'
 })
-export class PdfIconComponent {}
+export class NpmIconComponent {}

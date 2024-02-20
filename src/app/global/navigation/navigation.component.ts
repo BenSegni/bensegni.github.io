@@ -8,7 +8,6 @@ import { routeItems } from './data/routes';
 @Component({
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
-    styleUrls: ['./navigation.component.scss'],
     animations: [FadeInNavigation()],
 })
 export class NavigationComponent {

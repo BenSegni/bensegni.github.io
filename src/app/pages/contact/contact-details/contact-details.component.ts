@@ -3,8 +3,7 @@ import { ContactType } from '../interface/contact.type';
 
 @Component({
   selector: 'app-contact-details',
-  templateUrl: './contact-details.component.html',
-  styleUrls: ['./contact-details.component.scss']
+  templateUrl: './contact-details.component.html'
 })
 export class ContactDetailsComponent {
     public contactTypes: ContactType[] = [

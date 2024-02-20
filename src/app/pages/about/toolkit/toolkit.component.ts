@@ -3,8 +3,7 @@ import { GlobalDataService } from '../../../global/global-data.service';
 
 @Component({
   selector: 'app-toolkit',
-  templateUrl: './toolkit.component.html',
-  styleUrls: ['./toolkit.component.scss']
+  templateUrl: './toolkit.component.html'
 })
 export class ToolkitComponent extends GlobalDataService {
 

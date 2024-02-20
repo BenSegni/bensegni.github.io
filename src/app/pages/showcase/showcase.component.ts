@@ -5,7 +5,6 @@ import { Showcase } from './interface/showcase';
 @Component({
     selector: 'app-showcase',
     templateUrl: './showcase.component.html',
-    styleUrls: ['./showcase.component.scss'],
     animations: [FadeInButton()]
 })
 export class ShowcaseComponent {

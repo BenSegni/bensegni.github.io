@@ -3,8 +3,7 @@ import { CurrentProject } from '../interface/project';
 
 @Component({
   selector: 'app-current-project-header',
-  templateUrl: './current-project-header.component.html',
-  styleUrls: ['./current-project-header.component.scss']
+  templateUrl: './current-project-header.component.html'
 })
 export class CurrentProjectHeaderComponent {
     @Input() public currentProject: CurrentProject | undefined;

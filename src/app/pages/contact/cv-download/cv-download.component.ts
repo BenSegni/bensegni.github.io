@@ -3,8 +3,7 @@ import { ContactDownloads } from '../interface/contact.downloads';
 
 @Component({
   selector: 'app-cv-download',
-  templateUrl: './cv-download.component.html',
-  styleUrls: ['./cv-download.component.scss']
+  templateUrl: './cv-download.component.html'
 })
 export class CvDownloadComponent {
     public downloadDocuments: ContactDownloads[] = [

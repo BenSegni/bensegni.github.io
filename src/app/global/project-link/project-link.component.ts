@@ -1,11 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { Showcase } from '../../pages/showcase/interface/showcase';
-import { timer } from 'rxjs';
 
 @Component({
     selector: 'app-project-link',
-    templateUrl: './project-link.component.html',
-    styleUrls: ['./project-link.component.scss']
+    templateUrl: './project-link.component.html'
 })
 export class ProjectLinkComponent implements OnInit {
     @Input() public project: Showcase | undefined;

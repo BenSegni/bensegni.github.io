@@ -3,8 +3,7 @@ import { GlobalDataService } from '../../../global/global-data.service';
 
 @Component({
   selector: 'app-tech-stack',
-  templateUrl: './tech-stack.component.html',
-  styleUrls: ['./tech-stack.component.scss']
+  templateUrl: './tech-stack.component.html'
 })
 export class TechStackComponent extends GlobalDataService {
 

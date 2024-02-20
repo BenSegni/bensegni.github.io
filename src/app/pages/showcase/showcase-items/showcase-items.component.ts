@@ -6,7 +6,6 @@ import { Showcase } from '../interface/showcase';
 @Component({
     selector: 'app-showcase-items',
     templateUrl: './showcase-items.component.html',
-    styleUrls: ['./showcase-items.component.scss'],
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ShowcaseItemsComponent {
