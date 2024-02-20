@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1706605988320,
+  "timestamp": 1708434970886,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -12,11 +12,11 @@
       },
       "urls": [
         "/index.html",
-        "/main.384d51d105694d1b.js",
+        "/main.a4d72dddd74c2149.js",
         "/manifest.webmanifest",
         "/polyfills.9b0d495ff173ca0a.js",
         "/runtime.92f4d1031cb3c9af.js",
-        "/styles.edaad230e4999be1.css"
+        "/styles.f46a4b365b99e239.css"
       ],
       "patterns": []
     },
@@ -128,6 +128,7 @@
         "/assets/img/newcastle.svg",
         "/assets/img/ngrx_logo.svg",
         "/assets/img/northumbria-logo.svg",
+        "/assets/img/npm_ui_nav.webp",
         "/assets/img/nuchido.webp",
         "/assets/img/nuchido/nuch_1.webp",
         "/assets/img/nuchido/nuch_2.webp",
@@ -251,7 +252,7 @@
     "/assets/img/background.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/assets/img/behance_icon.svg": "e51b3e977e4d96886e191701c577d43cad35236c",
     "/assets/img/behance_ui_nav.webp": "dd32768c8fc9ac8f56f55efc7fe7d6bed8b1dd4f",
-    "/assets/img/boba_fett.svg": "9b69f4e50e0f72f49e11d0c66fd6f6a58852470e",
+    "/assets/img/boba_fett.svg": "a8273f214aba100897f68c040111629ca57cb2c1",
     "/assets/img/british-airways.svg": "288c241404f616abd4e1963fb1abae956bd73e3d",
     "/assets/img/chinwe/chinwe_1.webp": "9e79fafbdd2cd6e6cc292f0e5d8690d73b58d12f",
     "/assets/img/chinwe/chinwe_2.webp": "b8d0105157a53becd39a8596451f3ab63b82bc92",
@@ -274,7 +275,7 @@
     "/assets/img/dlc/dlc_3.webp": "77870f9a12c7b50f1a589fd1d65edd6446e64a86",
     "/assets/img/docker_logo.svg": "0cdb6d1fa2dac4c35b37b558b87398a4a91e69b5",
     "/assets/img/ed.webp": "02106200bbbbe0c807c8e43d3071c7109ccb38e1",
-    "/assets/img/favicon.svg": "d2ed8199950a274fc5663418ea221ffa265682d9",
+    "/assets/img/favicon.svg": "8d4d1264a25dadf10860f560a7e044896349163a",
     "/assets/img/fe-dev-talk.webp": "ab216798f656e9fe2e9a3f82737f85ddd438231d",
     "/assets/img/filter.webp": "f3bf90a629f5d1cb073c1bc12c6c322725846fad",
     "/assets/img/filter_icon.svg": "058ddfc82b23e9984e13f910e0b516178a2f6a63",
@@ -327,6 +328,7 @@
     "/assets/img/newcastle.svg": "198ee043000ae2c608775d7a69a38bd6ec479043",
     "/assets/img/ngrx_logo.svg": "2889d2af0e821a82c6e56f26ff15140b14bc4ca6",
     "/assets/img/northumbria-logo.svg": "386c647647ad045cb0349791c58cc624b4d8aa05",
+    "/assets/img/npm_ui_nav.webp": "0e9495e3b7727c992ab8041c0bbac810d2d2e6f2",
     "/assets/img/nuchido.webp": "5578e59df609529ea95b978a0bbe470b214fa300",
     "/assets/img/nuchido/nuch_1.webp": "48785e1080eb1bb80761e49b1ed9201e4cc546da",
     "/assets/img/nuchido/nuch_2.webp": "55fee69086888fb41dc6ed70947e9bd9b3ae9314",
@@ -410,7 +412,7 @@
     "/assets/styles/pages/_contact.scss": "1ccc1bc9161b8eeeae99615208cd201a359fc6c1",
     "/assets/styles/pages/_current_project.scss": "f52cde1c7544fb6fe0b1338b18d824596b0d1abf",
     "/assets/styles/pages/_employment.scss": "f6656f1e90a1990c8c126c06b6756a5a79ddadb9",
-    "/assets/styles/pages/_github.scss": "903a5146bd094cd034178c9ad9ea68f1e0287738",
+    "/assets/styles/pages/_github.scss": "0be548253f891e524f585192d566a2ea06fa940b",
     "/assets/styles/pages/_privacy.scss": "36aab05f76e1563c610c8da3940942e2a77c25a8",
     "/assets/styles/pages/_project_mixins.scss": "8892812a359bbb80ffc40ded2dfee9e113471913",
     "/assets/styles/pages/_showcase.scss": "8cb3093727740ecbafdace92da766763a4bb87ac",
@@ -419,13 +421,13 @@
     "/assets/styles/pages/_synopsis.scss": "2ff8ac7dd34182be27889989f59e220eda514309",
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
-    "/index.html": "3c7b871c82eb364395d655391272c04a86b01171",
+    "/index.html": "b14a0e0638d0b0a0b6a0de82fe36d9277025dc50",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.384d51d105694d1b.js": "b689ae3d3ecb6dc6dcbbd3ee6ab0935e266bc874",
+    "/main.a4d72dddd74c2149.js": "7324301c834fe26d33540ab6cc8fb4e08ab78516",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.9b0d495ff173ca0a.js": "3d508d78114e82dafc42f39cb7db43b70e99f18e",
     "/runtime.92f4d1031cb3c9af.js": "bab8061b81abe33c902a99727052a50d17ff7264",
-    "/styles.edaad230e4999be1.css": "c682a749e3e0cb81eb9ba9eb330975768ad1d3ab"
+    "/styles.f46a4b365b99e239.css": "27b5f451eed0a60911a094c9ea639d9de8f2f5f2"
   },
   "navigationUrls": [
     {
