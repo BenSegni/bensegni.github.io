@@ -1,0 +1,16 @@
+<h3 [innerText]="'NPM Packages'"></h3>
+<ng-container *ngIf="npmPackages$ | async as packages">
+  <div class="community-project" *ngFor="let package of packages">
+    <span>
+      <h4 [innerText]="package.name"></h4>
+      <br>
+      <p [innerText]="package.description"></p>
+      <h5 class="project-skills-header" [innerText]="'Skills:'"></h5>
+      <app-skill-pills [skills]="package.skills"></app-skill-pills>
+      <span class="github-link">
+        <app-github-icon></app-github-icon>
+        <a [href]="package.packageLink" target="_blank" [innerText]="'NPM Package'"></a>
+      </span>
+    </span>
+  </div>
+</ng-container>

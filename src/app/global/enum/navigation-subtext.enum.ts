@@ -4,6 +4,7 @@ export enum SubTextEnum {
     Contact = 'This page provides convenient options for establishing a connection. Reach out through LinkedIn, email, or my design social media channels. Additionally, feel free to download my CV in either docx or pdf format.',
     CurrentProject = 'This page offers a curated view of my current client engagements, highlighting key project details and the strategic approaches I am implementing to drive successful outcomes.',
     Github = 'This page offers a curated selection of my open-source contributions on Github. These repositories explore reusable solutions for prevalent development challenges and are actively maintained to ensure their relevance and shareability within the wider developer community.',
+    NPM = 'This page offers a curated selection of my open-source contributions on NPM. These packages explore reusable solutions for prevalent development challenges and are actively maintained to ensure their relevance and shareability within the wider developer community.',
     LinkedIn = 'I encourage you to visit my LinkedIn profile through this link to learn more about my professional background. There, you will find details of my previous employment experience, recommendations from colleagues, and a comprehensive overview of my skillset.',
     Showcase = 'This page showcases a curated collection of projects I have been part of, from fresh startups to established global brands. Each one showcases my passion and showcases fully rendered presentations on Behance.',
 }

@@ -14,6 +14,7 @@ export class NavigationTextPipe implements PipeTransform {
         case NavigationEnum.Contact: return SubTextEnum.Contact;
         case NavigationEnum.CurrentProject: return SubTextEnum.CurrentProject;
         case NavigationEnum.Github: return SubTextEnum.Github;
+        case NavigationEnum.NPM: return SubTextEnum.NPM;
         case NavigationEnum.LinkedIn: return SubTextEnum.LinkedIn;
         case NavigationEnum.Showcase: return SubTextEnum.Showcase;
         default: return '';

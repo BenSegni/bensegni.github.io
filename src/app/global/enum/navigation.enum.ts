@@ -4,6 +4,7 @@ export enum NavigationEnum {
     Contact = 'Contact',
     CurrentProject = 'Current Project',
     Github = 'Github',
+    NPM = 'NPM',
     LinkedIn = 'LinkedIn',
     Showcase = 'Showcase',
 }

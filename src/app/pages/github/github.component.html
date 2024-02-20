@@ -1,6 +1,6 @@
 <h3 [innerText]="'Github'"></h3>
 <ng-container *ngIf="githubProjects$ | async as githubProjects">
-    <div class="github-project" *ngFor="let project of githubProjects">
+    <div class="community-project" *ngFor="let project of githubProjects">
         <span>
             <h4 [tooltip]="project.toolTip" [innerText]="project.name"></h4>
             <br>

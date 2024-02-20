@@ -14,6 +14,7 @@ import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.c
 import { GithubComponent } from './pages/github/github.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
 import { SiteBuildComponent } from './global/site-build/site-build.component';
+import { NpmComponent } from './pages/npm/npm.component';
 
 export const routes: Routes = [
     {
@@ -84,6 +85,10 @@ export const routes: Routes = [
     {
         path: 'github',
         component: GithubComponent,
+    },
+    {
+        path: 'npm',
+        component: NpmComponent,
     },
     {
         path: 'contact',

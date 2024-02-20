@@ -33,6 +33,7 @@ import { SynopsisHeaderSectionComponent } from './pages/synopsis/synopsis-header
 import { SynopsisHeaderDisplayComponent } from './pages/synopsis/synopsis-header-display/synopsis-header-display.component';
 import { SynopsisBackLinkComponent } from './pages/synopsis/synopsis-back-link/synopsis-back-link.component';
 import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-link/project-details-link.component';
+import { NpmComponent } from './pages/npm/npm.component';
 
 @NgModule({
   declarations: [
@@ -62,6 +63,7 @@ import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-li
     SynopsisHeaderDisplayComponent,
     SynopsisBackLinkComponent,
     ProjectDetailsLinkComponent,
+    NpmComponent,
   ],
   imports: [
     GlobalModule,

@@ -9,6 +9,7 @@ export enum KeywordsEnum {
     Employment = 'Employment',
     Experience = 'Experience',
     Github = 'Github',
+    NPM = 'NPM',
     Portfolio = 'Portfolio',
     Skills = 'Skills',
     UI = 'UI',

@@ -19,6 +19,8 @@ import { Github } from '../pages/github/interface/github';
 import { githubProjectData } from './data/gitihub-project-data';
 import { toolkitData } from './data/toolkit-data';
 import { ToolKit } from '../pages/about/toolkit/interface/toolkit';
+import { NPM } from '../pages/npm/interface/npm';
+import { npmPackageData } from './data/npm-package-data';
 
 @Injectable({
     providedIn: 'root'
@@ -34,6 +36,7 @@ export class GlobalDataService {
     public technologies$: Observable<Technology[]> = of(technologiesData);
     public usefuLinks$: Observable<string[]> = of(usefulLinksData);
     public githubProjects$: Observable<Github[]> = of(githubProjectData);
+    public npmPackages$: Observable<NPM[]> = of(npmPackageData);
     public toolkit$: Observable<ToolKit[]> = of(toolkitData);
     public isLoading = true;
     private delay$ = timer(1200);
