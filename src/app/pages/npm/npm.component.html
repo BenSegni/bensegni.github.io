@@ -7,8 +7,8 @@
       <p [innerText]="package.description"></p>
       <h5 class="project-skills-header" [innerText]="'Skills:'"></h5>
       <app-skill-pills [skills]="package.skills"></app-skill-pills>
-      <span class="github-link">
-        <app-github-icon></app-github-icon>
+      <span class="community-link">
+        <app-npm-icon></app-npm-icon>
         <a [href]="package.packageLink" target="_blank" [innerText]="'NPM Package'"></a>
       </span>
     </span>

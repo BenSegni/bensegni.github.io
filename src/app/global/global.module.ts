@@ -74,7 +74,8 @@ import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
         GithubIconComponent,
         LinkedinIconComponent,
         EmailIconComponent,
-        LocationIconComponent
+        LocationIconComponent,
+        NpmIconComponent
     ]
 })
 export class GlobalModule { }
