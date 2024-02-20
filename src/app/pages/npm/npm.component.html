@@ -1,4 +1,4 @@
-<h3 [innerText]="'NPM Packages'"></h3>
+<h3 [innerText]="'NPM'"></h3>
 <ng-container *ngIf="npmPackages$ | async as packages">
   <div class="community-project" *ngFor="let package of packages">
     <span>
