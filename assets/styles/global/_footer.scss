@@ -25,6 +25,7 @@
 
     a {
         @include content-link();
+        color: $white;
     }
 
     img {
