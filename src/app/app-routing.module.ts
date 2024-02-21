@@ -15,105 +15,107 @@ import { GithubComponent } from './pages/github/github.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
 import { SiteBuildComponent } from './global/site-build/site-build.component';
 import { NpmComponent } from './pages/npm/npm.component';
+import { maintenanceGuard } from './global/guards/maintenance.guard';
 
 export const routes: Routes = [
-    {
+  {
+    path: '',
+    redirectTo: 'showcase', pathMatch: 'full',
+  },
+  {
+    path: 'showcase',
+    component: ShowcaseComponent,
+  },
+  {
+    path: 'showcase/:id/synopsis',
+    component: SynopsisComponent,
+  },
+  {
+    path: 'about',
+    component: AboutComponent,
+    data: {
+      breadcrumb: 'About'
+    },
+    children: [
+      {
         path: '',
-        redirectTo: 'showcase', pathMatch: 'full',
-    },
-    {
-        path: 'showcase',
-        component: ShowcaseComponent,
-    },
-    {
-        path: 'showcase/:id/synopsis',
-        component: SynopsisComponent,
-    },
-    {
-        path: 'about',
-        component: AboutComponent,
+        redirectTo: 'about-me', pathMatch: 'full',
+      },
+      {
+        path: 'about-me',
+        component: ProfileComponent,
         data: {
-            breadcrumb: 'About'
-        },
-        children: [
-            {
-                path: '',
-                redirectTo: 'about-me', pathMatch: 'full',
-            },
-            {
-                path: 'about-me',
-                component: ProfileComponent,
-                data: {
-                    breadcrumb: 'About Me'
-                }
-            },
-            {
-                path: 'employment',
-                component: EmploymentComponent,
-                data: {
-                    breadcrumb: 'Employment'
-                }
-            },
-            {
-                path: 'education',
-                component: EducationComponent,
-                data: {
-                    breadcrumb: 'Education'
-                }
-            },
-            {
-                path: 'technologies',
-                component: TechStackComponent,
-                data: {
-                    breadcrumb: 'Technologies'
-                }
-
-            },
-            {
-                path: 'toolkit',
-                component: ToolkitComponent,
-                data: {
-                    breadcrumb: 'Toolkit'
-                }
-            }
-        ]
-    },
-    {
-        path: 'current-projects',
-        component: CurrentProjectsComponent,
-    },
-    {
-        path: 'github',
-        component: GithubComponent,
-    },
-    {
-        path: 'npm',
-        component: NpmComponent,
-    },
-    {
-        path: 'contact',
-        component: ContactComponent,
-    },
-    {
-        path: 'privacy',
-        component: PrivacyPolicyComponent,
-    },
-    {
-        path: 'site-build',
-        component: SiteBuildComponent,
-        data: {
-            breadcrumb: 'Site Build'
+          breadcrumb: 'About Me'
         }
-    },
-    {
-        path: '**',
-        pathMatch: 'full',
-        component: PageNotFoundComponent
+      },
+      {
+        path: 'employment',
+        component: EmploymentComponent,
+        data: {
+          breadcrumb: 'Employment'
+        }
+      },
+      {
+        path: 'education',
+        component: EducationComponent,
+        data: {
+          breadcrumb: 'Education'
+        }
+      },
+      {
+        path: 'technologies',
+        component: TechStackComponent,
+        data: {
+          breadcrumb: 'Technologies'
+        }
+
+      },
+      {
+        path: 'toolkit',
+        component: ToolkitComponent,
+        data: {
+          breadcrumb: 'Toolkit'
+        }
+      }
+    ]
+  },
+  {
+    path: 'current-projects',
+    component: CurrentProjectsComponent,
+  },
+  {
+    path: 'github',
+    component: GithubComponent,
+  },
+  {
+    path: 'npm',
+    component: NpmComponent,
+    canActivate: [maintenanceGuard]
+  },
+  {
+    path: 'contact',
+    component: ContactComponent,
+  },
+  {
+    path: 'privacy',
+    component: PrivacyPolicyComponent,
+  },
+  {
+    path: 'site-build',
+    component: SiteBuildComponent,
+    data: {
+      breadcrumb: 'Site Build'
     }
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    component: PageNotFoundComponent
+  }
 ];
 
 @NgModule({
-    imports: [RouterModule.forRoot(routes)],
-    exports: [RouterModule]
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
 })
 export class AppRoutingModule { }
