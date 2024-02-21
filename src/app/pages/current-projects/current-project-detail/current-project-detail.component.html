@@ -2,6 +2,6 @@
     <img src="{{ project.projectLogo }}" alt="{{ project.projectLogo | altText }}">
     <h3 [innerText]="project.projectTitle"></h3>
     <span [innerHTML]="project.projectDescription"></span>
-    <h5 *ngIf="project.skills" class="skills-header">Skills:</h5>
+    <h4 *ngIf="project.skills" class="skills-header">Skills:</h4>
     <app-skill-pills [skills]="project.skills"></app-skill-pills>
 </ng-container>

@@ -1,9 +1,9 @@
 <ng-container *ngIf="relatedProject">
-    <h5 class="project-skills-header" [innerText]="'A Related Project:'"></h5>
+    <h4 class="project-skills-header" [innerText]="'A Related Project:'"></h4>
     <span class="related-project" [ngStyle]="{ 'background-image': 'url(' + relatedProject.background + ')' }">
         <span class="related-project-wrapper">
             <h5 (click)="navigateToSynopsis(relatedProject)" [innerText]="relatedProject.projectTitle"></h5>
-            <h6 [innerText]="relatedProject.description"></h6>
+            <p [innerText]="relatedProject.description"></p>
             <app-skill-pills [skills]="relatedProject.skills"></app-skill-pills>
         </span>
     </span>
