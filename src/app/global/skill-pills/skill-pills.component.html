@@ -5,6 +5,6 @@
         [ngStyle]="{ 'border-color': skill | pill }"
         [@filteredSkill]="[ skill, this._globalService.showcaseFilterValue ] | filter">
         <img [src]="skill | logo" alt="{{ skill | logo | altText }}" />
-        <span><a class="pill-link" [href]="skill | filterLink" target="_blank">{{ skill }}</a></span>
+        <span><a class="pill-link" [href]="skill | filterLink" target="_blank" aria-label="skill document link">{{ skill }}</a></span>
     </li>
 </ul>

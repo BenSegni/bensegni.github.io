@@ -22,6 +22,7 @@
                     [href]="route.url"
                     target="_blank"
                     (mouseenter)="onMouseEnter(route)"
+                    [attr.aria-label]="route.url + 'page link'"
                     [innerText]="route.anchorText">
                 </a>
             </span>

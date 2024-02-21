@@ -31,13 +31,13 @@ export const routeItems: NavigationItem[] = [
         uiImage: '../../assets/img/github_ui_nav.webp',
         keywords: [KeywordsEnum.Code, KeywordsEnum.Development, KeywordsEnum.Github, KeywordsEnum.Skills]
     },
-    {
-        route: 'npm',
-        anchorText: NavigationEnum.NPM,
-        activeOptions: false,
-        uiImage: '../../assets/img/npm_ui_nav.webp',
-        keywords: [KeywordsEnum.Code, KeywordsEnum.Development, KeywordsEnum.NPM, KeywordsEnum.Skills]
-    },
+    // {
+    //     route: 'npm',
+    //     anchorText: NavigationEnum.NPM,
+    //     activeOptions: false,
+    //     uiImage: '../../assets/img/npm_ui_nav.webp',
+    //     keywords: [KeywordsEnum.Code, KeywordsEnum.Development, KeywordsEnum.NPM, KeywordsEnum.Skills]
+    // },
     {
         route: 'contact',
         anchorText: NavigationEnum.Contact,

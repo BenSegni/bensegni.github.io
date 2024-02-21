@@ -3,7 +3,7 @@
     <ul class="technologies">
         <li *ngFor="let technology of technologies">
             <img [ngStyle]="{ 'border-color': technology.name | pill }" [src]="technology.name | logo" alt="{{ technology.name | logo | altText }}">
-            <span><a [href]="technology.docs" target="_blank">{{ technology.name }}</a></span>
+            <span><a [href]="technology.docs" target="_blank" [attr.aria-label]="technology.name + 'link'">{{ technology.name }}</a></span>
             <span>{{ technology.purpose }}</span>
         </li>
     </ul>

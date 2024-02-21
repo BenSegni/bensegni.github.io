@@ -5,7 +5,9 @@
         <app-pdf-icon *ngIf="project?.downloadLink"></app-pdf-icon>
         <a *ngIf="project || url"
             [href]="link"
-            target="_blank">{{
+            target="_blank"
+            aria-label="presentation link"
+            >{{
             project?.showCaseLink
             ? isMedium ? medium : behance
             : project?.downloadLink

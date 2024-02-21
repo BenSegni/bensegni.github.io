@@ -8,6 +8,6 @@
     </ul>
     <p *ngIf="filteredShowcaselength">Showing <span>{{ filteredShowcaselength }}</span> of a total <span>{{
             showcaseLength }}</span> items <ng-container *ngIf="selectedOption">filtering <span class="option"><img
-                    [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a [href]="selectedOption | filterLink" target="_blank">{{ selectedOption
+                    [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a [href]="selectedOption | filterLink" target="_blank" [attr.aria-label]="selectedOption + 'link'">{{ selectedOption
                     }}</a></q></span></ng-container></p>
 </span>

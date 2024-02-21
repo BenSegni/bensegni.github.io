@@ -9,6 +9,8 @@
         <a
         [href]="contactType | contactLink"
         target="_blank"
-        [innerHTML]="contactType.linkText"></a>
+        [innerHTML]="contactType.linkText"
+        [attr.aria-label]="contactType + 'link'"
+        ></a>
     </p>
 </div>
