@@ -3,68 +3,72 @@
 $background: 'background.webp';
 
 @mixin mobile-icon {
-    height: 6rem;
-    width: 6rem;
+  height: 6rem;
+  width: 6rem;
 }
 
 .header-section {
-    @include flex();
-    @include flex-column();
-    @include span-100();
-    @include flex-center();
-    padding: 10rem 0 3rem 0;
-    @include background-image-config($background, 100%, $no-repeat: true);
+  @include flex();
+  @include flex-column();
+  @include span-100();
+  @include flex-center();
+  padding: 10rem 0 3rem 0;
+  @include background-image-config($background, 100%, $no-repeat: true);
 
-    img {
-        @include tablet {
-            @include mobile-icon()
-        }
-
-        @include mobile {
-            @include mobile-icon()
-        }
-
-        @include small-mobile {
-            @include mobile-icon()
-        }
-    }
-
-    .location-wrapper {
-        @include flex();
-        justify-content: flex-start;
-        align-items: center;
-
-        p {
-            margin: 0;
-        }
-
-        a {
-            @include content-link();
-        }
-
-        svg {
-            margin-right: .5rem;
-        }
-    }
-
-
+  img {
     @include tablet {
-        @include background-image-config($background, 100vmax);
+      @include mobile-icon()
     }
 
     @include mobile {
-        @include mobile-header();
-        padding: 7rem 0 3rem 0;
+      @include mobile-icon()
     }
 
     @include small-mobile {
-        @include mobile-header();
-        padding: 7rem 0 3rem 0;
+      @include mobile-icon()
     }
+  }
+
+  .location-wrapper {
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
 
     p {
-        @include tablet {
-            @include span-95();
-        }
+      margin: 0;
+
+      @include tablet {
+        width: 25vw;
+      }
     }
+
+    a {
+      @include content-link();
+    }
+
+    svg {
+      margin-right: .5rem;
+    }
+  }
+
+
+  @include tablet {
+    @include background-image-config($background, 100vmax);
+  }
+
+  @include mobile {
+    @include mobile-header();
+    padding: 7rem 0 3rem 0;
+  }
+
+  @include small-mobile {
+    @include mobile-header();
+    padding: 7rem 0 3rem 0;
+  }
+
+  p {
+    @include tablet {
+      @include span-95();
+    }
+  }
 }

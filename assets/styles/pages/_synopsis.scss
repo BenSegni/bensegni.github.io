@@ -93,30 +93,7 @@
     position: relative;
 
     .back-link {
-        @include flex();
-        @include flex-center();
-        @include full-width();
-        justify-content: center;
-        padding: 0 0 2rem 0;
-        margin: 2rem auto 3rem auto;
-        border-bottom: 1px dotted $grey;
-
-        img {
-            height: 2rem;
-            width: auto;
-            border: 0;
-            border-radius: 0;
-            margin: 0 1rem 0 0;
-        }
-
-        &:hover {
-            color: $white;
-            border-bottom: 1px dotted $grey;
-        }
-
-        &:visited {
-            border-bottom: 1px dotted $grey;
-        }
+        @include back-link();
     }
 
     .back-link-footer {

@@ -111,6 +111,10 @@
 
     li {
         @include skill-pill();
+
+        .no-link {
+          margin: 0;
+        }
     }
 
     @include tablet {

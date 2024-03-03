@@ -57,23 +57,7 @@
         background-repeat: no-repeat;
 
         a {
-            color: $white;
-            @include flex-column();
-            width: auto;
-            height: 1rem;
-            border-radius: 2rem;
-            padding: 0.45rem 1rem;
-            font-size: .75rem;
-            border: 0.125rem solid;
-            font-weight: 400;
-            background-color: $blue_alpha_6;
-            margin-left: auto;
-            flex-shrink: 1;
-
-            &:hover {
-                color: $black_alpha_7;
-                background-color: $white;
-            }
+            @include read-more();
         }
     }
 }
