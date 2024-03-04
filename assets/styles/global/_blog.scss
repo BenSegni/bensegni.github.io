@@ -218,12 +218,18 @@ $html: rgb(228, 77, 38);
       @include flex();
       justify-content: flex-start;
       align-items: center;
+      font-size: .8rem;
+      color: $angular;
     }
 
     .blog-contact-image {
       height: 6rem;
       width: 6rem;
       margin: 1rem 1rem 0 0;
+
+      @include small-mobile {
+        margin: 0 1rem 0 0;
+      }
     }
 
     .link-wrapper {
@@ -294,6 +300,12 @@ pre {
   @include small-mobile {
     padding: 1rem .5rem;
   }
+}
+
+mark {
+  color: $grey;
+  background-color: $black-background;
+  padding: 0 .25rem;
 }
 
 .angular-code {
