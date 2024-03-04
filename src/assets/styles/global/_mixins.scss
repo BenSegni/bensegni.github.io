@@ -1,196 +1,244 @@
 @mixin mobile-header {
-    @include background-image-config('background.webp', 100vmax);
-    padding-bottom: 1rem;
+  @include background-image-config('background.webp', 100vmax);
+  padding-bottom: 1rem;
 }
 
 @mixin background-image-config($name, $size, $no-repeat: true) {
-    background-image: url('../../img/#{$name}');
-    background-attachment: fixed;
-    background-size: $size;
+  background-image: url('../../img/#{$name}');
+  background-attachment: fixed;
+  background-size: $size;
 
-    @if($no-repeat) {
-        background-repeat: no-repeat;
-    }
+  @if($no-repeat) {
+    background-repeat: no-repeat;
+  }
 }
 
 @mixin skill-pill {
-    @include flex();
-    justify-content: flex-start;
-    align-items: center;
-    font-size: .75rem;
-    padding: .25rem .75rem;
-    color: $white;
-    border: 0.125rem solid $grey;
-    border-radius: 10rem;
-    margin-top: .5rem;
-    margin-right: .25rem;
-    line-height: 1.5rem;
+  @include flex();
+  justify-content: flex-start;
+  align-items: center;
+  font-size: .75rem;
+  padding: .25rem .75rem;
+  color: $white;
+  border: 0.125rem solid $grey;
+  border-radius: 10rem;
+  margin-top: .5rem;
+  margin-right: .25rem;
+  line-height: 1.5rem;
 
-    img {
-        width: 1rem;
-        height: 1rem;
-        margin: 0 .25rem 0 0;
-        border: 0;
-        border-radius: 0;
-
-        @include tablet {
-            margin: 0;
-        }
-
-        @include mobile {
-            margin: 0;
-        }
-
-        @include small-mobile {
-            margin: 0;
-        }
-
-        @include small-desktop {
-            margin: 0;
-        }
-    }
+  img {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .25rem 0 0;
+    border: 0;
+    border-radius: 0;
 
     @include tablet {
-        width: 1rem;
-        height: 1rem;
-        margin: 0 .25rem .25rem 0;
+      margin: 0;
     }
 
     @include mobile {
-        width: 1rem;
-        height: 1rem;
-        margin: 0 .25rem .25rem 0;
+      margin: 0;
     }
 
     @include small-mobile {
-        width: 1rem;
-        height: 1rem;
-        margin: 0 .25rem .25rem 0;
+      margin: 0;
     }
 
-    span {
-        @include tablet {
-            @include mobile-hidden();
-        }
-
-        @include mobile {
-            @include mobile-hidden();
-        }
-
-        @include small-mobile {
-            @include mobile-hidden();
-        }
+    @include small-desktop {
+      margin: 0;
     }
+  }
+
+  @include tablet {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .25rem .25rem 0;
+  }
+
+  @include mobile {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .25rem .25rem 0;
+  }
+
+  @include small-mobile {
+    width: 1rem;
+    height: 1rem;
+    margin: 0 .25rem .25rem 0;
+  }
+
+  span {
+    @include tablet {
+      @include mobile-hidden();
+    }
+
+    @include mobile {
+      @include mobile-hidden();
+    }
+
+    @include small-mobile {
+      @include mobile-hidden();
+    }
+  }
 }
 
 @mixin skills-header() {
-    width: 100%;
-    margin: 1rem 0 0 9rem;
-    color: $grey;
-    padding: 0;
+  width: 100%;
+  margin: 1rem 0 0 9rem;
+  color: $grey;
+  padding: 0;
 
-    @include tablet {
-        margin: 1rem 0 0 0rem;
-    }
+  @include tablet {
+    margin: 1rem 0 0 0rem;
+  }
 
-    @include mobile {
-        margin: 1rem 0 0 0rem;
-    }
+  @include mobile {
+    margin: 1rem 0 0 0rem;
+  }
 
-    @include small-mobile {
-        margin: 1rem 0 0 0rem;
-    }
+  @include small-mobile {
+    margin: 1rem 0 0 0rem;
+  }
 }
 
 @mixin mobile-height {
-    height: 15rem;
+  height: 15rem;
 }
 
 @mixin mobile-width {
-    @include tablet {
-        @include mobile-height();
-        @include span-90();
-    }
+  @include tablet {
+    @include mobile-height();
+    @include span-90();
+  }
 
-    @include mobile {
-        @include mobile-height();
-        @include span-90();
-    }
+  @include mobile {
+    @include mobile-height();
+    @include span-90();
+  }
 
-    @include small-mobile {
-        @include mobile-height();
-        @include span-90();
-    }
+  @include small-mobile {
+    @include mobile-height();
+    @include span-90();
+  }
 }
 
 @mixin loading-graphic-config($size) {
-    @include flex;
-    @include flex-column();
-    @include flex-center();
-    height: $size;
-    width: $size;
-    @include background-image-config('loading_icon.svg', 100%, true);
-    background-position: center center;
-    animation: rotation 1s infinite linear;
-    border-radius: 100rem;
-    border: 1px solid $blue_1;
+  @include flex;
+  @include flex-column();
+  @include flex-center();
+  height: $size;
+  width: $size;
+  @include background-image-config('loading_icon.svg', 100%, true);
+  background-position: center center;
+  animation: rotation 1s infinite linear;
+  border-radius: 100rem;
+  border: 1px solid $blue_1;
 }
 
 @mixin loading-graphic-image {
-    position: absolute;
-    margin: 0;
-    height: 3rem;
-    width: 3rem;
-    border: none;
+  position: absolute;
+  margin: 0;
+  height: 3rem;
+  width: 3rem;
+  border: none;
 }
 
 @mixin no-margin {
-    margin: 0;
+  margin: 0;
 }
 
 @mixin content-link {
-    color: $grey;
-    border-bottom: 1px dotted $white;
+  color: $grey;
+  border-bottom: 1px dotted $white;
 
-    &:hover {
-        color: $white;
-        border-bottom: 1px dotted $blue_1;
-    }
+  &:hover {
+    color: $white;
+    border-bottom: 1px dotted $blue_1;
+  }
 
-    &:visited {
-        color: $blue_alpha_6;
-        border-bottom: 1px dotted $blue_alpha_6;
-    }
+  &:visited {
+    color: $blue_alpha_6;
+    border-bottom: 1px dotted $blue_alpha_6;
+  }
 }
 
 @mixin rotate {
-    animation: rotation 900ms;
+  animation: rotation 900ms;
 
-    @keyframes rotation {
-        from {
-            transform: rotate(0deg);
-        }
-
-        to {
-            transform: rotate(360deg);
-        }
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
     }
+
+    to {
+      transform: rotate(360deg);
+    }
+  }
 }
 
 @mixin grow($duration) {
-    animation: grow $duration;
+  animation: grow $duration;
 
-    @keyframes grow {
-        from {
-            transform-origin: top center;
-            transform: scaleY(0);
-            opacity: 0;
-        }
-
-        to {
-            transform-origin: top center;
-            transform: scaleY(100%);
-            opacity: 1;
-        }
+  @keyframes grow {
+    from {
+      transform-origin: top center;
+      transform: scaleY(0);
+      opacity: 0;
     }
+
+    to {
+      transform-origin: top center;
+      transform: scaleY(100%);
+      opacity: 1;
+    }
+  }
+}
+
+@mixin back-link {
+  @include flex();
+  @include flex-center();
+  @include full-width();
+  justify-content: center;
+  padding: 0 0 2rem 0;
+  margin: 2rem auto 3rem auto;
+  border-bottom: 1px dotted $grey;
+
+  img {
+    height: 2rem;
+    width: auto;
+    border: 0;
+    border-radius: 0;
+    margin: 0 1rem 0 0;
+  }
+
+  &:hover {
+    color: $white;
+    border-bottom: 1px dotted $grey;
+  }
+
+  &:visited {
+    border-bottom: 1px dotted $grey;
+
+  }
+}
+
+@mixin read-more {
+  color: $white;
+  @include flex-column();
+  width: auto;
+  height: 1rem;
+  border-radius: 2rem;
+  padding: 0.45rem 1rem;
+  font-size: .75rem;
+  border: 0.125rem solid;
+  font-weight: 400;
+  background-color: $blue_alpha_6;
+  margin-left: auto;
+  flex-shrink: 1;
+
+  &:hover {
+    color: $black_alpha_7;
+    background-color: $white;
+  }
 }

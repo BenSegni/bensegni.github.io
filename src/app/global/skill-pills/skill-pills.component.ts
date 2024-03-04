@@ -12,5 +12,6 @@ export class SkillPillsComponent {
     @Input() public skills: string[] | undefined;
     @Input() public skillsType = '';
     @Input() public size = '';
+    @Input() public showLink = true;
     constructor(public _globalService: GlobalDataService) {}
 }

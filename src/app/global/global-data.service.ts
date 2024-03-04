@@ -21,6 +21,8 @@ import { toolkitData } from './data/toolkit-data';
 import { ToolKit } from '../pages/about/toolkit/interface/toolkit';
 import { NPM } from '../pages/npm/interface/npm';
 import { npmPackageData } from './data/npm-package-data';
+import { Blog } from '../blog/interface/blog';
+import { blogData } from './data/blog-data';
 
 @Injectable({
     providedIn: 'root'
@@ -38,6 +40,7 @@ export class GlobalDataService {
     public githubProjects$: Observable<Github[]> = of(githubProjectData);
     public npmPackages$: Observable<NPM[]> = of(npmPackageData);
     public toolkit$: Observable<ToolKit[]> = of(toolkitData);
+    public blog$: WritableSignal<Blog[]> = signal(blogData);
     public isLoading = true;
     private delay$ = timer(1200);
     public showcaseFilterValue = '';

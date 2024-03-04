@@ -1,0 +1,139 @@
+<html>
+<p>This article outlines how to use <a href="https://angular.io/guide/pipes" target="_blank">pipes in Angular</a> to
+  render icons based on the string you pass to an image element. This
+  approach promotes code reusability and enriches the UI for displaying lists and keywords, as demonstrated in the
+  "Keywords" section at the beginning of the article.</p>
+<p>To get started, use the <a href="https://angular.io/cli" target="_blank">Angular CLI</a> to create a pipe by running
+  the following command:</p>
+<pre class="angular-code">
+  <code>
+    ng g p images
+  </code>
+</pre>
+</p>
+<p>
+  This command generates a pipe and its corresponding test spec file within your chosen directory, whether it's the root
+  directory, a "utils" folder, or any other preferred location.</p>
+<p>
+  Inside the newly generated pipe file, you'll notice it already implements the <a
+    href="https://angular.io/api/core/PipeTransform" target="_blank">PipeTransform</a> interface. Verify that the
+  <mark>transform</mark> method within this pipe returns a string and remove any extraneous parameters, leaving only a
+  <mark>imageUrl: string</mark>
+  option as illustrated below:
+</p>
+<pre class="angular-code">
+  <code>
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'images'
+    }<span class="code-red">)</span>
+    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
+        ...
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+<p>To leverage efficient scaling and maintainability, we'll incorporate two techniques. First, let's add a switch case
+  statement to the <mark>transform</mark> method, passing a <mark>true</mark> boolean value as an argument, as shown
+  below:</p>
+</p>
+<pre class="angular-code">
+  <code>
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'images'
+    }<span class="code-red">)</span>
+    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
+        switch (true) {
+          ...
+        }
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+<p>
+  In my example, I'm rendering specific icons based on different technologies. To achieve this, I'll utilize two <a
+    href="https://www.typescriptlang.org/docs/handbook/enums.html" target="_blank">enums</a>:
+  one representing the technology type and another representing the corresponding icon image.
+<pre class="typescript-code">
+  <code>
+    <span class="code-blue">export enum TechnologyEnum {</span>
+      Angular = 'Angular',
+    <span class="code-blue">}</span>
+  </code>
+</pre>
+</p>
+<p>And a LogoEnum as so:
+<pre class="typescript-code">
+  <code>
+    <span class="code-blue">export enum LogoEnum {</span>
+      Angular = '../../assets/img/angular_logo.svg'
+    <span class="code-blue">}</span>
+  </code>
+</pre>
+</p>
+<pre class="angular-code">
+  <code>
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'images'
+    }<span class="code-red">)</span>
+    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
+        switch (true) {
+          <span class="code-gold">case</span> imageUrl.includes(TechnologyEnum.Angular): return LogoEnum.Angular;
+        }
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+<p>
+  Let's break it down. The switch statement checks the <mark>imageUrl</mark> parameter of the transform method. If the
+  parameter
+  string includes a specific term (like "Angular" in this example), the corresponding icon file path is returned. The
+  <mark>imageUrl</mark> argument essentially maps the technology type to its associated icon image located in the
+  <mark>assets</mark> directory.
+</p>
+<p>The beauty of this approach lies in its scalability. You can easily extend the pipe to accommodate additional
+  technologies and icons, such as adding TypeScript. Simply expand the switch statement within the
+  <mark>transform</mark> method, as
+  illustrated below:</p>
+<pre class="angular-code">
+  <code>
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'images'
+    }<span class="code-red">)</span>
+    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
+        switch (true) {
+          <span class="code-gold">case</span> imageUrl.includes(TechnologyEnum.Angular): return LogoEnum.Angular;
+          <span class="code-gold">case</span> value.includes(TechnologyEnum.Typescript): return LogoEnum.Typescript;
+        }
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+<p>With the path for the typescript icon added to the LogoEnum as so:
+<pre class="typescript-code">
+  <code>
+    <span class="code-blue">export enum LogoEnum {</span>
+      Angular = '../../assets/img/angular_logo.svg',
+      Typescript = '../../assets/img/typescript_logo.svg',
+    <span class="code-blue">}</span>
+  </code>
+</pre>
+</p>
+<p>Finally, to use the pipe, simply declare it in the component where you need it and integrate it within your template.
+</p>
+<p>For instance, consider my "skill pill" component that manages a string array of skills. This pipe proves valuable in
+  this scenario. I can pass each skill into an image element and leverage the pipe to dynamically render the
+  corresponding icon image.</p>
+<img src="./assets/blog-content/images/skill-pill.svg" alt="html pre snippet">
+<p>And, there you have it. If you go anywhere around this site and spot icons being used, chances are, they're being
+  rendered with a pipe using the above approach.</p>
+<p>Happy coding... 😜</p>
+
+</html>

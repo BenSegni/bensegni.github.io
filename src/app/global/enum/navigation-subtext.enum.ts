@@ -1,6 +1,7 @@
 export enum SubTextEnum {
     About = 'This page offers a comprehensive overview of my background, education, and professional journey. Additionally, gain insights into my technology stack and see how each tool contributes to successful project execution.',
     Behance = 'Clicking this link will direct you to my portfolio on Behance, where you can explore a diverse collection of design projects. These include both professional work in areas like UX & UI, and personal creative experiments in graphic design.',
+    Blog = 'Clicking this link will direct you to my blog, where you will find posts on my current work, exploration into new trends and all relevant frontend updates.',
     Contact = 'This page provides convenient options for establishing a connection. Reach out through LinkedIn, email, or my design social media channels. Additionally, feel free to download my CV in either docx or pdf format.',
     CurrentProject = 'This page offers a curated view of my current client engagements, highlighting key project details and the strategic approaches I am implementing to drive successful outcomes.',
     Github = 'This page offers a curated selection of my open-source contributions on Github. These repositories explore reusable solutions for prevalent development challenges and are actively maintained to ensure their relevance and shareability within the wider developer community.',

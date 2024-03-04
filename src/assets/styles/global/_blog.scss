@@ -1,0 +1,349 @@
+@mixin blog-header {
+  text-align: left;
+  margin: 0;
+  padding: 0;
+  border-bottom: .125rem dotted $blue_1;
+}
+
+@mixin mobile-article {
+  @include full-width();
+  padding: 0;
+}
+
+@mixin code-background($color, $image, $text) {
+  border-left: 3px solid $color;
+  background-image: url('../../img/#{$image}');
+  background-repeat: no-repeat;
+  background-position: 1% 5%;
+  background-size: 1rem;
+
+  &:after {
+    font-family: 'Nunito', sans-serif;
+    color: $grey;
+    font-size: .75rem;
+    content: $text;
+  }
+}
+
+@mixin code-snippet-color($color) {
+  color: $color;
+  font-weight: bold;
+}
+
+$code-block: rgb(0, 39, 63);;
+$angular: rgb(234, 234, 234);
+$sass: rgb(205, 102, 153);
+$typescript: rgb(49, 120, 198);
+$html: rgb(228, 77, 38);
+
+.blog {
+  width: 60vw;
+
+  @include tablet {
+    @include span-90();
+  }
+
+  @include mobile {
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include span-90();
+  }
+
+}
+
+.blog-post {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2rem;
+
+  .cover-image {
+    display: block;
+    width: 20rem;
+    height: 20rem;
+    background-size: cover;
+    background-position: center center;
+    margin-right: 1rem;
+    margin-right: 2rem;
+    border: .25rem solid $black;
+    box-sizing: border-box;
+
+    @include tablet {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+
+    @include mobile {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+
+    @include small-mobile {
+      width: 100%;
+      margin: 0 0 1rem 0;
+    }
+  }
+
+  h4 {
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+  h5 {
+    margin: 0;
+    padding: 0;
+  }
+
+  .post-details {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+
+    p {
+      font-size: .85rem;
+      text-align: left;
+      margin: .5rem 0;
+    }
+
+    h4 {
+      @include blog-header();
+    }
+
+    h5 {
+      color: $grey;
+    }
+
+    a {
+      margin-top: 1.5rem;
+      @include read-more();
+      margin-left: 0;
+    }
+  }
+
+  @include tablet {
+    @include flex-column();
+  }
+
+  @include mobile {
+    @include flex-column();
+  }
+
+  @include small-mobile {
+    @include flex-column();
+  }
+}
+
+.article-wrapper {
+  @include flex();
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 5vw 0 5vw;
+
+  .article {
+    @include flex();
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 40vw;
+    margin-bottom: 2rem;
+    padding: 0 1rem 0 1rem;
+
+    h3 {
+      @include blog-header();
+    }
+
+    h4 {
+      margin: 0;
+      padding: 0;
+      color: $grey;
+    }
+
+    img {
+      border-radius: 0;
+      width: 100%;
+      height: auto;
+      margin-bottom: 0;
+      box-sizing: border-box;
+    }
+
+    .content {
+      width: 100%;
+      text-align: left;
+      margin: 1rem 0;
+    }
+
+    .back-link {
+      @include back-link();
+      margin-bottom: 2rem;
+    }
+
+    @include tablet {
+      @include mobile-article();
+    }
+
+    @include mobile {
+      @include mobile-article();
+    }
+
+    @include small-mobile {
+      @include mobile-article();
+    }
+  }
+
+  .articles {
+    padding: 0 2vw 0 2vw;
+
+    .articles-header {
+      @include blog-header();
+      margin-top: 1.5rem;
+      margin-bottom: 1.5rem;
+      padding: 0 0 2rem 0;
+    }
+  }
+
+  .blog-contact {
+    @include flex();
+    @include flex-column();
+    text-align: left;
+    border: .25rem solid $black_background;
+    padding: 3rem 1.5rem;
+    box-sizing: border-box;
+
+    .blog-contact-introduction {
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+      font-size: .8rem;
+      color: $angular;
+    }
+
+    .blog-contact-image {
+      height: 6rem;
+      width: 6rem;
+      margin: 1rem 1rem 0 0;
+
+      @include small-mobile {
+        margin: 0 1rem 0 0;
+      }
+    }
+
+    .link-wrapper {
+      @include flex();
+      margin-top: 1rem;
+
+      svg {
+        fill: $blue_1;
+        margin-right: 1rem;
+      }
+
+      a {
+        @include content-link();
+        font-size: .75rem;
+      }
+    }
+
+  }
+
+  @include tablet {
+    @include span-90();
+    @include flex-column();
+  }
+
+  @include mobile {
+    @include span-90();
+    @include flex-column();
+  }
+
+  @include small-mobile {
+    @include span-90();
+    @include flex-column();
+  }
+}
+
+pre {
+  display: block;
+  box-sizing: border-box;
+  background: $code-block;
+  border-left: 3px solid $blue_1;
+  color: $white;
+  page-break-inside: avoid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+  padding: .25rem;
+  word-wrap: break-word;
+  font-size: .75rem;
+
+  code {
+    display: block;
+    width: 100%;
+
+    xmp {
+      margin: 0;
+      white-space: none;
+    }
+  }
+
+  @include tablet {
+    padding: 1rem .5rem;
+  }
+
+  @include mobile {
+    padding: 1rem .5rem;
+  }
+
+  @include small-mobile {
+    padding: 1rem .5rem;
+  }
+}
+
+mark {
+  color: $grey;
+  background-color: $black-background;
+  padding: 0 .25rem;
+}
+
+.angular-code {
+  @include code-background($angular, 'angular_logo.svg', 'Angular');
+}
+
+.typescript-code {
+  @include code-background($typescript, 'typescript_logo.svg', 'Typescript');
+}
+
+.sass-code {
+  @include code-background($sass, 'sass_logo.svg', 'SASS');
+}
+
+.html-code {
+  @include code-background($html, 'html5_logo.svg', 'HTML5');
+}
+
+.code-pink {
+  @include code-snippet-color($sass);
+}
+
+.code-hot-pink {
+  @include code-snippet-color(rgb(252, 0, 126));
+}
+
+.code-gold {
+  @include code-snippet-color(rgb(237, 192, 38));
+}
+
+.code-blue {
+  @include code-snippet-color($blue_1);
+}
+
+.code-red {
+  @include code-snippet-color(rgb(170, 0, 0));
+}
+
+.code-orange {
+  @include code-snippet-color($html);
+}

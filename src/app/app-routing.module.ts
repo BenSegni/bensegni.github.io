@@ -93,6 +93,10 @@ export const routes: Routes = [
     canActivate: [maintenanceGuard]
   },
   {
+    path: 'blog',
+    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+  },
+  {
     path: 'contact',
     component: ContactComponent,
   },
@@ -111,7 +115,7 @@ export const routes: Routes = [
     path: '**',
     pathMatch: 'full',
     component: PageNotFoundComponent
-  }
+  },
 ];
 
 @NgModule({

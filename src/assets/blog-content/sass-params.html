@@ -1,0 +1,83 @@
+<html>
+<p>
+  This article dives into using parameters with <a href="https://sass-lang.com/documentation/at-rules/mixin/" target="_blank">SASS mixins</a> to craft flexible style blocks. We'll explore a common
+  approach to creating background images using a <mark>@mixin</mark> as our learning ground. Let's dissect its construction!</p>
+<pre class="sass-code">
+  <code>
+    <span class="code-blue">@mixin</span> <span class="code-pink">background-image-config($name, $size, $no-repeat: true) {</span>
+      background-image: url('../../img/#{<span class="code-pink">$name</span>}');
+      background-attachment: fixed;
+      background-size: <span class="code-pink">$size</span>;
+
+      <span class="code-blue">@if</span>(<span class="code-pink">$no-repeat</span>) {
+        background-repeat: no-repeat;
+      }
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+<p>The standard background image css might look a little like this:
+<pre>
+  <code markup="tt">
+    <span class="code-pink">.background-image {</span>
+      background-image: url('../../img/some_image.jpg');
+      background-attachment: fixed;
+      background-size: 100vw;
+      background-repeat: no-repeat;
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+</p>
+<p>For this example, we've chosen to make the image name, size, and repetition behavior flexible.
+<pre class="sass-code">
+  <code>
+    <span class="code-blue">@mixin</span> <span class="code-pink">background-image-config($name, $size, $no-repeat: true) {</span>
+      ...
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+These are defined by using <mark>$</mark> and then appending the variable name.
+<pre class="sass-code">
+  <code>
+    <span class="code-blue">@mixin</span> <span class="code-pink">background-image-config($name, $size, $no-repeat: true) {</span>
+      background-image: url('../../img/#{<span class="code-pink">$name</span>}');
+      background-attachment: fixed;
+      background-size: <span class="code-pink">$size</span>;
+
+      <span class="code-blue">@if</span>(<span class="code-pink">$no-repeat</span>) {
+        background-repeat: no-repeat;
+      }
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+Now the <mark>@mixin</mark> is created, it just needs to be dropped into a class selector:
+<pre class="sass-code">
+  <code>
+    <span class="code-pink">background-image-one {</span>.
+      <span class="code-blue">@include</span> background-image-config('background_one.svg', 100%, true);
+    <span class="code-pink">}</span>
+
+    <span class="code-pink">.background-image-two {</span>
+      <span class="code-blue">@include</span> background-image-config('background_two.svg', 50%, false);
+    <span class="code-pink">}</span>
+
+    <span class="code-pink">.background-image-three {</span>
+      <span class="code-blue">@include</span> background-image-config('background_three.svg', 75%, true);
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+the <mark>.background-image-one</mark> class will then output the following when check in dev tools:
+<pre>
+  <code>
+    <span class="code-pink">.background-image-one {</span>
+      background-image: url('../../img/background_one.svg');
+      background-attachment: fixed;
+      background-size: 100%;
+      background-repeat: no-repeat;
+    <span class="code-pink">}</span>
+  </code>
+</pre>
+There you go, flexible SASS which can be applied to lots of different edge cases.
+</p>
+<p>Happy coding... 😜</p>
+
+</html>

@@ -1,0 +1,6 @@
+<div class="blog">
+  <h3 [innerText]="'Blog'"></h3>
+  <ng-container *ngIf="blog$">
+    <app-blog-post *ngFor="let post of blog$()" [post]="post"></app-blog-post>
+  </ng-container>
+</div>

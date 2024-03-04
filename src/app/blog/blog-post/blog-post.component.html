@@ -1,0 +1,12 @@
+<div class="blog-post" *ngIf="post">
+  <div *ngIf="!blogMini" class="cover-image" [ngStyle]="{ 'background-image': 'url(' + post.coverImage + ')' }"></div>
+  <div class="post-details">
+    <h4 [ngStyle]="blogMini ? {'margin-bottom': '.75rem'} : {}">{{ post.title }}</h4>
+    <p *ngIf="!blogMini"><small>Created: {{ post.date | date }}</small></p>
+    <p *ngIf="!blogMini">{{ post.description }}</p>
+    <h5 *ngIf="!blogMini" [innerText]="'Technologies:'"></h5>
+    <app-skill-pills [skills]="post.keywords" [showLink]="false"></app-skill-pills>
+    <a *ngIf="!blogMini" [routerLink]="'./' + post.routeUrl" [state]="{ id: post.id }" [innerText]="'Read Article'"></a>
+    <a *ngIf="blogMini" [routerLink]="'../' + post.routeUrl" [state]="{ id: post.id }" [innerText]="'Read Article'"></a>
+  </div>
+</div>

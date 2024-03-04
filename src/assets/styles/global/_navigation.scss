@@ -174,14 +174,17 @@
 
         @include tablet {
             @include full-width();
+            padding: 1rem 0;
         }
 
         @include mobile {
             @include full-width();
+            padding: 1rem 0;
         }
 
         @include small-mobile {
             @include full-width();
+            padding: 1rem 0;
         }
     }
 

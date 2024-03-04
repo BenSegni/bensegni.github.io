@@ -1,5 +1,6 @@
 export enum NavigationEnum {
     Behance = 'Behance',
+    Blog = 'Blog',
     About = 'About',
     Contact = 'Contact',
     CurrentProject = 'Current Project',
