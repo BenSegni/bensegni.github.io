@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709572686175,
+  "timestamp": 1709573927264,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/21.af39cee3324ef70a.js",
         "/index.html",
-        "/main.a83b7e5f148acfd1.js",
+        "/main.811f96194ace9684.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.fdd010f3bb2a33e3.js",
@@ -65,6 +65,7 @@
         "/assets/img/behance_icon.svg",
         "/assets/img/behance_ui_nav.webp",
         "/assets/img/blog_icon.svg",
+        "/assets/img/blog_ui_nav.webp",
         "/assets/img/boba_fett.svg",
         "/assets/img/british-airways.svg",
         "/assets/img/chinwe/chinwe_1.webp",
@@ -283,6 +284,7 @@
     "/assets/img/behance_icon.svg": "e51b3e977e4d96886e191701c577d43cad35236c",
     "/assets/img/behance_ui_nav.webp": "dd32768c8fc9ac8f56f55efc7fe7d6bed8b1dd4f",
     "/assets/img/blog_icon.svg": "97a979ee6edb764c6965a6a68c0c884efe534b97",
+    "/assets/img/blog_ui_nav.webp": "dfbed309303c116f5f2326b383a32c741f2491c8",
     "/assets/img/boba_fett.svg": "a8273f214aba100897f68c040111629ca57cb2c1",
     "/assets/img/british-airways.svg": "288c241404f616abd4e1963fb1abae956bd73e3d",
     "/assets/img/chinwe/chinwe_1.webp": "9e79fafbdd2cd6e6cc292f0e5d8690d73b58d12f",
@@ -455,9 +457,9 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "e7f944156171956a7ea85cefe3b9d653a8445195",
+    "/index.html": "47fd34aa8504a870badea428a7ce915df93dde76",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.a83b7e5f148acfd1.js": "86294b0b0f7ff9f530ec105c7a3b6852cfd4c890",
+    "/main.811f96194ace9684.js": "894af5aa5dfd5539c398f3b00dbcf5df5b7c6788",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.fdd010f3bb2a33e3.js": "31c776e21f286ca5799ffedde150f476a63db597",
