@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709570906836,
+  "timestamp": 1709571243768,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.24b0c5eb1574c08a.js",
-        "/styles.8369f151a0de7a91.css"
+        "/styles.4c1d47395b92047c.css"
       ],
       "patterns": []
     },
@@ -434,7 +434,7 @@
     "/assets/styles/global/_info_directive.scss": "06f8910675a972ef1176c61319d243834be6e3b2",
     "/assets/styles/global/_mixins.scss": "9efd8d5ff82819a8aa6bd4c9abc6add472c1b5b0",
     "/assets/styles/global/_modal.scss": "f8ac63ff607ecdc117ff9d1365ebd844af8bf262",
-    "/assets/styles/global/_navigation.scss": "39513d90db31faaa328d7a8576032e1d3908640f",
+    "/assets/styles/global/_navigation.scss": "df7fefaac2df62c13b0f7d53f9dc1126ea2454e8",
     "/assets/styles/global/_page_header.scss": "d9dd831988ab9d276f40708682c9ba7dd8e51855",
     "/assets/styles/global/_presentation.link.scss": "eb6d33702b7e8deac4e93f4b64c282da04cbcbb9",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
@@ -455,14 +455,14 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "57f92e3aa9c28866e62c0f33400c6d755b161e6e",
+    "/index.html": "ecbe0dc1d1ac5c5e925eb0937a5fc1039faeb5ea",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.a83b7e5f148acfd1.js": "86294b0b0f7ff9f530ec105c7a3b6852cfd4c890",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.24b0c5eb1574c08a.js": "0c16ad8dc135e5ec7a3ca977b50ac99a7c5b9267",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.8369f151a0de7a91.css": "a252dd7e07ff096d5ba57c7699b475eb651902e3",
+    "/styles.4c1d47395b92047c.css": "e0cf8006a7e6261bc9a4558d46fbb1459ab56ef0",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
