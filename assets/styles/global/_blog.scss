@@ -187,6 +187,15 @@ $bold: rgb(188, 230, 111);
       b {
         color: $bold;
       }
+
+      small {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: .5rem 0;
+        color: $grey;
+        background-color: $black
+      }
     }
 
     .back-link {
