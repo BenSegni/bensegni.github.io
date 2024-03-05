@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709647211208,
+  "timestamp": 1709647388473,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -246,7 +246,7 @@
     "/21.af39cee3324ef70a.js": "b54412295475ef361e9e484d9919810d357891ab",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/guards.html": "c093193f10a1a0ad335e295ede75848ec4c4744e",
-    "/assets/blog-content/image-pipe.html": "2ebd6bc8627d0c09884ced66d6f837fc4b0cd42f",
+    "/assets/blog-content/image-pipe.html": "39aad6c426111db76afb7ee8ba79a4fa041b03da",
     "/assets/blog-content/images/sass-mixin.svg": "76472f5035b2988ebdaf9e43a5c804b8327682a1",
     "/assets/blog-content/images/skill-pill.svg": "c4762de2aed91ff3de343a993746cbe459e7b236",
     "/assets/blog-content/images/under-construction.svg": "538d6cf81e0a0a1603444a68e2fcbd9c322ab6ba",
