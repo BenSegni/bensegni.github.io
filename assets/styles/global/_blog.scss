@@ -363,7 +363,7 @@ mark {
 }
 
 .code-red {
-  @include code-snippet-color(rgb(170, 0, 0));
+  @include code-snippet-color(rgb(255, 84, 84));
 }
 
 .code-orange {

@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709675723213,
+  "timestamp": 1709675812266,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.fdd010f3bb2a33e3.js",
-        "/styles.340d619546b1a284.css"
+        "/styles.27ba6b8616511bcd.css"
       ],
       "patterns": []
     },
@@ -426,7 +426,7 @@
     "/assets/styles/_mixins.scss": "b67e12beadd4ef56e101d316639d1713b6920032",
     "/assets/styles/_pages.scss": "64baa22c6a9307a4dd0356df210f4bea9c59c07d",
     "/assets/styles/_responsive.scss": "32f3dd6f65767e3cb6d994ba3a063e779d0c17f4",
-    "/assets/styles/global/_blog.scss": "8e8a925c16d0038b45be4a8bd35c29ba7fd3db5d",
+    "/assets/styles/global/_blog.scss": "e8aa4deba59e1f4a9f1a867e945e7202ce1d27b6",
     "/assets/styles/global/_breadcrumb.scss": "7935d8b97a1caeb1338c9c0316d8c51059e51142",
     "/assets/styles/global/_footer.scss": "d826f3e74031604a2a4bd41bc69445a1df70ce15",
     "/assets/styles/global/_info_directive.scss": "06f8910675a972ef1176c61319d243834be6e3b2",
@@ -453,14 +453,14 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "0f813bd4be464a5e93170bf5c299ec55546fc18b",
+    "/index.html": "64078b5eec96c40be9e0148e59509193bd9ba69a",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.6cde459eab84f795.js": "cc05c25baba27877c330dc8cbbf24fb1149f106c",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.fdd010f3bb2a33e3.js": "31c776e21f286ca5799ffedde150f476a63db597",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.340d619546b1a284.css": "b88bde0b37b166a91fd2497b0a5746afc5f61801",
+    "/styles.27ba6b8616511bcd.css": "b20dcb2aef4a13307e1090163088fa8c718a684d",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
