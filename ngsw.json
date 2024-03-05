@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709647098019,
+  "timestamp": 1709647211208,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -250,7 +250,7 @@
     "/assets/blog-content/images/sass-mixin.svg": "76472f5035b2988ebdaf9e43a5c804b8327682a1",
     "/assets/blog-content/images/skill-pill.svg": "c4762de2aed91ff3de343a993746cbe459e7b236",
     "/assets/blog-content/images/under-construction.svg": "538d6cf81e0a0a1603444a68e2fcbd9c322ab6ba",
-    "/assets/blog-content/sass-params.html": "28026aa6d8293ba724a683592b36dd9d0f24a3ef",
+    "/assets/blog-content/sass-params.html": "f3c84b620a96859ec11e2d1f221b4ab57cc3b43f",
     "/assets/docs/CV.docx": "065d69f66cee576d45753bd256c176bc05631fd8",
     "/assets/docs/CV.pdf": "166829e9fd9d43d04457f4178867c258a9710f6d",
     "/assets/docs/infinity_brochure.pdf": "4bf9cf7c8172ff2f7454713715540a8d53798a8b",
