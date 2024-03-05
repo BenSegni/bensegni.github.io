@@ -1,0 +1,137 @@
+<html>
+<p>
+  This guide will show you how to create a simple guard for your Angular routes. This guard will be helpful in two
+  situations:
+<ol>
+  <li><b>Holding off traffic while a page is under construction:</b> This way, users won't see an unfinished page and
+    can be
+    informed about the ongoing development.</li>
+  <li><b>Temporarily restricting access to a page that needs fixing:</b> This allows you to address the issue without
+    completely removing the route from your application.</li>
+</ol>
+While route guards are often used for tasks like checking login authorization or user permissions, they can also be used
+for these more creative purposes.</p>
+<p>
+  <b>Creating the Guard</b>
+<pre class='angular-code'>
+      <code>
+        ng g g under-construction
+      </code>
+  </pre>
+<ol>
+  <li><b>Use the Angular CLI:</b> Open your terminal and run the following command, replacing <b>under-construction-guard</b> with your desired
+    guard
+    name.</li>
+  <li>
+    <b>Select CanActivate:</b> When prompted, choose <mark>"CanActivate"</mark> as the type of guard you want to create.
+  </li>
+</ol>
+</p>
+<p>
+  This will generate a guard constant and its corresponding spec file. We'll focus on the guard constant for now.
+</p>
+<p><b>Implementing the Guard Logic</b>
+<pre class='angular-code'>
+    <code>
+      import <span class="code-red">{ CanActivateFn }</span> from <span class="code-red">'@angular/router'</span>;
+
+      <span class="code-gold">//we can remove route, state params as they won't be needed</span>
+
+      <span class="code-gold">export</span> const <span class="code-red">underConstructionGuard</span>: <span class="code-red">CanActivateFn</span> = (route, state) => {
+        return true;
+      };
+    </code>
+</pre>
+<ol>
+  <li><b>Remove boilerplate code:</b> Open the guard constant file (e.g.,<mark>under-construction-guard.ts</mark>) and
+    remove the
+    unnecessary code. We'll
+    replace it with our own logic.</li>
+  <li><b>Return false and redirect:</b> Modify the <mark>canActivate</mark> method to always return <mark>false</mark>
+    when in production.
+    This will prevent users from
+    accessing the guarded route. Then, use the injected Router class to navigate users to an appropriate page, such as
+    an "Under Construction" or "Maintenance in Progress" page.</li>
+</ol>
+<pre class="angular-code">
+  <code>
+    import <span class="code-red">{ inject }</span> from <span class="code-red">'@angular/core'</span>;
+    import <span class="code-red">{ CanActivateFn, Router }</span> from <span class="code-red">'@angular/router'</span>;
+
+    declare let <span class="code-blue">process</span>: any;
+
+    <span class="code-gold">export</span> const <span class="code-red">underConstructionGuard</span>: <span class="code-red">CanActivateFn</span> = () => {
+
+      <span class="code-gold">// we can check on env so local development can continue.</span>
+      const <span class="code-red">env</span> = <span class="code-blue">process</span>.env.NODE_ENV;
+
+      <span class="code-gold">// inject the router here</span>
+      const <span class="code-red">router</span> = inject(<span class="code-red">Router</span>);
+
+      <span class="code-blue">if (env === 'production')</span> {
+        <span class="code-red">router</span>.navigate([<span class="code-pink">'under-construction'</span>]);
+        return false;
+      } <span class="code-blue">else</span> {
+        return true;
+      }
+
+    };
+  </code>
+</pre>
+</p>
+<p>
+  <b>Assigning the Guard to a Route</b>
+<ol>
+  <li><b>Import and use the guard:</b> In your routing module <mark>(e.g., app-routing.module.ts)</mark>, import the
+    newly created guard and add it to the route configuration:</li>
+</ol>
+<pre class="angular-code">
+  <code>
+    <span class="code-gold">export</span> const <span class="code-red">routes</span>: <span class="code-red">Routes</span> = [
+      ...
+      <span class="code-pink">{</span>
+        path: 'some-path',
+        component: SomeComponent,
+        canActivate: [<span class="code-red">maintenanceGuard</span>]
+      <span class="code-pink">}</span>
+      ...
+    ]
+  </code>
+</pre>
+</p>
+<p><b>Enhancing the User Experience</b>
+<ol>
+  <li><b>Leverage the existing 404 page:</b> Instead of creating a separate "Under Construction" page, you can modify
+    your
+    existing 404 page <mark>(e.g., 404.component.ts)</mark> to handle the guard redirection.</li>
+  <li>Use the <mark>RouterState</mark> object in the 404 component to check the URL and display a different message
+    based on whether
+    the page is under construction or not found. This way, you can provide a more informative experience for users.</li>
+</ol>
+<pre class="angular-code">
+  <code>
+    ...
+
+    <span class="code-gold">// do a check on the router state and set under construction to</span>
+    <span class="code-gold">// true, thus displaying other elements in the html.</span>
+
+    public <span class="code-red">underConstruction</span> = this.<span class="code-red">_router</span>.routerState.snapshot.url === <span class="code-pink">'/under-construction'</span>;
+
+    ...
+
+    constructor(private <span class="code-red">_router</span>: <span class="code-red">Router</span>) {}
+
+    public <span class="code-blue">ngOnInit()</span>: void {
+      <span class="code-blue">if(this.underConstruction)</span> {
+        <span class="code-gold">this.pageTitle</span> = 'Sorry, but this page in under Construction!'
+        <span class="code-gold">this.guidance</span> = 'Whilst this is being built, take a look around via the'
+      }
+    }
+  </code>
+</pre>
+<p>By following these steps, you can create a simple guard to temporarily restrict access to specific routes in your
+  Angular application, improving the user experience during development and maintenance phases.</p>
+<img src="./assets/blog-content/images/under-construction.svg" alt="html pre snippet">
+</p>
+
+</html>

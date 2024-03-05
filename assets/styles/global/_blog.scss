@@ -175,6 +175,15 @@ $html: rgb(228, 77, 38);
       width: 100%;
       text-align: left;
       margin: 1rem 0;
+
+      ol {
+        padding: 1rem;
+        margin: 1rem 0;
+      }
+
+      b {
+        color: $blue_1;
+      }
     }
 
     .back-link {

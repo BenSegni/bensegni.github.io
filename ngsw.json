@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709581605313,
+  "timestamp": 1709645774903,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/21.af39cee3324ef70a.js",
         "/index.html",
-        "/main.811f96194ace9684.js",
+        "/main.a717cac3cd92b985.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.fdd010f3bb2a33e3.js",
-        "/styles.63f07a03af7f9dc3.css"
+        "/styles.fc973be5ffab540d.css"
       ],
       "patterns": []
     },
@@ -30,6 +30,7 @@
       },
       "urls": [
         "/angular_logo.1808e02acbd75c03.svg",
+        "/assets/blog-content/guards.html",
         "/assets/blog-content/image-pipe.html",
         "/assets/blog-content/images/carbon.svg",
         "/assets/blog-content/images/enums.svg",
@@ -38,7 +39,7 @@
         "/assets/blog-content/images/skill-pill.svg",
         "/assets/blog-content/images/switch-case.svg",
         "/assets/blog-content/images/typescript-switch.svg",
-        "/assets/blog-content/rxjs.html",
+        "/assets/blog-content/images/under-construction.svg",
         "/assets/blog-content/sass-params.html",
         "/assets/docs/CV.docx",
         "/assets/docs/CV.pdf",
@@ -249,7 +250,8 @@
   "hashTable": {
     "/21.af39cee3324ef70a.js": "b54412295475ef361e9e484d9919810d357891ab",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
-    "/assets/blog-content/image-pipe.html": "5c8a0e3fb10bc046cabbf1497543cf34265f6bd7",
+    "/assets/blog-content/guards.html": "1f3381a09d1ed15a343f557d52a75af905b08142",
+    "/assets/blog-content/image-pipe.html": "2ebd6bc8627d0c09884ced66d6f837fc4b0cd42f",
     "/assets/blog-content/images/carbon.svg": "285ae38dee86705401cae0669983b15bfd45f631",
     "/assets/blog-content/images/enums.svg": "9736459e08707910e7ccbd992506220e1f459639",
     "/assets/blog-content/images/pipe-creation.svg": "1909581bbdb3bc969eadc22087c98b70a1a66181",
@@ -257,7 +259,7 @@
     "/assets/blog-content/images/skill-pill.svg": "c4762de2aed91ff3de343a993746cbe459e7b236",
     "/assets/blog-content/images/switch-case.svg": "3aaed05a5fc51ee2a15b08942772c19d830f1ef8",
     "/assets/blog-content/images/typescript-switch.svg": "af41570ea026dcba1b6e6ca323573d17e354e3ac",
-    "/assets/blog-content/rxjs.html": "ab50fb440124c757d3bc2e39e25a1e589c600194",
+    "/assets/blog-content/images/under-construction.svg": "538d6cf81e0a0a1603444a68e2fcbd9c322ab6ba",
     "/assets/blog-content/sass-params.html": "28026aa6d8293ba724a683592b36dd9d0f24a3ef",
     "/assets/docs/CV.docx": "065d69f66cee576d45753bd256c176bc05631fd8",
     "/assets/docs/CV.pdf": "166829e9fd9d43d04457f4178867c258a9710f6d",
@@ -430,7 +432,7 @@
     "/assets/styles/_mixins.scss": "b67e12beadd4ef56e101d316639d1713b6920032",
     "/assets/styles/_pages.scss": "64baa22c6a9307a4dd0356df210f4bea9c59c07d",
     "/assets/styles/_responsive.scss": "32f3dd6f65767e3cb6d994ba3a063e779d0c17f4",
-    "/assets/styles/global/_blog.scss": "36ef231af3b8604f9392c5f0923ebc61e76f8d79",
+    "/assets/styles/global/_blog.scss": "e991190f07a6cc95ae4d21598200b8fd3c93104d",
     "/assets/styles/global/_breadcrumb.scss": "7935d8b97a1caeb1338c9c0316d8c51059e51142",
     "/assets/styles/global/_footer.scss": "d826f3e74031604a2a4bd41bc69445a1df70ce15",
     "/assets/styles/global/_info_directive.scss": "06f8910675a972ef1176c61319d243834be6e3b2",
@@ -457,14 +459,14 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "47fd34aa8504a870badea428a7ce915df93dde76",
+    "/index.html": "7a4b7be2000eebb095258a1bc355a30c800f4890",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.811f96194ace9684.js": "894af5aa5dfd5539c398f3b00dbcf5df5b7c6788",
+    "/main.a717cac3cd92b985.js": "8ea25d16aeb7083b40301cf2c088190a818bc34d",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.fdd010f3bb2a33e3.js": "31c776e21f286ca5799ffedde150f476a63db597",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.63f07a03af7f9dc3.css": "86e5845198b5f31020d07484f078e9d08a0f9658",
+    "/styles.fc973be5ffab540d.css": "6af7c543299720004d5ebdcf5fd26474bf585a4f",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
