@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709646080554,
+  "timestamp": 1709647098019,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.fdd010f3bb2a33e3.js",
-        "/styles.fc973be5ffab540d.css"
+        "/styles.66c5441c84a46099.css"
       ],
       "patterns": []
     },
@@ -245,7 +245,7 @@
   "hashTable": {
     "/21.af39cee3324ef70a.js": "b54412295475ef361e9e484d9919810d357891ab",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
-    "/assets/blog-content/guards.html": "75fbd52d9883fc8834036dc3cbf6b4d42869e505",
+    "/assets/blog-content/guards.html": "c093193f10a1a0ad335e295ede75848ec4c4744e",
     "/assets/blog-content/image-pipe.html": "2ebd6bc8627d0c09884ced66d6f837fc4b0cd42f",
     "/assets/blog-content/images/sass-mixin.svg": "76472f5035b2988ebdaf9e43a5c804b8327682a1",
     "/assets/blog-content/images/skill-pill.svg": "c4762de2aed91ff3de343a993746cbe459e7b236",
@@ -422,7 +422,7 @@
     "/assets/styles/_mixins.scss": "b67e12beadd4ef56e101d316639d1713b6920032",
     "/assets/styles/_pages.scss": "64baa22c6a9307a4dd0356df210f4bea9c59c07d",
     "/assets/styles/_responsive.scss": "32f3dd6f65767e3cb6d994ba3a063e779d0c17f4",
-    "/assets/styles/global/_blog.scss": "e991190f07a6cc95ae4d21598200b8fd3c93104d",
+    "/assets/styles/global/_blog.scss": "cb5829ec1421db9c3ec49d899eb65277fe6fc6ac",
     "/assets/styles/global/_breadcrumb.scss": "7935d8b97a1caeb1338c9c0316d8c51059e51142",
     "/assets/styles/global/_footer.scss": "d826f3e74031604a2a4bd41bc69445a1df70ce15",
     "/assets/styles/global/_info_directive.scss": "06f8910675a972ef1176c61319d243834be6e3b2",
@@ -449,14 +449,14 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "e6585df4be1019632bdcfe44a60c23aee0c3d6f0",
+    "/index.html": "397140b196940cd91b77d29eb4b124c2f9e33bfb",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.421633b60a2437e5.js": "585dcaa73ec238edc60d8cadbb47c27fab34421d",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.fdd010f3bb2a33e3.js": "31c776e21f286ca5799ffedde150f476a63db597",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.fc973be5ffab540d.css": "6af7c543299720004d5ebdcf5fd26474bf585a4f",
+    "/styles.66c5441c84a46099.css": "d7bb1884916f6ceda5ed4ab3d947bfb75204e957",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
