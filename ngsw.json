@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709675158242,
+  "timestamp": 1709675473522,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -247,14 +247,14 @@
   "hashTable": {
     "/21.af39cee3324ef70a.js": "b54412295475ef361e9e484d9919810d357891ab",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
-    "/assets/blog-content/guards.html": "8b2b55ddbccda9629f11c65d91cb6926651f2480",
-    "/assets/blog-content/image-pipe.html": "36f20d49087bc3d362f347f87170a96a21e54e80",
+    "/assets/blog-content/guards.html": "e03506b8f3778db4b249091880a713de673eb800",
+    "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
     "/assets/blog-content/images/sass-mixin.png": "1f5decde32c1c51aa6256378d62bf0e442ff84fb",
     "/assets/blog-content/images/skill-pill.png": "e1af9cf664d4ca92e8b03a807384317feeb91a5b",
     "/assets/blog-content/images/svg-template.png": "87f30563ee3d829b759d892af40bd295b1563781",
     "/assets/blog-content/images/under-construction.png": "29f2268dd60e68e649361be881d69b9829ba3674",
     "/assets/blog-content/sass-params.html": "f3c84b620a96859ec11e2d1f221b4ab57cc3b43f",
-    "/assets/blog-content/svg.html": "77dfcaf0581978dbe4038b132f9fd3db16920339",
+    "/assets/blog-content/svg.html": "ee142e81d364a667b61a8f5ac4b523955d3abc99",
     "/assets/docs/CV.docx": "065d69f66cee576d45753bd256c176bc05631fd8",
     "/assets/docs/CV.pdf": "166829e9fd9d43d04457f4178867c258a9710f6d",
     "/assets/docs/infinity_brochure.pdf": "4bf9cf7c8172ff2f7454713715540a8d53798a8b",
