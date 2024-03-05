@@ -7,6 +7,10 @@
       <p><small>Created: {{ article.date | date }}</small></p>
       <h4 [innerText]="'Technologies:'"></h4>
       <app-skill-pills [skills]="article.keywords"></app-skill-pills>
+      <div class="copy-url">
+        <button (click)="copyURL()" value="click to copy"><img [src]="shareIcon" alt="shareIcon | altText">Copy &amp; Share</button>
+        <p *ngIf="urlIsCopied">Page Address is Copied!</p>
+      </div>
       <div class="content" [innerHTML]="content | safeResource"></div>
       <app-blog-contact-details></app-blog-contact-details>
     </div>

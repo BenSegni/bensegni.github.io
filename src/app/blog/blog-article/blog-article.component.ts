@@ -13,6 +13,8 @@ export class BlogArticleComponent implements OnInit {
   public article: Blog | undefined;
   public blogIcon = '../../../assets/img/blog_icon.svg';
   public content = '';
+  public urlIsCopied = false;
+  public shareIcon = '../../../assets/img/share_icon.svg'
   public constructor(
     private _globalService: GlobalDataService,
     private _router: Router,
@@ -40,5 +42,10 @@ export class BlogArticleComponent implements OnInit {
         this.content = content;
       });
     }
+  }
+
+  public copyURL(): void {
+    this.urlIsCopied = true;
+    navigator.clipboard.writeText(`https://bensegni.github.io${this._router.url}`).then().catch(error => console.log(error));
   }
 }

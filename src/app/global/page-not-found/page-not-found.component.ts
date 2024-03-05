@@ -15,7 +15,7 @@ export class PageNotFoundComponent implements OnInit {
 
   public ngOnInit(): void {
     if(this.underConstruction) {
-      this.pageTitle = 'Sorry, but this page in under Construction!'
+      this.pageTitle = 'Sorry, but this page is under Construction!'
       this.guidance = 'Whilst this is being built, take a look around via the'
     }
   }

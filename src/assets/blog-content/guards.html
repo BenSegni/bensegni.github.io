@@ -35,7 +35,7 @@ for these more creative purposes.</p>
     <code>
       import <span class="code-red">{ CanActivateFn }</span> from <span class="code-red">'@angular/router'</span>;
 
-      <span class="code-gold">//we can remove route, state params as they won't be needed.</span>
+      <span class="code-gold">// we can remove route, state params as they won't be needed.</span>
 
       <span class="code-gold">export</span> const <span class="code-red">underConstructionGuard</span>: <span class="code-red">CanActivateFn</span> = (route, state) => {
         return true;
@@ -125,7 +125,7 @@ for these more creative purposes.</p>
 
     public <span class="code-blue">ngOnInit()</span>: void {
       <span class="code-blue">if(this.underConstruction)</span> {
-        <span class="code-gold">this.pageTitle</span> = 'Sorry, but this page in under Construction!'
+        <span class="code-gold">this.pageTitle</span> = 'Sorry, but this page is under Construction!'
         <span class="code-gold">this.guidance</span> = 'Whilst this is being built, take a look around via the'
       }
     }
@@ -135,7 +135,7 @@ for these more creative purposes.</p>
   Angular application, improving the user experience during development and maintenance phases.</p>
 </p>
 <img src="./assets/blog-content/images/under-construction.png" alt="html pre snippet">
-<p><small>(Image Above) HTML Component Template: See <mark>'underConstruction'</mark> boolean taking effect.</small></p>
+<p><small><b>(Image Above)</b> HTML Component Template: See <mark>'underConstruction'</mark> boolean taking effect.</small></p>
 <p>Happy coding... 😜</p>
 
 </html>
