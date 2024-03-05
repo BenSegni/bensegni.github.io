@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709649638712,
+  "timestamp": 1709650206399,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -254,7 +254,7 @@
     "/assets/blog-content/images/svg-template.svg": "bb549101a9f425fc36697d0cf3e0d93bf54900a5",
     "/assets/blog-content/images/under-construction.svg": "538d6cf81e0a0a1603444a68e2fcbd9c322ab6ba",
     "/assets/blog-content/sass-params.html": "f3c84b620a96859ec11e2d1f221b4ab57cc3b43f",
-    "/assets/blog-content/svg.html": "827cfc1b717b2497bcfa0616cdf10c4c8cae1651",
+    "/assets/blog-content/svg.html": "ec7dae6620cda8721414c4d5261fb8dbc5341029",
     "/assets/docs/CV.docx": "065d69f66cee576d45753bd256c176bc05631fd8",
     "/assets/docs/CV.pdf": "166829e9fd9d43d04457f4178867c258a9710f6d",
     "/assets/docs/infinity_brochure.pdf": "4bf9cf7c8172ff2f7454713715540a8d53798a8b",
