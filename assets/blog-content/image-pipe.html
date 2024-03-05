@@ -28,6 +28,8 @@
     }<span class="code-red">)</span>
     <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
 
+      <span class="code-gold">// Return a string and set the param imageUrl as string.</span>
+
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         ...
       <span class="code-red">}</span>
@@ -44,6 +46,8 @@
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
     <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Set up the switch case.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {
@@ -81,6 +85,8 @@
     }<span class="code-red">)</span>
     <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
 
+      <span class="code-gold">// Check the URL contains the term to resolve to true.</span>
+
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {
           <span class="code-gold">case</span> imageUrl.includes(TechnologyEnum.Angular): return LogoEnum.Angular;
@@ -106,6 +112,8 @@
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
     <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Can be extended easily and consistently.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {

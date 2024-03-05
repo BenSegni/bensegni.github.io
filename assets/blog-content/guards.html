@@ -35,7 +35,7 @@ for these more creative purposes.</p>
     <code>
       import <span class="code-red">{ CanActivateFn }</span> from <span class="code-red">'@angular/router'</span>;
 
-      <span class="code-gold">//we can remove route, state params as they won't be needed</span>
+      <span class="code-gold">//we can remove route, state params as they won't be needed.</span>
 
       <span class="code-gold">export</span> const <span class="code-red">underConstructionGuard</span>: <span class="code-red">CanActivateFn</span> = (route, state) => {
         return true;
@@ -65,7 +65,7 @@ for these more creative purposes.</p>
       <span class="code-gold">// we can check on env so local development can continue.</span>
       const <span class="code-red">env</span> = <span class="code-blue">process</span>.env.NODE_ENV;
 
-      <span class="code-gold">// inject the router here</span>
+      <span class="code-gold">// inject the router here.</span>
       const <span class="code-red">router</span> = inject(<span class="code-red">Router</span>);
 
       <span class="code-blue">if (env === 'production')</span> {
@@ -112,7 +112,7 @@ for these more creative purposes.</p>
   <code>
     ...
 
-    <span class="code-gold">// do a check on the router state and set under construction to</span>
+    <span class="code-gold">// Do a check on the router state and set under construction to</span>
     <span class="code-gold">// true, thus displaying other elements in the html.</span>
 
     public <span class="code-red">underConstruction</span> = this.<span class="code-red">_router</span>.routerState.snapshot.url === <span class="code-pink">'/under-construction'</span>;
