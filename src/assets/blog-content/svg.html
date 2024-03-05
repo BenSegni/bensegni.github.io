@@ -1,0 +1,50 @@
+<html>
+<p>
+  This article explores using SVG code instead of HTML templates for building certain components. This approach can be
+  especially useful when your component needs icons or images with specific requirements.</p>
+
+<p><b>Here's why using SVG code can be beneficial:</b></p>
+<p>
+<ul>
+  <li><b>Simplified code</b>: Instead of using data binding with img elements, you can simply embed the SVG code
+    directly,
+    reducing the complexity of your code.</li>
+  <li><b>Dynamic content</b>: You can apply business logic directly to the SVG code, allowing you to modify its content
+    based
+    on your application's needs.</li>
+  <li><b>Smooth animations</b>: SVGs excel at animations, making them ideal for dynamic and engaging components compared
+    to
+    static images.</li>
+</ul>
+</p>
+<p>Let's take a look at the standard compilation of an Angular component:</p>
+<pre class='angular-code'>
+  <code>
+    <span class="code-red">@Component</span>({
+      selector: 'app-blog',
+      templateUrl: './blog.component.html'
+    })
+  </code>
+</pre>
+notice the <mark>templateUrl</mark> option inside the component decorator.
+</p>
+<p><b>Using an svg instead of HTML</b>
+<pre class='angular-code'>
+  <code>
+    <span class="code-red">@Component</span>({
+      selector: 'app-github-icon',
+      templateUrl: './icon.svg'
+    })
+  </code>
+</pre>
+</p>
+<p>As you can see, we have simply switched out the <b>html with an svg file</b>. The <mark>icon.svg</mark> file looks like this:</p>
+<img src="./assets/blog-content/images/svg-template.png" alt="html pre snippet">
+<p><small>(Image Above) SVG Code now replces the HTML Template.</small></p>
+<p>We can now use <b>data binding techniques</b> to this code, we can apply animations using <a
+    href="https://angular.io/guide/animations" target="_blank">angular animations</a>, or <a
+    href="https://angular.io/guide/structural-directives" target="_blank">structural
+    directives</a> to the svg code as we see fit.</p>
+<p>Happy coding... 😜</p>
+
+</html>

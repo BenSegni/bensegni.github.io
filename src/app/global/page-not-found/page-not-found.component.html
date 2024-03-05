@@ -1,5 +1,6 @@
 <div class="not-found">
-    <h3 [innerText]="pageTitle"></h3>
-    <img [ngClass]="underConstruction ?  'banner' : ''" [src]="underConstruction ? banner : bobaFett" [alt]="underConstruction ? banner : bobaFett | altText">
-    <p>{{ guidance }} <a routerLink="/">Home Page</a>.</p>
+  <h3 [innerText]="pageTitle"></h3>
+  <img [ngClass]="underConstruction ?  'banner' : ''" [src]="underConstruction ? banner : bobaFett"
+    [alt]="underConstruction ? banner : bobaFett | altText">
+  <p>{{ guidance }} <a routerLink="/">Home Page</a>.</p>
 </div>

@@ -1,8 +1,8 @@
 <html>
 <p>This article outlines how to use <a href="https://angular.io/guide/pipes" target="_blank">pipes in Angular</a> to
   render icons based on the string you pass to an image element. This
-  approach promotes code reusability and enriches the UI for displaying lists and keywords, as demonstrated in the
-  "Keywords" section at the beginning of the article.</p>
+  approach promotes <b>code reusability</b> and enriches the UI for displaying lists and keywords, as demonstrated in the
+  <b>"Keywords"</b> section at the beginning of the article.</p>
 <p>To get started, use the <a href="https://angular.io/cli" target="_blank">Angular CLI</a> to create a pipe by running
   the following command:</p>
 <pre class="angular-code">
@@ -26,7 +26,9 @@
     <span class="code-red">@Pipe(</span>{
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
-    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+    <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Return a string and set the param imageUrl as string.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         ...
@@ -34,7 +36,7 @@
     }
   </code>
 </pre>
-<p>To leverage efficient scaling and maintainability, we'll incorporate two techniques. First, let's add a switch case
+<p>To <b>leverage efficient scaling and maintainability</b>, we'll incorporate two techniques. First, let's add a switch case
   statement to the <mark>transform</mark> method, passing a <mark>true</mark> boolean value as an argument, as shown
   below:</p>
 </p>
@@ -43,7 +45,9 @@
     <span class="code-red">@Pipe(</span>{
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
-    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+    <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Set up the switch case.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {
@@ -79,7 +83,9 @@
     <span class="code-red">@Pipe(</span>{
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
-    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+    <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Check the URL contains the term to resolve to true.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {
@@ -105,7 +111,9 @@
     <span class="code-red">@Pipe(</span>{
       <span class="code-gold">name:</span> 'images'
     }<span class="code-red">)</span>
-    export class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+    <span class="code-gold">export</span> class <span class="code-red">ImagesPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// Can be extended easily and consistently.</span>
 
       <span class="code-red">transform</span>(imageUrl: string): string <span class="code-red">{</span>
         switch (true) {
@@ -131,7 +139,8 @@
 <p>For instance, consider my "skill pill" component that manages a string array of skills. This pipe proves valuable in
   this scenario. I can pass each skill into an image element and leverage the pipe to dynamically render the
   corresponding icon image.</p>
-<img src="./assets/blog-content/images/skill-pill.svg" alt="html pre snippet">
+<img src="./assets/blog-content/images/skill-pill.png" alt="html pre snippet">
+<p><small>(Image Above) HTML Component Template: See <mark>'images'</mark>pipe added with the string value.</small></p>
 <p>And, there you have it. If you go anywhere around this site and spot icons being used, chances are, they're being
   rendered with a pipe using the above approach.</p>
 <p>Happy coding... 😜</p>
