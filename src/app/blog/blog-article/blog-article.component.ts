@@ -27,6 +27,7 @@ export class BlogArticleComponent implements OnInit {
       distinctUntilChanged(() => this._router.url === prevUrl),
       tap(() => prevUrl = this._router.url)
     ).subscribe(() => {
+      this.urlIsCopied = false;
       this.assignBlogArticle(this._router.url);
     });
   }
