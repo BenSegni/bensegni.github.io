@@ -19,7 +19,7 @@
 
   &:after {
     font-family: 'Nunito', sans-serif;
-    color: $grey;
+    color: $grey-light;
     font-size: .75rem;
     content: $text;
   }
@@ -36,6 +36,7 @@ $sass: rgb(205, 102, 153);
 $typescript: rgb(49, 120, 198);
 $html: rgb(228, 77, 38);
 $bold: rgb(188, 230, 111);
+$grey-light: rgb(204, 204, 204);
 
 .blog {
   width: 60vw;
@@ -117,7 +118,7 @@ $bold: rgb(188, 230, 111);
     }
 
     h5 {
-      color: $grey;
+      color: $grey-light;
     }
 
     a {
@@ -163,7 +164,7 @@ $bold: rgb(188, 230, 111);
     h4 {
       margin: 0;
       padding: 0;
-      color: $grey;
+      color: $grey-light;
     }
 
     img {
@@ -193,7 +194,7 @@ $bold: rgb(188, 230, 111);
         width: 100%;
         text-align: center;
         padding: .5rem 0;
-        color: $grey;
+        color: $grey-light;
         background-color: $black
       }
     }
@@ -324,7 +325,7 @@ pre {
 }
 
 mark {
-  color: $grey;
+  color: $grey-light;
   background-color: $black-background;
   padding: 0 .25rem;
 }
