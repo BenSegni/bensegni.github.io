@@ -5,6 +5,8 @@ import { Router } from '@angular/router';
 import { distinctUntilChanged, tap } from 'rxjs';
 import { ToolTipConfig } from '../../global/utils/directives/interfaces/tooltip';
 import { BlogService } from '../services/blog.service';
+declare let process: any;
+const env = process.env.NODE_ENV;
 @Component({
   selector: 'app-blog-article',
   templateUrl: './blog-article.component.html'
@@ -43,6 +45,8 @@ export class BlogArticleComponent implements OnInit {
       this.urlIsCopied = false;
       this.assignBlogArticle(this._router.url);
     });
+    //FIXME: find a way that the resource isn't called twice
+    this.assignBlogArticle(this._router.url);
   }
 
   private assignBlogArticle(pageUrl: string): void {
@@ -60,8 +64,14 @@ export class BlogArticleComponent implements OnInit {
   }
 
   public copyURL(): void {
+    const production = 'https://bensegni.github.io';
+    const local = 'http://localhost:4200'
     this.urlIsCopied = true;
-    navigator.clipboard.writeText(`https://bensegni.github.io${this._router.url}`).then().catch(error => console.log(error));
+    navigator
+      .clipboard
+      .writeText(`${env === 'production' ? production : local}${this._router.url}`)
+      .then().
+      catch(error => console.log(error));
   }
 
   private convertHTMLToReadingTime(wordCount: number): void {
