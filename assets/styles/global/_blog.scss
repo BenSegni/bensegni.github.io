@@ -10,26 +10,6 @@
   padding: 0;
 }
 
-@mixin code-background($color, $image, $text) {
-  border-left: 3px solid $color;
-  background-image: url('../../img/#{$image}');
-  background-repeat: no-repeat;
-  background-position: 1% 5%;
-  background-size: 1rem;
-
-  &:after {
-    font-family: 'Nunito', sans-serif;
-    color: $grey-light;
-    font-size: .75rem;
-    content: $text;
-  }
-}
-
-@mixin code-snippet-color($color) {
-  color: $color;
-  font-weight: bold;
-}
-
 @mixin svg {
   svg {
     display: block;
@@ -39,14 +19,6 @@
     margin: auto .5rem auto auto;
   }
 }
-
-$code-block: rgb(0, 39, 63);
-$angular: rgb(234, 234, 234);
-$sass: rgb(235, 144, 190);
-$typescript: rgb(49, 120, 198);
-$html: rgb(228, 77, 38);
-$bold: rgb(188, 230, 111);
-$grey-light: rgb(204, 204, 204);
 
 .blog {
   width: 60vw;
@@ -396,49 +368,6 @@ $grey-light: rgb(204, 204, 204);
     @include span-90();
     @include flex-column();
   }
-}
-
-pre {
-  display: block;
-  box-sizing: border-box;
-  background: $code-block;
-  border-left: 3px solid $blue_1;
-  color: $white;
-  page-break-inside: avoid;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  overflow: auto;
-  padding: .25rem;
-  word-wrap: break-word;
-  font-size: .75rem;
-
-  code {
-    display: block;
-    width: 100%;
-
-    xmp {
-      margin: 0;
-      white-space: none;
-    }
-  }
-
-  @include tablet {
-    padding: 1rem .5rem;
-  }
-
-  @include mobile {
-    padding: 1rem .5rem;
-  }
-
-  @include small-mobile {
-    padding: 1rem .5rem;
-  }
-}
-
-mark {
-  color: $grey-light;
-  background-color: $black-background;
-  padding: 0 .25rem;
 }
 
 .angular-code {

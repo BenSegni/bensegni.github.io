@@ -197,3 +197,50 @@ section {
 a {
     text-decoration: none;
 }
+
+pre {
+  display: block;
+  box-sizing: border-box;
+  background: $code-block;
+  border-left: 3px solid $blue_1;
+  color: $white;
+  page-break-inside: avoid;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  overflow: auto;
+  padding: .25rem;
+  word-wrap: break-word;
+  font-size: .75rem;
+
+  code {
+    display: block;
+    width: 100%;
+
+    xmp {
+      margin: 0;
+      white-space: none;
+    }
+  }
+
+  @include tablet {
+    padding: 1rem .5rem;
+  }
+
+  @include mobile {
+    padding: 1rem .5rem;
+  }
+
+  @include small-mobile {
+    padding: 1rem .5rem;
+  }
+}
+
+mark {
+  color: $grey-light;
+  background-color: $black-background;
+  padding: 0 .25rem;
+}
+
+.node-code {
+  @include code-background($html, 'npm_logo.svg', 'NPM');
+}

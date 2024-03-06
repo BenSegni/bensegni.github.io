@@ -195,6 +195,26 @@
   }
 }
 
+@mixin code-background($color, $image, $text) {
+  border-left: 3px solid $color;
+  background-image: url('../../img/#{$image}');
+  background-repeat: no-repeat;
+  background-position: 1% 5%;
+  background-size: 1rem;
+
+  &:after {
+    font-family: 'Nunito', sans-serif;
+    color: $grey-light;
+    font-size: .75rem;
+    content: $text;
+  }
+}
+
+@mixin code-snippet-color($color) {
+  color: $color;
+  font-weight: bold;
+}
+
 @mixin back-link($bordertop: true) {
   @include flex();
   @include flex-center();
@@ -215,7 +235,9 @@
     &:visited {
       border-top: 1px dotted $grey;
     }
-  } @else {
+  }
+
+  @else {
     border-bottom: 1px dotted $grey;
     padding: 0 0 2rem 0;
 
