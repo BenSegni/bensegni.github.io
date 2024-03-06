@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709745143845,
+  "timestamp": 1709754874753,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/681.01ca42d6829ae3ef.js",
+        "/681.37818816a1d5d9ee.js",
         "/index.html",
         "/main.6987e3408f189968.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
-        "/runtime.97d8574ac2ffb4af.js",
+        "/runtime.beb227db90d5e9dc.js",
         "/styles.06171fb48362a0ae.css"
       ],
       "patterns": []
@@ -247,7 +247,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/681.01ca42d6829ae3ef.js": "6bb9763f7de7ec69b9724607799181231d0b3cdf",
+    "/681.37818816a1d5d9ee.js": "873321fa9c13b6acb1bf883fa95c56ed37363757",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
     "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
@@ -457,12 +457,12 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "ee5b4293227a7661a3f8e68e6531baafad25561a",
+    "/index.html": "97b9a75c875bd7a9f1792697b4997682ca740d44",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.6987e3408f189968.js": "b80cd265afd94d43b80a221059ac04aec7deaf2c",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
-    "/runtime.97d8574ac2ffb4af.js": "545d980eeac1919a41b7b98224d52683e968ef0e",
+    "/runtime.beb227db90d5e9dc.js": "c4f656097cea8adf299e98a946b8370065b9fe3b",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
     "/styles.06171fb48362a0ae.css": "25a88f4799a64f5b09873731f101d3efc10175f2",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
