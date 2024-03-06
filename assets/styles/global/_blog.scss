@@ -31,7 +31,6 @@
 }
 
 $code-block: rgb(0, 39, 63);
-;
 $angular: rgb(234, 234, 234);
 $sass: rgb(235, 144, 190);
 $typescript: rgb(49, 120, 198);
@@ -185,7 +184,7 @@ $grey-light: rgb(204, 204, 204);
       font-size: .75rem;
       color: $grey-light;
 
-      button {
+      .copy-url-button {
         cursor: pointer;
         @include flex();
         @include flex-center();
@@ -213,8 +212,18 @@ $grey-light: rgb(204, 204, 204);
         }
       }
 
-      p {
-        margin: 0;
+      .copy-url-message {
+        display: block;
+        margin: 0 0 0 1.35rem;
+        border: .125rem solid $grey;
+        padding: .25rem .5rem;
+        border-radius: .25rem;
+      }
+
+      .copy-url-tooltip {
+        p {
+          padding: 1rem 0;
+        }
       }
     }
 
