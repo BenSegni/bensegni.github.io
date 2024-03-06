@@ -306,8 +306,13 @@ $grey-light: rgb(204, 204, 204);
     }
 
     .back-link {
-      @include back-link();
+      @include back-link(false);
       margin-bottom: 2rem;
+    }
+
+    .back-link-bottom {
+      @include back-link(true);
+      margin-top: 2rem;
     }
 
     @include tablet {
