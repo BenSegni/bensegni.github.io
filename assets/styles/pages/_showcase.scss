@@ -135,7 +135,7 @@
 }
 
 .layout-button {
-    margin: 2rem 0 2.5rem 0;
+    margin: 0 0 2.5rem 0;
     border: 0;
     color: $white;
     background-color: transparent;
@@ -350,7 +350,7 @@
 .filter-wrapper {
     @include flex();
     @include flex-column();
-    margin: 0 auto;
+    margin: 0 auto 1rem auto;
 
     .filter-button {
         @include flex();
