@@ -24,6 +24,8 @@ import { LinkedinIconComponent } from './icons/linkedin-icon/linkedin-icon.compo
 import { EmailIconComponent } from './icons/email-icon/email-icon.component';
 import { LocationIconComponent } from './icons/location-icon/location-icon.component';
 import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
+import { ShareIconComponent } from './icons/share-icon/share-icon.component';
+import { ClockIconComponent } from './icons/clock-icon/clock-icon.component';
 
 
 
@@ -50,7 +52,9 @@ import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
         LinkedinIconComponent,
         EmailIconComponent,
         LocationIconComponent,
-        NpmIconComponent
+        NpmIconComponent,
+        ShareIconComponent,
+        ClockIconComponent
     ],
     imports: [
         CommonModule,
@@ -75,7 +79,9 @@ import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
         LinkedinIconComponent,
         EmailIconComponent,
         LocationIconComponent,
-        NpmIconComponent
+        NpmIconComponent,
+        ShareIconComponent,
+        ClockIconComponent
     ]
 })
 export class GlobalModule { }

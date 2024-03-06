@@ -4,13 +4,24 @@
       <a class="back-link" routerLink=".."><img [src]="blogIcon" [alt]="blogIcon | altText"><span>Back to Blog
           Articles</span></a>
       <h3 [innerText]="article.title"></h3>
-      <p><small>Created: {{ article.date | date }}</small></p>
+      <p class="article-date"><small>Created: {{ article.date | date }}</small></p>
+      <div class="article-information-bar">
+        <p class="article-reading-time-wrapper">
+          <span class="article-reading-time">
+            <app-clock-icon></app-clock-icon> Read Time:
+            <pre>{{ averageReadingTime * 1000 | date: 's' }} {{ minuteOrMinutes }}</pre>
+          </span>
+          <span class="reading-time-tooltip" [tooltip]="readTimeToolTip"></span>
+        </p>
+        <div class="copy-url">
+          <button class="copy-url-button" (click)="copyURL()"
+            value="click to copy"><app-share-icon></app-share-icon>Copy &amp; Share</button>
+          <div class="copy-url-tooltip" [tooltip]="toolTip"></div>
+          <p class="copy-url-message" *ngIf="urlIsCopied">Page Address is Copied!</p>
+        </div>
+      </div>
       <h4 [innerText]="'Technologies:'"></h4>
       <app-skill-pills [skills]="article.keywords"></app-skill-pills>
-      <div class="copy-url">
-        <button (click)="copyURL()" value="click to copy"><img [src]="shareIcon" alt="shareIcon | altText">Copy &amp; Share</button>
-        <p *ngIf="urlIsCopied">Page Address is Copied!</p>
-      </div>
       <div class="content" [innerHTML]="content | safeResource"></div>
       <app-blog-contact-details></app-blog-contact-details>
     </div>

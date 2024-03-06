@@ -1,24 +1,37 @@
-import { Component, OnInit, Renderer2 } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { GlobalDataService } from '../../global/global-data.service';
 import { Blog } from '../interface/blog';
 import { Router } from '@angular/router';
-import { HttpClient } from '@angular/common/http';
-import { distinctUntilChanged, take, tap } from 'rxjs';
-
+import { distinctUntilChanged, tap } from 'rxjs';
+import { ToolTipConfig } from '../../global/utils/directives/interfaces/tooltip';
+import { BlogService } from '../services/blog.service';
 @Component({
   selector: 'app-blog-article',
   templateUrl: './blog-article.component.html'
 })
 export class BlogArticleComponent implements OnInit {
   public article: Blog | undefined;
+  public averageReadingTime = 0;
+  public minuteOrMinutes = '';
   public blogIcon = '../../../assets/img/blog_icon.svg';
   public content = '';
   public urlIsCopied = false;
-  public shareIcon = '../../../assets/img/share_icon.svg'
+  public shareIcon = '../../../assets/img/share_icon.svg';
+  public toolTip: ToolTipConfig = {
+    toolTipTitle: 'Copy & Share',
+    text: 'Click the button to easily copy the page address to your clipboard. Then, you can share the link wherever you like.'
+  }
+  public readTimeToolTip: ToolTipConfig = {
+    toolTipTitle: 'Read Time Evaluation',
+    text: 'Using the Medium model, this offers an estimate of how long it takes to read this article.',
+    linkText: 'Read About it Here',
+    link: 'https://blog.medium.com/read-time-and-you-bc2048ab620c'
+  }
+
   public constructor(
     private _globalService: GlobalDataService,
     private _router: Router,
-    private _http: HttpClient
+    private _blogService: BlogService
   ) { }
 
   public ngOnInit(): void {
@@ -39,8 +52,9 @@ export class BlogArticleComponent implements OnInit {
 
   private getContent(): void {
     if (this.article) {
-      this._http.get(this.article.content, { responseType: "text" }).pipe(take(1)).subscribe(content => {
+      this._blogService.assignBlogContent(this.article).subscribe(content => {
         this.content = content;
+        this.convertHTMLToReadingTime(this.content.split(' ').length);
       });
     }
   }
@@ -48,5 +62,10 @@ export class BlogArticleComponent implements OnInit {
   public copyURL(): void {
     this.urlIsCopied = true;
     navigator.clipboard.writeText(`https://bensegni.github.io${this._router.url}`).then().catch(error => console.log(error));
+  }
+
+  private convertHTMLToReadingTime(wordCount: number): void {
+    this.averageReadingTime = this._blogService.setCountToAverageWPM(wordCount);
+    this.minuteOrMinutes = this._blogService.isItMinutesOrMinute(this.averageReadingTime);
   }
 }

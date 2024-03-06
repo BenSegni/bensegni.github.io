@@ -9,7 +9,7 @@ export const blogData: Blog[] = [
     description: 'How to use pipes to render icons for each value inside an array.',
     content: '../../../assets/blog-content/image-pipe.html',
     routeUrl: 'angular-pipes-for-images',
-    keywords: ['Angular', 'Typescript']
+    keywords: ['Angular', 'Typescript'],
   },
   {
     id: 2,
@@ -40,5 +40,15 @@ export const blogData: Blog[] = [
     content: '../../../assets/blog-content/svg.html',
     routeUrl: 'using-svg-as-component-templates',
     keywords: ['Angular', 'HTML5', 'Typescript']
+  },
+  {
+    id: 5,
+    coverImage: '../../../assets/blog-content/images/signals.png',
+    title: 'Angular Signals',
+    date: new Date('March 06, 2024 03:24:00'),
+    description: 'An simple implementation of Angular Signals.',
+    content: '../../../assets/blog-content/signals.html',
+    routeUrl: 'angular-signals',
+    keywords: ['Angular', 'Typescript']
   },
 ]

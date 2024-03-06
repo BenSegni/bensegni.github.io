@@ -7,7 +7,6 @@ import { BlogPostComponent } from './blog-post/blog-post.component';
 import { UtilsModule } from '../global/utils/utils.module';
 import { GlobalModule } from '../global/global.module';
 import { BlogArticlesComponent } from './blog-articles/blog-articles.component';
-import { HttpClientModule} from '@angular/common/http';
 import { SafeResourcePipe } from './utils/safe-resource.pipe';
 import { BlogContactDetailsComponent } from './blog-contact-details/blog-contact-details.component';
 
@@ -26,8 +25,7 @@ import { BlogContactDetailsComponent } from './blog-contact-details/blog-contact
     BlogRoutingModule,
     CommonModule,
     UtilsModule,
-    GlobalModule,
-    HttpClientModule
+    GlobalModule
   ]
 })
 export class BlogModule { }

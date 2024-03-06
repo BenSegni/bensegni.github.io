@@ -34,6 +34,7 @@ import { SynopsisHeaderDisplayComponent } from './pages/synopsis/synopsis-header
 import { SynopsisBackLinkComponent } from './pages/synopsis/synopsis-back-link/synopsis-back-link.component';
 import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-link/project-details-link.component';
 import { NpmComponent } from './pages/npm/npm.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -72,6 +73,7 @@ import { NpmComponent } from './pages/npm/npm.component';
     AppRoutingModule,
     AboutModule,
     UtilsModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
