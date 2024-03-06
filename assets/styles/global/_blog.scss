@@ -180,6 +180,7 @@ $grey-light: rgb(204, 204, 204);
       @include flex-center();
       justify-content: flex-start;
       font-size: .85rem;
+      margin: 0 0 1rem 0;
 
       .reading-time-tooltip {
         p {
