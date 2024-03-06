@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709758337246,
+  "timestamp": 1709758528832,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/681.07db2538ee3e066b.js",
+        "/681.37818816a1d5d9ee.js",
         "/index.html",
-        "/main.f43efc5cc1e12d94.js",
+        "/main.6987e3408f189968.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
-        "/runtime.f98d886cae2e25d4.js",
+        "/runtime.beb227db90d5e9dc.js",
         "/styles.c042a094f9826a9f.css"
       ],
       "patterns": []
@@ -247,7 +247,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/681.07db2538ee3e066b.js": "6eaeba692d066314319e40fe95edd9b69d1f8d6a",
+    "/681.37818816a1d5d9ee.js": "873321fa9c13b6acb1bf883fa95c56ed37363757",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
     "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
@@ -457,12 +457,12 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "b9479b3e932f7465f6a77968547182b22c6bcb53",
+    "/index.html": "bba69415a7167363e3822fc3c2687eef2a69e74e",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.f43efc5cc1e12d94.js": "c8f25f1b44815a091fff912a3022d0546da44642",
+    "/main.6987e3408f189968.js": "b80cd265afd94d43b80a221059ac04aec7deaf2c",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
-    "/runtime.f98d886cae2e25d4.js": "252f0741f581d2f7a0cf3aad1fcd413e54675cf4",
+    "/runtime.beb227db90d5e9dc.js": "c4f656097cea8adf299e98a946b8370065b9fe3b",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
     "/styles.c042a094f9826a9f.css": "1c6497dbec841b6920e60fa59dd0cc2be94b22db",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
