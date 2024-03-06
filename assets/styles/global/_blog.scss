@@ -2,7 +2,7 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  border-bottom: .125rem dotted $blue_1;
+  border-bottom: .0625rem dotted $blue_1;
 }
 
 @mixin mobile-article {
@@ -28,6 +28,16 @@
 @mixin code-snippet-color($color) {
   color: $color;
   font-weight: bold;
+}
+
+@mixin svg {
+  svg {
+    display: block;
+    height: 1rem;
+    width: 1rem;
+    border: none;
+    margin: auto .5rem auto auto;
+  }
 }
 
 $code-block: rgb(0, 39, 63);
@@ -167,6 +177,10 @@ $grey-light: rgb(204, 204, 204);
       color: $grey-light;
     }
 
+    .article-date {
+      border-bottom: .0625rem dotted $grey;
+    }
+
     img {
       border-radius: 0;
       width: 100%;
@@ -175,79 +189,86 @@ $grey-light: rgb(204, 204, 204);
       box-sizing: border-box;
     }
 
-    .article-reading-time-wrapper {
+    .article-information-bar {
       @include flex();
       @include flex-center();
       justify-content: flex-start;
-      font-size: .85rem;
-      margin: 0 0 1rem 0;
-
-      .reading-time-tooltip {
-        p {
-          padding: 1rem 0;
-        }
-      }
-
-      .article-reading-time {
-        @include flex();
-        justify-content: flex-start;
-        align-items: center;
-        color: $grey;
-
-        pre {
-          margin: 0 .5rem 0 .5rem;
-        }
-      }
-    }
-
-    .copy-url {
-      @include flex();
-      @include flex-center();
-      justify-content: flex-start;
+      @include flex-wrap();
       width: 100%;
-      margin: 2rem 0 0 0;
-      font-size: .75rem;
-      color: $grey-light;
+      margin-bottom: 1rem;
 
-      .copy-url-button {
-        cursor: pointer;
+      .article-reading-time-wrapper {
         @include flex();
         @include flex-center();
         justify-content: flex-start;
+        font-size: .85rem;
+        margin: 0;
+
+        .reading-time-tooltip {
+          margin-right: 1.5rem;
+
+          p {
+            padding: 1rem 0;
+          }
+        }
+
+        .article-reading-time {
+          @include flex();
+          justify-content: flex-start;
+          align-items: center;
+          color: $grey;
+
+          @include svg();
+
+          pre {
+            margin: 0 .5rem 0 .5rem;
+          }
+        }
+      }
+
+      .copy-url {
+        @include flex();
+        @include flex-center();
+        justify-content: flex-start;
+        margin: 0;
         font-size: .75rem;
         color: $grey-light;
-        background-color: $code-block;
-        border: .125rem solid $black;
-        font-family: inherit;
-        border-radius: .25rem;
-        margin-right: 1rem;
-        padding: .25rem .5rem;
 
-        &:hover {
-          background-color: $blue_1;
-          border: .125rem solid $code-block;
-          color: $white;
+        .copy-url-button {
+          cursor: pointer;
+          @include flex();
+          @include flex-center();
+          justify-content: flex-start;
+          font-size: .75rem;
+          color: $grey-light;
+          background-color: $code-block;
+          border: .0625rem solid $black;
+          font-family: inherit;
+          border-radius: .25rem;
+          margin-right: 1rem;
+          padding: .25rem .5rem;
+
+          &:hover {
+            background-color: $blue_1;
+            border: .0625rem solid $code-block;
+            color: $white;
+          }
+
+          @include svg();
         }
 
-        img {
-          height: 1rem;
-          width: 1rem;
-          border: none;
-          margin-right: .5rem;
+        .copy-url-message {
+          display: block;
+          margin: 0 0 0 1.35rem;
+          border: .0625rem solid $grey;
+          padding: .25rem .5rem;
+          border-radius: .25rem;
         }
-      }
 
-      .copy-url-message {
-        display: block;
-        margin: 0 0 0 1.35rem;
-        border: .125rem solid $grey;
-        padding: .25rem .5rem;
-        border-radius: .25rem;
-      }
-
-      .copy-url-tooltip {
-        p {
-          padding: 1rem 0;
+        .copy-url-tooltip {
+          p {
+            padding: 1rem 0;
+          }
         }
       }
     }

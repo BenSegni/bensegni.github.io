@@ -1,0 +1,150 @@
+<html>
+<p>
+  This article explores how to use <a href="https://angular.io/guide/signals" target="_blank">Angular
+    Signals</a>, a powerful feature that helps you manage data changes in your
+  applications. With Signals, you can:
+<ol>
+  <li><b>Capture data in state:</b> Signals act as containers for your data, keeping track of its current value.</li>
+  <li><b>Get notified about updates:</b> Whenever the data in a Signal changes, any part of your application that uses
+    it is
+    automatically notified. This eliminates the need for manual updates and ensures everyone is always working with the
+    latest information.</li>
+</ol>
+</p>
+<p>
+  For me, Signals have been a game-changer! They've made:
+<ol>
+  <li><b>Managing data display easier:</b> No more manual code updates; changes in the data automatically reflect in the
+    UI.
+  </li>
+  <li><b>Developing solutions faster:</b> Spend less time writing code to handle data changes and focus on building
+    amazing
+    features.</li>
+  <li><b>Code clearer and easier to understand:</b> Signals provide a clear picture of how data flows throughout your
+    application.</li>
+  <li>
+    <b> Performance improvements:</b> By notifying only the parts that need to update, Signals can improve the overall
+    performance of your application.
+  </li>
+</ol>
+</p>
+<p>Lets begin by creating a simple array of fruit strings as a constant:
+<pre class='typescript-code'>
+  <code>
+    <span class="code-gold">export</span> const <span class="code-blue">simpleData</span>: string[] = [
+      "Apple",
+      "Pear",
+      "Banana"
+    ]
+  </code>
+</pre>
+</p>
+<p>
+  We can use this simple data array as our basis for setting up the signal. I recommend setting the signal in it's own
+  shared service, so the singleton is the <mark>'one source of truth'</mark> when needing to update the signal:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">Injectable</span> } from <span class="code-red">'@angular/core'</span>;
+
+    <span class="code-red">@Injectable(</span>{
+      providedIn: 'root'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">someSharedDataService</span> {
+
+    }
+  </code>
+</pre>
+Lets create a writable signal:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">Injectable,WritableSignal,signal</span> } from <span class="code-red">'@angular/core'</span>;
+    import { <span class="code-red">simpleData</span> } from <span class="code-red">'./data'</span>;
+
+    <span class="code-red">@Injectable(</span>{
+      providedIn: 'root'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">SomeSharedDataService</span> {
+      public <span class="code-blue">data$:</span> <span class="code-red">WritableSignal<[]></span> = <span class="code-red">signal</span>(<span class="code-red">simpleData</span>);
+    }
+  </code>
+</pre>
+So, we've defined <mark>data$</mark> as a <mark>WritableSignal</mark> &amp; we then save it as a <mark>signal</mark> of
+<mark>simpleData</mark>. The property is public, so accessible wherever the new service is injected.
+</p>
+<p><b>Updating the signal somewhere in the application:</b> The next step to make, is to introduce the service into a
+  component, so we can update the data and thus, notify the signal of the changes.
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">Component, OnInit</span> } from <span class="code-red">'@angular/core'</span>;
+    import { <span class="code-red">SomeSharedDataService</span> } from <span class="code-red">'./some-shared-data.service'</span>;
+
+    <span class="code-red">@Component(</span>{
+      selector: 'app-some-component',
+      templateUrl: './some-component.component.html'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> {
+      public <span class="code-blue">data$:</span>[] = <span class="code-red">this._dataService.data$()</span>;
+
+      public constructor(private <span class="code-red">_dataService</span>: SomeSharedDataService) {}
+    }
+  </code>
+</pre>
+The signal has been added to the component via <b>dependency injection</b> and saved as a public property for <b>data
+  binding</b> in
+the template. You can iterate over the signal in the UI by simply doing <mark>*ngFor="let fruit of data$()"</mark> and
+the values should then display.
+</p>
+<p>Let's say we want to add a <mark>'Strawberry'</mark> to the string array by clicking a button in the UI, something
+  simple like: <mark>(click)="updateData('Strawberry')</mark>. The in the component we have something like:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">Component, OnInit</span> } from <span class="code-red">'@angular/core'</span>;
+    import { <span class="code-red">SomeSharedDataService</span> } from <span class="code-red">'./some-shared-data.service'</span>;
+
+    <span class="code-red">@Component(</span>{
+      selector: 'app-some-component',
+      templateUrl: './some-component.component.html'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> {
+      public <span class="code-blue">data$:</span> string[] = <span class="code-red">this._dataService.data$()</span>;
+
+      public constructor(private <span class="code-red">_dataService</span>: SomeSharedDataService) {}
+
+      public <span class="code-blue">updateData</span>(fruit: string):void {
+        console.log(fruit)
+      }
+    }
+  </code>
+</pre>
+Obviously, this is just going to <mark>console.log 'Strawberry'</mark>, so we need to make sure that we update the
+signal instead. Like this:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">Component, OnInit</span> } from <span class="code-red">'@angular/core'</span>;
+    import { <span class="code-red">SomeSharedDataService</span> } from <span class="code-red">'./some-shared-data.service'</span>;
+
+    <span class="code-red">@Component(</span>{
+      selector: 'app-some-component',
+      templateUrl: './some-component.component.html'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> {
+      public <span class="code-blue">data$:</span> string[] = <span class="code-red">this._dataService.data$()</span>;
+
+      public constructor(private <span class="code-red">_dataService</span>: SomeSharedDataService) {}
+
+      public <span class="code-blue">updateData</span>(fruit: string):void {
+        <span class="code-blue">return</span> <span class="code-red">this._dataService.data$</span>.<span class="code-pink">update</span>(<span class="code-gold">dataArray</span> => {
+          return [...<span class="code-gold">dataArray</span>, fruit];
+        });
+      }
+    }
+  </code>
+</pre>
+The method now takes the argument of <mark>'Strawberry'</mark> and then updates the <mark>data$</mark> property by
+notifying the signal using the <mark>.update</mark> method. You will see in the UI the list update. And there you have
+it! Wherever this
+array is being declared using this signal, the data will update with a new value of <mark>'Strawberry'</mark>.
+</p>
+<p>Happy coding... 😜</p>
+
+</html>
