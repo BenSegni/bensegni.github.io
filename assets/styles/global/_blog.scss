@@ -175,6 +175,30 @@ $grey-light: rgb(204, 204, 204);
       box-sizing: border-box;
     }
 
+    .article-reading-time-wrapper {
+      @include flex();
+      @include flex-center();
+      justify-content: flex-start;
+      font-size: .85rem;
+
+      .reading-time-tooltip {
+        p {
+          padding: 1rem 0;
+        }
+      }
+
+      .article-reading-time {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+        color: $grey;
+
+        pre {
+          margin: 0 .5rem 0 .5rem;
+        }
+      }
+    }
+
     .copy-url {
       @include flex();
       @include flex-center();
