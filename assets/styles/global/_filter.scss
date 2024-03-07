@@ -1,9 +1,10 @@
 .filter-wrapper {
   @include flex();
-  @include flex-column();
+  @include flex-wrap();
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
 
   .filter-button {
     @include flex();

@@ -94,8 +94,9 @@
     background-color: transparent;
     font-family: inherit;
     cursor: pointer;
-    margin-top: 1.5rem;
-
+    position: absolute;
+    top: 0;
+    right: 0;
 
     img {
       height: 2rem;
