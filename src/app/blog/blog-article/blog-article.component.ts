@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalDataService } from '../../global/global-data.service';
 import { Blog } from '../interface/blog';
-import { Router } from '@angular/router';
+import { NavigationStart, RouteConfigLoadStart, Router } from '@angular/router';
 import { distinctUntilChanged, tap } from 'rxjs';
 import { ToolTipConfig } from '../../global/utils/directives/interfaces/tooltip';
 import { BlogService } from '../services/blog.service';
@@ -37,15 +37,16 @@ export class BlogArticleComponent implements OnInit {
   ) { }
 
   public ngOnInit(): void {
-    let prevUrl = ''
+    let prevUrl = '';
+
     this._router.events.pipe(
       distinctUntilChanged(() => this._router.url === prevUrl),
       tap(() => prevUrl = this._router.url)
     ).subscribe(() => {
-      this.urlIsCopied = false;
-      this.assignBlogArticle(this._router.url);
+        this.urlIsCopied = false;
+        this.assignBlogArticle(this._router.url);
     });
-    //FIXME: find a way that the resource isn't called twice
+
     this.assignBlogArticle(this._router.url);
   }
 

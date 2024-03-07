@@ -1,9 +1,5 @@
 <h3 [innerText]="'Showcase'"></h3>
-<app-filter></app-filter>
-<button
-    class="layout-button"
-    (click)="changeViewLayout()"
-    [@fade]="columnLayout"><img
-    [src]="columnLayout ? grid : column " alt="screen display icon">
-</button>
+<div class="display-buttons">
+  <app-shared-filter [config]="filterConfig" [showLayout]="true" (emitLayout)="changeViewLayout($event)"></app-shared-filter>
+</div>
 <app-showcase-items [columnLayout]="columnLayout"></app-showcase-items>

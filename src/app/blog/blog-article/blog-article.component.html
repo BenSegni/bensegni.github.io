@@ -21,8 +21,10 @@
         </div>
       </div>
       <h4 [innerText]="'Technologies:'"></h4>
-      <app-skill-pills [skills]="article.keywords"></app-skill-pills>
+      <app-skill-pills [skills]="article.skills"></app-skill-pills>
       <div class="content" [innerHTML]="content | safeResource"></div>
+      <a class="back-link-bottom" routerLink=".."><img [src]="blogIcon" [alt]="blogIcon | altText"><span>Back to Blog
+        Articles</span></a>
       <app-blog-contact-details></app-blog-contact-details>
     </div>
     <div class="articles">

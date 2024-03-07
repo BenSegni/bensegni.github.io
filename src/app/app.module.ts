@@ -13,14 +13,12 @@ import { UtilsModule } from './global/utils/utils.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 import { GridDisplayComponent } from './pages/synopsis/grid-display/grid-display.component';
-import { LoadingGraphicComponent } from './pages/synopsis/loading-graphic/loading-graphic.component';
 import { ContactDetailsComponent } from './pages/contact/contact-details/contact-details.component';
 import { ProjectDetailsComponent } from './pages/showcase/project-details/project-details.component';
 import { GlobalModule } from './global/global.module';
 import { CurrentProjectHeaderComponent } from './pages/current-projects/current-project-header/current-project-header.component';
 import { CurrentProjectDetailComponent } from './pages/current-projects/current-project-detail/current-project-detail.component';
 import { CurrentProjectPresentationComponent } from './pages/current-projects/current-project-presentation/current-project-presentation.component';
-import { FilterComponent } from './pages/showcase/filter/filter.component';
 import { ShowcaseItemsComponent } from './pages/showcase/showcase-items/showcase-items.component';
 import { ReferencesComponent } from './pages/contact/references/references.component';
 import { CvDownloadComponent } from './pages/contact/cv-download/cv-download.component';
@@ -46,13 +44,11 @@ import { HttpClientModule } from '@angular/common/http';
     FeedbackLinkComponent,
     SynopsisComponent,
     GridDisplayComponent,
-    LoadingGraphicComponent,
     ContactDetailsComponent,
     ProjectDetailsComponent,
     CurrentProjectHeaderComponent,
     CurrentProjectDetailComponent,
     CurrentProjectPresentationComponent,
-    FilterComponent,
     ShowcaseItemsComponent,
     ReferencesComponent,
     CvDownloadComponent,

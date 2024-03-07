@@ -1,5 +1,8 @@
 <div class="blog">
   <h3 [innerText]="'Blog'"></h3>
+  <div class="display-buttons">
+    <app-shared-filter [config]="filterConfig"></app-shared-filter>
+  </div>
   <ng-container *ngIf="blog$">
     <app-blog-post *ngFor="let post of blog$()" [post]="post"></app-blog-post>
   </ng-container>

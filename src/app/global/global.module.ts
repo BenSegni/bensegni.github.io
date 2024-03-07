@@ -26,6 +26,8 @@ import { LocationIconComponent } from './icons/location-icon/location-icon.compo
 import { NpmIconComponent } from './icons/npm-icon/npm-icon.component';
 import { ShareIconComponent } from './icons/share-icon/share-icon.component';
 import { ClockIconComponent } from './icons/clock-icon/clock-icon.component';
+import { SharedFilterComponent } from './shared-filter/shared-filter.component';
+import { LoadingGraphicComponent } from './loading-graphic/loading-graphic.component';
 
 
 
@@ -54,7 +56,9 @@ import { ClockIconComponent } from './icons/clock-icon/clock-icon.component';
         LocationIconComponent,
         NpmIconComponent,
         ShareIconComponent,
-        ClockIconComponent
+        ClockIconComponent,
+        SharedFilterComponent,
+        LoadingGraphicComponent
     ],
     imports: [
         CommonModule,
@@ -81,7 +85,9 @@ import { ClockIconComponent } from './icons/clock-icon/clock-icon.component';
         LocationIconComponent,
         NpmIconComponent,
         ShareIconComponent,
-        ClockIconComponent
+        ClockIconComponent,
+        SharedFilterComponent,
+        LoadingGraphicComponent
     ]
 })
 export class GlobalModule { }

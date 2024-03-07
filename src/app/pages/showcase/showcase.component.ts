@@ -1,19 +1,34 @@
 import { Component } from '@angular/core';
-import { FadeInButton } from '../../global/utils/animations/fade.animation';
 import { Showcase } from './interface/showcase';
+import { TechnologyEnum } from '../../global/enum/technology.enum';
+import { GlobalDataService } from '../../global/global-data.service';
+import { showcaseData } from '../../global/data/showcase-data';
+import { FilterConfig } from '../../global/shared-filter/interface/filter.config';
 
 @Component({
-    selector: 'app-showcase',
-    templateUrl: './showcase.component.html',
-    animations: [FadeInButton()]
+  selector: 'app-showcase',
+  templateUrl: './showcase.component.html',
 })
 export class ShowcaseComponent {
-    public columnLayout = false;
-    public grid = '../../../assets/img/grid_icon.svg';
-    public column = '../../../assets/img/column_icon.svg'
-    public filteredShowcase: Showcase[] = [];
+  public columnLayout = false;
 
-    public changeViewLayout(): void {
-        this.columnLayout = !this.columnLayout;
-    }
+  public constructor(private _globalDataService: GlobalDataService) { }
+
+  public changeViewLayout(layout: boolean): void {
+    this.columnLayout = layout;
+  }
+
+  public filterConfig: FilterConfig<Showcase> = {
+    data: showcaseData,
+    listLength: showcaseData.length,
+    signalData: this._globalDataService.showcaseSignal$,
+    options: [
+      TechnologyEnum.Angular,
+      TechnologyEnum.Directus,
+      TechnologyEnum.HTML5,
+      TechnologyEnum.SASS,
+      TechnologyEnum.Typescript,
+    ],
+    resetValue: TechnologyEnum.UI,
+  }
 }

@@ -195,14 +195,62 @@
   }
 }
 
-@mixin back-link {
+@mixin code-background($color, $image, $text) {
+  border-left: 3px solid $color;
+  background-image: url('../../img/#{$image}');
+  background-repeat: no-repeat;
+  background-position: 1% 5%;
+  background-size: 1rem;
+
+  &:after {
+    font-family: 'Nunito', sans-serif;
+    color: $grey-light;
+    font-size: .75rem;
+    content: $text;
+  }
+}
+
+@mixin code-snippet-color($color) {
+  color: $color;
+  font-weight: bold;
+}
+
+@mixin back-link($bordertop: true) {
   @include flex();
   @include flex-center();
   @include full-width();
   justify-content: center;
   padding: 0 0 2rem 0;
   margin: 2rem auto 3rem auto;
-  border-bottom: 1px dotted $grey;
+
+  @if($bordertop) {
+    border-top: 1px dotted $grey;
+    padding: 2rem 0 0 0;
+
+    &:hover {
+      color: $white;
+      border-top: 1px dotted $grey;
+    }
+
+    &:visited {
+      border-top: 1px dotted $grey;
+    }
+  }
+
+  @else {
+    border-bottom: 1px dotted $grey;
+    padding: 0 0 2rem 0;
+
+    &:hover {
+      color: $white;
+      border-bottom: 1px dotted $grey;
+    }
+
+    &:visited {
+      border-bottom: 1px dotted $grey;
+    }
+  }
+
 
   img {
     height: 2rem;
@@ -212,15 +260,14 @@
     margin: 0 1rem 0 0;
   }
 
-  &:hover {
-    color: $white;
-    border-bottom: 1px dotted $grey;
-  }
+  // &:hover {
+  //   color: $white;
+  //   border-bottom: 1px dotted $grey;
+  // }
 
-  &:visited {
-    border-bottom: 1px dotted $grey;
-
-  }
+  // &:visited {
+  //   border-bottom: 1px dotted $grey;
+  // }
 }
 
 @mixin read-more {
@@ -240,5 +287,103 @@
   &:hover {
     color: $black_alpha_7;
     background-color: $white;
+  }
+}
+
+@mixin mobile-no-animation {
+  animation: none !important;
+}
+
+@mixin grid-context() {
+  @include grid();
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
+  @include showcase-grid-transition(0.5s);
+  @include span-90();
+
+  span {
+    .project-details {
+      .project-blurb {
+        @include flex-column();
+        justify-content: flex-start;
+        align-items: flex-start;
+        padding: 0 1rem 2rem 1rem;
+
+        a {
+          margin-left: auto;
+        }
+      }
+
+      .skill-pills-mini {
+        li {
+          @include flex-wrap();
+          margin-right: .5rem;
+        }
+      }
+    }
+  }
+
+  @include tablet {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include span-90();
+    @include mobile-no-animation();
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include span-90();
+    @include mobile-no-animation();
+  }
+
+  @include small-mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    @include span-90();
+    @include mobile-no-animation();
+  }
+
+  @include mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+  }
+
+  @include small-mobile {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    width: 100%;
+  }
+}
+
+@mixin mobile-projects {
+  @include span-90();
+  @include flex-column();
+}
+
+@mixin mobile-no-animation {
+  animation: none !important;
+}
+
+@mixin loading-graphic {
+  width: 100%;
+  height: 100vh;
+}
+
+@mixin mobile-height {
+  height: 15rem;
+}
+
+@mixin mobile-width {
+  @include tablet {
+    @include mobile-height();
+    @include span-90();
+  }
+
+  @include mobile {
+    @include mobile-height();
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include mobile-height();
+    @include span-90();
   }
 }

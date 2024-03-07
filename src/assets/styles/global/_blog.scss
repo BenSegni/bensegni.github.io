@@ -10,26 +10,6 @@
   padding: 0;
 }
 
-@mixin code-background($color, $image, $text) {
-  border-left: 3px solid $color;
-  background-image: url('../../img/#{$image}');
-  background-repeat: no-repeat;
-  background-position: 1% 5%;
-  background-size: 1rem;
-
-  &:after {
-    font-family: 'Nunito', sans-serif;
-    color: $grey-light;
-    font-size: .75rem;
-    content: $text;
-  }
-}
-
-@mixin code-snippet-color($color) {
-  color: $color;
-  font-weight: bold;
-}
-
 @mixin svg {
   svg {
     display: block;
@@ -40,35 +20,18 @@
   }
 }
 
-$code-block: rgb(0, 39, 63);
-$angular: rgb(234, 234, 234);
-$sass: rgb(235, 144, 190);
-$typescript: rgb(49, 120, 198);
-$html: rgb(228, 77, 38);
-$bold: rgb(188, 230, 111);
-$grey-light: rgb(204, 204, 204);
-
 .blog {
   width: 60vw;
 
-  @include tablet {
-    @include span-90();
+  .blog-grid-layout {
+    @include grid-context()
   }
-
-  @include mobile {
-    @include span-90();
-  }
-
-  @include small-mobile {
-    @include span-90();
-  }
-
 }
 
 .blog-post {
-  display: flex;
+  @include flex();
+  margin: 0 0 2rem 0;
   width: 100%;
-  margin-bottom: 2rem;
 
   .cover-image {
     display: block;
@@ -80,22 +43,26 @@ $grey-light: rgb(204, 204, 204);
     background-color: #000;
     margin-right: 1rem;
     margin-right: 2rem;
-    border: .25rem solid $black;
+    border: .5rem solid $black;
     box-sizing: border-box;
+
+    &:hover {
+      border-color: $black_alpha_7;;
+    }
 
     @include tablet {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
 
     @include mobile {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
 
     @include small-mobile {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
   }
 
@@ -116,6 +83,7 @@ $grey-light: rgb(204, 204, 204);
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
 
     p {
       font-size: .85rem;
@@ -135,6 +103,18 @@ $grey-light: rgb(204, 204, 204);
       margin-top: 1.5rem;
       @include read-more();
       margin-left: 0;
+    }
+
+    @include tablet {
+      padding: 1rem;
+    }
+
+    @include mobile {
+      padding: 1rem;
+    }
+
+    @include small-mobile {
+      padding: 1rem;
     }
   }
 
@@ -231,7 +211,7 @@ $grey-light: rgb(204, 204, 204);
         @include flex-center();
         justify-content: flex-start;
         margin: 0;
-        font-size: .75rem;
+        font-size: .85rem;
         color: $grey-light;
 
         .copy-url-button {
@@ -263,6 +243,14 @@ $grey-light: rgb(204, 204, 204);
           border: .0625rem solid $grey;
           padding: .25rem .5rem;
           border-radius: .25rem;
+
+          @include mobile {
+            display: none;
+          }
+
+          @include small-mobile {
+            display: none;
+          }
         }
 
         .copy-url-tooltip {
@@ -298,8 +286,13 @@ $grey-light: rgb(204, 204, 204);
     }
 
     .back-link {
-      @include back-link();
+      @include back-link(false);
       margin-bottom: 2rem;
+    }
+
+    .back-link-bottom {
+      @include back-link(true);
+      margin-top: 2rem;
     }
 
     @include tablet {
@@ -383,49 +376,6 @@ $grey-light: rgb(204, 204, 204);
     @include span-90();
     @include flex-column();
   }
-}
-
-pre {
-  display: block;
-  box-sizing: border-box;
-  background: $code-block;
-  border-left: 3px solid $blue_1;
-  color: $white;
-  page-break-inside: avoid;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  overflow: auto;
-  padding: .25rem;
-  word-wrap: break-word;
-  font-size: .75rem;
-
-  code {
-    display: block;
-    width: 100%;
-
-    xmp {
-      margin: 0;
-      white-space: none;
-    }
-  }
-
-  @include tablet {
-    padding: 1rem .5rem;
-  }
-
-  @include mobile {
-    padding: 1rem .5rem;
-  }
-
-  @include small-mobile {
-    padding: 1rem .5rem;
-  }
-}
-
-mark {
-  color: $grey-light;
-  background-color: $black-background;
-  padding: 0 .25rem;
 }
 
 .angular-code {

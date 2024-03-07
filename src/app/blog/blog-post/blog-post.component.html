@@ -1,11 +1,18 @@
 <div class="blog-post" *ngIf="post">
-  <div *ngIf="!blogMini" class="cover-image" [ngStyle]="{ 'background-image': 'url(' + post.coverImage + ')' }"></div>
+  <a *ngIf="!blogMini" [routerLink]="'./' + post.routeUrl" [state]="{ id: post.id }"
+    [attr.aria-label]="post.routeUrl">
+    <app-loading-graphic [graphicDimensions]="{ height: '19rem', width: '29rem', margin: '0 2rem 0 0' }" *ngIf="_globalService.isLoading"
+      [isLoading]="_globalService.isLoading"></app-loading-graphic>
+    <div *ngIf="!blogMini" class="cover-image"
+      [ngStyle]="{ 'background-image': 'url(' + post.coverImage + ')', 'display' : _globalService.isLoading ? 'none' : 'block' }">
+    </div>
+  </a>
   <div class="post-details">
     <h4 [ngStyle]="blogMini ? {'margin-bottom': '.75rem'} : {}">{{ post.title }}</h4>
     <p *ngIf="!blogMini"><small>Created: {{ post.date | date }}</small></p>
     <p *ngIf="!blogMini">{{ post.description }}</p>
     <h5 *ngIf="!blogMini" [innerText]="'Technologies:'"></h5>
-    <app-skill-pills [skills]="post.keywords" [showLink]="false"></app-skill-pills>
+    <app-skill-pills [skills]="post.skills" [showLink]="false"></app-skill-pills>
     <a *ngIf="!blogMini" [routerLink]="'./' + post.routeUrl" [state]="{ id: post.id }" [innerText]="'Read Article'"></a>
     <a *ngIf="blogMini" [routerLink]="'../' + post.routeUrl" [state]="{ id: post.id }" [innerText]="'Read Article'"></a>
   </div>

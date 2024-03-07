@@ -6,5 +6,5 @@ export interface Blog {
   description: string;
   content: string;
   routeUrl: string;
-  keywords: string[];
+  skills: string[];
 }

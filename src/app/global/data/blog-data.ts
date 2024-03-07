@@ -9,7 +9,7 @@ export const blogData: Blog[] = [
     description: 'How to use pipes to render icons for each value inside an array.',
     content: '../../../assets/blog-content/image-pipe.html',
     routeUrl: 'angular-pipes-for-images',
-    keywords: ['Angular', 'Typescript'],
+    skills: ['Angular', 'HTML5', 'Typescript'],
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ export const blogData: Blog[] = [
     description: 'A short example of using Parameters with SASS Mixins.',
     content: '../../../assets/blog-content/sass-params.html',
     routeUrl: 'sass-with-parameters',
-    keywords: ['SASS']
+    skills: ['HTML5','SASS']
   },
   {
     id: 3,
@@ -29,7 +29,7 @@ export const blogData: Blog[] = [
     description: 'An example of using guards to restrict user access during construction.',
     content: '../../../assets/blog-content/guards.html',
     routeUrl: 'under-construction-guards',
-    keywords: ['Angular', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript']
   },
   {
     id: 4,
@@ -39,7 +39,7 @@ export const blogData: Blog[] = [
     description: 'An example of how to use svg instead of html in angular components.',
     content: '../../../assets/blog-content/svg.html',
     routeUrl: 'using-svg-as-component-templates',
-    keywords: ['Angular', 'HTML5', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript']
   },
   {
     id: 5,
@@ -49,6 +49,16 @@ export const blogData: Blog[] = [
     description: 'An simple implementation of Angular Signals.',
     content: '../../../assets/blog-content/signals.html',
     routeUrl: 'angular-signals',
-    keywords: ['Angular', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript']
   },
+  {
+    id: 6,
+    coverImage: '../../../assets/blog-content/images/generics.png',
+    title: 'Generic Interfaces',
+    date: new Date('March 07, 2024 03:24:00'),
+    description: 'Using interfaces for shared components which require different data types.',
+    content: '../../../assets/blog-content/generic-interfaces.html',
+    routeUrl: 'generic-interfaces',
+    skills: ['Angular', 'HTML5', 'Typescript']
+  }
 ]

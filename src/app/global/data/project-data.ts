@@ -8,7 +8,7 @@ export const projectData: CurrentProject = {
             projectLogo: '../../assets/img/ba-seats.webp',
             projectTitle: 'British Airways Seats',
             projectDescription: '<p>Spearheading the Development Team, I have steered the technological direction and implementation for the product, ensuring an exceptional customer experience during the travel booking process.</p><p>My responsibilities have encompassed documenting the Product Architecture for Front End, Back End, and Cloud Solutions, leading to the definition of cutting-edge solutions such as Angular Custom Web Elements, NestJS Cloud-side applications, and AWS Solutions like Fargate.</p>',
-            skills: ['Angular', 'Cypress', 'HTML5', 'Jasmine', 'Jest', 'NestJS', 'NgRx', 'Pact', 'RxJs', 'SASS', 'Typescript']
+            skills: ['Angular', 'Cypress', 'Github', 'HTML5', 'Jasmine', 'Jest', 'NestJS', 'NgRx', 'Pact', 'RxJs', 'SASS', 'Typescript']
         },
         {
             projectLogo: '../../assets/img/mentoring.webp',
@@ -25,13 +25,13 @@ export const projectData: CurrentProject = {
             projectLogo: '../../assets/img/ba_help_centre_page.webp',
             projectTitle: 'Help Centre',
             projectDescription: '<p>Empowering the Help Team, I have played a pivotal role in spearheading robust QA strategies for local development and remote CI/CD processes, while actively exploring architectural and technical solutions for the front end. Additionally, I have been entrusted with generating POCs to guarantee thorough feature research and testing.</p>',
-            skills: ['Angular', 'HTML5', 'Jasmine', 'RxJs', 'SASS', 'Typescript']
+            skills: ['Angular', 'HTML5','Gitlab', 'Jasmine', 'RxJs', 'SASS', 'Typescript']
         },
         {
             projectLogo: '../../assets/img/permissions-centre.webp',
             projectTitle: 'Permissions Centre',
             projectDescription: '<p>Collaborating with the Key Developer, I am responsible for modernizing the Web2 Application, implementing rigorous testing standards, and delivering outstanding features as per the product specification.</p><p>To enhance project visibility, I have incorporated project management practices, including weekly sprint planning, bi-daily stand-ups, and regular demonstrations to key stakeholders.</p>',
-            skills: ['Angular', 'Cypress', 'HTML5', 'Jasmine', 'RxJs', 'SASS', 'Typescript']
+            skills: ['Angular', 'Cypress', 'Gitlab', 'HTML5', 'Jasmine', 'RxJs', 'SASS', 'Typescript']
         }
     ],
     presentationLink: 'https://docs.google.com/presentation/d/e/2PACX-1vTWecrHVC5qnJKA402Dxjr0oynVkMQkcQ8dcNFreZiBK3_bb-TndRgEgO7Xplys93wdeIUgIXppgPmN/pub?start=false&loop=false&delayms=3000'

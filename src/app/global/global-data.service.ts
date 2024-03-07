@@ -44,6 +44,7 @@ export class GlobalDataService {
     public isLoading = true;
     private delay$ = timer(1200);
     public showcaseFilterValue = '';
+    public filterValue = '';
 
     public onLoad(): void {
         this.delay$.pipe(take(1)).subscribe({

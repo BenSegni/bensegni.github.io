@@ -59,7 +59,7 @@ export class DOMCreatorService {
      * @param toolTip @type {( ToolTipConfig )}
      * @param el @type {( ElementRef )}
      */
-    public createIconElement(toolTip: ToolTipConfig, el: ElementRef<any>): void {
+    public createIconElement<T>(toolTip: ToolTipConfig, el: ElementRef<HTMLElement>): void {
         if (!toolTip) return;
         this.renderer.addClass(el.nativeElement, 'info-icon-wrapper');
         const iconElement: HTMLElement = this.createDOMElement('icon');

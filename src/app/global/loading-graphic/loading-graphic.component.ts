@@ -1,5 +1,11 @@
 import { Component, Input } from '@angular/core';
 
+interface Dimensions {
+  height: string;
+  width: string;
+  margin: string;
+}
+
 @Component({
   selector: 'app-loading-graphic',
   templateUrl: './loading-graphic.component.html',
@@ -8,5 +14,6 @@ import { Component, Input } from '@angular/core';
 export class LoadingGraphicComponent {
     @Input() isLoading = true;
     @Input() smallLoader = false;
+    @Input() graphicDimensions: Dimensions | undefined;
     public logo = '../../../assets/img/logo.svg';
 }
