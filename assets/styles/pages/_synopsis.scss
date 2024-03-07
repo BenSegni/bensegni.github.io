@@ -21,7 +21,7 @@
     @include flex;
     @include flex-column();
     @include flex-center();
-    @include synopsis-loading-background($black, .25rem);
+    @include synopsis-loading-background($black, .5rem);
     @include synopsis-image();
 
     .loading-graphic {
