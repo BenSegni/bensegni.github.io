@@ -23,6 +23,18 @@
 .blog {
   width: 60vw;
 
+  @include tablet {
+    @include span-90();
+  }
+
+  @include mobile {
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include span-90();
+  }
+
   .blog-grid-layout {
     @include grid-context()
   }

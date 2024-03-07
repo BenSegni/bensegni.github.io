@@ -3,6 +3,7 @@
 @mixin synopsis-loading-background($border-color, $border-width) {
     background-color: $black_alpha_7;
     border: $border-width solid $border-color;
+    box-sizing: border-box;
     margin-bottom: 2rem;
     position: relative;
 }
