@@ -1,0 +1,222 @@
+.filter-wrapper {
+  @include flex();
+  @include flex-column();
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  .filter-button {
+    @include flex();
+    max-width: 4rem;
+    justify-content: center;
+    align-items: center;
+    padding: .5rem 1rem;
+    background-color: $code-block;
+    border: 1px solid $white;
+    border-radius: 1rem;
+    cursor: pointer;
+    font-family: inherit;
+
+    &:hover {
+      background-color: $black;
+      color: $grey;
+    }
+
+    img {
+      height: auto;
+      width: 1.25rem;
+      border: 0;
+      border-radius: 0;
+      margin: 0;
+    }
+
+    @include tablet {
+      @include span-50();
+      margin-bottom: 2rem;
+    }
+
+    @include mobile {
+      @include span-90();
+      margin-bottom: 2rem;
+    }
+
+    @include small-mobile {
+      @include span-90();
+      margin-bottom: 2rem;
+    }
+
+    @include small-desktop {
+      @include span-50();
+      margin-bottom: 2rem;
+    }
+  }
+
+  .mobile-margin {
+    @include tablet {
+      margin-bottom: .75rem;
+    }
+
+    @include mobile {
+      margin-bottom: .75rem;
+    }
+
+    @include small-mobile {
+      margin-bottom: .75rem;
+    }
+
+    @include small-desktop {
+      margin-bottom: .75rem;
+    }
+  }
+
+  @keyframes grow {
+    from {
+      transform-origin: top center;
+      transform: scaleY(0);
+      opacity: 0;
+    }
+
+    to {
+      transform-origin: top center;
+      transform: scaleY(100%);
+      opacity: 1;
+    }
+  }
+
+  .showcase-type-dropdown {
+    @include flex();
+    @include flex-column();
+    width: 30vw;
+    z-index: 100;
+    animation: grow 1s;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    padding-top: .5rem;
+
+    li {
+      padding: .5rem .75rem;
+      border: 1px solid $white;
+      background-color: $black;
+      @include flex();
+      justify-content: center;
+      align-items: center;
+      border-radius: 10rem;
+      cursor: pointer;
+      margin-top: .5rem;
+
+      &:hover {
+        background-color: $black;
+        color: $grey;
+      }
+
+      button {
+        border: 0;
+        background-color: transparent;
+        color: $white;
+        @include flex();
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        width: 100%;
+        font-family: inherit;
+
+        &:hover {
+          color: $grey;
+        }
+
+        img {
+          height: 1rem;
+          width: 1rem;
+          margin: 0 auto 0 0;
+          border: 0;
+          border-radius: 0;
+        }
+      }
+    }
+
+    .reset {
+      background-color: $blue_1;
+      border: 1px solid $white;
+      border-radius: 10rem;
+      cursor: pointer;
+      font-family: inherit;
+
+      &:hover {
+        background-color: $black;
+        color: $grey;
+      }
+    }
+
+    @include tablet {
+      @include span-50();
+    }
+
+    @include mobile {
+      @include span-90();
+    }
+
+    @include small-mobile {
+      @include span-90();
+    }
+
+    @include small-desktop {
+      @include span-50();
+    }
+  }
+
+  .filter-result {
+    @include flex();
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: $grey;
+    margin: 1rem auto 0 auto;
+    border: 1px dotted $grey;
+    padding: 1rem 0;
+    font-style: italic;
+    background-color: $code-block;
+
+    @include tablet {
+      margin-bottom: 1.5rem;
+    }
+
+    @include mobile {
+      margin-bottom: 1.5rem;
+    }
+
+    @include small-mobile {
+      margin-bottom: 1.5rem;
+    }
+
+    @include small-desktop {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  span {
+    color: $white;
+    font-style: normal;
+    padding: 0 .0625rem;
+    margin: 0 .5rem;
+  }
+
+  .option {
+    @include flex();
+    align-items: center;
+
+    img {
+      height: 1rem;
+      width: auto;
+      margin: 0 .5rem 0 0;
+      border: 0;
+      border-radius: 0;
+    }
+
+    a {
+      @include content-link();
+    }
+  }
+}

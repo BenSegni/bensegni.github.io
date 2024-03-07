@@ -1,3 +1,6 @@
+@import './color';
+@import './responsive';
+
 @mixin grid {
     display: grid;
 }
@@ -70,4 +73,48 @@
 
 @mixin full-width {
     width: 100%;
+}
+
+@mixin mobile-hidden {
+  display: none;
+}
+
+.display-buttons {
+  @include flex();
+  @include flex-column();
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  position: relative;
+
+  .layout-button {
+    border: 0;
+    color: $white;
+    background-color: transparent;
+    font-family: inherit;
+    cursor: pointer;
+    margin-top: 1.5rem;
+
+
+    img {
+      height: 2rem;
+      width: auto;
+      border: none;
+      border-radius: 0;
+      margin: 0 auto;
+    }
+
+    @include tablet {
+      @include mobile-hidden();
+    }
+
+    @include mobile {
+      @include mobile-hidden();
+    }
+
+    @include small-mobile {
+      @include mobile-hidden();
+    }
+  }
 }

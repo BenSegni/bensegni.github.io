@@ -1,44 +1,44 @@
 @mixin showcase-view-transition($duration, $start, $finish) {
-    align-items: stretch;
-    transition: all 2s;
-    animation: transition-out 0.5s ease;
-    @include span-90();
+  animation: transition-out 0.5s ease;
+  align-items: stretch;
+  transition: all 2s;
+  @include span-90();
 
-    @keyframes transition-out {
-        0% {
-            width: $start;
-            flex-grow: $start;
-        }
-
-        100% {
-            @include span-90();
-            flex-grow: $finish;
-        }
+  @keyframes transition-out {
+    0% {
+      width: $start;
+      flex-grow: $start;
     }
+
+    100% {
+      @include span-90();
+      flex-grow: $finish;
+    }
+  }
 }
 
 @mixin showcase-grid-transition($duration) {
-    animation: grow-fixed $duration ease;
+  animation: grow-fixed $duration ease;
 
-    @keyframes grow-fixed {
-        0% {
-            width: 0;
+  @keyframes grow-fixed {
+    0% {
+      width: 0;
 
-            @include tablet {
-                @include mobile-no-animation();
-            }
+      @include tablet {
+        @include mobile-no-animation();
+      }
 
-            @include mobile {
-                @include mobile-no-animation();
-            }
+      @include mobile {
+        @include mobile-no-animation();
+      }
 
-            @include small-mobile {
-                @include mobile-no-animation();
-            }
-        }
-
-        100% {
-            @include span-90();
-        }
+      @include small-mobile {
+        @include mobile-no-animation();
+      }
     }
+
+    100% {
+      @include span-90();
+    }
+  }
 }

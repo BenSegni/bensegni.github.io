@@ -23,24 +23,15 @@
 .blog {
   width: 60vw;
 
-  @include tablet {
-    @include span-90();
+  .blog-grid-layout {
+    @include grid-context()
   }
-
-  @include mobile {
-    @include span-90();
-  }
-
-  @include small-mobile {
-    @include span-90();
-  }
-
 }
 
 .blog-post {
-  display: flex;
+  @include flex();
+  margin: 0 0 2rem 0;
   width: 100%;
-  margin: 1rem 0 2rem 0;
 
   .cover-image {
     display: block;
@@ -52,22 +43,26 @@
     background-color: #000;
     margin-right: 1rem;
     margin-right: 2rem;
-    border: .25rem solid $black;
+    border: .5rem solid $black;
     box-sizing: border-box;
+
+    &:hover {
+      border-color: $black_alpha_7;;
+    }
 
     @include tablet {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
 
     @include mobile {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
 
     @include small-mobile {
       width: 100%;
-      margin: 0 0 1rem 0;
+      margin: 0;
     }
   }
 
@@ -88,6 +83,7 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    width: 100%;
 
     p {
       font-size: .85rem;
@@ -107,6 +103,18 @@
       margin-top: 1.5rem;
       @include read-more();
       margin-left: 0;
+    }
+
+    @include tablet {
+      padding: 1rem;
+    }
+
+    @include mobile {
+      padding: 1rem;
+    }
+
+    @include small-mobile {
+      padding: 1rem;
     }
   }
 
