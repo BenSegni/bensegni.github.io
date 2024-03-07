@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1709770488466,
+  "timestamp": 1709814655624,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/681.42eec18503f0161a.js",
         "/index.html",
-        "/main.bc2fa0e40b9bc018.js",
+        "/main.92a155f5732e2585.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.f6085109b11665d2.js",
-        "/styles.1ccd1560a00d33c3.css"
+        "/styles.521684112e042eb7.css"
       ],
       "patterns": []
     },
@@ -30,8 +30,10 @@
       },
       "urls": [
         "/angular_logo.1808e02acbd75c03.svg",
+        "/assets/blog-content/generic-interfaces.html",
         "/assets/blog-content/guards.html",
         "/assets/blog-content/image-pipe.html",
+        "/assets/blog-content/images/generics.png",
         "/assets/blog-content/images/sass-mixin.png",
         "/assets/blog-content/images/signals.png",
         "/assets/blog-content/images/skill-pill.png",
@@ -251,8 +253,10 @@
   "hashTable": {
     "/681.42eec18503f0161a.js": "85315e08ac8efdd5870cb560b651b3ecfe254157",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
+    "/assets/blog-content/generic-interfaces.html": "a20f8b863c4bbe54513a2841a6979dd55231be3a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
     "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
+    "/assets/blog-content/images/generics.png": "f627c7b30b888f15adc33854f2cb4f9fb0132a3d",
     "/assets/blog-content/images/sass-mixin.png": "1f5decde32c1c51aa6256378d62bf0e442ff84fb",
     "/assets/blog-content/images/signals.png": "a5247e0324d97a062f5440accef3b46814fccbff",
     "/assets/blog-content/images/skill-pill.png": "e1af9cf664d4ca92e8b03a807384317feeb91a5b",
@@ -425,7 +429,7 @@
     "/assets/img/zen_desk_style_guide.webp": "966c4a774d41ca34b02912845e2c27bb327bd501",
     "/assets/styles/_browser.scss": "15f8a0e14cf9ba0d2409f5892b77f4b72296cb0e",
     "/assets/styles/_color.scss": "7ebfda7cccde4a1a9e4b76a53e31cb65c9fe947d",
-    "/assets/styles/_dom_elements.scss": "a8ef3dd78ac1308b053086bfce30fa83a8460b15",
+    "/assets/styles/_dom_elements.scss": "40ef69a5a168432ee12fdd07e1383ef243f2b029",
     "/assets/styles/_global.scss": "59d36fccef710e94fc6fa22220526d4a18dc1281",
     "/assets/styles/_images.scss": "c6b04858c396de7317520100298dad117781ad33",
     "/assets/styles/_imports.scss": "38be48c592f18debbae21a1f7697cc86f5030a3e",
@@ -460,15 +464,15 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "492296bc9e9a14229137e9baa6268d324e7e7243",
+    "/index.html": "da6c1859b0ce208313ebda098e9f1a74e01e624a",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.bc2fa0e40b9bc018.js": "f8ec2fd3e7e9546aed2839fc4006b1ac398a9d0a",
+    "/main.92a155f5732e2585.js": "a5eda087721aa7cf979af33417a9d24d87c00550",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.f6085109b11665d2.js": "1c72aad4963c02c73a9397367d2012cd7d6f0516",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.1ccd1560a00d33c3.css": "2c1b4a8adcc0f9426297cae27273e3ed09273df0",
+    "/styles.521684112e042eb7.css": "14c7a165b909c4baf579bed5da5a12284d7dd148",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [

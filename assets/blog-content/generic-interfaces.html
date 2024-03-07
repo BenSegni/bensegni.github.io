@@ -1,0 +1,95 @@
+<html>
+<p>
+  This article will outline how we can use interfaces for <b>reusable components</b> which require different data types
+  to be
+  passed in. This example looks at using a filter, with <a href="https://angular.io/guide/signals" target="_blank">signals</a>. The filter passes the chosen value and returns
+  items
+  based on that value.
+</p>
+<p>
+  So, lets start by creating a simple config for the filter:
+<pre class='typescript-code'>
+  <code>
+    import { <span class="code-red">WritableSignal</span> } from <span class="code-red">"@angular/core"</span>;
+
+    <span class="code-gold">export</span> interface <span class="code-blue">FilterConfig</span> {
+      data: Array<xmp><any></xmp>;
+      listLength: number;
+      signalData: <span class="code-red">WritableSignal</span><<xmp>Array<any></xmp>>;
+      options: string[];
+      resetValue: string;
+    }
+  </code>
+</pre>
+so, this interface is not the best. It's super basic, use of <mark>any</mark> and generally due to its non commitance to
+any type, makes it a bad contract.
+</p>
+<p><b>Let's make it better:</b>
+<pre class='typescript-code'>
+  <code>
+    import { <span class="code-red">WritableSignal</span> } from <span class="code-red">"@angular/core"</span>;
+
+    <span class="code-gold">export</span> interface <span class="code-blue">FilterConfig<xmp><T></xmp></span> {
+      data: Array<xmp><T></xmp>;
+      listLength: number;
+      signalData: <span class="code-red">WritableSignal</span><<xmp>Array<T></xmp>>;
+      options: string[];
+      resetValue: string;
+    }
+  </code>
+</pre>
+Note the use of <a href="https://www.typescriptlang.org/docs/handbook/2/generics.html" target="_blank">generics</a> for this contract. We have commited to data being an array, but we are saying it's an
+array,
+and when used, must be a certain <mark>Type</mark> of array. <b>Much more secure and committal</b>. The same when assigning a <a href="https://angular.io/guide/signals" target="_blank">signal</a> to the
+config. It's a <a href="https://angular.io/guide/signals" target="_blank">signals</a> array with a specific set of properties.
+</p>
+<p>
+  The contract is now in place, but we must now put it into use and the following will show you how this is done:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
+    import { <span class="code-pink">blogData</span> } from '../../global/data/blog-data';
+
+    <span class="code-gold">export</span> class <span class="code-red">BlogComponent</span> extends <span class="code-red">GlobalDataService</span> {
+
+      public filterConfig: <span class="code-red">FilterConfig</span><xmp><Blog></xmp> = {
+        data: <span class="code-pink">blogData</span>,
+        listLength: <span class="code-pink">blogData</span>.length, <span class="code-gold">// Array of <xmp><Blog></xmp></span>
+        signalData: this.blog$, <span class="code-gold">// taken from the service base class and a <span class="code-red">WritableSignal</span> of <xmp><Blog></xmp></span>
+        options: [
+          TechnologyEnum.Angular,
+          TechnologyEnum.HTML5,
+          TechnologyEnum.SASS,
+          TechnologyEnum.Typescript,
+        ],
+        resetValue: TechnologyEnum.HTML5,
+      }
+
+      <span class="code-gold">// inside the html template, we pass the config as an @Input()</span>
+
+      <xmp><app-shared-filter [config]="filterConfig"></app-shared-filter></xmp>
+    }
+  </code>
+</pre>
+then in another component across the application, we want to filter other types of data, we can set up our config like so:
+<pre class='angular-code'>
+  <code>
+    import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
+    import { <span class="code-pink">someData</span> } from '../../global/data/some-data';
+
+    <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> extends <span class="code-red">GlobalDataService</span> {
+
+      public filterConfig: <span class="code-red">FilterConfig</span><xmp><SomeOtherData></xmp> = {
+        data: <span class="code-pink">someData</span>,
+        listLength: <span class="code-pink">someData</span>.length, <span class="code-gold">// Array of <xmp><SomeOtherData></xmp></span>
+        signalData: this.someData$, <span class="code-gold">// taken from the service base class and a <span class="code-red">WritableSignal</span> of <xmp><SomeOtherData></xmp></span>
+        options: ['A', 'B', 'C'],
+        resetValue: 'A',
+      }
+    }
+  </code>
+</pre>
+and it'll work in exactly the same way, but filtering different lists of different data types. <b>Flexible</b>, but <b>typed</b>.
+</p>
+
+</html>
