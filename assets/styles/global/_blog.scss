@@ -51,20 +51,71 @@
     color: $grey;
     font-size: .85rem;
     margin-bottom: 2rem;
+  }
+}
 
-    .level {
-      @include flex();
-      justify-content: flex-start;
-      align-items: center;
+.level {
+  @include flex();
+  justify-content: flex-start;
+  align-items: center;
 
-      img {
-        border: 0;
-        border-radius: 0;
-        height: 1.5rem;
-        width: auto;
-        margin: 0 1rem 0 1rem;
-      }
-    }
+  img {
+    border: 0;
+    border-radius: 0;
+    height: 1.5rem;
+    width: auto;
+    margin: 0 1rem 0 1rem;
+  }
+
+  a {
+    @include content-link();
+    margin-right: .25rem;
+  }
+}
+
+.descriptions {
+  width: 60vw;
+  text-align: left;
+
+  h2 {
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .description-level {
+    padding: 2rem 0;
+    border-top: .0125rem dotted $grey;
+  }
+
+  .description-anchor {
+    padding-top: 5rem;
+    color: $grey;
+    font-size: .85rem;
+  }
+
+  @include tablet {
+    @include span-90();
+  }
+
+  @include mobile {
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include span-90();
+  }
+
+  .back-link {
+    @include back-link(false);
+    margin-bottom: 0;
+    padding: 0 0 1rem 0;
+  }
+
+  .back-link-bottom {
+    @include back-link(true);
+    margin-top: 0;
+    padding: 1rem 0 0 0;
   }
 }
 
@@ -322,10 +373,6 @@
         margin: 1rem 0;
       }
 
-      b {
-        color: $bold;
-      }
-
       small {
         display: block;
         width: 100%;
@@ -445,6 +492,10 @@
     border-radius: 0;
     margin: 0 .5rem 0 0;
   }
+}
+
+b {
+  color: $bold;
 }
 
 .angular-code {
