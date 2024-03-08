@@ -38,6 +38,34 @@
   .blog-grid-layout {
     @include grid-context()
   }
+
+  .blog-key {
+    color: $white;
+  }
+
+  .blog-key-wrapper {
+    @include flex();
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+    font-size: .85rem;
+    margin-bottom: 2rem;
+
+    .level {
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        border: 0;
+        border-radius: 0;
+        height: 1.5rem;
+        width: auto;
+        margin: 0 1rem 0 1rem;
+      }
+    }
+  }
 }
 
 .blog-post {
@@ -104,8 +132,19 @@
       margin: .5rem 0;
     }
 
-    h4 {
+    .post-title {
       @include blog-header();
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        border: 0;
+        border-radius: 0;
+        height: 1.5rem;
+        width: auto;
+        margin: 0 .5rem 0 0;
+      }
     }
 
     h5 {
@@ -114,7 +153,7 @@
 
     a {
       @include read-more();
-      margin-top: .5rem;
+      margin-top: 2.5rem;
       margin-left: 0;
     }
 
