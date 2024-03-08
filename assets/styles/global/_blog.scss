@@ -59,7 +59,8 @@
     box-sizing: border-box;
 
     &:hover {
-      border-color: $black_alpha_7;;
+      border-color: $black_alpha_7;
+      ;
     }
 
     @include tablet {
@@ -112,8 +113,8 @@
     }
 
     a {
-      margin-top: 1.5rem;
       @include read-more();
+      margin-top: .5rem;
       margin-left: 0;
     }
 
@@ -187,7 +188,6 @@
       justify-content: flex-start;
       @include flex-wrap();
       width: 100%;
-      margin-bottom: 1rem;
 
       .article-reading-time-wrapper {
         @include flex();
@@ -208,7 +208,7 @@
           @include flex();
           justify-content: flex-start;
           align-items: center;
-          color: $grey;
+          color: $white;
 
           @include svg();
 
@@ -387,6 +387,24 @@
   @include small-mobile {
     @include span-90();
     @include flex-column();
+  }
+}
+
+.level-icon {
+  @include flex();
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0 .5rem 0;
+  color: $grey;
+  font-size: .85rem;
+  width: 100%;
+
+  img {
+    height: 2rem !important;
+    width: auto !important;
+    border: 0;
+    border-radius: 0;
+    margin: 0 .5rem 0 0;
   }
 }
 
