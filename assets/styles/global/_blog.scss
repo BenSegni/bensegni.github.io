@@ -538,21 +538,35 @@ b {
 }
 
 .recent-blog-post {
-  width: 15vw;
+  @include flex();
+  @include flex-column();
+  width: 35vw;
   position: absolute;
-  top: 8rem;
-  right: 2rem;
+  top: 8.5rem;
+  right: 1rem;
   z-index: 800;
   background-color: $black_alpha_7;
   padding: 1.25rem;
   line-height: 2rem;
   text-align: left;
   font-size: .95rem;
+  border: .5rem solid $black;
+  box-sizing: border-box;
+  background-position: 100% 50%;
+  background-size: 60% auto;
+  background-repeat: no-repeat;
+  background-color: #000;
+
+  .recent-article-details {
+    @include flex();
+    @include flex-column();
+  }
 
   h3 {
+    color: $blue_1;
     text-align: left;
+    line-height: 1rem;
     padding: 0;
-    @include blog-header();
     margin: 0 0 .5rem 0;
   }
 
@@ -563,16 +577,17 @@ b {
   }
 
   p {
-    margin: .25rem 0;
+    margin: 0;
+    background-position: 10% 50%;
   }
 
   small {
+    color: $grey-light;
     border-bottom: .0125rem dotted $blue_1;
   }
 
   a {
     @include content-link();
-    margin-left: .5rem;
   }
 
   @include tablet {
