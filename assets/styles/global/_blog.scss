@@ -536,3 +536,54 @@ b {
 .code-orange {
   @include code-snippet-color($html);
 }
+
+.recent-blog-post {
+  width: 15vw;
+  position: absolute;
+  top: 8rem;
+  right: 2rem;
+  z-index: 800;
+  background-color: $black_alpha_7;
+  padding: 1.25rem;
+  line-height: 2rem;
+  text-align: left;
+  font-size: .95rem;
+
+  h3 {
+    text-align: left;
+    padding: 0;
+    @include blog-header();
+    margin: 0 0 .5rem 0;
+  }
+
+  h4 {
+    text-align: left;
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    margin: .25rem 0;
+  }
+
+  small {
+    border-bottom: .0125rem dotted $blue_1;
+  }
+
+  a {
+    @include content-link();
+    margin-left: .5rem;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include small-mobile {
+    display: none;
+  }
+}
