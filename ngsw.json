@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1710279982858,
+  "timestamp": 1710280597485,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.8aab6a9bcbd647d9.js",
-        "/styles.00e6e4977d73fa2c.css"
+        "/styles.b2b9f634dec0aec0.css"
       ],
       "patterns": []
     },
@@ -451,13 +451,13 @@
     "/assets/styles/global/_info_directive.scss": "06f8910675a972ef1176c61319d243834be6e3b2",
     "/assets/styles/global/_mixins.scss": "1ddb8d0b711f11ee24be84b73dc795ea0020af55",
     "/assets/styles/global/_modal.scss": "f8ac63ff607ecdc117ff9d1365ebd844af8bf262",
-    "/assets/styles/global/_navigation.scss": "df7fefaac2df62c13b0f7d53f9dc1126ea2454e8",
+    "/assets/styles/global/_navigation.scss": "9280512cad32992689031e56d4cd49045502dbf9",
     "/assets/styles/global/_page_header.scss": "d9dd831988ab9d276f40708682c9ba7dd8e51855",
     "/assets/styles/global/_presentation.link.scss": "eb6d33702b7e8deac4e93f4b64c282da04cbcbb9",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "f6cc79c3b5460ee5fc7191eed709571ea6357efd",
     "/assets/styles/pages/_404.scss": "77670ff3d2f46bd5ea348a01288a2a2f14cd703d",
-    "/assets/styles/pages/_about.scss": "8d9a01ccff11c39d6c4f4728634b6bb8f9ac5f20",
+    "/assets/styles/pages/_about.scss": "1c19b95eef9d466058436bafe590abc37aa3ccc3",
     "/assets/styles/pages/_about_mixins.scss": "3146ab374b0d74341274840e168e958ca8461694",
     "/assets/styles/pages/_contact.scss": "1ccc1bc9161b8eeeae99615208cd201a359fc6c1",
     "/assets/styles/pages/_current_project.scss": "f52cde1c7544fb6fe0b1338b18d824596b0d1abf",
@@ -472,7 +472,7 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "f4999fafafef48ca37eafaf5a78baad338c6d9a8",
+    "/index.html": "cbcfdbe7a4aad5e37e44b3fc37df9e85ba5fdb89",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.ad12efd3a89b1cbc.js": "b934b54d623b27ad14af0074e0296a2734b813a7",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
@@ -480,7 +480,7 @@
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.8aab6a9bcbd647d9.js": "2f5e689668bac21587e63e51f7cd4dc4626c1604",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.00e6e4977d73fa2c.css": "679f485ad392bc4819f597e7e42c89550e9debd7",
+    "/styles.b2b9f634dec0aec0.css": "9ad1abc4e8f4ae7e94401136eea165a969fcc7dd",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
