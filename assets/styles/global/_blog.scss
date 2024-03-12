@@ -51,6 +51,18 @@
     color: $grey;
     font-size: .85rem;
     margin-bottom: 2rem;
+
+    @include tablet {
+      @include flex-column();
+    }
+
+    @include mobile {
+      @include flex-column();
+    }
+
+    @include small-mobile {
+      @include flex-column();
+    }
   }
 }
 
@@ -70,6 +82,21 @@
   a {
     @include content-link();
     margin-right: .25rem;
+  }
+
+  @include tablet {
+    width: 100%;
+    margin: .25rem 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    margin: .25rem 0;
+  }
+
+  @include small-mobile {
+    width: 100%;
+    margin: .25rem 0;
   }
 }
 
@@ -138,7 +165,6 @@
 
     &:hover {
       border-color: $black_alpha_7;
-      ;
     }
 
     @include tablet {
