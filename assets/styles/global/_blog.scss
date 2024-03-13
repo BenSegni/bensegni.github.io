@@ -567,7 +567,7 @@ b {
   @include flex();
   width: 25vw;
   position: absolute;
-  top: 1.25rem;
+  top: 1.5rem;
   right: .5rem;
   z-index: 800;
   background-color: $black_alpha_7;
@@ -615,6 +615,8 @@ b {
 
   a {
     width: 100%;
+    line-height: 1rem;
+    @include content-link();
     justify-content: flex-end;
   }
 
