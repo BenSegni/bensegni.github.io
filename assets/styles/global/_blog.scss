@@ -53,14 +53,20 @@
 
     @include tablet {
       @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
     }
 
     @include mobile {
       @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
     }
 
     @include small-mobile {
       @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
     }
   }
 }
@@ -84,17 +90,17 @@
   }
 
   @include tablet {
-    width: 100%;
+    width: 95vw;
     margin: .25rem 0;
   }
 
   @include mobile {
-    width: 100%;
+    width: 95vw;
     margin: .25rem 0;
   }
 
   @include small-mobile {
-    width: 100%;
+    width: 95vw;
     margin: .25rem 0;
   }
 }
