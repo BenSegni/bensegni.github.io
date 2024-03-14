@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SynopsisBackLinkComponent } from './synopsis-back-link.component';
+import { AltTextPipe } from 'src/app/global/utils/pipes/alt-text.pipe';
 
 describe('SynopsisBackLinkComponent', () => {
   let component: SynopsisBackLinkComponent;
@@ -8,7 +9,7 @@ describe('SynopsisBackLinkComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SynopsisBackLinkComponent]
+      declarations: [SynopsisBackLinkComponent, AltTextPipe]
     });
     fixture = TestBed.createComponent(SynopsisBackLinkComponent);
     component = fixture.componentInstance;

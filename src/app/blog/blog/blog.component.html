@@ -4,6 +4,7 @@
     <app-shared-filter [config]="filterConfig"></app-shared-filter>
   </div>
   <ng-container *ngIf="blog$">
+    <app-blog-key></app-blog-key>
     <app-blog-post *ngFor="let post of blog$()" [post]="post"></app-blog-post>
   </ng-container>
 </div>

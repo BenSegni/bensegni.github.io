@@ -23,6 +23,7 @@ import { NPM } from '../pages/npm/interface/npm';
 import { npmPackageData } from './data/npm-package-data';
 import { Blog } from '../blog/interface/blog';
 import { blogData } from './data/blog-data';
+import { Stack } from './stack-list/interface/stack';
 
 @Injectable({
     providedIn: 'root'

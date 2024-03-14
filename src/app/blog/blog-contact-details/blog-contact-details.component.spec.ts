@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BlogContactDetailsComponent } from './blog-contact-details.component';
+import { LinkedinIconComponent } from '../../global/icons/linkedin-icon/linkedin-icon.component';
 
 describe('BlogContactDetailsComponent', () => {
   let component: BlogContactDetailsComponent;
@@ -8,7 +9,10 @@ describe('BlogContactDetailsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [BlogContactDetailsComponent]
+      declarations: [
+        BlogContactDetailsComponent,
+        LinkedinIconComponent
+      ]
     });
     fixture = TestBed.createComponent(BlogContactDetailsComponent);
     component = fixture.componentInstance;

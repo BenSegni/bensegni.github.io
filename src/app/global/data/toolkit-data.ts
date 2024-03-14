@@ -1,45 +1,45 @@
-import { ToolKit } from "../../pages/about/toolkit/interface/toolkit";
 import { ToolkitEnum } from "../enum/toolkit.enum";
+import { Stack } from "../stack-list/interface/stack";
 
-export const toolkitData: ToolKit[] = [
+export const toolkitData: Stack[] = [
     {
         name: ToolkitEnum.Illustrator,
-        type: ToolkitEnum.Design
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.InDesign,
-        type: ToolkitEnum.Design
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.Photoshop,
-        type: ToolkitEnum.Design
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.XD,
-        type: ToolkitEnum.Design
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.Docker,
-        type: ToolkitEnum.Development
+        purpose: ToolkitEnum.Development
     },
     {
         name: ToolkitEnum.Github,
-        type: ToolkitEnum.Development
+        purpose: ToolkitEnum.Development
     },
     {
         name: ToolkitEnum.Gitlab,
-        type: ToolkitEnum.Development
+        purpose: ToolkitEnum.Development
     },
     {
         name: ToolkitEnum.Inkscape,
-        type: ToolkitEnum.Design
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.Postman,
-        type: ToolkitEnum.Development
+        purpose: ToolkitEnum.Development
     },
     {
         name: ToolkitEnum.VSCode,
-        type: ToolkitEnum.Development
+        purpose: ToolkitEnum.Development
     }
 ]

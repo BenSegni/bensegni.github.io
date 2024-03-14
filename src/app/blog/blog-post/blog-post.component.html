@@ -1,14 +1,12 @@
 <div class="blog-post" *ngIf="post">
-  <a *ngIf="!blogMini" [routerLink]="'./' + post.routeUrl" [state]="{ id: post.id }"
-    [attr.aria-label]="post.routeUrl">
-    <app-loading-graphic [graphicDimensions]="{ height: '19rem', width: '29rem', margin: '0 2rem 0 0' }" *ngIf="_globalService.isLoading"
-      [isLoading]="_globalService.isLoading"></app-loading-graphic>
+  <a *ngIf="!blogMini" [routerLink]="'./' + post.routeUrl" [state]="{ id: post.id }" [attr.aria-label]="post.routeUrl">
     <div *ngIf="!blogMini" class="cover-image"
-      [ngStyle]="{ 'background-image': 'url(' + post.coverImage + ')', 'display' : _globalService.isLoading ? 'none' : 'block' }">
+      [ngStyle]="{ 'background-image': 'url(' + post.coverImage + ')' }">
     </div>
   </a>
   <div class="post-details">
-    <h4 [ngStyle]="blogMini ? {'margin-bottom': '.75rem'} : {}">{{ post.title }}</h4>
+    <h4 class="post-title" [ngStyle]="blogMini ? {'margin-bottom': '.75rem'} : {}"><img [src]="post.level | logo"
+        [alt]="post.level | logo | altText"> {{ post.title }}</h4>
     <p *ngIf="!blogMini"><small>Created: {{ post.date | date }}</small></p>
     <p *ngIf="!blogMini">{{ post.description }}</p>
     <h5 *ngIf="!blogMini" [innerText]="'Technologies:'"></h5>

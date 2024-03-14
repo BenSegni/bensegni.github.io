@@ -9,6 +9,7 @@ import { LogoPipe } from '../utils/pipes/logo.pipe';
 import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
 import { FilterLinkPipe } from '../utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BehanceIconComponent } from '../icons/behance-icon/behance-icon.component';
 
 describe('SiteBuildComponent', () => {
     let component: SiteBuildComponent;
@@ -25,7 +26,8 @@ describe('SiteBuildComponent', () => {
                 FilterPipe,
                 LogoPipe,
                 AltTextPipe,
-                FilterLinkPipe
+                FilterLinkPipe,
+                BehanceIconComponent
             ]
         });
         fixture = TestBed.createComponent(SiteBuildComponent);

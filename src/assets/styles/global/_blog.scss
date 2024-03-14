@@ -23,8 +23,148 @@
 .blog {
   width: 60vw;
 
+  @include tablet {
+    @include span-90();
+  }
+
+  @include mobile {
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include span-90();
+  }
+
   .blog-grid-layout {
     @include grid-context()
+  }
+
+  .blog-key {
+    color: $white;
+
+    @include tablet {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+
+    @include mobile {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+
+    @include small-mobile {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+  }
+
+  .blog-key-wrapper {
+    @include flex();
+    justify-content: center;
+    align-items: center;
+    color: $grey;
+    font-size: .85rem;
+    margin-bottom: 2rem;
+
+    @include tablet {
+      @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @include mobile {
+      @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
+    }
+
+    @include small-mobile {
+      @include flex-column();
+      justify-content: flex-start;
+      width: 100%;
+    }
+  }
+}
+
+.level {
+  @include flex();
+  justify-content: flex-start;
+  align-items: center;
+
+  img {
+    border: 0;
+    border-radius: 0;
+    height: 1.5rem;
+    width: auto;
+    margin: 0 1rem 0 1rem;
+  }
+
+  a {
+    @include content-link();
+    margin-right: .25rem;
+  }
+
+  @include tablet {
+    width: 95vw;
+    margin: .25rem 0;
+  }
+
+  @include mobile {
+    width: 95vw;
+    margin: .25rem 0;
+  }
+
+  @include small-mobile {
+    width: 95vw;
+    margin: .25rem 0;
+  }
+}
+
+.descriptions {
+  width: 60vw;
+  text-align: left;
+
+  h2 {
+    @include flex();
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .description-level {
+    padding: 2rem 0;
+    border-top: .0125rem dotted $grey;
+  }
+
+  .description-anchor {
+    color: $grey;
+    font-size: .85rem;
+  }
+
+  @include tablet {
+    @include span-90();
+  }
+
+  @include mobile {
+    @include span-90();
+  }
+
+  @include small-mobile {
+    @include span-90();
+  }
+
+  .back-link {
+    @include back-link(false);
+    margin-bottom: 0;
+    padding: 0 0 1rem 0;
+  }
+
+  .back-link-bottom {
+    @include back-link(true);
+    margin-top: 0;
+    padding: 1rem 0 0 0;
   }
 }
 
@@ -47,7 +187,7 @@
     box-sizing: border-box;
 
     &:hover {
-      border-color: $black_alpha_7;;
+      border-color: $black_alpha_7;
     }
 
     @include tablet {
@@ -91,8 +231,19 @@
       margin: .5rem 0;
     }
 
-    h4 {
+    .post-title {
       @include blog-header();
+      @include flex();
+      justify-content: flex-start;
+      align-items: center;
+
+      img {
+        border: 0;
+        border-radius: 0;
+        height: 1.5rem;
+        width: auto;
+        margin: 0 .5rem 0 0;
+      }
     }
 
     h5 {
@@ -100,8 +251,8 @@
     }
 
     a {
-      margin-top: 1.5rem;
       @include read-more();
+      margin-top: 2.5rem;
       margin-left: 0;
     }
 
@@ -175,7 +326,6 @@
       justify-content: flex-start;
       @include flex-wrap();
       width: 100%;
-      margin-bottom: 1rem;
 
       .article-reading-time-wrapper {
         @include flex();
@@ -196,7 +346,7 @@
           @include flex();
           justify-content: flex-start;
           align-items: center;
-          color: $grey;
+          color: $white;
 
           @include svg();
 
@@ -269,10 +419,6 @@
       ol {
         padding: 1rem;
         margin: 1rem 0;
-      }
-
-      b {
-        color: $bold;
       }
 
       small {
@@ -378,6 +524,28 @@
   }
 }
 
+.level-icon {
+  @include flex();
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1rem 0 .5rem 0;
+  color: $grey;
+  font-size: .85rem;
+  width: 100%;
+
+  img {
+    height: 2rem !important;
+    width: auto !important;
+    border: 0;
+    border-radius: 0;
+    margin: 0 .5rem 0 0;
+  }
+}
+
+b {
+  color: $bold;
+}
+
 .angular-code {
   @include code-background($angular, 'angular_logo.svg', 'Angular');
 }
@@ -416,4 +584,74 @@
 
 .code-orange {
   @include code-snippet-color($html);
+}
+
+.recent-blog-post {
+  @include flex();
+  width: 25vw;
+  position: absolute;
+  top: 1.5rem;
+  right: .5rem;
+  z-index: 800;
+  background-color: $white;
+  padding: .75rem;
+  line-height: 2rem;
+  text-align: left;
+  font-size: .85rem;
+  border-radius: 5rem;
+  box-sizing: border-box;
+  background-position: -25% 50%;
+  background-size: 40% auto;
+  background-repeat: no-repeat;
+  background-color: $black_alpha_7;
+
+  .recent-article-details {
+    @include flex();
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  h3 {
+    line-height: 1rem;
+    padding: 0;
+    margin: 0 1rem 0 0;
+  }
+
+  h4 {
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+
+  p {
+    margin: 0;
+    background-position: 10% 50%;
+  }
+
+  small {
+    color: $grey-light;
+    border-bottom: .0125rem dotted $blue_1;
+    margin-left: .5rem;
+  }
+
+  a {
+    width: 100%;
+    line-height: 1rem;
+    @include content-link();
+    justify-content: flex-end;
+  }
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+
+  @include small-mobile {
+    display: none;
+  }
 }

@@ -9,6 +9,10 @@ import { GlobalModule } from '../global/global.module';
 import { BlogArticlesComponent } from './blog-articles/blog-articles.component';
 import { SafeResourcePipe } from './utils/safe-resource.pipe';
 import { BlogContactDetailsComponent } from './blog-contact-details/blog-contact-details.component';
+import { BlogKeyComponent } from './blog-key/blog-key.component';
+import { BlogKeyLevelIconComponent } from './blog-key-level-icon/blog-key-level-icon.component';
+import { BlogLevelDescriptionsComponent } from './blog-level-descriptions/blog-level-descriptions.component';
+import { AnchorPipe } from './utils/anchor.pipe';
 
 
 
@@ -20,6 +24,10 @@ import { BlogContactDetailsComponent } from './blog-contact-details/blog-contact
     BlogArticlesComponent,
     SafeResourcePipe,
     BlogContactDetailsComponent,
+    BlogKeyComponent,
+    BlogKeyLevelIconComponent,
+    BlogLevelDescriptionsComponent,
+    AnchorPipe,
   ],
   imports: [
     BlogRoutingModule,

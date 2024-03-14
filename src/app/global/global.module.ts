@@ -28,6 +28,8 @@ import { ShareIconComponent } from './icons/share-icon/share-icon.component';
 import { ClockIconComponent } from './icons/clock-icon/clock-icon.component';
 import { SharedFilterComponent } from './shared-filter/shared-filter.component';
 import { LoadingGraphicComponent } from './loading-graphic/loading-graphic.component';
+import { RecentBlogPostComponent } from './recent-blog-post/recent-blog-post.component';
+import { StackListComponent } from './stack-list/stack-list.component';
 
 
 
@@ -58,12 +60,14 @@ import { LoadingGraphicComponent } from './loading-graphic/loading-graphic.compo
         ShareIconComponent,
         ClockIconComponent,
         SharedFilterComponent,
-        LoadingGraphicComponent
+        LoadingGraphicComponent,
+        StackListComponent
     ],
     imports: [
         CommonModule,
         UtilsModule,
-        RouterModule
+        RouterModule,
+        RecentBlogPostComponent
     ],
     exports: [
         FooterComponent,
@@ -87,7 +91,8 @@ import { LoadingGraphicComponent } from './loading-graphic/loading-graphic.compo
         ShareIconComponent,
         ClockIconComponent,
         SharedFilterComponent,
-        LoadingGraphicComponent
+        LoadingGraphicComponent,
+        StackListComponent
     ]
 })
 export class GlobalModule { }

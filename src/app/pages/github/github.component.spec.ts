@@ -9,6 +9,7 @@ import { LogoPipe } from '../../global/utils/pipes/logo.pipe';
 import { AltTextPipe } from '../../global/utils/pipes/alt-text.pipe';
 import { FilterLinkPipe } from '../../global/utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { GithubIconComponent } from '../../global/icons/github-icon/github-icon.component';
 
 describe('GithubComponent', () => {
     let component: GithubComponent;
@@ -25,7 +26,8 @@ describe('GithubComponent', () => {
                 FilterPipe,
                 LogoPipe,
                 AltTextPipe,
-                FilterLinkPipe
+                FilterLinkPipe,
+                GithubIconComponent
             ]
         });
         fixture = TestBed.createComponent(GithubComponent);

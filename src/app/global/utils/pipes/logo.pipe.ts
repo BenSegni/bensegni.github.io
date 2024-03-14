@@ -2,6 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { TechnologyEnum } from '../../enum/technology.enum';
 import { LogoEnum } from '../../enum/logo.enum';
 import { ToolkitEnum } from '../../enum/toolkit.enum';
+import { LevelEnum } from '../../../blog/enum/level.enum';
 
 @Pipe({
   name: 'logo'
@@ -38,6 +39,10 @@ export class LogoPipe implements PipeTransform {
       case value.includes(ToolkitEnum.Photoshop): return LogoEnum.Photoshop;
       case value.includes(ToolkitEnum.XD): return LogoEnum.XD;
       case value.includes(ToolkitEnum.VSCode): return LogoEnum.VSCode;
+      //levels
+      case value.includes(LevelEnum.Beginner): return LogoEnum.Beginner;
+      case value.includes(LevelEnum.Experienced): return LogoEnum.Experienced;
+      case value.includes(LevelEnum.Intermediate): return LogoEnum.Intermediate;
       default: return LogoEnum.Logo
     }
   }

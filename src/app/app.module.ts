@@ -33,6 +33,7 @@ import { SynopsisBackLinkComponent } from './pages/synopsis/synopsis-back-link/s
 import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-link/project-details-link.component';
 import { NpmComponent } from './pages/npm/npm.component';
 import { HttpClientModule } from '@angular/common/http';
+import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
 
 @NgModule({
   declarations: [
@@ -73,7 +74,8 @@ import { HttpClientModule } from '@angular/common/http';
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    RecentBlogPostComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,4 +7,5 @@ export interface Blog {
   content: string;
   routeUrl: string;
   skills: string[];
+  level: string;
 }

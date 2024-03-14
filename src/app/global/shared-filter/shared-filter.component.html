@@ -9,7 +9,7 @@
   <button *ngIf="showLayout" class="layout-button" (click)="changeViewLayout()" [@fade]="columnLayout"><img
       [src]="columnLayout ? grid : column " alt="screen display icon">
   </button>
-  <p class="filter-result" *ngIf="filteredLength">Showing <span>{{ filteredLength }}</span> of a total <span>{{
+  <p class="filter-result" *ngIf="filteredLength">Showing <span>{{ filteredLength }}</span> of <span>{{
       config.listLength }}</span> items <ng-container *ngIf="selectedOption">filtering <span class="option"><img
           [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a
             [href]="selectedOption | filterLink" target="_blank" [attr.aria-label]="selectedOption + 'link'">{{

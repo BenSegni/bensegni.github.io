@@ -4,6 +4,8 @@ import { TechStackComponent } from './tech-stack.component';
 import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
 import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
 import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
+import { StackListComponent } from '../../../global/stack-list/stack-list.component';
+import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
 
 describe('TechStackComponent', () => {
   let component: TechStackComponent;
@@ -11,7 +13,7 @@ describe('TechStackComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TechStackComponent, LogoPipe, AltTextPipe, PillPipe]
+      declarations: [TechStackComponent, LogoPipe, AltTextPipe, PillPipe, StackListComponent, FilterLinkPipe]
     });
     fixture = TestBed.createComponent(TechStackComponent);
     component = fixture.componentInstance;

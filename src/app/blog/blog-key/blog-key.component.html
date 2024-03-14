@@ -1,0 +1,6 @@
+<ng-container *ngIf="levels">
+  <p class="blog-key-wrapper">
+    <span class="blog-key"><strong [innerText]="'Key:'"></strong></span>
+    <app-blog-key-level-icon *ngFor="let level of blogLevels" [level]="level"></app-blog-key-level-icon>
+  </p>
+</ng-container>

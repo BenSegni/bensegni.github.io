@@ -12,6 +12,7 @@ import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { Showcase } from '../interface/showcase';
 import { Router } from '@angular/router';
+import { ProjectDetailsLinkComponent } from '../project-details-link/project-details-link.component';
 
 describe('ShowcaseItemsComponent', () => {
     let component: ShowcaseItemsComponent;
@@ -28,7 +29,8 @@ describe('ShowcaseItemsComponent', () => {
                 FilterPipe,
                 LogoPipe,
                 AltTextPipe,
-                FilterLinkPipe
+                FilterLinkPipe,
+                ProjectDetailsLinkComponent
             ]
         });
         fixture = TestBed.createComponent(ShowcaseItemsComponent);

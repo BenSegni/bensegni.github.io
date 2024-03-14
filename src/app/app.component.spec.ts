@@ -12,8 +12,13 @@ import { PrivacyPolicyLogoComponent } from './global/privacy-policy-logo/privacy
 import { AltTextPipe } from './global/utils/pipes/alt-text.pipe';
 import { NavigationStart, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { NO_ERRORS_SCHEMA } from '@angular/core';
 import { routes } from './app-routing.module';
+import { BehanceIconComponent } from './global/icons/behance-icon/behance-icon.component';
+import { GithubIconComponent } from './global/icons/github-icon/github-icon.component';
+import { LinkedinIconComponent } from './global/icons/linkedin-icon/linkedin-icon.component';
+import { NpmIconComponent } from './global/icons/npm-icon/npm-icon.component';
+import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
+import { LocationIconComponent } from './global/icons/location-icon/location-icon.component';
 
 class MockRouter {
     public ne = new NavigationStart(0, 'http://localhost:4200/about');
@@ -29,7 +34,7 @@ describe('AppComponent', () => {
 
     beforeEach(() => {
         TestBed.configureTestingModule({
-            imports: [RouterTestingModule.withRoutes(routes)],
+            imports: [RouterTestingModule.withRoutes(routes), RecentBlogPostComponent],
             declarations: [
                 AppComponent,
                 SocialMediaComponent,
@@ -40,8 +45,13 @@ describe('AppComponent', () => {
                 ScrollComponent,
                 LoadingIconComponent,
                 PrivacyPolicyLogoComponent,
-                AltTextPipe
-            ],
+                AltTextPipe,
+                BehanceIconComponent,
+                GithubIconComponent,
+                LinkedinIconComponent,
+                NpmIconComponent,
+                LocationIconComponent
+            ]
         });
 
         fixture = TestBed.createComponent(AppComponent);

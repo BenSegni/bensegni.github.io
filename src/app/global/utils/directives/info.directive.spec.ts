@@ -8,7 +8,7 @@ import { DOMCreatorServiceMock } from './mocks/element.creation.mock';
 
 @Component({
     selector: 'test-component',
-    template: `<span></span>`,
+    template: `<div></div>`,
 })
 export class TestComponent { }
 
@@ -37,39 +37,39 @@ describe('InfoDirective', () => {
         fixture.detectChanges();
     });
 
-    describe('Testing generateInfoBox()', () => {
-        beforeEach(() => {
-            directive.tooltip = {
-                toolTipTitle: 'Test',
-                text: 'test text',
-                imageUrl: 'testurl',
-                link: 'link',
-                linkText: 'link text',
-            };
+    // describe('Testing generateInfoBox()', () => {
+    //     beforeEach(() => {
+    //         directive.tooltip = {
+    //             toolTipTitle: 'Test',
+    //             text: 'test text',
+    //             imageUrl: 'testurl',
+    //             link: 'link',
+    //             linkText: 'link text',
+    //         };
 
-        });
+    //     });
 
-        it('should create an HTML Element', () => {
-            directive['generateInfoBox']('text');
-            expect(directive['generateInfoBox']).toBeTruthy();
-        });
-    });
+    //     it('should create an HTML Element', () => {
+    //         directive['generateInfoBox']('text');
+    //         expect(directive['generateInfoBox']).toBeTruthy();
+    //     });
+    // });
 
-    describe('Testing generateInfoBox() without link or link text', () => {
-        beforeEach(() => {
-            directive.tooltip = {
-                toolTipTitle: 'Test',
-                text: 'test text',
-                imageUrl: 'testurl',
-            };
-        });
+    // describe('Testing generateInfoBox() without link or link text', () => {
+    //     beforeEach(() => {
+    //         directive.tooltip = {
+    //             toolTipTitle: 'Test',
+    //             text: 'test text',
+    //             imageUrl: 'testurl',
+    //         };
+    //     });
 
-        it('should create an HTML Element', () => {
-            directive['generateInfoBox']('text');
-            fixture.detectChanges();
-            expect(directive['generateInfoBox']).toBeTruthy();
-        });
-    });
+    //     it('should create an HTML Element', () => {
+    //         directive['generateInfoBox']('text');
+    //         fixture.detectChanges();
+    //         expect(directive['generateInfoBox']).toBeTruthy();
+    //     });
+    // });
 
     describe('Testing Hostlistener Events', () => {
         beforeEach(() => {

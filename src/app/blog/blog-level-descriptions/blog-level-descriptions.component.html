@@ -1,0 +1,28 @@
+<div class="descriptions">
+  <a class="back-link" routerLink="..">
+    <img [src]="blogIcon" [alt]="blogIcon | altText">
+    <span [innerText]="'Back to Blog Articles'"></span>
+  </a>
+  <h3 [innerText]="'Blog Level Descriptions'"></h3>
+  <ng-container *ngIf="blogDescriptionData">
+    <ng-container *ngFor="let data of blogDescriptionData">
+      <div class="description-anchor" [id]="data.anchor">
+        <p>{{ data.anchor | anchor }}</p>
+      </div>
+      <div class="description-level">
+        <h2><app-blog-key-level-icon [isInternal]="true" [level]="data.level"></app-blog-key-level-icon>{{ data.level +
+          ' Level'}}</h2>
+        <p>
+          <b>Experienced Articles should look like:</b>
+        </p>
+        <ol>
+          <li *ngFor="let feature of data.features" [innerHTML]="feature"></li>
+        </ol>
+      </div>
+    </ng-container>
+  </ng-container>
+  <a class="back-link-bottom" routerLink="..">
+    <img [src]="blogIcon" [alt]="blogIcon | altText">
+    <span [innerText]="'Back to Blog Articles'"></span>
+  </a>
+</div>

@@ -5,9 +5,10 @@ import { UtilsModule } from '../../global/utils/utils.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProjectDetailsComponent } from './project-details/project-details.component';
 import { RouterTestingModule } from '@angular/router/testing';
-import { FilterComponent } from './filter/filter.component';
 import { ShowcaseItemsComponent } from './showcase-items/showcase-items.component';
 import { SkillPillsComponent } from '../../global/skill-pills/skill-pills.component';
+import { SharedFilterComponent } from '../../global/shared-filter/shared-filter.component';
+import { ProjectDetailsLinkComponent } from './project-details-link/project-details-link.component';
 
 describe('ShowcaseComponent', () => {
     let component: ShowcaseComponent;
@@ -16,7 +17,14 @@ describe('ShowcaseComponent', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({
             imports: [UtilsModule, BrowserAnimationsModule, RouterTestingModule],
-            declarations: [ShowcaseComponent, ProjectDetailsComponent, FilterComponent, ShowcaseItemsComponent, SkillPillsComponent]
+            declarations: [
+              ShowcaseComponent,
+              ProjectDetailsComponent,
+              ShowcaseItemsComponent,
+              SkillPillsComponent,
+              SharedFilterComponent,
+              ProjectDetailsLinkComponent
+            ]
         });
         fixture = TestBed.createComponent(ShowcaseComponent);
         component = fixture.componentInstance;
@@ -26,11 +34,4 @@ describe('ShowcaseComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
-
-    describe('Testing changeViewLayout()', () => {
-        it('should change column Layout using boolean', () => {
-            component.changeViewLayout();
-            expect(component.columnLayout).toBeTruthy();
-        })
-    })
 });

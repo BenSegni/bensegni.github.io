@@ -1,3 +1,4 @@
+import { LevelEnum } from "../../blog/enum/level.enum";
 import { Blog } from "../../blog/interface/blog";
 
 export const blogData: Blog[] = [
@@ -10,6 +11,7 @@ export const blogData: Blog[] = [
     content: '../../../assets/blog-content/image-pipe.html',
     routeUrl: 'angular-pipes-for-images',
     skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Experienced
   },
   {
     id: 2,
@@ -19,7 +21,8 @@ export const blogData: Blog[] = [
     description: 'A short example of using Parameters with SASS Mixins.',
     content: '../../../assets/blog-content/sass-params.html',
     routeUrl: 'sass-with-parameters',
-    skills: ['HTML5','SASS']
+    skills: ['HTML5','SASS'],
+    level: LevelEnum.Beginner
   },
   {
     id: 3,
@@ -29,7 +32,8 @@ export const blogData: Blog[] = [
     description: 'An example of using guards to restrict user access during construction.',
     content: '../../../assets/blog-content/guards.html',
     routeUrl: 'under-construction-guards',
-    skills: ['Angular', 'HTML5', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Intermediate
   },
   {
     id: 4,
@@ -39,7 +43,8 @@ export const blogData: Blog[] = [
     description: 'An example of how to use svg instead of html in angular components.',
     content: '../../../assets/blog-content/svg.html',
     routeUrl: 'using-svg-as-component-templates',
-    skills: ['Angular', 'HTML5', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Beginner
   },
   {
     id: 5,
@@ -49,7 +54,8 @@ export const blogData: Blog[] = [
     description: 'An simple implementation of Angular Signals.',
     content: '../../../assets/blog-content/signals.html',
     routeUrl: 'angular-signals',
-    skills: ['Angular', 'HTML5', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Intermediate
   },
   {
     id: 6,
@@ -59,6 +65,7 @@ export const blogData: Blog[] = [
     description: 'Using interfaces for shared components which require different data types.',
     content: '../../../assets/blog-content/generic-interfaces.html',
     routeUrl: 'generic-interfaces',
-    skills: ['Angular', 'HTML5', 'Typescript']
+    skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Experienced
   }
 ]

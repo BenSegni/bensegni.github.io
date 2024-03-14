@@ -1,10 +1,1 @@
-<h3 [innerText]="'Toolkit'"></h3>
-<ng-container *ngIf="toolkit$ | async as toolkit">
-    <ul class="technologies">
-        <li *ngFor="let tool of toolkit">
-            <img [ngStyle]="{ 'border-color': tool.name | pill }" [src]="tool.name | logo" alt="{{ tool.name | logo | altText }}">
-            <span><a class="pill-link" [href]="tool.name | filterLink" target="_blank" [attr.aria-label]="tool.name + 'link'">{{ tool.name }}</a></span>
-            <span>{{ tool.type }}</span>
-        </li>
-    </ul>
-</ng-container>
+<app-stack-list [config]="stackConfig"></app-stack-list>
