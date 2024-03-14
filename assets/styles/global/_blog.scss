@@ -41,6 +41,24 @@
 
   .blog-key {
     color: $white;
+
+    @include tablet {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+
+    @include mobile {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
+
+    @include small-mobile {
+      text-align: left;
+      width: 100%;
+      margin-bottom: .75rem;
+    }
   }
 
   .blog-key-wrapper {
