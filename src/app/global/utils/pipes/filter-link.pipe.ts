@@ -21,6 +21,7 @@ export class FilterLinkPipe implements PipeTransform {
         case type.includes(TechnologyEnum.NestJS): return LinkEnum.NestJS;
         case type.includes(TechnologyEnum.NGRX): return LinkEnum.NGRX;
         case type.includes(TechnologyEnum.Pact): return LinkEnum.Pact;
+        case type.includes(TechnologyEnum.React): return LinkEnum.React;
         case type.includes(TechnologyEnum.RXJS): return LinkEnum.RXJS;
         case type.includes(TechnologyEnum.SASS): return LinkEnum.SASS;
         case type.includes(TechnologyEnum.Typescript): return LinkEnum.Typescript;

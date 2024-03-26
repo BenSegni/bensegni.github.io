@@ -16,6 +16,7 @@ export enum ColorPaletteEnum {
     pinkRed = '#E0234F',
     postmanOrange = '#ff6600',
     red = '#aa0000',
+    reactBlue = '#00d8ff',
     smokeyBlue = '#3880ff',
     vsCodeBlue = '#0179cb',
     xdPink = '#ff61f6'

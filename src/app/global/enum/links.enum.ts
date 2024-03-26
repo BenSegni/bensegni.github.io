@@ -17,6 +17,7 @@ export enum LinkEnum {
     Pact = 'https://pact.io/',
     Photoshop = 'https://www.adobe.com/uk/products/photoshop.html',
     Postman = 'https://www.postman.com/',
+    React = 'https://react.dev/',
     RXJS = 'https://rxjs.dev/',
     SASS = 'https://sass-lang.com/',
     Typescript = 'https://www.typescriptlang.org/',

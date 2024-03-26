@@ -654,4 +654,9 @@ b {
   @include small-mobile {
     display: none;
   }
+
+  @include small-desktop {
+    width: 30vw;
+    font-size: .75rem;
+  }
 }

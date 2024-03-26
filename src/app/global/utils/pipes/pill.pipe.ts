@@ -32,6 +32,7 @@ export class PillPipe implements PipeTransform {
         case value.includes(TechnologyEnum.NestJS): return ColorPaletteEnum.pinkRed;
         case value.includes(TechnologyEnum.NGRX): return ColorPaletteEnum.pinkPurple;
         case value.includes(TechnologyEnum.RXJS): return ColorPaletteEnum.hotterPink;
+        case value.includes(TechnologyEnum.React): return ColorPaletteEnum.reactBlue;
         case value.includes(TechnologyEnum.SASS): return ColorPaletteEnum.pink;
         case value.includes(TechnologyEnum.Typescript): return ColorPaletteEnum.blue;
         case value.includes(TechnologyEnum.UI): return ColorPaletteEnum.hotPink;

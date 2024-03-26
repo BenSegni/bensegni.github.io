@@ -70,6 +70,12 @@ export const technologiesData: Technology[] = [
         docs: 'https://rxjs.dev/',
     },
     {
+        name: TechnologyEnum.React,
+        side: `${PracticeEnum.Front}`,
+        purpose: PracticeEnum.UI,
+        docs: 'https://react.dev/',
+    },
+    {
         name: TechnologyEnum.SASS,
         side: PracticeEnum.Front,
         purpose: PracticeEnum.UI,

@@ -26,6 +26,7 @@ export class LogoPipe implements PipeTransform {
       case value.includes(TechnologyEnum.Pact): return LogoEnum.Pact;
       case value.includes(TechnologyEnum.Typescript): return LogoEnum.Typescript;
       case value.includes(TechnologyEnum.RXJS): return LogoEnum.RXJS;
+      case value.includes(TechnologyEnum.React): return LogoEnum.React;
       case value.includes(TechnologyEnum.SASS): return LogoEnum.SASS;
       case value.includes(TechnologyEnum.UI): return LogoEnum.UI;
       //toolkit logos

@@ -1,15 +1,15 @@
 <ng-container *ngIf="project || url">
     <p class="presentation-link">
-        <app-behance-icon *ngIf="!isMedium && project?.showCaseLink || url"></app-behance-icon>
-        <app-medium-icon *ngIf="isMedium"></app-medium-icon>
-        <app-pdf-icon *ngIf="project?.downloadLink"></app-pdf-icon>
+        <app-behance-icon *ngIf="!this.project?.showCaseLink?.includes('medium') && project?.showCaseLink || url"></app-behance-icon>
+        <app-medium-icon *ngIf="this.project?.showCaseLink?.includes('medium')"></app-medium-icon>
+        <app-pdf-icon *ngIf="!this.project?.showCaseLink && project?.downloadLink"></app-pdf-icon>
         <a *ngIf="project || url"
             [href]="link"
             target="_blank"
             aria-label="presentation link"
             >{{
             project?.showCaseLink
-            ? isMedium ? medium : behance
+            ? this.project?.showCaseLink?.includes('medium') ? medium : behance
             : project?.downloadLink
             ? pdf
             : behance
