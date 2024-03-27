@@ -155,8 +155,7 @@
     width: 100%;
     justify-content: flex-start;
     align-items: center;
-    border-bottom: 1px dotted $grey;
-    padding: 0 0 2rem 9rem;
+    padding: 0 0 0 9rem;
 
     li {
         @include skill-pill();
