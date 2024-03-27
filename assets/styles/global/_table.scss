@@ -8,7 +8,7 @@
   padding: .5rem 1rem 0rem 9rem;
 
   .row {
-    @keyframes grow {
+    @keyframes grow-row {
       0% {
         width: 0;
       }
@@ -18,7 +18,7 @@
       }
     }
 
-    @keyframes fade {
+    @keyframes fade-in-skill {
       0% {
         opacity: 0;
       }
@@ -41,7 +41,7 @@
     background-color: transparent;
     border-width: .0625rem;
     border-radius: 10rem;
-    animation: grow 10s;
+    animation: grow-row 10s;
     font-size: .75rem;
     position: relative;
 
@@ -66,7 +66,7 @@
 
     .row-detail {
       display: block;
-      animation: fade 7s;
+      animation: fade-in-skill 7s;
       margin-left: auto;
       margin-right: 1rem;
 
