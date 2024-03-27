@@ -50,6 +50,7 @@
       width: auto;
       margin-right: 1rem;
       padding-left: .25rem;
+      animation: fade-in-skill 3s;
 
       @include tablet {
         margin: 0 1rem 0 0;

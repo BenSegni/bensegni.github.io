@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1711554553451,
+  "timestamp": 1711554713744,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.c44764eb02b7e9a8.js",
-        "/styles.f3fa40c85d690110.css"
+        "/styles.81588dd8790833f1.css"
       ],
       "patterns": []
     },
@@ -459,7 +459,7 @@
     "/assets/styles/global/_presentation.link.scss": "eb6d33702b7e8deac4e93f4b64c282da04cbcbb9",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "1ce741031b89fdcf0c124632542b7da92564e750",
-    "/assets/styles/global/_table.scss": "805ef35090c42c37630d01b76dfcb4c1428fd9df",
+    "/assets/styles/global/_table.scss": "727881e7cdd2a328ab62ac0ac977a30d2c04b955",
     "/assets/styles/pages/_404.scss": "77670ff3d2f46bd5ea348a01288a2a2f14cd703d",
     "/assets/styles/pages/_about.scss": "1c19b95eef9d466058436bafe590abc37aa3ccc3",
     "/assets/styles/pages/_about_mixins.scss": "28bbd475381d92ef5213b55ddfc176a83f9ba782",
@@ -476,7 +476,7 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "9de8f7807f1db85555b3071dab99997c8e038297",
+    "/index.html": "97b108d8beb4646da0ffbfc23633e191f7d5e9d8",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.02c0b22acd5713b1.js": "81a238eedee0ff95d7b2caaa8d2e363167e3ea05",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
@@ -484,7 +484,7 @@
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.c44764eb02b7e9a8.js": "e1470cc6e857dc485d19203dcfa3e16f8a5a2173",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.f3fa40c85d690110.css": "8a41f9c95885d4db6657a8a147a5a251e1909a79",
+    "/styles.81588dd8790833f1.css": "8cabe3736e8eabd7cd0e9832204078edda37005e",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
