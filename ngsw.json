@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1711534454457,
+  "timestamp": 1711534556255,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/772.efc6e8478e98b6af.js",
+        "/772.c041aa7c26b6bbab.js",
         "/index.html",
         "/main.1a794703eeaa1539.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
-        "/runtime.b32bde796846e901.js",
+        "/runtime.ad4ab1695771426a.js",
         "/styles.9586830714173f45.css"
       ],
       "patterns": []
@@ -256,7 +256,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/772.efc6e8478e98b6af.js": "6c74a3c156fed2cae5398dc692570b3c538f4cb3",
+    "/772.c041aa7c26b6bbab.js": "da8db216df46206dfde6bd8ec452c0aa5159b357",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/generic-interfaces.html": "a20f8b863c4bbe54513a2841a6979dd55231be3a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
@@ -474,13 +474,13 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "09fe7d3244a261dae0ba352a654264cf6030a3cd",
+    "/index.html": "42e3d2ffea8e4eb4b7705f379aab7adf0fe31fbd",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.1a794703eeaa1539.js": "7a33de45bc4153b1c5a10d959a528cc04aea3111",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
-    "/runtime.b32bde796846e901.js": "f7ef131350577eb578e33e6aa3b28b4e5a28fda6",
+    "/runtime.ad4ab1695771426a.js": "5caf99c0e6cca296f84a7a24baa14443a53aa8dc",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
     "/styles.9586830714173f45.css": "e8abd30b87409017d0c23083c1f516cd14dfab91",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
