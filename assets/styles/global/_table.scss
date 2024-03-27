@@ -8,42 +8,34 @@
   padding: .5rem 1rem 0rem 9rem;
 
   .row {
-    @keyframes grow-row {
-      0% {
-        width: 0;
-      }
-
-      100% {
-        width: 100%;
-      }
-    }
-
-    @keyframes fade-in-skill {
-      0% {
-        opacity: 0;
-      }
-
-      50% {
-        opacity: 0;
-      }
-
-      100% {
-        opacity: 1;
-      }
-    }
-
+    flex: 0 1 auto;
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
     padding: .125rem .5rem .125rem .125rem;
     grid-column-start: 1;
-    border: 1px solid transparent;
-    background-color: transparent;
+    border-style: solid;
+    border-color: transparent;
     border-width: .0625rem;
+    background-color: transparent;
     border-radius: 10rem;
     animation: grow-row 10s;
     font-size: .75rem;
     position: relative;
+
+    @keyframes grow-row {
+      0% {
+        width: 1rem;
+        border-color: transparent;
+        border-width: 0;
+      }
+
+      100% {
+        width: 100%;
+        border-width: .0625rem;
+      }
+    }
 
     img {
       height: 1rem;
@@ -51,6 +43,20 @@
       margin-right: 1rem;
       padding-left: .25rem;
       animation: fade-in-skill 3s;
+
+      @keyframes fade-in-skill {
+        0% {
+          opacity: 0;
+        }
+
+        50% {
+          opacity: 0;
+        }
+
+        100% {
+          opacity: 1;
+        }
+      }
 
       @include tablet {
         margin: 0 1rem 0 0;
