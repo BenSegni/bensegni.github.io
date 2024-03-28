@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1711630586939,
+  "timestamp": 1711631161571,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -329,7 +329,7 @@
     "/assets/img/filter_icon.svg": "058ddfc82b23e9984e13f910e0b516178a2f6a63",
     "/assets/img/github_logo.svg": "d7e8a96cd1456a74cd9071da7b1848b9145b059e",
     "/assets/img/github_ui_nav.webp": "dc7563235a0318328fee6ed53062157c117b66fd",
-    "/assets/img/gitlab_logo.svg": "ceb786bae116013557dc980ff8008e9464d61e20",
+    "/assets/img/gitlab_logo.svg": "fd51b08cbda9aff1fe50d0ac504ab516258d8364",
     "/assets/img/grid_icon.svg": "6d6b4c752df4b81655001c27ccad5d19c0822cc5",
     "/assets/img/help-centre.webp": "eb47ecb08909e40e1c35330aa90ec20e35c914bd",
     "/assets/img/html5_logo.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
