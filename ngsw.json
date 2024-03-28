@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1711630141257,
+  "timestamp": 1711630586939,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -327,7 +327,7 @@
     "/assets/img/fe-dev-talk.webp": "ab216798f656e9fe2e9a3f82737f85ddd438231d",
     "/assets/img/filter.webp": "f3bf90a629f5d1cb073c1bc12c6c322725846fad",
     "/assets/img/filter_icon.svg": "058ddfc82b23e9984e13f910e0b516178a2f6a63",
-    "/assets/img/github_logo.svg": "582ed8988db423110ade57f7fd7bdfe441e60705",
+    "/assets/img/github_logo.svg": "d7e8a96cd1456a74cd9071da7b1848b9145b059e",
     "/assets/img/github_ui_nav.webp": "dc7563235a0318328fee6ed53062157c117b66fd",
     "/assets/img/gitlab_logo.svg": "ceb786bae116013557dc980ff8008e9464d61e20",
     "/assets/img/grid_icon.svg": "6d6b4c752df4b81655001c27ccad5d19c0822cc5",
