@@ -114,3 +114,19 @@
     padding: 0;
   }
 }
+
+.table-project {
+  padding: .5rem 1rem 0rem 0rem;
+
+  @include tablet {
+    padding: 0;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+
+  @include small-mobile {
+    padding: 0;
+  }
+}
