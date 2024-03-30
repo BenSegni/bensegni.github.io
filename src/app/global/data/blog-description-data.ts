@@ -7,7 +7,7 @@ export const blogDescriptionData: BlogDescription[] = [
     features: [
       'Quick Read: 2 minute article.',
       'Cover easy-to-understand concepts.',
-      'Quick to implenent &amp; demonstrate.',
+      'Quick to implement &amp; demonstrate.',
       'Will focus on no more than 2 technologies.'
     ],
     anchor: 'beginner'
@@ -17,7 +17,7 @@ export const blogDescriptionData: BlogDescription[] = [
     features: [
       'Quick Read: 2 minute article.',
       'Cover concepts which might need prior experience to understand.',
-      'Will require a little time to implenent &amp; demonstrate.',
+      'Will require a little time to implement &amp; demonstrate.',
       'Will focus on more than 2 technologies, or will require a deeper understanding of those technologies.'
     ],
     anchor: 'intermediate'
@@ -27,7 +27,7 @@ export const blogDescriptionData: BlogDescription[] = [
     features: [
       'Longer Read: 3 minute or longer article.',
       'Cover concepts which will need experience to understand.',
-      'Will require a time to implenent &amp; demonstrate.',
+      'Will require time to implement &amp; demonstrate.',
       'Will focus on more than 2 technologies, or will require a deep understanding of those technologies.'
     ],
     anchor: 'experienced'

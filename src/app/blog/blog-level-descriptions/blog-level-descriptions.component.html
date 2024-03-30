@@ -10,10 +10,9 @@
         <p>{{ data.anchor | anchor }}</p>
       </div>
       <div class="description-level">
-        <h2><app-blog-key-level-icon [isInternal]="true" [level]="data.level"></app-blog-key-level-icon>{{ data.level +
-          ' Level'}}</h2>
+        <h2><app-blog-key-level-icon [isInternal]="true" [level]="data.level"></app-blog-key-level-icon>{{ data.level }} Level</h2>
         <p>
-          <b>Experienced Articles should look like:</b>
+          <b>What {{ data.level }} articles should look like:</b>
         </p>
         <ol>
           <li *ngFor="let feature of data.features" [innerHTML]="feature"></li>

@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { RouterModule, Routes } from '@angular/router';
+import { ExtraOptions, RouterModule, Routes } from '@angular/router';
 import { ShowcaseComponent } from './pages/showcase/showcase.component';
 import { AboutComponent } from './pages/about/about.component';
 import { CurrentProjectsComponent } from './pages/current-projects/current-projects.component';

@@ -1,0 +1,7 @@
+<ul class="table" *ngIf="skillsUsage" [ngClass]="isEmployment ? '' : 'table-project'">
+  <li class="row" [ngStyle]="{ borderColor: use.skill | pill, gridColumnEnd:  'span' + ' ' + (use.usage + 15)   }" *ngFor="let use of skillsUsage">
+    <img [src]="use.skill | logo" alt="">
+    <span class="row-detail">{{ (use.usage / 100) | percent }}</span>
+    <div class="skill-opacity-layer" [ngStyle]="{ backgroundColor: use.skill | pill }"></div>
+  </li>
+</ul>

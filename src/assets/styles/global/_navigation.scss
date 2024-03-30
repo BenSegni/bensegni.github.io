@@ -1,340 +1,356 @@
 @keyframes grow {
-    from {
-        transform-origin: top center;
-        transform: scaleY(0);
-        opacity: 0;
-    }
+  from {
+    transform-origin: top center;
+    transform: scaleY(0);
+    opacity: 0;
+  }
 
-    to {
-        transform-origin: top center;
-        transform: scaleY(100%);
-        opacity: 1;
-    }
+  to {
+    transform-origin: top center;
+    transform: scaleY(100%);
+    opacity: 1;
+  }
 }
 
 @keyframes growX {
-    from {
-        transform-origin: top center;
-        transform: scaleX(0);
-        opacity: 0;
-    }
+  from {
+    transform-origin: top center;
+    transform: scaleX(0);
+    opacity: 0;
+  }
 
-    to {
-        transform-origin: top center;
-        transform: scaleX(100%);
-        opacity: 1;
-    }
+  to {
+    transform-origin: top center;
+    transform: scaleX(100%);
+    opacity: 1;
+  }
 }
 
 
 
 @mixin full-width {
-    width: 100%;
+  width: 100%;
 }
 
 @mixin mobile-nav {
-    @include full-width();
-    font-size: 1.5rem;
-    justify-content: center;
-    align-items: center;
+  @include full-width();
+  font-size: 1.5rem;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    color: $grey;
+  }
 }
 
 @mixin icon {
-    background-color: transparent;
-    border: 0;
-    border-radius: 0;
-    margin: 1.5rem 0 1.5rem 0;
-    height: 2rem;
-    cursor: pointer;
+  background-color: transparent;
+  border: 0;
+  border-radius: 0;
+  margin: 1.5rem 0 1.5rem 0;
+  height: 2rem;
+  cursor: pointer;
 }
 
 .menu-icon {
-    @include icon();
-    margin-top: 2.5rem;
-    width: 4rem;
+  @include icon();
+  margin-top: 2.5rem;
+  width: 4rem;
 
-    span {
-        display: block;
-        height: .25rem;
-        width: 100%;
-        border-radius: 10rem;
-        background-color: $white;
-        margin-bottom: .25rem;
-        transition: width 0.5s linear;
+  span {
+    display: block;
+    height: .25rem;
+    width: 100%;
+    border-radius: 10rem;
+    background-color: $white;
+    margin-bottom: .25rem;
+    transition: width 0.5s linear;
 
-        &:nth-child(2) {
-            width: 75%;
-        }
-
-        &:nth-child(3) {
-            width: 50%;
-        }
+    &:nth-child(2) {
+      width: 75%;
     }
 
-    &:hover span {
-        transition: width 1s ease-in-out;
-        width: 100%;
+    &:nth-child(3) {
+      width: 50%;
     }
+  }
 
-    img {
-        height: 2rem;
-        width: auto;
-        border: 0;
-        border-radius: 0
-    }
+  &:hover span {
+    transition: width 1s ease-in-out;
+    width: 100%;
+  }
 
-    &:hover {
-        filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
-    }
+  img {
+    height: 2rem;
+    width: auto;
+    border: 0;
+    border-radius: 0
+  }
+
+  &:hover {
+    filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
+  }
 }
 
 .close-icon {
-    @include icon();
-    position: relative;
-    margin:.25rem 0 .5rem 0;
-    height: unset;
+  @include icon();
+  position: relative;
+  margin: .25rem 0 .5rem 0;
+  height: unset;
 
 
-    img {
-        height: auto;
-        width: 1.5rem;
-        border: 0;
-        border-radius: 0;
-        transition: width 0.5s linear;
-    }
+  img {
+    height: auto;
+    width: 1.5rem;
+    border: 0;
+    border-radius: 0;
+    transition: width 0.5s linear;
+  }
 
-    &:hover img {
-        transition: width 1s ease-in-out;
-        width: 2.5rem;
-        filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
-    }
+  &:hover img {
+    transition: width 1s ease-in-out;
+    width: 2.5rem;
+    filter: drop-shadow(.125rem .125rem $blue_alpha_6) drop-shadow(-.125rem -.125rem $black);
+  }
 }
 
 .navigation {
-    @include flex();
-    @include flex-wrap();
-    position: fixed;
-    top: 0;
-    left: 0;
-    justify-content: space-around;
-    background-color: $black_variant_alpha;
-    border-bottom: 0.0625rem solid $black;
-    padding-top: 25vh;
-    padding-bottom: 75vh;
-    z-index: 999;
-    @include span-100();
+  @include flex();
+  @include flex-wrap();
+  position: fixed;
+  top: 0;
+  left: 0;
+  justify-content: space-around;
+  background-color: $black_variant_alpha;
+  border-bottom: 0.0625rem solid $black;
+  padding-top: 25vh;
+  padding-bottom: 75vh;
+  z-index: 999;
+  @include span-100();
 
-    li {
-        padding: 1.25rem 0;
-        border: 0;
-        cursor: pointer;
-        border-bottom: 0.0625rem solid transparent;
-        min-width: auto;
+  li {
+    padding: 1.25rem 0;
+    border: 0;
+    cursor: pointer;
+    border-bottom: 0.0625rem solid transparent;
+    min-width: auto;
 
-        .active {
-            font-weight: 500;
-            color: $blue_1;
-        }
-
-        a {
-            color: $white;
-            font-size: 1.5rem;
-            @include flex();
-            @include flex-center();
-
-            svg {
-                fill: $blue_1;
-                margin-right: .75rem;
-            }
-
-            @include tablet {
-                @include mobile-nav();
-            }
-
-            @include mobile {
-                @include mobile-nav();
-            }
-
-            @include small-mobile {
-                @include mobile-nav();
-            }
-        }
-
-        &:first-child:hover {
-            border-bottom: 0.0625rem solid transparent;
-        }
-
-        &:hover {
-            border-bottom: 0.0625rem solid $white;
-        }
-
-        &:active {
-            background-color: $black;
-        }
-
-        @include tablet {
-            @include full-width();
-            padding: 1rem 0;
-        }
-
-        @include mobile {
-            @include full-width();
-            padding: 1rem 0;
-        }
-
-        @include small-mobile {
-            @include full-width();
-            padding: 1rem 0;
-        }
+    .active {
+      font-weight: 500;
+      color: $blue_1;
     }
 
-    .navigation-subtext {
-        color: $blue_1;
-        flex: 0 0 30%;
-        flex-basis: 100%;
-        text-align: left;
-        padding: 2rem 0 0 20%;
+    a {
+      color: $white;
+      font-size: 1.5rem;
+      @include flex();
+      @include flex-center();
 
-        .navigation-image {
-            border: 1px solid $grey;
-            border-radius: 0;
-            width: auto;
-            height: 22rem;
-            margin-right: 2.5rem;
-            @include grow(900ms);
-        }
+      svg {
+        fill: $blue_1;
+        margin-right: .75rem;
+      }
 
-        .route-info-wrapper {
-            @include flex();
-            flex-direction: column;
-            justify-content: flex-start;
-            @include grow(900ms);
+      @include tablet {
+        @include mobile-nav();
+      }
 
-            h3 {
-                text-align: left;
-                padding: 0;
-            }
+      @include mobile {
+        @include mobile-nav();
+      }
 
-            .text {
-                display: block;
-                width: 30vw;
-                margin: 0;
-                padding: 1rem 0 .5rem 0;
-
-            }
-
-            .route-elements {
-                @include flex();
-                align-items: center;
-
-                img {
-                    height: 1.5rem;
-                    width: auto;
-                    border: 0;
-                    border-radius: 0;
-                    margin: 0 .75rem 0 0;
-                    padding: 0;
-                }
-
-                .route {
-                    font-style: italic;
-                    color: $grey;
-                    border-bottom: 1px dotted $grey;
-                }
-            }
-
-            h5 {
-                color: $grey;
-                margin: 0;
-                padding: 1rem 0 0 0;
-            }
-
-            .keywords {
-                @include flex();
-                flex-wrap: wrap;
-                justify-content: flex-start;
-                align-items: center;
-                color: $white;
-                margin: .5rem 0 0 0;
-                padding: 0;
-
-                li {
-                    padding: .25rem .75rem;
-                    font-size: .75rem;
-                    border: 2px solid $grey;
-                    border-radius: 10rem;
-                    margin-right: .5rem;
-
-                    &:last-child {
-                        margin-right: 0;
-                    }
-                }
-            }
-        }
-
-        @include tablet {
-            display: none
-        }
-
-        @include mobile {
-            display: none
-        }
-
-        @include small-mobile {
-            display: none
-        }
+      @include small-mobile {
+        @include mobile-nav();
+      }
     }
 
-    .external-link {
-        @include flex();
-        align-items: center;
-        justify-content: center;
+    &:first-child:hover {
+      border-bottom: 0.0625rem solid transparent;
+    }
 
-        img {
-            height: 1.5rem;
-            width: auto;
-            margin: 0 1rem 0 0;
+    &:hover {
+      border-bottom: 0.0625rem solid $white;
 
-            @include tablet {
-                display: none;
-            }
+      @include tablet {
+        border-color: transparent;
+      }
 
-            @include mobile {
-                display: none;
-            }
+      @include mobile {
+        border-color: transparent;
+      }
 
-            @include small-mobile {
-                display: none;
-            }
-        }
+      @include small-mobile {
+        border-color: transparent;
+      }
+    }
+
+    &:active {
+      background-color: $black;
     }
 
     @include tablet {
-        @include flex-column();
-        @include mobile-nav();
-        padding-top: 10vh;
+      @include full-width();
+      padding: 1rem 0;
     }
 
     @include mobile {
-        @include flex-column();
-        @include mobile-nav();
-        padding-top: 10vh;
+      @include full-width();
+      padding: 1rem 0;
     }
 
     @include small-mobile {
-        @include flex-column();
-        @include mobile-nav();
-        padding-top: 10vh;
+      @include full-width();
+      padding: 1rem 0;
     }
+  }
+
+  .navigation-subtext {
+    color: $blue_1;
+    flex: 0 0 30%;
+    flex-basis: 100%;
+    text-align: left;
+    padding: 2rem 0 0 20%;
+
+    .navigation-image {
+      border: 1px solid $grey;
+      border-radius: 0;
+      width: auto;
+      height: 22rem;
+      margin-right: 2.5rem;
+      @include grow(900ms);
+    }
+
+    .route-info-wrapper {
+      @include flex();
+      flex-direction: column;
+      justify-content: flex-start;
+      @include grow(900ms);
+
+      h3 {
+        text-align: left;
+        padding: 0;
+      }
+
+      .text {
+        display: block;
+        width: 30vw;
+        margin: 0;
+        padding: 1rem 0 .5rem 0;
+
+      }
+
+      .route-elements {
+        @include flex();
+        align-items: center;
+
+        img {
+          height: 1.5rem;
+          width: auto;
+          border: 0;
+          border-radius: 0;
+          margin: 0 .75rem 0 0;
+          padding: 0;
+        }
+
+        .route {
+          font-style: italic;
+          color: $grey;
+          border-bottom: 1px dotted $grey;
+        }
+      }
+
+      h5 {
+        color: $grey;
+        margin: 0;
+        padding: 1rem 0 0 0;
+      }
+
+      .keywords {
+        @include flex();
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-items: center;
+        color: $white;
+        margin: .5rem 0 0 0;
+        padding: 0;
+
+        li {
+          padding: .25rem .75rem;
+          font-size: .75rem;
+          border: 2px solid $grey;
+          border-radius: 10rem;
+          margin-right: .5rem;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+
+    @include tablet {
+      display: none
+    }
+
+    @include mobile {
+      display: none
+    }
+
+    @include small-mobile {
+      display: none
+    }
+  }
+
+  .external-link {
+    @include flex();
+    align-items: center;
+    justify-content: center;
+
+    img {
+      height: 1.5rem;
+      width: auto;
+      margin: 0 1rem 0 0;
+
+      @include tablet {
+        display: none;
+      }
+
+      @include mobile {
+        display: none;
+      }
+
+      @include small-mobile {
+        display: none;
+      }
+    }
+  }
+
+  @include tablet {
+    @include flex-column();
+    @include mobile-nav();
+    padding-top: 10vh;
+  }
+
+  @include mobile {
+    @include flex-column();
+    @include mobile-nav();
+    padding-top: 10vh;
+  }
+
+  @include small-mobile {
+    @include flex-column();
+    @include mobile-nav();
+    padding-top: 10vh;
+  }
 }
 
 .tab-link {
-    display: block;
-    padding-top: 0;
+  display: block;
+  padding-top: 0;
 
-    .active {
-        font-weight: 500;
-        color: $blue_1;
-        border-bottom: 0.1rem dotted $white;
-    }
+  .active {
+    font-weight: 500;
+    color: $blue_1;
+    border-bottom: 0.1rem dotted $white;
+  }
 }

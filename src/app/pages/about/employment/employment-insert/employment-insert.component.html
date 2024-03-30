@@ -9,6 +9,8 @@
         <li *ngFor="let success of role.successes">{{ success }}</li>
     </ul>
     <a class="employment-site-link" [href]="role.website" target="_blank" aria-label="employer website link">{{ role.website }}</a>
-    <h5 class="skills-header">Skills:</h5>
+    <h5 class="skills-header" [innerText]="'Skills'">Skills:</h5>
     <app-skill-pills [skills]="role.technologies" [skillsType]="'employment'"></app-skill-pills>
+    <h5 class="skills-header" [innerText]="'Skills usage on Task'"></h5>
+    <app-tech-bar-chart [skillsUsage]="role.skillUsage"></app-tech-bar-chart>
 </ng-container>

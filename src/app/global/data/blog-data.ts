@@ -67,5 +67,16 @@ export const blogData: Blog[] = [
     routeUrl: 'generic-interfaces',
     skills: ['Angular', 'HTML5', 'Typescript'],
     level: LevelEnum.Experienced
+  },
+  {
+    id: 6,
+    coverImage: '../../../assets/blog-content/images/responsive.png',
+    title: 'Responsive SASS Mixins',
+    date: new Date('March 30, 2024 03:24:00'),
+    description: 'Using media query mixins to create responsive UI.',
+    content: '../../../assets/blog-content/responsive-sass.html',
+    routeUrl: 'responsive-sass',
+    skills: ['HTML5', 'SASS'],
+    level: LevelEnum.Intermediate
   }
 ]

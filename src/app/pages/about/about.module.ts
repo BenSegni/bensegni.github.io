@@ -37,7 +37,7 @@ import { ToolkitComponent } from './toolkit/toolkit.component';
         CommonModule,
         AboutRoutingModule,
         UtilsModule,
-        GlobalModule
+        GlobalModule,
     ]
 })
 export class AboutModule { }

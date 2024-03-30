@@ -1,0 +1,125 @@
+<html>
+<p>This article outlines how to use <a
+    href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries" target="_blank">Media
+    Queries</a> &amp; <a href="https://sass-lang.com/documentation/values/mixins/" target="_blank5">SASS Mixins</a> to
+  render responsive UI.</p>
+<p>The benefits to this approach are that you are able to create a range of media query mixins for the screens you are
+  building for, then quickly implement the mixins, to each class or id selector, you require to target when building
+  responsive UI.</p>
+<p>
+  To start we can create our standard media queries as variables and set them at the top of our <b>_responsive.scss</b>
+  file
+<pre class='sass-code'>
+  <code>
+  <span class="code-blue">$small-mobile-width:</span> "screen and <span class="code-pink">(min-width: 319px)</span> and <span class="code-pink">(max-width: 413px)</span>";
+  <span class="code-blue">$mobile-width:</span> "screen and <span class="code-pink">(min-width: 414px)</span> and <span class="code-pink">(max-width: 767px)</span>";
+  <span class="code-blue">$tablet-width:</span> "screen and <span class="code-pink">(min-width: 768px)</span> and <span class="code-pink">(max-width: 1024px)</span>";
+  <span class="code-blue">$small-desktop-width:</span> "screen and <span class="code-pink">(min-width: 1025px)</span> and <span class="code-pink">(max-width: 1500px)</span>";
+  <span class="code-blue">$desktop-width:</span> "screen and <span class="code-pink">(min-width: 1280px)</span> and <span class="code-pink">(max-width: 1920px)</span>";
+  </code>
+</pre>
+In this instance we can <b>target 5 different</b> screen widths:
+<ol>
+  <li>Small Mobile</li>
+  <li>Mobile</li>
+  <li>Tablet</li>
+  <li>Small Desktop</li>
+  <li>Wide Desktop</li>
+</ol>
+This way, we have a fairly comprehensive coverage to make decisions for how our UI will render in certain contexts.
+</p>
+<p>
+  As the variables have been created, the next step is to organise the <mark>@mixins</mark> for each screen width.
+<pre class='sass-code'>
+  <code>
+  <span class="code-blue">
+    @mixin small-mobile</span> {
+      <span class="code-pink">@media #{$small-mobile-width}</span> {
+          <span class="code-gold">@content</span>;
+      }
+    };
+  </span>
+  </code>
+</pre>
+The <mark>@mixin</mark> is declared as <mark>small-mobile</mark> &amp; then set with a <a
+  href="https://www.w3schools.com/cssref/css3_pr_mediaquery.php" target="_blank">@media rule</a> using the
+recently created variable. <b>Note @media #{$mobile-width} syntax for using the variable</b>. Finally, using
+the <a href="https://sass-lang.com/documentation/at-rules/mixin/" target="_blank
+">@content</a> at-rule to denote it takes a content block &amp; the mixin is complete.
+</p>
+<p>Continuing this pattern the remaining mixins should look like this:
+<pre class='sass-code'>
+  <code>
+  <span class="code-blue">
+    ...
+  </span>
+  <span class="code-blue">
+    @mixin mobile</span> {
+      <span class="code-pink">@media #{$mobile-width}</span> {
+          <span class="code-gold">@content</span>;
+      }
+    };
+  </span>
+  <span class="code-blue">
+    @mixin tablet</span> {
+      <span class="code-pink">@media #{$tablet-width}</span> {
+          <span class="code-gold">@content</span>;
+      }
+    };
+  </span>
+  <span class="code-blue">
+    @mixin small-desktop</span> {
+      <span class="code-pink">@media #{$small-desktop-width}</span> {
+          <span class="code-gold">@content</span>;
+      }
+    };
+  </span>
+  <span class="code-blue">
+    @mixin desktop</span> {
+      <span class="code-pink">@media #{$desktop-width}</span> {
+          <span class="code-gold">@content</span>;
+      }
+    };
+  </span>
+  </code>
+</pre>
+When using the mixins, dependant on how they are imported into the sass file, the management of how the UI is laid out
+on different screens is very staright forward:
+<pre class='sass-code'>
+  <code>
+
+  <span class="code-gold">@import './responsive';</span><span style="color: grey;"> //importing the file will vary dependant on set up.</span>
+
+  <span class="code-blue">.some-class-selector</span> {
+    display: block;
+    width: 50vw;
+
+    <span class="code-pink">@include</span> <span class="code-gold">desktop</span>{
+      width: 60vw;
+    }
+
+    <span class="code-pink">@include</span> <span class="code-gold">small-desktop </span>{
+      width: 70vw;
+    }
+
+    <span class="code-pink">@include</span> <span class="code-gold">tablet </span>{
+      width: 80vw;
+    }
+
+    <span class="code-pink">@include</span> <span class="code-gold">mobile </span>{
+      width: 90vw;
+    }
+
+    <span class="code-pink">@include</span> <span class="code-gold">small-mobile </span>{
+      width: 100vw;
+    }
+  }
+  </code>
+</pre>
+</p>
+<p>
+  There you go, responsive SASS which can be added quickly for a broad range of edge cases.
+</p>
+<p>Happy coding... 😜</p>
+
+</html>

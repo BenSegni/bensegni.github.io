@@ -30,6 +30,7 @@ import { SharedFilterComponent } from './shared-filter/shared-filter.component';
 import { LoadingGraphicComponent } from './loading-graphic/loading-graphic.component';
 import { RecentBlogPostComponent } from './recent-blog-post/recent-blog-post.component';
 import { StackListComponent } from './stack-list/stack-list.component';
+import { TechBarChartComponent } from './tech-bar-chart/tech-bar-chart.component';
 
 
 
@@ -61,7 +62,8 @@ import { StackListComponent } from './stack-list/stack-list.component';
         ClockIconComponent,
         SharedFilterComponent,
         LoadingGraphicComponent,
-        StackListComponent
+        StackListComponent,
+        TechBarChartComponent
     ],
     imports: [
         CommonModule,
@@ -92,7 +94,8 @@ import { StackListComponent } from './stack-list/stack-list.component';
         ClockIconComponent,
         SharedFilterComponent,
         LoadingGraphicComponent,
-        StackListComponent
+        StackListComponent,
+        TechBarChartComponent
     ]
 })
 export class GlobalModule { }
