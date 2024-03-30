@@ -72,18 +72,21 @@
     @include tablet {
       @include flex-column();
       justify-content: flex-start;
+      align-items: flex-start;
       width: 100%;
     }
 
     @include mobile {
       @include flex-column();
       justify-content: flex-start;
+      align-items: flex-start;
       width: 100%;
     }
 
     @include small-mobile {
       @include flex-column();
       justify-content: flex-start;
+      align-items: flex-start;
       width: 100%;
     }
   }
@@ -100,6 +103,18 @@
     height: 1.5rem;
     width: auto;
     margin: 0 1rem 0 1rem;
+
+    @include tablet {
+      margin: .25rem 1rem 0 0;
+    }
+
+    @include mobile {
+      margin: .25rem 1rem 0 0;
+    }
+
+    @include small-mobile {
+      margin: .25rem 1rem 0 0;
+    }
   }
 
   a {
