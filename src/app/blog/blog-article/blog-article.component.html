@@ -6,6 +6,7 @@
       <h3 [innerText]="article.title"></h3>
       <p class="article-date"><small>Created: {{ article.date | date }}</small></p>
       <div class="article-information-bar">
+        <span class="level-icon"><img [src]="article.level | logo" [alt]="article.level | logo | altText">{{ article.level + ' Level' }}</span>
         <p class="article-reading-time-wrapper">
           <span class="article-reading-time">
             <app-clock-icon></app-clock-icon> Read Time:
@@ -20,7 +21,6 @@
           <p class="copy-url-message" *ngIf="urlIsCopied">Page Address is Copied!</p>
         </div>
       </div>
-      <span class="level-icon"><img [src]="article.level | logo" [alt]="article.level | logo | altText">{{ article.level + ' Level' }}</span>
       <h4 [innerText]="'Technologies:'"></h4>
       <app-skill-pills [skills]="article.skills"></app-skill-pills>
       <div class="content" [innerHTML]="content | safeResource"></div>

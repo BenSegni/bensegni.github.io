@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { GlobalDataService } from '../../global/global-data.service';
 import { Blog } from '../interface/blog';
-import { NavigationStart, RouteConfigLoadStart, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { distinctUntilChanged, tap } from 'rxjs';
 import { ToolTipConfig } from '../../global/utils/directives/interfaces/tooltip';
 import { BlogService } from '../services/blog.service';
@@ -67,11 +67,17 @@ export class BlogArticleComponent implements OnInit {
   public copyURL(): void {
     const production = 'https://bensegni.github.io';
     const local = 'http://localhost:4200'
-    this.urlIsCopied = true;
+
+    let url = this._router.url;
+
+    if(url.includes('?')){
+      url = url.split("?")[0]
+    }
+
     navigator
       .clipboard
-      .writeText(`${env === 'production' ? production : local}${this._router.url}`)
-      .then().
+      .writeText(`${env === 'production' ? production : local}${url}`)
+      .then(() => this.urlIsCopied = true).
       catch(error => console.log(error));
   }
 
