@@ -246,3 +246,28 @@ mark {
 .node-code {
   @include code-background($html, 'npm_logo.svg', 'NPM');
 }
+
+ol {
+  list-style: none;
+  counter-reset: item;
+  padding-left: 0;
+
+  li {
+    counter-increment: item;
+    margin-bottom: .5rem;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:before {
+      margin-right: 1rem;
+      padding-right: .5rem;
+      content: counter(item);
+      border-right: .125rem solid $blue_1;
+      width: 1.2em;
+      text-align: center;
+      display: inline-block;
+    }
+  }
+}
