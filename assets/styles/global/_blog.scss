@@ -335,16 +335,21 @@
     .article-information-bar {
       @include flex();
       @include flex-center();
-      justify-content: flex-start;
-      @include flex-wrap();
+      justify-content: space-between;
       width: 100%;
+
+      .level-icon {
+        padding: .5rem 0 .5rem 0;
+        margin-right: 2rem;
+        width: unset
+      }
 
       .article-reading-time-wrapper {
         @include flex();
         @include flex-center();
         justify-content: flex-start;
         font-size: .85rem;
-        margin: 0;
+        margin: 0 2rem 0 0;
 
         .reading-time-tooltip {
           margin-right: 1.5rem;
@@ -366,6 +371,18 @@
             margin: 0 .5rem 0 .5rem;
           }
         }
+
+        @include tablet {
+          margin: 1rem 0;
+        }
+
+        @include mobile {
+          margin: 1rem 0;
+        }
+
+        @include small-mobile {
+          margin: 1rem 0;
+        }
       }
 
       .copy-url {
@@ -375,6 +392,8 @@
         margin: 0;
         font-size: .85rem;
         color: $grey-light;
+        margin-right: auto;
+        position: relative;
 
         .copy-url-button {
           cursor: pointer;
@@ -401,10 +420,16 @@
 
         .copy-url-message {
           display: block;
+          color: $white;
+          width: 10rem;
           margin: 0 0 0 1.35rem;
+          background-color: $blue_1;
           border: .0625rem solid $grey;
           padding: .25rem .5rem;
           border-radius: .25rem;
+          position: absolute;
+          top: -3rem;
+          right: 0;
 
           @include mobile {
             display: none;
@@ -420,6 +445,36 @@
             padding: 1rem 0;
           }
         }
+
+        @include tablet {
+          margin: 1rem 0;
+        }
+
+        @include mobile {
+          margin: 1rem 0;
+        }
+
+        @include small-mobile {
+          margin: 1rem 0;
+        }
+      }
+
+      @include tablet {
+        align-items: flex-start;
+        @include span-90();
+        @include flex-column();
+      }
+
+      @include mobile {
+        align-items: flex-start;
+        @include span-90();
+        @include flex-column();
+      }
+
+      @include small-mobile {
+        align-items: flex-start;
+        @include span-90();
+        @include flex-column();
       }
     }
 
