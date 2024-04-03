@@ -61,3 +61,41 @@
         }
     }
 }
+
+.social-share-wrapper {
+  width: 100%;
+  @include flex();
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  align-items: center;
+  p {
+    text-align: right;
+  }
+
+  button {
+    margin: 0 .5rem 0 0;
+    @include flex();
+    align-items: center;
+    border: 1px solid $white;
+    padding: .5rem;
+    border-radius: .25rem;
+    background-color: transparent;
+    cursor: pointer;
+
+    &:hover {
+      border: 1px solid $blue_1;
+    }
+
+    &:first-of-type {
+      margin-left: .5rem;
+    }
+
+    svg {
+      fill: $white;
+
+      &:hover {
+        fill: $blue_1;
+      }
+    }
+  }
+}
