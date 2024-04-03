@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TechBarChartComponent } from './tech-bar-chart.component';
+import { PillPipe } from '../utils/pipes/pill.pipe';
+import { LogoPipe } from '../utils/pipes/logo.pipe';
 
 describe('TechBarChartComponent', () => {
   let component: TechBarChartComponent;
@@ -8,7 +10,7 @@ describe('TechBarChartComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TechBarChartComponent]
+      declarations: [TechBarChartComponent, PillPipe, LogoPipe]
     });
     fixture = TestBed.createComponent(TechBarChartComponent);
     component = fixture.componentInstance;

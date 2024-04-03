@@ -58,6 +58,7 @@ export class BlogArticleComponent implements OnInit {
   private getContent(): void {
     if (this.article) {
       this._blogService.assignBlogContent(this.article).subscribe(content => {
+        if(!content) return;
         this.content = content;
         this.convertHTMLToReadingTime(this.content.split(' ').length);
       });

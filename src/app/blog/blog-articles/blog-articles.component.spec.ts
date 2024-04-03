@@ -9,6 +9,8 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { PillPipe } from '../../global/utils/pipes/pill.pipe';
 import { FilterPipe } from '../../global/utils/pipes/filter.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SimpleChange } from '@angular/core';
+import { blogData } from 'src/app/global/data/blog-data';
 
 describe('BlogArticlesComponent', () => {
   let component: BlogArticlesComponent;
@@ -35,4 +37,14 @@ describe('BlogArticlesComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  describe('Testing ngOnChanges', () => {
+    it('should call assignBlogList()', () => {
+      component.ngOnChanges({
+        articleId: new SimpleChange(null, 1, true)
+      });
+
+      expect(component.blog$).toBeTruthy()
+    });
+  })
 });

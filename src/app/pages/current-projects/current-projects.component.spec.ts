@@ -13,6 +13,7 @@ import { FilterPipe } from '../../global/utils/pipes/filter.pipe';
 import { LogoPipe } from '../../global/utils/pipes/logo.pipe';
 import { FilterLinkPipe } from '../../global/utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { TechBarChartComponent } from 'src/app/global/tech-bar-chart/tech-bar-chart.component';
 
 describe('CurrentProjectsComponent', () => {
     let component: CurrentProjectsComponent;
@@ -33,7 +34,8 @@ describe('CurrentProjectsComponent', () => {
                 PillPipe,
                 FilterPipe,
                 LogoPipe,
-                FilterLinkPipe
+                FilterLinkPipe,
+                TechBarChartComponent
             ]
         });
         fixture = TestBed.createComponent(CurrentProjectsComponent);

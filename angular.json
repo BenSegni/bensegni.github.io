@@ -98,6 +98,13 @@
                             "src/assets",
                             "src/manifest.webmanifest"
                         ],
+                        "codeCoverageExclude": [
+                          "src/app/**/*.enum.ts",
+                          "src/app/**/*.module.ts",
+                          "src/app/global/data/**.ts",
+                          "app/global/testing/**",
+                          "**.mock.ts"
+                        ],
                         "styles": [
                             "src/styles.scss"
                         ],
