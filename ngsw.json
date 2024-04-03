@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1711900666997,
+  "timestamp": 1712137681442,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.2cf740e5553c82c7.js",
-        "/styles.97c607e82b4a310e.css"
+        "/styles.01790c55b8b7994a.css"
       ],
       "patterns": []
     },
@@ -301,7 +301,7 @@
     "/assets/img/behance_ui_nav.webp": "dd32768c8fc9ac8f56f55efc7fe7d6bed8b1dd4f",
     "/assets/img/blog_icon.svg": "97a979ee6edb764c6965a6a68c0c884efe534b97",
     "/assets/img/blog_ui_nav.webp": "dfbed309303c116f5f2326b383a32c741f2491c8",
-    "/assets/img/boba_fett.svg": "a8273f214aba100897f68c040111629ca57cb2c1",
+    "/assets/img/boba_fett.svg": "142bc0f7e1727fb3dd54c4be0c224a6e412ac76a",
     "/assets/img/british-airways.svg": "288c241404f616abd4e1963fb1abae956bd73e3d",
     "/assets/img/chinwe/chinwe_1.webp": "9e79fafbdd2cd6e6cc292f0e5d8690d73b58d12f",
     "/assets/img/chinwe/chinwe_2.webp": "b8d0105157a53becd39a8596451f3ab63b82bc92",
@@ -314,7 +314,7 @@
     "/assets/img/close_icon_closed.svg": "affce873ce23bdd77cd9a11d8b600fbc8549a571",
     "/assets/img/close_icon_open.svg": "c9693b897a438d41af48bf52de47c1f3075459c9",
     "/assets/img/column_icon.svg": "8ed05e571c2f58780795166324088831a010a40d",
-    "/assets/img/construction_banner.svg": "7961373277679f825811d53bd4779ca7d3324342",
+    "/assets/img/construction_banner.svg": "2747a00baba122cfd0a9f998603930b4e81ac1e3",
     "/assets/img/contact_ui_nav.webp": "1756aa5f2b69f565cc99546e5bae13e83956758a",
     "/assets/img/current_project_ui_nav.webp": "d2bda9b836ff11ec1d2aeedc0c59a20930e741b9",
     "/assets/img/cypress_logo.svg": "51fe272f6430205a2072af2d32d81477e1e20eb0",
@@ -464,7 +464,7 @@
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "1ce741031b89fdcf0c124632542b7da92564e750",
     "/assets/styles/global/_table.scss": "f7e93ad8476ff41fb53f2b58dc385609a1bbb81b",
-    "/assets/styles/pages/_404.scss": "77670ff3d2f46bd5ea348a01288a2a2f14cd703d",
+    "/assets/styles/pages/_404.scss": "179e66ccb956cdc3c2679603378f82975b8be483",
     "/assets/styles/pages/_about.scss": "1c19b95eef9d466058436bafe590abc37aa3ccc3",
     "/assets/styles/pages/_about_mixins.scss": "28bbd475381d92ef5213b55ddfc176a83f9ba782",
     "/assets/styles/pages/_contact.scss": "1ccc1bc9161b8eeeae99615208cd201a359fc6c1",
@@ -480,7 +480,7 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "d44b2d3f6242bd44cabe2ec00c51cd1e16f972e0",
+    "/index.html": "4c5ca8c52d549df799b35157da8ddedc32e7172e",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.1aa502bee39f95c3.js": "3325e3a911850d6f12d515719b3d07bfb0231b1c",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
@@ -488,7 +488,7 @@
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.2cf740e5553c82c7.js": "d974411862d0391523706cef576af783f4a80698",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.97c607e82b4a310e.css": "c4a536970b64ee5fb2520e839c4dbdc64613d765",
+    "/styles.01790c55b8b7994a.css": "7145e0e90b523dba6d36dac768a7a614786259ff",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
