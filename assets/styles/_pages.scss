@@ -11,55 +11,55 @@
 @import './pages/site_build';
 
 @mixin mouseButton($duration) {
-    animation: mouseButton $duration infinite;
+  animation: mouseButton $duration infinite;
 
-    @keyframes mouseButton {
-        from {
-            transform-origin: bottom center;
-            transform: scaleY(0);
-            opacity: 0;
-        }
-
-        to {
-            transform-origin: bottom center;
-            transform: scaleY(100%);
-            opacity: 1;
-        }
+  @keyframes mouseButton {
+    from {
+      transform-origin: bottom center;
+      transform: scaleY(0);
+      opacity: 0;
     }
+
+    to {
+      transform-origin: bottom center;
+      transform: scaleY(100%);
+      opacity: 1;
+    }
+  }
 }
 
 .scroll {
-    position: fixed;
-    right: 3rem;
-    bottom: 3rem;
-    z-index: 999;
+  position: fixed;
+  right: 3rem;
+  bottom: 3rem;
+  z-index: 999;
 
-    .mouse {
-        @include flex();
-        @include flex-column();
-        justify-content: flex-start;
-        align-items: center;
-        height: 3rem;
-        width: 1.75rem;
-        border: 0.0625rem solid $white;
-        background-color: $blue_alpha_5;
-        border-radius: 10rem;
-        cursor: pointer;
+  .mouse {
+    @include flex();
+    @include flex-column();
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
+    width: 1.75rem;
+    border: 0.0625rem solid $white;
+    background-color: $blue_alpha_5;
+    border-radius: 10rem;
+    cursor: pointer;
 
-        &:hover {
-            border-color: $blue_1;
-        }
-
-        span {
-            display: block;
-            height: .75rem;
-            width: .25rem;
-            margin-top: .75rem;
-            border-radius: 10rem;
-            background-color: $white;
-            @include mouseButton(900ms)
-        }
+    &:hover {
+      border-color: $blue_1;
     }
+
+    span {
+      display: block;
+      height: .75rem;
+      width: .25rem;
+      margin-top: .75rem;
+      border-radius: 10rem;
+      background-color: $white;
+      @include mouseButton(900ms)
+    }
+  }
 }
 
 .social-share-wrapper {
@@ -68,6 +68,7 @@
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
+
   p {
     text-align: right;
   }
@@ -76,15 +77,11 @@
     margin: 0 .5rem 0 0;
     @include flex();
     align-items: center;
-    border: 1px solid $white;
-    padding: .5rem;
-    border-radius: .25rem;
-    background-color: transparent;
+    border-style: solid;
+    border-width: .0625rem;
+    padding: .25rem;
+    border-radius: .125rem;
     cursor: pointer;
-
-    &:hover {
-      border: 1px solid $blue_1;
-    }
 
     &:first-of-type {
       margin-left: .5rem;
@@ -92,10 +89,21 @@
 
     svg {
       fill: $white;
-
-      &:hover {
-        fill: $blue_1;
-      }
     }
   }
+}
+
+.facebook {
+  background-color: $facebook !important;
+  border-color: $facebook;
+}
+
+.x-social {
+  background-color: $x-social !important;
+  border-color: $x-social;
+}
+
+.linkedin {
+  background-color: $linkedin !important;
+  border-color: $linkedin;
 }
