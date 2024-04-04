@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1712175530731,
+  "timestamp": 1712229727261,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/772.1388e88ccecad877.js",
+        "/772.907c72203047d716.js",
         "/index.html",
-        "/main.85a2c3b775487344.js",
+        "/main.1dc3deec4b568bfc.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
-        "/runtime.4f7e408cdc8a686a.js",
+        "/runtime.b446ae773cba3ab8.js",
         "/styles.c64caa79676cb880.css"
       ],
       "patterns": []
@@ -259,7 +259,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/772.1388e88ccecad877.js": "c26ddf3f1a88079edc6cd2bd094bcd89ec6fa7ff",
+    "/772.907c72203047d716.js": "33e72a92c932f5c1d67999205cd1d941e929957f",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/generic-interfaces.html": "a20f8b863c4bbe54513a2841a6979dd55231be3a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
@@ -480,13 +480,13 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "2ce55253ec0080e72dee5cf263f350a125a40cfc",
+    "/index.html": "4a6032e144fd5514fca6e09c2df79292669264cb",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.85a2c3b775487344.js": "cb71ed8e268cfbf407cbe9c4600d1fada66a010c",
+    "/main.1dc3deec4b568bfc.js": "f2d20c5293daca467e6e9d14022b7a205f709892",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
-    "/runtime.4f7e408cdc8a686a.js": "19186bc71546787aa17b89e68a745ac9e52fe7d1",
+    "/runtime.b446ae773cba3ab8.js": "a7b7c25e1ade91c6680fd1a932c7b19af632e583",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
     "/styles.c64caa79676cb880.css": "571c5599ad59a5d65a93974786a83a8ac5fb35b2",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
