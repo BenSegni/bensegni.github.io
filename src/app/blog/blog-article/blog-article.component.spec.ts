@@ -4,6 +4,7 @@ import { BlogArticleComponent } from './blog-article.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { of } from 'rxjs';
 import { blogData } from 'src/app/global/data/blog-data';
+import { RouterTestingModule } from '@angular/router/testing';
 
 declare let process: any;
 let env = process.env.NODE_ENV;
@@ -15,7 +16,7 @@ describe('BlogArticleComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [BlogArticleComponent],
-      imports: [HttpClientTestingModule]
+      imports: [HttpClientTestingModule, RouterTestingModule]
     });
     fixture = TestBed.createComponent(BlogArticleComponent);
     component = fixture.componentInstance;
@@ -30,7 +31,7 @@ describe('BlogArticleComponent', () => {
   describe('Testing getContent()', () => {
     it('should return the correct article', () => {
       component.article = blogData[1];
-      const spyService = spyOn<any>(component['_blogService'],'assignBlogContent').and.returnValue(of('../../../assets/blog-content/sass-params.html'));
+      const spyService = spyOn<any>(component['_blogService'], 'assignBlogContent').and.returnValue(of('../../../assets/blog-content/sass-params.html'));
 
       component['getContent']();
 
@@ -44,7 +45,7 @@ describe('BlogArticleComponent', () => {
 
       component.copyURL();
 
-      expect(spyNavigator).toHaveBeenCalled();
+      expect(spyNavigator).toHaveBeenCalledWith('http://localhost:4200/');
     })
   });
 });

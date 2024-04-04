@@ -34,6 +34,7 @@ import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-li
 import { NpmComponent } from './pages/npm/npm.component';
 import { HttpClientModule } from '@angular/common/http';
 import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
+import { ShareIconsComponent } from './global/share-icons/share-icons.component';
 
 @NgModule({
   declarations: [
@@ -75,7 +76,8 @@ import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-p
       enabled: !isDevMode(),
       registrationStrategy: 'registerWhenStable:30000'
     }),
-    RecentBlogPostComponent
+    RecentBlogPostComponent,
+    ShareIconsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

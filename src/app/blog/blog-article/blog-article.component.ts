@@ -5,6 +5,7 @@ import { Router } from '@angular/router';
 import { distinctUntilChanged, tap } from 'rxjs';
 import { ToolTipConfig } from '../../global/utils/directives/interfaces/tooltip';
 import { BlogService } from '../services/blog.service';
+import { ShareButton } from '../../global/share-icon-button/interface/share.button';
 declare let process: any;
 const env = process.env.NODE_ENV;
 @Component({
@@ -29,6 +30,16 @@ export class BlogArticleComponent implements OnInit {
     linkText: 'Read About it Here',
     link: 'https://blog.medium.com/read-time-and-you-bc2048ab620c'
   }
+  public shareButtons: ShareButton[] = [
+    {
+      shareType: 'facebook',
+      shareUrl: `https://bensegni.github.io${this._router.url}`
+    },
+    {
+      shareType: 'X',
+      shareUrl: `https://bensegni.github.io${this._router.url}`
+    }
+  ]
 
   public constructor(
     private _globalService: GlobalDataService,

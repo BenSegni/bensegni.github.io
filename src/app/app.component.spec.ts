@@ -10,7 +10,7 @@ import { ScrollComponent } from './global/scroll/scroll.component';
 import { LoadingIconComponent } from './global/loading-icon/loading-icon.component';
 import { PrivacyPolicyLogoComponent } from './global/privacy-policy-logo/privacy-policy-logo.component';
 import { AltTextPipe } from './global/utils/pipes/alt-text.pipe';
-import { NavigationStart, Router } from '@angular/router';
+import { NavigationEnd, NavigationStart, Router } from '@angular/router';
 import { Observable } from 'rxjs';
 import { routes } from './app-routing.module';
 import { BehanceIconComponent } from './global/icons/behance-icon/behance-icon.component';
@@ -19,14 +19,6 @@ import { LinkedinIconComponent } from './global/icons/linkedin-icon/linkedin-ico
 import { NpmIconComponent } from './global/icons/npm-icon/npm-icon.component';
 import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
 import { LocationIconComponent } from './global/icons/location-icon/location-icon.component';
-
-class MockRouter {
-    public ne = new NavigationStart(0, 'http://localhost:4200/about');
-    public events = new Observable(observer => {
-        observer.next(this.ne);
-        observer.complete();
-    });
-}
 
 describe('AppComponent', () => {
     let component: AppComponent;
@@ -73,5 +65,5 @@ describe('AppComponent', () => {
             expect(spyLoad).toHaveBeenCalled();
             expect(spyScroll).toHaveBeenCalled();
         })
-    })
+    });
 });

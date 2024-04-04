@@ -24,6 +24,10 @@
       <h4 [innerText]="'Technologies:'"></h4>
       <app-skill-pills [skills]="article.skills"></app-skill-pills>
       <div class="content" [innerHTML]="content | safeResource"></div>
+      <div class="social-share-wrapper">
+        <p><small>Share this article on:</small></p>
+        <app-share-icons [shareButtons]="shareButtons"></app-share-icons>
+      </div>
       <a class="back-link-bottom" routerLink=".."><img [src]="blogIcon" [alt]="blogIcon | altText"><span>Back to Blog
         Articles</span></a>
       <app-blog-contact-details></app-blog-contact-details>

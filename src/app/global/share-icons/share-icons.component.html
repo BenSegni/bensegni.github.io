@@ -1,0 +1,3 @@
+<ng-container *ngIf="shareButtons">
+  <app-share-icon-button *ngFor="let button of shareButtons" [shareType]="button.shareType" [shareUrl]="button.shareUrl"></app-share-icon-button>
+</ng-container>

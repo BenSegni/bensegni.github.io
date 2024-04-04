@@ -13,6 +13,7 @@ import { BlogKeyComponent } from './blog-key/blog-key.component';
 import { BlogKeyLevelIconComponent } from './blog-key-level-icon/blog-key-level-icon.component';
 import { BlogLevelDescriptionsComponent } from './blog-level-descriptions/blog-level-descriptions.component';
 import { AnchorPipe } from './utils/anchor.pipe';
+import { ShareIconsComponent } from '../global/share-icons/share-icons.component';
 
 
 
@@ -33,7 +34,8 @@ import { AnchorPipe } from './utils/anchor.pipe';
     BlogRoutingModule,
     CommonModule,
     UtilsModule,
-    GlobalModule
+    GlobalModule,
+    ShareIconsComponent
   ]
 })
 export class BlogModule { }
