@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1712312245023,
+  "timestamp": 1712572438315,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -11,12 +11,12 @@
         "ignoreVary": true
       },
       "urls": [
-        "/772.fe814ce9c5aa8e8a.js",
+        "/772.b50f46da6d2e2187.js",
         "/index.html",
-        "/main.41553cdf8cd6c696.js",
+        "/main.6490fcc48f7692ed.js",
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
-        "/runtime.2087e4c2f36fe441.js",
+        "/runtime.8458c5e39f5345ff.js",
         "/styles.c454aa0ef646c657.css"
       ],
       "patterns": []
@@ -259,7 +259,7 @@
   ],
   "dataGroups": [],
   "hashTable": {
-    "/772.fe814ce9c5aa8e8a.js": "fe4b2304a8f8a1658c722d58121ea20d51a65ef6",
+    "/772.b50f46da6d2e2187.js": "c690b12f187b46da6463f89cc055ba38085384a8",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/generic-interfaces.html": "a20f8b863c4bbe54513a2841a6979dd55231be3a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
@@ -480,13 +480,13 @@
     "/assets/styles/pages/_technology.scss": "f82023da0baca1de52c0dd1a3723da7e994c7889",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "bc8b1002d62b446fac5a495348e5919ccb627cb7",
+    "/index.html": "1fa88fb490eaca5bf00cc96097599399260b67ec",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.41553cdf8cd6c696.js": "5a1e71181f05e3f7824ae606e29999585ff8d4f2",
+    "/main.6490fcc48f7692ed.js": "079c24a36f76b98c61248c3dd1605e92678693d9",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
-    "/runtime.2087e4c2f36fe441.js": "c66a53dc70f7e5ba2098e358e028037b489f4a1e",
+    "/runtime.8458c5e39f5345ff.js": "d2d2bd877fefa76e78b34cc205f0053d722933f6",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
     "/styles.c454aa0ef646c657.css": "5238d0ad7ad5130b58716ef46da85a6663c1d5a9",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
