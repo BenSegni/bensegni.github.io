@@ -32,8 +32,6 @@ import { RecentBlogPostComponent } from './recent-blog-post/recent-blog-post.com
 import { StackListComponent } from './stack-list/stack-list.component';
 import { TechBarChartComponent } from './tech-bar-chart/tech-bar-chart.component';
 
-
-
 @NgModule({
     declarations: [
         FooterComponent,
@@ -63,7 +61,7 @@ import { TechBarChartComponent } from './tech-bar-chart/tech-bar-chart.component
         SharedFilterComponent,
         LoadingGraphicComponent,
         StackListComponent,
-        TechBarChartComponent
+        TechBarChartComponent,
     ],
     imports: [
         CommonModule,

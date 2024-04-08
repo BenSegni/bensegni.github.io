@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { ShareIconButtonComponent } from '../share-icon-button/share-icon-button.component';
-import { ShareButton } from '../share-icon-button/interface/share.button';
+import { ShareButtonConfig } from '../share-icon-button/interface/share.button';
 
 @Component({
   selector: 'app-share-icons',
@@ -11,14 +11,17 @@ import { ShareButton } from '../share-icon-button/interface/share.button';
   imports: [CommonModule, ShareIconButtonComponent]
 })
 export class ShareIconsComponent {
-  @Input() shareButtons: ShareButton[] = [
-    {
-      shareType: '',
-      shareUrl: ''
-    },
-    {
-      shareType: '',
-      shareUrl: ''
-    }
-  ]
+  @Input() shareButtonConfig: ShareButtonConfig = {
+    title: '',
+    buttons: [
+      {
+        shareType: '',
+        shareUrl: ''
+      },
+      {
+        shareType: '',
+        shareUrl: ''
+      }
+    ]
+  }
 }

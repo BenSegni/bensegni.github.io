@@ -1,12 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component, Input, OnInit } from '@angular/core';
+import { FacebookShareIconComponent } from '../icons/facebook-share-icon/facebook-share-icon.component';
+import { XShareIconComponent } from '../icons/x-share-icon/x-share-icon.component';
+import { LinkedinShareIconComponent } from '../icons/linkedin-share-icon/linkedin-share-icon.component';
 
 @Component({
   selector: 'app-share-icon-button',
   templateUrl: './share-icon-button.component.html',
   styleUrls: ['./share-icon-button.scss'],
   standalone: true,
-  imports: [CommonModule]
+  imports: [
+    CommonModule,
+    FacebookShareIconComponent,
+    XShareIconComponent,
+    LinkedinShareIconComponent
+  ]
 })
 export class ShareIconButtonComponent implements OnInit {
   @Input() shareType = '';
@@ -18,14 +26,21 @@ export class ShareIconButtonComponent implements OnInit {
   }
 
   private createShareUrl(): void {
+    const facebookUrl = 'http://www.facebook.com/sharer.php?u=';
+    const xUrl = 'http://twitter.com/share?url=';
+    const linkedInUrl = 'https://www.linkedin.com/shareArticle?mini=true&url=';
+
     switch (this.shareType) {
       case 'facebook':
-        this.navUrl = `http://www.facebook.com/sharer.php?u=${this.shareUrl}`;
+        this.navUrl = `${facebookUrl}${this.shareUrl}`;
         break;
       case 'X':
-        this.navUrl = `http://twitter.com/share?url=${this.shareUrl}`;
+        this.navUrl = `${xUrl}${this.shareUrl}`;
         break;
-    }
+      case 'linkedin':
+        this.navUrl = `${linkedInUrl}${this.shareUrl}`;
+        break;
+    };
   }
 
   public shareContent(): void {

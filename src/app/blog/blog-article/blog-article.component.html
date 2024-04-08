@@ -6,7 +6,8 @@
       <h3 [innerText]="article.title"></h3>
       <p class="article-date"><small>Created: {{ article.date | date }}</small></p>
       <div class="article-information-bar">
-        <span class="level-icon"><img [src]="article.level | logo" [alt]="article.level | logo | altText">{{ article.level + ' Level' }}</span>
+        <span class="level-icon"><img [src]="article.level | logo" [alt]="article.level | logo | altText">{{
+          article.level + ' Level' }}</span>
         <p class="article-reading-time-wrapper">
           <span class="article-reading-time">
             <app-clock-icon></app-clock-icon> Read Time:
@@ -16,7 +17,7 @@
         </p>
         <div class="copy-url">
           <button class="copy-url-button" (click)="copyURL()"
-          value="click to copy"><app-share-icon></app-share-icon>Copy &amp; Share</button>
+            value="click to copy"><app-share-icon></app-share-icon>Copy &amp; Share</button>
           <div class="copy-url-tooltip" [tooltip]="toolTip"></div>
           <p class="copy-url-message" *ngIf="urlIsCopied">Page Address is Copied!</p>
         </div>
@@ -24,12 +25,11 @@
       <h4 [innerText]="'Technologies:'"></h4>
       <app-skill-pills [skills]="article.skills"></app-skill-pills>
       <div class="content" [innerHTML]="content | safeResource"></div>
-      <div class="social-share-wrapper">
-        <p><small>Share this article on:</small></p>
-        <app-share-icons [shareButtons]="shareButtons"></app-share-icons>
-      </div>
-      <a class="back-link-bottom" routerLink=".."><img [src]="blogIcon" [alt]="blogIcon | altText"><span>Back to Blog
-        Articles</span></a>
+      <app-share-icons [shareButtonConfig]="shareButtonConfig"></app-share-icons>
+      <a class="back-link-bottom" routerLink="..">
+        <img [src]="blogIcon" [alt]="blogIcon | altText">
+        <span>Back to Blog Articles</span>
+      </a>
       <app-blog-contact-details></app-blog-contact-details>
     </div>
     <div class="articles">

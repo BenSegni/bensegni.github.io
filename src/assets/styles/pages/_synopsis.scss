@@ -193,8 +193,13 @@
         background-size: cover;
         background-position: 50% 20%;
         margin-top: 1rem;
-        border: .0625rem solid $black;
+        border: .5rem solid $black;
         box-sizing: border-box;
+        cursor: pointer;
+
+        &:hover {
+          border-color: $black_alpha_7;
+        }
 
         .related-project-wrapper {
             @include flex();
