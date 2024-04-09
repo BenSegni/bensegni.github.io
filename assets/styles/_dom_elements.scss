@@ -57,6 +57,20 @@ header {
   }
 }
 
+.blog-article-mobile {
+  @include tablet {
+    display: none
+  }
+
+  @include mobile {
+    display: none
+  }
+
+  @include small-mobile {
+    display: none
+  }
+}
+
 footer {
   @include flex();
   justify-content: center;
