@@ -2,7 +2,7 @@
   animation: transition-out 0.5s ease;
   align-items: stretch;
   transition: all 2s;
-  @include span-90();
+  @include span-95();
 
   @keyframes transition-out {
     0% {

@@ -300,7 +300,7 @@
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
   @include showcase-grid-transition(0.5s);
-  @include span-90();
+  @include span-95();
 
   span {
     .project-details {
