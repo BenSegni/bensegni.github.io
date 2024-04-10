@@ -133,7 +133,8 @@ $background: 'background.webp';
       align-items: flex-end;
       align-self: center;
       position: absolute;
-      right: 1.5rem;
+      right: 2.5rem;
+      width: 3rem;
 
       @include tablet {
         flex-direction: row;
