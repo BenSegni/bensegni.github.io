@@ -156,6 +156,9 @@ $background: 'background.webp';
         border-radius: 0;
         height: 1.5rem;
         margin: 1rem;
+        background-color: $black_background;
+        padding: .45rem;
+        border-radius: 10rem;
 
         @include tablet {
           margin: 0 1rem 1.5rem 0;
