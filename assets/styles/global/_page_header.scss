@@ -139,16 +139,19 @@ $background: 'background.webp';
       @include tablet {
         flex-direction: row;
         position: unset;
+        width: auto;
       }
 
       @include small-mobile {
         flex-direction: row;
         position: unset;
+        width: auto;
       }
 
       @include mobile {
         flex-direction: row;
         position: unset;
+        width: auto;
       }
 
       img {

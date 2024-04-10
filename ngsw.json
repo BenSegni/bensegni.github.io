@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1712756217001,
+  "timestamp": 1712776554147,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -17,7 +17,7 @@
         "/manifest.webmanifest",
         "/polyfills.bf6f341cb17959f9.js",
         "/runtime.4c2f33722c1b4a80.js",
-        "/styles.f1aca6d34e3cd5ef.css"
+        "/styles.3ae3d9876e8a528d.css"
       ],
       "patterns": []
     },
@@ -464,7 +464,7 @@
     "/assets/styles/global/_mixins.scss": "06fa55e4e1330b9521dd9a28823bfdfbf252e015",
     "/assets/styles/global/_modal.scss": "f8ac63ff607ecdc117ff9d1365ebd844af8bf262",
     "/assets/styles/global/_navigation.scss": "a0b206e306b3365d163d3ea15a389095b1fd61e7",
-    "/assets/styles/global/_page_header.scss": "f1226f62183d4a9e36f671632b1f9a2f9284a644",
+    "/assets/styles/global/_page_header.scss": "b8936a8cdecd8ded15406b9c09d35669ed034426",
     "/assets/styles/global/_presentation.link.scss": "eb6d33702b7e8deac4e93f4b64c282da04cbcbb9",
     "/assets/styles/global/_previous_companies.scss": "7dc5e49b55c68edca404718176314e65ccb02a83",
     "/assets/styles/global/_skill-pills.scss": "1ce741031b89fdcf0c124632542b7da92564e750",
@@ -486,7 +486,7 @@
     "/avatar.e61fd9c73b0bdcbc.webp": "35597a9abbe5b7866702e544c4682263f6df1b5f",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "701875f4b2cf4032e029fa9e7bda170776371dc3",
+    "/index.html": "3a97afb623b5549dd6b9b3f68f6b423e615bc2fa",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
     "/main.546ff2668450cf02.js": "0ea7345821de685955a9b2c00165a086ee838a76",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
@@ -494,7 +494,7 @@
     "/polyfills.bf6f341cb17959f9.js": "dd7f0cc3302d1536214b40a5a9ae43ce4af34136",
     "/runtime.4c2f33722c1b4a80.js": "25971d834a054d99b1a7268650585e0645872a3f",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.f1aca6d34e3cd5ef.css": "4e264c52d38d2341d887f487fddc59f0b66cfe2a",
+    "/styles.3ae3d9876e8a528d.css": "14c2c977c78e3a07633a2a2528d1210da2478782",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
