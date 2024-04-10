@@ -556,6 +556,8 @@
       background-image: url('../../img/me/avatar.webp');
       background-position: center;
       background-size: cover;
+      border: .25rem solid $black_background;
+      box-sizing: border-box;
 
       @include small-mobile {
         margin: 0 1rem 0 0;
