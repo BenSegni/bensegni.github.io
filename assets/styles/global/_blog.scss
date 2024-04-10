@@ -549,9 +549,13 @@
     }
 
     .blog-contact-image {
+      display: block;
       height: 6rem;
-      width: 6rem;
+      width: 12rem;
       margin: 1rem 1rem 0 0;
+      background-image: url('../../img/me/avatar.webp');
+      background-position: center;
+      background-size: cover;
 
       @include small-mobile {
         margin: 0 1rem 0 0;
