@@ -43,12 +43,14 @@ $background: 'background.webp';
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 0;
+        text-align: center;
       }
 
       @include small-mobile {
         font-size: 2rem;
         line-height: 2.5rem;
         padding: 0;
+        text-align: center;
       }
     }
 
@@ -69,11 +71,13 @@ $background: 'background.webp';
       @include mobile {
         font-size: 1.25rem;
         line-height: 1.5rem;
+        text-align: center;
       }
 
       @include small-mobile {
         font-size: 1.25rem;
         line-height: 1.5rem;
+        text-align: center;
       }
     }
 
@@ -120,11 +124,15 @@ $background: 'background.webp';
     }
 
     @include mobile {
-      padding-left: 1rem;
+      margin: 2rem auto 0 auto;
+      text-align: center;
+      padding-left: 0;
     }
 
     @include small-mobile {
-      padding-left: 1rem;
+      margin: 2rem auto 0 auto;
+      text-align: center;
+      padding-left: 0;
     }
 
     .skills {
@@ -143,15 +151,11 @@ $background: 'background.webp';
       }
 
       @include small-mobile {
-        flex-direction: row;
-        position: unset;
-        width: auto;
+        display: none;
       }
 
       @include mobile {
-        flex-direction: row;
-        position: unset;
-        width: auto;
+        display: none;
       }
 
       img {
@@ -196,14 +200,14 @@ $background: 'background.webp';
 
     @include mobile {
       background-size: cover;
-      width: 50vw;
+      width: 100vw;
       height: 70vh;
     }
 
     @include small-mobile {
       background-size: cover;
-      width: 50vw;
-      height: 70vh;
+      width: 100vw;
+      height: 50vh;
     }
   }
 
@@ -260,6 +264,14 @@ $background: 'background.webp';
     border: none;
     border-radius: 0;
     margin: 8rem 0 0 0;
+
+    @include small-mobile {
+      margin: 2rem auto 0 auto;
+    }
+
+    @include mobile {
+      margin: 2rem auto 0 auto;
+    }
   }
 
 
@@ -268,14 +280,14 @@ $background: 'background.webp';
   }
 
   @include mobile {
-    @include mobile-header();
+    flex-direction: column-reverse;
     background-size: cover;
     height: 70vh;
     padding-bottom: 0;
   }
 
   @include small-mobile {
-    @include mobile-header();
+    flex-direction: column-reverse;
     background-size: cover;
     height: 70vh;
     padding-bottom: 0;
