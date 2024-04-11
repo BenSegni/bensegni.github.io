@@ -1,11 +1,17 @@
 <div class="header-section">
-    <img [src]="headerContent.logoPath" alt="web developer avatar" />
-    <h1 [innerText]="headerContent.header"></h1>
-    <h2 [innerHTML]="headerContent.title"></h2>
+  <div class="avatar"></div>
+  <div class="content-wrapper">
+    <div class="skills">
+      <img *ngFor="let skill of headerContent.skills" [src]="skill | logo" [alt]="skill | logo | altText">
+    </div>
+    <h1 [innerHTML]="headerContent.greeting"></h1>
+    <h2 [innerHTML]="headerContent.jobTitle"></h2>
     <span class="location-wrapper">
-        <app-location-icon></app-location-icon>
-        <a [href]="headerContent.locationLink" target="_blank">
-            <p [innerText]="headerContent.location" aria-label="location link"></p>
-        </a>
+      <app-location-icon></app-location-icon>
+      <a [href]="headerContent.locationLink" target="_blank">
+        <p [innerText]="headerContent.location" aria-label="location link"></p>
+      </a>
     </span>
+    <img class="scroll-down" src="../../../assets/img/scroll_down_icon.svg" alt="scroll down">
+  </div>
 </div>
