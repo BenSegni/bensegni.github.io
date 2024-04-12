@@ -29,13 +29,31 @@ $background: 'background.webp';
       font-size: 3rem;
       padding-bottom: 0;
 
-      span {
+      q {
         color: $blue_1;
       }
 
+      span {
+        color: $white !important;
+        padding: 0 .25rem;
+        margin-right: .25rem;
+        font-weight: 300;
+
+        &:first-of-type {
+          color: $blue_1 !important;
+          font-weight: 300;
+          background-color: transparent;
+        }
+
+        &:last-of-type {
+          color: $black_alpha_7 !important;
+          background-color: $blue_alpha_6;
+        }
+      }
+
       @mixin mobile-header-one {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.75rem;
+        line-height: 3rem;
         padding: 0;
         text-align: center;
       }
@@ -60,13 +78,26 @@ $background: 'background.webp';
       padding-bottom: 0;
 
       span {
-        color: $blue_1;
+        color: $white;
         font-weight: 700;
+
+        &:first-of-type {
+          color: $blue_1;
+          font-weight: 300;
+        }
+
+        &:last-of-type {
+          color: $black_alpha_7;
+          background-color: $blue_alpha_6;
+          font-weight: 500;
+          padding: 0 .25rem;
+          margin-right: .25rem;
+        }
       }
 
       @mixin mobile-header-two {
-        font-size: 2rem;
-        line-height: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 3rem;
         padding: 0;
         text-align: center;
       }
@@ -97,10 +128,12 @@ $background: 'background.webp';
 
       span {
         padding-right: 1rem;
+
         &:first-of-type {
           color: $blue_1;
           font-weight: 700;
         }
+
         &:last-of-type {
           color: $blue_1;
           font-weight: 700;
