@@ -29,8 +29,33 @@ $background: 'background.webp';
       font-size: 3rem;
       padding-bottom: 0;
 
-      span {
+      q {
         color: $blue_1;
+      }
+
+      span {
+        color: $white !important;
+        padding: 0 .25rem;
+        margin-right: .25rem;
+        font-weight: 300;
+
+        &:first-of-type {
+          color: $blue_1 !important;
+          font-weight: 300;
+          background-color: transparent;
+        }
+
+        &:last-of-type {
+          color: $black_alpha_7 !important;
+          background-color: $blue_alpha_6;
+        }
+      }
+
+      @mixin mobile-header-one {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0;
+        text-align: center;
       }
 
       @include tablet {
@@ -40,17 +65,11 @@ $background: 'background.webp';
       }
 
       @include mobile {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        padding: 0;
-        text-align: center;
+        @include mobile-header-one();
       }
 
       @include small-mobile {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        padding: 0;
-        text-align: center;
+        @include mobile-header-one();
       }
     }
 
@@ -59,8 +78,28 @@ $background: 'background.webp';
       padding-bottom: 0;
 
       span {
-        color: $blue_1;
+        color: $white;
         font-weight: 700;
+
+        &:first-of-type {
+          color: $blue_1;
+          font-weight: 300;
+        }
+
+        &:last-of-type {
+          color: $black_alpha_7;
+          background-color: $blue_alpha_6;
+          font-weight: 700;
+          padding: 0 .25rem;
+          margin-right: .25rem;
+        }
+      }
+
+      @mixin mobile-header-two {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        padding: 0;
+        text-align: center;
       }
 
       @include tablet {
@@ -69,15 +108,11 @@ $background: 'background.webp';
       }
 
       @include mobile {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        text-align: center;
+        @include mobile-header-two();
       }
 
       @include small-mobile {
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-        text-align: center;
+        @include mobile-header-two();
       }
     }
 
@@ -93,10 +128,12 @@ $background: 'background.webp';
 
       span {
         padding-right: 1rem;
+
         &:first-of-type {
           color: $blue_1;
           font-weight: 700;
         }
+
         &:last-of-type {
           color: $blue_1;
           font-weight: 700;
@@ -123,16 +160,18 @@ $background: 'background.webp';
       padding-left: 3rem;
     }
 
-    @include mobile {
+    @mixin mobile-content-wrapper {
       margin: 2rem auto 0 auto;
       text-align: center;
       padding-left: 0;
     }
 
+    @include mobile {
+      @include mobile-content-wrapper();
+    }
+
     @include small-mobile {
-      margin: 2rem auto 0 auto;
-      text-align: center;
-      padding-left: 0;
+      @include mobile-content-wrapper();
     }
 
     .skills {
@@ -179,6 +218,16 @@ $background: 'background.webp';
         @include small-mobile {
           margin-right: .5rem;
         }
+      }
+    }
+
+    .email {
+      @include flex();
+      align-items: center;
+      margin: 2rem 0;
+
+      svg {
+        margin-right: 1rem;
       }
     }
   }
@@ -263,7 +312,7 @@ $background: 'background.webp';
     width: 2rem;
     border: none;
     border-radius: 0;
-    margin: 8rem 0 0 0;
+    margin: 6rem 0 0 0;
 
     @include small-mobile {
       margin: 2rem auto 0 auto;
