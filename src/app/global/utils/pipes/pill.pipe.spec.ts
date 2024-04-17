@@ -1,5 +1,7 @@
 import { ColorPaletteEnum } from '../../enum/color-palette.enum';
 import { KeywordsEnum } from '../../enum/keywords.enum';
+import { TechnologyEnum } from '../../enum/technology.enum';
+import { ToolkitEnum } from '../../enum/toolkit.enum';
 import { PillPipe } from './pill.pipe';
 
 describe('PillPipe', () => {

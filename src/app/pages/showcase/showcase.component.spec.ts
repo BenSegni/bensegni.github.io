@@ -34,4 +34,16 @@ describe('ShowcaseComponent', () => {
     it('should create', () => {
         expect(component).toBeTruthy();
     });
+
+    describe('Testing changeViewLayout()', () => {
+      beforeEach(() => {
+        component.columnLayout = false;
+      });
+
+      it('should toggle the layout from grid to column', () => {
+        component.changeViewLayout(true);
+
+        expect(component.columnLayout).toBeTruthy();
+      })
+    });
 });

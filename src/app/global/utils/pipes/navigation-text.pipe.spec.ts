@@ -1,4 +1,3 @@
-import { pipe } from 'rxjs';
 import { NavigationTextPipe } from './navigation-text.pipe';
 import { NavigationEnum } from '../../enum/navigation.enum';
 import { SubTextEnum } from '../../enum/navigation-subtext.enum';
