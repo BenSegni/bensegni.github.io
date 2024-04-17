@@ -8,7 +8,7 @@ describe('LinkedinShareIconComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [LinkedinShareIconComponent]
+      imports: [LinkedinShareIconComponent]
     });
     fixture = TestBed.createComponent(LinkedinShareIconComponent);
     component = fixture.componentInstance;

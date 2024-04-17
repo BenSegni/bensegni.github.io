@@ -8,7 +8,7 @@ describe('ShareIconsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ShareIconsComponent]
+      imports: [ShareIconsComponent]
     });
     fixture = TestBed.createComponent(ShareIconsComponent);
     component = fixture.componentInstance;

@@ -19,6 +19,7 @@ import { LinkedinIconComponent } from './global/icons/linkedin-icon/linkedin-ico
 import { NpmIconComponent } from './global/icons/npm-icon/npm-icon.component';
 import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
 import { LocationIconComponent } from './global/icons/location-icon/location-icon.component';
+import { LogoPipe } from './global/utils/pipes/logo.pipe';
 
 describe('AppComponent', () => {
     let component: AppComponent;
@@ -42,7 +43,8 @@ describe('AppComponent', () => {
                 GithubIconComponent,
                 LinkedinIconComponent,
                 NpmIconComponent,
-                LocationIconComponent
+                LocationIconComponent,
+                LogoPipe
             ]
         });
 

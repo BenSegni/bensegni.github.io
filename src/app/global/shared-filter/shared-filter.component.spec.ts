@@ -40,5 +40,29 @@ describe('SharedFilterComponent', () => {
       expect(component['_globalService'].filterValue).toBe('');
       expect(spyTrigger).toHaveBeenCalledWith('UX/UI')
     });
-  })
+  });
+
+  describe('Testing openCloseFilter()', () => {
+    beforeEach(() => {
+      component.showFilterList = false;
+    });
+
+    it('should toggle the filter', () => {
+      component.openCloseFilter();
+
+      expect(component.showFilterList).toBeTruthy();
+    })
+  });
+
+  describe('Testing changeViewLayout()', () => {
+    beforeEach(() => {
+      component.columnLayout = false;
+    });
+
+    it('should toggle the layout from grid to column', () => {
+      component.changeViewLayout();
+
+      expect(component.columnLayout).toBeTruthy();
+    })
+  });
 });

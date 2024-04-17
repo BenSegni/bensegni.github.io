@@ -14,6 +14,8 @@ describe('NavigationTextPipe', () => {
         expect(pipe.transform(NavigationEnum.Github)).toBe(SubTextEnum.Github);
         expect(pipe.transform(NavigationEnum.LinkedIn)).toBe(SubTextEnum.LinkedIn);
         expect(pipe.transform(NavigationEnum.Showcase)).toBe(SubTextEnum.Showcase);
+        expect(pipe.transform(NavigationEnum.Blog)).toBe(SubTextEnum.Blog);
+        expect(pipe.transform(NavigationEnum.NPM)).toBe(SubTextEnum.NPM);
         expect(pipe.transform('odd-route')).toBe('');
     });
 });

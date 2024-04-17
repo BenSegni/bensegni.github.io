@@ -8,7 +8,7 @@ describe('FacebookShareIconComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [FacebookShareIconComponent]
+      imports: [FacebookShareIconComponent]
     });
     fixture = TestBed.createComponent(FacebookShareIconComponent);
     component = fixture.componentInstance;

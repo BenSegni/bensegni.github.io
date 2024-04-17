@@ -8,7 +8,7 @@ describe('XShareIconComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [XShareIconComponent]
+      imports: [XShareIconComponent]
     });
     fixture = TestBed.createComponent(XShareIconComponent);
     component = fixture.componentInstance;
