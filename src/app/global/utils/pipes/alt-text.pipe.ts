@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class AltTextPipe implements PipeTransform {
 
-  transform(value: string): unknown {
-    const altText = `${value.substring(value.lastIndexOf( '/' ) + 1, value.lastIndexOf( '.' ))} logo`
+  transform(imageUrl: string): string {
+    const altText = `${imageUrl.substring(imageUrl.lastIndexOf( '/' ) + 1, imageUrl.lastIndexOf( '.' ))} logo`
 
     return altText;
   }

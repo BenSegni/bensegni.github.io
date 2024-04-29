@@ -1,0 +1,81 @@
+<html>
+<p>This article outlines how to use <a href="https://angular.io/guide/pipes" target="_blank">pipes in Angular</a> to
+  create alternate text for images inside the html template. This approach creates quicker an consistent implementation
+  of alt text for your
+  images, ensuring that accessibility standards are adhered to.
+</p>
+<p>
+  To get started, use the <mark>Angular CLI</mark> to create a pipe by running the following command:
+<pre class='angular-code'>
+  <code>
+    ng g p alt-text
+  </code>
+</pre>
+This will autogenerate pipe files which include:
+<ol>
+  <li>The alt text pipe<b>.ts</b> file</li>
+  <li>The alt text pipe<b>.spec.ts</b> file</li>
+</ol>
+</p>
+<p>
+  To start, ensure the parameter for the <b>transform</b> method has a string set as <b>imageUrl</b> &amp; the method
+  returns a string. This will take the image url you are using for data binding and will eventually return the alternate text. For now,
+  the <mark>transform</mark> method returns an empty string. The next stage will be to take any asset url and convert this
+  to a suitable alternate text value.
+<pre class="angular-code">
+  <code>
+    import <span class="code-red">{ Pipe, PipeTransform }</span> from <span class="code-red">'@angular/core'</span>;
+
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'altText'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">AltTextPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-gold">// for now, the pipe returns an empty string.</span>
+
+      <span class="code-red">transform</span>(<span class="code-pink">imageUrl</span>: string): string <span class="code-red">{</span>
+        return '';
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+The next step will be create a constant for the transformed string. In this step the asset url of the image passed into
+the pipe, will be split to return just the file name.
+<pre class="angular-code">
+  <code>
+    import <span class="code-red">{ Pipe, PipeTransform }</span> from <span class="code-red">'@angular/core'</span>;
+
+    <span class="code-red">@Pipe(</span>{
+      <span class="code-gold">name:</span> 'altText'
+    }<span class="code-red">)</span>
+    <span class="code-gold">export</span> class <span class="code-red">AltTextPipe</span> implements <span class="code-red">PipeTransform</span> {
+
+      <span class="code-red">transform</span>(<span class="code-pink"imageUrl></span>: string): string <span class="code-red">{</span>
+        const <span class="code-blue">altText</span> = `${<span class="code-pink">imageUrl</span>.substring(<span class="code-pink">imageUrl</span>.lastIndexOf( <span class="code-gold">'/'</span> ) + 1, <span class="code-pink">imageUrl</span>.lastIndexOf( <span class="code-gold">'.'</span> ))</span>} logo`
+
+        return <span class="code-blue">altText</span>;
+      <span class="code-red">}</span>
+    }
+  </code>
+</pre>
+To break this down, using a string literal to keep things clean, the <b>imageUrl</b> is saved as <b>altText</b> whereby
+the <b>imageUrl</b> looks for a specific part of the string starting just after the last<q>/</q> and anything just before <q>.</q>
+<ol>
+  <li><b>imageUrl.substring</b> - returns a section of the string at a specified location.</li>
+  <li><b>value.lastIndexOf( '/' ) + 1</b> - the start of the string is anything after <q>/</q></li>
+  <li><b>value.lastIndexOf( '.' )</b> - the end of that section is anything before <q>.</q></li>
+</ol>
+thus: <b>./assets/img/icon.jpg</b> when passed to the pipe will return, <b>icon</b>.
+</p>
+<p>
+  The last part of string literal can be anything appropriate for the alt text string. In this instance, we just return
+  <b>logo</b>. This is attributed to the fact there are many logo icons on this website!
+</p>
+<img src="./assets/blog-content/images/alt-text.png" alt="alt text pipe code">
+<p><small><b>(Image Above)</b> HTML Component Template: See <mark>'article.level'</mark> makes use of the logo pipe
+    ( this has been written about in <a href="./blog/angular-pipes-for-images">here</a> ), we retrieve an image url and into the [alt] tag we then pass
+    article.level with logo and then implement the altText pipe to give use the alternative text message.</small></p>
+<p>This will then allow for a reusable apporach to creating alt text on the images added to the template.</p>
+<p>Happy coding... 😜</p>
+
+</html>

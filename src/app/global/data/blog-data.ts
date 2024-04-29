@@ -78,5 +78,16 @@ export const blogData: Blog[] = [
     routeUrl: 'responsive-sass',
     skills: ['HTML5', 'SASS'],
     level: LevelEnum.Intermediate
+  },
+  {
+    id: 7,
+    coverImage: '../../../assets/blog-content/images/alt-text.png',
+    title: 'Alternate Text Pipes',
+    date: new Date('April 29, 2024 14:57:00'),
+    description: 'Using pipes to create alt text on images.',
+    content: '../../../assets/blog-content/alt-text-pipes.html',
+    routeUrl: 'alt-text-pipes',
+    skills: ['Angular', 'HTML5', 'Typescript'],
+    level: LevelEnum.Intermediate
   }
 ]
