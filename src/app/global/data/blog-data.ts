@@ -82,7 +82,7 @@ export const blogData: Blog[] = [
   {
     id: 7,
     coverImage: '../../../assets/blog-content/images/alt-text.png',
-    title: 'Alternate Text Pipes',
+    title: 'Alternative Text Pipes',
     date: new Date('April 29, 2024 14:57:00'),
     description: 'Using pipes to create alt text on images.',
     content: '../../../assets/blog-content/alt-text-pipes.html',
