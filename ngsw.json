@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714406887411,
+  "timestamp": 1714410488008,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -270,7 +270,7 @@
     "/assets/blog-content/generic-interfaces.html": "a20f8b863c4bbe54513a2841a6979dd55231be3a",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
     "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
-    "/assets/blog-content/images/alt-text.png": "848672dade98c4048e29e3cebc6d52ce8278bcc3",
+    "/assets/blog-content/images/alt-text.png": "171d1e98bde290d1333c471387e0388eeae4833f",
     "/assets/blog-content/images/generics.png": "f627c7b30b888f15adc33854f2cb4f9fb0132a3d",
     "/assets/blog-content/images/responsive.png": "90172e58bbc9f17916a35472f47416fa91b11890",
     "/assets/blog-content/images/sass-mixin.png": "1f5decde32c1c51aa6256378d62bf0e442ff84fb",
