@@ -71,14 +71,14 @@ These are annotated below:
 <pre class='angular-code'>
   <code>
     import <span class="code-red">{ Component }</span> from <span class="code-red">'@angular/core'</span>;
-    import <span class="code-red">{ FadeIn }</span> from <span class="code-red">'../utils/animations/fade.animation'</span>;
+    import <span class="code-pink">{ FadeIn }</span> from <span class="code-pink">'../utils/animations/fade.animation'</span>;
 
     <span class="code-red">@Component(</span>{
         selector: 'app-some-component',
         templateUrl: './some-component.component.html',
         animations: [<span class="code-red">FadeIn()</span>],
     }<span class="code-red">)</span>
-    <span class="code-gold">export</span> class <span class="code-blue">SomeComponent</span> {
+    <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> {
       ...
   </code>
 </pre>
