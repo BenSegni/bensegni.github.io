@@ -1,0 +1,98 @@
+<html>
+<p>This article outlines how to use Typescript &amp; Angular to create resuable <a
+    href="https://angular.io/guide/animations" target="_blank">animations</a>. The approach will create opportunities
+  the implementation of
+  animations which can then be applied to other areas of the app.
+</p>
+<p>
+  The article will outline how to make use of a simple <b>fade animation</b> yet, this process can applied to many other
+  edge
+  cases which may be more complex in nature.</p>
+<p>
+  The first step will be to create a simple exportable function called <b>FadeIn()</b> - the return declaration will be
+  of type <mark>AnimationTriggerMetadata</mark> imported from <b>@angular/animations</b>. For now, the function can just
+  return a <mark>trigger</mark> method,
+  imported again from
+  <b>@angular/animations</b>.
+<pre class='angular-code'>
+  <code>
+    import <span class="code-red"> { AnimationTriggerMetadata } </span> from <span class="code-red">"@angular/animations"</span>;
+
+    export function <span class="code-gold">FadeIn()</span>: <span class="code-red">AnimationTriggerMetadata</span> {
+      return <span class="code-red">trigger</span>();
+    }
+  </code>
+</pre>
+Next, add the <b>necessary methods</b> into the function to create the <b>fade</b> animation.
+<pre class='angular-code'>
+  <code>
+    import <span class="code-red"> { AnimationTriggerMetadata, animate, style, transition, trigger } </span> from <span class="code-red">"@angular/animations"</span>;
+
+    export function <span class="code-gold">FadeIn()</span>: <span class="code-red">AnimationTriggerMetadata</span> {
+      return <span class="code-red">trigger</span>('fade', [
+        <span class="code-red">transition</span>('* => *', [
+        <span class="code-red">style</span>({ opacity: 0 }),
+          <span class="code-red">animate</span>(1000, style({ opacity: 1 }))
+        ])
+      ]);
+    }
+  </code>
+</pre>
+breaking the methods down inside the function:
+<ol>
+  <li><b>trigger</b> - creates a name for the animation trigger which can be bound to the html.</li>
+  <li><b>transition</b> - the method controlling <b>from</b> &amp; <b>to</b> states.</li>
+  <li><b>style</b> - the initial style state at the start of the animation.</li>
+  <li><b>animation</b> - the animation step which considers time &amp; style state change.</li>
+</ol>
+These are annotated below:
+<pre class='angular-code'>
+  <code>
+    import <span class="code-red">{ AnimationTriggerMetadata, animate, style, transition, trigger }</span> from <span class="code-red">"@angular/animations"</span>;
+
+    export function <span class="code-gold">FadeIn()</span>: <span class="code-red">AnimationTriggerMetadata</span> {
+      <span class="code-gold">// we name the trigger 'fade'.</span>
+      return <span class="code-red">trigger</span>('fade', [
+      <span class="code-gold">// from and two states are the same, as they will switch between true &amp; false.</span>
+        <span class="code-red">transition</span>('* => *', [
+        <span class="code-gold">// initial styling makes the element not visible.</span>
+        <span class="code-red">style</span>({ opacity: 0 }),
+        <span class="code-gold">// after 1 second, the element appears.</span>
+          <span class="code-red">animate</span>(1000, style({ opacity: 1 }))
+        ])
+      ]);
+    }
+  </code>
+</pre>
+</p>
+<p>
+  Once the animation has been completed, the function is now ready to be shared across the application. The
+  implementation is very easy. Below is an example:
+<pre class='angular-code'>
+  <code>
+    import <span class="code-red">{ Component }</span> from <span class="code-red">'@angular/core'</span>;
+    import <span class="code-red">{ FadeIn }</span> from <span class="code-red">'../utils/animations/fade.animation'</span>;
+
+    @Component({
+        selector: 'app-some-component',
+        templateUrl: './some-component.component.html',
+        animations: [<span class="code-red">FadeIn()</span>],
+    })
+    export class <span class="code-blue">SomeComponent</span> {
+      ...
+  </code>
+</pre>
+The animation in this example is found in a <b>utils directory</b>, but this can be set anywhere which best suits. As
+displayed, the only requirement after the function has been exported, is to import it into the <b>animations
+  property</b> of the
+<b>component decorator</b>. Once this has been done, the trigger name can be bound to the html element which has been
+marked for animation.
+</p>
+<img src="./assets/blog-content/images/animation-html.png" alt="animations typescript code">
+<p>The <b>animation trigger</b> name is bound to the div element and passing the <b>show boolean</b> into the animation
+  i.e. true or
+  false, the transition will show or hide the element using a fade animation.</p>
+<p>This animation can be applied to any component across the application where it is considered suitable.</p>
+<p>Happy coding... 😜</p>
+
+</html>
