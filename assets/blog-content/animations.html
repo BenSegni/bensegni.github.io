@@ -14,7 +14,7 @@
   return a <mark>trigger</mark> method,
   imported again from
   <b>@angular/animations</b>.
-<pre class='angular-code'>
+<pre class='typescript-code'>
   <code>
     import <span class="code-red"> { AnimationTriggerMetadata } </span> from <span class="code-red">"@angular/animations"</span>;
 
@@ -24,7 +24,7 @@
   </code>
 </pre>
 Next, add the <b>necessary methods</b> into the function to create the <b>fade</b> animation.
-<pre class='angular-code'>
+<pre class='typescript-code'>
   <code>
     import <span class="code-red"> { AnimationTriggerMetadata, animate, style, transition, trigger } </span> from <span class="code-red">"@angular/animations"</span>;
 
@@ -46,7 +46,7 @@ breaking the methods down inside the function:
   <li><b>animation</b> - the animation step which considers time &amp; style state change.</li>
 </ol>
 These are annotated below:
-<pre class='angular-code'>
+<pre class='typescript-code'>
   <code>
     import <span class="code-red">{ AnimationTriggerMetadata, animate, style, transition, trigger }</span> from <span class="code-red">"@angular/animations"</span>;
 
