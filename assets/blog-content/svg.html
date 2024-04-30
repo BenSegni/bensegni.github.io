@@ -20,10 +20,10 @@
 <p>Let's take a look at the standard compilation of an Angular component:</p>
 <pre class='angular-code'>
   <code>
-    <span class="code-red">@Component</span>({
+    <span class="code-red">@Component(</span>{
       selector: 'app-blog',
       templateUrl: './blog.component.html'
-    })
+    }<span class="code-red">)</span>
   </code>
 </pre>
 notice the <mark>templateUrl</mark> option inside the component decorator.
@@ -31,10 +31,10 @@ notice the <mark>templateUrl</mark> option inside the component decorator.
 <p><b>Using an svg instead of HTML</b>
 <pre class='angular-code'>
   <code>
-    <span class="code-red">@Component</span>({
+    <span class="code-red">@Component(</span>{
       selector: 'app-github-icon',
       templateUrl: './icon.svg'
-    })
+    }<span class="code-red">)</span>
   </code>
 </pre>
 </p>
