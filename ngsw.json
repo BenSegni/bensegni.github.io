@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1714481357681,
+  "timestamp": 1714482196635,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -270,7 +270,7 @@
     "/772.753055691a895dad.js": "e016d5a543c5618bfeb16ca6e35640e3fb0e4f3d",
     "/angular_logo.1808e02acbd75c03.svg": "3170e4ffce484b45025d0fd50bdef6e13cf8f67a",
     "/assets/blog-content/alt-text-pipes.html": "311dcebc5a46ac02b9d80052f74e0f1a229bf7da",
-    "/assets/blog-content/animations.html": "3145af59319bcd62a6619d4f94acf2e7dfaaf60e",
+    "/assets/blog-content/animations.html": "00d7b1e0eedb31ee07ebfb391d574fe349d90ecf",
     "/assets/blog-content/generic-interfaces.html": "d6150fc88bd1148233ee3091da1dabe391a0b6c2",
     "/assets/blog-content/guards.html": "64692bfba86889f14339fae3159a59ae95ab7e2f",
     "/assets/blog-content/image-pipe.html": "9ee8429359eec39ead38fb64c1b28dc298f3740f",
