@@ -10,7 +10,7 @@
   So, lets start by creating a simple config for the filter:
 <pre class='typescript-code'>
   <code>
-    import <span class="code-red">{ WritableSignal }</span> from <span class="code-red">"@angular/core"</span>;
+    import { <span class="code-red">WritableSignal</span> } from <span class="code-red">"@angular/core"</span>;
 
     <span class="code-gold">export</span> interface <span class="code-blue">FilterConfig</span> {
       data: Array<xmp><any></xmp>;
@@ -27,7 +27,7 @@ any type, makes it a bad contract.
 <p><b>Let's make it better:</b>
 <pre class='typescript-code'>
   <code>
-    import <span class="code-red">{ WritableSignal }</span> from <span class="code-red">"@angular/core"</span>;
+    import { <span class="code-red">WritableSignal</span> } from <span class="code-red">"@angular/core"</span>;
 
     <span class="code-gold">export</span> interface <span class="code-blue">FilterConfig<xmp><T></xmp></span> {
       data: Array<xmp><T></xmp>;
@@ -47,8 +47,8 @@ config. It's a <a href="https://angular.io/guide/signals" target="_blank">signal
   The contract is now in place, but we must now put it into use and the following will show you how this is done:
 <pre class='angular-code'>
   <code>
-    import <span class="code-red">{ GlobalDataService }</span> from '../../global/global-data.service';
-    import <span class="code-pink">{ blogData }</span> from '../../global/data/blog-data';
+    import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
+    import { <span class="code-pink">blogData</span> } from '../../global/data/blog-data';
 
     <span class="code-gold">export</span> class <span class="code-red">BlogComponent</span> extends <span class="code-red">GlobalDataService</span> {
 
@@ -74,8 +74,8 @@ config. It's a <a href="https://angular.io/guide/signals" target="_blank">signal
 then in another component across the application, we want to filter other types of data, we can set up our config like so:
 <pre class='angular-code'>
   <code>
-    import <span class="code-red">{ GlobalDataService }</span> from '../../global/global-data.service';
-    import <span class="code-pink">{ blogData }</span> from '../../global/data/blog-data';
+    import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
+    import { <span class="code-pink">someData</span> } from '../../global/data/some-data';
 
     <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> extends <span class="code-red">GlobalDataService</span> {
 
