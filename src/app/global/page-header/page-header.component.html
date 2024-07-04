@@ -1,9 +1,6 @@
 <div class="header-section">
   <div class="avatar"></div>
   <div class="content-wrapper">
-    <div class="skills">
-      <img *ngFor="let skill of headerContent.skills" [src]="skill | logo" [alt]="skill | logo | altText">
-    </div>
     <h1 [innerHTML]="headerContent.greeting"></h1>
     <h2 [innerHTML]="headerContent.jobTitle"></h2>
     <span class="location-wrapper">

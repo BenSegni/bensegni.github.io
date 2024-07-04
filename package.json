@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test --watch --code-coverage",
     "lint": "ng lint",
-    "ghp": "ng build --base-href '/' && npx angular-cli-ghpages --dir=dist/bensegni.github.io"
+    "ghp": "ng build --base-href '/' && npx angular-cli-ghpages --dir=dist/bensegni.github.io --no-silent"
   },
   "private": true,
   "dependencies": {
