@@ -32,54 +32,47 @@ import { SynopsisHeaderDisplayComponent } from './pages/synopsis/synopsis-header
 import { SynopsisBackLinkComponent } from './pages/synopsis/synopsis-back-link/synopsis-back-link.component';
 import { ProjectDetailsLinkComponent } from './pages/showcase/project-details-link/project-details-link.component';
 import { NpmComponent } from './pages/npm/npm.component';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { RecentBlogPostComponent } from './global/recent-blog-post/recent-blog-post.component';
 import { ShareIconsComponent } from './global/share-icons/share-icons.component';
 
-@NgModule({
-  declarations: [
-    AppComponent,
-    ShowcaseComponent,
-    CurrentProjectsComponent,
-    ContactComponent,
-    FeedbackComponent,
-    FeedbackLinkComponent,
-    SynopsisComponent,
-    GridDisplayComponent,
-    ContactDetailsComponent,
-    ProjectDetailsComponent,
-    CurrentProjectHeaderComponent,
-    CurrentProjectDetailComponent,
-    CurrentProjectPresentationComponent,
-    ShowcaseItemsComponent,
-    ReferencesComponent,
-    CvDownloadComponent,
-    GithubComponent,
-    RelatedSynopsisComponent,
-    ContactTypeComponent,
-    ContactLinkPipe,
-    SynopsisHeaderSectionComponent,
-    SynopsisHeaderDisplayComponent,
-    SynopsisBackLinkComponent,
-    ProjectDetailsLinkComponent,
-    NpmComponent,
-  ],
-  imports: [
-    GlobalModule,
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    AboutModule,
-    UtilsModule,
-    HttpClientModule,
-    ServiceWorkerModule.register('ngsw-worker.js', {
-      enabled: !isDevMode(),
-      registrationStrategy: 'registerWhenStable:30000'
-    }),
-    RecentBlogPostComponent,
-    ShareIconsComponent
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
-})
+@NgModule({ declarations: [
+        AppComponent,
+        ShowcaseComponent,
+        CurrentProjectsComponent,
+        ContactComponent,
+        FeedbackComponent,
+        FeedbackLinkComponent,
+        SynopsisComponent,
+        GridDisplayComponent,
+        ContactDetailsComponent,
+        ProjectDetailsComponent,
+        CurrentProjectHeaderComponent,
+        CurrentProjectDetailComponent,
+        CurrentProjectPresentationComponent,
+        ShowcaseItemsComponent,
+        ReferencesComponent,
+        CvDownloadComponent,
+        GithubComponent,
+        RelatedSynopsisComponent,
+        ContactTypeComponent,
+        ContactLinkPipe,
+        SynopsisHeaderSectionComponent,
+        SynopsisHeaderDisplayComponent,
+        SynopsisBackLinkComponent,
+        ProjectDetailsLinkComponent,
+        NpmComponent,
+    ],
+    bootstrap: [AppComponent], imports: [GlobalModule,
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        AboutModule,
+        UtilsModule,
+        ServiceWorkerModule.register('ngsw-worker.js', {
+            enabled: !isDevMode(),
+            registrationStrategy: 'registerWhenStable:30000'
+        }),
+        RecentBlogPostComponent,
+        ShareIconsComponent], providers: [provideHttpClient(withInterceptorsFromDi())] })
 export class AppModule { }
