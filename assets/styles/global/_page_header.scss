@@ -24,7 +24,6 @@ $background: 'background.webp';
     text-align: left;
     padding-left: 4rem;
 
-
     h1 {
       font-size: 3rem;
       padding-bottom: 0;
@@ -70,6 +69,8 @@ $background: 'background.webp';
 
       @include small-mobile {
         @include mobile-header-one();
+        width: 70vw;
+        text-align: center;
       }
     }
 
@@ -172,6 +173,7 @@ $background: 'background.webp';
 
     @include small-mobile {
       @include mobile-content-wrapper();
+      width: 70vw;
     }
 
     .skills {
@@ -338,7 +340,7 @@ $background: 'background.webp';
   @include small-mobile {
     flex-direction: column-reverse;
     background-size: cover;
-    height: 70vh;
+    height: 75vh;
     padding-bottom: 0;
   }
 
