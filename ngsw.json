@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1720170954757,
+  "timestamp": 1721394915775,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/902.777efc2dd6a2ee98.js",
         "/index.html",
-        "/main.d791e1636cc0f7be.js",
+        "/main.ff7e60f7d4289c10.js",
         "/manifest.webmanifest",
         "/polyfills.c5b32853c6ad992e.js",
         "/runtime.b1e60650cc415c34.js",
-        "/styles.42d023bbfe253dd8.css"
+        "/styles.08165dc3a72d67d9.css"
       ],
       "patterns": []
     },
@@ -68,6 +68,7 @@
         "/assets/img/ba-seats.webp",
         "/assets/img/ba_help_centre_page.webp",
         "/assets/img/background.webp",
+        "/assets/img/bbc_icon.svg",
         "/assets/img/behance_icon.svg",
         "/assets/img/behance_ui_nav.webp",
         "/assets/img/blog_icon.svg",
@@ -304,6 +305,7 @@
     "/assets/img/ba-seats.webp": "e48185aa2449d10a04aa392b807ad8a9f35cf797",
     "/assets/img/ba_help_centre_page.webp": "34e0fe545f8a58d7fb817b805943ff48667e3cf2",
     "/assets/img/background.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
+    "/assets/img/bbc_icon.svg": "fd40827b36552b87e8b13dc061a0074b00a42b7e",
     "/assets/img/behance_icon.svg": "e51b3e977e4d96886e191701c577d43cad35236c",
     "/assets/img/behance_ui_nav.webp": "dd32768c8fc9ac8f56f55efc7fe7d6bed8b1dd4f",
     "/assets/img/blog_icon.svg": "97a979ee6edb764c6965a6a68c0c884efe534b97",
@@ -474,7 +476,7 @@
     "/assets/styles/global/_skill-pills.scss": "1ce741031b89fdcf0c124632542b7da92564e750",
     "/assets/styles/global/_table.scss": "f7e93ad8476ff41fb53f2b58dc385609a1bbb81b",
     "/assets/styles/pages/_404.scss": "179e66ccb956cdc3c2679603378f82975b8be483",
-    "/assets/styles/pages/_about.scss": "1c19b95eef9d466058436bafe590abc37aa3ccc3",
+    "/assets/styles/pages/_about.scss": "1f81eefa79a2199af18323d5adc76f9794b8b677",
     "/assets/styles/pages/_about_mixins.scss": "28bbd475381d92ef5213b55ddfc176a83f9ba782",
     "/assets/styles/pages/_contact.scss": "1ccc1bc9161b8eeeae99615208cd201a359fc6c1",
     "/assets/styles/pages/_current_project.scss": "f52cde1c7544fb6fe0b1338b18d824596b0d1abf",
@@ -490,15 +492,15 @@
     "/avatar.e61fd9c73b0bdcbc.webp": "35597a9abbe5b7866702e544c4682263f6df1b5f",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "59c357a340b074e2176da71706f02f1368f214fe",
+    "/index.html": "4c016c7dbe1c9621f799406f4ed78b76d3281c5b",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.d791e1636cc0f7be.js": "c4b89406a9e21b40d7c1e7c55999f2ccee48d4db",
+    "/main.ff7e60f7d4289c10.js": "35feea7357f1daec438ec8acd371b039f2984140",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.c5b32853c6ad992e.js": "267aff58cd708b2f9fbc17c4161ed441bc676402",
     "/runtime.b1e60650cc415c34.js": "3bc0cc8f51829cf66cfec8dfdd79110a19fa4f7f",
     "/sass_logo.97c5b3288682da8d.svg": "c272a45e94308ee3aa2100a033686032010cd636",
-    "/styles.42d023bbfe253dd8.css": "05672cb43cbfce2db7daf4b49f4dfacb7cdf0ce1",
+    "/styles.08165dc3a72d67d9.css": "ce0b28c58ccc7607052aa20fb7563cc58960d2b7",
     "/typescript_logo.b876bff0041391c8.svg": "d902fbeaad0e7eed579301b62a2875633ef3263d"
   },
   "navigationUrls": [
