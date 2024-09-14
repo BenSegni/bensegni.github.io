@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1725963232210,
+  "timestamp": 1726307913748,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/902.777efc2dd6a2ee98.js",
         "/index.html",
-        "/main.acbfc6bee5b4ac79.js",
+        "/main.7823d6ccd2b2ae70.js",
         "/manifest.webmanifest",
         "/polyfills.c5b32853c6ad992e.js",
         "/runtime.b1e60650cc415c34.js",
@@ -102,6 +102,7 @@
         "/assets/img/express_js_logo.svg",
         "/assets/img/favicon.svg",
         "/assets/img/fe-dev-talk.webp",
+        "/assets/img/figma_logo.svg",
         "/assets/img/filter.webp",
         "/assets/img/filter_icon.svg",
         "/assets/img/github_logo.svg",
@@ -340,6 +341,7 @@
     "/assets/img/express_js_logo.svg": "f25238f8a4783e281153335f92604b6c53691c99",
     "/assets/img/favicon.svg": "8d4d1264a25dadf10860f560a7e044896349163a",
     "/assets/img/fe-dev-talk.webp": "ab216798f656e9fe2e9a3f82737f85ddd438231d",
+    "/assets/img/figma_logo.svg": "77e6a382c737cc4557b8a617df687ed774d6cccd",
     "/assets/img/filter.webp": "f3bf90a629f5d1cb073c1bc12c6c322725846fad",
     "/assets/img/filter_icon.svg": "058ddfc82b23e9984e13f910e0b516178a2f6a63",
     "/assets/img/github_logo.svg": "d7e8a96cd1456a74cd9071da7b1848b9145b059e",
@@ -494,9 +496,9 @@
     "/avatar.e61fd9c73b0bdcbc.webp": "35597a9abbe5b7866702e544c4682263f6df1b5f",
     "/background.6016126da6a7ecf2.webp": "6e685119ef4de9f6e47b0d682971bd90dc854e1f",
     "/html5_logo.6bec4477aa65d627.svg": "df69e8dd950f7a49915c12cf0ce873d5d8cc9fd2",
-    "/index.html": "a429238ddd3698c81f3b9df35a3a2df815c9ff95",
+    "/index.html": "e52535489321ee2958c8e25df7db07c5aa618faf",
     "/loading_icon.49faf924dc371799.svg": "f4dbc325a705a60f849d5b563b38a1f9c393317f",
-    "/main.acbfc6bee5b4ac79.js": "0e7090204829b8f0c585825ff9ece6515d07b6db",
+    "/main.7823d6ccd2b2ae70.js": "07c011a6119233e8d311150c6326e279b560f34e",
     "/manifest.webmanifest": "d581405c8a84955faf4c2469da08b0de40f15b03",
     "/npm_logo.7ac3cf6f0bad2162.svg": "067da4e8628bd7b5a180b3c36e386eb05d36466b",
     "/polyfills.c5b32853c6ad992e.js": "267aff58cd708b2f9fbc17c4161ed441bc676402",
