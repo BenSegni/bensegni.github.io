@@ -5,9 +5,13 @@
         <p><small>{{ role.date }}</small></p>
         <p class="honors">{{ role.title }}.</p>
     </span>
-    <ul class="about-detail">
-        <li *ngFor="let success of role.successes">{{ success }}</li>
-    </ul>
+    @if (role.successes.length) {
+        <ul class="about-detail">
+            <li *ngFor="let success of role.successes">{{ success }}</li>
+        </ul>
+    } @else {
+        <p class="new-job">More information to follow</p>
+    }
     <a class="employment-site-link" [href]="role.website" target="_blank" aria-label="employer website link">{{ role.website }}</a>
     <h5 class="skills-header" [innerText]="'Skills'">Skills:</h5>
     <app-skill-pills [skills]="role.technologies" [skillsType]="'employment'"></app-skill-pills>

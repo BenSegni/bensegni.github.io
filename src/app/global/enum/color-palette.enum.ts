@@ -3,6 +3,7 @@ export enum ColorPaletteEnum {
     bloodRed = '#e44d26',
     blue = '#3178c6',
     dockerBlue = '#2396ed',
+    figmaPink = '#ff7262',
     gold = '#ff9a00',
     gitlabOrange = '#fba225',
     hotPink = '#ff00ff',

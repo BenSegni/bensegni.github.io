@@ -2,7 +2,7 @@
     <h4 class="project-skills-header" [innerText]="'A Related Project:'"></h4>
     <span class="related-project" [ngStyle]="{ 'background-image': 'url(' + relatedProject.background + ')' }" (click)="navigateToSynopsis(relatedProject)">
         <span class="related-project-wrapper">
-            <h5 (click)="navigateToSynopsis(relatedProject)" [innerText]="relatedProject.projectTitle"></h5>
+            <h5 [routerLink]="'../../' + relatedProject.routeUrl + '/synopsis'" [innerText]="relatedProject.projectTitle"></h5>
             <p [innerText]="relatedProject.description"></p>
             <app-skill-pills [skills]="relatedProject.skills"></app-skill-pills>
         </span>

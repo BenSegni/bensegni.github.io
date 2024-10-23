@@ -82,6 +82,7 @@ export const routes: Routes = [
   {
     path: 'current-projects',
     component: CurrentProjectsComponent,
+    canActivate: []
   },
   {
     path: 'github',

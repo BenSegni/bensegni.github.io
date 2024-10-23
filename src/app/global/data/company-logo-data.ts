@@ -1,5 +1,6 @@
 export const companyLogos: string[] = [
     "../../../assets/img/amazon.svg",
+    "../../../assets/img/bbc_icon.svg",
     "../../../assets/img/british-airways.svg",
     "../../../assets/img/lenovo.svg",
     "../../../assets/img/mercedes-benz.svg",

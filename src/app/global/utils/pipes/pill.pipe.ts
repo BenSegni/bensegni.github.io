@@ -38,6 +38,7 @@ export class PillPipe implements PipeTransform {
         case value.includes(TechnologyEnum.UI): return ColorPaletteEnum.hotPink;
         //toolkit pills
         case value.includes(ToolkitEnum.Docker): return ColorPaletteEnum.dockerBlue;
+        case value.includes(ToolkitEnum.Figma): return ColorPaletteEnum.figmaPink;
         case value.includes(ToolkitEnum.Gitlab): return ColorPaletteEnum.gitlabOrange;
         case value.includes(ToolkitEnum.Illustrator): return ColorPaletteEnum.gold;
         case value.includes(ToolkitEnum.InDesign): return ColorPaletteEnum.indesignPink;

@@ -69,10 +69,10 @@
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
                         "production": {
-                            "browserTarget": "bensegni.github.io:build:production"
+                          "buildTarget": "bensegni.github.io:build:production"
                         },
                         "development": {
-                            "browserTarget": "bensegni.github.io:build:development"
+                          "buildTarget": "bensegni.github.io:build:development"
                         }
                     },
                     "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "bensegni.github.io:build"
+                      "buildTarget": "bensegni.github.io:build"
                     }
                 },
                 "test": {

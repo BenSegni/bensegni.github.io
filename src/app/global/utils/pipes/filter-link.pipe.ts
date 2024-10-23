@@ -14,6 +14,7 @@ export class FilterLinkPipe implements PipeTransform {
         case type.includes(TechnologyEnum.Angular): return LinkEnum.Angular;
         case type.includes(TechnologyEnum.Cypress): return LinkEnum.Cypress;
         case type.includes(TechnologyEnum.Directus): return LinkEnum.Directus;
+        case type.includes(TechnologyEnum.Express): return LinkEnum.ExpressJs;
         case type.includes(TechnologyEnum.HTML5): return LinkEnum.HTML5;
         case type.includes(TechnologyEnum.Ionic): return LinkEnum.Ionic;
         case type.includes(TechnologyEnum.Jasmine): return LinkEnum.Jasmine;
@@ -30,6 +31,7 @@ export class FilterLinkPipe implements PipeTransform {
         case type.includes(ToolkitEnum.Docker): return LinkEnum.Docker;
         case type.includes(ToolkitEnum.Github): return LinkEnum.Github;
         case type.includes(ToolkitEnum.Gitlab): return LinkEnum.Gitlab;
+        case type.includes(ToolkitEnum.Figma): return LinkEnum.Figma;
         case type.includes(ToolkitEnum.Illustrator): return LinkEnum.Illustrator;
         case type.includes(ToolkitEnum.InDesign): return LinkEnum.InDesign;
         case type.includes(ToolkitEnum.Inkscape): return LinkEnum.Inkscape;

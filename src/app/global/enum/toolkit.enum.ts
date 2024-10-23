@@ -6,6 +6,8 @@ export enum ToolkitEnum {
     Design = 'Design',
     Development = 'Development',
     Docker = 'Docker',
+    DockerDesktop = 'Docker Desktop',
+    Figma = 'Figma',
     Github = 'Github',
     Gitlab = 'Gitlab',
     Inkscape = 'Inkscape',

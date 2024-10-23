@@ -19,8 +19,12 @@ export const toolkitData: Stack[] = [
         purpose: ToolkitEnum.Design
     },
     {
-        name: ToolkitEnum.Docker,
+        name: ToolkitEnum.DockerDesktop,
         purpose: ToolkitEnum.Development
+    },
+    {
+        name: ToolkitEnum.Figma,
+        purpose: ToolkitEnum.Design
     },
     {
         name: ToolkitEnum.Github,

@@ -15,7 +15,7 @@ interface Header {
 })
 export class PageHeaderComponent {
     public headerContent: Header = {
-        greeting: "<q><span>Hi</span>, <span>I'm</span> <span>Ben.</span></q>",
+        greeting: "<q><span>Hi</span>, <span>I'm</span> <span>Ben Segni.</span></q>",
         jobTitle: '- <span>A</span> <span>Frontend</span> <span>full-stack developer.</span>',
         skills: ['Angular', 'HTML5', 'Jasmine', 'NestJs', 'NgRx', 'ReactJs', 'RxJs', 'SASS', 'Typescript'],
         location: 'County Durham, United Kingdom.',

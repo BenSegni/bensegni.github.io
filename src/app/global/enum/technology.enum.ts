@@ -3,6 +3,7 @@ export enum TechnologyEnum {
     Angular = 'Angular',
     Cypress = 'Cypress',
     Directus = 'Directus',
+    Express = 'ExpressJs',
     HTML5 = 'HTML5',
     Ionic = 'Ionic',
     Java = 'Java',
