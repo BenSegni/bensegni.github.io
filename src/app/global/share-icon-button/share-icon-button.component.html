@@ -1,4 +1,4 @@
-<ng-container [ngSwitch]="shareType">
+<ng-container [ngSwitch]="shareType()">
   <button class="facebook" *ngSwitchCase="'facebook'" (click)="shareContent()" aria-label="facebook share">
     <app-facebook-share-icon></app-facebook-share-icon>
   </button>

@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, inject, input } from '@angular/core';
+
 import { GlobalDataService } from '../global-data.service';
 import { skillsHighlightAnimation } from '../utils/animations/skills.animation';
 
@@ -9,9 +10,9 @@ import { skillsHighlightAnimation } from '../utils/animations/skills.animation';
   animations: [skillsHighlightAnimation()]
 })
 export class SkillPillsComponent {
-    @Input() public skills: string[] | undefined;
-    @Input() public skillsType = '';
-    @Input() public size = '';
-    @Input() public showLink = true;
-    constructor(public _globalService: GlobalDataService) {}
+    public skills = input<string[]>(['']);
+    public skillsType = input<string>('');
+    public size = input<string>('');
+    public showLink = input<boolean>(false);
+    public _globalService = inject(GlobalDataService);
 }

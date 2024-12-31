@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { StackListComponent } from './stack-list.component';
 
 describe('StackListComponent', () => {
-  let component: StackListComponent;
-  let fixture: ComponentFixture<StackListComponent>;
+  let component: StackListComponent<any>;
+  let fixture: ComponentFixture<StackListComponent<any>>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({

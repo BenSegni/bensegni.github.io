@@ -1,16 +1,14 @@
-import { inject } from '@angular/core';
-import { CanActivateFn, Router } from '@angular/router';
-declare let process: any;
+import { CanActivateFn, Router } from "@angular/router";
+import { inject, isDevMode } from "@angular/core";
 
 export const maintenanceGuard: CanActivateFn = () => {
-  const env = process.env.NODE_ENV;
   const router = inject(Router);
 
-  if (env === 'production') {
-    router.navigate(['under-construction']);
-    return false;
-  } else {
+  if (isDevMode()) {
     return true;
   }
 
+  router.navigate(["under-construction"]);
+  
+  return false;
 };

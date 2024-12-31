@@ -1,5 +1,7 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
+
 import { Project } from '../interface/project';
+import { projectData } from './../../../global/data/project-data';
 
 @Component({
   selector: 'app-current-project-detail',
@@ -7,5 +9,5 @@ import { Project } from '../interface/project';
   styleUrls: ['./current-project-detail.component.scss']
 })
 export class CurrentProjectDetailComponent {
-    @Input() public project: Project | undefined;
+    public project = input<Project>(projectData.projects[0]) ;
 }

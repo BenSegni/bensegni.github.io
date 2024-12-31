@@ -11,6 +11,6 @@ export interface Project {
     projectLogo: string;
     projectTitle: string;
     projectDescription: string;
-    skills?: string[];
-    skillUsage?: TechUsage[]
+    skills: string[];
+    skillUsage: TechUsage[];
 }

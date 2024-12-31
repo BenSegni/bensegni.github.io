@@ -1,15 +1,15 @@
-<ng-container *ngIf="item">
-    <img class="navigation-image" [src]="item.uiImage" [alt]="item.uiImage | altText">
+<ng-container *ngIf="item()">
+    <img class="navigation-image" [src]="item().uiImage" [alt]="item().uiImage | altText">
     <span class="route-info-wrapper">
-        <h3 [innerText]="item.anchorText"></h3>
+        <h3 [innerText]="item().anchorText"></h3>
         <span class="route-elements">
-            <img [src]="item.icon ? item.icon : pathIcon " [alt]="(item.icon ? item.icon : pathIcon) | altText">
-            <p><small class="route" [innerText]="item.route ? 'bensegni.github.io/' + item.route : item.url"></small></p>
+            <img [src]="item().icon ? item().icon : pathIcon " [alt]="(item().icon ?? pathIcon) | altText">
+            <p><small class="route" [innerText]="item().route ? 'bensegni.github.io/' + item().route : item().url"></small></p>
         </span>
-        <p class="text" [innerText]="item.anchorText | navigationText"></p>
+        <p class="text" [innerText]="item().anchorText | navigationText"></p>
         <h5 [innerText]="'Keywords:'"></h5>
         <ul class="keywords">
-            <li [ngStyle]="{ 'border-color': word | pill }" *ngFor="let word of item.keywords" [innerText]="word"></li>
+            <li [ngStyle]="{ 'border-color': word | pill }" *ngFor="let word of item().keywords" [innerText]="word"></li>
         </ul>
     </span>
 </ng-container>

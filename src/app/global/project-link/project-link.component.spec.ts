@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { BehanceIconComponent } from '../icons/behance-icon/behance-icon.component';
 import { ProjectLinkComponent } from './project-link.component';
 import { SimpleChange } from '@angular/core';
 import { showcaseData } from '../data/showcase-data';
@@ -10,19 +11,15 @@ describe('ProjectLinkComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ProjectLinkComponent]
+      declarations: [ProjectLinkComponent, BehanceIconComponent]
     });
     fixture = TestBed.createComponent(ProjectLinkComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   describe('Testing ngOnChanges', () => {
-    it('should call assignBlogList()', () => {
+    it('should set link to medium', () => {
       component.ngOnChanges({
         project: new SimpleChange(showcaseData[1], showcaseData[2], true)
       });
@@ -30,6 +27,15 @@ describe('ProjectLinkComponent', () => {
       fixture.detectChanges();
 
       expect(component['checkIfMediumLink']()).toBeFalsy();
+    });
+    it('should set link to download link', () => {
+      component.ngOnChanges({
+        project: new SimpleChange(showcaseData[8], showcaseData[8], true)
+      });
+
+      fixture.detectChanges();
+
+      expect(component.link).toBe('');
     });
   });
 

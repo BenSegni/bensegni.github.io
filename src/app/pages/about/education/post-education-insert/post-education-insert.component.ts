@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-post-education-insert',
@@ -6,5 +6,5 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./post-education-insert.component.scss']
 })
 export class PostEducationInsertComponent {
-    @Input() public training = '';
+    public training = input<string>('');
 }

@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +6,5 @@ import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FooterComponent {
-    @Input() public version = ''
+    public version = input<string>('1.0.0');
 }

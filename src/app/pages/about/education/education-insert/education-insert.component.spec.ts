@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { AltTextPipe } from '../../../../global/utils/pipes/alt-text.pipe';
 import { EducationInsertComponent } from './education-insert.component';
 
 describe('EducationInsertComponent', () => {
@@ -8,7 +9,7 @@ describe('EducationInsertComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [EducationInsertComponent]
+      declarations: [EducationInsertComponent, AltTextPipe]
     });
     fixture = TestBed.createComponent(EducationInsertComponent);
     component = fixture.componentInstance;

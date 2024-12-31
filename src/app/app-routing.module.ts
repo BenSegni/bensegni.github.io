@@ -1,20 +1,21 @@
-import { NgModule } from '@angular/core';
 import { ExtraOptions, RouterModule, Routes } from '@angular/router';
-import { ShowcaseComponent } from './pages/showcase/showcase.component';
+
 import { AboutComponent } from './pages/about/about.component';
-import { CurrentProjectsComponent } from './pages/current-projects/current-projects.component';
 import { ContactComponent } from './pages/contact/contact.component';
-import { ProfileComponent } from './pages/about/profile/profile.component';
-import { EmploymentComponent } from './pages/about/employment/employment.component';
+import { CurrentProjectsComponent } from './pages/current-projects/current-projects.component';
 import { EducationComponent } from './pages/about/education/education.component';
-import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
-import { PageNotFoundComponent } from './global/page-not-found/page-not-found.component';
-import { SynopsisComponent } from './pages/synopsis/synopsis.component';
-import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.component';
+import { EmploymentComponent } from './pages/about/employment/employment.component';
 import { GithubComponent } from './pages/github/github.component';
-import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
-import { SiteBuildComponent } from './global/site-build/site-build.component';
+import { NgModule } from '@angular/core';
 import { NpmComponent } from './pages/npm/npm.component';
+import { PageNotFoundComponent } from './global/page-not-found/page-not-found.component';
+import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.component';
+import { ProfileComponent } from './pages/about/profile/profile.component';
+import { ShowcaseComponent } from './pages/showcase/showcase.component';
+import { SiteBuildComponent } from './global/site-build/site-build.component';
+import { SynopsisComponent } from './pages/synopsis/synopsis.component';
+import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
+import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
 import { maintenanceGuard } from './global/guards/maintenance.guard';
 
 export const routes: Routes = [

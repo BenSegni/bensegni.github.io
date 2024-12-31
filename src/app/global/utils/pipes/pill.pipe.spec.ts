@@ -1,8 +1,7 @@
 import { ColorPaletteEnum } from '../../enum/color-palette.enum';
 import { KeywordsEnum } from '../../enum/keywords.enum';
-import { TechnologyEnum } from '../../enum/technology.enum';
-import { ToolkitEnum } from '../../enum/toolkit.enum';
 import { PillPipe } from './pill.pipe';
+import { TechnologyEnum } from '../../enum/technology.enum';
 
 describe('PillPipe', () => {
     it('create an instance', () => {
@@ -17,5 +16,6 @@ describe('PillPipe', () => {
         expect(pipe.transform(KeywordsEnum.Experience)).toBe(ColorPaletteEnum.pink);
         expect(pipe.transform(KeywordsEnum.Portfolio)).toBe(ColorPaletteEnum.pinkPurple);
         expect(pipe.transform(KeywordsEnum.Skills)).toBe(ColorPaletteEnum.smokeyBlue);
+        expect(pipe.transform(TechnologyEnum.UI)).toBe(ColorPaletteEnum.hotPink);
     });
 });

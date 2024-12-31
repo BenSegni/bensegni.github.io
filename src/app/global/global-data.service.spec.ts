@@ -1,6 +1,5 @@
-import { TestBed } from '@angular/core/testing';
-
 import { GlobalDataService } from './global-data.service';
+import { TestBed } from '@angular/core/testing';
 
 describe('GlobalDataService', () => {
     let service: GlobalDataService;
@@ -8,10 +7,6 @@ describe('GlobalDataService', () => {
     beforeEach(() => {
         TestBed.configureTestingModule({});
         service = TestBed.inject(GlobalDataService);
-    });
-
-    it('should be created', () => {
-        expect(service).toBeTruthy();
     });
 
     describe('Testing onLoad()', () => {

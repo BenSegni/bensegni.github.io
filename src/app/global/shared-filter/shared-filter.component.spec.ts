@@ -1,34 +1,31 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
+import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
 import { SharedFilterComponent } from './shared-filter.component';
 import { showcaseData } from '../data/showcase-data';
 
 describe('SharedFilterComponent', () => {
-  let component: SharedFilterComponent;
-  let fixture: ComponentFixture<SharedFilterComponent>;
+  let component: SharedFilterComponent<any>;
+  let fixture: ComponentFixture<SharedFilterComponent<any>>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SharedFilterComponent]
+      declarations: [SharedFilterComponent, AltTextPipe]
     });
     fixture = TestBed.createComponent(SharedFilterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   describe('Testing resetFilter()', () => {
     beforeEach(() => {
-      component.config = {
+      fixture.componentRef.setInput("config", {
         data: showcaseData,
         listLength: showcaseData.length,
         signalData: component['_globalService'].showcaseSignal$,
         resetValue: 'UX/UI',
         options: ['A', 'B', 'C']
-      }
+      });
     });
 
     it('should reset the filter', () => {

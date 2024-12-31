@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from "@angular/core";
 
 interface Dimensions {
   height: string;
@@ -7,13 +7,13 @@ interface Dimensions {
 }
 
 @Component({
-  selector: 'app-loading-graphic',
-  templateUrl: './loading-graphic.component.html',
-  styleUrls: ['./loading-graphic.component.scss']
+  selector: "app-loading-graphic",
+  templateUrl: "./loading-graphic.component.html",
+  styleUrls: ["./loading-graphic.component.scss"],
 })
 export class LoadingGraphicComponent {
-    @Input() isLoading = true;
-    @Input() smallLoader = false;
-    @Input() graphicDimensions: Dimensions | undefined;
-    public logo = '../../../assets/img/logo.svg';
+  public isLoading = input<boolean>(true);
+  public smallLoader = input<boolean>(false);
+  public graphicDimensions= input<Dimensions>();
+  public logo = "../../../assets/img/logo.svg";
 }

@@ -1,6 +1,6 @@
-<ng-container *ngIf="config">
-  <h3 [innerText]="config.title"></h3>
-  <ng-container *ngIf="config.data$ | async as stack">
+<ng-container *ngIf="config()">
+  <h3 [innerText]="config().title"></h3>
+  <ng-container *ngIf="config().data$ | async as stack">
     <ul class="technologies">
       <li *ngFor="let tool of stack">
         <img [ngStyle]="{ 'border-color': tool.name | pill }" [src]="tool.name | logo"

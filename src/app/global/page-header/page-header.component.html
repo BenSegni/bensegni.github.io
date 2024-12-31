@@ -5,8 +5,8 @@
     <h2 [innerHTML]="headerContent.jobTitle"></h2>
     <span class="location-wrapper">
       <app-location-icon></app-location-icon>
-      <a [href]="headerContent.locationLink" target="_blank">
-        <p [innerText]="headerContent.location" aria-label="location link"></p>
+      <a id="location-link" [href]="headerContent.locationLink" target="_blank">
+        <p id="location" [innerText]="headerContent.location" aria-label="location link"></p>
       </a>
     </span>
     <img class="scroll-down" src="../../../assets/img/scroll_down_icon.svg" alt="scroll down">

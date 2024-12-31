@@ -1,7 +1,8 @@
 import { Pipe, PipeTransform } from '@angular/core';
-import { TechnologyEnum } from '../../enum/technology.enum';
+
 import { ColorPaletteEnum } from '../../enum/color-palette.enum';
 import { KeywordsEnum } from '../../enum/keywords.enum';
+import { TechnologyEnum } from '../../enum/technology.enum';
 import { ToolkitEnum } from '../../enum/toolkit.enum';
 
 @Pipe({

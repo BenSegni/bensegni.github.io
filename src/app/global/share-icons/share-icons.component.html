@@ -1,8 +1,8 @@
 <div class="social-share-wrapper">
-  <p><small>Share this {{ shareButtonConfig.title }} on:</small></p>
+  <p><small>Share this {{ shareButtonConfig().title }} on:</small></p>
   <ng-container *ngIf="shareButtonConfig">
     <app-share-icon-button
-    *ngFor="let button of shareButtonConfig.buttons"
+    *ngFor="let button of shareButtonConfig().buttons"
     [shareType]="button.shareType"
     [shareUrl]="button.shareUrl">
   </app-share-icon-button>

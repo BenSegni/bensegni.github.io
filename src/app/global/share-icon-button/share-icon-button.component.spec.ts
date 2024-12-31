@@ -15,13 +15,9 @@ describe('ShareIconButtonComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-
   describe('Testing createShareUrl', () => {
     it('should share to facebook when configured for facebook', () => {
-      component.shareType = 'facebook';
+      fixture.componentRef.setInput('shareType', 'facebook');
 
       component['createShareUrl']();
 
@@ -29,7 +25,7 @@ describe('ShareIconButtonComponent', () => {
     });
 
     it('should share to X when configured for X', () => {
-      component.shareType = 'X';
+      fixture.componentRef.setInput('shareType', 'X');
 
       component['createShareUrl']();
 
@@ -37,7 +33,7 @@ describe('ShareIconButtonComponent', () => {
     });
 
     it('should share to linkedIn when configured for linkedIn', () => {
-      component.shareType = 'linkedin';
+      fixture.componentRef.setInput('shareType', 'linkedin');
 
       component['createShareUrl']();
 

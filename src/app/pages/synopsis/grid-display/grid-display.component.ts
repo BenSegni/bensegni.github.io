@@ -1,11 +1,16 @@
-import { Component, Input } from '@angular/core';
-import { ImageDisplay } from '../../showcase/interface/showcase';
+import { Component, Input, input } from "@angular/core";
+
+import { ImageDisplay } from "../../showcase/interface/showcase";
 
 @Component({
-  selector: 'app-grid-display',
-  templateUrl: './grid-display.component.html'
+  selector: "app-grid-display",
+  templateUrl: "./grid-display.component.html",
 })
 export class GridDisplayComponent {
-    @Input() displayImages: ImageDisplay[] | undefined;
-    @Input() isLoading = true;
+  public displayImages = input<ImageDisplay[]>([
+    {
+      url: "",
+    },
+  ]);
+  public isLoading = input<boolean>(true);
 }

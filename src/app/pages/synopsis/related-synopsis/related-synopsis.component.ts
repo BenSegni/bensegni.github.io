@@ -1,15 +1,28 @@
 import {
   Component,
   EventEmitter,
-  Input,
   OnChanges,
-  OnInit,
-  Output,
-  SimpleChanges,
+  input,
+  output,
 } from "@angular/core";
+
+import { GlobalDataService } from "../../../global/global-data.service";
 import { Router } from "@angular/router";
 import { Showcase } from "../../showcase/interface/showcase";
-import { GlobalDataService } from "../../../global/global-data.service";
+
+const inputInitialiser = {
+  id: "",
+  skills: [],
+  projectTitle: "",
+  description: "",
+  showCaseLink: "",
+  downloadLink: "",
+  background: "",
+  routeUrl: "",
+  details: "",
+  displayImages: [],
+  relatedProjectId: "",
+}
 
 @Component({
   selector: "app-related-synopsis",
@@ -17,8 +30,9 @@ import { GlobalDataService } from "../../../global/global-data.service";
   styleUrls: ["./related-synopsis.component.scss"],
 })
 export class RelatedSynopsisComponent implements OnChanges {
-  @Input() public showcaseProject: Showcase | undefined;
-  @Output() public showcaseEmitter: EventEmitter<Showcase> = new EventEmitter();
+  public showcaseProject = input<Showcase>(inputInitialiser);
+
+  public showcaseEmitter = output<Showcase>();
   public relatedProject: Showcase | undefined;
 
   public constructor(
@@ -33,7 +47,7 @@ export class RelatedSynopsisComponent implements OnChanges {
   private findRelatedProject(): void {
     this.relatedProject = this._globalService
       .showcaseSignal$()
-      .find((project) => this.showcaseProject?.relatedProjectId === project.id);
+      .find((project) => this.showcaseProject()?.relatedProjectId === project.id);
   }
 
   public navigateToSynopsis(project: Showcase): void {

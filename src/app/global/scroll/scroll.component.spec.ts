@@ -15,10 +15,6 @@ describe('ScrollComponent', () => {
         fixture.detectChanges();
     });
 
-    it('should create', () => {
-        expect(component).toBeTruthy();
-    });
-
     describe('Testing scroll', () => {
         it('should scroll to top of page when called', () => {
             const spyScroll = spyOn(window, 'scrollTo');

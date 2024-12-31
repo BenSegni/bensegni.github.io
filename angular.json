@@ -1,140 +1,183 @@
 {
-    "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
-    "version": 1,
-    "newProjectRoot": "projects",
-    "projects": {
-        "bensegni.github.io": {
-            "projectType": "application",
-            "schematics": {
-                "@schematics/angular:component": {
-                    "style": "scss"
-                }
-            },
-            "root": "",
-            "sourceRoot": "src",
-            "prefix": "app",
-            "architect": {
-                "build": {
-                    "builder": "@angular-devkit/build-angular:browser",
-                    "options": {
-                        "outputPath": "dist/bensegni.github.io",
-                        "index": "src/index.html",
-                        "main": "src/main.ts",
-                        "polyfills": [
-                            "zone.js"
-                        ],
-                        "tsConfig": "tsconfig.app.json",
-                        "inlineStyleLanguage": "scss",
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets",
-                            "src/assets/docs",
-                            "src/manifest.webmanifest"
-                        ],
-                        "styles": [
-                            "src/styles.scss"
-                        ],
-                        "scripts": [],
-                        "serviceWorker": true,
-                        "ngswConfigPath": "ngsw-config.json"
-                    },
-                    "configurations": {
-                        "production": {
-                            "budgets": [
-                                {
-                                    "type": "initial",
-                                    "maximumWarning": "1mb",
-                                    "maximumError": "2mb"
-                                },
-                                {
-                                    "type": "anyComponentStyle",
-                                    "maximumWarning": "2kb",
-                                    "maximumError": "4kb"
-                                }
-                            ],
-                            "outputHashing": "all"
-                        },
-                        "development": {
-                            "buildOptimizer": false,
-                            "optimization": false,
-                            "vendorChunk": true,
-                            "extractLicenses": false,
-                            "sourceMap": true,
-                            "namedChunks": true
-                        }
-                    },
-                    "defaultConfiguration": "production"
-                },
-                "serve": {
-                    "builder": "@angular-devkit/build-angular:dev-server",
-                    "configurations": {
-                        "production": {
-                          "buildTarget": "bensegni.github.io:build:production"
-                        },
-                        "development": {
-                          "buildTarget": "bensegni.github.io:build:development"
-                        }
-                    },
-                    "defaultConfiguration": "development"
-                },
-                "extract-i18n": {
-                    "builder": "@angular-devkit/build-angular:extract-i18n",
-                    "options": {
-                      "buildTarget": "bensegni.github.io:build"
-                    }
-                },
-                "test": {
-                    "builder": "@angular-devkit/build-angular:karma",
-                    "options": {
-                        "codeCoverage": true,
-                        "polyfills": [
-                            "zone.js",
-                            "zone.js/testing"
-                        ],
-                        "tsConfig": "tsconfig.spec.json",
-                        "inlineStyleLanguage": "scss",
-                        "assets": [
-                            "src/favicon.ico",
-                            "src/assets",
-                            "src/manifest.webmanifest"
-                        ],
-                        "codeCoverageExclude": [
-                          "src/app/**/*.enum.ts",
-                          "src/app/**/*.module.ts",
-                          "src/app/global/data/**.ts",
-                          "app/global/testing/**",
-                          "**.mock.ts"
-                        ],
-                        "styles": [
-                            "src/styles.scss"
-                        ],
-                        "scripts": []
-                    }
-                },
-                "deploy": {
-                    "builder": "angular-cli-ghpages:deploy",
-                    "options": {
-                        "baseHref": "./",
-                        "name": "BenSegni",
-                        "email": "bbksegni@gmail.com"
-                    }
-                },
-                "lint": {
-                    "builder": "@angular-eslint/builder:lint",
-                    "options": {
-                        "lintFilePatterns": [
-                            "src/**/*.ts",
-                            "src/**/*.html"
-                        ]
-                    }
-                }
-            }
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "newProjectRoot": "projects",
+  "projects": {
+    "bensegni.github.io": {
+      "projectType": "application",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
         }
+      },
+      "root": "",
+      "sourceRoot": "src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:browser",
+          "options": {
+            "outputPath": "dist/bensegni.github.io",
+            "index": "src/index.html",
+            "main": "src/main.ts",
+            "polyfills": [
+              "zone.js"
+            ],
+            "tsConfig": "tsconfig.app.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/assets/docs",
+              "src/manifest.webmanifest"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": [],
+            "serviceWorker": true,
+            "ngswConfigPath": "ngsw-config.json"
+          },
+          "configurations": {
+            "production": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "1mb",
+                  "maximumError": "2mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kb",
+                  "maximumError": "4kb"
+                }
+              ],
+              "outputHashing": "all"
+            },
+            "development": {
+              "buildOptimizer": false,
+              "optimization": false,
+              "vendorChunk": true,
+              "extractLicenses": false,
+              "sourceMap": true,
+              "namedChunks": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular-devkit/build-angular:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "bensegni.github.io:build:production"
+            },
+            "development": {
+              "buildTarget": "bensegni.github.io:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        },
+        "extract-i18n": {
+          "builder": "@angular-devkit/build-angular:extract-i18n",
+          "options": {
+            "buildTarget": "bensegni.github.io:build"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "codeCoverage": true,
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ],
+            "tsConfig": "tsconfig.spec.json",
+            "inlineStyleLanguage": "scss",
+            "assets": [
+              "src/favicon.ico",
+              "src/assets",
+              "src/manifest.webmanifest"
+            ],
+            "codeCoverageExclude": [
+              "src/app/**/*.enum.ts",
+              "src/app/**/*.module.ts",
+              "src/app/global/data/**.ts",
+              "app/global/testing/**",
+              "**.mock.ts"
+            ],
+            "styles": [
+              "src/styles.scss"
+            ],
+            "scripts": []
+          }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {
+            "baseHref": "./",
+            "name": "BenSegni",
+            "email": "bbksegni@gmail.com"
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
+        }
+      }
     },
-    "cli": {
-        "schematicCollections": [
-            "@angular-eslint/schematics"
-        ],
-        "analytics": "25052e2a-d7ab-40af-9722-101e18bfc2ba"
+    "test-element": {
+      "projectType": "library",
+      "root": "projects/test-element",
+      "sourceRoot": "projects/test-element/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/test-element/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/test-element/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/test-element/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "tsConfig": "projects/test-element/tsconfig.spec.json",
+            "polyfills": [
+              "zone.js",
+              "zone.js/testing"
+            ]
+          }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "projects/test-element/**/*.ts",
+              "projects/test-element/**/*.html"
+            ],
+            "eslintConfig": "projects/test-element/eslint.config.js"
+          }
+        }
+      }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ],
+    "analytics": "25052e2a-d7ab-40af-9722-101e18bfc2ba"
+  }
 }

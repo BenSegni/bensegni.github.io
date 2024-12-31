@@ -1,7 +1,7 @@
-import { Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges, WritableSignal } from '@angular/core';
-import { GlobalDataService } from '../../global/global-data.service';
+import { Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges, WritableSignal, input } from '@angular/core';
+
 import { Blog } from '../interface/blog';
-import { Router } from '@angular/router';
+import { GlobalDataService } from '../../global/global-data.service';
 
 @Component({
   selector: 'app-blog-articles',
@@ -9,7 +9,7 @@ import { Router } from '@angular/router';
 })
 export class BlogArticlesComponent implements OnInit, OnChanges {
   public blog$: Blog[] = [];
-  @Input() public articleId: number | undefined;
+  public articleId = input<number>(0);
 
   public constructor(private _globalService: GlobalDataService) {}
 
@@ -24,6 +24,6 @@ export class BlogArticlesComponent implements OnInit, OnChanges {
   }
 
   private assignBlogList(): Blog[] {
-    return this._globalService.blog$().filter((article) => article.id !== this.articleId);
+    return this._globalService.blog$().filter((article) => article.id !== this.articleId());
   }
 }

@@ -1,27 +1,28 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
-import { ShareIconButtonComponent } from '../share-icon-button/share-icon-button.component';
-import { ShareButtonConfig } from '../share-icon-button/interface/share.button';
+import { Component, Input, input } from "@angular/core";
+
+import { CommonModule } from "@angular/common";
+import { ShareButtonConfig } from "../share-icon-button/interface/share.button";
+import { ShareIconButtonComponent } from "../share-icon-button/share-icon-button.component";
 
 @Component({
-  selector: 'app-share-icons',
-  templateUrl: './share-icons.component.html',
-  styleUrls: ['./share-icons.component.scss'],
+  selector: "app-share-icons",
+  templateUrl: "./share-icons.component.html",
+  styleUrls: ["./share-icons.component.scss"],
   standalone: true,
-  imports: [CommonModule, ShareIconButtonComponent]
+  imports: [CommonModule, ShareIconButtonComponent],
 })
 export class ShareIconsComponent {
-  @Input() shareButtonConfig: ShareButtonConfig = {
-    title: '',
+  public shareButtonConfig = input<ShareButtonConfig>({
+    title: "",
     buttons: [
       {
-        shareType: '',
-        shareUrl: ''
+        shareType: "",
+        shareUrl: "",
       },
       {
-        shareType: '',
-        shareUrl: ''
-      }
-    ]
-  }
+        shareType: "",
+        shareUrl: "",
+      },
+    ],
+  });
 }

@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
+import { FilterConfig } from '../../global/shared-filter/interface/filter.config';
+import { GlobalDataService } from '../../global/global-data.service';
 import { Showcase } from './interface/showcase';
 import { TechnologyEnum } from '../../global/enum/technology.enum';
-import { GlobalDataService } from '../../global/global-data.service';
 import { showcaseData } from '../../global/data/showcase-data';
-import { FilterConfig } from '../../global/shared-filter/interface/filter.config';
 
 @Component({
   selector: 'app-showcase',

@@ -16,5 +16,5 @@ export enum TechnologyEnum {
     React = 'ReactJs',
     SASS = 'SASS',
     Typescript = 'Typescript',
-    UI = 'UI Design'
+    UI = 'UI'
 }

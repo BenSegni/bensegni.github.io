@@ -7,5 +7,5 @@ export interface Stack {
 
 export interface StackConfig<T> {
   title: string;
-  data$: Observable<T[]>;
+  data$: Observable<Stack[]>;
 }

@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, input } from '@angular/core';
 
 @Component({
   selector: 'app-blog-key-level-icon',
@@ -6,6 +6,6 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./blog-key-level-icon.component.scss']
 })
 export class BlogKeyLevelIconComponent {
-  @Input() public level = '';
-  @Input() public isInternal = false;
+  public level = input<string>('');
+  public isInternal = input<boolean>(false);
 }

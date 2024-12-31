@@ -1,10 +1,10 @@
-<div class="projects" [ngClass]="columnLayout ? '' : 'grid-layout'">
-    <ng-container *ngIf="_globalService.showcaseSignal$()">
-        <span
-            *ngFor="let project of _globalService.showcaseSignal$()"
-            [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }"
-        >
-            <app-project-details class="project-display-card" [project]="project" (click)="navigateToSynopsis(project)"></app-project-details>
-        </span>
-    </ng-container>
+@if (projects()) {
+<div class="projects" [ngClass]="columnLayout() ? '' : 'grid-layout'">
+    <span *ngFor="let project of projects()" [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }">
+        <app-project-details class="project-display-card" [project]="project"
+            (click)="navigateToSynopsis(project)"></app-project-details>
+    </span>
 </div>
+} @else {
+<p>There are currently no Showcase items to display.</p>
+}

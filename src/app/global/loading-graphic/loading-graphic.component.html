@@ -1,4 +1,6 @@
-<div [ngClass]="smallLoader ? 'small-loading-icon' : 'loading-icon'" [ngStyle]="{ height: graphicDimensions?.height, width: graphicDimensions?.width, margin: graphicDimensions?.margin}" *ngIf="isLoading">
+<div [ngClass]="smallLoader() ? 'small-loading-icon' : 'loading-icon'"
+    [ngStyle]="{ height: graphicDimensions()?.height, width: graphicDimensions()?.width, margin: graphicDimensions()?.margin}"
+    *ngIf="isLoading()">
     <span class="loading-graphic"></span>
     <img [src]="logo" [alt]="logo | altText">
 </div>
