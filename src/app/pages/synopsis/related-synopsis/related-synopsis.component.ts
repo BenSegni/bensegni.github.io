@@ -1,6 +1,5 @@
 import {
   Component,
-  EventEmitter,
   OnChanges,
   input,
   output,

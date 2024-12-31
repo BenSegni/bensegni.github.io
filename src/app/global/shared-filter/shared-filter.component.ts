@@ -1,9 +1,7 @@
 import {
   Component,
-  EventEmitter,
-  Input,
-  Output,
   input,
+  output,
   signal,
 } from "@angular/core";
 
@@ -32,7 +30,7 @@ export class SharedFilterComponent<T extends Filterable> {
   });
   
   public showLayout = input<boolean>(false);
-  @Output() public emitLayout: EventEmitter<boolean> = new EventEmitter();
+  public emitLayout = output<boolean>();
   public columnLayout = false;
   public grid = "../../../assets/img/grid_icon.svg";
   public column = "../../../assets/img/column_icon.svg";
