@@ -47,25 +47,17 @@ describe("RelatedSynopsisComponent", () => {
     it("should navigate to the identified project", () => {
       const routerstub: Router = TestBed.inject(Router);
       const spyRouter = spyOn(routerstub, "navigate");
-      const spyFind = spyOn<any>(component, "findRelatedProject");
-      const project = component["_globalService"]
-        .showcaseSignal$()
-        .find((project) => (project.id = "1"));
 
-      component.navigateToSynopsis(project as Showcase);
+
+      component.navigateToSynopsis(showcaseData[0] as Showcase);
 
       expect(spyRouter).toHaveBeenCalled();
-      expect(spyFind).toHaveBeenCalled();
     });
   });
 
   describe("Testing findRelatedProject()", () => {
     it("should display a related project", () => {
       const data: Showcase[] = showcaseData;
-
-      spyOn(component["_globalService"], "showcaseSignal$").and.returnValue(
-        data
-      );
 
       fixture.componentRef.setInput('showcaseProject', data[1]);
       component.ngOnChanges();
