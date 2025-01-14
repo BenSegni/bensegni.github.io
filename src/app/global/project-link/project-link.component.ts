@@ -39,15 +39,13 @@ export class ProjectLinkComponent implements OnChanges {
 
   get linkType(): string {
     const projectData = this.project();
-    
-    if (!projectData) return this.behance;
 
     switch (true) {
-      case projectData.showCaseLink?.includes("medium"):
+      case projectData?.showCaseLink?.includes("medium"):
         return this.medium;
-      case !!projectData.showCaseLink:
+      case !!projectData?.showCaseLink:
         return this.behance;
-      case !!projectData.downloadLink:
+      case !!projectData?.downloadLink:
         return this.pdf;
       default:
         return this.behance;
@@ -55,14 +53,10 @@ export class ProjectLinkComponent implements OnChanges {
   }
 
   ngOnChanges(changes: SimpleChanges): void {
-    if (changes && this.project()) {
-      if (this.checkIfMediumLink()) {
+    if (changes && this.project()) {      
+      if (this.project()?.showCaseLink?.includes("medium")) {
         this.isMedium = true;
       }
     }
-  }
-
-  private checkIfMediumLink(): boolean | undefined {
-    return this.project()?.showCaseLink?.includes("medium");
   }
 }
