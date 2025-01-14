@@ -1,19 +1,20 @@
-<ng-container *ngIf="project() || url">
-    <p class="presentation-link">
-        <app-behance-icon *ngIf="!project()?.showCaseLink?.includes('medium') && project()?.showCaseLink || url"></app-behance-icon>
-        <app-medium-icon *ngIf="project()?.showCaseLink?.includes('medium')"></app-medium-icon>
-        <app-pdf-icon *ngIf="!project()?.showCaseLink && project()?.downloadLink"></app-pdf-icon>
-        <a *ngIf="project || url"
-            [href]="link"
-            target="_blank"
-            aria-label="presentation link"
-            >{{
-            project()?.showCaseLink
-            ? project()?.showCaseLink?.includes('medium') ? medium : behance
-            : project()?.downloadLink
-            ? pdf
-            : behance
-            }}
-        </a>
-    </p>
-</ng-container>
+@if(project()) {
+<p class="presentation-link">
+    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('behance')){
+    <app-behance-icon></app-behance-icon>
+    }
+
+    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('medium')){
+    <app-medium-icon></app-medium-icon>
+    }
+
+    @if(project() && project()?.downloadLink){
+    <app-pdf-icon></app-pdf-icon>
+    }
+    @if(project()) {
+    <a [href]="link" target="_blank" aria-label="presentation link">{{ linkType }}</a>
+    }
+</p>
+} @else {
+<p>Sorry, no link is available for this project synopsis.</p>
+}

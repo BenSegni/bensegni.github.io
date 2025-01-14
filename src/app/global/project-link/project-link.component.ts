@@ -1,9 +1,7 @@
 import {
   ChangeDetectionStrategy,
   Component,
-  Input,
   OnChanges,
-  OnInit,
   SimpleChanges,
   input,
 } from "@angular/core";
@@ -15,43 +13,56 @@ import { Showcase } from "../../pages/showcase/interface/showcase";
   templateUrl: "./project-link.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ProjectLinkComponent implements OnInit, OnChanges {
+export class ProjectLinkComponent implements OnChanges {
   public project = input<Showcase>();
   public url = input<string>("");
   public pdf = "View PDF Proposal";
   public behance = "Project Presentation";
   public medium = "Read on Medium";
   public isMedium = false;
-  public link = "";
+  
+  public get link(): string {
+    if (this.project()?.downloadLink) {
+      return this.project()?.downloadLink ?? "";
+    }
 
-  ngOnChanges(changes: SimpleChanges): void {
-    if (changes) {
-      if (this.checkIfMediumLink()) {
-        this.isMedium = true;
-      }
-      if (this.project()?.downloadLink) {
-        this.link = this.project()?.downloadLink ?? "";
-      }
+    if (this.url()) {
+      return this.url();
+    }
 
-      if (this.url()) {
-        this.link = this.url();
-      }
+    if (this.project()?.showCaseLink) {
+      return this.project()?.showCaseLink ?? "";
+    }
 
-      if (this.project()?.showCaseLink) {
-        this.link = this.project()?.showCaseLink ?? "";
-      }
+    return "";
+  }
 
-      this.link = "";
+  get linkType(): string {
+    const projectData = this.project();
+    
+    if (!projectData) return this.behance;
+
+    switch (true) {
+      case projectData.showCaseLink?.includes("medium"):
+        return this.medium;
+      case !!projectData.showCaseLink:
+        return this.behance;
+      case !!projectData.downloadLink:
+        return this.pdf;
+      default:
+        return this.behance;
     }
   }
 
-  public ngOnInit(): void {}
+  ngOnChanges(changes: SimpleChanges): void {
+    if (changes && this.project()) {
+      if (this.checkIfMediumLink()) {
+        this.isMedium = true;
+      }
+    }
+  }
 
   private checkIfMediumLink(): boolean | undefined {
     return this.project()?.showCaseLink?.includes("medium");
-  }
-
-  public openLink(url: string): void {
-    window.open(url, "_blank");
   }
 }
