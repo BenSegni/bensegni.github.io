@@ -1,11 +1,10 @@
-import { ComponentFixture, TestBed } from "@angular/core/testing";
+import { ComponentFixture, TestBed, fakeAsync, tick } from "@angular/core/testing";
 import {
   NavigationEnd,
   NavigationStart,
   Router,
   Event as RouterEvent,
 } from "@angular/router";
-import { Observable, Subject } from "rxjs";
 
 import { AltTextPipe } from "./global/utils/pipes/alt-text.pipe";
 import { AppComponent } from "./app.component";
@@ -25,6 +24,7 @@ import { RecentBlogPostComponent } from "./global/recent-blog-post/recent-blog-p
 import { RouterTestingModule } from "@angular/router/testing";
 import { ScrollComponent } from "./global/scroll/scroll.component";
 import { SocialMediaComponent } from "./global/social-media/social-media.component";
+import { Subject } from "rxjs";
 import { routes } from "./app-routing.module";
 
 describe("AppComponent", () => {
@@ -59,17 +59,6 @@ describe("AppComponent", () => {
         LocationIconComponent,
         LogoPipe,
       ],
-      providers: [
-        // {
-        //   provide: Router,
-        //   useValue: {
-        //     events: routerEvents.asObservable(),
-        //     createUrlTree: () => ({}),
-        //     serializeUrl: () => "",
-        //     url: "/test",
-        //   },
-        // },
-      ],
     });
 
     fixture = TestBed.createComponent(AppComponent);
@@ -78,39 +67,42 @@ describe("AppComponent", () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it("should create", () => {
     expect(component).toBeTruthy();
-  })
+  });
 
-  // describe("Testing ngOnInit LifeCycle Hook", () => {
-  //   it("should call oninitialLoad method", () => {
-  //     const spyLoad = spyOn(component, "onInitialLoad").and.callThrough();
-  //     const spyScroll = spyOn<any>(component, "scrollToTop").and.callThrough();
+  describe("Testing ngOnInit LifeCycle Hook", () => {
+    it("should call oninitialLoad method", () => {
+      const spyLoad = spyOn(component, "onInitialLoad").and.callThrough();
 
-  //     routerEvents.next(new NavigationStart(1, "/test"));
+      component.ngOnInit();
 
-  //     component.ngOnInit();
+      expect(spyLoad).toHaveBeenCalled();
+    });
+  });
 
-  //     expect(spyLoad).toHaveBeenCalled();
-  //     expect(spyScroll).toHaveBeenCalled();
-  //   });
-  // });
+  describe("Testing scrollToTop()", () => {
+    it("should scroll to top when called", fakeAsync(() => {
+      const windowScrollSpy = spyOn(window, "scrollTo");
 
-  // describe("Testing scrollToTop()", () => {
-  //   it("should scroll to top when called", () => {
-  //     const windowScrollSpy = spyOn(window, "scrollTo");
+      router.initialNavigation();
+      tick();
 
-  //     routerEvents.next(new NavigationEnd(1, "/test", "/test"));
+      router.navigate(["/"]);
+      tick();
 
-  //     expect(windowScrollSpy).toHaveBeenCalledWith(0, 0);
-  //   });
+      expect(windowScrollSpy).toHaveBeenCalledWith(0, 0);
+      windowScrollSpy.calls.reset();
+    }));
 
-  //   it("should not scroll on non-NavigationEnd events", () => {
-  //     const windowScrollSpy = spyOn(window, "scrollTo");
+    it("should not scroll on non-NavigationEnd events", fakeAsync(() => {
+      const windowScrollSpy = spyOn(window, "scrollTo");
 
-  //     routerEvents.next(new NavigationStart(1, "/test"));
+      routerEvents.next(new NavigationStart(1, "/test"));
+      fixture.detectChanges();
 
-  //     expect(windowScrollSpy).not.toHaveBeenCalled();
-  //   });
-  // });
+      expect(windowScrollSpy).not.toHaveBeenCalled();
+      windowScrollSpy.calls.reset();
+    }));
+  });
 });
