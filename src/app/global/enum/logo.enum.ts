@@ -28,6 +28,7 @@ export enum LogoEnum {
     RXJS = '../../assets/img/rxjs_logo.svg',
     React = '../../assets/img/react_logo.svg',
     SASS = '../../assets/img/sass_logo.svg',
+    TDD = '../../assets/img/tdd_logo.svg',
     Typescript = '../../assets/img/typescript_logo.svg',
     UI = '../../assets/img/ux_logo.svg',
     VSCode = '../../assets/img/vscode_logo.svg',

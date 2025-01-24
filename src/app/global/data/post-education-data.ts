@@ -13,4 +13,5 @@ export const postEducationData: string[] = [
     'Agile Product Owner Role: Foundations',
     'Agile Project Leadership',
     'Learning RxJs',
+    'TDD with .NET',
 ]
