@@ -90,12 +90,7 @@ export const projectData: CurrentProject = {
         "SASS",
         "Typescript",
       ],
-      skillUsage: [
-        {
-          skill: "",
-          usage: 0,
-        },
-      ],
+      skillUsage: [],
     },
     {
       projectLogo: "../../assets/img/fe-dev-talk.webp",
@@ -103,12 +98,7 @@ export const projectData: CurrentProject = {
       projectDescription:
         "<p>To foster greater consistency across product teams, I have been instrumental in spearheading process standardization within the Help Community, ensuring alignment in QA practices, development patterns, and CI/CD pipeline configurations.</p><p>The Front-End Dev Talk initiative, a testament to our commitment to continuous improvement, has seen remarkable growth, with the initial group of 7 developers expanding to 38 members from across the British Airways development group.</p>",
       skills: [],
-      skillUsage: [
-        {
-          skill: "",
-          usage: 0,
-        },
-      ],
+      skillUsage: [],
     },
     {
       projectLogo: "../../assets/img/ba_help_centre_page.webp",
