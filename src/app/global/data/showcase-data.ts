@@ -27,7 +27,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/chinwe/chinwe_2.webp',
             },
         ],
-        relatedProjectId: '4'
+        relatedProjectId: '2'
     },
     {
         id: '2',
@@ -49,7 +49,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/dlc/dlc_3.webp',
             },
         ],
-        relatedProjectId: '1'
+        relatedProjectId: '6'
     },
     {
         id: '3',
@@ -77,7 +77,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/infinity/infinity_5.webp',
             },
         ],
-        relatedProjectId: '9'
+        relatedProjectId: '8'
     },
     {
         id: '4',
@@ -99,7 +99,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/lenovo/len_1.webp',
             }
         ],
-        relatedProjectId: '8'
+        relatedProjectId: '7'
     },
     {
         id: '5',
@@ -127,7 +127,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/nuchido/nuch_5.webp',
             },
         ],
-        relatedProjectId: '6'
+        relatedProjectId: '1'
     },
     {
         id: '6',
@@ -152,7 +152,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/orbery/orb_5.webp',
             }
         ],
-        relatedProjectId: '2'
+        relatedProjectId: '10'
     },
     {
         id: '7',
@@ -180,7 +180,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/zen-desk/zd_5.webp',
             },
         ],
-        relatedProjectId: '10'
+        relatedProjectId: '5'
     },
     {
         id: '8',
@@ -208,7 +208,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/sideline/sideline_5.webp',
             }
         ],
-        relatedProjectId: '3'
+        relatedProjectId: '9'
     },
     {
         id: '9',
@@ -236,7 +236,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/qatar/qatar_5.webp',
             },
         ],
-        relatedProjectId: '5'
+        relatedProjectId: '4'
     },
     {
         id: '10',
@@ -264,6 +264,6 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/velux/v_5.webp',
             },
         ],
-        relatedProjectId: '7'
+        relatedProjectId: '3'
     }
 ]
