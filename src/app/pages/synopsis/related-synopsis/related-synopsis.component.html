@@ -2,7 +2,7 @@
     <h4 class="project-skills-header" [innerText]="'A Related Project:'"></h4>
     <span class="related-project" [ngStyle]="{ 'background-image': 'url(' + relatedProject.background + ')' }"
         (click)="navigateToSynopsis(relatedProject)" (keydown)="navigateToSynopsis(relatedProject)" role="button"
-        tabindex="0" aria-label="navigate to related project">
+        tabindex="0" [attr.aria-label]="'link' + relatedProject.projectTitle">
         <span class="related-project-wrapper">
             <h5 [routerLink]="'../../' + relatedProject.routeUrl + '/synopsis'"
                 [innerText]="relatedProject.projectTitle"></h5>
