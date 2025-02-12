@@ -1,6 +1,5 @@
 import {
   Component,
-  OnInit,
   inject,
   input,
 } from "@angular/core";
@@ -13,7 +12,7 @@ import { Showcase } from "../interface/showcase";
   selector: "app-showcase-items",
   templateUrl: "./showcase-items.component.html",
 })
-export class ShowcaseItemsComponent implements OnInit {
+export class ShowcaseItemsComponent {
   public columnLayout = input<boolean>(false);
   private _router = inject(Router);
   private _globalService = inject(GlobalDataService);
@@ -26,6 +25,4 @@ export class ShowcaseItemsComponent implements OnInit {
   public navigateToSynopsis(project: Showcase): void {
     this._router.navigate([`./showcase/` + project.routeUrl + "/synopsis"]);
   }
-
-  public ngOnInit(): void {}
 }

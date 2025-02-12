@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, input } from "@angular/core";
+import { Component, OnInit, input } from "@angular/core";
 
 import { CommonModule } from "@angular/common";
 import { FacebookShareIconComponent } from "../icons/facebook-share-icon/facebook-share-icon.component";

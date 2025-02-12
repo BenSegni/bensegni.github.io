@@ -14,11 +14,12 @@ module.exports = tseslint.config(
     ],
     processor: angular.processInlineTemplates,
     rules: {
+      "@typescript-eslint/no-explicit-any": "warn",
       "@angular-eslint/directive-selector": [
-        "error",
+        "warn",
         {
           type: "attribute",
-          prefix: "lib",
+          prefix: "",
           style: "camelCase",
         },
       ],
@@ -26,7 +27,7 @@ module.exports = tseslint.config(
         "error",
         {
           type: "element",
-          prefix: "lib",
+          prefix: "app",
           style: "kebab-case",
         },
       ],

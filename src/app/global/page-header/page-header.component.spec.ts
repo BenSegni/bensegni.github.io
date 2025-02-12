@@ -7,7 +7,6 @@ import { LogoPipe } from "../utils/pipes/logo.pipe";
 import { PageHeaderComponent } from "./page-header.component";
 
 describe("PageHeaderComponent", () => {
-  let component: PageHeaderComponent;
   let fixture: ComponentFixture<PageHeaderComponent>;
 
   beforeEach(() => {
@@ -20,7 +19,6 @@ describe("PageHeaderComponent", () => {
       ],
     });
     fixture = TestBed.createComponent(PageHeaderComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 

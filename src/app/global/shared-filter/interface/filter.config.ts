@@ -1,9 +1,9 @@
 import { WritableSignal } from "@angular/core";
 
 export interface FilterConfig<T> {
-  data: Array<T>;
+  data: T[];
   listLength: number;
-  signalData: WritableSignal<Array<T>>;
+  signalData: WritableSignal<T[]>;
   options: string[];
   resetValue: string;
 }

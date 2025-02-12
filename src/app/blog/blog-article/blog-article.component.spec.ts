@@ -25,9 +25,6 @@ import { blogData } from "../../global/data/blog-data";
 import { of } from "rxjs";
 import { provideHttpClientTesting } from "@angular/common/http/testing";
 
-declare let process: any;
-let env = process.env.NODE_ENV;
-
 const fakeActivatedRoute = {
   fragment: of({}),
 } as ActivatedRoute;
@@ -66,14 +63,13 @@ describe("BlogArticleComponent", () => {
     });
     fixture = TestBed.createComponent(BlogArticleComponent);
     component = fixture.componentInstance;
-    env = "production";
     fixture.detectChanges();
   });
 
   describe("Testing getContent()", () => {
     it("should return the correct article", () => {
       component.article = blogData[1];
-      const spyService = spyOn<any>(
+      const spyService = spyOn(
         component["_blogService"],
         "assignBlogContent"
       ).and.returnValue(of("../../../assets/blog-content/sass-params.html"));

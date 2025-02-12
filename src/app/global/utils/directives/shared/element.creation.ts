@@ -5,8 +5,6 @@ import {
   RendererFactory2,
 } from "@angular/core";
 
-import { ToolTipConfig } from './../interfaces/tooltip';
-
 @Injectable({ providedIn: "root" })
 export class DOMCreatorService {
   private renderer: Renderer2;

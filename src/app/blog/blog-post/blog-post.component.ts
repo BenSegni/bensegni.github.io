@@ -1,4 +1,4 @@
-import { Component, Input, input } from "@angular/core";
+import { Component, input } from "@angular/core";
 
 import { Blog } from "../interface/blog";
 import { blogData } from "../../global/data/blog-data";

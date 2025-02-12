@@ -1,8 +1,11 @@
 <ng-container *ngIf="relatedProject">
     <h4 class="project-skills-header" [innerText]="'A Related Project:'"></h4>
-    <span class="related-project" [ngStyle]="{ 'background-image': 'url(' + relatedProject.background + ')' }" (click)="navigateToSynopsis(relatedProject)">
+    <span class="related-project" [ngStyle]="{ 'background-image': 'url(' + relatedProject.background + ')' }"
+        (click)="navigateToSynopsis(relatedProject)" (keydown)="navigateToSynopsis(relatedProject)" role="button"
+        tabindex="0" aria-label="navigate to related project">
         <span class="related-project-wrapper">
-            <h5 [routerLink]="'../../' + relatedProject.routeUrl + '/synopsis'" [innerText]="relatedProject.projectTitle"></h5>
+            <h5 [routerLink]="'../../' + relatedProject.routeUrl + '/synopsis'"
+                [innerText]="relatedProject.projectTitle"></h5>
             <p [innerText]="relatedProject.description"></p>
             <app-skill-pills [skills]="relatedProject.skills"></app-skill-pills>
         </span>

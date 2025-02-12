@@ -180,7 +180,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/zen-desk/zd_5.webp',
             },
         ],
-        relatedProjectId: '6'
+        relatedProjectId: '10'
     },
     {
         id: '8',
@@ -208,7 +208,7 @@ export const showcaseData: Showcase[] = [
                 url: '../../../../assets/img/sideline/sideline_5.webp',
             }
         ],
-        relatedProjectId: '9'
+        relatedProjectId: '3'
     },
     {
         id: '9',

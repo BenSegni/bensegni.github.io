@@ -1,4 +1,4 @@
-import { Component, DoCheck, Input, OnChanges, OnInit, SimpleChanges, WritableSignal, input } from '@angular/core';
+import { Component, OnChanges, OnInit, SimpleChanges, input } from '@angular/core';
 
 import { Blog } from '../interface/blog';
 import { GlobalDataService } from '../../global/global-data.service';

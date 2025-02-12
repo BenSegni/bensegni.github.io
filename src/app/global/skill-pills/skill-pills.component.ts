@@ -1,4 +1,4 @@
-import { Component, Input, inject, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 
 import { GlobalDataService } from '../global-data.service';
 import { skillsHighlightAnimation } from '../utils/animations/skills.animation';

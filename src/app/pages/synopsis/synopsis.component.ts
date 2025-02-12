@@ -1,11 +1,10 @@
 import { Component, OnInit } from "@angular/core";
-import {
-  ShareButton,
-  ShareButtonConfig,
-} from "../../global/share-icon-button/interface/share.button";
 
 import { GlobalDataService } from "../../global/global-data.service";
 import { Router } from "@angular/router";
+import {
+  ShareButtonConfig,
+} from "../../global/share-icon-button/interface/share.button";
 import { Showcase } from "../showcase/interface/showcase";
 
 @Component({

@@ -1,4 +1,4 @@
-import { ActivatedRoute, Params, Router } from "@angular/router";
+import { ActivatedRoute, Params, Router, UrlTree } from "@angular/router";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { Subject, of } from "rxjs";
 
@@ -18,7 +18,7 @@ describe("RecentBlogPostComponent", () => {
   let mockRouter: {
     events: Subject<any>;
     routerState: { snapshot: { url: string } };
-    createUrlTree: () => {};
+    createUrlTree: () => Record<never, never>;
     serializeUrl: () => "";
   };
 
@@ -32,7 +32,7 @@ describe("RecentBlogPostComponent", () => {
       routerState: {
         snapshot: { url: "" },
       },
-      createUrlTree: () => ({}),
+      createUrlTree: () => ({} as UrlTree),
       serializeUrl: () => "",
     };
 

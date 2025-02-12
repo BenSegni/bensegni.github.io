@@ -15,7 +15,6 @@ import { SharedFilterComponent } from "../../global/shared-filter/shared-filter.
 import { SkillPillsComponent } from "../../global/skill-pills/skill-pills.component";
 
 describe("BlogComponent", () => {
-  let component: BlogComponent;
   let fixture: ComponentFixture<BlogComponent>;
 
   beforeEach(() => {
@@ -36,7 +35,6 @@ describe("BlogComponent", () => {
       imports: [RouterTestingModule, BrowserAnimationsModule],
     });
     fixture = TestBed.createComponent(BlogComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 

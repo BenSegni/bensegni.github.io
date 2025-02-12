@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
 import { GlobalDataService } from '../../../global/global-data.service';
-import { Technology } from './interface/technology';
 import { StackConfig } from '../../../global/stack-list/interface/stack';
 
 @Component({
@@ -8,7 +7,7 @@ import { StackConfig } from '../../../global/stack-list/interface/stack';
   templateUrl: './tech-stack.component.html'
 })
 export class TechStackComponent extends GlobalDataService {
-  public stackConfig: StackConfig<Technology> = {
+  public stackConfig: StackConfig = {
     title: 'Technologies',
     data$: this.technologies$
   }

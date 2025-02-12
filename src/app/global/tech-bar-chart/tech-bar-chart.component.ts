@@ -1,4 +1,4 @@
-import { Component, Input, input } from "@angular/core";
+import { Component, input } from "@angular/core";
 
 import { TechUsage } from "./interface/tech.usage";
 

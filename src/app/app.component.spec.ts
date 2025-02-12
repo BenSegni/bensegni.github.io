@@ -1,6 +1,5 @@
 import { ComponentFixture, TestBed, fakeAsync, tick } from "@angular/core/testing";
 import {
-  NavigationEnd,
   NavigationStart,
   Router,
   Event as RouterEvent,

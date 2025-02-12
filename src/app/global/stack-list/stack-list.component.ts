@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, Input, input } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input } from "@angular/core";
 
 import { StackConfig } from "./interface/stack";
 import { of } from "rxjs";
@@ -8,8 +8,8 @@ import { of } from "rxjs";
   templateUrl: "./stack-list.component.html",
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class StackListComponent<T> {
-  public config = input<StackConfig<T>>({
+export class StackListComponent {
+  public config = input<StackConfig>({
     title: "",
     data$: of([]),
   });

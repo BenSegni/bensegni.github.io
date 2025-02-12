@@ -4,7 +4,6 @@ import { SynopsisHeaderSectionComponent } from "./synopsis-header-section.compon
 import { showcaseData } from "../../../global/data/showcase-data";
 
 describe("SynopsisHeaderSectionComponent", () => {
-  let component: SynopsisHeaderSectionComponent;
   let fixture: ComponentFixture<SynopsisHeaderSectionComponent>;
 
   beforeEach(() => {
@@ -12,7 +11,6 @@ describe("SynopsisHeaderSectionComponent", () => {
       declarations: [SynopsisHeaderSectionComponent],
     });
     fixture = TestBed.createComponent(SynopsisHeaderSectionComponent);
-    component = fixture.componentInstance;
     fixture.detectChanges();
   });
 

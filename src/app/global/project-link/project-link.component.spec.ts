@@ -4,7 +4,6 @@ import { BehanceIconComponent } from "../icons/behance-icon/behance-icon.compone
 import { MediumIconComponent } from "../icons/medium-icon/medium-icon.component";
 import { PdfIconComponent } from "../icons/pdf-icon/pdf-icon.component";
 import { ProjectLinkComponent } from "./project-link.component";
-import { SimpleChange } from "@angular/core";
 import { showcaseData } from "../data/showcase-data";
 
 describe("ProjectLinkComponent", () => {

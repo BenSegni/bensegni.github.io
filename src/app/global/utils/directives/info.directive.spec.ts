@@ -1,26 +1,21 @@
 import {
   ComponentFixture,
   TestBed,
-  fakeAsync,
-  tick,
 } from "@angular/core/testing";
-import { ElementRef, Renderer2, Type } from "@angular/core";
 
 import { Component } from "@angular/core";
 import { DOMCreatorService } from "./shared/element.creation";
 import { DOMCreatorServiceMock } from "./mocks/element.creation.mock";
+import { ElementRef } from "@angular/core";
 import { InfoDirective } from "./info.directive";
 
 @Component({
-  selector: "test-component",
+  selector: "app-test-component",
   template: `<div></div>`,
 })
 export class TestComponent {}
 
 describe("InfoDirective", () => {
-  let el: ElementRef;
-
-  let creator: DOMCreatorService;
   let directive: InfoDirective;
   let fixture: ComponentFixture<TestComponent>;
 
@@ -39,8 +34,6 @@ describe("InfoDirective", () => {
       ],
     });
     fixture = TestBed.createComponent(TestComponent);
-    el = new ElementRef(fixture.nativeElement);
-    creator = TestBed.inject(DOMCreatorService);
 
     TestBed.runInInjectionContext(() => {
       directive = new InfoDirective();

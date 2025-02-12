@@ -1,10 +1,9 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
-import { NavigationComponent } from './navigation.component';
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
-import { ReplaySubject } from 'rxjs';
-import { NavigationStart, Router, RouterEvent } from '@angular/router';
+import { NavigationStart, Router } from '@angular/router';
 import { mockRouterStub, routerEventsSubject } from '../testing/router.stub';
+
+import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
+import { NavigationComponent } from './navigation.component';
 import { NavigationItem } from './interface/navigation';
 
 describe('NavigationComponent', () => {

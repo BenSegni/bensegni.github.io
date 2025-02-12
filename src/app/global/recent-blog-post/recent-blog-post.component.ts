@@ -1,11 +1,10 @@
-import { Component, Inject, OnDestroy, OnInit } from '@angular/core';
+import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
+import { Component, OnDestroy, OnInit } from '@angular/core';
+
 import { Blog } from 'src/app/blog/interface/blog';
-import { blogData } from '../data/blog-data';
-import { CommonModule, DatePipe } from '@angular/common';
-import { ActivatedRoute, NavigationEnd, Params, Router, RouterModule } from '@angular/router';
-import { LogoPipe } from '../utils/pipes/logo.pipe';
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
+import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
+import { blogData } from '../data/blog-data';
 
 @Component({
   selector: 'app-recent-blog-post',

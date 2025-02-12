@@ -8,49 +8,63 @@
   "start_url": "./",
   "icons": [
     {
-      "src": "assets/icons/icon-72.svg",
-      "sizes": "72x72",
-      "purpose": "any"
+      "src": "assets/icons/icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png",
+      "purpose": "maskable monochrome"
     },
     {
-      "src": "assets/icons/icon-96.svg",
+      "src": "assets/icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "purpose": "maskable monochrome"
+    },
+    {
+      "src": "assets/icons/icon-96.png",
       "sizes": "96x96",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "maskable monochrome"
     },
     {
       "src": "assets/icons/icon-128.svg",
       "sizes": "128x128",
-      "purpose": "any"
+      "type": "image/svg+xml",
+      "purpose": "maskable monochrome"
     },
     {
-      "src": "assets/icons/icon-144.svg",
+      "src": "assets/icons/icon-144.png",
       "sizes": "144x144",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "maskable monochrome"
     },
     {
       "src": "assets/icons/icon-152.svg",
       "sizes": "152x152",
-      "purpose": "any"
+      "type": "image/svg+xml",
+      "purpose": "maskable monochrome"
     },
     {
-      "src": "assets/icons/icon-192.svg",
+      "src": "assets/icons/icon-192.png",
       "sizes": "192x192",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "maskable monochrome"
     },
     {
       "src": "assets/icons/icon-384.svg",
       "sizes": "384x384",
-      "purpose": "any"
+      "type": "image/svg+xml",
+      "purpose": "maskable monochrome"
     },
     {
-      "src": "assets/icons/icon-512.svg",
+      "src": "assets/icons/icon-512.png",
       "sizes": "512x512",
-      "purpose": "any"
+      "type": "image/png",
+      "purpose": "maskable monochrome"
     }
   ],
   "screenshots": [
     {
-     "src": "assets/img/screenshot_1.webp",
+      "src": "assets/img/screenshot_1.webp",
       "sizes": "640x520",
       "type": "image/webp",
       "form_factor": "wide",
@@ -58,7 +72,7 @@
       "description": "Home Screen UI on Desktop."
     },
     {
-     "src": "assets/img/screenshot_2.webp",
+      "src": "assets/img/screenshot_2.webp",
       "sizes": "640x520",
       "type": "image/webp",
       "form_factor": "wide",
@@ -66,7 +80,7 @@
       "description": "Project Synposis Screen UI on Desktop."
     },
     {
-     "src": "assets/img/screenshot_3.webp",
+      "src": "assets/img/screenshot_3.webp",
       "sizes": "640x520",
       "type": "image/webp",
       "form_factor": "wide",
@@ -74,7 +88,7 @@
       "description": "Github Projects Screen UI on Desktop."
     },
     {
-     "src": "assets/img/screenshot_4.webp",
+      "src": "assets/img/screenshot_4.webp",
       "sizes": "640x520",
       "type": "image/webp",
       "form_factor": "wide",
@@ -82,7 +96,7 @@
       "description": "Contact Details Screen UI on Desktop."
     },
     {
-     "src": "assets/img/mobile_1.webp",
+      "src": "assets/img/mobile_1.webp",
       "sizes": "320x711",
       "type": "image/webp",
       "form_factor": "narrow",
@@ -90,7 +104,7 @@
       "description": "Home Screen UI on Mobile."
     },
     {
-     "src": "assets/img/mobile_2.webp",
+      "src": "assets/img/mobile_2.webp",
       "sizes": "320x711",
       "type": "image/webp",
       "form_factor": "narrow",
@@ -98,12 +112,12 @@
       "description": "Project Synposis Screen UI on Mobile."
     },
     {
-     "src": "assets/img/mobile_3.webp",
+      "src": "assets/img/mobile_3.webp",
       "sizes": "320x711",
       "type": "image/webp",
       "form_factor": "narrow",
       "label": "Ben Segni Developer & Designer",
       "description": "Current Project Screen UI on Mobile."
     }
-]
+  ]
 }

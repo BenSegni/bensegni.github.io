@@ -1,5 +1,6 @@
 import {
   Component,
+  OnDestroy,
   input,
   output,
   signal,
@@ -20,11 +21,11 @@ interface Filterable {
   styleUrls: ["./shared-filter.component.scss"],
   animations: [FadeInButton()],
 })
-export class SharedFilterComponent<T extends Filterable> {
+export class SharedFilterComponent <T extends Filterable> implements OnDestroy {
   public config = input<FilterConfig<T>>({
     data: [],
     listLength: 0,
-    signalData: signal([]),
+    signalData: signal<T[]>([]),
     options: [],
     resetValue: "",
   });

@@ -2,7 +2,6 @@ import { ElementRef, Renderer2, RendererFactory2 } from "@angular/core";
 
 import { DOMCreatorService } from "./element.creation";
 import { TestBed } from "@angular/core/testing";
-import { ToolTipConfig } from "../interfaces/tooltip";
 
 describe("DOMCreatorService", () => {
   let service: DOMCreatorService;
@@ -93,10 +92,6 @@ describe("DOMCreatorService", () => {
 
   describe("createIconElement", () => {
     it("should create icon element with correct classes", () => {
-      const toolTip: ToolTipConfig = {
-        toolTipTitle: "Test Title",
-        text: "Test Text",
-      };
       const elementRef = new ElementRef(document.createElement("icon"));
 
       service.createIconElement(elementRef);

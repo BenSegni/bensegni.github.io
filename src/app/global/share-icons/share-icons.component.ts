@@ -1,4 +1,4 @@
-import { Component, Input, input } from "@angular/core";
+import { Component, input } from "@angular/core";
 
 import { CommonModule } from "@angular/common";
 import { ShareButtonConfig } from "../share-icon-button/interface/share.button";

@@ -5,7 +5,7 @@ export interface Stack {
   purpose: string;
 }
 
-export interface StackConfig<T> {
+export interface StackConfig {
   title: string;
   data$: Observable<Stack[]>;
 }

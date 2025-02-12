@@ -1,6 +1,5 @@
-import { ToolkitComponent } from "src/app/pages/about/toolkit/toolkit.component";
-import { Technology } from "../../pages/about/tech-stack/interface/technology";
 import { PracticeEnum } from "../enum/practice.enum";
+import { Technology } from "../../pages/about/tech-stack/interface/technology";
 import { TechnologyEnum } from "../enum/technology.enum";
 import { ToolkitEnum } from "../enum/toolkit.enum";
 
