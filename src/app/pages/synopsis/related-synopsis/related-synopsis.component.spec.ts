@@ -67,7 +67,7 @@ describe("RelatedSynopsisComponent", () => {
         (project) => project.id === component.showcaseProject().relatedProjectId
       );
 
-      expect(component.relatedProject?.projectTitle).toBe(data[0].projectTitle);
+      expect(component.relatedProject?.projectTitle).toBe(data[5].projectTitle);
     });
   });
 });
