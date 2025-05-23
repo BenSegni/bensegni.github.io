@@ -169,7 +169,7 @@
 
         &:hover {
             color: $white;
-            border-bottom: 1px dotted $blue_1;
+            border-bottom: 1px dotted $bsp_1;
         }
     }
 
@@ -179,7 +179,7 @@
         align-items: center;
 
         svg {
-            fill: $blue_1;
+            fill: $bsp_1;
             margin-right: 1rem;
         }
     }

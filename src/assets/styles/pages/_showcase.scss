@@ -32,7 +32,7 @@
   background-color: $black_alpha_7;
 
   h4 {
-    color: $blue_1;
+    color: $bsp_1;
     line-height: 1rem;
     width: 100%;
   }
@@ -108,7 +108,7 @@
     @include flex();
     justify-content: flex-start;
     align-items: center;
-    color: $blue_1;
+    color: $bsp_1;
     font-weight: 400;
     margin-right: 1rem;
     padding: 0.45rem 1rem;

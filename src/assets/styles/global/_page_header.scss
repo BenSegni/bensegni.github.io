@@ -30,7 +30,7 @@ $background: "background.webp";
       font-family: "Caveat", cursive;
 
       q {
-        color: $blue_1;
+        color: $bsp_1;
       }
 
       span {
@@ -40,14 +40,14 @@ $background: "background.webp";
         font-weight: 300;
 
         &:first-of-type {
-          color: $blue_1 !important;
+          color: $bsp_1 !important;
           font-weight: 300;
           background-color: transparent;
         }
 
         &:last-of-type {
           color: $black_alpha_7 !important;
-          background-color: $blue_alpha_6;
+          background-color: $bsp_alpha_6;
         }
       }
 
@@ -84,13 +84,13 @@ $background: "background.webp";
         font-weight: 700;
 
         &:first-of-type {
-          color: $blue_1;
+          color: $bsp_1;
           font-weight: 300;
         }
 
         &:last-of-type {
           color: $black_alpha_7;
-          background-color: $blue_alpha_6;
+          background-color: $bsp_alpha_6;
           font-weight: 500;
           padding: 0 0.25rem;
           margin-right: 0.25rem;
@@ -132,12 +132,12 @@ $background: "background.webp";
         padding-right: 1rem;
 
         &:first-of-type {
-          color: $blue_1;
+          color: $bsp_1;
           font-weight: 700;
         }
 
         &:last-of-type {
-          color: $blue_1;
+          color: $bsp_1;
           font-weight: 700;
         }
       }

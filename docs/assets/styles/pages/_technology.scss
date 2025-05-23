@@ -34,13 +34,13 @@
 
             &:hover {
                 color: $white;
-                border-bottom: 1px dotted $blue_1;
+                border-bottom: 1px dotted $bsp_1;
                 text-decoration: none;
             }
 
             &:visited {
-                color: $blue_alpha_6;
-                border-bottom: 1px dotted $blue_alpha_6;
+                color: $bsp_alpha_6;
+                border-bottom: 1px dotted $bsp_alpha_6;
             }
         }
 
@@ -51,7 +51,7 @@
             &:last-child {
                 margin-left: auto;
                 margin-right: 0;
-                color: $blue_1;
+                color: $bsp_1;
             }
 
             @include tablet {

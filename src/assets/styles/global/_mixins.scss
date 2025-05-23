@@ -133,7 +133,7 @@
   background-position: center center;
   animation: rotation 1s infinite linear;
   border-radius: 100rem;
-  border: 1px solid $blue_1;
+  border: 1px solid $bsp_1;
 }
 
 @mixin loading-graphic-image {
@@ -154,12 +154,12 @@
 
   &:hover {
     color: $white;
-    border-bottom: 1px dotted $blue_1;
+    border-bottom: 1px dotted $bsp_1;
   }
 
   &:visited {
-    color: $blue_alpha_6;
-    border-bottom: 1px dotted $blue_alpha_6;
+    color: $bsp_alpha_6;
+    border-bottom: 1px dotted $bsp_alpha_6;
   }
 }
 
@@ -280,7 +280,7 @@
   font-size: .75rem;
   border: 0.0625rem solid;
   font-weight: 400;
-  background-color: $blue_alpha_6;
+  background-color: $bsp_alpha_6;
   margin-left: auto;
   flex-shrink: 1;
 

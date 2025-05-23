@@ -15,7 +15,7 @@ import { Showcase } from "../../pages/showcase/interface/showcase";
 })
 export class ProjectLinkComponent implements OnChanges {
   public project = input<Showcase>();
-  public url = input<string>("");
+  public url = input("");
   public pdf = "View PDF Proposal";
   public behance = "Project Presentation";
   public medium = "Read on Medium";

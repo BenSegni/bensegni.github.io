@@ -122,7 +122,7 @@ footer {
 }
 
 a {
-  color: $blue_1;
+  color: $bsp_1;
 }
 
 section {
@@ -149,7 +149,7 @@ footer {
 header,
 footer {
   svg {
-    fill: $blue_1;
+    fill: $bsp_1;
 
     &:hover {
       fill: $white;
@@ -161,7 +161,7 @@ footer {
   span {
     a {
       svg {
-        fill: $blue_1;
+        fill: $bsp_1;
 
         &:hover {
           fill: $white;
@@ -215,7 +215,7 @@ pre {
   display: block;
   box-sizing: border-box;
   background: $code-block;
-  border-left: 3px solid $blue_1;
+  border-left: 3px solid $bsp_1;
   color: $white;
   page-break-inside: avoid;
   margin-top: 1rem;
@@ -277,7 +277,7 @@ ol {
       margin-right: 1rem;
       padding-right: .5rem;
       content: counter(item);
-      border-right: .125rem solid $blue_1;
+      border-right: .125rem solid $bsp_1;
       width: 1.2em;
       text-align: center;
       display: inline-block;

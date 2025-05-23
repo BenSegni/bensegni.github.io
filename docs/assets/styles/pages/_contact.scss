@@ -6,10 +6,10 @@
     @include span-50();
 
     a {
-        border-bottom: 0.0625rem dotted $blue_alpha_6;
+        border-bottom: 0.0625rem dotted $bsp_alpha_6;
 
         &:hover {
-            color: $blue_alpha_65;
+            color: $bsp_alpha_65;
             border-color: $white;
         }
     }
@@ -51,12 +51,12 @@
 
         &:hover {
             color: $white;
-            border-color: $blue_1;
+            border-color: $bsp_1;
         }
 
         &:visited {
-            color: $blue_alpha_6;
-            border-bottom: 1px dotted $blue_alpha_6;
+            color: $bsp_alpha_6;
+            border-bottom: 1px dotted $bsp_alpha_6;
         }
     }
 

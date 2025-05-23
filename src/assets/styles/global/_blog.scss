@@ -2,7 +2,7 @@
   text-align: left;
   margin: 0;
   padding: 0;
-  border-bottom: .0625rem dotted $blue_1;
+  border-bottom: .0625rem dotted $bsp_1;
 }
 
 @mixin mobile-article {
@@ -410,7 +410,7 @@
           padding: .25rem .5rem;
 
           &:hover {
-            background-color: $blue_1;
+            background-color: $bsp_1;
             border: .0625rem solid $code-block;
             color: $white;
           }
@@ -423,7 +423,7 @@
           color: $white;
           width: 10rem;
           margin: 0 0 0 1.35rem;
-          background-color: $blue_1;
+          background-color: $bsp_1;
           border: .0625rem solid $grey;
           padding: .25rem .5rem;
           border-radius: .25rem;
@@ -569,7 +569,7 @@
       margin-top: 1rem;
 
       svg {
-        fill: $blue_1;
+        fill: $bsp_1;
         margin-right: 1rem;
       }
 
@@ -648,7 +648,7 @@ b {
 }
 
 .code-blue {
-  @include code-snippet-color($blue_1);
+  @include code-snippet-color($bsp_1);
 }
 
 .code-red {
@@ -705,7 +705,7 @@ b {
 
   small {
     color: $grey-light;
-    border-bottom: .0125rem dotted $blue_1;
+    border-bottom: .0125rem dotted $bsp_1;
     margin-left: .5rem;
   }
 

@@ -59,12 +59,12 @@
 
         &:hover {
             color: $white;
-            border-color: $blue_1;
+            border-color: $bsp_1;
         }
 
         &:visited {
-            color: $blue_alpha_6;
-            border-bottom: 1px dotted $blue_alpha_6;
+            color: $bsp_alpha_6;
+            border-bottom: 1px dotted $bsp_alpha_6;
         }
     }
 
@@ -75,12 +75,12 @@
 
         &:hover {
             color: $white;
-            border-bottom: 1px dotted $blue_1;
+            border-bottom: 1px dotted $bsp_1;
         }
 
         &:visited {
-            color: $blue_alpha_6;
-            border-bottom: 1px dotted $blue_alpha_6;
+            color: $bsp_alpha_6;
+            border-bottom: 1px dotted $bsp_alpha_6;
         }
 
         @include tablet {
@@ -145,7 +145,7 @@
 
             &:hover {
                 color: $white;
-                border-bottom: 1px dotted $blue_1;
+                border-bottom: 1px dotted $bsp_1;
             }
         }
     }
@@ -163,7 +163,7 @@
             text-align: left;
             line-height: 1rem;
             padding-bottom: .5rem;
-            border-bottom: 0.0625rem dotted $blue_1;
+            border-bottom: 0.0625rem dotted $bsp_1;
 
             @include tablet {
                 @include mobile-header();
@@ -180,7 +180,7 @@
 
         .honors {
             margin: 1rem 0;
-            color: $blue_1;
+            color: $bsp_1;
         }
 
         small {
@@ -314,7 +314,7 @@
         min-width: 12rem;
 
         .active {
-            border-bottom: 0.0625rem dotted $blue_1;
+            border-bottom: 0.0625rem dotted $bsp_1;
         }
 
         @include tablet {
@@ -331,10 +331,10 @@
 
         a {
             font-weight: 100;
-            color: $blue_2;
+            color: $bsp_2;
             min-width: 12rem;
             padding: .5rem 0;
-            border-bottom: 0.0625rem dotted $blue_1;
+            border-bottom: 0.0625rem dotted $bsp_1;
 
             @include tablet {
                 @include mobile-anchor();

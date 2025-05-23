@@ -109,7 +109,7 @@ footer {
 }
 
 a {
-    color: $blue_1;
+    color: $bsp_1;
 }
 
 section {
@@ -136,7 +136,7 @@ footer {
 header,
 footer {
     svg {
-        fill: $blue_1;
+        fill: $bsp_1;
 
         &:hover {
             fill: $white;
@@ -148,7 +148,7 @@ footer {
     span {
         a {
             svg {
-                fill: $blue_1;
+                fill: $bsp_1;
 
                 &:hover {
                     fill: $white;

@@ -10,7 +10,7 @@
       line-height: 1rem;
       padding-top: 0;
       padding-bottom: .5rem;
-      border-bottom: 0.0625rem dotted $blue_1;
+      border-bottom: 0.0625rem dotted $bsp_1;
 
       @include tablet {
         @include mobile-header();
@@ -27,7 +27,7 @@
 
     .honors {
       margin: 1rem 0;
-      color: $blue_1;
+      color: $bsp_1;
     }
 
     small {
@@ -188,7 +188,7 @@
 
       &:hover {
         color: $white;
-        border-bottom: 1px dotted $blue_1;
+        border-bottom: 1px dotted $bsp_1;
       }
     }
   }
@@ -260,7 +260,7 @@
       text-align: left;
       line-height: 1rem;
       padding-bottom: .5rem;
-      border-bottom: 0.0625rem dotted $blue_1;
+      border-bottom: 0.0625rem dotted $bsp_1;
 
       @include tablet {
         @include mobile-header();
@@ -417,7 +417,7 @@
 
   h3 {
     .active {
-      border: .0625rem dotted $blue_1;
+      border: .0625rem dotted $bsp_1;
     }
 
     @include tablet {
@@ -437,7 +437,7 @@
       min-width: 10rem;
       font-weight: 300;
       font-size: .95rem;
-      color: $blue_2;
+      color: $bsp_2;
       margin: 0 1rem;
       padding: .5rem 1rem;
       background-color: $black_alpha_7;

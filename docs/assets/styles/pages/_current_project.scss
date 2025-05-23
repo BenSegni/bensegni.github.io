@@ -8,7 +8,7 @@
     margin: 0 auto 2rem auto;
     padding-bottom: 1rem;
     line-height: 1.5rem;
-    border-bottom: 0.0625rem solid $blue_1;
+    border-bottom: 0.0625rem solid $bsp_1;
 
     img {
         @include project-img();
@@ -39,7 +39,7 @@
         }
 
         span {
-            color: $blue_1;
+            color: $bsp_1;
         }
 
         @include tablet {
@@ -95,7 +95,7 @@
     }
 
     h5 {
-        color: $blue_1;
+        color: $bsp_1;
     }
 
     .skills-header {
@@ -173,13 +173,13 @@
         align-items: center;
         text-align: left;
         padding: 2rem 0;
-        border-bottom: 0.0625rem dotted $blue_1;
+        border-bottom: 0.0625rem dotted $bsp_1;
         line-height: 1.5rem;
 
         mark {
             width: 100%;
             color: $white;
-            background-color: $blue_alpha_6;
+            background-color: $bsp_alpha_6;
             padding: 0.25rem 1.5rem;
             line-height: 2rem;
             border-radius: 10rem;
@@ -190,7 +190,7 @@
         }
 
         small {
-            color: $blue_1;
+            color: $bsp_1;
         }
 
         a {
@@ -199,12 +199,12 @@
 
             &:hover {
                 color: $white;
-                border-color: $blue_1;
+                border-color: $bsp_1;
             }
 
             &:visited {
-                color: $blue_alpha_6;
-                border-bottom: 1px dotted $blue_alpha_6;
+                color: $bsp_alpha_6;
+                border-bottom: 1px dotted $bsp_alpha_6;
             }
         }
 

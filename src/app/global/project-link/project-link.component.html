@@ -1,17 +1,17 @@
-@if(project()) {
+@if(project() || url()) {
 <p class="presentation-link">
-    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('behance')){
+    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('behance') || url().includes('behance')){
     <app-behance-icon></app-behance-icon>
     }
 
-    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('medium')){
+    @if(project()?.showCaseLink && project()?.showCaseLink?.includes('medium') || url().includes('medium')){
     <app-medium-icon></app-medium-icon>
     }
 
     @if(project() && project()?.downloadLink){
     <app-pdf-icon></app-pdf-icon>
     }
-    @if(project()) {
+    @if(project() || url().includes('behance') || url().includes('medium')) {
     <a [href]="link" target="_blank" aria-label="presentation link">{{ linkType }}</a>
     }
 </p>

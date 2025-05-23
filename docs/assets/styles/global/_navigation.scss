@@ -48,7 +48,7 @@
 
         .active {
             font-weight: 500;
-            color: $blue_1;
+            color: $bsp_1;
         }
 
         a {
@@ -58,17 +58,17 @@
             @include flex-center();
 
             &:hover {
-                color: $blue_1;
+                color: $bsp_1;
             }
 
             svg {
-                fill: $blue_1;
+                fill: $bsp_1;
                 margin-right: .75rem;
             }
 
             @include tablet {
                 @include mobile-nav();
-                border-bottom: 0.0625rem dotted $blue_2;
+                border-bottom: 0.0625rem dotted $bsp_2;
 
             }
 
@@ -125,7 +125,7 @@
 
     .active {
         font-weight: 500;
-        color: $blue_1;
+        color: $bsp_1;
         border-bottom: 0.1rem dotted $white;
     }
 }
