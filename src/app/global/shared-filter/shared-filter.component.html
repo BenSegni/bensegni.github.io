@@ -1,19 +1,30 @@
-<span class="filter-wrapper" *ngIf="config()">
-  <button class="filter-button" (click)="openCloseFilter()" [ngClass]="filteredLength ? 'mobile-margin'  : ''"><img
-      [src]="filterIcon" [alt]="filterIcon | altText"></button>
-  <ul *ngIf="showFilterList" class="showcase-type-dropdown">
-    <li *ngFor="let option of config().options"><button (click)="triggerFilter(option)"><img [src]="option | logo"
+@if (config()) {
+  <span class="filter-wrapper">
+    <button class="filter-button" (click)="openCloseFilter()" [ngClass]="filteredLength ? 'mobile-margin'  : ''"><img
+    [src]="filterIcon" [alt]="filterIcon | altText"></button>
+    @if (showFilterList) {
+      <ul class="showcase-type-dropdown">
+        @for (option of config().options; track option) {
+          <li><button (click)="triggerFilter(option)"><img [src]="option | logo"
           [alt]="option | logo | altText"> {{ option }}</button></li>
-    <li class="reset"><button (click)="resetFilter()">Reset Filter</button></li>
-  </ul>
-  <button *ngIf="showLayout()" class="layout-button" (click)="changeViewLayout()" [@fade]="columnLayout"><img
-      [src]="columnLayout ? grid : column " alt="screen display icon">
-  </button>
-  <p class="filter-result" *ngIf="filteredLength">Showing <span>{{ filteredLength }}</span> of <span>{{
-      config().listLength }}</span> items <ng-container *ngIf="selectedOption">filtering <span class="option"><img
-          [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a
-            [href]="selectedOption | filterLink" target="_blank" [attr.aria-label]="selectedOption + 'link'">{{
-            selectedOption
-            }}</a></q></span></ng-container></p>
-
+        }
+        <li class="reset"><button (click)="resetFilter()">Reset Filter</button></li>
+      </ul>
+    }
+    @if (showLayout()) {
+      <button class="layout-button" (click)="changeViewLayout()" [@fade]="columnLayout"><img
+        [src]="columnLayout ? grid : column " alt="screen display icon">
+      </button>
+    }
+    @if (filteredLength) {
+      <p class="filter-result">Showing <span>{{ filteredLength }}</span> of <span>{{
+    config().listLength }}</span> items @if (selectedOption) {
+    filtering <span class="option"><img
+    [src]="selectedOption | logo" [alt]="selectedOption | logo | altText"><q><a
+    [href]="selectedOption | filterLink" target="_blank" [attr.aria-label]="selectedOption + 'link'">{{
+    selectedOption
+  }}</a></q></span>
+}</p>
+}
 </span>
+}

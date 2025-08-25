@@ -1,14 +1,16 @@
-<ng-container *ngIf="config()">
+@if (config()) {
   <h3 [innerText]="config().title"></h3>
-  <ng-container *ngIf="config().data$ | async as stack">
+  @if (config().data$ | async; as stack) {
     <ul class="technologies">
-      <li *ngFor="let tool of stack">
-        <img [ngStyle]="{ 'border-color': tool.name | pill }" [src]="tool.name | logo"
-          alt="{{ tool.name | logo | altText }}">
-        <span><a class="pill-link" [href]="tool.name | filterLink" target="_blank"
-            [attr.aria-label]="tool.name + 'link'">{{ tool.name }}</a></span>
-        <span>{{ tool.purpose }}</span>
-      </li>
+      @for (tool of stack; track tool) {
+        <li>
+          <img [ngStyle]="{ 'border-color': tool.name | pill }" [src]="tool.name | logo"
+            alt="{{ tool.name | logo | altText }}">
+          <span><a class="pill-link" [href]="tool.name | filterLink" target="_blank"
+          [attr.aria-label]="tool.name + 'link'">{{ tool.name }}</a></span>
+          <span>{{ tool.purpose }}</span>
+        </li>
+      }
     </ul>
-  </ng-container>
-</ng-container>
+  }
+}

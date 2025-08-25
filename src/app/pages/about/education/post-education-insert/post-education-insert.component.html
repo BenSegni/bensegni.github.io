@@ -1,4 +1,4 @@
-<ng-container *ngIf="training">
-    <img class="post-education-icon" [src]="training() | logo" alt="{{ training() | logo | altText }}"
-        [ngStyle]="{ 'border-color': training() | pill }" />{{ training() }}
-</ng-container>
+@if (training) {
+  <img class="post-education-icon" [src]="training() | logo" alt="{{ training() | logo | altText }}"
+    [ngStyle]="{ 'border-color': training() | pill }" />{{ training() }}
+  }

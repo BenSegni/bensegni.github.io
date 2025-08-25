@@ -1,28 +1,35 @@
 <button class="menu-icon" (click)="open()" title="menu button">
-    <span></span>
-    <span></span>
-    <span></span>
+  <span></span>
+  <span></span>
+  <span></span>
 </button>
-<ul class="navigation" *ngIf="show" [@fade]="show">
+@if (show) {
+  <ul class="navigation" [@fade]="show">
     <li><button class="close-icon" (click)="show = false" (mouseenter)="onMouseEnter()">
-            <img [src]="closeIcon" [alt]="closeIcon | altText"></button></li>
-    <li *ngFor="let route of navigationRoutes">
-        <ng-container *ngIf="route.route; else anchorLink">
+      <img [src]="closeIcon" [alt]="closeIcon | altText"></button></li>
+      @for (route of navigationRoutes; track route) {
+        <li>
+          @if (route.route) {
             <a [routerLink]="route.route" routerLinkActive="active"
-                [routerLinkActiveOptions]="{ exact: route.activeOptions}" (mouseenter)="onMouseEnter(route)"
-                [innerText]="route.anchorText">
+              [routerLinkActiveOptions]="{ exact: route.activeOptions}" (mouseenter)="onMouseEnter(route)"
+              [innerText]="route.anchorText">
             </a>
-        </ng-container>
-        <ng-template #anchorLink>
+          } @else {
             <span class="external-link">
-                <img *ngIf="route.icon" [src]="route.icon" [alt]="route.icon | altText">
-                <a [href]="route.url" target="_blank" (mouseenter)="onMouseEnter(route)"
-                    [attr.aria-label]="route.url + 'page link'" [innerText]="route.anchorText">
-                </a>
+              @if (route.icon) {
+                <img [src]="route.icon" [alt]="route.icon | altText">
+              }
+              <a [href]="route.url" target="_blank" (mouseenter)="onMouseEnter(route)"
+                [attr.aria-label]="route.url + 'page link'" [innerText]="route.anchorText">
+              </a>
             </span>
-        </ng-template>
-    </li>
-    <span class="navigation-subtext">
-        <app-navigation-subtext *ngIf="selectedRoute" [item]="selectedRoute"></app-navigation-subtext>
-    </span>
-</ul>
+          }
+        </li>
+      }
+      <span class="navigation-subtext">
+        @if (selectedRoute) {
+          <app-navigation-subtext [item]="selectedRoute"></app-navigation-subtext>
+        }
+      </span>
+    </ul>
+  }

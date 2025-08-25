@@ -1,8 +1,8 @@
-<ng-container *ngIf="imageConfig()">
-    <app-loading-graphic [isLoading]="imageConfig().isLoading"></app-loading-graphic>
+@if (imageConfig()) {
+  <app-loading-graphic [isLoading]="imageConfig().isLoading"></app-loading-graphic>
     <div [ngStyle]="{
     'background-image': 'url(' + imageConfig().backgroundImage + ')',
     'display' : imageConfig().isLoading ? 'none' : 'block'
     }" class="background">
-    </div>
-</ng-container>
+  </div>
+}

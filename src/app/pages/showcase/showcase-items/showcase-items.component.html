@@ -1,10 +1,12 @@
 @if (projects()) {
-<div class="projects" [ngClass]="columnLayout() ? '' : 'grid-layout'">
-    <span *ngFor="let project of projects()" [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }">
+  <div class="projects" [ngClass]="columnLayout() ? '' : 'grid-layout'">
+    @for (project of projects(); track project) {
+      <span [ngStyle]="{ 'background-image': 'url(' + project.background + ')' }">
         <app-project-details class="project-display-card" [project]="project"
-            (click)="navigateToSynopsis(project)"></app-project-details>
-    </span>
-</div>
+        (click)="navigateToSynopsis(project)"></app-project-details>
+      </span>
+    }
+  </div>
 } @else {
-<p>There are currently no Showcase items to display.</p>
+  <p>There are currently no Showcase items to display.</p>
 }

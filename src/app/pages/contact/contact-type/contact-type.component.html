@@ -1,16 +1,24 @@
-<div *ngIf="contactType" class="contact-detail">
-    <ng-container [ngSwitch]="contactType.type">
-        <app-linkedin-icon *ngSwitchCase="'LinkedIn'"></app-linkedin-icon>
-        <app-email-icon *ngSwitchCase="'Email'"></app-email-icon>
-        <app-behance-icon *ngSwitchCase="'Behance'"></app-behance-icon>
-    </ng-container>
+@if (contactType) {
+  <div class="contact-detail">
+    @switch (contactType.type) {
+      @case ('LinkedIn') {
+        <app-linkedin-icon></app-linkedin-icon>
+      }
+      @case ('Email') {
+        <app-email-icon></app-email-icon>
+      }
+      @case ('Behance') {
+        <app-behance-icon></app-behance-icon>
+      }
+    }
     <h4 [innerText]="contactType.type"></h4>
     <p>
-        <a
+      <a
         [href]="contactType | contactLink"
         target="_blank"
         [innerHTML]="contactType.linkText"
         [attr.aria-label]="contactType + 'link'"
-        ></a>
+      ></a>
     </p>
-</div>
+  </div>
+}

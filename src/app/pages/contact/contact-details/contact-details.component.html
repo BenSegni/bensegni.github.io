@@ -1,3 +1,5 @@
 <div class="contact">
-    <app-contact-type *ngFor="let type of contactTypes" [contactType]="type"></app-contact-type>
+  @for (type of contactTypes; track type) {
+    <app-contact-type [contactType]="type"></app-contact-type>
+  }
 </div>

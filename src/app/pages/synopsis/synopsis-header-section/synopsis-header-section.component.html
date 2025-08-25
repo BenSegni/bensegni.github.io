@@ -1,5 +1,5 @@
-<ng-container *ngIf="headerSection()">
-    <h1 id="title" [innerText]="headerSection().headerOne"></h1>
-    <h2 id="sub-title" [innerText]="headerSection().headerTwo"></h2>
-    <h3 id="skills" class="project-skills-header" [innerText]="'Skills:'"></h3>
-</ng-container>
+@if (headerSection()) {
+  <h1 id="title" [innerText]="headerSection().headerOne"></h1>
+  <h2 id="sub-title" [innerText]="headerSection().headerTwo"></h2>
+  <h3 id="skills" class="project-skills-header" [innerText]="'Skills:'"></h3>
+}

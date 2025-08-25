@@ -1,13 +1,13 @@
-<ng-container *ngIf="article">
+@if (article) {
   <div class="article-wrapper">
     <div class="article">
       <a class="back-link" routerLink=".."><img [src]="blogIcon" [alt]="blogIcon | altText"><span>Back to Blog
-          Articles</span></a>
+      Articles</span></a>
       <h3 [innerText]="article.title"></h3>
       <p class="article-date"><small>Created: {{ article.date | date }}</small></p>
       <div class="article-information-bar">
         <span class="level-icon"><img [src]="article.level | logo" [alt]="article.level | logo | altText">{{
-          article.level + ' Level' }}</span>
+        article.level + ' Level' }}</span>
         <p class="article-reading-time-wrapper">
           <span class="article-reading-time">
             <app-clock-icon></app-clock-icon> Read Time:
@@ -18,22 +18,24 @@
         <div class="copy-url">
           <button class="copy-url-button" (click)="copyURL()"
             value="click to copy"><app-share-icon></app-share-icon>Copy &amp; Share</button>
-          <div class="copy-url-tooltip" [tooltip]="toolTip"></div>
-          <p class="copy-url-message" *ngIf="urlIsCopied">Page Address is Copied!</p>
+            <div class="copy-url-tooltip" [tooltip]="toolTip"></div>
+            @if (urlIsCopied) {
+              <p class="copy-url-message">Page Address is Copied!</p>
+            }
+          </div>
         </div>
+        <h4 [innerText]="'Technologies:'"></h4>
+        <app-skill-pills [skills]="article.skills"></app-skill-pills>
+        <div class="content" [innerHTML]="content | safeResource"></div>
+        <app-share-icons [shareButtonConfig]="shareButtonConfig"></app-share-icons>
+        <a class="back-link-bottom" routerLink="..">
+          <img [src]="blogIcon" [alt]="blogIcon | altText">
+          <span>Back to Blog Articles</span>
+        </a>
+        <app-blog-contact-details></app-blog-contact-details>
       </div>
-      <h4 [innerText]="'Technologies:'"></h4>
-      <app-skill-pills [skills]="article.skills"></app-skill-pills>
-      <div class="content" [innerHTML]="content | safeResource"></div>
-      <app-share-icons [shareButtonConfig]="shareButtonConfig"></app-share-icons>
-      <a class="back-link-bottom" routerLink="..">
-        <img [src]="blogIcon" [alt]="blogIcon | altText">
-        <span>Back to Blog Articles</span>
-      </a>
-      <app-blog-contact-details></app-blog-contact-details>
+      <div class="articles">
+        <app-blog-articles [articleId]="article.id"></app-blog-articles>
+      </div>
     </div>
-    <div class="articles">
-      <app-blog-articles [articleId]="article.id"></app-blog-articles>
-    </div>
-  </div>
-</ng-container>
+  }

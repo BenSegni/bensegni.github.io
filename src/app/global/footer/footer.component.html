@@ -1,25 +1,27 @@
 <footer>
-    <span>
-        <span class="privacy-policy-footer">
-            <app-privacy-policy-logo></app-privacy-policy-logo>
-            <a
-                [routerLink]="'privacy'"
-                [innerText]="'Privacy Policy'">
-            </a>
-        </span>
-        <span class="site-build-footer">
-            <img src="../../../assets/img/site_build_icon.svg" alt="site build icon">
-            <a
-            [routerLink]="'site-build'"
-            [innerText]="'Site Build Specification'">
-            </a>
-        </span>
+  <span>
+    <span class="privacy-policy-footer">
+      <app-privacy-policy-logo></app-privacy-policy-logo>
+      <a
+        [routerLink]="'privacy'"
+        [innerText]="'Privacy Policy'">
+      </a>
     </span>
-    <span>
-        <a href="https://github.com/BenSegni" target="_blank" aria-label="github link">
-            <app-github-icon></app-github-icon>
-        </a>
+    <span class="site-build-footer">
+      <img src="../../../assets/img/site_build_icon.svg" alt="site build icon">
+      <a
+        [routerLink]="'site-build'"
+        [innerText]="'Site Build Specification'">
+      </a>
     </span>
-    <span class="tag-line" [innerText]="'Building Apps for a Better World'"></span>
+  </span>
+  <span>
+    <a href="https://github.com/BenSegni" target="_blank" aria-label="github link">
+      <app-github-icon></app-github-icon>
+    </a>
+  </span>
+  <span class="tag-line" [innerText]="'Building Apps for a Better World'"></span>
 </footer>
-<div class="angular-version" *ngIf="version"><img [src]="'Angular' | logo" [alt]="'Angular' | logo | altText"><small [innerText]="version()"></small></div>
+@if (version) {
+  <div class="angular-version"><img [src]="'Angular' | logo" [alt]="'Angular' | logo | altText"><small [innerText]="version()"></small></div>
+}

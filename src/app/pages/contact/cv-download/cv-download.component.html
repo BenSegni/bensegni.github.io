@@ -1,7 +1,9 @@
 <div class="download-wrapper">
-    <h3 [innerText]="'CV Download'"></h3>
-    <p [innerText]="'Please view a copy of my latest CV here:'"></p>
-    <ul class="downloads">
-        <li *ngFor="let download of downloadDocuments"><a [href]="download.link" download="CV" [innerText]="download.text" aria-label="pdf/word download link"></a></li>
-    </ul>
+  <h3 [innerText]="'CV Download'"></h3>
+  <p [innerText]="'Please view a copy of my latest CV here:'"></p>
+  <ul class="downloads">
+    @for (download of downloadDocuments; track download) {
+      <li><a [href]="download.link" download="CV" [innerText]="download.text" aria-label="pdf/word download link"></a></li>
+    }
+  </ul>
 </div>

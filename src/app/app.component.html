@@ -1,14 +1,17 @@
-<ng-container *ngIf="!isLoading else loading">
-    <app-social-media></app-social-media>
-    <section>
-        <app-page-header></app-page-header>
-        <app-navigation></app-navigation>
-        <router-outlet></router-outlet>
-    </section>
-    <app-previous-companies></app-previous-companies>
-    <app-footer [version]="appVersion"></app-footer>
-</ng-container>
-<ng-template #loading>
-    <app-loading-icon *ngIf="isLoading"></app-loading-icon>
-</ng-template>
-<app-scroll *ngIf="!isLoading"></app-scroll>
+@if (!isLoading) {
+  <app-social-media></app-social-media>
+  <section>
+    <app-page-header></app-page-header>
+    <app-navigation></app-navigation>
+    <router-outlet></router-outlet>
+  </section>
+  <app-previous-companies></app-previous-companies>
+  <app-footer [version]="appVersion"></app-footer>
+} @else {
+  @if (isLoading) {
+    <app-loading-icon></app-loading-icon>
+  }
+}
+@if (!isLoading) {
+  <app-scroll></app-scroll>
+}

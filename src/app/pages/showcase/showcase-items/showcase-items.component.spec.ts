@@ -40,7 +40,7 @@ describe('ShowcaseItemsComponent', () => {
 
     describe('Testing navigateToSynopsis()', () => {
         it('should navigate to the identified project', () => {
-            const routerstub: Router = TestBed.get(Router);
+            const routerstub: Router = TestBed.inject(Router);
             const spyRouter = spyOn(routerstub, 'navigate');
             const project = component['_globalService'].showcaseSignal$().find(project => project.id = '1');
 

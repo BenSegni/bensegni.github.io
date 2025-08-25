@@ -1,3 +1,7 @@
-<div *ngIf="displayImages()" [ngStyle]="{'display' : isLoading() ? 'none' : ''}" class="project-display-grid">
-    <div class="image" *ngFor="let image of displayImages()"><img [src]="image.url" [alt]="image.url| altText"></div>
-</div>
+@if (displayImages()) {
+  <div [ngStyle]="{'display' : isLoading() ? 'none' : ''}" class="project-display-grid">
+    @for (image of displayImages(); track image) {
+      <div class="image"><img [src]="image.url" [alt]="image.url| altText"></div>
+    }
+  </div>
+}

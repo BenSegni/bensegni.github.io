@@ -1,4 +1,4 @@
-<ng-container *ngIf="project">
-    <app-skill-pills [skills]="project.skills" [size]="'skill-pills-mini'"></app-skill-pills>
-    <app-project-details-link [project]="project"></app-project-details-link>
-</ng-container>
+@if (project) {
+  <app-skill-pills [skills]="project.skills" [size]="'skill-pills-mini'"></app-skill-pills>
+  <app-project-details-link [project]="project"></app-project-details-link>
+}

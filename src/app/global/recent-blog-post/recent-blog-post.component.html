@@ -1,7 +1,9 @@
-<div class="recent-blog-post" *ngIf="show && recentBlogArticle"
-  [ngStyle]="{ 'background-image': 'url(' + recentBlogArticle.coverImage + ')' }">
-  <div class="recent-article-details">
-    <h3>{{ recentBlogArticle.title }}:</h3>
-    <p><a [routerLink]="articleUrl" [queryParams]="{  recentArticle: true }">A Recent Article</a></p>
+@if (show && recentBlogArticle) {
+  <div class="recent-blog-post"
+    [ngStyle]="{ 'background-image': 'url(' + recentBlogArticle.coverImage + ')' }">
+    <div class="recent-article-details">
+      <h3>{{ recentBlogArticle.title }}:</h3>
+      <p><a [routerLink]="articleUrl" [queryParams]="{  recentArticle: true }">A Recent Article</a></p>
+    </div>
   </div>
-</div>
+}

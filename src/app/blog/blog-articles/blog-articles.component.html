@@ -1,4 +1,6 @@
-<ng-container *ngIf="blog$">
+@if (blog$) {
   <h3 class="articles-header" [innerText]="'Articles'"></h3>
-  <app-blog-post *ngFor="let post of blog$" [post]="post" [blogMini]="true"></app-blog-post>
-</ng-container>
+  @for (post of blog$; track post) {
+    <app-blog-post [post]="post" [blogMini]="true"></app-blog-post>
+  }
+}

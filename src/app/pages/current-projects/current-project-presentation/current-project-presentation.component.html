@@ -1,5 +1,7 @@
-<div class="recent-presentation" *ngIf="currentProject">
+@if (currentProject) {
+  <div class="recent-presentation">
     <h4 [innerText]="'A Recent Presentation'"></h4>
     <a [href]="currentProject.presentationLink" target="_blank" aria-label="current project link"><img src="../../../assets/img/new_window_icon.svg"
-            [alt]="'../../../assets/img/new_window_icon.svg' | altText"> View presentation in new window</a>
-</div>
+    [alt]="'../../../assets/img/new_window_icon.svg' | altText"> View presentation in new window</a>
+  </div>
+}

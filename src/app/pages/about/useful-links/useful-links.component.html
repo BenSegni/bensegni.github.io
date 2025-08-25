@@ -1,6 +1,8 @@
 <h3 [innerText]="'Useful Links'"></h3>
-<ng-container *ngIf="usefuLinks$ | async as usefuLinks">
-    <ul class="useful-links">
-        <li *ngFor="let link of usefuLinks"><a [href]="link" target="_blank" aria-label="useful link">{{ link }}</a></li>
-    </ul>
-</ng-container>
+@if (usefuLinks$ | async; as usefuLinks) {
+  <ul class="useful-links">
+    @for (link of usefuLinks; track link) {
+      <li><a [href]="link" target="_blank" aria-label="useful link">{{ link }}</a></li>
+    }
+  </ul>
+}

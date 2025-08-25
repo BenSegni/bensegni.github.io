@@ -1,9 +1,11 @@
 <h3 [innerText]="'Current Project'"></h3>
-<ng-container *ngIf="projects$ | async as currentProject">
-    <app-current-project-header [currentProject]="currentProject"></app-current-project-header>
-    <div class="current-project-insert" *ngFor="let project of currentProject.projects">
-        <app-current-project-detail [project]="project"></app-current-project-detail>
+@if (projects$ | async; as currentProject) {
+  <app-current-project-header [currentProject]="currentProject"></app-current-project-header>
+  @for (project of currentProject.projects; track project) {
+    <div class="current-project-insert">
+      <app-current-project-detail [project]="project"></app-current-project-detail>
     </div>
-    <app-current-project-presentation [currentProject]="currentProject"></app-current-project-presentation>
-</ng-container>
+  }
+  <app-current-project-presentation [currentProject]="currentProject"></app-current-project-presentation>
+}
 <app-feedback></app-feedback>

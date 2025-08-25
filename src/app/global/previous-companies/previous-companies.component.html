@@ -1,5 +1,9 @@
 <div class="about-wrapper">
-    <div class="companies-wrapper" *ngIf="logos$ | async as logos">
-        <img class="icon" *ngFor="let logo of logos" src="{{ logo }}" alt="{{ logo | altText }}">
+  @if (logos$ | async; as logos) {
+    <div class="companies-wrapper">
+      @for (logo of logos; track logo) {
+        <img class="icon" src="{{ logo }}" alt="{{ logo | altText }}">
+      }
     </div>
+  }
 </div>

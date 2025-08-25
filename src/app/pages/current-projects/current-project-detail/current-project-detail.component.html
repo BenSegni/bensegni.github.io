@@ -1,11 +1,15 @@
-<ng-container *ngIf="project()">
+@if (project()) {
   <img src="{{ project().projectLogo }}" alt="{{ project().projectLogo | altText }}">
   <h3 [innerText]="project().projectTitle"></h3>
   <span [innerHTML]="project().projectDescription"></span>
   @if(project().skillUsage.length) {
-  <h4 *ngIf="project().skills" class="skills-header" [innerText]="'Skills'"></h4>
-  <app-skill-pills *ngIf="project().skills" [skills]="project().skills"></app-skill-pills>
-  <h4 class="skills-header" [innerText]="'Skills usage on Task'"></h4>
-  <app-tech-bar-chart [skillsUsage]="project().skillUsage" [isEmployment]="false"></app-tech-bar-chart>
+    @if (project().skills) {
+      <h4 class="skills-header" [innerText]="'Skills'"></h4>
+    }
+    @if (project().skills) {
+      <app-skill-pills [skills]="project().skills"></app-skill-pills>
+    }
+    <h4 class="skills-header" [innerText]="'Skills usage on Task'"></h4>
+    <app-tech-bar-chart [skillsUsage]="project().skillUsage" [isEmployment]="false"></app-tech-bar-chart>
   }
-</ng-container>
+}

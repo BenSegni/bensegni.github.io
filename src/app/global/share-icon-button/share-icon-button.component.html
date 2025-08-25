@@ -1,13 +1,18 @@
-<ng-container [ngSwitch]="shareType()">
-  <button class="facebook" *ngSwitchCase="'facebook'" (click)="shareContent()" aria-label="facebook share">
-    <app-facebook-share-icon></app-facebook-share-icon>
-  </button>
 
-  <button class="x-social" *ngSwitchCase="'X'" (click)="shareContent()" aria-label="X share">
-    <app-x-share-icon></app-x-share-icon>
-  </button>
-
-  <button class="linkedin" *ngSwitchCase="'linkedin'" (click)="shareContent()" aria-label="linkedin share">
-    <app-linkedin-share-icon></app-linkedin-share-icon>
-  </button>
-</ng-container>
+@switch (shareType()) {
+  @case ('facebook') {
+    <button class="facebook" (click)="shareContent()" aria-label="facebook share">
+      <app-facebook-share-icon></app-facebook-share-icon>
+    </button>
+  }
+  @case ('X') {
+    <button class="x-social" (click)="shareContent()" aria-label="X share">
+      <app-x-share-icon></app-x-share-icon>
+    </button>
+  }
+  @case ('linkedin') {
+    <button class="linkedin" (click)="shareContent()" aria-label="linkedin share">
+      <app-linkedin-share-icon></app-linkedin-share-icon>
+    </button>
+  }
+}

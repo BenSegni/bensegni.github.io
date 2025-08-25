@@ -1,5 +1,9 @@
-<span *ngIf="level" class="level">
-  <img [ngStyle]="{marginLeft: isInternal() ? '0px' :''}" [src]="level() | logo" [alt]="level() | logo | altText">
-  <a *ngIf="!isInternal" [routerLink]="isInternal ? ['./'] : ['description']" [fragment]="level().toLowerCase()">{{ level()
-    }} Level</a>
-</span>
+@if (level) {
+  <span class="level">
+    <img [ngStyle]="{marginLeft: isInternal() ? '0px' :''}" [src]="level() | logo" [alt]="level() | logo | altText">
+    @if (!isInternal) {
+      <a [routerLink]="isInternal ? ['./'] : ['description']" [fragment]="level().toLowerCase()">{{ level()
+      }} Level</a>
+    }
+  </span>
+}

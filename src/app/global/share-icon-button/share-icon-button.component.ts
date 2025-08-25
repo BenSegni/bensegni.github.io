@@ -1,6 +1,6 @@
 import { Component, OnInit, input } from "@angular/core";
 
-import { CommonModule } from "@angular/common";
+
 import { FacebookShareIconComponent } from "../icons/facebook-share-icon/facebook-share-icon.component";
 import { LinkedinShareIconComponent } from "../icons/linkedin-share-icon/linkedin-share-icon.component";
 import { XShareIconComponent } from "../icons/x-share-icon/x-share-icon.component";
@@ -10,11 +10,10 @@ import { XShareIconComponent } from "../icons/x-share-icon/x-share-icon.componen
     templateUrl: "./share-icon-button.component.html",
     styleUrls: ["./share-icon-button.scss"],
     imports: [
-        CommonModule,
-        FacebookShareIconComponent,
-        XShareIconComponent,
-        LinkedinShareIconComponent,
-    ]
+    FacebookShareIconComponent,
+    XShareIconComponent,
+    LinkedinShareIconComponent
+]
 })
 export class ShareIconButtonComponent implements OnInit {
   public shareType = input<string>("");

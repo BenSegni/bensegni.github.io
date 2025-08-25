@@ -1,24 +1,26 @@
-<div class="blog-post" *ngIf="post()">
-  @if(!blogMini()) {
-  <a [routerLink]="'./' + post().routeUrl" [state]="{ id: post().id }" [attr.aria-label]="post().routeUrl">
-    <div class="cover-image" [ngStyle]="{ 'background-image': 'url(' + post().coverImage + ')' }">
-    </div>
-  </a>
-  }
-  <div class="post-details">
-    <h4 class="post-title" [ngStyle]="blogMini() ? {'margin-bottom': '.75rem'} : {}"><img [src]="post().level | logo"
-        [alt]="post().level | logo | altText"> {{ post().title }}</h4>
+@if (post()) {
+  <div class="blog-post">
     @if(!blogMini()) {
-    <p><small>Created: {{ post().date | date }}</small></p>
-    <p>{{ post().description }}</p>
-    <h5 [innerText]="'Technologies:'"></h5>
+      <a [routerLink]="'./' + post().routeUrl" [state]="{ id: post().id }" [attr.aria-label]="post().routeUrl">
+        <div class="cover-image" [ngStyle]="{ 'background-image': 'url(' + post().coverImage + ')' }">
+        </div>
+      </a>
     }
-    <app-skill-pills [skills]="post().skills" [showLink]="false"></app-skill-pills>
-    @if(blogMini()) {
-    <a [routerLink]="'../' + post().routeUrl" [state]="{ id: post().id }" [innerText]="'Read Article'"></a>
-    }
-    @else {
-    <a [routerLink]="'./' + post().routeUrl" [state]="{ id: post().id }" [innerText]="'Read Article'"></a>
+    <div class="post-details">
+      <h4 class="post-title" [ngStyle]="blogMini() ? {'margin-bottom': '.75rem'} : {}"><img [src]="post().level | logo"
+      [alt]="post().level | logo | altText"> {{ post().title }}</h4>
+      @if(!blogMini()) {
+        <p><small>Created: {{ post().date | date }}</small></p>
+        <p>{{ post().description }}</p>
+        <h5 [innerText]="'Technologies:'"></h5>
+      }
+      <app-skill-pills [skills]="post().skills" [showLink]="false"></app-skill-pills>
+      @if(blogMini()) {
+        <a [routerLink]="'../' + post().routeUrl" [state]="{ id: post().id }" [innerText]="'Read Article'"></a>
+      }
+      @else {
+      <a [routerLink]="'./' + post().routeUrl" [state]="{ id: post().id }" [innerText]="'Read Article'"></a>
     }
   </div>
 </div>
+}

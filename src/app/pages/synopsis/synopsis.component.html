@@ -1,8 +1,8 @@
-  @if (showcaseProject) {
-    <div class="synopsis">
-      <a class="back-link" [routerLink]="'/'">
-        <app-synopsis-back-link></app-synopsis-back-link>
-      </a>
+@if (showcaseProject) {
+  <div class="synopsis">
+    <a class="back-link" [routerLink]="'/'">
+      <app-synopsis-back-link></app-synopsis-back-link>
+    </a>
       <app-synopsis-header-display [imageConfig]="{
               backgroundImage: showcaseProject.background,
               isLoading: isLoading
@@ -10,25 +10,27 @@
       <app-synopsis-header-section [headerSection]="{
               headerOne: showcaseProject.projectTitle,
               headerTwo: showcaseProject.description }"></app-synopsis-header-section>
-      <app-skill-pills [skills]="showcaseProject.skills"></app-skill-pills>
-      <p class="project-details" [innerText]="showcaseProject.details"></p>
-      <app-project-link [project]="showcaseProject"></app-project-link>
-      <app-loading-graphic *ngIf="showcaseProject.displayImages"
-        [isLoading]="isLoading"></app-loading-graphic>
-      @if(showcaseProject.displayImages) {
+    <app-skill-pills [skills]="showcaseProject.skills"></app-skill-pills>
+    <p class="project-details" [innerText]="showcaseProject.details"></p>
+    <app-project-link [project]="showcaseProject"></app-project-link>
+    @if (showcaseProject.displayImages) {
+      <app-loading-graphic
+      [isLoading]="isLoading"></app-loading-graphic>
+    }
+    @if(showcaseProject.displayImages) {
       <app-grid-display [displayImages]="showcaseProject.displayImages"
-        [isLoading]="isLoading"></app-grid-display>
-      }
-      <app-share-icons [shareButtonConfig]="shareButtonConfig"></app-share-icons>
-      <app-loading-graphic [smallLoader]="true" [isLoading]="isLoading"></app-loading-graphic>
-      <app-related-synopsis [ngStyle]="{'display' : isLoading ? 'none' : 'flex'}"
-        [showcaseProject]="showcaseProject" (showcaseEmitter)="showcaseProject = $event"></app-related-synopsis>
-      <a class="back-link-footer" [routerLink]="'/'">
-        <app-synopsis-back-link></app-synopsis-back-link>
-      </a>
-    </div>
-    <h4 [innerText]="'Contact Details'"></h4>
-    <app-contact-details></app-contact-details>
-  } @else {
+      [isLoading]="isLoading"></app-grid-display>
+    }
+    <app-share-icons [shareButtonConfig]="shareButtonConfig"></app-share-icons>
+    <app-loading-graphic [smallLoader]="true" [isLoading]="isLoading"></app-loading-graphic>
+    <app-related-synopsis [ngStyle]="{'display' : isLoading ? 'none' : 'flex'}"
+    [showcaseProject]="showcaseProject" (showcaseEmitter)="showcaseProject = $event"></app-related-synopsis>
+    <a class="back-link-footer" [routerLink]="'/'">
+      <app-synopsis-back-link></app-synopsis-back-link>
+    </a>
+  </div>
+  <h4 [innerText]="'Contact Details'"></h4>
+  <app-contact-details></app-contact-details>
+} @else {
   <p>No project details found, please reload the page.</p>
-  }
+}

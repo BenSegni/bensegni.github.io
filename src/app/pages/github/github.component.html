@@ -1,16 +1,18 @@
 <h3 [innerText]="'Github'"></h3>
-<ng-container *ngIf="githubProjects$ | async as githubProjects">
-    <div class="community-project" *ngFor="let project of githubProjects">
-        <span>
-            <h4 [tooltip]="project.toolTip" [innerText]="project.name"></h4>
-            <br>
-            <p [innerText]="project.description"></p>
-            <h5 class="project-skills-header" [innerText]="'Skills:'"></h5>
-            <app-skill-pills [skills]="project.skills"></app-skill-pills>
-            <span class="community-link">
-                <app-github-icon></app-github-icon>
-                <a [href]="project.githubLink" target="_blank" [innerText]="'Github Repository'" aria-label="github link"></a>
-            </span>
+@if (githubProjects$ | async; as githubProjects) {
+  @for (project of githubProjects; track project) {
+    <div class="community-project">
+      <span>
+        <h4 [tooltip]="project.toolTip" [innerText]="project.name"></h4>
+        <br>
+          <p [innerText]="project.description"></p>
+          <h5 class="project-skills-header" [innerText]="'Skills:'"></h5>
+          <app-skill-pills [skills]="project.skills"></app-skill-pills>
+          <span class="community-link">
+            <app-github-icon></app-github-icon>
+            <a [href]="project.githubLink" target="_blank" [innerText]="'Github Repository'" aria-label="github link"></a>
+          </span>
         </span>
-    </div>
-</ng-container>
+      </div>
+    }
+  }

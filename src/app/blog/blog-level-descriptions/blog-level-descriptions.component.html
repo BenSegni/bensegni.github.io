@@ -4,8 +4,8 @@
     <span [innerText]="'Back to Blog Articles'"></span>
   </a>
   <h3 [innerText]="'Blog Level Descriptions'"></h3>
-  <ng-container *ngIf="blogDescriptionData">
-    <ng-container *ngFor="let data of blogDescriptionData">
+  @if (blogDescriptionData) {
+    @for (data of blogDescriptionData; track data) {
       <div class="description-anchor" [id]="data.anchor">
         <p>{{ data.anchor | anchor }}</p>
       </div>
@@ -15,11 +15,13 @@
           <b>What {{ data.level }} articles should look like:</b>
         </p>
         <ol>
-          <li *ngFor="let feature of data.features" [innerHTML]="feature"></li>
+          @for (feature of data.features; track feature) {
+            <li [innerHTML]="feature"></li>
+          }
         </ol>
       </div>
-    </ng-container>
-  </ng-container>
+    }
+  }
   <a class="back-link-bottom" routerLink="..">
     <img [src]="blogIcon" [alt]="blogIcon | altText">
     <span [innerText]="'Back to Blog Articles'"></span>

@@ -1,10 +1,12 @@
 <div class="privacy-policy-wrapper">
-    <app-privacy-policy-logo></app-privacy-policy-logo>
-    <h3 [innerText]="'Privacy Policy'"></h3>
-    <p [innerText]="privacyPolicyCopy.copy"></p>
-    <ul>
-        <li *ngFor="let point of privacyPolicyCopy.dataPoints" [innerText]="point"></li>
-    </ul>
-    <p>For any inquiries regarding analytics tracking or aspects of this website, kindly reach out using the provided <a
-            routerLink="../contact">Contact Page.</a></p>
+  <app-privacy-policy-logo></app-privacy-policy-logo>
+  <h3 [innerText]="'Privacy Policy'"></h3>
+  <p [innerText]="privacyPolicyCopy.copy"></p>
+  <ul>
+    @for (point of privacyPolicyCopy.dataPoints; track point) {
+      <li [innerText]="point"></li>
+    }
+  </ul>
+  <p>For any inquiries regarding analytics tracking or aspects of this website, kindly reach out using the provided <a
+  routerLink="../contact">Contact Page.</a></p>
 </div>
