@@ -4,6 +4,7 @@ import {
   input,
   output,
   signal,
+  InputSignal
 } from "@angular/core";
 
 import { FadeInButton } from "../utils/animations/fade.animation";
@@ -16,13 +17,13 @@ interface Filterable {
 }
 
 @Component({
-    selector: "app-shared-filter",
-    templateUrl: "./shared-filter.component.html",
-    styleUrls: ["./shared-filter.component.scss"],
-    animations: [FadeInButton()],
-    standalone: false
+  selector: "app-shared-filter",
+  templateUrl: "./shared-filter.component.html",
+  styleUrls: ["./shared-filter.component.scss"],
+  animations: [FadeInButton()],
+  standalone: false
 })
-export class SharedFilterComponent <T extends Filterable> implements OnDestroy {
+export class SharedFilterComponent<T extends Filterable> implements OnDestroy {
   public config = input<FilterConfig<T>>({
     data: [],
     listLength: 0,
@@ -30,8 +31,8 @@ export class SharedFilterComponent <T extends Filterable> implements OnDestroy {
     options: [],
     resetValue: "",
   });
-  
-  public showLayout = input<boolean>(false);
+
+  public showLayout: InputSignal<boolean> = input<boolean>(false);
   public emitLayout = output<boolean>();
   public columnLayout = false;
   public grid = "../../../assets/img/grid_icon.svg";
@@ -43,7 +44,7 @@ export class SharedFilterComponent <T extends Filterable> implements OnDestroy {
   public selectedOption = "";
   public filterIcon = "../../../assets/img/filter_icon.svg";
 
-  constructor(public _globalService: GlobalDataService) {}
+  constructor(public _globalService: GlobalDataService) { }
 
   public ngOnDestroy(): void {
     this.triggerFilter(this.techStackEnum.UI);

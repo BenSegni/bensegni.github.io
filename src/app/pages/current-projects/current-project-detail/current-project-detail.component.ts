@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 
 import { Project } from '../interface/project';
 import { projectData } from './../../../global/data/project-data';
@@ -10,5 +10,5 @@ import { projectData } from './../../../global/data/project-data';
     standalone: false
 })
 export class CurrentProjectDetailComponent {
-    public project = input<Project>(projectData.projects[0]) ;
+    public project: InputSignal<Project> = input<Project>(projectData.projects[0]) ;
 }

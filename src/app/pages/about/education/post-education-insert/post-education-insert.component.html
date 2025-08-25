@@ -1,4 +1,4 @@
-@if (training) {
+@if (training()) {
   <img class="post-education-icon" [src]="training() | logo" alt="{{ training() | logo | altText }}"
     [ngStyle]="{ 'border-color': training() | pill }" />{{ training() }}
   }

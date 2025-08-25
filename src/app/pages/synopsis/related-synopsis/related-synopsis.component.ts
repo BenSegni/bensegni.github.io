@@ -1,4 +1,4 @@
-import { Component, OnChanges, input, output } from "@angular/core";
+import { Component, InputSignal, OnChanges, input, output } from "@angular/core";
 
 import { GlobalDataService } from "../../../global/global-data.service";
 import { Router } from "@angular/router";
@@ -28,7 +28,7 @@ export class RelatedSynopsisComponent
   extends GlobalDataService
   implements OnChanges
 {
-  public showcaseProject = input<Showcase>(inputInitialiser);
+  public showcaseProject: InputSignal<Showcase> = input<Showcase>(inputInitialiser);
 
   public showcaseEmitter = output<Showcase>();
   public relatedProject: Showcase | undefined;

@@ -1,4 +1,4 @@
-import { Component, OnInit, input } from "@angular/core";
+import { Component, InputSignal, OnInit, input } from "@angular/core";
 
 
 import { FacebookShareIconComponent } from "../icons/facebook-share-icon/facebook-share-icon.component";
@@ -6,18 +6,18 @@ import { LinkedinShareIconComponent } from "../icons/linkedin-share-icon/linkedi
 import { XShareIconComponent } from "../icons/x-share-icon/x-share-icon.component";
 
 @Component({
-    selector: "app-share-icon-button",
-    templateUrl: "./share-icon-button.component.html",
-    styleUrls: ["./share-icon-button.scss"],
-    imports: [
+  selector: "app-share-icon-button",
+  templateUrl: "./share-icon-button.component.html",
+  styleUrls: ["./share-icon-button.scss"],
+  imports: [
     FacebookShareIconComponent,
     XShareIconComponent,
     LinkedinShareIconComponent
-]
+  ]
 })
 export class ShareIconButtonComponent implements OnInit {
-  public shareType = input<string>("");
-  public shareUrl = input<string>("");
+  public shareType: InputSignal<string> = input<string>("");
+  public shareUrl: InputSignal<string> = input<string>("")
   private navUrl = "";
 
   public ngOnInit(): void {

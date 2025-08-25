@@ -2,6 +2,7 @@ import {
   Component,
   inject,
   input,
+  InputSignal,
 } from "@angular/core";
 
 import { GlobalDataService } from "../../../global/global-data.service";
@@ -14,9 +15,9 @@ import { Showcase } from "../interface/showcase";
     standalone: false
 })
 export class ShowcaseItemsComponent {
-  public columnLayout = input<boolean>(false);
-  private _router = inject(Router);
-  private _globalService = inject(GlobalDataService);
+  public columnLayout:InputSignal<boolean> = input<boolean>(false);
+  private _router: Router = inject(Router);
+  private _globalService: GlobalDataService = inject(GlobalDataService);
   public projects = this._globalService.showcaseSignal$;
   public isLoading = this._globalService.isLoading$;
   constructor() {

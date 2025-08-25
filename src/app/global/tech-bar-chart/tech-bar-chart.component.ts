@@ -1,4 +1,4 @@
-import { Component, input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 import { TechUsage } from "./interface/tech.usage";
 
@@ -9,8 +9,8 @@ import { TechUsage } from "./interface/tech.usage";
     standalone: false
 })
 export class TechBarChartComponent {
-  public isEmployment = input<boolean>(true);
-  public skillsUsage = input<TechUsage[]>([
+  public isEmployment:InputSignal<boolean> = input<boolean>(true);
+  public skillsUsage: InputSignal<TechUsage[]> = input<TechUsage[]>([
     {
       skill: "Angular",
       usage: 3,

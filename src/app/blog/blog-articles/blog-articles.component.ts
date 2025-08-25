@@ -1,4 +1,4 @@
-import { Component, OnChanges, OnInit, SimpleChanges, input } from '@angular/core';
+import { Component, InputSignal, OnChanges, OnInit, SimpleChanges, input } from '@angular/core';
 
 import { Blog } from '../interface/blog';
 import { GlobalDataService } from '../../global/global-data.service';
@@ -10,7 +10,7 @@ import { GlobalDataService } from '../../global/global-data.service';
 })
 export class BlogArticlesComponent implements OnInit, OnChanges {
   public blog$: Blog[] = [];
-  public articleId = input<number>(0);
+  public articleId: InputSignal<number> = input<number>(0);
 
   public constructor(private _globalService: GlobalDataService) {}
 

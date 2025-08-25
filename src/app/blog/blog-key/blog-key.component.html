@@ -1,8 +1,6 @@
-@if (levels) {
-  <p class="blog-key-wrapper">
-    <span class="blog-key"><strong [innerText]="'Key:'"></strong></span>
-    @for (level of blogLevels; track level) {
-      <app-blog-key-level-icon [level]="level"></app-blog-key-level-icon>
-    }
-  </p>
-}
+<p class="blog-key-wrapper">
+  <span class="blog-key"><strong [innerText]="'Key:'"></strong></span>
+  @for (level of blogLevels; track level) {
+  <app-blog-key-level-icon [level]="level"></app-blog-key-level-icon>
+  }
+</p>

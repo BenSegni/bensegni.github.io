@@ -1,6 +1,7 @@
 import {
   ChangeDetectionStrategy,
   Component,
+  InputSignal,
   OnChanges,
   SimpleChanges,
   input,
@@ -15,7 +16,7 @@ import { Showcase } from "../../pages/showcase/interface/showcase";
     standalone: false
 })
 export class ProjectLinkComponent implements OnChanges {
-  public project = input<Showcase>();
+  public project: InputSignal<Showcase> = input<Showcase>();
   public url = input("");
   public pdf = "View PDF Proposal";
   public behance = "Project Presentation";

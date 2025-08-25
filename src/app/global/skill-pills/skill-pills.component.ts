@@ -1,4 +1,4 @@
-import { Component, inject, input } from '@angular/core';
+import { Component, inject, input, InputSignal } from '@angular/core';
 
 import { GlobalDataService } from '../global-data.service';
 import { skillsHighlightAnimation } from '../utils/animations/skills.animation';
@@ -11,9 +11,9 @@ import { skillsHighlightAnimation } from '../utils/animations/skills.animation';
     standalone: false
 })
 export class SkillPillsComponent {
-    public skills = input<string[]>(['']);
-    public skillsType = input<string>('');
-    public size = input<string>('');
-    public showLink = input<boolean>(false);
-    public _globalService = inject(GlobalDataService);
+    public skills: InputSignal<string[]> = input<string[]>(['']);
+    public skillsType: InputSignal<string> = input<string>('');
+    public size: InputSignal<string> = input<string>('');
+    public showLink: InputSignal<boolean> = input<boolean>(false);
+    public _globalService: GlobalDataService = inject(GlobalDataService);
 }

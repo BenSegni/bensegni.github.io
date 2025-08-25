@@ -22,6 +22,6 @@
   </span>
   <span class="tag-line" [innerText]="'Building Apps for a Better World'"></span>
 </footer>
-@if (version) {
+@if (version()) {
   <div class="angular-version"><img [src]="'Angular' | logo" [alt]="'Angular' | logo | altText"><small [innerText]="version()"></small></div>
 }

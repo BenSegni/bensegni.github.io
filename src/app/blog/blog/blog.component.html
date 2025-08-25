@@ -3,7 +3,7 @@
   <div class="display-buttons">
     <app-shared-filter [config]="filterConfig"></app-shared-filter>
   </div>
-  @if (blog$) {
+  @if (blog$().length > 0) {
     <app-blog-key></app-blog-key>
     @for (post of blog$(); track post) {
       <app-blog-post [post]="post"></app-blog-post>

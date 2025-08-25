@@ -1,6 +1,6 @@
 <div class="social-share-wrapper">
   <p><small>Share this {{ shareButtonConfig().title }} on:</small></p>
-  @if (shareButtonConfig) {
+  @if (shareButtonConfig()) {
     @for (button of shareButtonConfig().buttons; track button) {
       <app-share-icon-button
         [shareType]="button.shareType"

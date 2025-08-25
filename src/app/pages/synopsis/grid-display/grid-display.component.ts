@@ -1,4 +1,4 @@
-import { Component, input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 import { ImageDisplay } from "../../showcase/interface/showcase";
 
@@ -8,10 +8,10 @@ import { ImageDisplay } from "../../showcase/interface/showcase";
     standalone: false
 })
 export class GridDisplayComponent {
-  public displayImages = input<ImageDisplay[]>([
+  public displayImages: InputSignal<ImageDisplay[]> = input<ImageDisplay[]>([
     {
       url: "",
     },
   ]);
-  public isLoading = input<boolean>(true);
+  public isLoading: InputSignal<boolean> = input<boolean>(true);
 }

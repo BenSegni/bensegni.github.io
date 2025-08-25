@@ -2,6 +2,7 @@ import {
   ChangeDetectionStrategy,
   Component,
   input,
+  InputSignal,
 } from "@angular/core";
 
 interface HeaderSection {
@@ -16,7 +17,7 @@ interface HeaderSection {
     standalone: false
 })
 export class SynopsisHeaderSectionComponent {
-  public headerSection = input<HeaderSection>({
+  public headerSection: InputSignal<HeaderSection> = input<HeaderSection>({
     headerOne: "",
     headerTwo: "",
   });

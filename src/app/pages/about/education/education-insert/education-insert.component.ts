@@ -1,4 +1,4 @@
-import { Component, input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 import { Education } from "../interface/education";
 
@@ -9,7 +9,7 @@ import { Education } from "../interface/education";
     standalone: false
 })
 export class EducationInsertComponent {
-  public placement = input<Education>({
+  public placement: InputSignal<Education> = input<Education>({
     logo: "",
     institution: "",
     date: "",

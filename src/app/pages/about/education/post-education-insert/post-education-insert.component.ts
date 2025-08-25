@@ -1,4 +1,4 @@
-import { Component, input } from '@angular/core';
+import { Component, input, InputSignal } from '@angular/core';
 
 @Component({
     selector: 'app-post-education-insert',
@@ -7,5 +7,5 @@ import { Component, input } from '@angular/core';
     standalone: false
 })
 export class PostEducationInsertComponent {
-    public training = input<string>('');
+    public training: InputSignal<string> = input<string>('');
 }

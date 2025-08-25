@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, input, InputSignal, WritableSignal } from '@angular/core';
 
 @Component({
     selector: 'app-footer',
@@ -7,5 +7,5 @@ import { ChangeDetectionStrategy, Component, input } from '@angular/core';
     standalone: false
 })
 export class FooterComponent {
-    public version = input<string>('1.0.0');
+    public version: InputSignal<string> = input<string>('1.0.0');
 }

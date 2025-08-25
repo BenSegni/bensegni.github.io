@@ -1,4 +1,4 @@
-import { Component, input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 @Component({
     selector: "app-synopsis-header-display",
@@ -7,7 +7,10 @@ import { Component, input } from "@angular/core";
     standalone: false
 })
 export class SynopsisHeaderDisplayComponent {
-  public imageConfig = input<{
+  public imageConfig: InputSignal<{
+    backgroundImage: string;
+    isLoading: boolean;
+  }> = input<{
     backgroundImage: string;
     isLoading: boolean;
   }>({

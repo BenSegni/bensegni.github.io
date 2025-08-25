@@ -1,4 +1,4 @@
-import { Component, input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 
 import { Blog } from "../interface/blog";
 import { blogData } from "../../global/data/blog-data";
@@ -10,6 +10,6 @@ import { blogData } from "../../global/data/blog-data";
     standalone: false
 })
 export class BlogPostComponent {
-  public post = input<Blog>(blogData[0]);
-  public blogMini = input<boolean>(false);
+  public post: InputSignal<Blog> = input<Blog>(blogData[0]);
+  public blogMini: InputSignal<boolean> = input<boolean>(false);
 }
