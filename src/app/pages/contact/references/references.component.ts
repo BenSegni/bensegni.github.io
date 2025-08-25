@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { EmailCopy } from '../interface/email';
 
 @Component({
-  selector: 'app-references',
-  templateUrl: './references.component.html'
+    selector: 'app-references',
+    templateUrl: './references.component.html',
+    standalone: false
 })
 export class ReferencesComponent {
     public emailCopy: EmailCopy = {

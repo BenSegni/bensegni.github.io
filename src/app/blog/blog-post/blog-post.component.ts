@@ -4,9 +4,10 @@ import { Blog } from "../interface/blog";
 import { blogData } from "../../global/data/blog-data";
 
 @Component({
-  selector: "app-blog-post",
-  templateUrl: "./blog-post.component.html",
-  styleUrls: ["./blog-post.component.scss"],
+    selector: "app-blog-post",
+    templateUrl: "./blog-post.component.html",
+    styleUrls: ["./blog-post.component.scss"],
+    standalone: false
 })
 export class BlogPostComponent {
   public post = input<Blog>(blogData[0]);

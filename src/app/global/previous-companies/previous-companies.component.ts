@@ -3,6 +3,7 @@ import { GlobalDataService } from '../global-data.service';
 
 @Component({
     selector: 'app-previous-companies',
-    templateUrl: './previous-companies.component.html'
+    templateUrl: './previous-companies.component.html',
+    standalone: false
 })
 export class PreviousCompaniesComponent extends GlobalDataService {}

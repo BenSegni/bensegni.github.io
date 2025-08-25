@@ -10,9 +10,10 @@ interface HeaderSection {
 }
 
 @Component({
-  selector: "app-synopsis-header-section",
-  templateUrl: "./synopsis-header-section.component.html",
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: "app-synopsis-header-section",
+    templateUrl: "./synopsis-header-section.component.html",
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class SynopsisHeaderSectionComponent {
   public headerSection = input<HeaderSection>({

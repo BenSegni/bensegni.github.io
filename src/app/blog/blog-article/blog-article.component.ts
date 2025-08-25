@@ -11,8 +11,9 @@ import { ToolTipConfig } from "../../global/utils/directives/interfaces/tooltip"
 declare let process: { env: { NODE_ENV: "production" | "dev" } };
 const env = process.env.NODE_ENV;
 @Component({
-  selector: "app-blog-article",
-  templateUrl: "./blog-article.component.html",
+    selector: "app-blog-article",
+    templateUrl: "./blog-article.component.html",
+    standalone: false
 })
 export class BlogArticleComponent implements OnInit {
   public article: Blog | undefined;

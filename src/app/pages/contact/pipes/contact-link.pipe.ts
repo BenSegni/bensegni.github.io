@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { ContactType } from '../interface/contact.type';
 
 @Pipe({
-    name: 'contactLink'
+    name: 'contactLink',
+    standalone: false
 })
 export class ContactLinkPipe implements PipeTransform {
 

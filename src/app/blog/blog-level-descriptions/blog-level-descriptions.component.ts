@@ -5,9 +5,10 @@ import { BlogDescription } from '../interface/blog.description';
 import { blogDescriptionData } from '../../global/data/blog-description-data';
 
 @Component({
-  selector: 'app-blog-level-descriptions',
-  templateUrl: './blog-level-descriptions.component.html',
-  styleUrls: ['./blog-level-descriptions.component.scss']
+    selector: 'app-blog-level-descriptions',
+    templateUrl: './blog-level-descriptions.component.html',
+    styleUrls: ['./blog-level-descriptions.component.scss'],
+    standalone: false
 })
 export class BlogLevelDescriptionsComponent implements OnInit, AfterViewChecked {
   private tag: string | null = '';

@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { LevelEnum } from '../enum/level.enum';
 
 @Component({
-  selector: 'app-blog-key',
-  templateUrl: './blog-key.component.html',
-  styleUrls: ['./blog-key.component.scss']
+    selector: 'app-blog-key',
+    templateUrl: './blog-key.component.html',
+    styleUrls: ['./blog-key.component.scss'],
+    standalone: false
 })
 export class BlogKeyComponent {
   public blogLevels: string[] = this.assignBlogLevels();

@@ -6,7 +6,8 @@ import { TechnologyEnum } from '../../enum/technology.enum';
 import { ToolkitEnum } from '../../enum/toolkit.enum';
 
 @Pipe({
-  name: 'pill'
+    name: 'pill',
+    standalone: false
 })
 export class PillPipe implements PipeTransform {
 

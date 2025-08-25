@@ -9,6 +9,7 @@ import { routeItems } from './data/routes';
     selector: 'app-navigation',
     templateUrl: './navigation.component.html',
     animations: [FadeInNavigation()],
+    standalone: false
 })
 export class NavigationComponent {
     public show = false;

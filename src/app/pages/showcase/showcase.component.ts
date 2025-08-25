@@ -6,8 +6,9 @@ import { TechnologyEnum } from '../../global/enum/technology.enum';
 import { showcaseData } from '../../global/data/showcase-data';
 
 @Component({
-  selector: 'app-showcase',
-  templateUrl: './showcase.component.html',
+    selector: 'app-showcase',
+    templateUrl: './showcase.component.html',
+    standalone: false
 })
 export class ShowcaseComponent {
   public columnLayout = false;

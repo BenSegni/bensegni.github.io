@@ -11,7 +11,8 @@ interface Header {
 
 @Component({
     selector: 'app-page-header',
-    templateUrl: './page-header.component.html'
+    templateUrl: './page-header.component.html',
+    standalone: false
 })
 export class PageHeaderComponent {
     public headerContent: Header = {

@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { ContactType } from '../interface/contact.type';
 
 @Component({
-  selector: 'app-contact-details',
-  templateUrl: './contact-details.component.html'
+    selector: 'app-contact-details',
+    templateUrl: './contact-details.component.html',
+    standalone: false
 })
 export class ContactDetailsComponent {
     public contactTypes: ContactType[] = [

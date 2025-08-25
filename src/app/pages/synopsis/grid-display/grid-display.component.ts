@@ -3,8 +3,9 @@ import { Component, input } from "@angular/core";
 import { ImageDisplay } from "../../showcase/interface/showcase";
 
 @Component({
-  selector: "app-grid-display",
-  templateUrl: "./grid-display.component.html",
+    selector: "app-grid-display",
+    templateUrl: "./grid-display.component.html",
+    standalone: false
 })
 export class GridDisplayComponent {
   public displayImages = input<ImageDisplay[]>([

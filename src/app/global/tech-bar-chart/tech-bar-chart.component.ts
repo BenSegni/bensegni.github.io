@@ -3,9 +3,10 @@ import { Component, input } from "@angular/core";
 import { TechUsage } from "./interface/tech.usage";
 
 @Component({
-  selector: "app-tech-bar-chart",
-  templateUrl: "./tech-bar-chart.component.html",
-  styleUrls: ["./tech-bar-chart.component.scss"],
+    selector: "app-tech-bar-chart",
+    templateUrl: "./tech-bar-chart.component.html",
+    styleUrls: ["./tech-bar-chart.component.scss"],
+    standalone: false
 })
 export class TechBarChartComponent {
   public isEmployment = input<boolean>(true);

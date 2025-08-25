@@ -19,9 +19,10 @@ const inputInitialiser = {
 };
 
 @Component({
-  selector: "app-related-synopsis",
-  templateUrl: "./related-synopsis.component.html",
-  styleUrls: ["./related-synopsis.component.scss"],
+    selector: "app-related-synopsis",
+    templateUrl: "./related-synopsis.component.html",
+    styleUrls: ["./related-synopsis.component.scss"],
+    standalone: false
 })
 export class RelatedSynopsisComponent
   extends GlobalDataService

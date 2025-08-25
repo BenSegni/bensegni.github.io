@@ -5,7 +5,8 @@ import { GlobalDataService } from './global/global-data.service';
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrls: ['./app.component.scss']
+    styleUrls: ['./app.component.scss'],
+    standalone: false
 })
 export class AppComponent extends GlobalDataService implements OnInit, OnDestroy {
     public appVersion = this._el.nativeElement.attributes[1].value;

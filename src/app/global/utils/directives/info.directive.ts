@@ -12,7 +12,8 @@ import { DOMCreatorService } from "./shared/element.creation";
 import { ToolTipConfig } from "./interfaces/tooltip";
 
 @Directive({
-  selector: "[tooltip]",
+    selector: "[tooltip]",
+    standalone: false
 })
 export class InfoDirective implements AfterViewInit {
   @Input() tooltip: ToolTipConfig | undefined;

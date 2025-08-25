@@ -2,7 +2,8 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'app-site-build',
-    templateUrl: './site-build.component.html'
+    templateUrl: './site-build.component.html',
+    standalone: false
 })
 export class SiteBuildComponent {
     public specification: string[] = ['Angular', 'Github', 'Jasmine', 'Inkscape', 'RxJs', 'SASS', 'Typescript', 'Visual Studio'];

@@ -9,9 +9,10 @@ import {
 import { Showcase } from "../../pages/showcase/interface/showcase";
 
 @Component({
-  selector: "app-project-link",
-  templateUrl: "./project-link.component.html",
-  changeDetection: ChangeDetectionStrategy.OnPush,
+    selector: "app-project-link",
+    templateUrl: "./project-link.component.html",
+    changeDetection: ChangeDetectionStrategy.OnPush,
+    standalone: false
 })
 export class ProjectLinkComponent implements OnChanges {
   public project = input<Showcase>();

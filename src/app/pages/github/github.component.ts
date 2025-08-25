@@ -2,8 +2,9 @@ import { Component } from '@angular/core';
 import { GlobalDataService } from '../../global/global-data.service';
 
 @Component({
-  selector: 'app-github',
-  templateUrl: './github.component.html'
+    selector: 'app-github',
+    templateUrl: './github.component.html',
+    standalone: false
 })
 export class GithubComponent extends GlobalDataService {
 

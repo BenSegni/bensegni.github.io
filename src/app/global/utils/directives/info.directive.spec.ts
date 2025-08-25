@@ -10,8 +10,9 @@ import { ElementRef } from "@angular/core";
 import { InfoDirective } from "./info.directive";
 
 @Component({
-  selector: "app-test-component",
-  template: `<div></div>`,
+    selector: "app-test-component",
+    template: `<div></div>`,
+    standalone: false
 })
 export class TestComponent {}
 

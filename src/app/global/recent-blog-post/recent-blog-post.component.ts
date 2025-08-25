@@ -7,14 +7,13 @@ import { Subject } from 'rxjs';
 import { blogData } from '../data/blog-data';
 
 @Component({
-  selector: 'app-recent-blog-post',
-  templateUrl: './recent-blog-post.component.html',
-  styleUrls: ['./recent-blog-post.component.scss'],
-  standalone: true,
-  imports: [
-    CommonModule,
-    RouterModule
-  ]
+    selector: 'app-recent-blog-post',
+    templateUrl: './recent-blog-post.component.html',
+    styleUrls: ['./recent-blog-post.component.scss'],
+    imports: [
+        CommonModule,
+        RouterModule
+    ]
 })
 export class RecentBlogPostComponent implements OnInit, OnDestroy {
   public recentBlogArticle: Blog = blogData.reduce((a, b) => (a.date > b.date ? a : b));

@@ -7,9 +7,10 @@ import { FilterConfig } from '../../global/shared-filter/interface/filter.config
 import { FadeInButton } from '../../global/utils/animations/fade.animation';
 
 @Component({
-  selector: 'app-blog',
-  templateUrl: './blog.component.html',
-  animations: [FadeInButton()]
+    selector: 'app-blog',
+    templateUrl: './blog.component.html',
+    animations: [FadeInButton()],
+    standalone: false
 })
 export class BlogComponent extends GlobalDataService {
   public filterConfig: FilterConfig<Blog> = {

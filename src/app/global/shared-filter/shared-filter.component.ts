@@ -16,10 +16,11 @@ interface Filterable {
 }
 
 @Component({
-  selector: "app-shared-filter",
-  templateUrl: "./shared-filter.component.html",
-  styleUrls: ["./shared-filter.component.scss"],
-  animations: [FadeInButton()],
+    selector: "app-shared-filter",
+    templateUrl: "./shared-filter.component.html",
+    styleUrls: ["./shared-filter.component.scss"],
+    animations: [FadeInButton()],
+    standalone: false
 })
 export class SharedFilterComponent <T extends Filterable> implements OnDestroy {
   public config = input<FilterConfig<T>>({

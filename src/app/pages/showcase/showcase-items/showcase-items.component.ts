@@ -9,8 +9,9 @@ import { Router } from "@angular/router";
 import { Showcase } from "../interface/showcase";
 
 @Component({
-  selector: "app-showcase-items",
-  templateUrl: "./showcase-items.component.html",
+    selector: "app-showcase-items",
+    templateUrl: "./showcase-items.component.html",
+    standalone: false
 })
 export class ShowcaseItemsComponent {
   public columnLayout = input<boolean>(false);

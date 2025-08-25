@@ -5,11 +5,10 @@ import { ShareButtonConfig } from "../share-icon-button/interface/share.button";
 import { ShareIconButtonComponent } from "../share-icon-button/share-icon-button.component";
 
 @Component({
-  selector: "app-share-icons",
-  templateUrl: "./share-icons.component.html",
-  styleUrls: ["./share-icons.component.scss"],
-  standalone: true,
-  imports: [CommonModule, ShareIconButtonComponent],
+    selector: "app-share-icons",
+    templateUrl: "./share-icons.component.html",
+    styleUrls: ["./share-icons.component.scss"],
+    imports: [CommonModule, ShareIconButtonComponent]
 })
 export class ShareIconsComponent {
   public shareButtonConfig = input<ShareButtonConfig>({

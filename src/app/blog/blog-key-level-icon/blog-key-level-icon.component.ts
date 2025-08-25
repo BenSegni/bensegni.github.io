@@ -1,9 +1,10 @@
 import { Component, input } from '@angular/core';
 
 @Component({
-  selector: 'app-blog-key-level-icon',
-  templateUrl: './blog-key-level-icon.component.html',
-  styleUrls: ['./blog-key-level-icon.component.scss']
+    selector: 'app-blog-key-level-icon',
+    templateUrl: './blog-key-level-icon.component.html',
+    styleUrls: ['./blog-key-level-icon.component.scss'],
+    standalone: false
 })
 export class BlogKeyLevelIconComponent {
   public level = input<string>('');

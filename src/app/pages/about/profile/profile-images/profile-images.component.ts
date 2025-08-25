@@ -3,7 +3,8 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-profile-images',
     templateUrl: './profile-images.component.html',
-    styleUrls: ['./profile-images.component.scss']
+    styleUrls: ['./profile-images.component.scss'],
+    standalone: false
 })
 export class ProfileImagesComponent {
     public images: string[] = [

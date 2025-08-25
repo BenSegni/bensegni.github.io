@@ -4,10 +4,11 @@ import { GlobalDataService } from '../global-data.service';
 import { skillsHighlightAnimation } from '../utils/animations/skills.animation';
 
 @Component({
-  selector: 'app-skill-pills',
-  templateUrl: './skill-pills.component.html',
-  styleUrls: ['./skill-pills.component.scss'],
-  animations: [skillsHighlightAnimation()]
+    selector: 'app-skill-pills',
+    templateUrl: './skill-pills.component.html',
+    styleUrls: ['./skill-pills.component.scss'],
+    animations: [skillsHighlightAnimation()],
+    standalone: false
 })
 export class SkillPillsComponent {
     public skills = input<string[]>(['']);

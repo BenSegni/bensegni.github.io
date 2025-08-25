@@ -8,8 +8,9 @@ import {
 import { Showcase } from "../showcase/interface/showcase";
 
 @Component({
-  selector: "app-synopsis",
-  templateUrl: "./synopsis.component.html",
+    selector: "app-synopsis",
+    templateUrl: "./synopsis.component.html",
+    standalone: false
 })
 export class SynopsisComponent extends GlobalDataService implements OnInit {
   public showcaseProject: Showcase | undefined;

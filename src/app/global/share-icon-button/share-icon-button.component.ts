@@ -6,16 +6,15 @@ import { LinkedinShareIconComponent } from "../icons/linkedin-share-icon/linkedi
 import { XShareIconComponent } from "../icons/x-share-icon/x-share-icon.component";
 
 @Component({
-  selector: "app-share-icon-button",
-  templateUrl: "./share-icon-button.component.html",
-  styleUrls: ["./share-icon-button.scss"],
-  standalone: true,
-  imports: [
-    CommonModule,
-    FacebookShareIconComponent,
-    XShareIconComponent,
-    LinkedinShareIconComponent,
-  ],
+    selector: "app-share-icon-button",
+    templateUrl: "./share-icon-button.component.html",
+    styleUrls: ["./share-icon-button.scss"],
+    imports: [
+        CommonModule,
+        FacebookShareIconComponent,
+        XShareIconComponent,
+        LinkedinShareIconComponent,
+    ]
 })
 export class ShareIconButtonComponent implements OnInit {
   public shareType = input<string>("");

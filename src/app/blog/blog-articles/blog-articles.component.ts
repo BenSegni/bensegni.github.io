@@ -4,8 +4,9 @@ import { Blog } from '../interface/blog';
 import { GlobalDataService } from '../../global/global-data.service';
 
 @Component({
-  selector: 'app-blog-articles',
-  templateUrl: './blog-articles.component.html'
+    selector: 'app-blog-articles',
+    templateUrl: './blog-articles.component.html',
+    standalone: false
 })
 export class BlogArticlesComponent implements OnInit, OnChanges {
   public blog$: Blog[] = [];

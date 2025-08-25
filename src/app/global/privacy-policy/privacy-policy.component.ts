@@ -3,7 +3,8 @@ import { copyText, dataPoints } from './data/copy.text';
 
 @Component({
     selector: 'app-privacy-policy',
-    templateUrl: './privacy-policy.component.html'
+    templateUrl: './privacy-policy.component.html',
+    standalone: false
 })
 export class PrivacyPolicyComponent {
     public privacyPolicyCopy = {

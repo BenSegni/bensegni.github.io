@@ -7,9 +7,10 @@ interface Dimensions {
 }
 
 @Component({
-  selector: "app-loading-graphic",
-  templateUrl: "./loading-graphic.component.html",
-  styleUrls: ["./loading-graphic.component.scss"],
+    selector: "app-loading-graphic",
+    templateUrl: "./loading-graphic.component.html",
+    styleUrls: ["./loading-graphic.component.scss"],
+    standalone: false
 })
 export class LoadingGraphicComponent {
   public isLoading = input<boolean>(true);
