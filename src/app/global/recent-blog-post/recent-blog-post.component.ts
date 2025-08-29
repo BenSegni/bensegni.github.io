@@ -1,6 +1,6 @@
 import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
-import { Component, OnDestroy, OnInit } from '@angular/core';
-
+import { Component, OnDestroy, OnInit, inject } from '@angular/core';
+ 
 import { Blog } from 'src/app/blog/interface/blog';
 import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
@@ -20,7 +20,9 @@ export class RecentBlogPostComponent implements OnInit, OnDestroy {
   public articleUrl = `blog/${this.recentBlogArticle.routeUrl}`;
   public show = true;
   private destroy$ = new Subject();
-  public constructor(private _route: ActivatedRoute, private _router: Router) { }
+
+  private _route: ActivatedRoute = inject(ActivatedRoute);
+  private _router: Router = inject(Router);
 
   public ngOnInit(): void {
     this._route.queryParams.subscribe((param: Params) => {

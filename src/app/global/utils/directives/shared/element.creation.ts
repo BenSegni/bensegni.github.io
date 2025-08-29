@@ -1,5 +1,6 @@
 import {
   ElementRef,
+  inject,
   Injectable,
   Renderer2,
   RendererFactory2,
@@ -8,8 +9,11 @@ import {
 @Injectable({ providedIn: "root" })
 export class DOMCreatorService {
   private renderer: Renderer2;
-  constructor(rendererFactory: RendererFactory2) {
-    this.renderer = rendererFactory.createRenderer(null, null);
+
+  rendererFactory: RendererFactory2 = inject(RendererFactory2);
+
+  constructor() {
+    this.renderer = this.rendererFactory.createRenderer(null, null);
   }
   /**
    * addToParentNode()

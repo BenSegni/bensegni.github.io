@@ -37,7 +37,8 @@
             ],
             "scripts": [],
             "serviceWorker": "ngsw-config.json",
-            "browser": "src/main.ts"
+            "browser": "src/main.ts",
+            "aot": true
           },
           "configurations": {
             "production": {

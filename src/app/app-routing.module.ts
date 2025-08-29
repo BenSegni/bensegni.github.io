@@ -1,4 +1,4 @@
-import { RouterModule, Routes } from '@angular/router';
+import { Routes } from '@angular/router';
 
 import { AboutComponent } from './pages/about/about.component';
 import { ContactComponent } from './pages/contact/contact.component';
@@ -6,7 +6,6 @@ import { CurrentProjectsComponent } from './pages/current-projects/current-proje
 import { EducationComponent } from './pages/about/education/education.component';
 import { EmploymentComponent } from './pages/about/employment/employment.component';
 import { GithubComponent } from './pages/github/github.component';
-import { NgModule } from '@angular/core';
 import { NpmComponent } from './pages/npm/npm.component';
 import { PageNotFoundComponent } from './global/page-not-found/page-not-found.component';
 import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.component';
@@ -96,7 +95,15 @@ export const routes: Routes = [
   },
   {
     path: 'blog',
-    loadChildren: () => import('./blog/blog.module').then(m => m.BlogModule)
+    loadComponent: () => import('./blog/blog/blog.component').then(m => m.BlogComponent),
+  },
+  {
+    path: 'blog/description',
+    loadComponent: () => import('./blog/blog-level-descriptions/blog-level-descriptions.component').then(m => m.BlogLevelDescriptionsComponent)
+  },
+  {
+    path: 'blog/:id',
+    loadComponent: () => import('./blog/blog-article/blog-article.component').then(m => m.BlogArticleComponent)
   },
   {
     path: 'contact',
@@ -119,9 +126,3 @@ export const routes: Routes = [
     component: PageNotFoundComponent
   },
 ];
-
-@NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
-})
-export class AppRoutingModule { }

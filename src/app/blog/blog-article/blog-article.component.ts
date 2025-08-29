@@ -1,19 +1,44 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, inject, OnInit } from "@angular/core";
 import { distinctUntilChanged, tap } from "rxjs";
 
 import { Blog } from "../interface/blog";
 import { BlogService } from "../services/blog.service";
 import { GlobalDataService } from "../../global/global-data.service";
-import { Router } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 import { ShareButtonConfig } from "../../global/share-icon-button/interface/share.button";
 import { ToolTipConfig } from "../../global/utils/directives/interfaces/tooltip";
+import { ClockIconComponent } from "src/app/global/icons/clock-icon/clock-icon.component";
+import { ShareIconComponent } from "src/app/global/icons/share-icon/share-icon.component";
+import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
+import { ShareIconsComponent } from "src/app/global/share-icons/share-icons.component";
+import { SafeResourcePipe } from "../utils/safe-resource.pipe";
+import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { BlogContactDetailsComponent } from "../blog-contact-details/blog-contact-details.component";
+import { CommonModule } from "@angular/common";
+import { LogoPipe } from "src/app/global/utils/pipes/logo.pipe";
+import { InfoDirective } from "src/app/global/utils/directives/info.directive";
+import { BlogArticlesComponent } from "../blog-articles/blog-articles.component";
 
 declare let process: { env: { NODE_ENV: "production" | "dev" } };
 const env = process.env.NODE_ENV;
 @Component({
-    selector: "app-blog-article",
-    templateUrl: "./blog-article.component.html",
-    standalone: false
+  selector: "app-blog-article",
+  templateUrl: "./blog-article.component.html",
+  standalone: true,
+  imports: [
+    ClockIconComponent,
+    ShareIconComponent,
+    SkillPillsComponent,
+    ShareIconsComponent,
+    SafeResourcePipe,
+    AltTextPipe,
+    BlogContactDetailsComponent,
+    CommonModule,
+    LogoPipe,
+    InfoDirective,
+    BlogArticlesComponent,
+    RouterLink
+  ],
 })
 export class BlogArticleComponent implements OnInit {
   public article: Blog | undefined;
@@ -33,6 +58,11 @@ export class BlogArticleComponent implements OnInit {
     linkText: "Read About it Here",
     link: "https://blog.medium.com/read-time-and-you-bc2048ab620c",
   };
+
+  private _globalService: GlobalDataService = inject(GlobalDataService);
+  private _router: Router = inject(Router);
+  private _blogService: BlogService = inject(BlogService);
+
   public shareButtonConfig: ShareButtonConfig = {
     title: "article",
     buttons: [
@@ -50,12 +80,6 @@ export class BlogArticleComponent implements OnInit {
       },
     ],
   };
-
-  public constructor(
-    private _globalService: GlobalDataService,
-    private _router: Router,
-    private _blogService: BlogService
-  ) {}
 
   public ngOnInit(): void {
     let prevUrl = "";

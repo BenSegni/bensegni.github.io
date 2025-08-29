@@ -1,4 +1,5 @@
-@if (project) {
-  <app-skill-pills [skills]="project.skills" [size]="'skill-pills-mini'"></app-skill-pills>
-  <app-project-details-link [project]="project"></app-project-details-link>
-}
+<app-skill-pills
+  [skills]="project().skills"
+  [size]="'skill-pills-mini'"
+></app-skill-pills>
+<app-project-details-link [project]="project()"></app-project-details-link>

@@ -3,7 +3,7 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-scroll',
     templateUrl: './scroll.component.html',
-    standalone: false
+    standalone: true
 })
 export class ScrollComponent {
     public scroll(): void {

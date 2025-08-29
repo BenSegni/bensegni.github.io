@@ -4,7 +4,6 @@ import { SubTextEnum } from '../../enum/navigation-subtext.enum';
 
 @Pipe({
     name: 'navigationText',
-    standalone: false
 })
 export class NavigationTextPipe implements PipeTransform {
 

@@ -1,9 +1,12 @@
-import { Component } from '@angular/core';
-import { GlobalDataService } from '../../../global/global-data.service';
+import { Component } from "@angular/core";
+import { GlobalDataService } from "../../../global/global-data.service";
+import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { FeedbackLinkComponent } from "../feedback-link/feedback-link.component";
+import { CommonModule } from "@angular/common";
 
 @Component({
-    selector: 'app-feedback',
-    templateUrl: './feedback.component.html',
-    standalone: false
+  selector: "app-feedback",
+  templateUrl: "./feedback.component.html",
+  imports: [FeedbackLinkComponent, AltTextPipe, CommonModule],
 })
 export class FeedbackComponent extends GlobalDataService {}

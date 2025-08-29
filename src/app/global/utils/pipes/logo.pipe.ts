@@ -7,7 +7,7 @@ import { ToolkitEnum } from '../../enum/toolkit.enum';
 
 @Pipe({
     name: 'logo',
-    standalone: false
+    standalone: true
 })
 export class LogoPipe implements PipeTransform {
 

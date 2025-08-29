@@ -2,7 +2,6 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
     name: 'altText',
-    standalone: false
 })
 export class AltTextPipe implements PipeTransform {
 

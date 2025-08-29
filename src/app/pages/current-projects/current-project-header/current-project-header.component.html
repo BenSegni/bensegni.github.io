@@ -1,8 +1,9 @@
-@if (currentProject) {
-  <div class="current-project">
-    <div class="current-project-header">
-      <img src="{{ currentProject.companyLogo }}" alt="{{ currentProject.companyLogo | altText }}">
-      <h4><span [innerText]="currentProject.title"></span></h4>
-    </div>
+<div class="current-project">
+  <div class="current-project-header">
+    <img
+      src="{{ currentProject().companyLogo }}"
+      alt="{{ currentProject().companyLogo | altText }}"
+    />
+    <h4><span [innerText]="currentProject().title"></span></h4>
   </div>
-}
+</div>

@@ -2,7 +2,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 
 @Pipe({
     name: 'anchor',
-    standalone: false
+    standalone: true
 })
 export class AnchorPipe implements PipeTransform {
 

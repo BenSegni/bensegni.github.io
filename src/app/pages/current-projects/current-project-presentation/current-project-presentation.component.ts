@@ -1,11 +1,17 @@
-import { Component, Input } from '@angular/core';
-import { CurrentProject } from '../interface/project';
+import { Component, input, InputSignal } from "@angular/core";
+import { CurrentProject } from "../interface/project";
+import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
 
 @Component({
-    selector: 'app-current-project-presentation',
-    templateUrl: './current-project-presentation.component.html',
-    standalone: false
+  selector: "app-current-project-presentation",
+  templateUrl: "./current-project-presentation.component.html",
+  imports: [AltTextPipe],
 })
 export class CurrentProjectPresentationComponent {
-    @Input() public currentProject: CurrentProject | undefined;
+  public currentProject: InputSignal<CurrentProject> = input<CurrentProject>({
+    companyLogo: "",
+    title: "",
+    projects: [],
+    presentationLink: "",
+  });
 }

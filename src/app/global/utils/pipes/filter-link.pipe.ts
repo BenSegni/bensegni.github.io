@@ -5,7 +5,6 @@ import { ToolkitEnum } from '../../enum/toolkit.enum';
 
 @Pipe({
     name: 'filterLink',
-    standalone: false
 })
 export class FilterLinkPipe implements PipeTransform {
 

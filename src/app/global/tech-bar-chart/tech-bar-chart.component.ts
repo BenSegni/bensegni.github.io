@@ -1,15 +1,19 @@
 import { Component, input, InputSignal } from "@angular/core";
 
 import { TechUsage } from "./interface/tech.usage";
+import { CommonModule } from "@angular/common";
+import { LogoPipe } from "../utils/pipes/logo.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { PillPipe } from "../utils/pipes/pill.pipe";
 
 @Component({
-    selector: "app-tech-bar-chart",
-    templateUrl: "./tech-bar-chart.component.html",
-    styleUrls: ["./tech-bar-chart.component.scss"],
-    standalone: false
+  selector: "app-tech-bar-chart",
+  templateUrl: "./tech-bar-chart.component.html",
+  styleUrls: ["./tech-bar-chart.component.scss"],
+  imports: [CommonModule, LogoPipe, AltTextPipe, PillPipe],
 })
 export class TechBarChartComponent {
-  public isEmployment:InputSignal<boolean> = input<boolean>(true);
+  public isEmployment: InputSignal<boolean> = input<boolean>(true);
   public skillsUsage: InputSignal<TechUsage[]> = input<TechUsage[]>([
     {
       skill: "Angular",

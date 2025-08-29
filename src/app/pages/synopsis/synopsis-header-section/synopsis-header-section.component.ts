@@ -13,8 +13,7 @@ interface HeaderSection {
 @Component({
     selector: "app-synopsis-header-section",
     templateUrl: "./synopsis-header-section.component.html",
-    changeDetection: ChangeDetectionStrategy.OnPush,
-    standalone: false
+    changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class SynopsisHeaderSectionComponent {
   public headerSection: InputSignal<HeaderSection> = input<HeaderSection>({

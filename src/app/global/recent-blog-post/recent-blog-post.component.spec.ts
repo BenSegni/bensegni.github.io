@@ -16,7 +16,7 @@ describe("RecentBlogPostComponent", () => {
   let fixture: ComponentFixture<RecentBlogPostComponent>;
   let mockActivatedRoute: { queryParams: Subject<Params> };
   let mockRouter: {
-    events: Subject<any>;
+    events: Subject<unknown>;
     routerState: { snapshot: { url: string } };
     createUrlTree: () => Record<never, never>;
     serializeUrl: () => "";
@@ -28,7 +28,7 @@ describe("RecentBlogPostComponent", () => {
     };
 
     mockRouter = {
-      events: new Subject<any>(),
+      events: new Subject(),
       routerState: {
         snapshot: { url: "" },
       },

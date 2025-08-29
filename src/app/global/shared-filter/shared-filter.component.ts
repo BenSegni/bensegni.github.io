@@ -4,13 +4,19 @@ import {
   input,
   output,
   signal,
-  InputSignal
+  InputSignal,
+  inject,
+  OutputEmitterRef,
 } from "@angular/core";
 
 import { FadeInButton } from "../utils/animations/fade.animation";
 import { FilterConfig } from "./interface/filter.config";
 import { GlobalDataService } from "../global-data.service";
 import { TechnologyEnum } from "../enum/technology.enum";
+import { CommonModule } from "@angular/common";
+import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { LogoPipe } from "../utils/pipes/logo.pipe";
+import { FilterLinkPipe } from "../utils/pipes/filter-link.pipe";
 
 interface Filterable {
   skills: string[];
@@ -21,10 +27,11 @@ interface Filterable {
   templateUrl: "./shared-filter.component.html",
   styleUrls: ["./shared-filter.component.scss"],
   animations: [FadeInButton()],
-  standalone: false
+  standalone: true,
+  imports: [CommonModule, AltTextPipe, LogoPipe, FilterLinkPipe],
 })
 export class SharedFilterComponent<T extends Filterable> implements OnDestroy {
-  public config = input<FilterConfig<T>>({
+  public config: InputSignal<FilterConfig<T>> = input<FilterConfig<T>>({
     data: [],
     listLength: 0,
     signalData: signal<T[]>([]),
@@ -33,7 +40,7 @@ export class SharedFilterComponent<T extends Filterable> implements OnDestroy {
   });
 
   public showLayout: InputSignal<boolean> = input<boolean>(false);
-  public emitLayout = output<boolean>();
+  public emitLayout: OutputEmitterRef<boolean> = output<boolean>();
   public columnLayout = false;
   public grid = "../../../assets/img/grid_icon.svg";
   public column = "../../../assets/img/column_icon.svg";
@@ -44,7 +51,7 @@ export class SharedFilterComponent<T extends Filterable> implements OnDestroy {
   public selectedOption = "";
   public filterIcon = "../../../assets/img/filter_icon.svg";
 
-  constructor(public _globalService: GlobalDataService) { }
+  public _globalService: GlobalDataService = inject(GlobalDataService);
 
   public ngOnDestroy(): void {
     this.triggerFilter(this.techStackEnum.UI);

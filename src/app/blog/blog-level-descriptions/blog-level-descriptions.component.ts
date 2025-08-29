@@ -1,35 +1,41 @@
-import { AfterViewChecked, Component, OnInit } from '@angular/core';
+import { AfterViewChecked, Component, inject, OnInit } from "@angular/core";
 
-import { ActivatedRoute } from '@angular/router';
-import { BlogDescription } from '../interface/blog.description';
-import { blogDescriptionData } from '../../global/data/blog-description-data';
+import { ActivatedRoute } from "@angular/router";
+import { BlogDescription } from "../interface/blog.description";
+import { blogDescriptionData } from "../../global/data/blog-description-data";
+import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { AnchorPipe } from "../utils/anchor.pipe";
+import { BlogKeyLevelIconComponent } from "../blog-key-level-icon/blog-key-level-icon.component";
+import { CommonModule } from "@angular/common";
 
 @Component({
-    selector: 'app-blog-level-descriptions',
-    templateUrl: './blog-level-descriptions.component.html',
-    styleUrls: ['./blog-level-descriptions.component.scss'],
-    standalone: false
+  selector: "app-blog-level-descriptions",
+  templateUrl: "./blog-level-descriptions.component.html",
+  styleUrls: ["./blog-level-descriptions.component.scss"],
+  standalone: true,
+  imports: [AltTextPipe, AnchorPipe, BlogKeyLevelIconComponent, CommonModule],
 })
-export class BlogLevelDescriptionsComponent implements OnInit, AfterViewChecked {
-  private tag: string | null = '';
-  public blogIcon = '../../../assets/img/blog_icon.svg';
-  public blogDescriptionData: BlogDescription[] = blogDescriptionData
-  constructor(private _route: ActivatedRoute) { }
+export class BlogLevelDescriptionsComponent
+  implements OnInit, AfterViewChecked
+{
+  private tag: string | null = "";
+  public blogIcon = "../../../assets/img/blog_icon.svg";
+  public blogDescriptionData: BlogDescription[] = blogDescriptionData;
+
+  private _route: ActivatedRoute = inject(ActivatedRoute);
 
   public ngOnInit(): void {
-    this._route.fragment.subscribe((fragment) => this.tag = fragment);
+    this._route.fragment.subscribe((fragment) => (this.tag = fragment));
   }
 
   public ngAfterViewChecked(): void {
     const options: ScrollIntoViewOptions = {
-      behavior: 'smooth',
-      block: 'start'
-    }
+      behavior: "smooth",
+      block: "start",
+    };
 
     try {
-      document.querySelector(`#${this.tag}`)?.scrollIntoView(
-        options
-      );
+      document.querySelector(`#${this.tag}`)?.scrollIntoView(options);
     } catch (error) {
       console.log(error);
     }

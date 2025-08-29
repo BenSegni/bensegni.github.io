@@ -3,8 +3,9 @@ import {
   Directive,
   ElementRef,
   HostListener,
-  Input,
+  InputSignal,
   inject,
+  input,
 } from "@angular/core";
 import { take, timer } from "rxjs";
 
@@ -12,21 +13,23 @@ import { DOMCreatorService } from "./shared/element.creation";
 import { ToolTipConfig } from "./interfaces/tooltip";
 
 @Directive({
-    selector: "[tooltip]",
-    standalone: false
+  selector: "[tooltip]",
 })
 export class InfoDirective implements AfterViewInit {
-  @Input() tooltip: ToolTipConfig | undefined;
+  public tooltip: InputSignal<ToolTipConfig> = input({
+    toolTipTitle: "",
+    text: "",
+  });
   private delayReset$ = timer(300);
   private _el = inject(ElementRef);
   private _creator = inject(DOMCreatorService);
 
   public ngAfterViewInit(): void {
-    if (this.tooltip) this._creator.createIconElement(this._el);
+    if (this.tooltip()) this._creator.createIconElement(this._el);
   }
 
   @HostListener("mouseenter") onHover(): void {
-    if (this.tooltip) this.generateInfoBox(this.tooltip.text);
+    if (this.tooltip) this.generateInfoBox(this.tooltip()?.text);
   }
 
   @HostListener("mouseleave") onLeave(): void {
@@ -51,7 +54,7 @@ export class InfoDirective implements AfterViewInit {
     const titleElement: HTMLElement = this._creator.createDOMElement("h4");
     const textParagraph: HTMLElement = this._creator.createDOMElement("p");
     const title: string = this._creator.createInnerText(
-      `${this.tooltip?.toolTipTitle}`
+      `${this.tooltip().toolTipTitle}`
     );
 
     this._creator.addToParentNode(titleElement, title);
@@ -59,9 +62,10 @@ export class InfoDirective implements AfterViewInit {
     this._creator.addToParentNode(infoBox, titleElement);
 
     //create supporting imagery
-    if (this.tooltip?.imageUrl) {
+    if (this.tooltip().imageUrl) {
       const image: HTMLElement = this._creator.createDOMElement("img");
-      this._creator.addAttribute(image, "src", this.tooltip.imageUrl);
+      const url = this.tooltip().imageUrl as string;
+      if (url) this._creator.addAttribute(image, "src", url);
       this._creator.addToParentNode(infoBox, image);
     }
 
@@ -70,22 +74,22 @@ export class InfoDirective implements AfterViewInit {
     //create hyperlink for tooltip more info
     const link: HTMLElement = this._creator.createDOMElement("a");
 
-    if (this.tooltip?.link && this.tooltip.linkText) {
-      this._creator.addAttribute(link, "href", this.tooltip.link);
+    if (this.tooltip().link && this.tooltip().linkText) {
+      this._creator.addAttribute(link, "href", this.tooltip().link as string);
       this._creator.addAttribute(link, "target", "_blank");
       this._creator.addClassDOMElement(link, "tool-tip-link");
     }
 
-    if (this.tooltip?.link && this.tooltip.linkText) {
+    if (this.tooltip().link && this.tooltip().linkText) {
       const linkText: string = this._creator.createInnerText(
-        this.tooltip.linkText
+        this.tooltip().linkText as string
       );
 
       this._creator.addToParentNode(link, linkText);
     }
 
     //create a help link title for the link to display after
-    if (this.tooltip?.link && this.tooltip.linkText) {
+    if (this.tooltip().link && this.tooltip().linkText) {
       const helpTextTitle: HTMLElement = this._creator.createDOMElement("p");
       this._creator.addClassDOMElement(helpTextTitle, "help-title");
       const helpText: string = this._creator.createInnerText("Link: ");
@@ -96,9 +100,9 @@ export class InfoDirective implements AfterViewInit {
 
     //create a breakpoint if there is no link added to tooltip
     if (
-      (!this.tooltip?.link && !this.tooltip?.linkText) ||
-      (this.tooltip?.link && !this.tooltip.linkText) ||
-      (!this.tooltip.link && this.tooltip.linkText)
+      (!this.tooltip().link && !this.tooltip().linkText) ||
+      (this.tooltip().link && !this.tooltip().linkText) ||
+      (!this.tooltip().link && this.tooltip().linkText)
     ) {
       const breakPoint: HTMLElement = this._creator.createDOMElement("span");
       this._creator.addClassDOMElement(breakPoint, "breakpoint");

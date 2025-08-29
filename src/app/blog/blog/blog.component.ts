@@ -1,16 +1,20 @@
-import { Component } from '@angular/core';
-import { GlobalDataService } from '../../global/global-data.service';
-import { blogData } from '../../global/data/blog-data';
-import { TechnologyEnum } from '../../global/enum/technology.enum';
-import { Blog } from '../interface/blog';
-import { FilterConfig } from '../../global/shared-filter/interface/filter.config';
-import { FadeInButton } from '../../global/utils/animations/fade.animation';
+import { Component } from "@angular/core";
+import { GlobalDataService } from "../../global/global-data.service";
+import { blogData } from "../../global/data/blog-data";
+import { TechnologyEnum } from "../../global/enum/technology.enum";
+import { Blog } from "../interface/blog";
+import { FilterConfig } from "../../global/shared-filter/interface/filter.config";
+import { FadeInButton } from "../../global/utils/animations/fade.animation";
+import { SharedFilterComponent } from "src/app/global/shared-filter/shared-filter.component";
+import { BlogKeyComponent } from "../blog-key/blog-key.component";
+import { BlogPostComponent } from "../blog-post/blog-post.component";
 
 @Component({
-    selector: 'app-blog',
-    templateUrl: './blog.component.html',
-    animations: [FadeInButton()],
-    standalone: false
+  selector: "app-blog",
+  templateUrl: "./blog.component.html",
+  animations: [FadeInButton()],
+  standalone: true,
+  imports: [SharedFilterComponent, BlogKeyComponent, BlogPostComponent],
 })
 export class BlogComponent extends GlobalDataService {
   public filterConfig: FilterConfig<Blog> = {
@@ -24,5 +28,5 @@ export class BlogComponent extends GlobalDataService {
       TechnologyEnum.Typescript,
     ],
     resetValue: TechnologyEnum.HTML5,
-  }
+  };
 }

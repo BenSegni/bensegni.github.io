@@ -1,10 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
+import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
 
 @Component({
-    selector: 'app-loading-icon',
-    templateUrl: './loading-icon.component.html',
-    standalone: false
+  selector: "app-loading-icon",
+  templateUrl: "./loading-icon.component.html",
+  standalone: true,
+  imports: [AltTextPipe],
 })
-export class LoadingIconComponent {
-
-}
+export class LoadingIconComponent {}

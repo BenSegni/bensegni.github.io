@@ -1,7 +1,4 @@
-import {
-  ComponentFixture,
-  TestBed,
-} from "@angular/core/testing";
+import { ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { Component } from "@angular/core";
 import { DOMCreatorService } from "./shared/element.creation";
@@ -10,9 +7,8 @@ import { ElementRef } from "@angular/core";
 import { InfoDirective } from "./info.directive";
 
 @Component({
-    selector: "app-test-component",
-    template: `<div></div>`,
-    standalone: false
+  selector: "app-test-component",
+  template: `<div></div>`,
 })
 export class TestComponent {}
 
@@ -49,13 +45,13 @@ describe("InfoDirective", () => {
 
   describe("Testing generateInfoBox()", () => {
     beforeEach(() => {
-      directive.tooltip = {
+      fixture.componentRef.setInput("tooltip", {
         toolTipTitle: "Test",
         text: "test text",
         imageUrl: "testurl",
         link: "link",
         linkText: "link text",
-      };
+      });
     });
 
     it("should create an HTML Element", () => {
@@ -66,11 +62,11 @@ describe("InfoDirective", () => {
 
   describe("Testing generateInfoBox() without link or link text", () => {
     beforeEach(() => {
-      directive.tooltip = {
+      fixture.componentRef.setInput("tooltip", {
         toolTipTitle: "Test",
         text: "test text",
         imageUrl: "testurl",
-      };
+      });
     });
 
     it("should create an HTML Element", () => {
@@ -82,11 +78,11 @@ describe("InfoDirective", () => {
 
   describe("Testing Hostlistener Events", () => {
     beforeEach(() => {
-      directive.tooltip = {
+      fixture.componentRef.setInput("tooltip", {
         toolTipTitle: "Test",
         text: "test text",
         imageUrl: "testurl",
-      };
+      });
     });
 
     it("should create tooltip on hover", () => {

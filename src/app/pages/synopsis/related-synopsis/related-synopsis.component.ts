@@ -1,8 +1,17 @@
-import { Component, InputSignal, OnChanges, input, output } from "@angular/core";
+import {
+  Component,
+  InputSignal,
+  OnChanges,
+  inject,
+  input,
+  output,
+} from "@angular/core";
 
 import { GlobalDataService } from "../../../global/global-data.service";
-import { Router } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 import { Showcase } from "../../showcase/interface/showcase";
+import { CommonModule } from "@angular/common";
+import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
 
 const inputInitialiser = {
   id: "",
@@ -19,23 +28,22 @@ const inputInitialiser = {
 };
 
 @Component({
-    selector: "app-related-synopsis",
-    templateUrl: "./related-synopsis.component.html",
-    styleUrls: ["./related-synopsis.component.scss"],
-    standalone: false
+  selector: "app-related-synopsis",
+  templateUrl: "./related-synopsis.component.html",
+  styleUrls: ["./related-synopsis.component.scss"],
+  imports: [RouterLink, CommonModule, SkillPillsComponent],
 })
 export class RelatedSynopsisComponent
   extends GlobalDataService
   implements OnChanges
 {
-  public showcaseProject: InputSignal<Showcase> = input<Showcase>(inputInitialiser);
+  public showcaseProject: InputSignal<Showcase> =
+    input<Showcase>(inputInitialiser);
 
   public showcaseEmitter = output<Showcase>();
   public relatedProject: Showcase | undefined;
 
-  public constructor(private _router: Router) {
-    super();
-  }
+  private _router: Router = inject(Router);
 
   public ngOnChanges(): void {
     this.findRelatedProject();

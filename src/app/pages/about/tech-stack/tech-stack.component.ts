@@ -1,15 +1,16 @@
-import { Component } from '@angular/core';
-import { GlobalDataService } from '../../../global/global-data.service';
-import { StackConfig } from '../../../global/stack-list/interface/stack';
+import { Component } from "@angular/core";
+import { GlobalDataService } from "../../../global/global-data.service";
+import { StackConfig } from "../../../global/stack-list/interface/stack";
+import { StackListComponent } from "src/app/global/stack-list/stack-list.component";
 
 @Component({
-    selector: 'app-tech-stack',
-    templateUrl: './tech-stack.component.html',
-    standalone: false
+  selector: "app-tech-stack",
+  templateUrl: "./tech-stack.component.html",
+  imports: [StackListComponent],
 })
 export class TechStackComponent extends GlobalDataService {
   public stackConfig: StackConfig = {
-    title: 'Technologies',
-    data$: this.technologies$
-  }
+    title: "Technologies",
+    data$: this.technologies$,
+  };
 }

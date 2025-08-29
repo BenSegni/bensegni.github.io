@@ -3,6 +3,6 @@ import { Component } from '@angular/core';
 @Component({
     selector: 'app-clock-icon',
     templateUrl: './icon.svg',
-    standalone: false
+    standalone: true
 })
 export class ClockIconComponent {}
