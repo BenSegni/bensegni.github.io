@@ -48,7 +48,7 @@ config. It's a <a href="https://angular.io/guide/signals" target="_blank">signal
 <pre class='angular-code'>
   <code>
     import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
-    import { <span class="code-pink">blogData</span> } from '../../global/data/blog-data';
+    import { <span class="code-pink">blogData</span> } from '../../data/blog-data';
 
     <span class="code-gold">export</span> class <span class="code-red">BlogComponent</span> extends <span class="code-red">GlobalDataService</span> {
 
@@ -75,7 +75,7 @@ then in another component across the application, we want to filter other types 
 <pre class='angular-code'>
   <code>
     import { <span class="code-red">GlobalDataService</span> } from '../../global/global-data.service';
-    import { <span class="code-pink">someData</span> } from '../../global/data/some-data';
+    import { <span class="code-pink">someData</span> } from '../../data/some-data';
 
     <span class="code-gold">export</span> class <span class="code-red">SomeComponent</span> extends <span class="code-red">GlobalDataService</span> {
 
