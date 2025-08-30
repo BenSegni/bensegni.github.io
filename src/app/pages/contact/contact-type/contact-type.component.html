@@ -1,24 +1,20 @@
-@if (contactType) {
-  <div class="contact-detail">
-    @switch (contactType.type) {
-      @case ('LinkedIn') {
-        <app-linkedin-icon></app-linkedin-icon>
-      }
-      @case ('Email') {
-        <app-email-icon></app-email-icon>
-      }
-      @case ('Behance') {
-        <app-behance-icon></app-behance-icon>
-      }
-    }
-    <h4 [innerText]="contactType.type"></h4>
-    <p>
-      <a
-        [href]="contactType | contactLink"
-        target="_blank"
-        [innerHTML]="contactType.linkText"
-        [attr.aria-label]="contactType + 'link'"
-      ></a>
-    </p>
-  </div>
+@if (contactType()) {
+<div class="contact-detail">
+  @switch (contactType()?.type) { @case ('LinkedIn') {
+  <app-linkedin-icon></app-linkedin-icon>
+  } @case ('Email') {
+  <app-email-icon></app-email-icon>
+  } @case ('Behance') {
+  <app-behance-icon></app-behance-icon>
+  } }
+  <h4 [innerText]="contactType()?.type"></h4>
+  <p>
+    <a
+      [href]="contactType() | contactLink"
+      target="_blank"
+      [innerHTML]="contactType()?.linkText"
+      [attr.aria-label]="contactType + 'link'"
+    ></a>
+  </p>
+</div>
 }

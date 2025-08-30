@@ -1,10 +1,10 @@
 import { ActivatedRoute, Params, Router, RouterModule } from '@angular/router';
 import { Component, OnDestroy, OnInit, inject } from '@angular/core';
  
-import { Blog } from 'src/app/blog/interface/blog';
+import { Blog } from '../../blog/interface/blog';
 import { CommonModule } from '@angular/common';
 import { Subject } from 'rxjs';
-import { blogData } from '../data/blog-data';
+import { blogData } from '../../data/blog-data';
 
 @Component({
     selector: 'app-recent-blog-post',
@@ -16,7 +16,7 @@ import { blogData } from '../data/blog-data';
     ]
 })
 export class RecentBlogPostComponent implements OnInit, OnDestroy {
-  public recentBlogArticle: Blog = blogData.reduce((a, b) => (a.date > b.date ? a : b));
+  public recentBlogArticle: Blog = blogData.reduce((a: Blog, b: Blog) => (a.date > b.date ? a : b));
   public articleUrl = `blog/${this.recentBlogArticle.routeUrl}`;
   public show = true;
   private destroy$ = new Subject();

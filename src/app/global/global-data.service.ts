@@ -11,19 +11,19 @@ import { NPM } from "../pages/npm/interface/npm";
 import { Showcase } from "../pages/showcase/interface/showcase";
 import { Technology } from "../pages/about/tech-stack/interface/technology";
 import { ToolKit } from "../pages/about/toolkit/interface/toolkit";
-import { blogData } from "./data/blog-data";
-import { companyLogos } from "./data/company-logo-data";
-import { educationData } from "./data/education-data";
-import { employmentData } from "./data/employment-data";
-import { feedbackData } from "./data/feedback-data";
-import { githubProjectData } from "./data/gitihub-project-data";
-import { npmPackageData } from "./data/npm-package-data";
-import { postEducationData } from "./data/post-education-data";
-import { projectData } from "./data/project-data";
-import { showcaseData } from "./data/showcase-data";
-import { technologiesData } from "./data/technologies-data";
-import { toolkitData } from "./data/toolkit-data";
-import { usefulLinksData } from "./data/useful-links-data";
+import { blogData } from "../data/blog-data";
+import { companyLogos } from "../data/company-logo-data";
+import { educationData } from "../data/education-data";
+import { employmentData } from "../data/employment-data";
+import { feedbackData } from "../data/feedback-data";
+import { githubProjectData } from "../data/gitihub-project-data";
+import { npmPackageData } from "../data/npm-package-data";
+import { postEducationData } from "../data/post-education-data";
+import { projectData } from "../data/project-data";
+import { showcaseData } from "../data/showcase-data";
+import { technologiesData } from "../data/technologies-data";
+import { toolkitData } from "../data/toolkit-data";
+import { usefulLinksData } from "../data/useful-links-data";
 
 @Injectable({
   providedIn: "root",

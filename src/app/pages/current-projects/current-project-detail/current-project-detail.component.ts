@@ -1,10 +1,10 @@
 import { Component, input, InputSignal } from "@angular/core";
 
 import { Project } from "../interface/project";
-import { projectData } from "./../../../global/data/project-data";
 import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
 import { TechBarChartComponent } from "src/app/global/tech-bar-chart/tech-bar-chart.component";
 import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { projectData } from "../../../data/project-data";
 
 @Component({
   selector: "app-current-project-detail",

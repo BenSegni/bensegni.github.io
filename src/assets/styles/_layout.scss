@@ -1,78 +1,77 @@
-@import './color';
-@import './responsive';
+@use "./color" as color;
+@use "./responsive" as responsive;
 
 @mixin grid {
-    display: grid;
+  display: grid;
 }
 
 @mixin flex {
-    display: flex;
+  display: flex;
 }
 
 @mixin flex-column {
-    flex-direction: column;
+  flex-direction: column;
 }
 
 @mixin flex-items-center {
-    align-items: center;
+  align-items: center;
 }
 
 @mixin flex-column-center {
-    @include flex-column();
-    @include flex-items-center();
-    justify-content: center;
-
+  @include flex-column();
+  @include flex-items-center();
+  justify-content: center;
 }
 
 @mixin flex-center {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flex-column-start {
-    @include flex-column();
-    @include flex-items-center();
-    justify-content: flex-start;
+  @include flex-column();
+  @include flex-items-center();
+  justify-content: flex-start;
 }
 
 @mixin flex-wrap {
-    flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 @mixin span-100 {
-    width: 100vw;
+  width: 100vw;
 }
 
 @mixin span-50 {
-    width: 50vw;
+  width: 50vw;
 }
 
 @mixin span-25 {
-    width: 25vw;
+  width: 25vw;
 }
 
 @mixin span-30 {
-    width: 30vw;
+  width: 30vw;
 }
 
 @mixin span-75 {
-    width: 75vw;
+  width: 75vw;
 }
 
 @mixin span-80 {
-    width: 80vw;
+  width: 80vw;
 }
 
 @mixin span-90 {
-    width: 90vw;
+  width: 90vw;
 }
 
 @mixin span-95 {
-    width: 95vw;
+  width: 95vw;
 }
 
 @mixin full-width {
-    width: 100%;
+  width: 100%;
 }
 
 @mixin mobile-hidden {
@@ -90,7 +89,7 @@
 
   .layout-button {
     border: 0;
-    color: $white;
+    color: color.$white;
     background-color: transparent;
     font-family: inherit;
     cursor: pointer;
@@ -106,15 +105,15 @@
       margin: 0 auto;
     }
 
-    @include tablet {
+    @include responsive.tablet {
       @include mobile-hidden();
     }
 
-    @include mobile {
+    @include responsive.mobile {
       @include mobile-hidden();
     }
 
-    @include small-mobile {
+    @include responsive.small-mobile {
       @include mobile-hidden();
     }
   }

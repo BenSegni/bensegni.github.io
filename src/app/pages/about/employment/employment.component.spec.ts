@@ -11,7 +11,7 @@ import { FilterPipe } from '../../../global/utils/pipes/filter.pipe';
 import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TechBarChartComponent } from 'src/app/global/tech-bar-chart/tech-bar-chart.component';
-import { employmentData } from 'src/app/global/data/employment-data';
+import { employmentData } from 'src/app/data/employment-data';
 
 describe('EmploymentComponent', () => {
     let component: EmploymentComponent;

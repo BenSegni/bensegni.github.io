@@ -1,4 +1,4 @@
-import { Component, Input } from "@angular/core";
+import { Component, input, InputSignal } from "@angular/core";
 import { ContactType } from "../interface/contact.type";
 import { BehanceIconComponent } from "src/app/global/icons/behance-icon/behance-icon.component";
 import { ContactLinkPipe } from "../pipes/contact-link.pipe";
@@ -16,5 +16,5 @@ import { LinkedinIconComponent } from "src/app/global/icons/linkedin-icon/linked
   ],
 })
 export class ContactTypeComponent {
-  @Input() public contactType: ContactType | undefined;
+  public contactType: InputSignal<ContactType | undefined> = input();
 }

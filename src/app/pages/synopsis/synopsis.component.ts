@@ -8,13 +8,13 @@ import { SynopsisBackLinkComponent } from "./synopsis-back-link/synopsis-back-li
 import { SynopsisHeaderDisplayComponent } from "./synopsis-header-display/synopsis-header-display.component";
 import { SynopsisHeaderSectionComponent } from "./synopsis-header-section/synopsis-header-section.component";
 import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
-import { LoadingGraphicComponent } from "src/app/global/loading-graphic/loading-graphic.component";
 import { GridDisplayComponent } from "./grid-display/grid-display.component";
 import { ShareIconsComponent } from "src/app/global/share-icons/share-icons.component";
 import { RelatedSynopsisComponent } from "./related-synopsis/related-synopsis.component";
 import { CommonModule } from "@angular/common";
 import { ContactDetailsComponent } from "../contact/contact-details/contact-details.component";
 import { ProjectLinkComponent } from "src/app/global/project-link/project-link.component";
+import { LoadingGraphicComponent } from "../../global/loading-graphic/loading-graphic.component";
 
 @Component({
   selector: "app-synopsis",

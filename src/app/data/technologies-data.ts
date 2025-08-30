@@ -1,7 +1,7 @@
-import { PracticeEnum } from "../enum/practice.enum";
-import { Technology } from "../../pages/about/tech-stack/interface/technology";
-import { TechnologyEnum } from "../enum/technology.enum";
-import { ToolkitEnum } from "../enum/toolkit.enum";
+import { PracticeEnum } from "../global/enum/practice.enum";
+import { TechnologyEnum } from "../global/enum/technology.enum";
+import { ToolkitEnum } from "../global/enum/toolkit.enum";
+import { Technology } from "../pages/about/tech-stack/interface/technology";
 
 export const technologiesData: Technology[] = [
   {

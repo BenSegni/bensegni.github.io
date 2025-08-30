@@ -1,4 +1,4 @@
-import { Showcase } from "../../pages/showcase/interface/showcase";
+import { Showcase } from "../pages/showcase/interface/showcase";
 
 export const showcaseData: Showcase[] = [
     {

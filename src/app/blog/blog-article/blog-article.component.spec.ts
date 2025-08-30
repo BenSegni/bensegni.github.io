@@ -21,7 +21,7 @@ import { SafeResourcePipe } from "./../utils/safe-resource.pipe";
 import { ShareIconComponent } from "../../global/icons/share-icon/share-icon.component";
 import { ShareIconsComponent } from "../../global/share-icons/share-icons.component";
 import { SkillPillsComponent } from "../../global/skill-pills/skill-pills.component";
-import { blogData } from "../../global/data/blog-data";
+import { blogData } from "../../data/blog-data";
 import { of } from "rxjs";
 import { provideHttpClientTesting } from "@angular/common/http/testing";
 

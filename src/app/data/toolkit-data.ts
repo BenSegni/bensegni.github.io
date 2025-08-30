@@ -1,5 +1,5 @@
-import { ToolkitEnum } from "../enum/toolkit.enum";
-import { Stack } from "../stack-list/interface/stack";
+import { ToolkitEnum } from "../global/enum/toolkit.enum";
+import { Stack } from "../global/stack-list/interface/stack";
 
 export const toolkitData: Stack[] = [
     {

@@ -1,4 +1,4 @@
-import { CurrentProject } from "../../pages/current-projects/interface/project";
+import { CurrentProject } from "../pages/current-projects/interface/project";
 
 export const projectData: CurrentProject = {
   companyLogo: "../../assets/img/british-airways.svg",

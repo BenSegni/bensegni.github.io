@@ -1,7 +1,7 @@
 import { Component, input, InputSignal } from "@angular/core";
 
 import { Blog } from "../interface/blog";
-import { blogData } from "../../global/data/blog-data";
+import { blogData } from "../../data/blog-data";
 import { RouterLink } from "@angular/router";
 import { CommonModule } from "@angular/common";
 import { LogoPipe } from "src/app/global/utils/pipes/logo.pipe";

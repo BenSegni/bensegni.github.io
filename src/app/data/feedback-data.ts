@@ -1,4 +1,4 @@
-import { Feedback } from "../../pages/current-projects/feedback/interface/feedback";
+import { Feedback } from "../pages/current-projects/feedback/interface/feedback";
 
 export const feedbackData: Feedback[] = [
     {

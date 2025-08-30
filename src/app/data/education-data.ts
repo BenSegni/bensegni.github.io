@@ -1,4 +1,4 @@
-import { Education } from "../../pages/about/education/interface/education";
+import { Education } from "../pages/about/education/interface/education";
 
 export const educationData: Education[] = [
     {

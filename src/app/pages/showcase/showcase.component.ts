@@ -3,7 +3,7 @@ import { FilterConfig } from "../../global/shared-filter/interface/filter.config
 import { GlobalDataService } from "../../global/global-data.service";
 import { Showcase } from "./interface/showcase";
 import { TechnologyEnum } from "../../global/enum/technology.enum";
-import { showcaseData } from "../../global/data/showcase-data";
+import { showcaseData } from "../../data/showcase-data";
 import { SharedFilterComponent } from "src/app/global/shared-filter/shared-filter.component";
 import { ShowcaseItemsComponent } from "./showcase-items/showcase-items.component";
 

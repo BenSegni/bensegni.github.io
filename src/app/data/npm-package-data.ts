@@ -1,4 +1,4 @@
-import { NPM } from "../../pages/npm/interface/npm";
+import { NPM } from "../pages/npm/interface/npm";
 
 export const npmPackageData: NPM[] = [
   {

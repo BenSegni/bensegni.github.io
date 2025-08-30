@@ -1,5 +1,5 @@
-import { LevelEnum } from "../../blog/enum/level.enum";
-import { Blog } from "../../blog/interface/blog";
+import { LevelEnum } from "../blog/enum/level.enum";
+import { Blog } from "../blog/interface/blog";
 
 export const blogData: Blog[] = [
   {

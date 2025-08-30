@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { GlobalDataService } from "../../global/global-data.service";
-import { blogData } from "../../global/data/blog-data";
+import { blogData } from "../../data/blog-data";
 import { TechnologyEnum } from "../../global/enum/technology.enum";
 import { Blog } from "../interface/blog";
 import { FilterConfig } from "../../global/shared-filter/interface/filter.config";

@@ -15,7 +15,7 @@ import { SiteBuildComponent } from './global/site-build/site-build.component';
 import { SynopsisComponent } from './pages/synopsis/synopsis.component';
 import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
 import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
-import { maintenanceGuard } from './global/guards/maintenance.guard';
+import { maintenanceGuard } from './global/utils/guards/maintenance.guard';
 
 export const routes: Routes = [
   {

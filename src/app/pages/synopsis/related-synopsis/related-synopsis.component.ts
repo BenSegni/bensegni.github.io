@@ -2,6 +2,7 @@ import {
   Component,
   InputSignal,
   OnChanges,
+  OutputEmitterRef,
   inject,
   input,
   output,
@@ -40,7 +41,7 @@ export class RelatedSynopsisComponent
   public showcaseProject: InputSignal<Showcase> =
     input<Showcase>(inputInitialiser);
 
-  public showcaseEmitter = output<Showcase>();
+  public showcaseEmitter: OutputEmitterRef<Showcase> = output<Showcase>();
   public relatedProject: Showcase | undefined;
 
   private _router: Router = inject(Router);

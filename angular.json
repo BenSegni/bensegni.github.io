@@ -101,7 +101,7 @@
             "codeCoverageExclude": [
               "src/app/**/*.enum.ts",
               "src/app/**/*.module.ts",
-              "src/app/global/data/**.ts",
+              "src/app/data/**.ts",
               "app/global/testing/**",
               "**.mock.ts"
             ],

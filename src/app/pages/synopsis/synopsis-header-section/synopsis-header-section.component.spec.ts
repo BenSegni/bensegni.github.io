@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
 import { SynopsisHeaderSectionComponent } from "./synopsis-header-section.component";
-import { showcaseData } from "../../../global/data/showcase-data";
+import { showcaseData } from "../../../data/showcase-data";
 
 describe("SynopsisHeaderSectionComponent", () => {
   let fixture: ComponentFixture<SynopsisHeaderSectionComponent>;

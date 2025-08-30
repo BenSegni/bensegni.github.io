@@ -1,4 +1,4 @@
-import { Employment } from "../../pages/about/employment/interface/employment";
+import { Employment } from "../pages/about/employment/interface/employment";
 
 export const employmentData: Employment[] = [
   {

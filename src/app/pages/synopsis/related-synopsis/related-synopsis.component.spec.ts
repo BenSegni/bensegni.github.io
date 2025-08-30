@@ -10,7 +10,7 @@ import { RelatedSynopsisComponent } from "./related-synopsis.component";
 import { Showcase } from "../../showcase/interface/showcase";
 import { SkillPillsComponent } from "../../../global/skill-pills/skill-pills.component";
 import { of } from "rxjs";
-import { showcaseData } from "../../../global/data/showcase-data";
+import { showcaseData } from "../../../data/showcase-data";
 
 const fakeActivatedRoute = {
   fragment: of({}),
