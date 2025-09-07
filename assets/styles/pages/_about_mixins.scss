@@ -1,5 +1,6 @@
 @mixin about-list {
   list-style: square;
+  list-style-position: inside;
 }
 
 @mixin mobile-image {
@@ -34,7 +35,7 @@
 
 @mixin mobile-about-stub {
   align-items: flex-start;
-  margin: 1rem;
+  // margin: 1rem;
 }
 
 @mixin mobile-tabs-header {

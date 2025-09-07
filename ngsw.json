@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757238327086,
+  "timestamp": 1757244110175,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "/chunk-T74KHG6R.js",
         "/chunk-V2ZGFAXX.js",
         "/index.html",
-        "/main-WQKT6T22.js",
+        "/main-HEVSKGT4.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-LZXKMFBV.css"
+        "/styles-HXBC4WPY.css"
       ],
       "patterns": []
     },
@@ -483,17 +483,17 @@
     "/assets/styles/global/_filter.scss": "eb7884cfc43a0a767433b6a21385a4326ff7545c",
     "/assets/styles/global/_footer.scss": "587e89d5ea3066568b69864e00509cdb344cdf12",
     "/assets/styles/global/_info_directive.scss": "070b0075d8f196754bc62a9dae1a6b0fae635e3f",
-    "/assets/styles/global/_mixins.scss": "2a29778985c31b7d5882cdb35958213bf376608a",
+    "/assets/styles/global/_mixins.scss": "c72bf72be25784761c6af95a263dd6c7d93350f7",
     "/assets/styles/global/_modal.scss": "a5e9233cb958984f5c60a8cd00f2f83cabc20432",
     "/assets/styles/global/_navigation.scss": "803232149ef57d0616e3a5daa548b5b0e2181125",
     "/assets/styles/global/_page_header.scss": "1125ec9601b37d41f4072d8601913f2495bf1c6e",
     "/assets/styles/global/_presentation.link.scss": "ee649425910653b17cec270f4f05556eb6b99efb",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
-    "/assets/styles/global/_skill-pills.scss": "1e629a1207cbaa7301fedeb5bd2fb06de1a0265c",
-    "/assets/styles/global/_table.scss": "f7e93ad8476ff41fb53f2b58dc385609a1bbb81b",
+    "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
+    "/assets/styles/global/_table.scss": "c9d616fa9e70e2059f3a40cb201e1a22bd036984",
     "/assets/styles/pages/_404.scss": "f6b7ab9925bfb83bffaf66887c93d5bdb5eb7191",
-    "/assets/styles/pages/_about.scss": "14616ea25a351f7a494406b737c42d80433fe559",
-    "/assets/styles/pages/_about_mixins.scss": "28bbd475381d92ef5213b55ddfc176a83f9ba782",
+    "/assets/styles/pages/_about.scss": "f76a8757bef2486d624ca4b59e2dffabef054a37",
+    "/assets/styles/pages/_about_mixins.scss": "caa7129270e4c0a57ac1c7420cd11e4930d797a6",
     "/assets/styles/pages/_contact.scss": "5272ae10f6c64854ed6fcc34cedb09bf1514a89b",
     "/assets/styles/pages/_current_project.scss": "b3260bf59d85d9cac8d5857a79fa5a0502caa40b",
     "/assets/styles/pages/_employment.scss": "f6656f1e90a1990c8c126c06b6756a5a79ddadb9",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "d016fdaeb7c91b31b841d9c7ccab4cb52ca8870b",
-    "/main-WQKT6T22.js": "bb98572b2f98af579c87c66cf22b68f7eeb0661a",
+    "/index.html": "336a841020a2368a5d04107118bb059e5da03a7e",
+    "/main-HEVSKGT4.js": "8b11b0b3862462993ea11eccc2c27274b67a7d3f",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-LZXKMFBV.css": "dfafef0cd54417a036bfd52767b3961fb0a568d5"
+    "/styles-HXBC4WPY.css": "895dacf894cc8522000cdd22111cd0b4d3a8de54"
   },
   "navigationUrls": [
     {
