@@ -298,7 +298,13 @@ $background: "background.webp";
       color: white;
       flex: 0 0 50%;
       justify-content: flex-start;
-      padding-bottom: .25rem;
+      padding-bottom: 0.25rem;
+
+      &:hover {
+        // @include content-link();
+        color: var(--secondary-color);
+        border-color: white;
+      }
     }
 
     svg {

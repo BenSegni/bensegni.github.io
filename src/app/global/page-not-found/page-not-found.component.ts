@@ -1,13 +1,13 @@
 import { CommonModule } from "@angular/common";
 import { Component, inject, OnInit } from "@angular/core";
-import { Router } from "@angular/router";
+import { Router, RouterLink } from "@angular/router";
 import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
 
 @Component({
   selector: "app-page-not-found",
   templateUrl: "./page-not-found.component.html",
   standalone: true,
-  imports: [CommonModule, AltTextPipe],
+  imports: [CommonModule, AltTextPipe, RouterLink],
 })
 export class PageNotFoundComponent implements OnInit {
   public pageTitle = "Sorry, but this page does not exist!";
