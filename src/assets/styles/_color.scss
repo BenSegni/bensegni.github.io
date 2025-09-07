@@ -31,6 +31,8 @@
   --black-alpha: rgba(0, 0, 0, 0.75);
   --footer-background-color: var(--secondary-color);
   --social-media-toolbar-color: var(--secondary-color);
+  --header-image-brightness: 1.2;
+  --header-image-sepia: 0;
 }
 
 .dark {
@@ -66,4 +68,6 @@
   --black-alpha: rgba(255, 255, 255, 0.75);
   --footer-background-color: var(--secondary-color);
   --social-media-toolbar-color: rgba(0, 0, 0, 0.75);
+  --header-image-brightness: 1;
+  --header-image-sepia: 0.4;
 }
