@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757244245880,
+  "timestamp": 1757244656935,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "/main-HEVSKGT4.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-Z5GXK27Q.css"
+        "/styles-SNQWINIJ.css"
       ],
       "patterns": []
     },
@@ -490,7 +490,7 @@
     "/assets/styles/global/_presentation.link.scss": "ee649425910653b17cec270f4f05556eb6b99efb",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
     "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
-    "/assets/styles/global/_table.scss": "c9d616fa9e70e2059f3a40cb201e1a22bd036984",
+    "/assets/styles/global/_table.scss": "5fb9f9b2373e9dfa2577e245b0929303ea3093f9",
     "/assets/styles/pages/_404.scss": "f6b7ab9925bfb83bffaf66887c93d5bdb5eb7191",
     "/assets/styles/pages/_about.scss": "9d2fc9a553bb03e82962626353dc4fd35045aede",
     "/assets/styles/pages/_about_mixins.scss": "caa7129270e4c0a57ac1c7420cd11e4930d797a6",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "fc33dda6ddd20624e88feecee5b631769c561108",
+    "/index.html": "7de62226c371221e622d740a51ff3a70f44ab884",
     "/main-HEVSKGT4.js": "8b11b0b3862462993ea11eccc2c27274b67a7d3f",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-Z5GXK27Q.css": "35f0b32434919d1f23dc9e46c9856619bcb02001"
+    "/styles-SNQWINIJ.css": "2f2f300f6a3a08e5207582f403ecaef7442761e6"
   },
   "navigationUrls": [
     {
