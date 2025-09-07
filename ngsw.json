@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757244656935,
+  "timestamp": 1757244827169,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "/main-HEVSKGT4.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-SNQWINIJ.css"
+        "/styles-DCZUQX5Q.css"
       ],
       "patterns": []
     },
@@ -492,7 +492,7 @@
     "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
     "/assets/styles/global/_table.scss": "5fb9f9b2373e9dfa2577e245b0929303ea3093f9",
     "/assets/styles/pages/_404.scss": "f6b7ab9925bfb83bffaf66887c93d5bdb5eb7191",
-    "/assets/styles/pages/_about.scss": "9d2fc9a553bb03e82962626353dc4fd35045aede",
+    "/assets/styles/pages/_about.scss": "0a0ebbc99d44cc833b6b9f132057fba93de257d8",
     "/assets/styles/pages/_about_mixins.scss": "caa7129270e4c0a57ac1c7420cd11e4930d797a6",
     "/assets/styles/pages/_contact.scss": "5272ae10f6c64854ed6fcc34cedb09bf1514a89b",
     "/assets/styles/pages/_current_project.scss": "b3260bf59d85d9cac8d5857a79fa5a0502caa40b",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "7de62226c371221e622d740a51ff3a70f44ab884",
+    "/index.html": "087be0ab12fea4443d8867878f9945f8cd4eede4",
     "/main-HEVSKGT4.js": "8b11b0b3862462993ea11eccc2c27274b67a7d3f",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-SNQWINIJ.css": "2f2f300f6a3a08e5207582f403ecaef7442761e6"
+    "/styles-DCZUQX5Q.css": "3a568fc799a7e17036a4190f864ea07fdd5520df"
   },
   "navigationUrls": [
     {
