@@ -14,6 +14,7 @@ import { PreviousCompaniesComponent } from "./global/previous-companies/previous
 import { SocialMediaComponent } from "./global/social-media/social-media.component";
 import { LoadingIconComponent } from "./global/loading-icon/loading-icon.component";
 import { FooterComponent } from "./global/footer/footer.component";
+import { VersionService } from "./global/services/version/version.service";
 
 @Component({
   selector: "app-root",
@@ -29,6 +30,7 @@ import { FooterComponent } from "./global/footer/footer.component";
     FooterComponent,
     RouterOutlet,
   ],
+  standalone: true,
 })
 export class AppComponent
   extends GlobalDataService
@@ -37,10 +39,16 @@ export class AppComponent
   public appVersion = "1.0.0";
   private _router = inject(Router);
   private _el = inject(ElementRef);
+  private _versionService: VersionService = inject(VersionService);
+
   public constructor() {
     super();
 
-    this.appVersion = this._el.nativeElement.getAttribute("ng-version");
+    this._versionService.setVersion(
+      this._el.nativeElement.getAttribute("ng-version")
+    );
+
+    this.appVersion = this._versionService.getVersion();
   }
 
   public ngOnInit(): void {

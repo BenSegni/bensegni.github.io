@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { ContactType } from "../interface/contact.type";
 import { BehanceIconComponent } from "src/app/global/icons/behance-icon/behance-icon.component";
 import { ContactLinkPipe } from "../pipes/contact-link.pipe";
@@ -14,6 +14,7 @@ import { LinkedinIconComponent } from "src/app/global/icons/linkedin-icon/linked
     EmailIconComponent,
     LinkedinIconComponent,
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ContactTypeComponent {
   public contactType: InputSignal<ContactType | undefined> = input();

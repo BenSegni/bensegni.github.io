@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 
 import { Blog } from "../interface/blog";
 import { blogData } from "../../data/blog-data";
@@ -20,6 +20,7 @@ import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.comp
     AltTextPipe,
     SkillPillsComponent
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlogPostComponent {
   public post: InputSignal<Blog> = input<Blog>(blogData[0]);

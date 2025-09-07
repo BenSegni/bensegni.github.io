@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { Showcase } from "../interface/showcase";
 import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
 import { ProjectDetailsLinkComponent } from "../project-details-link/project-details-link.component";
@@ -7,6 +7,7 @@ import { ProjectDetailsLinkComponent } from "../project-details-link/project-det
   selector: "app-project-details",
   templateUrl: "./project-details.component.html",
   imports: [SkillPillsComponent, ProjectDetailsLinkComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectDetailsComponent {
   public project: InputSignal<Showcase> = input<Showcase>({

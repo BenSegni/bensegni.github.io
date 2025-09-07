@@ -21,7 +21,7 @@ import { PrivacyPolicyLogoComponent } from "../privacy-policy-logo/privacy-polic
     GithubIconComponent,
     LogoPipe,
     PrivacyPolicyLogoComponent,
-  ],
+  ]
 })
 export class FooterComponent {
   public version: InputSignal<string> = input<string>("1.0.0");

@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 
 import { TechUsage } from "./interface/tech.usage";
 import { CommonModule } from "@angular/common";
@@ -11,6 +11,7 @@ import { PillPipe } from "../utils/pipes/pill.pipe";
   templateUrl: "./tech-bar-chart.component.html",
   styleUrls: ["./tech-bar-chart.component.scss"],
   imports: [CommonModule, LogoPipe, AltTextPipe, PillPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class TechBarChartComponent {
   public isEmployment: InputSignal<boolean> = input<boolean>(true);

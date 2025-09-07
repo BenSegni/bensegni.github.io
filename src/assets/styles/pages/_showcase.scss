@@ -29,10 +29,10 @@
   text-align: left;
   padding: 0 1rem 2rem 1rem;
   margin-top: 1rem;
-  background-color: $black_alpha_7;
+  background-color: var(--card-background-color-alpha);
 
   h4 {
-    color: $bsp_1;
+    color: var(--primary-color);
     line-height: 1rem;
     width: 100%;
   }
@@ -66,12 +66,12 @@
   }
 
   .project-display-card {
-    border: .5rem solid $black;
+    border: .5rem solid var(--card-background-color);
     box-sizing: border-box;
     cursor: pointer;
 
     &:hover {
-      border-color: $black_alpha_7;
+      border-color: var(--black-alpha);
     }
   }
 
@@ -108,12 +108,12 @@
     @include flex();
     justify-content: flex-start;
     align-items: center;
-    color: $bsp_1;
+    color: var(--primary-color);
     font-weight: 400;
     margin-right: 1rem;
     padding: 0.45rem 1rem;
     border-radius: 2rem;
-    background-color: $black_alpha_7;
+    background-color: var(--black-alpha);
 
     img {
       height: 1rem;
@@ -137,8 +137,8 @@
     flex-wrap: nowrap !important;
     justify-content: flex-start;
     align-items: center;
-    color: $white;
-    background-color: $black_alpha_7;
+    color: var(--text-color);
+    background-color: var(--black-alpha);
     margin-right: 1rem;
     border-radius: 2rem;
     padding: .45rem .75rem;
@@ -203,7 +203,7 @@
   @include flex-column();
   @include flex-center();
   background-color: black;
-  border: 1px solid $black;
+  border: 1px solid var(--text-color);
   position: relative;
   height: 100vh;
   width: 100vw;

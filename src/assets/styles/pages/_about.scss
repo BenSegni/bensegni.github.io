@@ -10,7 +10,7 @@
       line-height: 1rem;
       padding-top: 0;
       padding-bottom: .5rem;
-      border-bottom: 0.0625rem dotted $bsp_1;
+      border-bottom: 0.0625rem dotted var(--primary-color);
 
       @include tablet {
         @include mobile-header();
@@ -27,7 +27,7 @@
 
     .honors {
       margin: 1rem 0;
-      color: $bsp_1;
+      color: var(--primary-color);
     }
 
     small {
@@ -72,7 +72,7 @@
 
 .about-wrapper {
   width: 100vw;
-  background-color: rgb(45, 53, 59);
+  background-color: var(--footer-background-color);
   @include flex();
   justify-content: center;
   margin-top: 3rem;
@@ -183,12 +183,12 @@
     }
 
     .education-site-link {
-      color: $grey;
+      color: var(--secondary-color);
       border-bottom: 1px dotted white;
 
       &:hover {
-        color: $white;
-        border-bottom: 1px dotted $bsp_1;
+        color: var(--text-color);
+        border-bottom: 1px dotted var(--primary-color);
       }
     }
   }
@@ -200,7 +200,7 @@
   }
 
   svg {
-    fill: $white;
+    fill: var(--background-color);
     margin-right: 1rem;
   }
 
@@ -260,7 +260,7 @@
       text-align: left;
       line-height: 1rem;
       padding-bottom: .5rem;
-      border-bottom: 0.0625rem dotted $bsp_1;
+      border-bottom: 0.0625rem dotted var(--primary-color);
 
       @include tablet {
         @include mobile-header();
@@ -382,6 +382,7 @@
     border-width: 1px;
     border-radius: 10rem;
     padding: .5rem;
+    background-color: var(--social-media-toolbar-color);
 
     @include tablet {
       margin-bottom: 0;
@@ -417,7 +418,7 @@
 
   h3 {
     .active {
-      border: .0625rem dotted $bsp_1;
+      border: .0625rem dotted var(--primary-color);
     }
 
     @include tablet {
@@ -437,16 +438,16 @@
       min-width: 10rem;
       font-weight: 300;
       font-size: .95rem;
-      color: $bsp_2;
+      color: var(--secondary-color);
       margin: 0 1rem;
       padding: .5rem 1rem;
-      background-color: $black_alpha_7;
-      border: .0625rem solid $black;
+      background-color: var(--card-background-color-alpha);
+      border: .0625rem solid var(--text-color);
       box-sizing: border-box;
 
       &:hover {
-        color: $white;
-        border-color: $black_alpha_7;
+        color: var(--text-color);
+        border-color: var(--black-alpha);
       }
 
       @include tablet {

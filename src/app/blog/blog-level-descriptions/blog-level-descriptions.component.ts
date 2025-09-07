@@ -1,6 +1,6 @@
 import { AfterViewChecked, Component, inject, OnInit } from "@angular/core";
 
-import { ActivatedRoute } from "@angular/router";
+import { ActivatedRoute, RouterLink } from "@angular/router";
 import { BlogDescription } from "../interface/blog.description";
 import { blogDescriptionData } from "../../data/blog-description-data";
 import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
@@ -13,7 +13,7 @@ import { CommonModule } from "@angular/common";
   templateUrl: "./blog-level-descriptions.component.html",
   styleUrls: ["./blog-level-descriptions.component.scss"],
   standalone: true,
-  imports: [AltTextPipe, AnchorPipe, BlogKeyLevelIconComponent, CommonModule],
+  imports: [AltTextPipe, AnchorPipe, BlogKeyLevelIconComponent, CommonModule, RouterLink],
 })
 export class BlogLevelDescriptionsComponent
   implements OnInit, AfterViewChecked

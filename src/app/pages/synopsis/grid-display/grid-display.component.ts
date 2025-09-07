@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 
 import { ImageDisplay } from "../../showcase/interface/showcase";
 import { CommonModule } from "@angular/common";
@@ -8,6 +8,7 @@ import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
   selector: "app-grid-display",
   templateUrl: "./grid-display.component.html",
   imports: [CommonModule, AltTextPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class GridDisplayComponent {
   public displayImages: InputSignal<ImageDisplay[]> = input<ImageDisplay[]>([

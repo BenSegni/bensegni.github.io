@@ -12,7 +12,7 @@
 
     &:last-child {
         margin-left: auto;
-        color: rgb(112, 181, 250);
+        color: var(--primary-color);
     }
 }
 
@@ -40,7 +40,82 @@
             &:last-child {
                 margin-left: auto;
                 margin-right: 0;
-                color: $bsp_1;
+                color: var(--text-color);
+            }
+
+            @include tablet {
+                @include mobile-span();
+            }
+
+            @include mobile {
+                @include mobile-span();
+            }
+
+            @include small-mobile {
+                @include mobile-span();
+            }
+        }
+
+        img {
+            height: 1rem;
+            width: auto;
+            margin: 0 1.5rem 0 0;
+            border-width: 1px;
+            padding: .5rem;
+            background-color: var(--social-media-toolbar-color);
+
+            @include tablet {
+                @include mobile-img();
+            }
+
+            @include mobile {
+                @include mobile-img();
+            }
+
+            @include small-mobile {
+                @include mobile-img();
+            }
+        }
+    }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.toolkit {
+    @include flex();
+    flex-direction: column;
+    justify-content: center;
+    @include span-50();
+    margin-top: 2rem;
+    padding-top:1rem;
+
+    li {
+        @include flex();
+        justify-content: flex-start;
+        align-items: center;
+
+        a {
+            @include content-link();
+        }
+
+        span {
+            margin-right: 1rem;
+            color: white;
+
+            &:last-child {
+                margin-left: auto;
+                margin-right: 0;
+                color: var(--primary-color);
             }
 
             @include tablet {
@@ -76,6 +151,24 @@
             }
         }
     }
+
+    @include tablet {
+        @include span-90();
+    }
+
+    @include mobile {
+        @include span-90();
+    }
+
+    @include small-mobile {
+        @include span-90();
+    }
+}
+
+.tech-bar-chart {
+    @include span-50();
+    margin-top: 2rem;
+    padding-top:1rem;
 
     @include tablet {
         @include span-90();

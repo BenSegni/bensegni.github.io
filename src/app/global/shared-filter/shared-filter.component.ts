@@ -7,6 +7,7 @@ import {
   InputSignal,
   inject,
   OutputEmitterRef,
+  ChangeDetectionStrategy,
 } from "@angular/core";
 
 import { FadeInButton } from "../utils/animations/fade.animation";
@@ -29,6 +30,7 @@ interface Filterable {
   animations: [FadeInButton()],
   standalone: true,
   imports: [CommonModule, AltTextPipe, LogoPipe, FilterLinkPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SharedFilterComponent<T extends Filterable> implements OnDestroy {
   public config: InputSignal<FilterConfig<T>> = input<FilterConfig<T>>({

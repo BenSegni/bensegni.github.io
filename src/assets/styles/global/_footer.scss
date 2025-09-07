@@ -1,16 +1,16 @@
 .tag-line {
-    color: $white;
+    color: var(--text-color);
     padding: 1rem 0 0 0;
 }
 
 .angular-version {
-    color: $white;
+    color: var(--text-color);
     font-size: .75rem;
     @include flex();
     align-items: center;
     justify-content: center;
     text-align: center;
-    background-color: $background_color;
+    background-color: var(--background-color);
     margin: 0;
     padding: 1rem 0;
 
@@ -25,7 +25,7 @@
 
     a {
         @include content-link();
-        color: $white;
+        color: var(--text-color);
     }
 
     img {

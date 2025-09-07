@@ -19,8 +19,9 @@
   align-items: center;
   font-size: .75rem;
   padding: .25rem .75rem;
-  color: $white;
-  border: 0.0625rem solid $grey;
+  color: var(--text-color);
+  border: 0.0625rem solid var(--secondary-color);
+  background-color: var(--social-media-toolbar-color);
   border-radius: 10rem;
   margin-top: .5rem;
   margin-right: .25rem;
@@ -86,7 +87,7 @@
 @mixin skills-header() {
   width: 100%;
   margin: 1rem 0 0 9rem;
-  color: $grey;
+  color: var(--text-color);
   padding: 1rem 0 0 0;
 
   @include tablet {
@@ -133,7 +134,7 @@
   background-position: center center;
   animation: rotation 1s infinite linear;
   border-radius: 100rem;
-  border: 1px solid $bsp_1;
+  border: 1px solid var(--primary-color);
 }
 
 @mixin loading-graphic-image {
@@ -149,17 +150,17 @@
 }
 
 @mixin content-link {
-  color: $grey;
-  border-bottom: 1px dotted $white;
+  color: var(--secondary-color);
+  border-bottom: 1px dotted var(--secondary-color);
 
   &:hover {
-    color: $white;
-    border-bottom: 1px dotted $bsp_1;
+    color: var(--text-color);
+    border-bottom: 1px dotted var(--primary-color);
   }
 
   &:visited {
-    color: $bsp_alpha_6;
-    border-bottom: 1px dotted $bsp_alpha_6;
+    color: var(--primary-color-alpha-6);
+    border-bottom: 1px dotted var(--primary-color-alpha-6);
   }
 }
 
@@ -188,8 +189,6 @@
     }
 
     to {
-      transform-origin: top center;
-      transform: scaleY(100%);
       opacity: 1;
     }
   }
@@ -204,7 +203,7 @@
 
   &:after {
     font-family: 'Nunito', sans-serif;
-    color: $grey-light;
+    color: var(--secondary-color);
     font-size: .75rem;
     content: $text;
   }
@@ -224,30 +223,30 @@
   margin: 2rem auto 3rem auto;
 
   @if($bordertop) {
-    border-top: 1px dotted $grey;
+    border-top: 1px dotted var(--secondary-color);
     padding: 2rem 0 0 0;
 
     &:hover {
-      color: $white;
-      border-top: 1px dotted $grey;
+      color: var(--text-color);
+      border-top: 1px dotted var(--secondary-color);
     }
 
     &:visited {
-      border-top: 1px dotted $grey;
+      border-top: 1px dotted var(--secondary-color);
     }
   }
 
   @else {
-    border-bottom: 1px dotted $grey;
+    border-bottom: 1px dotted var(--secondary-color);
     padding: 0 0 2rem 0;
 
     &:hover {
-      color: $white;
-      border-bottom: 1px dotted $grey;
+      color: var(--text-color);
+      border-bottom: 1px dotted var(--secondary-color);
     }
 
     &:visited {
-      border-bottom: 1px dotted $grey;
+      border-bottom: 1px dotted var(--secondary-color);
     }
   }
 
@@ -261,17 +260,17 @@
   }
 
   // &:hover {
-  //   color: $white;
-  //   border-bottom: 1px dotted $grey;
+  //   color: var(--text-color);
+  //   border-bottom: 1px dotted var(--secondary-color);
   // }
 
   // &:visited {
-  //   border-bottom: 1px dotted $grey;
+  //   border-bottom: 1px dotted var(--secondary-color);
   // }
 }
 
 @mixin read-more {
-  color: $white;
+  color: var(--text-color);
   @include flex-column();
   width: auto;
   height: 1rem;
@@ -280,13 +279,13 @@
   font-size: .75rem;
   border: 0.0625rem solid;
   font-weight: 400;
-  background-color: $bsp_alpha_6;
+  background-color: var(--primary-color-alpha-6);
   margin-left: auto;
   flex-shrink: 1;
 
   &:hover {
-    color: $black_alpha_7;
-    background-color: $white;
+    color: var(--black-alpha);
+    background-color: var(--background-color);
   }
 }
 

@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 
 import { Education } from "../interface/education";
 import { CommonModule } from "@angular/common";
@@ -9,6 +9,7 @@ import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
   templateUrl: "./education-insert.component.html",
   styleUrls: ["./education-insert.component.scss"],
   imports: [AltTextPipe, CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class EducationInsertComponent {
   public placement: InputSignal<Education> = input<Education>({

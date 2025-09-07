@@ -1,5 +1,5 @@
 import { CommonModule } from "@angular/common";
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { LoadingGraphicComponent } from "../../../global/loading-graphic/loading-graphic.component";
 
 @Component({
@@ -7,6 +7,7 @@ import { LoadingGraphicComponent } from "../../../global/loading-graphic/loading
   templateUrl: "./synopsis-header-display.component.html",
   styleUrls: ["./synopsis-header-display.component.scss"],
   imports: [CommonModule, LoadingGraphicComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SynopsisHeaderDisplayComponent {
   public imageConfig: InputSignal<{

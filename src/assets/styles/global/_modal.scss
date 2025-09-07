@@ -22,8 +22,8 @@
     @include flex();
     @include flex-column();
     padding: 1rem;
-    background-color: $black_alpha_7;
-    border: 1px solid $black;
+    background-color: var(--black-alpha);
+    border: 1px solid var(--text-color);
     position: absolute;
     top: 50%;
     left: 50%;

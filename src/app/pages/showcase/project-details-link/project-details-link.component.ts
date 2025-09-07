@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { Showcase } from "../interface/showcase";
 import { RouterLink } from "@angular/router";
 
@@ -6,6 +6,7 @@ import { RouterLink } from "@angular/router";
   selector: "app-project-details-link",
   templateUrl: "./project-details-link.component.html",
   imports: [RouterLink],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ProjectDetailsLinkComponent {
   public project: InputSignal<Showcase> = input<Showcase>({

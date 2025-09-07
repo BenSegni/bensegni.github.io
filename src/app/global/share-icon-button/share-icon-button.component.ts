@@ -1,4 +1,4 @@
-import { Component, InputSignal, OnInit, input } from "@angular/core";
+import { ChangeDetectionStrategy, Component, InputSignal, OnInit, input } from "@angular/core";
 
 
 import { FacebookShareIconComponent } from "../icons/facebook-share-icon/facebook-share-icon.component";
@@ -13,7 +13,8 @@ import { XShareIconComponent } from "../icons/x-share-icon/x-share-icon.componen
     FacebookShareIconComponent,
     XShareIconComponent,
     LinkedinShareIconComponent
-  ]
+  ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShareIconButtonComponent implements OnInit {
   public shareType: InputSignal<string> = input<string>("");

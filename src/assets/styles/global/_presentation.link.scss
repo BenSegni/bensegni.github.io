@@ -10,7 +10,7 @@
     align-items: center;
 
     svg {
-        fill: $bsp_1;
+        fill: var(--primary-color);
         margin-right: 1rem;
     }
 }

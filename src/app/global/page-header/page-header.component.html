@@ -1,4 +1,4 @@
-<div class="header-section">
+<header class="header-section">
   <div class="avatar"></div>
   <div class="content-wrapper">
     <h1 [innerHTML]="headerContent.greeting"></h1>
@@ -6,9 +6,17 @@
     <span class="location-wrapper">
       <app-location-icon></app-location-icon>
       <a id="location-link" [href]="headerContent.locationLink" target="_blank">
-        <p id="location" [innerText]="headerContent.location" aria-label="location link"></p>
+        <p
+          id="location"
+          [innerText]="headerContent.location"
+          aria-label="location link"
+        ></p>
       </a>
     </span>
-    <img class="scroll-down" src="../../../assets/img/scroll_down_icon.svg" alt="scroll down">
+    <img
+      class="scroll-down"
+      src="../../../assets/img/scroll_down_icon.svg"
+      alt="scroll down"
+    />
   </div>
-</div>
+</header>

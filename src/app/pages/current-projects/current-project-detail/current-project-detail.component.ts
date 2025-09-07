@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 
 import { Project } from "../interface/project";
 import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
@@ -11,6 +11,7 @@ import { projectData } from "../../../data/project-data";
   templateUrl: "./current-project-detail.component.html",
   styleUrls: ["./current-project-detail.component.scss"],
   imports: [SkillPillsComponent, TechBarChartComponent, AltTextPipe],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class CurrentProjectDetailComponent {
   public project: InputSignal<Project> = input<Project>(

@@ -1,4 +1,4 @@
-import { Component, inject, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, inject, input, InputSignal } from "@angular/core";
 
 import { GlobalDataService } from "../global-data.service";
 import { skillsHighlightAnimation } from "../utils/animations/skills.animation";
@@ -22,6 +22,7 @@ import { PillPipe } from "../utils/pipes/pill.pipe";
     FilterPipe,
     PillPipe,
   ],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class SkillPillsComponent {
   public skills: InputSignal<string[]> = input<string[]>([""]);

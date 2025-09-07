@@ -18,8 +18,8 @@
     @include flex-wrap();
     width: 30vw;
     font-weight: normal;
-    background-color: $black;
-    border: 1px solid $grey;
+    background-color: var(--background-color);
+    border: 1px solid var(--secondary-color);
     text-align: left;
     padding: 1.5rem;
     text-align: left;
@@ -65,8 +65,8 @@
     }
 
     button {
-        background-color: $bsp_alpha_65;
-        border: 1px solid $white;
+        background-color: var(--primary-color-alpha-65);
+        border: 1px solid var(--background-color);
         font-family: inherit;
         color: white;
         padding: 0.5rem 1rem;
@@ -76,8 +76,8 @@
         margin-left: auto;
 
         &:hover {
-            background-color: $white;
-            color: $black;
+            background-color: var(--background-color);
+            color: var(--text-color);
         }
     }
 
@@ -99,13 +99,13 @@
 }
 
 icon {
-    border: 1px solid $grey;
+    border: 1px solid var(--secondary-color);
     border-radius: 3rem;
     margin-left: .5rem;
     cursor: pointer;
 
     &:before {
-        color: $grey;
+        color: var(--secondary-color);
         display: inline-block;
         font-style: italic;
         height: 1rem;

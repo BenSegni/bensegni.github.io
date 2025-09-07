@@ -1,6 +1,7 @@
-import { Component } from "@angular/core";
+import { Component, inject } from "@angular/core";
 import { SkillPillsComponent } from "../skill-pills/skill-pills.component";
 import { ProjectLinkComponent } from "../project-link/project-link.component";
+import { VersionService } from "../services/version/version.service";
 
 @Component({
   selector: "app-site-build",
@@ -24,4 +25,12 @@ export class SiteBuildComponent {
     "This portfolio website has been build with the following technologies &amp; software:";
   public mobileCopy =
     "This site renders across small mobile, mobile, tablet &amp; Desktop, with Rich UI PWA Integration for both Desktop &amp; Mobile.";
+
+  public version = "1.0.0";
+
+  private _versionService: VersionService = inject(VersionService);
+
+  constructor() {
+    this.version = this._versionService.getVersion();
+  }
 }

@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   InputSignal,
   OnChanges,
@@ -33,6 +34,7 @@ const inputInitialiser = {
   templateUrl: "./related-synopsis.component.html",
   styleUrls: ["./related-synopsis.component.scss"],
   imports: [RouterLink, CommonModule, SkillPillsComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class RelatedSynopsisComponent
   extends GlobalDataService

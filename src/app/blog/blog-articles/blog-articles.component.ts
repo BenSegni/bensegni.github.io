@@ -1,4 +1,5 @@
 import {
+  ChangeDetectionStrategy,
   Component,
   InputSignal,
   OnChanges,
@@ -17,12 +18,12 @@ import { BlogPostComponent } from "../blog-post/blog-post.component";
   templateUrl: "./blog-articles.component.html",
   standalone: true,
   imports: [BlogPostComponent],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BlogArticlesComponent implements OnInit, OnChanges {
   public blog$: Blog[] = [];
   public articleId: InputSignal<number> = input<number>(0);
   private _globalService: GlobalDataService = inject(GlobalDataService);
-
 
   public ngOnInit(): void {
     this.blog$ = this.assignBlogList();

@@ -22,4 +22,5 @@ export enum ColorPaletteEnum {
   smokeyBlue = "#3880ff",
   vsCodeBlue = "#0179cb",
   xdPink = "#ff61f6",
+  white = "#a9a8a8ff",
 }

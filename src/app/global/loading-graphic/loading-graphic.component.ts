@@ -1,4 +1,4 @@
-import { Component, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
 import { CommonModule } from "@angular/common";
 
@@ -14,6 +14,7 @@ interface Dimensions {
   styleUrls: ["./loading-graphic.component.scss"], 
   standalone: true,
   imports: [AltTextPipe, CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class LoadingGraphicComponent {
   public isLoading: InputSignal<boolean> = input<boolean>(true);

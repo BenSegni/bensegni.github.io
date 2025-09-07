@@ -1,4 +1,4 @@
-import { Component, inject, input, InputSignal } from "@angular/core";
+import { ChangeDetectionStrategy, Component, inject, input, InputSignal } from "@angular/core";
 
 import { GlobalDataService } from "../../../global/global-data.service";
 import { Router } from "@angular/router";
@@ -10,6 +10,7 @@ import { CommonModule } from "@angular/common";
   selector: "app-showcase-items",
   templateUrl: "./showcase-items.component.html",
   imports: [ProjectDetailsComponent, CommonModule],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class ShowcaseItemsComponent {
   public columnLayout: InputSignal<boolean> = input<boolean>(false);

@@ -4,7 +4,7 @@
   <h4 [innerText]="'Core Dependencies:'"></h4>
   <pre class="node-code">
   <code>
-      &#64;angular/core: 18.0.6,
+      &#64;angular/core: {{ version }},
       rxjs: 7.8.1,
       jasmine-core: 5.1.2,
       typescript: 5.4.0
@@ -12,7 +12,7 @@
 </pre>
   <h5 [innerText]="'Skills:'"></h5>
   <app-skill-pills [skills]="specification"></app-skill-pills>
-  <br>
+  <br />
   <p [innerHTML]="mobileCopy"></p>
   <app-project-link [url]="presentationLink"></app-project-link>
 </div>
