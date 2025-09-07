@@ -1,4 +1,4 @@
-@import './about_mixins';
+@import "./about_mixins";
 
 @mixin about-text-detail {
   span {
@@ -9,7 +9,7 @@
       text-align: left;
       line-height: 1rem;
       padding-top: 0;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
       border-bottom: 0.0625rem dotted var(--primary-color);
 
       @include tablet {
@@ -118,7 +118,7 @@
   }
 
   .employment-site-link {
-    margin: 1rem 0 0 9rem;
+    margin: 1rem 0;
     @include content-link();
 
     @include tablet {
@@ -149,7 +149,6 @@
 
 .about-detail {
   @include about-list();
-  padding-left: 9rem;
 
   @include tablet {
     padding-left: 1rem;
@@ -168,9 +167,6 @@
   text-align: left;
   margin: 2rem 0 0 0;
   padding-top: 1rem;
-  @include flex();
-  @include flex-wrap();
-  align-items: flex-start;
   @include about-list();
 
   p {
@@ -213,7 +209,7 @@
 
     img {
       margin-top: 0;
-      margin-left: .25rem;
+      margin-left: 0.25rem;
 
       @include tablet {
         @include mobile-image();
@@ -259,7 +255,7 @@
     h4 {
       text-align: left;
       line-height: 1rem;
-      padding-bottom: .5rem;
+      padding-bottom: 0.5rem;
       border-bottom: 0.0625rem dotted var(--primary-color);
 
       @include tablet {
@@ -279,7 +275,7 @@
       @include grid();
       @include span-50();
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: .75rem;
+      grid-column-gap: 0.75rem;
       list-style: none;
       margin-left: 1rem;
       margin-bottom: 1rem;
@@ -352,12 +348,16 @@
     }
   }
 
+  .employer-logo {
+    mix-blend-mode: difference;
+  }
+
   img {
     width: 7rem;
     height: auto;
     margin-top: 0;
     margin-right: 2rem;
-    margin-left: .120rem;
+    margin-left: 0.12rem;
     margin-bottom: 0;
     border: 0;
     border-radius: 0;
@@ -381,7 +381,7 @@
     border-style: solid;
     border-width: 1px;
     border-radius: 10rem;
-    padding: .5rem;
+    padding: 0.5rem;
     background-color: var(--social-media-toolbar-color);
 
     @include tablet {
@@ -418,7 +418,7 @@
 
   h3 {
     .active {
-      border: .0625rem dotted var(--primary-color);
+      border: 0.0625rem dotted var(--primary-color);
     }
 
     @include tablet {
@@ -437,12 +437,12 @@
       display: block;
       min-width: 10rem;
       font-weight: 300;
-      font-size: .95rem;
+      font-size: 0.95rem;
       color: var(--secondary-color);
       margin: 0 1rem;
-      padding: .5rem 1rem;
+      padding: 0.5rem 1rem;
       background-color: var(--card-background-color-alpha);
-      border: .0625rem solid var(--text-color);
+      border: 0.0625rem solid var(--text-color);
       box-sizing: border-box;
 
       &:hover {
@@ -462,7 +462,6 @@
         @include mobile-anchor();
       }
     }
-
   }
 
   img {
@@ -494,7 +493,7 @@
 }
 
 .tab-content {
-  padding: 0 .75rem 1rem .75rem;
+  padding: 0 0.75rem 1rem 0.75rem;
   border-top: none;
 }
 

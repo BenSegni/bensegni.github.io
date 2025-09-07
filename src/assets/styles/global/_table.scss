@@ -5,24 +5,25 @@
   row-gap: .5rem;
   width: 100%;
   column-width: 1.5rem;
-  padding: .5rem 1rem 0rem 9rem;
+  padding: .5rem 1rem 0rem 0rem;
 
   .row {
     flex: 0 1 auto;
-    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: .125rem .5rem .125rem .125rem;
+    padding: .125rem 0;
     grid-column-start: 1;
     border-style: solid;
     border-color: transparent;
     border-width: .0625rem;
     background-color: transparent;
     border-radius: 10rem;
+    box-sizing: border-box;
     animation: grow-row 10s;
     font-size: .75rem;
     position: relative;
+    width: 100%;
 
     @keyframes grow-row {
       0% {
@@ -59,23 +60,23 @@
       }
 
       @include tablet {
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
       }
 
       @include mobile {
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
       }
 
       @include small-mobile {
-        margin: 0 1rem 0 0;
+        margin: 0 .5rem 0 0;
       }
     }
 
     .row-detail {
       display: block;
       animation: fade-in-skill 7s;
-      margin-left: auto;
-      margin-right: 1rem;
+      // margin-left: 1rem;
+      // margin-right: 1rem;
 
       @include tablet {
         width: auto;
