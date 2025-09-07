@@ -17,6 +17,7 @@
     width: 1rem;
     border: none;
     margin: auto .5rem auto auto;
+    mix-blend-mode: difference;
   }
 }
 
@@ -317,7 +318,7 @@
     h4 {
       margin: 0;
       padding: 0;
-      color: var(--text-color-light);
+      color: var(--text-color);
     }
 
     .article-date {
@@ -391,7 +392,7 @@
         justify-content: flex-start;
         margin: 0;
         font-size: .85rem;
-        color: var(--text-color-light);
+        color: var(--text-color);
         margin-right: auto;
         position: relative;
 
@@ -545,19 +546,21 @@
       justify-content: flex-start;
       align-items: center;
       font-size: .8rem;
-      color: var(--angular-color);
+      color: var(--text-color);
     }
 
     .blog-contact-image {
       display: block;
-      height: 6rem;
+      height: 8rem;
       width: 12rem;
       margin: 1rem 1rem 0 0;
       background-image: url('../../img/me/avatar.webp');
       background-position: center;
       background-size: cover;
-      border: .25rem solid var(--background-color);
+      background-repeat: no-repeat;
+      border: .25rem solid var(--card-background-color-alpha);
       box-sizing: border-box;
+      flex: 1 0 25%;
 
       @include small-mobile {
         margin: 0 1rem 0 0;

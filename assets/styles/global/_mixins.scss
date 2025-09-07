@@ -257,16 +257,8 @@
     border: 0;
     border-radius: 0;
     margin: 0 1rem 0 0;
+    mix-blend-mode: difference;
   }
-
-  // &:hover {
-  //   color: var(--text-color);
-  //   border-bottom: 1px dotted var(--secondary-color);
-  // }
-
-  // &:visited {
-  //   border-bottom: 1px dotted var(--secondary-color);
-  // }
 }
 
 @mixin read-more {

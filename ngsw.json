@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757244827169,
+  "timestamp": 1757257628097,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "/chunk-T74KHG6R.js",
         "/chunk-V2ZGFAXX.js",
         "/index.html",
-        "/main-HEVSKGT4.js",
+        "/main-A4THKJP7.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-DCZUQX5Q.css"
+        "/styles-YVSI366E.css"
       ],
       "patterns": []
     },
@@ -476,16 +476,16 @@
     "/assets/styles/_imports.scss": "38be48c592f18debbae21a1f7697cc86f5030a3e",
     "/assets/styles/_layout.scss": "a199f60cc259d36d0b3aa27fcdd6f33e56034a55",
     "/assets/styles/_mixins.scss": "b67e12beadd4ef56e101d316639d1713b6920032",
-    "/assets/styles/_pages.scss": "ba9c8b13434974e0d6fee074bf0632678dcf1ac2",
+    "/assets/styles/_pages.scss": "568b2642f27f05857e653fbf4d6cf50efe6e69fa",
     "/assets/styles/_responsive.scss": "32f3dd6f65767e3cb6d994ba3a063e779d0c17f4",
-    "/assets/styles/global/_blog.scss": "5cb84067c75c51bd74a9d0a90c1494dfc6e9ae1c",
+    "/assets/styles/global/_blog.scss": "5e2c12639d49a2ea7007f40a6a2c5dac91565f26",
     "/assets/styles/global/_breadcrumb.scss": "2d479487f89d3679e8a13ef8765eb923144fcdad",
-    "/assets/styles/global/_filter.scss": "eb7884cfc43a0a767433b6a21385a4326ff7545c",
+    "/assets/styles/global/_filter.scss": "e45a79b5f7b5f11ccb6a7708a08a963489c398b6",
     "/assets/styles/global/_footer.scss": "587e89d5ea3066568b69864e00509cdb344cdf12",
     "/assets/styles/global/_info_directive.scss": "070b0075d8f196754bc62a9dae1a6b0fae635e3f",
-    "/assets/styles/global/_mixins.scss": "c72bf72be25784761c6af95a263dd6c7d93350f7",
+    "/assets/styles/global/_mixins.scss": "46472541bd6af717aec54b9ee5faba18a75d17ad",
     "/assets/styles/global/_modal.scss": "a5e9233cb958984f5c60a8cd00f2f83cabc20432",
-    "/assets/styles/global/_navigation.scss": "803232149ef57d0616e3a5daa548b5b0e2181125",
+    "/assets/styles/global/_navigation.scss": "733cce6bd95e0f92311d6ae97815585c12594649",
     "/assets/styles/global/_page_header.scss": "1125ec9601b37d41f4072d8601913f2495bf1c6e",
     "/assets/styles/global/_presentation.link.scss": "ee649425910653b17cec270f4f05556eb6b99efb",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
@@ -497,13 +497,13 @@
     "/assets/styles/pages/_contact.scss": "5272ae10f6c64854ed6fcc34cedb09bf1514a89b",
     "/assets/styles/pages/_current_project.scss": "b3260bf59d85d9cac8d5857a79fa5a0502caa40b",
     "/assets/styles/pages/_employment.scss": "f6656f1e90a1990c8c126c06b6756a5a79ddadb9",
-    "/assets/styles/pages/_github.scss": "c8ff4ce9f793f722f848a38c8e4608220af2d531",
+    "/assets/styles/pages/_github.scss": "1b72e56005424433aae2ec8a6f59c3bd487beb98",
     "/assets/styles/pages/_privacy.scss": "36aab05f76e1563c610c8da3940942e2a77c25a8",
     "/assets/styles/pages/_project_mixins.scss": "8892812a359bbb80ffc40ded2dfee9e113471913",
     "/assets/styles/pages/_showcase.scss": "b89c9e3eaf82c8703428d708f9c90b2590cecbe6",
     "/assets/styles/pages/_showcase_mixins.scss": "4b20bedee014ab84de7768cff52c3dd4afebd020",
     "/assets/styles/pages/_site_build.scss": "572c217652667f1167504170c6c8223f62395d2f",
-    "/assets/styles/pages/_synopsis.scss": "74c2e76b717f12a69a0a0c9caf37c7a3bbb6982c",
+    "/assets/styles/pages/_synopsis.scss": "e5a08818fe3719ac633c1c5599d28a048944fbd3",
     "/assets/styles/pages/_technology.scss": "6b89b64e04dffb095dd4a373c88b8981ee165d33",
     "/chunk-5LK3MYPS.js": "4e565afbf450c6e95074bf92619f38c54157a172",
     "/chunk-ANJISZRT.js": "ac84ac7e35973e4bc8dc05dd08f95aeaba90f46c",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "087be0ab12fea4443d8867878f9945f8cd4eede4",
-    "/main-HEVSKGT4.js": "8b11b0b3862462993ea11eccc2c27274b67a7d3f",
+    "/index.html": "4001ad9e1d2b613c0fdddf53b19a250227eba71a",
+    "/main-A4THKJP7.js": "4ecf46789fcb3942ac5ef8091286be4de5aca868",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-DCZUQX5Q.css": "3a568fc799a7e17036a4190f864ea07fdd5520df"
+    "/styles-YVSI366E.css": "4dd75506d108ac393e7f120c27aa906db81c7f7e"
   },
   "navigationUrls": [
     {
