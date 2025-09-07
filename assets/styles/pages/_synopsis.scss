@@ -1,7 +1,7 @@
 @import '../global/mixins';
 
 @mixin synopsis-loading-background($border-color, $border-width) {
-    background-color: $black_alpha_7;
+    background-color: var(--black-alpha);
     border: $border-width solid $border-color;
     box-sizing: border-box;
     margin-bottom: 2rem;
@@ -22,7 +22,7 @@
     @include flex;
     @include flex-column();
     @include flex-center();
-    @include synopsis-loading-background($black, .5rem);
+    @include synopsis-loading-background(var(--text-color), .5rem);
     @include synopsis-image();
 
     .loading-graphic {
@@ -41,7 +41,7 @@
     @include flex;
     @include flex-column();
     @include flex-center();
-    @include synopsis-loading-background($black_alpha_7, .25rem);
+    @include synopsis-loading-background(var(--black-alpha), .25rem);
     @include small-synopsis-image();
 
     .loading-graphic {
@@ -105,7 +105,7 @@
         border-bottom: none;
         padding-top: 2rem;
         margin: 2rem auto 0 auto;
-        border-top: 1px dotted $grey;
+        border-top: 1px dotted var(--secondary-color);
 
         img {
             height: 2rem;
@@ -116,8 +116,8 @@
         }
 
         &:hover {
-            color: $white;
-            border-top: 1px dotted $grey;
+            color: var(--text-color);
+            border-top: 1px dotted var(--secondary-color);
             border-bottom: none;
         }
     }
@@ -129,8 +129,9 @@
         background-repeat: no-repeat;
         background-position: top;
         border-radius: 0;
+        box-sizing: border-box;;
         animation: fade 1s;
-        border: .5rem solid $black;
+        border: .5rem solid var(--card-background-color);
 
         @include mobile-width();
     }
@@ -193,12 +194,12 @@
         background-size: cover;
         background-position: 50% 20%;
         margin-top: 1rem;
-        border: .5rem solid $black;
+        border: .5rem solid var(--card-background-color);
         box-sizing: border-box;
         cursor: pointer;
 
         &:hover {
-          border-color: $black_alpha_7;
+          border-color: var(--black-alpha);
         }
 
         .related-project-wrapper {
@@ -206,14 +207,14 @@
             @include flex-column();
             justify-self: stretch;
             flex-basis: 100%;
-            background-color: $black_alpha_7;
+            background-color: var(--card-background-color-alpha);
             padding: 1rem 1rem 2rem 1rem;
             margin-top: 4rem;
 
             h5 {
                 display: block;
                 width: 50%;
-                color: $bsp_1;
+                color: var(--primary-color);
                 @include content-link();
                 margin: 0 0 1rem 0;
                 padding: 0;
@@ -276,7 +277,7 @@
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border: .25rem solid $black;
+                border: .25rem solid var(--card-background-color);
                 border-radius: 0;
                 box-sizing: border-box;
             }

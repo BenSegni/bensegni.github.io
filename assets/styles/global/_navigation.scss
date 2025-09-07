@@ -39,7 +39,7 @@
   align-items: center;
 
   &:hover {
-    color: $grey;
+    color: var(--secondary-color);
   }
 }
 
@@ -62,7 +62,7 @@
     height: .25rem;
     width: 100%;
     border-radius: 10rem;
-    background-color: $white;
+    background-color: var(--text-color);
     margin-bottom: .25rem;
     transition: width 0.5s linear;
 
@@ -88,7 +88,7 @@
   }
 
   &:hover {
-    filter: drop-shadow(.125rem .125rem $bsp_alpha_6) drop-shadow(-.125rem -.125rem $black);
+    filter: drop-shadow(.125rem .125rem var(--primary-color-alpha-6)) drop-shadow(-.125rem -.125rem var(--text-color));
   }
 }
 
@@ -110,7 +110,7 @@
   &:hover img {
     transition: width 1s ease-in-out;
     width: 2.5rem;
-    filter: drop-shadow(.125rem .125rem $bsp_alpha_6) drop-shadow(-.125rem -.125rem $black);
+    filter: drop-shadow(.125rem .125rem var(--primary-color-alpha-6)) drop-shadow(-.125rem -.125rem var(--text-color));
   }
 }
 
@@ -121,8 +121,8 @@
   top: 0;
   left: 0;
   justify-content: space-around;
-  background-color: $black_variant_alpha;
-  border-bottom: 0.0625rem solid $black;
+  background-color: var(--text-color-variant-alpha);
+  border-bottom: 0.0625rem solid var(--text-color);
   padding-top: 25vh;
   padding-bottom: 75vh;
   z-index: 999;
@@ -137,17 +137,17 @@
 
     .active {
       font-weight: 500;
-      color: $bsp_1;
+      color: var(--primary-color);
     }
 
     a {
-      color: $white;
+      color: var(--text-color);
       font-size: 1.5rem;
       @include flex();
       @include flex-center();
 
       svg {
-        fill: $bsp_1;
+        fill: var(--primary-color);
         margin-right: .75rem;
       }
 
@@ -169,7 +169,7 @@
     }
 
     &:hover {
-      border-bottom: 0.0625rem solid $white;
+      border-bottom: 0.0625rem solid var(--text-color);
 
       @include tablet {
         border-color: transparent;
@@ -185,7 +185,7 @@
     }
 
     &:active {
-      background-color: $black;
+      background-color: var(--background-color);
     }
 
     @include tablet {
@@ -205,14 +205,14 @@
   }
 
   .navigation-subtext {
-    color: $bsp_1;
+    color: var(--text-color);
     flex: 0 0 30%;
     flex-basis: 100%;
     text-align: left;
     padding: 2rem 0 0 20%;
 
     .navigation-image {
-      border: 1px solid $grey;
+      border: 1px solid var(--secondary-color);
       border-radius: 0;
       width: auto;
       height: 22rem;
@@ -254,13 +254,13 @@
 
         .route {
           font-style: italic;
-          color: $grey;
-          border-bottom: 1px dotted $grey;
+          color: var(--secondary-color);
+          border-bottom: 1px dotted var(--secondary-color);
         }
       }
 
       h5 {
-        color: $grey;
+        color: var(--text-color);
         margin: 0;
         padding: 1rem 0 0 0;
       }
@@ -270,14 +270,14 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         align-items: center;
-        color: $white;
+        color: var(--text-color);
         margin: .5rem 0 0 0;
         padding: 0;
 
         li {
           padding: .25rem .75rem;
           font-size: .75rem;
-          border: 2px solid $grey;
+          border: 2px solid var(--secondary-color);
           border-radius: 10rem;
           margin-right: .5rem;
 
@@ -350,7 +350,7 @@
 
   .active {
     font-weight: 500;
-    color: $bsp_1;
-    border-bottom: 0.1rem dotted $white;
+    color: var(--primary-color);
+    border-bottom: 0.1rem dotted var(--background-color);
   }
 }

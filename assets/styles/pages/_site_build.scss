@@ -5,7 +5,7 @@
 
     a {
         @include content-link();
-        color: $white;
+        color: var(--text-color);
         margin-top: 1rem;
     }
 
@@ -26,18 +26,18 @@
 
     h5 {
         text-align: left;
-        color: $grey;
+        color: var(--secondary-color);
         padding: 0;
     }
 
     .dependencies {
         display: flex;
         box-sizing: border-box;
-        color: $white;
+        color: var(--text-color);
         font-size: .75rem;
         margin-bottom: 1rem;
         padding: 1rem .75rem;
-        background-color: $black;
+        background-color: var(--background-color);
         border: 1px solid #666;
     }
 

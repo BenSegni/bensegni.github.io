@@ -1,23 +1,69 @@
-$bsp_1: rgb(112, 181, 250);
-$bsp_2: rgb(115, 139, 157);
-$bsp_alpha_6: rgba(112, 181, 250, 0.6);
-$bsp_alpha_5: rgba(112, 181, 250, 0.5);
-$bsp_alpha_65: rgba(112, 181, 250, .65);
-$black: rgb(29, 34, 38);
-$black_variant_alpha: rgba(29, 34, 38, .95);
-$black_alpha: rgba(0, 0, 0, 0.75);
-$background_color: rgba(0, 0, 0, 0.902);
-$black_background: rgb(29, 34, 38);
-$black_alpha_7: rgba(0, 0, 0, 0.75);
-$white: white;
-$grey: rgb(128, 128, 128);
-$code-block: rgb(0, 39, 63);
-$angular: rgb(234, 234, 234);
-$sass: rgb(235, 144, 190);
-$typescript: rgb(49, 120, 198);
-$html: rgb(228, 77, 38);
-$bold: rgb(188, 230, 111);
-$grey-light: rgb(204, 204, 204);
-$facebook: rgb(24, 119, 242);
-$x-social: rgb(0, 0, 0);
-$linkedin: rgb(0, 119, 181);
+:root {
+  // Light Theme
+  --primary-color: rgb(112, 181, 250);
+  --primary-color-alpha-6: rgba(112, 181, 250, 0.6);
+  --primary-color-alpha-5: rgba(112, 181, 250, 0.5);
+  --primary-color-alpha-65: rgba(112, 181, 250, 0.65);
+
+  --secondary-color: rgb(115, 139, 157);
+
+  --background-color: rgb(255, 255, 255);
+  --text-color: rgb(29, 34, 38);
+  --text-color-light: rgb(204, 204, 204);
+  --text-color-variant-alpha: rgba(234, 234, 234, 0.95);
+
+  --header-background-color: rgb(255, 255, 255);
+
+  --card-background-color: rgb(240, 240, 240);
+  --card-background-color-alpha: rgba(240, 240, 240, 0.75);
+  --code-block-background: rgb(234, 234, 234);
+
+  --facebook-color: rgb(24, 119, 242);
+  --x-social-color: rgb(0, 0, 0);
+  --linkedin-color: rgb(0, 119, 181);
+
+  --angular-color: rgb(221, 0, 49);
+  --sass-color: rgb(205, 103, 153);
+  --typescript-color: rgb(0, 122, 204);
+  --html-color: rgb(227, 79, 38);
+  --bold-color: rgb(188, 230, 111);
+
+  --black-alpha: rgba(0, 0, 0, 0.75);
+  --footer-background-color: var(--secondary-color);
+  --social-media-toolbar-color: var(--secondary-color);
+}
+
+.dark {
+  // Dark Theme
+  --primary-color: rgb(112, 181, 250);
+  --primary-color-alpha-6: rgba(112, 181, 250, 0.6);
+  --primary-color-alpha-5: rgba(112, 181, 250, 0.5);
+  --primary-color-alpha-65: rgba(112, 181, 250, 0.65);
+
+  --secondary-color: rgb(115, 139, 157);
+
+  --background-color: rgb(29, 34, 38);
+  --text-color: rgb(234, 234, 234);
+  --text-color-light: rgb(204, 204, 204);
+  --text-color-variant-alpha: rgba(29, 34, 38, 0.95);
+
+  --header-background-color: rgb(40, 45, 50);
+
+  --card-background-color: rgb(40, 45, 50);
+  --card-background-color-alpha: rgba(0, 0, 0, 0.75);
+  --code-block-background: rgb(0, 39, 63);
+
+  --facebook-color: rgb(24, 119, 242);
+  --x-social-color: rgb(0, 0, 0);
+  --linkedin-color: rgb(0, 119, 181);
+
+  --angular-color: rgb(234, 234, 248);
+  --sass-color: rgb(235, 144, 190);
+  --typescript-color: rgb(49, 120, 198);
+  --html-color: rgb(228, 77, 38);
+  --bold-color: rgb(188, 230, 111);
+
+  --black-alpha: rgba(255, 255, 255, 0.75);
+  --footer-background-color: var(--secondary-color);
+  --social-media-toolbar-color: rgba(0, 0, 0, 0.75);
+}

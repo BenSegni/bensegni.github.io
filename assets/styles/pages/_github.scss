@@ -6,7 +6,7 @@
     @include span-50();
     margin-bottom: 2rem;
     padding-bottom: 1rem;
-    border-bottom: 1px dotted $grey;
+    border-bottom: 1px dotted var(--secondary-color);
 
     &:last-child {
         border: none;
@@ -32,7 +32,7 @@
         }
 
         h5 {
-            color: $grey;
+            color: var(--text-color);
             padding: 0;
         }
 

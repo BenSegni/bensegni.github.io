@@ -41,13 +41,13 @@
     align-items: center;
     height: 3rem;
     width: 1.75rem;
-    border: 0.0625rem solid $white;
-    background-color: $bsp_alpha_5;
+    border: 0.0625rem solid var(--text-color);
+    background-color: var(--primary-color-alpha-5);
     border-radius: 10rem;
     cursor: pointer;
 
     &:hover {
-      border-color: $bsp_1;
+      border-color: var(--primary-color);
     }
 
     span {
@@ -56,7 +56,7 @@
       width: .25rem;
       margin-top: .75rem;
       border-radius: 10rem;
-      background-color: $white;
+      background-color: var(--text-color);
       @include mouseButton(900ms)
     }
   }
@@ -91,19 +91,19 @@
     }
 
     svg {
-      fill: $white;
+      fill: var(--text-color);
     }
   }
 }
 
 .facebook {
-  background-color: $facebook !important;
+  background-color: var(--facebook-color) !important;
 }
 
 .x-social {
-  background-color: $x-social !important;
+  background-color: var(--x-social-color) !important;
 }
 
 .linkedin {
-  background-color: $linkedin !important;
+  background-color: var(--linkedin-color) !important;
 }

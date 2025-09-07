@@ -12,7 +12,7 @@ body {
   font-size: 16px;
   font-weight: 400;
   font-family: 'Nunito', sans-serif;
-  background-color: $background_color;
+  background-color: var(--background-color);
   @include flex();
   @include flex-column();
 }
@@ -22,7 +22,7 @@ header {
   @include span-100();
   height: auto;
   justify-content: center;
-  background-color: $black;
+  background-color: var(--header-background-color);
   z-index: 999;
 
   a {
@@ -73,7 +73,7 @@ header {
 footer {
   @include flex();
   justify-content: center;
-  background-color: $black;
+  background-color: var(--background-color);
 
   a {
     @include flex();
@@ -122,7 +122,7 @@ footer {
 }
 
 a {
-  color: $bsp_1;
+  color: var(--primary-color);
 }
 
 section {
@@ -134,7 +134,7 @@ section {
     justify-content: flex-start;
     align-items: center;
     border-radius: 15rem;
-    border: .25rem solid $black;
+    border: .25rem solid var(--text-color);
   }
 
   h3 {
@@ -149,10 +149,10 @@ footer {
 header,
 footer {
   svg {
-    fill: $bsp_1;
+    fill: var(--primary-color);
 
     &:hover {
-      fill: $white;
+      fill: var(--background-color);
       width: 3.5rem;
       margin-bottom: auto;
     }
@@ -161,10 +161,10 @@ footer {
   span {
     a {
       svg {
-        fill: $bsp_1;
+        fill: var(--primary-color);
 
         &:hover {
-          fill: $white;
+          fill: var(--background-color);
           width: 3.5rem;
           margin-bottom: auto;
         }
@@ -182,7 +182,7 @@ h5,
 header,
 ul {
   margin: 0;
-  color: $white;
+  color: var(--text-color);
 }
 
 ul {
@@ -203,7 +203,7 @@ section {
 
   img {
     border-radius: 15rem;
-    border: .25rem solid rgb(29, 34, 38);
+    border: .25rem solid var(--card-background-color);
   }
 }
 
@@ -214,9 +214,9 @@ a {
 pre {
   display: block;
   box-sizing: border-box;
-  background: $code-block;
-  border-left: 3px solid $bsp_1;
-  color: $white;
+  background: var(--code-block-background);
+  border-left: 3px solid var(--primary-color);
+  color: var(--text-color);
   page-break-inside: avoid;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -251,13 +251,13 @@ pre {
 }
 
 mark {
-  color: $grey-light;
-  background-color: $black-background;
+  color: var(--text-color-light);
+  background-color: var(--background-color);
   padding: 0 .25rem;
 }
 
 .node-code {
-  @include code-background($html, 'npm_logo.svg', 'NPM');
+  @include code-background(var(--html-color), 'npm_logo.svg', 'NPM');
 }
 
 ol {
@@ -277,7 +277,7 @@ ol {
       margin-right: 1rem;
       padding-right: .5rem;
       content: counter(item);
-      border-right: .125rem solid $bsp_1;
+      border-right: .125rem solid var(--primary-color);
       width: 1.2em;
       text-align: center;
       display: inline-block;

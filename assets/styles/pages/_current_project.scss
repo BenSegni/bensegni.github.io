@@ -8,7 +8,7 @@
     margin: 0 auto 2rem auto;
     padding-bottom: 1rem;
     line-height: 1.5rem;
-    border-bottom: 0.0625rem solid $bsp_1;
+    border-bottom: 0.0625rem solid var(--primary-color);
 
     img {
         @include project-img();
@@ -40,7 +40,7 @@
         }
 
         span {
-            color: $bsp_1;
+            color: var(--primary-color);
         }
 
         @include tablet {
@@ -71,7 +71,7 @@
     text-align: left;
     padding-bottom: 1.5rem;
     line-height: 1.5rem;
-    border-bottom: 0.0625rem dotted $grey;
+    border-bottom: 0.0625rem dotted var(--secondary-color);
     margin-bottom: 2rem;
 
     img {
@@ -98,11 +98,11 @@
     }
 
     h5 {
-        color: $bsp_1;
+        color: var(--primary-color);
     }
 
     .skills-header {
-        color: $grey;
+        color: var(--text-color);
         margin: 0;
     }
 
@@ -134,13 +134,13 @@
         margin: auto;
         padding: .75rem 1rem;
         border-radius: 10rem;
-        border: 0.0625rem solid $white;
+        border: 0.0625rem solid var(--background-color);
         box-sizing: border-box;
 
         &:hover {
             color: rgba(0, 0, 0, 0.75);
-            background-color: $white;
-            border: 0.0625rem solid $white;
+            background-color: var(--background-color);
+            border: 0.0625rem solid var(--background-color);
         }
 
         @include mobile {
@@ -186,38 +186,38 @@
         align-items: center;
         text-align: left;
         padding: 2rem 0;
-        border-bottom: 0.0625rem dotted $bsp_1;
+        border-bottom: 0.0625rem dotted var(--primary-color);
         line-height: 1.5rem;
 
         mark {
             width: 100%;
-            color: $white;
-            background-color: $bsp_alpha_6;
+            color: var(--text-color);
+            background-color: var(--primary-color-alpha-6);
             padding: 0.25rem 1.5rem;
             line-height: 2rem;
             border-radius: 10rem;
 
             span {
-                color: $black_alpha_7;
+                color: var(--black-alpha);
             }
         }
 
         small {
-            color: $bsp_1;
+            color: var(--primary-color);
         }
 
         a {
-            color: $grey;
-            border-bottom: 0.0625rem dotted $white;
+            color: var(--secondary-color);
+            border-bottom: 0.0625rem dotted var(--background-color);
 
             &:hover {
-                color: $white;
-                border-color: $bsp_1;
+                color: var(--text-color);
+                border-color: var(--primary-color);
             }
 
             &:visited {
-                color: $bsp_alpha_6;
-                border-bottom: 1px dotted $bsp_alpha_6;
+                color: var(--primary-color-alpha-6);
+                border-bottom: 1px dotted var(--primary-color-alpha-6);
             }
         }
 

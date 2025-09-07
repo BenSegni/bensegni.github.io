@@ -30,7 +30,7 @@
     margin-bottom: 1rem;
 
     svg {
-        fill: $white;
+        fill: var(--text-color);
         width: auto;
         margin-right: 2rem;
         margin-bottom: auto;
@@ -43,17 +43,17 @@
     }
 
     a {
-        color: $grey;
-        border-bottom: 0.0625rem dotted $white;
+        color: var(--secondary-color);
+        border-bottom: 0.0625rem dotted var(--background-color);
 
         &:hover {
-            color: $white;
-            border-color: $bsp_1;
+            color: var(--text-color);
+            border-color: var(--primary-color);
         }
 
         &:visited {
-            color: $bsp_alpha_6;
-            border-bottom: 1px dotted $bsp_alpha_6;
+            color: var(--primary-color-alpha-6);
+            border-bottom: 1px dotted var(--primary-color-alpha-6);
         }
     }
 

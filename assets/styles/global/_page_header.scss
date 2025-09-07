@@ -30,24 +30,24 @@ $background: "background.webp";
       font-family: "Caveat", cursive;
 
       q {
-        color: $bsp_1;
+        color: var(--primary-color);
       }
 
       span {
-        color: $white !important;
+        color: white !important;
         padding: 0 0.25rem;
         margin-right: 0.25rem;
         font-weight: 300;
 
         &:first-of-type {
-          color: $bsp_1 !important;
+          color: var(--primary-color) !important;
           font-weight: 300;
           background-color: transparent;
         }
 
         &:last-of-type {
-          color: $black_alpha_7 !important;
-          background-color: $bsp_alpha_6;
+          color: var(--black-alpha) !important;
+          background-color: var(--primary-color-alpha-6);
         }
       }
 
@@ -80,17 +80,17 @@ $background: "background.webp";
       padding-bottom: 0;
 
       span {
-        color: $white;
+        color: white;
         font-weight: 700;
 
         &:first-of-type {
-          color: $bsp_1;
+          color: var(--primary-color);
           font-weight: 300;
         }
 
         &:last-of-type {
-          color: $black_alpha_7;
-          background-color: $bsp_alpha_6;
+          color: var(--black-alpha);
+          background-color: var(--primary-color-alpha-6);
           font-weight: 500;
           padding: 0 0.25rem;
           margin-right: 0.25rem;
@@ -132,12 +132,12 @@ $background: "background.webp";
         padding-right: 1rem;
 
         &:first-of-type {
-          color: $bsp_1;
+          color: var(--primary-color);
           font-weight: 700;
         }
 
         &:last-of-type {
-          color: $bsp_1;
+          color: var(--primary-color);
           font-weight: 700;
         }
       }
@@ -206,7 +206,7 @@ $background: "background.webp";
         border-radius: 0;
         height: 1.5rem;
         margin: 0.75rem;
-        background-color: $black_background;
+        background-color: var(--background-color);
         padding: 0.45rem;
         border-radius: 10rem;
 
@@ -278,6 +278,7 @@ $background: "background.webp";
   }
 
   .location-wrapper {
+    width: 100%;
     @include flex();
     justify-content: flex-start;
     align-items: center;
@@ -294,7 +295,10 @@ $background: "background.webp";
 
     a {
       @include content-link();
-      color: $white;
+      color: white;
+      flex: 0 0 50%;
+      justify-content: flex-start;
+      padding-bottom: .25rem;
     }
 
     svg {
