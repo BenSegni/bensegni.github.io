@@ -7,6 +7,7 @@
   background-image: url('../../img/#{$name}');
   background-attachment: fixed;
   background-size: $size;
+  filter: sepia(var(--header-image-sepia)) brightness(var(--header-image-brightness));
 
   @if($no-repeat) {
     background-repeat: no-repeat;
