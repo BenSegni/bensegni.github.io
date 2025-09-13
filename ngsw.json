@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757761342050,
+  "timestamp": 1757761682171,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "/main-VU6E3EYW.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-JMBH7SQN.css"
+        "/styles-AHMQ23RG.css"
       ],
       "patterns": []
     },
@@ -469,7 +469,7 @@
     "/assets/img/zen-desk/zd_5.webp": "cc189bafba29c54239c1829301934b32255575c2",
     "/assets/img/zen_desk_style_guide.webp": "966c4a774d41ca34b02912845e2c27bb327bd501",
     "/assets/styles/_browser.scss": "5c6302e6c5599a0f8d986a7d6100e174d284a65f",
-    "/assets/styles/_color.scss": "ea1d86be58cb0f1e851570833f93bfc339ea4dd0",
+    "/assets/styles/_color.scss": "fad345d23eccb16c2ec227cae59fbff396d5f75f",
     "/assets/styles/_dom_elements.scss": "3076b05127b61ebd9f7bc4ef350e342ce02d2abf",
     "/assets/styles/_global.scss": "592419a62236679f474276ed2a44e54245acc8b7",
     "/assets/styles/_images.scss": "c6b04858c396de7317520100298dad117781ad33",
@@ -478,7 +478,7 @@
     "/assets/styles/_mixins.scss": "b67e12beadd4ef56e101d316639d1713b6920032",
     "/assets/styles/_pages.scss": "568b2642f27f05857e653fbf4d6cf50efe6e69fa",
     "/assets/styles/_responsive.scss": "32f3dd6f65767e3cb6d994ba3a063e779d0c17f4",
-    "/assets/styles/global/_blog.scss": "5e2c12639d49a2ea7007f40a6a2c5dac91565f26",
+    "/assets/styles/global/_blog.scss": "bad7f94cdfabdf516adf32291c3a460c4d167f30",
     "/assets/styles/global/_breadcrumb.scss": "2d479487f89d3679e8a13ef8765eb923144fcdad",
     "/assets/styles/global/_filter.scss": "e45a79b5f7b5f11ccb6a7708a08a963489c398b6",
     "/assets/styles/global/_footer.scss": "587e89d5ea3066568b69864e00509cdb344cdf12",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "6c7ebb8b79b3edda70bde02487a22c684416308a",
+    "/index.html": "4d51003f9c397d5bf927eb4c99bd14068fc74db8",
     "/main-VU6E3EYW.js": "bc26719b96f543cdaf452c0463e66bc485a81c49",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-JMBH7SQN.css": "6f655ac9471f473705b53ed8cf6cd5b0b7d6be27"
+    "/styles-AHMQ23RG.css": "0a7ac33cd9437227393a410efaa37713a9d1bc1b"
   },
   "navigationUrls": [
     {
