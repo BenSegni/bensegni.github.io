@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1757761682171,
+  "timestamp": 1757761732610,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "/main-VU6E3EYW.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-AHMQ23RG.css"
+        "/styles-PHAU7EQU.css"
       ],
       "patterns": []
     },
@@ -470,7 +470,7 @@
     "/assets/img/zen_desk_style_guide.webp": "966c4a774d41ca34b02912845e2c27bb327bd501",
     "/assets/styles/_browser.scss": "5c6302e6c5599a0f8d986a7d6100e174d284a65f",
     "/assets/styles/_color.scss": "fad345d23eccb16c2ec227cae59fbff396d5f75f",
-    "/assets/styles/_dom_elements.scss": "3076b05127b61ebd9f7bc4ef350e342ce02d2abf",
+    "/assets/styles/_dom_elements.scss": "611fd9afe5be333953f22f5a1324d55f16611528",
     "/assets/styles/_global.scss": "592419a62236679f474276ed2a44e54245acc8b7",
     "/assets/styles/_images.scss": "c6b04858c396de7317520100298dad117781ad33",
     "/assets/styles/_imports.scss": "38be48c592f18debbae21a1f7697cc86f5030a3e",
@@ -517,11 +517,11 @@
     "/chunk-SQIBLPPW.js": "cdc8fced3603a8a841196fdb602eaea73c16289f",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-V2ZGFAXX.js": "a53f1ee06461b9e3948801d45045372582c79165",
-    "/index.html": "4d51003f9c397d5bf927eb4c99bd14068fc74db8",
+    "/index.html": "61433639cef9ae9ecee2e5a4f1505b3d7a25368c",
     "/main-VU6E3EYW.js": "bc26719b96f543cdaf452c0463e66bc485a81c49",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-AHMQ23RG.css": "0a7ac33cd9437227393a410efaa37713a9d1bc1b"
+    "/styles-PHAU7EQU.css": "453d2d2a82d2797bb52fa3e068503b402720ef41"
   },
   "navigationUrls": [
     {
