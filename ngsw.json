@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1759066230332,
+  "timestamp": 1759066475412,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "/chunk-TWPQTBT7.js",
         "/chunk-WRTRP3AU.js",
         "/index.html",
-        "/main-J5HXTO4J.js",
+        "/main-44AD5OIR.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-BC3W3TBZ.css"
+        "/styles-AQBVXL4Y.css"
       ],
       "patterns": []
     },
@@ -487,7 +487,7 @@
     "/assets/styles/global/_modal.scss": "a5e9233cb958984f5c60a8cd00f2f83cabc20432",
     "/assets/styles/global/_navigation.scss": "733cce6bd95e0f92311d6ae97815585c12594649",
     "/assets/styles/global/_page_header.scss": "1125ec9601b37d41f4072d8601913f2495bf1c6e",
-    "/assets/styles/global/_presentation.link.scss": "ee649425910653b17cec270f4f05556eb6b99efb",
+    "/assets/styles/global/_presentation.link.scss": "30a4629c96969cdea2e95350c803c0c21616f4f2",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
     "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
     "/assets/styles/global/_table.scss": "5fb9f9b2373e9dfa2577e245b0929303ea3093f9",
@@ -517,11 +517,11 @@
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-TWPQTBT7.js": "ee57bf4223d79c6688ead7783ede982637152bd6",
     "/chunk-WRTRP3AU.js": "076bf69a618ea505905b4f4a20fd0cebd64938f6",
-    "/index.html": "e96d92600d43a6e0f069db6a72aa94b492e12561",
-    "/main-J5HXTO4J.js": "868f7dcb5af6321763429950650d4929f96fc264",
+    "/index.html": "3ccb8dda2ce1d593d19a43c327994d18fb144aac",
+    "/main-44AD5OIR.js": "e5ba3e994d8c8ee9e480c06ddb637b606d2ad509",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-BC3W3TBZ.css": "9143bbf023477b638fe71505c0399e82d0007933"
+    "/styles-AQBVXL4Y.css": "55581f2d85cdf60edfca30fe47331086946cea45"
   },
   "navigationUrls": [
     {
