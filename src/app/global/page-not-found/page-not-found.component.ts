@@ -1,7 +1,7 @@
 import { CommonModule } from "@angular/common";
 import { Component, inject, OnInit } from "@angular/core";
 import { Router, RouterLink } from "@angular/router";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 
 @Component({
   selector: "app-page-not-found",

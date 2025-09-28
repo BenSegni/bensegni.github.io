@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 import { CommonModule } from "@angular/common";
 
 interface Dimensions {

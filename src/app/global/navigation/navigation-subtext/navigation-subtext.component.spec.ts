@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AltTextPipe } from "../../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../utils/pipes/alt-text/alt-text.pipe";
 import { NavigationSubtextComponent } from "./navigation-subtext.component";
-import { NavigationTextPipe } from "../../utils/pipes/navigation-text.pipe";
-import { PillPipe } from "../../utils/pipes/pill.pipe";
+import { NavigationTextPipe } from "../../utils/pipes/navigation-text/navigation-text.pipe";
+import { PillPipe } from "../../utils/pipes/pill/pill.pipe";
 
 describe("NavigationSubtextComponent", () => {
   let component: NavigationSubtextComponent;

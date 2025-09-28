@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltTextPipe } from '../../../../global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../../global/utils/pipes/alt-text/alt-text.pipe';
 import { EducationInsertComponent } from './education-insert.component';
 
 describe('EducationInsertComponent', () => {

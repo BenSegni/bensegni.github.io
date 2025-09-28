@@ -5,7 +5,7 @@ import { TechnologyEnum } from "../../global/enum/technology.enum";
 import { Blog } from "../interface/blog";
 import { FilterConfig } from "../../global/shared-filter/interface/filter.config";
 import { FadeInButton } from "../../global/utils/animations/fade.animation";
-import { SharedFilterComponent } from "src/app/global/shared-filter/shared-filter.component";
+import { SharedFilterComponent } from "../../global/shared-filter/shared-filter.component";
 import { BlogKeyComponent } from "../blog-key/blog-key.component";
 import { BlogPostComponent } from "../blog-post/blog-post.component";
 

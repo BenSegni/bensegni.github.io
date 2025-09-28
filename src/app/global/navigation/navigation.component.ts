@@ -10,7 +10,7 @@ import { take } from "rxjs";
 import { NavigationItem } from "./interface/navigation";
 import { routeItems } from "./data/routes";
 import { NavigationSubtextComponent } from "./navigation-subtext/navigation-subtext.component";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 
 @Component({
   selector: "app-navigation",

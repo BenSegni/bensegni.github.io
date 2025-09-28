@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SynopsisBackLinkComponent } from './synopsis-back-link.component';
-import { AltTextPipe } from 'src/app/global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text/alt-text.pipe';
 
 describe('SynopsisBackLinkComponent', () => {
   let component: SynopsisBackLinkComponent;

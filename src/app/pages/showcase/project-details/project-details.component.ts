@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { Showcase } from "../interface/showcase";
-import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
+import { SkillPillsComponent } from "../../../global/skill-pills/skill-pills.component";
 import { ProjectDetailsLinkComponent } from "../project-details-link/project-details-link.component";
 
 @Component({

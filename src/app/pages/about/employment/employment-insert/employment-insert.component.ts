@@ -1,8 +1,9 @@
 import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
 import { Employment } from "../interface/employment";
-import { TechBarChartComponent } from "src/app/global/tech-bar-chart/tech-bar-chart.component";
-import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+
+import { SkillPillsComponent } from "../../../../global/skill-pills/skill-pills.component";
+import { AltTextPipe } from "../../../../global/utils/pipes/alt-text/alt-text.pipe";
+import { TechBarChartComponent } from "../../../../global/tech-bar-chart/tech-bar-chart.component";
 
 @Component({
   selector: "app-employment-insert",

@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from "@angular/core/testing";
 import { Subject, of } from "rxjs";
 
 import { RecentBlogPostComponent } from "./recent-blog-post.component";
-import { blogData } from "src/app/data/blog-data";
+import { blogData } from "../../data/blog-data";
 
 const fakeActivatedRoute = {
   queryParams: of({

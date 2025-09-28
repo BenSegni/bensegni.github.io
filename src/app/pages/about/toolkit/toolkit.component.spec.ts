@@ -1,10 +1,10 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ToolkitComponent } from './toolkit.component';
-import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
-import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
-import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
-import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
+import { PillPipe } from '../../../global/utils/pipes/pill/pill.pipe';
+import { LogoPipe } from '../../../global/utils/pipes/logo/logo.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text/alt-text.pipe';
+import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link/filter-link.pipe';
 import { StackListComponent } from '../../../global/stack-list/stack-list.component';
 
 describe('ToolkitComponent', () => {

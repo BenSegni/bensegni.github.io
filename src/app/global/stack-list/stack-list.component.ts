@@ -7,11 +7,11 @@ import {
 
 import { StackConfig } from "./interface/stack";
 import { of } from "rxjs";
-import { FilterLinkPipe } from "../utils/pipes/filter-link.pipe";
+import { FilterLinkPipe } from "../utils/pipes/filter-link/filter-link.pipe";
 import { CommonModule } from "@angular/common";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
-import { PillPipe } from "../utils/pipes/pill.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
+import { PillPipe } from "../utils/pipes/pill/pill.pipe";
 
 @Component({
   selector: "app-stack-list",

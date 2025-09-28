@@ -3,7 +3,7 @@ import { AfterViewChecked, Component, inject, OnInit } from "@angular/core";
 import { ActivatedRoute, RouterLink } from "@angular/router";
 import { BlogDescription } from "../interface/blog.description";
 import { blogDescriptionData } from "../../data/blog-description-data";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../global/utils/pipes/alt-text/alt-text.pipe";
 import { AnchorPipe } from "../utils/anchor.pipe";
 import { BlogKeyLevelIconComponent } from "../blog-key-level-icon/blog-key-level-icon.component";
 import { CommonModule } from "@angular/common";

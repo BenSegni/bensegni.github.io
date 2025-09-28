@@ -5,7 +5,7 @@ import {
   Event as RouterEvent,
 } from "@angular/router";
 
-import { AltTextPipe } from "./global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "./global/utils/pipes/alt-text/alt-text.pipe";
 import { AppComponent } from "./app.component";
 import { BehanceIconComponent } from "./global/icons/behance-icon/behance-icon.component";
 import { FooterComponent } from "./global/footer/footer.component";
@@ -13,7 +13,7 @@ import { GithubIconComponent } from "./global/icons/github-icon/github-icon.comp
 import { LinkedinIconComponent } from "./global/icons/linkedin-icon/linkedin-icon.component";
 import { LoadingIconComponent } from "./global/loading-icon/loading-icon.component";
 import { LocationIconComponent } from "./global/icons/location-icon/location-icon.component";
-import { LogoPipe } from "./global/utils/pipes/logo.pipe";
+import { LogoPipe } from "./global/utils/pipes/logo/logo.pipe";
 import { NavigationComponent } from "./global/navigation/navigation.component";
 import { NpmIconComponent } from "./global/icons/npm-icon/npm-icon.component";
 import { PageHeaderComponent } from "./global/page-header/page-header.component";

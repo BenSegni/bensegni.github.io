@@ -5,7 +5,7 @@ import {
 
 import { BlogService } from "./blog.service";
 import { TestBed } from "@angular/core/testing";
-import { blogData } from "src/app/data/blog-data";
+import { blogData } from "../../data/blog-data";
 import { provideHttpClientTesting } from "@angular/common/http/testing";
 
 describe("BlogService", () => {

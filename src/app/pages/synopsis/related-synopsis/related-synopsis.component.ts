@@ -13,7 +13,7 @@ import { GlobalDataService } from "../../../global/global-data.service";
 import { Router, RouterLink } from "@angular/router";
 import { Showcase } from "../../showcase/interface/showcase";
 import { CommonModule } from "@angular/common";
-import { SkillPillsComponent } from "src/app/global/skill-pills/skill-pills.component";
+import { SkillPillsComponent } from "../../../global/skill-pills/skill-pills.component";
 
 const inputInitialiser = {
   id: "",

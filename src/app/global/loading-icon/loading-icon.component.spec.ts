@@ -1,7 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { LoadingIconComponent } from './loading-icon.component';
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../utils/pipes/alt-text/alt-text.pipe';
 
 describe('LoadingIconComponent', () => {
   let component: LoadingIconComponent;

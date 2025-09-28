@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular
 
 import { TechUsage } from "./interface/tech.usage";
 import { CommonModule } from "@angular/common";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
-import { PillPipe } from "../utils/pipes/pill.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
+import { PillPipe } from "../utils/pipes/pill/pill.pipe";
 
 @Component({
   selector: "app-tech-bar-chart",

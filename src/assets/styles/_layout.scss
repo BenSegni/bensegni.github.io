@@ -102,6 +102,7 @@
       border: none;
       border-radius: 0;
       margin: 0 auto;
+      mix-blend-mode: difference;
     }
 
     @include responsive.tablet {

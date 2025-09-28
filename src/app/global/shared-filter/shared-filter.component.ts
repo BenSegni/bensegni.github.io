@@ -15,9 +15,9 @@ import { FilterConfig } from "./interface/filter.config";
 import { GlobalDataService } from "../global-data.service";
 import { TechnologyEnum } from "../enum/technology.enum";
 import { CommonModule } from "@angular/common";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
-import { FilterLinkPipe } from "../utils/pipes/filter-link.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
+import { FilterLinkPipe } from "../utils/pipes/filter-link/filter-link.pipe";
 
 interface Filterable {
   skills: string[];

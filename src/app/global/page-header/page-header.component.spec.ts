@@ -1,9 +1,9 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 import { By } from "@angular/platform-browser";
 import { LocationIconComponent } from "../icons/location-icon/location-icon.component";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
 import { PageHeaderComponent } from "./page-header.component";
 
 describe("PageHeaderComponent", () => {

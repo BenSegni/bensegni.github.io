@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
-import { LogoPipe } from '../utils/pipes/logo.pipe';
-import { PillPipe } from '../utils/pipes/pill.pipe';
+import { AltTextPipe } from '../utils/pipes/alt-text/alt-text.pipe';
+import { LogoPipe } from '../utils/pipes/logo/logo.pipe';
+import { PillPipe } from '../utils/pipes/pill/pill.pipe';
 import { TechBarChartComponent } from './tech-bar-chart.component';
 
 describe('TechBarChartComponent', () => {

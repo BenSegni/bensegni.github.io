@@ -3,11 +3,11 @@ import { ChangeDetectionStrategy, Component, inject, input, InputSignal } from "
 import { GlobalDataService } from "../global-data.service";
 import { skillsHighlightAnimation } from "../utils/animations/skills.animation";
 import { CommonModule } from "@angular/common";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
-import { FilterLinkPipe } from "../utils/pipes/filter-link.pipe";
-import { FilterPipe } from "../utils/pipes/filter.pipe";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
-import { PillPipe } from "../utils/pipes/pill.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
+import { FilterLinkPipe } from "../utils/pipes/filter-link/filter-link.pipe";
+import { FilterPipe } from "../utils/pipes/filter/filter.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
+import { PillPipe } from "../utils/pipes/pill/pill.pipe";
 
 @Component({
   selector: "app-skill-pills",

@@ -1,7 +1,7 @@
 import { Component } from "@angular/core";
 import { GlobalDataService } from "../../../global/global-data.service";
 import { StackConfig } from "../../../global/stack-list/interface/stack";
-import { StackListComponent } from "src/app/global/stack-list/stack-list.component";
+import { StackListComponent } from "../../../global/stack-list/stack-list.component";
 
 @Component({
   selector: "app-tech-stack",

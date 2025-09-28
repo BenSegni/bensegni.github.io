@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 import { SharedFilterComponent } from "./shared-filter.component";
 import { showcaseData } from "../data/showcase-data";
 

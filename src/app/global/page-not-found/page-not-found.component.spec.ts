@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../utils/pipes/alt-text/alt-text.pipe';
 import { PageNotFoundComponent } from './page-not-found.component';
 import { Router } from '@angular/router';
 

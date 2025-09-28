@@ -4,10 +4,10 @@ import {
   input,
   InputSignal,
 } from "@angular/core";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 import { RouterLink } from "@angular/router";
 import { GithubIconComponent } from "../icons/github-icon/github-icon.component";
-import { LogoPipe } from "../utils/pipes/logo.pipe";
+import { LogoPipe } from "../utils/pipes/logo/logo.pipe";
 import { PrivacyPolicyLogoComponent } from "../privacy-policy-logo/privacy-policy-logo.component";
 
 @Component({

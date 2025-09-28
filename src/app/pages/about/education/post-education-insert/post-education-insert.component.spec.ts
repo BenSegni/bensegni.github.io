@@ -1,8 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltTextPipe } from '../../../../global/utils/pipes/alt-text.pipe';
-import { LogoPipe } from '../../../../global/utils/pipes/logo.pipe';
-import { PillPipe } from '../../../../global/utils/pipes/pill.pipe';
+import { AltTextPipe } from '../../../../global/utils/pipes/alt-text/alt-text.pipe';
+import { LogoPipe } from '../../../../global/utils/pipes/logo/logo.pipe';
+import { PillPipe } from '../../../../global/utils/pipes/pill/pill.pipe';
 import { PostEducationInsertComponent } from './post-education-insert.component';
 
 describe('PostEducationInsertComponent', () => {

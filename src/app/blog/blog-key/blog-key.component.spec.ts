@@ -2,8 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BlogKeyComponent } from './blog-key.component';
 import { BlogKeyLevelIconComponent } from '../blog-key-level-icon/blog-key-level-icon.component';
-import { LogoPipe } from '../../global/utils/pipes/logo.pipe';
-import { AltTextPipe } from '../../global/utils/pipes/alt-text.pipe';
+import { LogoPipe } from '../../global/utils/pipes/logo/logo.pipe';
+import { AltTextPipe } from '../../global/utils/pipes/alt-text/alt-text.pipe';
 import { RouterTestingModule } from '@angular/router/testing';
 
 describe('BlogKeyComponent', () => {

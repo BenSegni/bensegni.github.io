@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { AltTextPipe } from "../utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../utils/pipes/alt-text/alt-text.pipe";
 
 @Component({
   selector: "app-loading-icon",

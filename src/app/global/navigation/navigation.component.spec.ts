@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { NavigationStart, Router } from '@angular/router';
 import { mockRouterStub, routerEventsSubject } from '../testing/router.stub';
 
-import { AltTextPipe } from '../utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../utils/pipes/alt-text/alt-text.pipe';
 import { NavigationComponent } from './navigation.component';
 import { NavigationItem } from './interface/navigation';
 

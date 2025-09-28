@@ -1,0 +1,20 @@
+strong {
+  color: var(--primary-color);
+}
+
+em {
+  display: block;
+  color: var(--secondary-color);
+  padding-top: 0.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+  padding: 0 0 0.5rem 0;
+}
+
+h5 {
+  padding: 0;
+  font-size: .875rem;
+  line-height: 1.25rem;
+}

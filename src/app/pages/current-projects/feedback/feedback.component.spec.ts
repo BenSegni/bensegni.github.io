@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { FeedbackComponent } from './feedback.component';
 import { FeedbackLinkComponent } from '../feedback-link/feedback-link.component';
-import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text/alt-text.pipe';
 
 describe('FeedbackComponent', () => {
   let component: FeedbackComponent;

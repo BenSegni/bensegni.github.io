@@ -5,18 +5,18 @@ import {
   withInterceptorsFromDi,
 } from "@angular/common/http";
 
-import { AltTextPipe } from "../../global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../global/utils/pipes/alt-text/alt-text.pipe";
 import { BlogArticleComponent } from "./blog-article.component";
 import { BlogArticlesComponent } from "../blog-articles/blog-articles.component";
 import { BlogContactDetailsComponent } from "../blog-contact-details/blog-contact-details.component";
 import { BlogPostComponent } from "../blog-post/blog-post.component";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 import { ClockIconComponent } from "../../global/icons/clock-icon/clock-icon.component";
-import { FilterPipe } from "../../global/utils/pipes/filter.pipe";
+import { FilterPipe } from "../../global/utils/pipes/filter/filter.pipe";
 import { InfoDirective } from "../../global/utils/directives/info.directive";
 import { LinkedinIconComponent } from "../../global/icons/linkedin-icon/linkedin-icon.component";
-import { LogoPipe } from "../../global/utils/pipes/logo.pipe";
-import { PillPipe } from "../../global/utils/pipes/pill.pipe";
+import { LogoPipe } from "../../global/utils/pipes/logo/logo.pipe";
+import { PillPipe } from "../../global/utils/pipes/pill/pill.pipe";
 import { SafeResourcePipe } from "./../utils/safe-resource.pipe";
 import { ShareIconComponent } from "../../global/icons/share-icon/share-icon.component";
 import { ShareIconsComponent } from "../../global/share-icons/share-icons.component";

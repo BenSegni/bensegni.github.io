@@ -2,11 +2,11 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { BlogLevelDescriptionsComponent } from './blog-level-descriptions.component';
 import { ActivatedRoute } from '@angular/router';
-import { AltTextPipe } from '../../global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../global/utils/pipes/alt-text/alt-text.pipe';
 import { of } from 'rxjs';
 import { AnchorPipe } from '../utils/anchor.pipe';
 import { BlogKeyLevelIconComponent } from '../blog-key-level-icon/blog-key-level-icon.component';
-import { LogoPipe } from '../../global/utils/pipes/logo.pipe';
+import { LogoPipe } from '../../global/utils/pipes/logo/logo.pipe';
 
 const fakeActivatedRoute = {
   fragment: of({ }),

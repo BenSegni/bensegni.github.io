@@ -1,11 +1,11 @@
 import { ActivatedRoute, Router, RouterLink } from "@angular/router";
 import { ComponentFixture, TestBed } from "@angular/core/testing";
 
-import { AltTextPipe } from "../../../global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../../global/utils/pipes/alt-text/alt-text.pipe";
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { FilterPipe } from "../../../global/utils/pipes/filter.pipe";
-import { LogoPipe } from "../../../global/utils/pipes/logo.pipe";
-import { PillPipe } from "../../../global/utils/pipes/pill.pipe";
+import { FilterPipe } from "../../../global/utils/pipes/filter/filter.pipe";
+import { LogoPipe } from "../../../global/utils/pipes/logo/logo.pipe";
+import { PillPipe } from "../../../global/utils/pipes/pill/pill.pipe";
 import { RelatedSynopsisComponent } from "./related-synopsis.component";
 import { Showcase } from "../../showcase/interface/showcase";
 import { SkillPillsComponent } from "../../../global/skill-pills/skill-pills.component";

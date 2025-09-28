@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular
 
 import { ImageDisplay } from "../../showcase/interface/showcase";
 import { CommonModule } from "@angular/common";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../../global/utils/pipes/alt-text/alt-text.pipe";
 
 @Component({
   selector: "app-grid-display",

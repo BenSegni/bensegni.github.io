@@ -1,11 +1,11 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AltTextPipe } from '../../../global/utils/pipes/alt-text.pipe';
+import { AltTextPipe } from '../../../global/utils/pipes/alt-text/alt-text.pipe';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link.pipe';
-import { FilterPipe } from '../../../global/utils/pipes/filter.pipe';
-import { LogoPipe } from '../../../global/utils/pipes/logo.pipe';
-import { PillPipe } from '../../../global/utils/pipes/pill.pipe';
+import { FilterLinkPipe } from '../../../global/utils/pipes/filter-link/filter-link.pipe';
+import { FilterPipe } from '../../../global/utils/pipes/filter/filter.pipe';
+import { LogoPipe } from '../../../global/utils/pipes/logo/logo.pipe';
+import { PillPipe } from '../../../global/utils/pipes/pill/pill.pipe';
 import { ProjectDetailsComponent } from '../project-details/project-details.component';
 import { ProjectDetailsLinkComponent } from '../project-details-link/project-details-link.component';
 import { Router } from '@angular/router';

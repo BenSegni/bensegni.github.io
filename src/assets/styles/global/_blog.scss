@@ -493,9 +493,10 @@
         display: block;
         width: 100%;
         text-align: center;
-        padding: .5rem 0;
-        color: var(--text-color-light);
-        background-color: var(--card-background-color-alpha);
+        padding: .75rem 1rem;
+        box-sizing: border-box;
+        color: var(--text-color);
+        background-color: var(--card-background-color);
       }
     }
 
@@ -544,20 +545,23 @@
     .blog-contact-introduction {
       @include flex();
       justify-content: flex-start;
-      align-items: center;
+      align-items: flex-start;
       font-size: .8rem;
       color: var(--text-color);
+      padding-top: 1rem;
     }
 
     .blog-contact-image {
       display: block;
-      height: 8rem;
+      height: 12rem;
       width: 12rem;
-      margin: 1rem 1rem 0 0;
+      margin: 0 1rem 0 0;
       background-image: url('../../img/me/avatar.webp');
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      background-color: var(--black-alpha);
+      aspect-ratio: 1 / 1;
       border: .25rem solid var(--card-background-color-alpha);
       box-sizing: border-box;
       flex: 1 0 25%;

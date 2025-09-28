@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { LinkedinIconComponent } from "src/app/global/icons/linkedin-icon/linkedin-icon.component";
+import { LinkedinIconComponent } from "../../global/icons/linkedin-icon/linkedin-icon.component";
 
 @Component({
   selector: "app-blog-contact-details",

@@ -1,5 +1,5 @@
 import { Component } from "@angular/core";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../../global/utils/pipes/alt-text/alt-text.pipe";
 
 @Component({
   selector: "app-synopsis-back-link",

@@ -1,8 +1,8 @@
 import { CommonModule } from "@angular/common";
 import { ChangeDetectionStrategy, Component, input, InputSignal } from "@angular/core";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
-import { LogoPipe } from "src/app/global/utils/pipes/logo.pipe";
-import { PillPipe } from "src/app/global/utils/pipes/pill.pipe";
+import { AltTextPipe } from "../../../../global/utils/pipes/alt-text/alt-text.pipe";
+import { LogoPipe } from "../../../../global/utils/pipes/logo/logo.pipe";
+import { PillPipe } from "../../../../global/utils/pipes/pill/pill.pipe";
 
 @Component({
   selector: "app-post-education-insert",

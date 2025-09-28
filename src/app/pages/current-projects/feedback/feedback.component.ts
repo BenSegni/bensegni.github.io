@@ -1,6 +1,6 @@
 import { Component } from "@angular/core";
 import { GlobalDataService } from "../../../global/global-data.service";
-import { AltTextPipe } from "src/app/global/utils/pipes/alt-text.pipe";
+import { AltTextPipe } from "../../../global/utils/pipes/alt-text/alt-text.pipe";
 import { FeedbackLinkComponent } from "../feedback-link/feedback-link.component";
 import { CommonModule } from "@angular/common";
 
