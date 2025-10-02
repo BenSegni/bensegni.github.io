@@ -402,7 +402,7 @@
           @include flex-center();
           justify-content: flex-start;
           font-size: .75rem;
-          color: var(--text-color-light);
+          color: var(--text-color);
           background-color: var(--code-block-background);
           border: .0625rem solid var(--text-color);
           font-family: inherit;
@@ -609,7 +609,7 @@
   justify-content: flex-start;
   align-items: center;
   padding: 1rem 0 .5rem 0;
-  color: var(--secondary-color);
+  color: var(--text-color);
   font-size: .85rem;
   width: 100%;
 
