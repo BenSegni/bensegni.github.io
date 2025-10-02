@@ -211,20 +211,25 @@
     img {
       margin-top: 0;
       margin-left: 0.25rem;
-      mix-blend-mode: difference;
+      background-color: var(--education-icon-background);
+      padding: 1rem 0.75rem 25% 0.75rem;
+      border-bottom: 0.25rem solid var(--primary-color);
 
       @include tablet {
         @include mobile-image();
+        padding: 1rem 0.75rem 10% 0.75rem;
         margin-bottom: 1rem;
       }
 
       @include mobile {
         @include mobile-image();
+        padding: 1rem 0.75rem 10% 0.75rem;
         margin-bottom: 1rem;
       }
 
       @include small-mobile {
         @include mobile-image();
+        padding: 1rem 0.75rem 10% 0.75rem;
         margin-bottom: 1rem;
       }
     }
@@ -253,6 +258,7 @@
   span {
     @include flex();
     @include flex-column();
+    margin-top: 1rem;
 
     h4 {
       text-align: left;
@@ -440,10 +446,10 @@
       min-width: 10rem;
       font-weight: 300;
       font-size: 0.95rem;
-      color: var(--secondary-color);
+      color: white;
       margin: 0 1rem;
       padding: 0.5rem 1rem;
-      background-color: var(--card-background-color-alpha);
+      background-color: var(--secondary-color);
       border: 0.0625rem solid var(--text-color);
       box-sizing: border-box;
 
@@ -490,6 +496,10 @@
       a {
         padding: 1rem 0;
       }
+    }
+
+    .active {
+      color: var(--text-color);
     }
   }
 }
