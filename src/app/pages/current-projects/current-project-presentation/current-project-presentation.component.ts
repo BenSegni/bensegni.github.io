@@ -30,5 +30,6 @@ export class CurrentProjectPresentationComponent {
     title: "",
     projects: [],
     presentationLink: "",
+    status: "",
   });
 }

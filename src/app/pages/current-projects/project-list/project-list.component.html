@@ -1,0 +1,10 @@
+<div class="projects-grid">
+  @if (projects$ | async; as currentProject) { @for (project of
+  currentProject.projects; track project) {
+  <button (click)="viewProject(project.projectTitle)">
+    <div class="current-project-insert">
+      <h3>{{ project.projectTitle }}</h3>
+    </div>
+  </button>
+  } }
+</div>

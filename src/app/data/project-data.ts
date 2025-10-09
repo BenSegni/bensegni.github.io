@@ -198,4 +198,5 @@ export const projectData: CurrentProject = {
   ],
   presentationLink:
     "https://docs.google.com/presentation/d/e/2PACX-1vTWecrHVC5qnJKA402Dxjr0oynVkMQkcQ8dcNFreZiBK3_bb-TndRgEgO7Xplys93wdeIUgIXppgPmN/pub?start=false&loop=false&delayms=3000",
+  status: "COMPLETE",
 };

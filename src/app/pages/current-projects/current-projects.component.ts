@@ -5,6 +5,7 @@ import { CurrentProjectHeaderComponent } from "./current-project-header/current-
 import { CurrentProjectDetailComponent } from "./current-project-detail/current-project-detail.component";
 import { CurrentProjectPresentationComponent } from "./current-project-presentation/current-project-presentation.component";
 import { FeedbackComponent } from "./feedback/feedback.component";
+import { AboutRoutingModule } from "../about/about-routing.module";
 
 @Component({
   selector: "app-current-projects",
@@ -15,6 +16,7 @@ import { FeedbackComponent } from "./feedback/feedback.component";
     CurrentProjectDetailComponent,
     CurrentProjectPresentationComponent,
     FeedbackComponent,
-  ],
+    AboutRoutingModule
+],
 })
 export class CurrentProjectsComponent extends GlobalDataService {}

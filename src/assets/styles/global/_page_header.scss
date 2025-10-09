@@ -17,7 +17,6 @@ $background: "background.webp";
   position: relative;
 
   .content-wrapper {
-    width: 50vw;
     @include flex();
     @include flex-column();
     justify-content: center;
@@ -301,7 +300,6 @@ $background: "background.webp";
       padding-bottom: 0.25rem;
 
       &:hover {
-        // @include content-link();
         color: var(--secondary-color);
         border-color: white;
       }

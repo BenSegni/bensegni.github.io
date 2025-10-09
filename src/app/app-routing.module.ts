@@ -1,128 +1,153 @@
-import { Routes } from '@angular/router';
+import { Routes } from "@angular/router";
 
-import { AboutComponent } from './pages/about/about.component';
-import { ContactComponent } from './pages/contact/contact.component';
-import { CurrentProjectsComponent } from './pages/current-projects/current-projects.component';
-import { EducationComponent } from './pages/about/education/education.component';
-import { EmploymentComponent } from './pages/about/employment/employment.component';
-import { GithubComponent } from './pages/github/github.component';
-import { NpmComponent } from './pages/npm/npm.component';
-import { PageNotFoundComponent } from './global/page-not-found/page-not-found.component';
-import { PrivacyPolicyComponent } from './global/privacy-policy/privacy-policy.component';
-import { ProfileComponent } from './pages/about/profile/profile.component';
-import { ShowcaseComponent } from './pages/showcase/showcase.component';
-import { SiteBuildComponent } from './global/site-build/site-build.component';
-import { SynopsisComponent } from './pages/synopsis/synopsis.component';
-import { TechStackComponent } from './pages/about/tech-stack/tech-stack.component';
-import { ToolkitComponent } from './pages/about/toolkit/toolkit.component';
-import { maintenanceGuard } from './global/utils/guards/maintenance.guard';
+import { AboutComponent } from "./pages/about/about.component";
+import { ContactComponent } from "./pages/contact/contact.component";
+import { EducationComponent } from "./pages/about/education/education.component";
+import { EmploymentComponent } from "./pages/about/employment/employment.component";
+import { GithubComponent } from "./pages/github/github.component";
+import { NpmComponent } from "./pages/npm/npm.component";
+import { PageNotFoundComponent } from "./global/page-not-found/page-not-found.component";
+import { PrivacyPolicyComponent } from "./global/privacy-policy/privacy-policy.component";
+import { ProfileComponent } from "./pages/about/profile/profile.component";
+import { ShowcaseComponent } from "./pages/showcase/showcase.component";
+import { SiteBuildComponent } from "./global/site-build/site-build.component";
+import { SynopsisComponent } from "./pages/synopsis/synopsis.component";
+import { TechStackComponent } from "./pages/about/tech-stack/tech-stack.component";
+import { ToolkitComponent } from "./pages/about/toolkit/toolkit.component";
+import { maintenanceGuard } from "./global/utils/guards/maintenance.guard";
+import { ProjectSynopsisComponent } from "./pages/current-projects/project-synopsis/project-synopsis.component";
 
 export const routes: Routes = [
   {
-    path: '',
-    redirectTo: 'showcase', pathMatch: 'full',
+    path: "",
+    redirectTo: "showcase",
+    pathMatch: "full",
   },
   {
-    path: 'showcase',
+    path: "showcase",
     component: ShowcaseComponent,
   },
   {
-    path: 'showcase/:id/synopsis',
+    path: "showcase/:id/synopsis",
     component: SynopsisComponent,
   },
   {
-    path: 'about',
+    path: "about",
     component: AboutComponent,
     data: {
-      breadcrumb: 'About'
+      breadcrumb: "About",
     },
     children: [
       {
-        path: '',
-        redirectTo: 'about-me', pathMatch: 'full',
+        path: "",
+        redirectTo: "about-me",
+        pathMatch: "full",
       },
       {
-        path: 'about-me',
+        path: "about-me",
         component: ProfileComponent,
         data: {
-          breadcrumb: 'About Me'
-        }
+          breadcrumb: "About Me",
+        },
       },
       {
-        path: 'employment',
+        path: "employment",
         component: EmploymentComponent,
         data: {
-          breadcrumb: 'Employment'
-        }
+          breadcrumb: "Employment",
+        },
       },
       {
-        path: 'education',
+        path: "education",
         component: EducationComponent,
         data: {
-          breadcrumb: 'Education'
-        }
+          breadcrumb: "Education",
+        },
       },
       {
-        path: 'technologies',
+        path: "technologies",
         component: TechStackComponent,
         data: {
-          breadcrumb: 'Technologies'
-        }
-
+          breadcrumb: "Technologies",
+        },
       },
       {
-        path: 'toolkit',
+        path: "toolkit",
         component: ToolkitComponent,
         data: {
-          breadcrumb: 'Toolkit'
-        }
-      }
-    ]
+          breadcrumb: "Toolkit",
+        },
+      },
+    ],
+  },
+  // {
+  //   path: "current-projects",
+  //   component: CurrentProjectsComponent,
+  //   canActivate: [maintenanceGuard],
+  //   children: [
+  //     {
+  //       path: "",
+  //       component: ProjectListComponent,
+  //       outlet: "list",
+  //     },
+  //     {
+  //       path: ":id",
+  //       component: ProjectSynopsisComponent,
+  //       outlet: "detail",
+  //     },
+  //   ],
+  // },
+  {
+    path: "current-projects/:id",
+    component: ProjectSynopsisComponent,
+    canActivate: [maintenanceGuard],
   },
   {
-    path: 'current-projects',
-    component: CurrentProjectsComponent,
-    canActivate: [maintenanceGuard]
-  },
-  {
-    path: 'github',
+    path: "github",
     component: GithubComponent,
   },
   {
-    path: 'npm',
+    path: "npm",
     component: NpmComponent,
-    canActivate: [maintenanceGuard]
+    canActivate: [maintenanceGuard],
   },
   {
-    path: 'blog',
-    loadComponent: () => import('./blog/blog/blog.component').then(m => m.BlogComponent),
+    path: "blog",
+    loadComponent: () =>
+      import("./blog/blog/blog.component").then((m) => m.BlogComponent),
   },
   {
-    path: 'blog/description',
-    loadComponent: () => import('./blog/blog-level-descriptions/blog-level-descriptions.component').then(m => m.BlogLevelDescriptionsComponent)
+    path: "blog/description",
+    loadComponent: () =>
+      import(
+        "./blog/blog-level-descriptions/blog-level-descriptions.component"
+      ).then((m) => m.BlogLevelDescriptionsComponent),
   },
   {
-    path: 'blog/:id',
-    loadComponent: () => import('./blog/blog-article/blog-article.component').then(m => m.BlogArticleComponent)
+    path: "blog/:id",
+    loadComponent: () =>
+      import("./blog/blog-article/blog-article.component").then(
+        (m) => m.BlogArticleComponent
+      ),
   },
   {
-    path: 'contact',
+    path: "contact",
     component: ContactComponent,
   },
   {
-    path: 'privacy',
+    path: "privacy",
     component: PrivacyPolicyComponent,
   },
   {
-    path: 'site-build',
+    path: "site-build",
     component: SiteBuildComponent,
     data: {
-      breadcrumb: 'Site Build'
-    }
+      breadcrumb: "Site Build",
+    },
   },
   {
-    path: '**',
-    pathMatch: 'full',
-    component: PageNotFoundComponent
+    path: "**",
+    pathMatch: "full",
+    component: PageNotFoundComponent,
   },
 ];

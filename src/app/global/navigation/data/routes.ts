@@ -17,13 +17,13 @@ export const routeItems: NavigationItem[] = [
         uiImage: '../../assets/img/about_ui_nav.webp',
         keywords: [KeywordsEnum.Education, KeywordsEnum.Employment, KeywordsEnum.Experience, KeywordsEnum.Skills]
     },
-    {
-        route: 'current-projects',
-        anchorText: NavigationEnum.CurrentProject,
-        activeOptions: false,
-        uiImage: '../../assets/img/current_project_ui_nav.webp',
-        keywords: [KeywordsEnum.Development, KeywordsEnum.Employment, KeywordsEnum.Experience, KeywordsEnum.Skills]
-    },
+    // {
+    //     route: 'current-projects',
+    //     anchorText: NavigationEnum.CurrentProject,
+    //     activeOptions: false,
+    //     uiImage: '../../assets/img/current_project_ui_nav.webp',
+    //     keywords: [KeywordsEnum.Development, KeywordsEnum.Employment, KeywordsEnum.Experience, KeywordsEnum.Skills]
+    // },
     {
         route: 'github',
         anchorText: NavigationEnum.Github,

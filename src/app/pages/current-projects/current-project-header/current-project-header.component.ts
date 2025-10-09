@@ -14,5 +14,6 @@ export class CurrentProjectHeaderComponent {
     title: "",
     projects: [],
     presentationLink: "",
+    status: ''
   });
 }

@@ -1,11 +1,23 @@
 <h3 [innerText]="'Current Project'"></h3>
 @if (projects$ | async; as currentProject) {
-  <app-current-project-header [currentProject]="currentProject"></app-current-project-header>
-  @for (project of currentProject.projects; track project) {
-    <div class="current-project-insert">
-      <app-current-project-detail [project]="project"></app-current-project-detail>
-    </div>
-  }
-  <app-current-project-presentation [currentProject]="currentProject"></app-current-project-presentation>
+<app-current-project-header
+  [currentProject]="currentProject"
+></app-current-project-header>
+@for (project of currentProject.projects; track project) {
+<div class="current-project-insert">
+  <app-current-project-detail [project]="project"></app-current-project-detail>
+</div>
+}
+<app-current-project-presentation
+  [currentProject]="currentProject"
+></app-current-project-presentation>
 }
 <app-feedback></app-feedback>
+<!-- <div class="projects-layout">
+  <div class="projects-sidebar">
+    <router-outlet name="list"></router-outlet>
+  </div>
+  <div class="project-detail-panel">
+    <router-outlet name="detail"></router-outlet>
+  </div>
+</div> -->

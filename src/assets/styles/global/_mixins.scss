@@ -153,6 +153,7 @@
 @mixin content-link {
   color: var(--secondary-color);
   border-bottom: 1px dotted var(--secondary-color);
+  cursor: pointer;
 
   &:hover {
     color: var(--text-color);
@@ -162,6 +163,12 @@
   &:visited {
     color: var(--primary-color-alpha-6);
     border-bottom: 1px dotted var(--primary-color-alpha-6);
+  }
+
+  &:disabled {
+    color: var(--text-color-light);
+    border-bottom: 1px dotted var(--text-color-light);
+    cursor: not-allowed;
   }
 }
 
