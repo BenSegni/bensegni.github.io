@@ -258,7 +258,6 @@
   span {
     @include flex();
     @include flex-column();
-    margin-top: 1rem;
 
     h4 {
       text-align: left;
