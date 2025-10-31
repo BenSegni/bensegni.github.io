@@ -35,7 +35,7 @@
 
 @mixin mobile-about-stub {
   align-items: flex-start;
-  // margin: 1rem;
+  @include span-90();
 }
 
 @mixin mobile-tabs-header {
@@ -59,7 +59,7 @@
 }
 
 @mixin mobile-anchor {
-  margin: 0 auto .25rem auto;
+  margin: 0 auto 0.25rem auto;
   display: block;
   width: 90vw;
 }
