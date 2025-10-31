@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1761907200686,
+  "timestamp": 1761907385991,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -27,7 +27,7 @@
         "/main-UUXX3LS2.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-UIQUC754.css"
+        "/styles-PSELOLD5.css"
       ],
       "patterns": []
     },
@@ -490,7 +490,7 @@
     "/assets/styles/global/_presentation.link.scss": "30a4629c96969cdea2e95350c803c0c21616f4f2",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
     "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
-    "/assets/styles/global/_table.scss": "5f3cf558266dc8309ff66f8f8630c6de0d60d44f",
+    "/assets/styles/global/_table.scss": "005e54c37cd4a2e9dfbc683736597484ee9444e1",
     "/assets/styles/pages/_404.scss": "f6b7ab9925bfb83bffaf66887c93d5bdb5eb7191",
     "/assets/styles/pages/_about.scss": "b5c21ff43ec050cf7a3251f20c7d0e27045c9c7a",
     "/assets/styles/pages/_about_mixins.scss": "4ca5b559c6650c57951298b132b5ef4c02e6bdc7",
@@ -517,11 +517,11 @@
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-VOUMUNPJ.js": "597f6f851b87bd3c3e1269332fc3c357bf66ee4a",
     "/chunk-XAZZGM2Q.js": "83dfbf4bd2d31cd4ca9028464f631d740bed56a9",
-    "/index.html": "128f5929cf9841cc220a18c3340816be436fcc6b",
+    "/index.html": "ecce506aebf4d3886043736effa97db01e170e40",
     "/main-UUXX3LS2.js": "e58d8006ceaf8ce1d1e2c77770805ed1244258f1",
     "/manifest.webmanifest": "3cfff15e579c689a7aa06d9ff110089e411b082a",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-UIQUC754.css": "c892e356a0c302a3d15b20ae68022a34d334d83a"
+    "/styles-PSELOLD5.css": "d01806c72a46b51ec5c32d313e03b88cf5eb8e1d"
   },
   "navigationUrls": [
     {
