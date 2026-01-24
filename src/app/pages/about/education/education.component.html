@@ -1,4 +1,4 @@
-<h3 [innerText]="'Professional Training & Certification'"></h3>
+<h3 [innerText]="'Professional Training & Certification'" style="padding: 0 1rem"></h3>
 <div class="about-stub">
   <span>
     @if (postEducation$ | async; as postEducation) {
@@ -14,7 +14,7 @@
 @if (education$ | async; as education) {
   @for (placement of education; track placement) {
     <div class="about-stub">
-      <app-education-insert [placement]="placement"></app-education-insert>
+      <app-education-insert style="padding: 0 1rem 1rem 1rem" [placement]="placement"></app-education-insert>
     </div>
   }
 }
