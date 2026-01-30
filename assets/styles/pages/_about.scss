@@ -165,7 +165,7 @@
 
 .about-stub {
   text-align: left;
-  margin: 2rem 0 0 0;
+  margin: 2rem 0 1rem 0;
   @include about-list();
   border-bottom: 1px dotted var(--secondary-color);
   padding-bottom: 2rem;

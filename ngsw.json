@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1769273261619,
+  "timestamp": 1769788596570,
   "index": "/index.html",
   "assetGroups": [
     {
@@ -24,10 +24,10 @@
         "/chunk-T74KHG6R.js",
         "/chunk-YPK6QPE7.js",
         "/index.html",
-        "/main-ROLNFU45.js",
+        "/main-CMYDQRJA.js",
         "/manifest.webmanifest",
         "/polyfills-5CFQRCPP.js",
-        "/styles-R45VB2GK.css"
+        "/styles-T42TDXQP.css"
       ],
       "patterns": []
     },
@@ -578,9 +578,9 @@
     "/assets/styles/global/_presentation.link.scss": "30a4629c96969cdea2e95350c803c0c21616f4f2",
     "/assets/styles/global/_previous_companies.scss": "d7f97877de847ced33b01ea5f206cea175dec89c",
     "/assets/styles/global/_skill-pills.scss": "ca58809f04942780219ce7a1f652600d0ff78a64",
-    "/assets/styles/global/_table.scss": "5f3cf558266dc8309ff66f8f8630c6de0d60d44f",
+    "/assets/styles/global/_table.scss": "48a87a9fa0cb7b9c695e6a7034c732a4f6e223bc",
     "/assets/styles/pages/_404.scss": "f6b7ab9925bfb83bffaf66887c93d5bdb5eb7191",
-    "/assets/styles/pages/_about.scss": "e8ec813e489ae02212f8a24e5f1b9543f50786d5",
+    "/assets/styles/pages/_about.scss": "078a04639f50d8adcfd08f37551039b2497fba3f",
     "/assets/styles/pages/_about_mixins.scss": "caa7129270e4c0a57ac1c7420cd11e4930d797a6",
     "/assets/styles/pages/_contact.scss": "5272ae10f6c64854ed6fcc34cedb09bf1514a89b",
     "/assets/styles/pages/_current_project.scss": "3b7f8fdc17daa10d4ef9fae439387ea101466fb1",
@@ -605,11 +605,11 @@
     "/chunk-SPP62YQZ.js": "943a2d6c560f361062ed3b0af86c5fa7cca9387e",
     "/chunk-T74KHG6R.js": "d301aa7fa7650c20eaaca72241974be7b6197f79",
     "/chunk-YPK6QPE7.js": "0f6e001b06f6aabc30fcc64c6dc796e59b04818c",
-    "/index.html": "7051ab4c94fc81617beb2cf82e0d89f5426cf857",
-    "/main-ROLNFU45.js": "c965e40262cd83b7452194af20d536e5128e7d52",
+    "/index.html": "44de3bf20932907db43bfdda637c7c8dcd93b61f",
+    "/main-CMYDQRJA.js": "325a093cdb1fd912b9fb9ff7b01701bf42028c3c",
     "/manifest.webmanifest": "0d6c26a567783654c106b42618c2b0099b62e618",
     "/polyfills-5CFQRCPP.js": "f2241e9a25858f895ce299d15f6f22e849e2fd72",
-    "/styles-R45VB2GK.css": "6402ea05e3569bc8a6d90b2d1f8541ab62413bd1"
+    "/styles-T42TDXQP.css": "72cdbcfeb5206b32e86607c4a18cd0da958f6654"
   },
   "navigationUrls": [
     {
