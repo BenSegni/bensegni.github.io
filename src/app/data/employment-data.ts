@@ -4,7 +4,7 @@ export const employmentData: Employment[] = [
   {
     logo: "../../../assets/img/bbc_icon.svg",
     company: "British Broadcasting Corporation (BBC) ",
-    date: "07/2024 - Present",
+    date: "06/2024 - 06/2025",
     title: "Senior Software Engineer",
     successes: [
       "Significantly enhanced Design pattern practice through the introduction and demonstration of core SASS concepts, such as mixins, parameters, and includes. This initiative empowered the team to exercise greater control over UI layout and create reusable style code. This not only boosted productivity but also substantially reduced code bloat caused by duplicated style instructions.",
@@ -70,7 +70,7 @@ export const employmentData: Employment[] = [
   {
     logo: "../../../assets/img/british-airways.svg",
     company: "British Airways Plc",
-    date: "07/2022 - 07/2024",
+    date: "07/2022 - 06/2024",
     title: "Technical Design Lead",
     successes: [
       "Technical design leadership for the British Airways Help Community. Provided technical design leadership for the British Airways Help Community, encompassing the Help Centre, GDPR, Claims & Feedback, and My Account. Successfully delivered the GDPR web application, ensuring compliance with data privacy regulations.",

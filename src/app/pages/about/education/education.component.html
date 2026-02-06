@@ -1,20 +1,24 @@
-<h3 [innerText]="'Professional Training & Certification'" style="padding: 0 1rem"></h3>
-<div class="about-stub">
-  <span>
+<div class="about-blurb tab-content">
+  <h3 [innerText]="'Professional Training & Certification'"></h3>
+  <div class="about-stub">
     @if (postEducation$ | async; as postEducation) {
       <ul class="post-education">
         @for (training of postEducation; track training) {
-          <li><app-post-education-insert [training]="training"></app-post-education-insert></li>
+          <li>
+            <app-post-education-insert
+              [training]="training"
+            ></app-post-education-insert>
+          </li>
         }
       </ul>
     }
-  </span>
-</div>
-<h3 [innerText]="'Education'"></h3>
-@if (education$ | async; as education) {
-  @for (placement of education; track placement) {
-    <div class="about-stub">
-      <app-education-insert style="padding: 0 1rem 1rem 1rem" [placement]="placement"></app-education-insert>
-    </div>
+  </div>
+  <h3 [innerText]="'Education'"></h3>
+  @if (education$ | async; as education) {
+    @for (placement of education; track placement) {
+      <div class="about-stub">
+        <app-education-insert [placement]="placement"></app-education-insert>
+      </div>
+    }
   }
-}
+</div>

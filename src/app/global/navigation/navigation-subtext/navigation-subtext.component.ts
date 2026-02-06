@@ -23,5 +23,5 @@ export class NavigationSubtextComponent {
     keywords: [""],
     icon: undefined,
   });
-  public pathIcon = "../../assets/icons/icon-72.svg";
+  public pathIcon = "../../assets/icons/icon-192.png";
 }

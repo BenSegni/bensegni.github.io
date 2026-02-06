@@ -12,5 +12,20 @@ import { CommonModule } from "@angular/common";
     EducationInsertComponent,
     CommonModule,
   ],
+  styles: [
+    `
+      .post-education {
+        padding: 0;
+      }
+
+      h3 {
+        padding: 0 1rem;
+      }
+
+      app-education-insert {
+        padding: 0;
+      }
+    `,
+  ],
 })
 export class EducationComponent extends GlobalDataService {}
